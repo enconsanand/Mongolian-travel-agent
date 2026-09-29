@@ -1,0 +1,21 @@
+[
+  {
+    "_id": "refund_001",
+    "payment_id": "pay_tsende_003",
+    "user_id": "user_tsende",
+    "trip_id": "trip_tsende_darkhan",
+    "booking_id": "booking_020",
+    "amount_mnt": 75000,
+    "reason": "provider_cancelled",
+    "policy_applied": "full_refund_provider_cancel",
+    "status": "succeeded",
+    "provider_ref": "re_test_tsende_003",
+    "requested_at": "2026-10-04T18:20:30Z",
+    "completed_at": "2026-10-04T18:21:00Z",
+    "is_mock": true,
+    "reason_text": {
+      "mn": "Жолооч цуцалсан (машин эвдэрсэн)",
+      "en": "Driver cancelled (car broke down)"
+    }
+  }
+]

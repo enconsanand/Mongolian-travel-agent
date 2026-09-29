@@ -1,13 +1,14 @@
-from typing import Annotated, Generator
+from typing import Annotated
 
-from fastapi import Depends, HTTPException, Request, status
+from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 from jose import JWTError, jwt
-from sqlalchemy.orm import Session
+from pymongo.database import Database
 
 from app import crud
 from app.core.config import settings
 from app.core.token_denylist import TokenDenylistUnavailable, token_denylist
+from app.db.mongo import get_database
 from app.models.user import User
 from app.schemas.user import TokenPayload
 
@@ -25,9 +26,9 @@ def _credentials_exception() -> HTTPException:
     )
 
 
-def get_db(request: Request) -> Generator[Session, None, None]:
-    """Get database session from request state."""
-    yield request.state.db
+def get_db() -> Database:
+    """Get the MongoDB database handle (the client is shared and pooled)."""
+    return get_database()
 
 
 def decode_access_token(token: str) -> dict:
@@ -67,7 +68,7 @@ def decode_access_token(token: str) -> dict:
 
 
 def get_current_user(
-    db: Annotated[Session, Depends(get_db)],
+    db: Annotated[Database, Depends(get_db)],
     token: Annotated[str, Depends(oauth2_scheme)],
 ) -> User:
     """
@@ -86,8 +87,6 @@ def get_current_user(
 
     if user is None:
         raise _credentials_exception()
-
-    return user
 
     return user
 
@@ -110,6 +109,6 @@ def get_current_active_user(
 
 
 # Type aliases for cleaner dependency injection
-DbSession = Annotated[Session, Depends(get_db)]
+DbSession = Annotated[Database, Depends(get_db)]
 CurrentUser = Annotated[User, Depends(get_current_user)]
 ActiveUser = Annotated[User, Depends(get_current_active_user)]

@@ -1,0 +1,833 @@
+[
+  {
+    "_id": "sched_bus_ub_darkhan",
+    "mode": "bus",
+    "operator": "Tsetsens Transport",
+    "route_id": "route_ub_darkhan",
+    "from_place_id": "place_ub",
+    "to_place_id": "place_darkhan",
+    "departure_point": {
+      "mn": "Драгон автовокзал",
+      "en": "Dragon bus terminal"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "08:00",
+      "10:00",
+      "12:00",
+      "14:00",
+      "16:00",
+      "18:00"
+    ],
+    "duration_min": 210,
+    "price_mnt": 17000,
+    "seats": 45,
+    "vehicle_id": "veh_bus_01",
+    "booking_channel": {
+      "mn": "тасалбарын касс эсвэл цахим тасалбарын апп",
+      "en": "ticket office or eticket app"
+    },
+    "is_mock": true,
+    "region": "north"
+  },
+  {
+    "_id": "sched_bus_ub_erdenet",
+    "mode": "bus",
+    "operator": "Tsetsens Transport",
+    "route_id": "route_ub_bulgan_via_erdenet",
+    "from_place_id": "place_ub",
+    "to_place_id": "place_erdenet",
+    "departure_point": {
+      "mn": "Драгон автовокзал",
+      "en": "Dragon bus terminal"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "09:00",
+      "13:00",
+      "17:00"
+    ],
+    "duration_min": 360,
+    "price_mnt": 26000,
+    "seats": 45,
+    "vehicle_id": "veh_bus_02",
+    "booking_channel": {
+      "mn": "тасалбарын касс эсвэл цахим тасалбарын апп",
+      "en": "ticket office or eticket app"
+    },
+    "is_mock": true,
+    "region": "north"
+  },
+  {
+    "_id": "sched_bus_ub_bulgan",
+    "mode": "bus",
+    "operator": "Khangai Line",
+    "route_id": "route_ub_bulgan_via_lun",
+    "from_place_id": "place_ub",
+    "to_place_id": "place_bulgan",
+    "departure_point": {
+      "mn": "Драгон автовокзал",
+      "en": "Dragon bus terminal"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "08:00",
+      "14:00"
+    ],
+    "duration_min": 330,
+    "price_mnt": 32000,
+    "seats": 25,
+    "vehicle_id": "veh_bus_04",
+    "booking_channel": {
+      "mn": "тасалбарын касс эсвэл цахим тасалбарын апп",
+      "en": "ticket office or eticket app"
+    },
+    "is_mock": true,
+    "region": "north"
+  },
+  {
+    "_id": "sched_bus_ub_murun",
+    "mode": "bus",
+    "operator": "Khangai Line",
+    "route_id": "route_ub_khatgal_via_lun",
+    "from_place_id": "place_ub",
+    "to_place_id": "place_murun",
+    "departure_point": {
+      "mn": "Драгон автовокзал",
+      "en": "Dragon bus terminal"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "08:00",
+      "17:00"
+    ],
+    "duration_min": 720,
+    "price_mnt": 58000,
+    "seats": 45,
+    "vehicle_id": "veh_bus_02",
+    "booking_channel": {
+      "mn": "тасалбарын касс эсвэл цахим тасалбарын апп",
+      "en": "ticket office or eticket app"
+    },
+    "is_mock": true,
+    "region": "north"
+  },
+  {
+    "_id": "sched_van_murun_khatgal",
+    "mode": "shared_van",
+    "operator": "Mörön market van stand",
+    "route_id": "route_ub_khatgal_via_lun",
+    "from_place_id": "place_murun",
+    "to_place_id": "place_khatgal",
+    "departure_point": {
+      "mn": "Мөрөнгийн зах",
+      "en": "Mörön market"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "10:00",
+      "15:00"
+    ],
+    "duration_min": 100,
+    "price_mnt": 20000,
+    "seats": 8,
+    "vehicle_id": "veh_van_04",
+    "booking_channel": {
+      "mn": "жолоочид төлнө, дүүрмэгц хөдөлнө",
+      "en": "pay the driver, leaves when full"
+    },
+    "is_mock": true,
+    "region": "north"
+  },
+  {
+    "_id": "sched_bus_ub_tsetserleg",
+    "mode": "bus",
+    "operator": "Khangai Line",
+    "route_id": "route_ub_murun_central",
+    "from_place_id": "place_ub",
+    "to_place_id": "place_tsetserleg",
+    "departure_point": {
+      "mn": "Драгон автовокзал",
+      "en": "Dragon bus terminal"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "08:00",
+      "14:00"
+    ],
+    "duration_min": 480,
+    "price_mnt": 38000,
+    "seats": 25,
+    "vehicle_id": "veh_bus_04",
+    "booking_channel": {
+      "mn": "тасалбарын касс эсвэл цахим тасалбарын апп",
+      "en": "ticket office or eticket app"
+    },
+    "is_mock": true,
+    "region": "north"
+  },
+  {
+    "_id": "sched_bus_ub_kharkhorin",
+    "mode": "bus",
+    "operator": "Khangai Line",
+    "route_id": "route_ub_murun_central",
+    "from_place_id": "place_ub",
+    "to_place_id": "place_kharkhorin",
+    "departure_point": {
+      "mn": "Драгон автовокзал",
+      "en": "Dragon bus terminal"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "11:00"
+    ],
+    "duration_min": 330,
+    "price_mnt": 30000,
+    "seats": 25,
+    "vehicle_id": "veh_bus_04",
+    "booking_channel": {
+      "mn": "тасалбарын касс эсвэл цахим тасалбарын апп",
+      "en": "ticket office or eticket app"
+    },
+    "is_mock": true,
+    "region": "north"
+  },
+  {
+    "_id": "sched_bus_ub_mandalgovi",
+    "mode": "bus",
+    "operator": "Govi Express",
+    "route_id": "route_ub_dalanzadgad",
+    "from_place_id": "place_ub",
+    "to_place_id": "place_mandalgovi",
+    "departure_point": {
+      "mn": "Драгон автовокзал",
+      "en": "Dragon bus terminal"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "09:00",
+      "15:00"
+    ],
+    "duration_min": 240,
+    "price_mnt": 25000,
+    "seats": 49,
+    "vehicle_id": "veh_bus_03",
+    "booking_channel": {
+      "mn": "тасалбарын касс эсвэл цахим тасалбарын апп",
+      "en": "ticket office or eticket app"
+    },
+    "is_mock": true,
+    "region": "south"
+  },
+  {
+    "_id": "sched_bus_ub_dalanzadgad",
+    "mode": "bus",
+    "operator": "Govi Express",
+    "route_id": "route_ub_dalanzadgad",
+    "from_place_id": "place_ub",
+    "to_place_id": "place_dalanzadgad",
+    "departure_point": {
+      "mn": "Драгон автовокзал",
+      "en": "Dragon bus terminal"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "08:00",
+      "16:00"
+    ],
+    "duration_min": 540,
+    "price_mnt": 45000,
+    "seats": 49,
+    "vehicle_id": "veh_bus_03",
+    "booking_channel": {
+      "mn": "тасалбарын касс эсвэл цахим тасалбарын апп",
+      "en": "ticket office or eticket app"
+    },
+    "is_mock": true,
+    "region": "south"
+  },
+  {
+    "_id": "sched_flight_ub_murun",
+    "mode": "flight",
+    "operator": "Hunnu Air (mock)",
+    "route_id": null,
+    "from_place_id": "place_ub",
+    "to_place_id": "place_murun",
+    "departure_point": {
+      "mn": "Чингис хаан олон улсын нисэх буудал",
+      "en": "Chinggis Khaan Intl Airport"
+    },
+    "days_of_week": [
+      "tue",
+      "fri",
+      "sun"
+    ],
+    "departure_times": [
+      "09:30"
+    ],
+    "duration_min": 90,
+    "price_mnt": 360000,
+    "seats": 70,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "агаарын тээврийн компанийн вэбсайт",
+      "en": "airline website"
+    },
+    "is_mock": true,
+    "region": "north"
+  },
+  {
+    "_id": "sched_flight_ub_dalanzadgad",
+    "mode": "flight",
+    "operator": "Aero Mongolia (mock)",
+    "route_id": null,
+    "from_place_id": "place_ub",
+    "to_place_id": "place_dalanzadgad",
+    "departure_point": {
+      "mn": "Чингис хаан олон улсын нисэх буудал",
+      "en": "Chinggis Khaan Intl Airport"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "07:40",
+      "15:20"
+    ],
+    "duration_min": 80,
+    "price_mnt": 295000,
+    "seats": 70,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "агаарын тээврийн компанийн вэбсайт",
+      "en": "airline website"
+    },
+    "is_mock": true,
+    "region": "south"
+  },
+  {
+    "_id": "sched_bus_ub_khovd",
+    "mode": "bus",
+    "operator": "Baruun Zam Transport",
+    "route_id": "route_ub_khovd_central",
+    "from_place_id": "place_ub",
+    "to_place_id": "place_khovd",
+    "departure_point": {
+      "mn": "Драгон автовокзал",
+      "en": "Dragon bus terminal"
+    },
+    "days_of_week": [
+      "mon",
+      "wed",
+      "fri"
+    ],
+    "departure_times": [
+      "16:00"
+    ],
+    "duration_min": 1680,
+    "price_mnt": 110000,
+    "seats": 49,
+    "vehicle_id": "veh_bus_05",
+    "booking_channel": {
+      "mn": "тасалбарын касс эсвэл цахим тасалбарын апп",
+      "en": "ticket office or eticket app"
+    },
+    "is_mock": true,
+    "region": "west"
+  },
+  {
+    "_id": "sched_bus_ub_chinggis",
+    "mode": "bus",
+    "operator": "Zuun Zam Transport",
+    "route_id": "route_ub_chinggis",
+    "from_place_id": "place_ub",
+    "to_place_id": "place_chinggis_city",
+    "departure_point": {
+      "mn": "Баянзүрхийн зүүн автовокзал",
+      "en": "Bayanzürkh east terminal"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "09:00",
+      "15:00"
+    ],
+    "duration_min": 330,
+    "price_mnt": 28000,
+    "seats": 45,
+    "vehicle_id": "veh_bus_06",
+    "booking_channel": {
+      "mn": "тасалбарын касс эсвэл цахим тасалбарын апп",
+      "en": "ticket office or eticket app"
+    },
+    "is_mock": true,
+    "region": "east"
+  },
+  {
+    "_id": "sched_bus_ub_choibalsan",
+    "mode": "bus",
+    "operator": "Zuun Zam Transport",
+    "route_id": "route_ub_choibalsan",
+    "from_place_id": "place_ub",
+    "to_place_id": "place_choibalsan",
+    "departure_point": {
+      "mn": "Баянзүрхийн зүүн автовокзал",
+      "en": "Bayanzürkh east terminal"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "08:00"
+    ],
+    "duration_min": 720,
+    "price_mnt": 55000,
+    "seats": 45,
+    "vehicle_id": "veh_bus_06",
+    "booking_channel": {
+      "mn": "тасалбарын касс эсвэл цахим тасалбарын апп",
+      "en": "ticket office or eticket app"
+    },
+    "is_mock": true,
+    "region": "east"
+  },
+  {
+    "_id": "sched_flight_ub_olgii",
+    "mode": "flight",
+    "operator": "Aero Mongolia (mock)",
+    "route_id": null,
+    "from_place_id": "place_ub",
+    "to_place_id": "place_olgii",
+    "departure_point": {
+      "mn": "Чингис хаан олон улсын нисэх буудал",
+      "en": "Chinggis Khaan Intl Airport"
+    },
+    "days_of_week": [
+      "mon",
+      "thu",
+      "sat"
+    ],
+    "departure_times": [
+      "08:30"
+    ],
+    "duration_min": 210,
+    "price_mnt": 520000,
+    "seats": 70,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "агаарын тээврийн компанийн вэбсайт",
+      "en": "airline website"
+    },
+    "is_mock": true,
+    "region": "west"
+  },
+  {
+    "_id": "sched_flight_ub_khovd",
+    "mode": "flight",
+    "operator": "Hunnu Air (mock)",
+    "route_id": null,
+    "from_place_id": "place_ub",
+    "to_place_id": "place_khovd",
+    "departure_point": {
+      "mn": "Чингис хаан олон улсын нисэх буудал",
+      "en": "Chinggis Khaan Intl Airport"
+    },
+    "days_of_week": [
+      "tue",
+      "fri"
+    ],
+    "departure_times": [
+      "10:00"
+    ],
+    "duration_min": 180,
+    "price_mnt": 480000,
+    "seats": 70,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "агаарын тээврийн компанийн вэбсайт",
+      "en": "airline website"
+    },
+    "is_mock": true,
+    "region": "west"
+  },
+  {
+    "_id": "sched_flight_ub_choibalsan",
+    "mode": "flight",
+    "operator": "Hunnu Air (mock)",
+    "route_id": null,
+    "from_place_id": "place_ub",
+    "to_place_id": "place_choibalsan",
+    "departure_point": {
+      "mn": "Чингис хаан олон улсын нисэх буудал",
+      "en": "Chinggis Khaan Intl Airport"
+    },
+    "days_of_week": [
+      "wed",
+      "sun"
+    ],
+    "departure_times": [
+      "11:20"
+    ],
+    "duration_min": 100,
+    "price_mnt": 330000,
+    "seats": 70,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "агаарын тээврийн компанийн вэбсайт",
+      "en": "airline website"
+    },
+    "is_mock": true,
+    "region": "east"
+  },
+  {
+    "_id": "sched_train_ub_sukhbaatar",
+    "mode": "train",
+    "operator": "Ulaanbaatar Railway (mock)",
+    "name": {
+      "mn": "УБ – Сүхбаатар (Дарханаар)",
+      "en": "UB to Sükhbaatar (via Darkhan)"
+    },
+    "route_id": null,
+    "from_place_id": "place_ub",
+    "to_place_id": "place_sukhbaatar_city",
+    "departure_point": {
+      "mn": "Улаанбаатар төмөр замын вокзал",
+      "en": "Ulaanbaatar railway station"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "10:30"
+    ],
+    "duration_min": 540,
+    "price_mnt": 25000,
+    "seats": 468,
+    "vehicle_id": null,
+    "stops": [
+      {
+        "place_id": "place_ub",
+        "arrive_offset_min": 0,
+        "time": "10:30",
+        "day_offset": 0,
+        "fare_from_origin_mnt": {}
+      },
+      {
+        "place_id": "place_darkhan",
+        "arrive_offset_min": 330,
+        "time": "16:00",
+        "day_offset": 0,
+        "fare_from_origin_mnt": {
+          "hard_seat": 18000,
+          "platzkart": 26000,
+          "kupe": 38000
+        }
+      },
+      {
+        "place_id": "place_sukhbaatar_city",
+        "arrive_offset_min": 540,
+        "time": "19:30",
+        "day_offset": 0,
+        "fare_from_origin_mnt": {
+          "hard_seat": 25000,
+          "platzkart": 36000,
+          "kupe": 52000
+        }
+      }
+    ],
+    "seat_classes": [
+      {
+        "class": "hard_seat",
+        "seats": 180
+      },
+      {
+        "class": "platzkart",
+        "seats": 216
+      },
+      {
+        "class": "kupe",
+        "seats": 72
+      }
+    ],
+    "booking_channel": {
+      "mn": "eticket.ubtz.mn маягийн цахим тасалбар (mock) эсвэл вокзалын касс",
+      "en": "eticket.ubtz.mn style (mock) or station ticket office"
+    },
+    "is_mock": true,
+    "region": "north"
+  },
+  {
+    "_id": "sched_train_ub_erdenet",
+    "mode": "train",
+    "operator": "Ulaanbaatar Railway (mock)",
+    "name": {
+      "mn": "УБ – Эрдэнэт, шөнийн галт тэрэг (Дарханаар)",
+      "en": "UB to Erdenet overnight (via Darkhan)"
+    },
+    "route_id": null,
+    "from_place_id": "place_ub",
+    "to_place_id": "place_erdenet",
+    "departure_point": {
+      "mn": "Улаанбаатар төмөр замын вокзал",
+      "en": "Ulaanbaatar railway station"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "20:40"
+    ],
+    "duration_min": 660,
+    "price_mnt": 26000,
+    "seats": 468,
+    "vehicle_id": null,
+    "stops": [
+      {
+        "place_id": "place_ub",
+        "arrive_offset_min": 0,
+        "time": "20:40",
+        "day_offset": 0,
+        "fare_from_origin_mnt": {}
+      },
+      {
+        "place_id": "place_darkhan",
+        "arrive_offset_min": 330,
+        "time": "02:10",
+        "day_offset": 1,
+        "fare_from_origin_mnt": {
+          "hard_seat": 18000,
+          "platzkart": 26000,
+          "kupe": 38000
+        }
+      },
+      {
+        "place_id": "place_erdenet",
+        "arrive_offset_min": 660,
+        "time": "07:40",
+        "day_offset": 1,
+        "fare_from_origin_mnt": {
+          "hard_seat": 26000,
+          "platzkart": 38000,
+          "kupe": 56000
+        }
+      }
+    ],
+    "seat_classes": [
+      {
+        "class": "hard_seat",
+        "seats": 180
+      },
+      {
+        "class": "platzkart",
+        "seats": 216
+      },
+      {
+        "class": "kupe",
+        "seats": 72
+      }
+    ],
+    "booking_channel": {
+      "mn": "eticket.ubtz.mn маягийн цахим тасалбар (mock) эсвэл вокзалын касс",
+      "en": "eticket.ubtz.mn style (mock) or station ticket office"
+    },
+    "is_mock": true,
+    "region": "north"
+  },
+  {
+    "_id": "sched_train_ub_zamyn_uud",
+    "mode": "train",
+    "operator": "Ulaanbaatar Railway (mock)",
+    "name": {
+      "mn": "УБ – Замын-Үүд, шөнийн галт тэрэг (Чойр, Сайншандаар)",
+      "en": "UB to Zamyn-Üüd overnight (via Choir, Sainshand)"
+    },
+    "route_id": null,
+    "from_place_id": "place_ub",
+    "to_place_id": "place_zamyn_uud",
+    "departure_point": {
+      "mn": "Улаанбаатар төмөр замын вокзал",
+      "en": "Ulaanbaatar railway station"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "17:20"
+    ],
+    "duration_min": 840,
+    "price_mnt": 36000,
+    "seats": 468,
+    "vehicle_id": null,
+    "stops": [
+      {
+        "place_id": "place_ub",
+        "arrive_offset_min": 0,
+        "time": "17:20",
+        "day_offset": 0,
+        "fare_from_origin_mnt": {}
+      },
+      {
+        "place_id": "place_choir",
+        "arrive_offset_min": 300,
+        "time": "22:20",
+        "day_offset": 0,
+        "fare_from_origin_mnt": {
+          "hard_seat": 16000,
+          "platzkart": 24000,
+          "kupe": 35000
+        }
+      },
+      {
+        "place_id": "place_sainshand",
+        "arrive_offset_min": 600,
+        "time": "03:20",
+        "day_offset": 1,
+        "fare_from_origin_mnt": {
+          "hard_seat": 27000,
+          "platzkart": 39000,
+          "kupe": 58000
+        }
+      },
+      {
+        "place_id": "place_zamyn_uud",
+        "arrive_offset_min": 840,
+        "time": "07:20",
+        "day_offset": 1,
+        "fare_from_origin_mnt": {
+          "hard_seat": 36000,
+          "platzkart": 52000,
+          "kupe": 76000
+        }
+      }
+    ],
+    "seat_classes": [
+      {
+        "class": "hard_seat",
+        "seats": 180
+      },
+      {
+        "class": "platzkart",
+        "seats": 216
+      },
+      {
+        "class": "kupe",
+        "seats": 72
+      }
+    ],
+    "booking_channel": {
+      "mn": "eticket.ubtz.mn маягийн цахим тасалбар (mock) эсвэл вокзалын касс",
+      "en": "eticket.ubtz.mn style (mock) or station ticket office"
+    },
+    "is_mock": true,
+    "region": "south"
+  }
+]

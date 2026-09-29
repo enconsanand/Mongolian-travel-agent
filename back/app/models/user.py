@@ -1,29 +1,36 @@
-import uuid
+from datetime import UTC, datetime
+from typing import Any, ClassVar
+from uuid import uuid4
 
-from sqlalchemy import Boolean, String, func
-from sqlalchemy.dialects.postgresql import UUID
-from sqlalchemy.orm import Mapped, mapped_column, validates
-
-from app.db.base_class import Base
-from app.models.default import Default
+from pydantic import BaseModel, ConfigDict, Field, field_validator
 
 
-class User(Base, Default):
-    """User model for authentication and user management."""
+def _now() -> datetime:
+    return datetime.now(UTC)
 
-    __tablename__ = "users"
 
-    id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), primary_key=True, index=True, server_default=func.uuid_generate_v4()
-    )
-    email: Mapped[str] = mapped_column(String, index=True, nullable=False, unique=True)
-    hashed_password: Mapped[str] = mapped_column(String, nullable=False)
-    first_name: Mapped[str] = mapped_column(String, nullable=False)
-    last_name: Mapped[str] = mapped_column(String, nullable=False)
-    is_active: Mapped[bool] = mapped_column(Boolean, nullable=False, server_default="True")
+class User(BaseModel):
+    """User document in the ``users`` collection, used for authentication.
 
-    @validates("email")
-    def convert_lower(self, key: str, value: str) -> str:
+    Extra fields (phone, payment_methods, ... from the mock data) are kept as-is.
+    """
+
+    collection: ClassVar[str] = "users"
+
+    model_config = ConfigDict(populate_by_name=True, validate_assignment=True, extra="allow")
+
+    id: str = Field(default_factory=lambda: uuid4().hex, alias="_id")
+    email: str
+    hashed_password: str
+    first_name: str
+    last_name: str
+    is_active: bool = True
+    created_at: datetime = Field(default_factory=_now)
+    updated_at: datetime = Field(default_factory=_now)
+
+    @field_validator("email")
+    @classmethod
+    def convert_lower(cls, value: str) -> str:
         """Normalize email to lowercase and strip whitespace."""
         return value.strip().lower()
 
@@ -31,3 +38,6 @@ class User(Base, Default):
     def full_name(self) -> str:
         """Return the user's full name."""
         return f"{self.first_name} {self.last_name}"
+
+    def to_mongo(self) -> dict[str, Any]:
+        return self.model_dump(by_alias=True)

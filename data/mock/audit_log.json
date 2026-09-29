@@ -1,0 +1,322 @@
+[
+  {
+    "_id": "audit_anand_001_1",
+    "ts": "2026-09-26T08:05:00Z",
+    "actor": "agent",
+    "user_id": "user_anand",
+    "trip_id": "trip_anand_eagle",
+    "action": "payment.quoted",
+    "entity": "payments",
+    "entity_id": "pay_anand_001",
+    "amount_mnt": 3085000,
+    "details": {
+      "provider": "stripe_test",
+      "quote_id": "quote_anand_a"
+    },
+    "is_mock": true
+  },
+  {
+    "_id": "audit_anand_001_2",
+    "ts": "2026-09-26T08:11:00Z",
+    "actor": "user",
+    "user_id": "user_anand",
+    "trip_id": "trip_anand_eagle",
+    "action": "payment.approved_by_user",
+    "entity": "payments",
+    "entity_id": "pay_anand_001",
+    "amount_mnt": 3085000,
+    "details": {
+      "provider": "stripe_test",
+      "quote_id": "quote_anand_a"
+    },
+    "is_mock": true
+  },
+  {
+    "_id": "audit_anand_001_3",
+    "ts": "2026-09-26T08:11:05Z",
+    "actor": "agent",
+    "user_id": "user_anand",
+    "trip_id": "trip_anand_eagle",
+    "action": "payment.paid",
+    "entity": "payments",
+    "entity_id": "pay_anand_001",
+    "amount_mnt": 3085000,
+    "details": {
+      "provider": "stripe_test",
+      "quote_id": "quote_anand_a"
+    },
+    "is_mock": true
+  },
+  {
+    "_id": "audit_tsende_001_1",
+    "ts": "2026-09-28T10:35:00Z",
+    "actor": "agent",
+    "user_id": "user_tsende",
+    "trip_id": "trip_tsende_darkhan",
+    "action": "payment.quoted",
+    "entity": "payments",
+    "entity_id": "pay_tsende_001",
+    "amount_mnt": 114000,
+    "details": {
+      "provider": "stripe_test",
+      "quote_id": "quote_tsende_a"
+    },
+    "is_mock": true
+  },
+  {
+    "_id": "audit_tsende_002_1",
+    "ts": "2026-09-28T10:35:00Z",
+    "actor": "agent",
+    "user_id": "user_tsende",
+    "trip_id": "trip_tsende_darkhan",
+    "action": "payment.quoted",
+    "entity": "payments",
+    "entity_id": "pay_tsende_002",
+    "amount_mnt": 150000,
+    "details": {
+      "provider": "qpay_sandbox",
+      "quote_id": "quote_tsende_a"
+    },
+    "is_mock": true
+  },
+  {
+    "_id": "audit_tsende_003_1",
+    "ts": "2026-09-28T10:35:00Z",
+    "actor": "agent",
+    "user_id": "user_tsende",
+    "trip_id": "trip_tsende_darkhan",
+    "action": "payment.quoted",
+    "entity": "payments",
+    "entity_id": "pay_tsende_003",
+    "amount_mnt": 75000,
+    "details": {
+      "provider": "stripe_test",
+      "quote_id": "quote_tsende_a"
+    },
+    "is_mock": true
+  },
+  {
+    "_id": "audit_tsende_001_2",
+    "ts": "2026-09-28T10:40:00Z",
+    "actor": "user",
+    "user_id": "user_tsende",
+    "trip_id": "trip_tsende_darkhan",
+    "action": "payment.approved_by_user",
+    "entity": "payments",
+    "entity_id": "pay_tsende_001",
+    "amount_mnt": 114000,
+    "details": {
+      "provider": "stripe_test",
+      "quote_id": "quote_tsende_a"
+    },
+    "is_mock": true
+  },
+  {
+    "_id": "audit_tsende_002_2",
+    "ts": "2026-09-28T10:40:00Z",
+    "actor": "user",
+    "user_id": "user_tsende",
+    "trip_id": "trip_tsende_darkhan",
+    "action": "payment.approved_by_user",
+    "entity": "payments",
+    "entity_id": "pay_tsende_002",
+    "amount_mnt": 150000,
+    "details": {
+      "provider": "qpay_sandbox",
+      "quote_id": "quote_tsende_a"
+    },
+    "is_mock": true
+  },
+  {
+    "_id": "audit_tsende_003_2",
+    "ts": "2026-09-28T10:40:00Z",
+    "actor": "user",
+    "user_id": "user_tsende",
+    "trip_id": "trip_tsende_darkhan",
+    "action": "payment.approved_by_user",
+    "entity": "payments",
+    "entity_id": "pay_tsende_003",
+    "amount_mnt": 75000,
+    "details": {
+      "provider": "stripe_test",
+      "quote_id": "quote_tsende_a"
+    },
+    "is_mock": true
+  },
+  {
+    "_id": "audit_tsende_001_3",
+    "ts": "2026-09-28T10:40:04Z",
+    "actor": "agent",
+    "user_id": "user_tsende",
+    "trip_id": "trip_tsende_darkhan",
+    "action": "payment.paid",
+    "entity": "payments",
+    "entity_id": "pay_tsende_001",
+    "amount_mnt": 114000,
+    "details": {
+      "provider": "stripe_test",
+      "quote_id": "quote_tsende_a"
+    },
+    "is_mock": true
+  },
+  {
+    "_id": "audit_tsende_003_3",
+    "ts": "2026-09-28T10:40:06Z",
+    "actor": "agent",
+    "user_id": "user_tsende",
+    "trip_id": "trip_tsende_darkhan",
+    "action": "payment.paid",
+    "entity": "payments",
+    "entity_id": "pay_tsende_003",
+    "amount_mnt": 75000,
+    "details": {
+      "provider": "stripe_test",
+      "quote_id": "quote_tsende_a"
+    },
+    "is_mock": true
+  },
+  {
+    "_id": "audit_tsende_002_3",
+    "ts": "2026-09-28T10:42:30Z",
+    "actor": "user",
+    "user_id": "user_tsende",
+    "trip_id": "trip_tsende_darkhan",
+    "action": "payment.paid",
+    "entity": "payments",
+    "entity_id": "pay_tsende_002",
+    "amount_mnt": 150000,
+    "details": {
+      "provider": "qpay_sandbox",
+      "quote_id": "quote_tsende_a"
+    },
+    "is_mock": true
+  },
+  {
+    "_id": "audit_jamba_001_1",
+    "ts": "2026-09-29T09:05:00Z",
+    "actor": "agent",
+    "user_id": "user_jamba",
+    "trip_id": "trip_jamba_east",
+    "action": "payment.quoted",
+    "entity": "payments",
+    "entity_id": "pay_jamba_001",
+    "amount_mnt": 1960000,
+    "details": {
+      "provider": "stripe_test",
+      "quote_id": "quote_jamba_a"
+    },
+    "is_mock": true
+  },
+  {
+    "_id": "audit_jamba_002_1",
+    "ts": "2026-09-29T09:05:00Z",
+    "actor": "agent",
+    "user_id": "user_jamba",
+    "trip_id": "trip_jamba_east",
+    "action": "payment.quoted",
+    "entity": "payments",
+    "entity_id": "pay_jamba_002",
+    "amount_mnt": 1690000,
+    "details": {
+      "provider": "stripe_test",
+      "quote_id": "quote_jamba_b"
+    },
+    "is_mock": true
+  },
+  {
+    "_id": "audit_jamba_001_2",
+    "ts": "2026-09-29T09:12:00Z",
+    "actor": "user",
+    "user_id": "user_jamba",
+    "trip_id": "trip_jamba_east",
+    "action": "payment.approved_by_user",
+    "entity": "payments",
+    "entity_id": "pay_jamba_001",
+    "amount_mnt": 1960000,
+    "details": {
+      "provider": "stripe_test",
+      "quote_id": "quote_jamba_a"
+    },
+    "is_mock": true
+  },
+  {
+    "_id": "audit_tsende_003_4",
+    "ts": "2026-10-04T18:20:00Z",
+    "actor": "owner",
+    "user_id": "user_tsende",
+    "trip_id": "trip_tsende_darkhan",
+    "action": "payment.cancelled",
+    "entity": "payments",
+    "entity_id": "pay_tsende_003",
+    "amount_mnt": 75000,
+    "details": {
+      "provider": "stripe_test",
+      "quote_id": "quote_tsende_a"
+    },
+    "is_mock": true
+  },
+  {
+    "_id": "audit_tsende_003_5",
+    "ts": "2026-10-04T18:21:00Z",
+    "actor": "agent",
+    "user_id": "user_tsende",
+    "trip_id": "trip_tsende_darkhan",
+    "action": "payment.refunded",
+    "entity": "payments",
+    "entity_id": "pay_tsende_003",
+    "amount_mnt": 75000,
+    "details": {
+      "provider": "stripe_test",
+      "quote_id": "quote_tsende_a"
+    },
+    "is_mock": true
+  },
+  {
+    "_id": "audit_tsende_004_1",
+    "ts": "2026-10-04T18:22:00Z",
+    "actor": "agent",
+    "user_id": "user_tsende",
+    "trip_id": "trip_tsende_darkhan",
+    "action": "payment.quoted",
+    "entity": "payments",
+    "entity_id": "pay_tsende_004",
+    "amount_mnt": 51000,
+    "details": {
+      "provider": "stripe_test",
+      "quote_id": null
+    },
+    "is_mock": true
+  },
+  {
+    "_id": "audit_tsende_004_2",
+    "ts": "2026-10-04T18:25:00Z",
+    "actor": "user",
+    "user_id": "user_tsende",
+    "trip_id": "trip_tsende_darkhan",
+    "action": "payment.approved_by_user",
+    "entity": "payments",
+    "entity_id": "pay_tsende_004",
+    "amount_mnt": 51000,
+    "details": {
+      "provider": "stripe_test",
+      "quote_id": null
+    },
+    "is_mock": true
+  },
+  {
+    "_id": "audit_tsende_004_3",
+    "ts": "2026-10-04T18:25:03Z",
+    "actor": "agent",
+    "user_id": "user_tsende",
+    "trip_id": "trip_tsende_darkhan",
+    "action": "payment.paid",
+    "entity": "payments",
+    "entity_id": "pay_tsende_004",
+    "amount_mnt": 51000,
+    "details": {
+      "provider": "stripe_test",
+      "quote_id": null
+    },
+    "is_mock": true
+  }
+]

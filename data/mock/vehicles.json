@@ -1,0 +1,1014 @@
+[
+  {
+    "_id": "veh_bus_01",
+    "type": "bus",
+    "model": "Hyundai Universe",
+    "seats": 45,
+    "offroad_capable": false,
+    "rental": null,
+    "driver_id": null,
+    "operator": "Tsetsens Transport",
+    "base_place_id": "place_ub",
+    "plate": "1000 УБА",
+    "features": [
+      "ac",
+      "luggage_hold"
+    ],
+    "current_location": {
+      "type": "Point",
+      "coordinates": [
+        106.91643,
+        47.92433
+      ]
+    },
+    "status": "scheduled",
+    "is_mock": true,
+    "region": "hub",
+    "fuel_type": "diesel",
+    "fuel_l_per_100km": 28
+  },
+  {
+    "_id": "veh_bus_02",
+    "type": "bus",
+    "model": "Hyundai Universe",
+    "seats": 45,
+    "offroad_capable": false,
+    "rental": null,
+    "driver_id": null,
+    "operator": "Tsetsens Transport",
+    "base_place_id": "place_ub",
+    "plate": "1037 УББ",
+    "features": [
+      "ac",
+      "luggage_hold"
+    ],
+    "current_location": {
+      "type": "Point",
+      "coordinates": [
+        106.91001,
+        47.92828
+      ]
+    },
+    "status": "scheduled",
+    "is_mock": true,
+    "region": "hub",
+    "fuel_type": "diesel",
+    "fuel_l_per_100km": 28
+  },
+  {
+    "_id": "veh_bus_03",
+    "type": "bus",
+    "model": "Yutong ZK6122",
+    "seats": 49,
+    "offroad_capable": false,
+    "rental": null,
+    "driver_id": null,
+    "operator": "Govi Express",
+    "base_place_id": "place_ub",
+    "plate": "1074 УБВ",
+    "features": [
+      "ac",
+      "luggage_hold",
+      "usb_charging"
+    ],
+    "current_location": {
+      "type": "Point",
+      "coordinates": [
+        106.9115,
+        47.92659
+      ]
+    },
+    "status": "scheduled",
+    "is_mock": true,
+    "region": "hub",
+    "fuel_type": "diesel",
+    "fuel_l_per_100km": 28
+  },
+  {
+    "_id": "veh_bus_04",
+    "type": "bus",
+    "model": "Hyundai County",
+    "seats": 25,
+    "offroad_capable": false,
+    "rental": null,
+    "driver_id": null,
+    "operator": "Khangai Line",
+    "base_place_id": "place_ub",
+    "plate": "1111 УБГ",
+    "features": [
+      "luggage_hold"
+    ],
+    "current_location": {
+      "type": "Point",
+      "coordinates": [
+        106.91642,
+        47.90949
+      ]
+    },
+    "status": "scheduled",
+    "is_mock": true,
+    "region": "hub",
+    "fuel_type": "diesel",
+    "fuel_l_per_100km": 18
+  },
+  {
+    "_id": "veh_van_01",
+    "type": "minivan",
+    "model": "UAZ-452 'Furgon'",
+    "seats": 8,
+    "offroad_capable": true,
+    "rental": {
+      "price_per_day_mnt": 250000,
+      "price_per_km_mnt": 1500,
+      "includes_driver": true,
+      "fuel_included": false,
+      "mode": "with_driver"
+    },
+    "driver_id": "driver_01",
+    "operator": null,
+    "base_place_id": "place_ub",
+    "plate": "1148 УБД",
+    "features": [
+      "roof_rack",
+      "offroad"
+    ],
+    "current_location": {
+      "type": "Point",
+      "coordinates": [
+        106.92383,
+        47.919
+      ]
+    },
+    "status": "available",
+    "is_mock": true,
+    "region": "hub",
+    "fuel_type": "ai92",
+    "fuel_l_per_100km": 16
+  },
+  {
+    "_id": "veh_van_02",
+    "type": "minivan",
+    "model": "UAZ-452 'Furgon'",
+    "seats": 8,
+    "offroad_capable": true,
+    "rental": {
+      "price_per_day_mnt": 230000,
+      "price_per_km_mnt": 1400,
+      "includes_driver": true,
+      "fuel_included": false,
+      "mode": "with_driver"
+    },
+    "driver_id": "driver_03",
+    "operator": null,
+    "base_place_id": "place_dalanzadgad",
+    "plate": "1185 УБЕ",
+    "features": [
+      "roof_rack",
+      "offroad"
+    ],
+    "current_location": {
+      "type": "Point",
+      "coordinates": [
+        104.4164,
+        43.56808
+      ]
+    },
+    "status": "available",
+    "is_mock": true,
+    "region": "south",
+    "fuel_type": "ai92",
+    "fuel_l_per_100km": 16
+  },
+  {
+    "_id": "veh_van_03",
+    "type": "minivan",
+    "model": "Toyota Hiace",
+    "seats": 12,
+    "offroad_capable": false,
+    "rental": {
+      "price_per_day_mnt": 300000,
+      "price_per_km_mnt": 1600,
+      "includes_driver": true,
+      "fuel_included": false,
+      "mode": "with_driver"
+    },
+    "driver_id": "driver_10",
+    "operator": null,
+    "base_place_id": "place_ub",
+    "plate": "1222 УБЖ",
+    "features": [
+      "ac"
+    ],
+    "current_location": {
+      "type": "Point",
+      "coordinates": [
+        106.92097,
+        47.92106
+      ]
+    },
+    "status": "available",
+    "is_mock": true,
+    "region": "hub",
+    "fuel_type": "diesel",
+    "fuel_l_per_100km": 11
+  },
+  {
+    "_id": "veh_van_04",
+    "type": "minivan",
+    "model": "Mitsubishi Delica",
+    "seats": 7,
+    "offroad_capable": true,
+    "rental": {
+      "price_per_day_mnt": 260000,
+      "price_per_km_mnt": 1500,
+      "includes_driver": true,
+      "fuel_included": false,
+      "mode": "with_driver"
+    },
+    "driver_id": "driver_04",
+    "operator": null,
+    "base_place_id": "place_murun",
+    "plate": "1259 УБА",
+    "features": [
+      "4x4"
+    ],
+    "current_location": {
+      "type": "Point",
+      "coordinates": [
+        100.15851,
+        49.6386
+      ]
+    },
+    "status": "available",
+    "is_mock": true,
+    "region": "north",
+    "fuel_type": "diesel",
+    "fuel_l_per_100km": 11
+  },
+  {
+    "_id": "veh_suv_01",
+    "type": "suv",
+    "model": "Toyota Land Cruiser 70",
+    "seats": 5,
+    "offroad_capable": true,
+    "rental": {
+      "price_per_day_mnt": 380000,
+      "price_per_km_mnt": 2000,
+      "includes_driver": true,
+      "fuel_included": false,
+      "mode": "with_driver"
+    },
+    "driver_id": "driver_02",
+    "operator": null,
+    "base_place_id": "place_ub",
+    "plate": "1296 УББ",
+    "features": [
+      "4x4",
+      "ac",
+      "fridge",
+      "sat_phone"
+    ],
+    "current_location": {
+      "type": "Point",
+      "coordinates": [
+        106.91422,
+        47.92194
+      ]
+    },
+    "status": "available",
+    "is_mock": true,
+    "region": "hub",
+    "fuel_type": "diesel",
+    "fuel_l_per_100km": 13
+  },
+  {
+    "_id": "veh_suv_02",
+    "type": "suv",
+    "model": "Toyota Land Cruiser 200",
+    "seats": 5,
+    "offroad_capable": true,
+    "rental": {
+      "price_per_day_mnt": 450000,
+      "price_per_km_mnt": 2300,
+      "includes_driver": true,
+      "fuel_included": false,
+      "mode": "with_driver"
+    },
+    "driver_id": "driver_06",
+    "operator": null,
+    "base_place_id": "place_ub",
+    "plate": "1333 УБВ",
+    "features": [
+      "4x4",
+      "ac",
+      "wifi_hotspot"
+    ],
+    "current_location": {
+      "type": "Point",
+      "coordinates": [
+        106.91154,
+        47.91969
+      ]
+    },
+    "status": "on_trip",
+    "is_mock": true,
+    "region": "hub",
+    "fuel_type": "diesel",
+    "fuel_l_per_100km": 12
+  },
+  {
+    "_id": "veh_suv_03",
+    "type": "suv",
+    "model": "Toyota Land Cruiser 105",
+    "seats": 5,
+    "offroad_capable": true,
+    "rental": {
+      "price_per_day_mnt": 350000,
+      "price_per_km_mnt": 1900,
+      "includes_driver": true,
+      "fuel_included": false,
+      "mode": "with_driver"
+    },
+    "driver_id": "driver_09",
+    "operator": null,
+    "base_place_id": "place_dalanzadgad",
+    "plate": "1370 УБГ",
+    "features": [
+      "4x4",
+      "ac"
+    ],
+    "current_location": {
+      "type": "Point",
+      "coordinates": [
+        104.43306,
+        43.57435
+      ]
+    },
+    "status": "available",
+    "is_mock": true,
+    "region": "south",
+    "fuel_type": "diesel",
+    "fuel_l_per_100km": 13
+  },
+  {
+    "_id": "veh_suv_04",
+    "type": "suv",
+    "model": "Nissan Patrol",
+    "seats": 5,
+    "offroad_capable": true,
+    "rental": {
+      "price_per_day_mnt": 340000,
+      "price_per_km_mnt": 1800,
+      "includes_driver": true,
+      "fuel_included": false,
+      "mode": "with_driver"
+    },
+    "driver_id": "driver_11",
+    "operator": null,
+    "base_place_id": "place_bulgan",
+    "plate": "1407 УБД",
+    "features": [
+      "4x4"
+    ],
+    "current_location": {
+      "type": "Point",
+      "coordinates": [
+        103.54137,
+        48.81062
+      ]
+    },
+    "status": "available",
+    "is_mock": true,
+    "region": "north",
+    "fuel_type": "ai92",
+    "fuel_l_per_100km": 15
+  },
+  {
+    "_id": "veh_suv_05",
+    "type": "suv",
+    "model": "Toyota Land Cruiser Prado",
+    "seats": 5,
+    "offroad_capable": true,
+    "rental": {
+      "price_per_day_mnt": 320000,
+      "price_per_km_mnt": 1800,
+      "includes_driver": true,
+      "fuel_included": false,
+      "mode": "with_driver"
+    },
+    "driver_id": "driver_08",
+    "operator": null,
+    "base_place_id": "place_khatgal",
+    "plate": "1444 УБЕ",
+    "features": [
+      "4x4",
+      "ac"
+    ],
+    "current_location": {
+      "type": "Point",
+      "coordinates": [
+        100.1586,
+        50.43824
+      ]
+    },
+    "status": "available",
+    "is_mock": true,
+    "region": "north",
+    "fuel_type": "diesel",
+    "fuel_l_per_100km": 10
+  },
+  {
+    "_id": "veh_sedan_01",
+    "type": "sedan",
+    "model": "Toyota Prius 30",
+    "seats": 4,
+    "offroad_capable": false,
+    "rental": {
+      "price_per_day_mnt": 120000,
+      "price_per_km_mnt": 800,
+      "includes_driver": true,
+      "fuel_included": false,
+      "mode": "with_driver"
+    },
+    "driver_id": "driver_05",
+    "operator": null,
+    "base_place_id": "place_darkhan",
+    "plate": "1481 УБЖ",
+    "features": [
+      "ac"
+    ],
+    "current_location": {
+      "type": "Point",
+      "coordinates": [
+        105.92164,
+        49.486
+      ]
+    },
+    "status": "available",
+    "is_mock": true,
+    "region": "north",
+    "fuel_type": "ai92",
+    "fuel_l_per_100km": 4.5
+  },
+  {
+    "_id": "veh_sedan_02",
+    "type": "sedan",
+    "model": "Toyota Prius 41",
+    "seats": 4,
+    "offroad_capable": false,
+    "rental": {
+      "price_per_day_mnt": 130000,
+      "price_per_km_mnt": 800,
+      "includes_driver": true,
+      "fuel_included": false,
+      "mode": "with_driver"
+    },
+    "driver_id": "driver_07",
+    "operator": null,
+    "base_place_id": "place_ub",
+    "plate": "1518 УБА",
+    "features": [
+      "ac"
+    ],
+    "current_location": {
+      "type": "Point",
+      "coordinates": [
+        106.92357,
+        47.91882
+      ]
+    },
+    "status": "available",
+    "is_mock": true,
+    "region": "hub",
+    "fuel_type": "ai92",
+    "fuel_l_per_100km": 4.5
+  },
+  {
+    "_id": "veh_van_05",
+    "type": "minivan",
+    "model": "Hyundai Starex",
+    "seats": 9,
+    "offroad_capable": false,
+    "rental": {
+      "price_per_day_mnt": 220000,
+      "price_per_km_mnt": 1300,
+      "includes_driver": true,
+      "fuel_included": false,
+      "mode": "with_driver"
+    },
+    "driver_id": "driver_12",
+    "operator": null,
+    "base_place_id": "place_mandalgovi",
+    "plate": "1555 УББ",
+    "features": [
+      "ac"
+    ],
+    "current_location": {
+      "type": "Point",
+      "coordinates": [
+        106.26648,
+        45.76568
+      ]
+    },
+    "status": "available",
+    "is_mock": true,
+    "region": "south",
+    "fuel_type": "diesel",
+    "fuel_l_per_100km": 10
+  },
+  {
+    "_id": "veh_suv_06",
+    "type": "suv",
+    "model": "Toyota Land Cruiser 76",
+    "seats": 5,
+    "offroad_capable": true,
+    "rental": {
+      "price_per_day_mnt": 400000,
+      "price_per_km_mnt": 2100,
+      "includes_driver": true,
+      "fuel_included": false,
+      "mode": "with_driver"
+    },
+    "driver_id": "driver_13",
+    "operator": null,
+    "base_place_id": "place_olgii",
+    "plate": "1592 УБВ",
+    "features": [
+      "4x4",
+      "roof_rack",
+      "sat_phone"
+    ],
+    "current_location": {
+      "type": "Point",
+      "coordinates": [
+        89.96922,
+        48.96297
+      ]
+    },
+    "status": "available",
+    "is_mock": true,
+    "region": "west",
+    "fuel_type": "diesel",
+    "fuel_l_per_100km": 13
+  },
+  {
+    "_id": "veh_van_06",
+    "type": "minivan",
+    "model": "UAZ-452 'Furgon'",
+    "seats": 8,
+    "offroad_capable": true,
+    "rental": {
+      "price_per_day_mnt": 260000,
+      "price_per_km_mnt": 1500,
+      "includes_driver": true,
+      "fuel_included": false,
+      "mode": "with_driver"
+    },
+    "driver_id": "driver_14",
+    "operator": null,
+    "base_place_id": "place_khovd",
+    "plate": "1629 УБГ",
+    "features": [
+      "roof_rack",
+      "offroad"
+    ],
+    "current_location": {
+      "type": "Point",
+      "coordinates": [
+        91.63258,
+        48.00655
+      ]
+    },
+    "status": "available",
+    "is_mock": true,
+    "region": "west",
+    "fuel_type": "ai92",
+    "fuel_l_per_100km": 16
+  },
+  {
+    "_id": "veh_suv_07",
+    "type": "suv",
+    "model": "Toyota Land Cruiser 200",
+    "seats": 5,
+    "offroad_capable": true,
+    "rental": {
+      "price_per_day_mnt": 420000,
+      "price_per_km_mnt": 2200,
+      "includes_driver": true,
+      "fuel_included": false,
+      "mode": "with_driver"
+    },
+    "driver_id": "driver_15",
+    "operator": null,
+    "base_place_id": "place_ub",
+    "plate": "1666 УБД",
+    "features": [
+      "4x4",
+      "ac"
+    ],
+    "current_location": {
+      "type": "Point",
+      "coordinates": [
+        106.91117,
+        47.92154
+      ]
+    },
+    "status": "available",
+    "is_mock": true,
+    "region": "hub",
+    "fuel_type": "diesel",
+    "fuel_l_per_100km": 12
+  },
+  {
+    "_id": "veh_van_07",
+    "type": "minivan",
+    "model": "Toyota Hiace 4WD",
+    "seats": 10,
+    "offroad_capable": true,
+    "rental": {
+      "price_per_day_mnt": 280000,
+      "price_per_km_mnt": 1600,
+      "includes_driver": true,
+      "fuel_included": false,
+      "mode": "with_driver"
+    },
+    "driver_id": "driver_16",
+    "operator": null,
+    "base_place_id": "place_choibalsan",
+    "plate": "1703 УБЕ",
+    "features": [
+      "4x4",
+      "ac"
+    ],
+    "current_location": {
+      "type": "Point",
+      "coordinates": [
+        114.53142,
+        48.07356
+      ]
+    },
+    "status": "available",
+    "is_mock": true,
+    "region": "east",
+    "fuel_type": "diesel",
+    "fuel_l_per_100km": 12
+  },
+  {
+    "_id": "veh_bus_05",
+    "type": "bus",
+    "model": "Yutong ZK6122",
+    "seats": 49,
+    "offroad_capable": false,
+    "rental": null,
+    "driver_id": null,
+    "operator": "Baruun Zam Transport",
+    "base_place_id": "place_ub",
+    "plate": "1740 УБЖ",
+    "features": [
+      "ac",
+      "luggage_hold"
+    ],
+    "current_location": {
+      "type": "Point",
+      "coordinates": [
+        106.92506,
+        47.90956
+      ]
+    },
+    "status": "scheduled",
+    "is_mock": true,
+    "region": "hub",
+    "fuel_type": "diesel",
+    "fuel_l_per_100km": 28
+  },
+  {
+    "_id": "veh_bus_06",
+    "type": "bus",
+    "model": "Hyundai Universe",
+    "seats": 45,
+    "offroad_capable": false,
+    "rental": null,
+    "driver_id": null,
+    "operator": "Zuun Zam Transport",
+    "base_place_id": "place_ub",
+    "plate": "1777 УБА",
+    "features": [
+      "ac",
+      "luggage_hold"
+    ],
+    "current_location": {
+      "type": "Point",
+      "coordinates": [
+        106.91738,
+        47.92142
+      ]
+    },
+    "status": "scheduled",
+    "is_mock": true,
+    "region": "hub",
+    "fuel_type": "diesel",
+    "fuel_l_per_100km": 28
+  },
+  {
+    "_id": "veh_rent_01",
+    "type": "sedan",
+    "model": "Toyota Prius 41",
+    "seats": 4,
+    "offroad_capable": false,
+    "rental": {
+      "mode": "self_drive",
+      "includes_driver": false,
+      "price_per_day_mnt": 90000,
+      "km_included_per_day": 250,
+      "price_per_extra_km_mnt": 300,
+      "deposit_mnt": 500000,
+      "insurance_per_day_mnt": 15000,
+      "fuel_included": false,
+      "fuel_policy": "full_to_full",
+      "min_driver_age": 21,
+      "license_required": "B",
+      "international_license_ok": true,
+      "pickup_place_id": "place_ub",
+      "one_way_drop_fee_mnt": 250000
+    },
+    "driver_id": null,
+    "operator": "Steppe Rent (mock)",
+    "base_place_id": "place_ub",
+    "plate": "1814 УББ",
+    "features": [
+      "ac",
+      "hybrid"
+    ],
+    "current_location": {
+      "type": "Point",
+      "coordinates": [
+        106.90811,
+        47.92217
+      ]
+    },
+    "status": "available",
+    "is_mock": true,
+    "region": "hub",
+    "fuel_type": "ai92",
+    "fuel_l_per_100km": 4.5
+  },
+  {
+    "_id": "veh_rent_02",
+    "type": "suv",
+    "model": "Hyundai Tucson",
+    "seats": 5,
+    "offroad_capable": false,
+    "rental": {
+      "mode": "self_drive",
+      "includes_driver": false,
+      "price_per_day_mnt": 150000,
+      "km_included_per_day": 300,
+      "price_per_extra_km_mnt": 400,
+      "deposit_mnt": 800000,
+      "insurance_per_day_mnt": 20000,
+      "fuel_included": false,
+      "fuel_policy": "full_to_full",
+      "min_driver_age": 21,
+      "license_required": "B",
+      "international_license_ok": true,
+      "pickup_place_id": "place_ub",
+      "one_way_drop_fee_mnt": 250000
+    },
+    "driver_id": null,
+    "operator": "Steppe Rent (mock)",
+    "base_place_id": "place_ub",
+    "plate": "1851 УБВ",
+    "features": [
+      "ac",
+      "awd"
+    ],
+    "current_location": {
+      "type": "Point",
+      "coordinates": [
+        106.91207,
+        47.92151
+      ]
+    },
+    "status": "available",
+    "is_mock": true,
+    "region": "hub",
+    "fuel_type": "ai92",
+    "fuel_l_per_100km": 8.5
+  },
+  {
+    "_id": "veh_rent_03",
+    "type": "suv",
+    "model": "Toyota Land Cruiser Prado",
+    "seats": 5,
+    "offroad_capable": true,
+    "rental": {
+      "mode": "self_drive",
+      "includes_driver": false,
+      "price_per_day_mnt": 280000,
+      "km_included_per_day": 350,
+      "price_per_extra_km_mnt": 600,
+      "deposit_mnt": 1500000,
+      "insurance_per_day_mnt": 30000,
+      "fuel_included": false,
+      "fuel_policy": "full_to_full",
+      "min_driver_age": 21,
+      "license_required": "B",
+      "international_license_ok": true,
+      "pickup_place_id": "place_ub",
+      "one_way_drop_fee_mnt": 250000
+    },
+    "driver_id": null,
+    "operator": "Nomad Wheels (mock)",
+    "base_place_id": "place_ub",
+    "plate": "1888 УБГ",
+    "features": [
+      "4x4",
+      "ac",
+      "roof_rack"
+    ],
+    "current_location": {
+      "type": "Point",
+      "coordinates": [
+        106.92559,
+        47.92625
+      ]
+    },
+    "status": "available",
+    "is_mock": true,
+    "region": "hub",
+    "fuel_type": "diesel",
+    "fuel_l_per_100km": 10
+  },
+  {
+    "_id": "veh_rent_04",
+    "type": "sedan",
+    "model": "Toyota Prius 30",
+    "seats": 4,
+    "offroad_capable": false,
+    "rental": {
+      "mode": "self_drive",
+      "includes_driver": false,
+      "price_per_day_mnt": 80000,
+      "km_included_per_day": 250,
+      "price_per_extra_km_mnt": 300,
+      "deposit_mnt": 400000,
+      "insurance_per_day_mnt": 15000,
+      "fuel_included": false,
+      "fuel_policy": "full_to_full",
+      "min_driver_age": 21,
+      "license_required": "B",
+      "international_license_ok": true,
+      "pickup_place_id": "place_darkhan",
+      "one_way_drop_fee_mnt": 250000
+    },
+    "driver_id": null,
+    "operator": "Darkhan Car Rent (mock)",
+    "base_place_id": "place_darkhan",
+    "plate": "1925 УБД",
+    "features": [
+      "ac",
+      "hybrid"
+    ],
+    "current_location": {
+      "type": "Point",
+      "coordinates": [
+        105.92602,
+        49.47945
+      ]
+    },
+    "status": "available",
+    "is_mock": true,
+    "region": "north",
+    "fuel_type": "ai92",
+    "fuel_l_per_100km": 4.5
+  },
+  {
+    "_id": "veh_rent_05",
+    "type": "suv",
+    "model": "Toyota Land Cruiser Prado",
+    "seats": 5,
+    "offroad_capable": true,
+    "rental": {
+      "mode": "self_drive",
+      "includes_driver": false,
+      "price_per_day_mnt": 300000,
+      "km_included_per_day": 300,
+      "price_per_extra_km_mnt": 600,
+      "deposit_mnt": 1500000,
+      "insurance_per_day_mnt": 30000,
+      "fuel_included": false,
+      "fuel_policy": "full_to_full",
+      "min_driver_age": 21,
+      "license_required": "B",
+      "international_license_ok": true,
+      "pickup_place_id": "place_dalanzadgad",
+      "one_way_drop_fee_mnt": 250000
+    },
+    "driver_id": null,
+    "operator": "Gobi Rent (mock)",
+    "base_place_id": "place_dalanzadgad",
+    "plate": "1962 УБЕ",
+    "features": [
+      "4x4",
+      "ac",
+      "sand_ladders"
+    ],
+    "current_location": {
+      "type": "Point",
+      "coordinates": [
+        104.42046,
+        43.56452
+      ]
+    },
+    "status": "available",
+    "is_mock": true,
+    "region": "south",
+    "fuel_type": "diesel",
+    "fuel_l_per_100km": 10
+  },
+  {
+    "_id": "veh_rent_06",
+    "type": "minivan",
+    "model": "Mitsubishi Delica",
+    "seats": 7,
+    "offroad_capable": true,
+    "rental": {
+      "mode": "self_drive",
+      "includes_driver": false,
+      "price_per_day_mnt": 220000,
+      "km_included_per_day": 300,
+      "price_per_extra_km_mnt": 500,
+      "deposit_mnt": 1000000,
+      "insurance_per_day_mnt": 25000,
+      "fuel_included": false,
+      "fuel_policy": "full_to_full",
+      "min_driver_age": 21,
+      "license_required": "B",
+      "international_license_ok": true,
+      "pickup_place_id": "place_khovd",
+      "one_way_drop_fee_mnt": 250000
+    },
+    "driver_id": null,
+    "operator": "Altai Rent (mock)",
+    "base_place_id": "place_khovd",
+    "plate": "1999 УБЖ",
+    "features": [
+      "4x4"
+    ],
+    "current_location": {
+      "type": "Point",
+      "coordinates": [
+        91.64926,
+        48.00626
+      ]
+    },
+    "status": "available",
+    "is_mock": true,
+    "region": "west",
+    "fuel_type": "diesel",
+    "fuel_l_per_100km": 11
+  },
+  {
+    "_id": "veh_rent_07",
+    "type": "suv",
+    "model": "Toyota RAV4",
+    "seats": 5,
+    "offroad_capable": false,
+    "rental": {
+      "mode": "self_drive",
+      "includes_driver": false,
+      "price_per_day_mnt": 160000,
+      "km_included_per_day": 300,
+      "price_per_extra_km_mnt": 400,
+      "deposit_mnt": 800000,
+      "insurance_per_day_mnt": 20000,
+      "fuel_included": false,
+      "fuel_policy": "full_to_full",
+      "min_driver_age": 21,
+      "license_required": "B",
+      "international_license_ok": true,
+      "pickup_place_id": "place_choibalsan",
+      "one_way_drop_fee_mnt": 250000
+    },
+    "driver_id": null,
+    "operator": "Dornod Rent (mock)",
+    "base_place_id": "place_choibalsan",
+    "plate": "2036 УБА",
+    "features": [
+      "ac",
+      "awd"
+    ],
+    "current_location": {
+      "type": "Point",
+      "coordinates": [
+        114.51654,
+        48.06826
+      ]
+    },
+    "status": "available",
+    "is_mock": true,
+    "region": "east",
+    "fuel_type": "ai92",
+    "fuel_l_per_100km": 7.5
+  }
+]

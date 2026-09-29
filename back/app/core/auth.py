@@ -4,7 +4,7 @@ from uuid import uuid4
 from zoneinfo import ZoneInfo
 
 from jose import jwt
-from sqlalchemy.orm import Session
+from pymongo.database import Database
 
 from app import crud
 from app.core.config import settings
@@ -16,7 +16,7 @@ from app.models.user import User
 _DUMMY_HASH = get_password_hash(token_urlsafe(32))
 
 
-def authenticate_user(db: Session, email: str, password: str) -> User | None:
+def authenticate_user(db: Database, email: str, password: str) -> User | None:
     """
     Authenticate a user by email and password.
 

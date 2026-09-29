@@ -1,0 +1,68 @@
+[
+  {
+    "_id": "policy_flexible",
+    "name": {
+      "mn": "Уян хатан",
+      "en": "Flexible"
+    },
+    "free_cancel_hours_before": 24,
+    "refund_pct_after_deadline": 50,
+    "no_show_refund_pct": 0,
+    "reschedule_allowed": true,
+    "reschedule_fee_mnt": 0,
+    "notes": {
+      "mn": "Буудалд орохоос 24 цагийн өмнө хүртэл үнэгүй цуцална.",
+      "en": "Free cancellation up to 24h before check-in."
+    }
+  },
+  {
+    "_id": "policy_moderate",
+    "name": {
+      "mn": "Дунд зэрэг",
+      "en": "Moderate"
+    },
+    "free_cancel_hours_before": 72,
+    "refund_pct_after_deadline": 30,
+    "no_show_refund_pct": 0,
+    "reschedule_allowed": true,
+    "reschedule_fee_mnt": 20000,
+    "notes": {
+      "mn": "Жуулчны баазын түгээмэл нөхцөл; хоцорч цуцалбал урьдчилгаа буцаагдахгүй.",
+      "en": "Typical ger camp policy; deposit kept if late."
+    }
+  },
+  {
+    "_id": "policy_strict",
+    "name": {
+      "mn": "Хатуу",
+      "en": "Strict"
+    },
+    "free_cancel_hours_before": 168,
+    "refund_pct_after_deadline": 0,
+    "no_show_refund_pct": 0,
+    "reschedule_allowed": true,
+    "reschedule_fee_mnt": 50000,
+    "notes": {
+      "mn": "Оргил улирал (Наадам, Мөсний баяр).",
+      "en": "Peak season (Naadam, Ice Festival)."
+    }
+  },
+  {
+    "_id": "policy_deposit_only",
+    "name": {
+      "mn": "Зөвхөн урьдчилгаа",
+      "en": "Deposit only"
+    },
+    "free_cancel_hours_before": 48,
+    "refund_pct_after_deadline": 70,
+    "no_show_refund_pct": 0,
+    "reschedule_allowed": true,
+    "reschedule_fee_mnt": 0,
+    "deposit_pct": 30,
+    "deposit_refundable": false,
+    "notes": {
+      "mn": "30% буцаагдахгүй урьдчилгааг QPay-ээр, үлдсэнийг ирэхдээ төлнө.",
+      "en": "30% non-refundable deposit via QPay, rest paid on arrival."
+    }
+  }
+]

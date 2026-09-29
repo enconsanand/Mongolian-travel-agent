@@ -1,0 +1,27 @@
+[
+  {
+    "_id": "state_trip_jamba_east",
+    "trip_id": "trip_jamba_east",
+    "user_id": "user_jamba",
+    "step": "awaiting_payment",
+    "slots": {
+      "region": "east",
+      "start_date": "2026-10-09",
+      "days": 4,
+      "party": {
+        "adults": 2,
+        "children": 0
+      },
+      "budget_mnt": 2500000,
+      "transport": "self_drive",
+      "stay_preference": "mixed"
+    },
+    "missing_slots": [],
+    "pending_approval": {
+      "payment_id": "pay_jamba_001",
+      "amount_mnt": 1960000
+    },
+    "updated_at": "2026-09-29T09:12:00Z",
+    "is_mock": true
+  }
+]

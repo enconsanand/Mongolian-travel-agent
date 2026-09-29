@@ -34,3 +34,4 @@ USER root
 FROM base AS prod
 USER appuser
 COPY --chown=appuser:appgroup ./back ./
+COPY --chown=appuser:appgroup ./data/mock /data/mock

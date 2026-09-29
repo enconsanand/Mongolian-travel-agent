@@ -2,6 +2,7 @@ import json
 from enum import Enum
 from functools import lru_cache
 from typing import Annotated
+from pathlib import Path
 
 from pydantic import AnyHttpUrl, Field, computed_field, field_validator, model_validator
 from pydantic_settings import BaseSettings, NoDecode, SettingsConfigDict
@@ -82,14 +83,18 @@ class Settings(BaseSettings):
         ),
     )
 
-    # --- Database ---
-    DB_HOST: str = Field(..., description="Database host")
-    DB_PORT: int = Field(default=5432, description="Database port")
-    DB_USER: str = Field(..., description="Database username")
-    DB_PASS: str = Field(..., description="Database password")
-    DB_NAME: str = Field(..., description="Database name")
-    DB_SOCKET_DIR: str = Field(default="/cloudsql", description="Unix socket directory for Cloud SQL")
-    DB_INSTANCE_NAME: str = Field(default="", description="Cloud SQL instance connection name")
+    # --- Database (MongoDB) ---
+    MONGO_URI: str = Field(
+        default="mongodb://mongo:27017", description="MongoDB connection string (local container or Atlas SRV URI)"
+    )
+    MONGO_DB_NAME: str = Field(default="travel_mn", description="MongoDB database name")
+    MONGO_INIT_ON_STARTUP: bool = Field(
+        default=True, description="Create missing indexes when the app starts (idempotent)"
+    )
+    MOCK_DATA_DIR: str = Field(
+        default=str(Path(__file__).resolve().parents[3] / "data" / "mock"),
+        description="Folder with the mock-data JSON collections loaded by the seeder",
+    )
 
     @computed_field
     @property
@@ -120,6 +125,9 @@ class Settings(BaseSettings):
         """Rate limiting and token revocation only work across workers with Redis."""
         if self.ENV.is_production and not self.REDIS_URL:
             raise ValueError("REDIS_URL must be set when ENV is 'stg' or 'prod'")
+        # The default points at the local dev container; production must say where its database is
+        if self.ENV.is_production and "MONGO_URI" not in self.model_fields_set:
+            raise ValueError("MONGO_URI must be set when ENV is 'stg' or 'prod'")
         return self
 
 

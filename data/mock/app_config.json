@@ -1,0 +1,14 @@
+[
+  {
+    "_id": "fuel_prices",
+    "currency": "MNT",
+    "price_per_liter_mnt": {
+      "ai92": 2350,
+      "ai95": 2950,
+      "diesel": 2700
+    },
+    "remote_area_markup_pct": 10,
+    "updated_at": "2026-09-28",
+    "is_mock": true
+  }
+]

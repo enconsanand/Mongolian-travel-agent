@@ -1,0 +1,4001 @@
+[
+  {
+    "_id": "stay_ub_hotel_blue_sky",
+    "name": {
+      "mn": "Тал нутаг зочид буудал",
+      "en": "Steppe View Hotel"
+    },
+    "type": "hotel",
+    "place_id": "place_ub",
+    "aimag": "Ulaanbaatar",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        106.9207,
+        47.9196
+      ]
+    },
+    "owner": {
+      "name": "Bat-Erdene",
+      "phone": "+976 9900 1001",
+      "preferred_channel": "messenger",
+      "languages": [
+        "mn",
+        "en"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "double_room",
+        "count": 40,
+        "beds_per_unit": 2,
+        "price_mnt": 280000,
+        "price_basis": "per_unit",
+        "meals_included": false
+      },
+      {
+        "unit_type": "family_room",
+        "count": 10,
+        "beds_per_unit": 4,
+        "price_mnt": 420000,
+        "price_basis": "per_unit",
+        "meals_included": false
+      }
+    ],
+    "total_beds": 120,
+    "amenities": [
+      "wifi",
+      "restaurant",
+      "parking",
+      "airport_transfer"
+    ],
+    "season": {
+      "year_round": true,
+      "open_from": null,
+      "open_to": null
+    },
+    "cancellation_policy_id": "policy_flexible",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash",
+      "card"
+    ],
+    "rating": 4.4,
+    "reviews_count": 24,
+    "is_mock": true,
+    "region": "hub",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Ulaanbaatar_view_from_hotel_%282536896941%29.jpg/1280px-Ulaanbaatar_view_from_hotel_%282536896941%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Ulaanbaatar_view_from_hotel_%282536896941%29.jpg",
+        "title": "Ulaanbaatar view from hotel (2536896941).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Francisco Anzola",
+        "source": "https://commons.wikimedia.org/wiki/File:Ulaanbaatar_view_from_hotel_(2536896941).jpg",
+        "match": "near_stay",
+        "distance_m": 224,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Ulaanbaatar_Hotel_%2811530027606%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Ulaanbaatar_Hotel_%2811530027606%29.jpg",
+        "title": "Ulaanbaatar Hotel (11530027606).jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "Clay Gilliland",
+        "source": "https://commons.wikimedia.org/wiki/File:Ulaanbaatar_Hotel_(11530027606).jpg",
+        "match": "near_stay",
+        "distance_m": 122,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Bayangol_Hotel_%282537706168%29.jpg/1280px-Bayangol_Hotel_%282537706168%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Bayangol_Hotel_%282537706168%29.jpg",
+        "title": "Bayangol Hotel (2537706168).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Francisco Anzola",
+        "source": "https://commons.wikimedia.org/wiki/File:Bayangol_Hotel_(2537706168).jpg",
+        "match": "near_stay",
+        "distance_m": 224,
+        "is_illustrative": true
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Ulaanbaatar_view_from_hotel_%282536896941%29.jpg/1280px-Ulaanbaatar_view_from_hotel_%282536896941%29.jpg"
+  },
+  {
+    "_id": "stay_ub_guesthouse_nomad",
+    "name": {
+      "mn": "Нүүдэлчин гэр буудал",
+      "en": "Nomad Backpackers Guesthouse"
+    },
+    "type": "guesthouse",
+    "place_id": "place_ub",
+    "aimag": "Ulaanbaatar",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        106.9077,
+        47.9146
+      ]
+    },
+    "owner": {
+      "name": "Oyunchimeg",
+      "phone": "+976 9900 1002",
+      "preferred_channel": "phone",
+      "languages": [
+        "mn",
+        "en"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "dorm_bed",
+        "count": 16,
+        "beds_per_unit": 1,
+        "price_mnt": 35000,
+        "price_basis": "per_person",
+        "meals_included": false
+      },
+      {
+        "unit_type": "double_room",
+        "count": 6,
+        "beds_per_unit": 2,
+        "price_mnt": 90000,
+        "price_basis": "per_unit",
+        "meals_included": false
+      }
+    ],
+    "total_beds": 28,
+    "amenities": [
+      "wifi",
+      "kitchen",
+      "tour_desk"
+    ],
+    "season": {
+      "year_round": true,
+      "open_from": null,
+      "open_to": null
+    },
+    "cancellation_policy_id": "policy_flexible",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash"
+    ],
+    "rating": 4.5,
+    "reviews_count": 137,
+    "is_mock": true,
+    "region": "hub",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Ulaanbaatar_Hotel_Room.jpg/1280px-Ulaanbaatar_Hotel_Room.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Ulaanbaatar_Hotel_Room.jpg",
+        "title": "Ulaanbaatar Hotel Room.jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "https://www.flickr.com/photos/sburt/",
+        "source": "https://commons.wikimedia.org/wiki/File:Ulaanbaatar_Hotel_Room.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Chinggis_Khaan_Hotel_-_Deluxe_Double_Room.jpg/1280px-Chinggis_Khaan_Hotel_-_Deluxe_Double_Room.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Chinggis_Khaan_Hotel_-_Deluxe_Double_Room.jpg",
+        "title": "Chinggis Khaan Hotel - Deluxe Double Room.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Fred Cherrygarden",
+        "source": "https://commons.wikimedia.org/wiki/File:Chinggis_Khaan_Hotel_-_Deluxe_Double_Room.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Inside_our_ger_%282397862327%29.jpg/1280px-Inside_our_ger_%282397862327%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Inside_our_ger_%282397862327%29.jpg",
+        "title": "Inside our ger (2397862327).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Honza Soukup from Czech Republic",
+        "source": "https://commons.wikimedia.org/wiki/File:Inside_our_ger_(2397862327).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Ulaanbaatar_Hotel_Room.jpg/1280px-Ulaanbaatar_Hotel_Room.jpg"
+  },
+  {
+    "_id": "stay_darkhan_hotel_selenge",
+    "name": {
+      "mn": "Сэлэнгэ голын зочид буудал",
+      "en": "Selenge River Hotel"
+    },
+    "type": "hotel",
+    "place_id": "place_darkhan",
+    "aimag": "Darkhan-Uul",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        105.9188,
+        49.4887
+      ]
+    },
+    "owner": {
+      "name": "Ganbold",
+      "phone": "+976 9900 1003",
+      "preferred_channel": "phone",
+      "languages": [
+        "mn",
+        "en"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "double_room",
+        "count": 24,
+        "beds_per_unit": 2,
+        "price_mnt": 160000,
+        "price_basis": "per_unit",
+        "meals_included": false
+      },
+      {
+        "unit_type": "suite",
+        "count": 4,
+        "beds_per_unit": 2,
+        "price_mnt": 260000,
+        "price_basis": "per_unit",
+        "meals_included": false
+      }
+    ],
+    "total_beds": 56,
+    "amenities": [
+      "wifi",
+      "restaurant",
+      "parking"
+    ],
+    "season": {
+      "year_round": true,
+      "open_from": null,
+      "open_to": null
+    },
+    "cancellation_policy_id": "policy_flexible",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash",
+      "card"
+    ],
+    "rating": 4.1,
+    "reviews_count": 83,
+    "is_mock": true,
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Ulaanbaatar_hotel.jpg/1280px-Ulaanbaatar_hotel.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Ulaanbaatar_hotel.jpg",
+        "title": "Ulaanbaatar hotel.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Bbadmaa",
+        "source": "https://commons.wikimedia.org/wiki/File:Ulaanbaatar_hotel.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Aurora_Hotel_%28Ulaanbaatar%29.jpg/1280px-Aurora_Hotel_%28Ulaanbaatar%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Aurora_Hotel_%28Ulaanbaatar%29.jpg",
+        "title": "Aurora Hotel (Ulaanbaatar).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Chongkian",
+        "source": "https://commons.wikimedia.org/wiki/File:Aurora_Hotel_(Ulaanbaatar).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Continental_Hotel_%28Ulaanbaatar%29.jpg/1280px-Continental_Hotel_%28Ulaanbaatar%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Continental_Hotel_%28Ulaanbaatar%29.jpg",
+        "title": "Continental Hotel (Ulaanbaatar).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Chongkian",
+        "source": "https://commons.wikimedia.org/wiki/File:Continental_Hotel_(Ulaanbaatar).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Ulaanbaatar_hotel.jpg/1280px-Ulaanbaatar_hotel.jpg"
+  },
+  {
+    "_id": "stay_darkhan_house_khongor",
+    "name": {
+      "mn": "Хонгор гэр бүлийн байшин",
+      "en": "Khongor Family House"
+    },
+    "type": "house",
+    "place_id": "place_darkhan",
+    "aimag": "Darkhan-Uul",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        105.9728,
+        49.5167
+      ]
+    },
+    "owner": {
+      "name": "Sarangerel",
+      "phone": "+976 9900 1004",
+      "preferred_channel": "messenger",
+      "languages": [
+        "mn"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "whole_house",
+        "count": 1,
+        "beds_per_unit": 6,
+        "price_mnt": 250000,
+        "price_basis": "per_unit",
+        "meals_included": false
+      }
+    ],
+    "total_beds": 6,
+    "amenities": [
+      "kitchen",
+      "sauna",
+      "bbq",
+      "parking"
+    ],
+    "season": {
+      "year_round": true,
+      "open_from": null,
+      "open_to": null
+    },
+    "cancellation_policy_id": "policy_moderate",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash"
+    ],
+    "rating": 4.6,
+    "reviews_count": 468,
+    "is_mock": true,
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Traditional_ger_housing_for_a_nomadic_herding_family%2C_Western_Mongolia.jpg/1280px-Traditional_ger_housing_for_a_nomadic_herding_family%2C_Western_Mongolia.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Traditional_ger_housing_for_a_nomadic_herding_family%2C_Western_Mongolia.jpg",
+        "title": "Traditional ger housing for a nomadic herding family, Western Mongolia.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Bfreeproductions",
+        "source": "https://commons.wikimedia.org/wiki/File:Traditional_ger_housing_for_a_nomadic_herding_family,_Western_Mongolia.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Traditional_ger_for_a_nomadic_herding_family_in_remote_Western_Mongolia.jpg/1280px-Traditional_ger_for_a_nomadic_herding_family_in_remote_Western_Mongolia.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Traditional_ger_for_a_nomadic_herding_family_in_remote_Western_Mongolia.jpg",
+        "title": "Traditional ger for a nomadic herding family in remote Western Mongolia.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Bfreeproductions",
+        "source": "https://commons.wikimedia.org/wiki/File:Traditional_ger_for_a_nomadic_herding_family_in_remote_Western_Mongolia.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Mongolia_Herding_Life_6.JPG",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Mongolia_Herding_Life_6.JPG",
+        "title": "Mongolia Herding Life 6.JPG",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Taylor Weidman/The Vanishing Cultures Project",
+        "source": "https://commons.wikimedia.org/wiki/File:Mongolia_Herding_Life_6.JPG",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Traditional_ger_housing_for_a_nomadic_herding_family%2C_Western_Mongolia.jpg/1280px-Traditional_ger_housing_for_a_nomadic_herding_family%2C_Western_Mongolia.jpg"
+  },
+  {
+    "_id": "stay_amarbayasgalant_camp",
+    "name": {
+      "mn": "Амарбаясгалант жуулчны бааз",
+      "en": "Amarbayasgalant Ger Camp"
+    },
+    "type": "ger_camp",
+    "place_id": "place_amarbayasgalant",
+    "aimag": "Selenge",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        105.0953,
+        49.4841
+      ]
+    },
+    "owner": {
+      "name": "Tömörbaatar",
+      "phone": "+976 9900 1005",
+      "preferred_channel": "whatsapp",
+      "languages": [
+        "mn",
+        "en"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "ger",
+        "count": 15,
+        "beds_per_unit": 3,
+        "price_mnt": 95000,
+        "price_basis": "per_person",
+        "meals_included": true
+      }
+    ],
+    "total_beds": 45,
+    "amenities": [
+      "meals",
+      "hot_shower",
+      "horse_riding"
+    ],
+    "season": {
+      "year_round": false,
+      "open_from": "06-01",
+      "open_to": "09-30"
+    },
+    "cancellation_policy_id": "policy_moderate",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash"
+    ],
+    "rating": 4.3,
+    "reviews_count": 228,
+    "is_mock": true,
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Ger_and_Monastery_-_panoramio.jpg/1280px-Ger_and_Monastery_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Ger_and_Monastery_-_panoramio.jpg",
+        "title": "Ger and Monastery - panoramio.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Mongolia Expeditions…",
+        "source": "https://commons.wikimedia.org/wiki/File:Ger_and_Monastery_-_panoramio.jpg",
+        "match": "near_stay",
+        "distance_m": 861,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Subedei_Ger_Camp_and_Guest_House.jpg/1280px-Subedei_Ger_Camp_and_Guest_House.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Subedei_Ger_Camp_and_Guest_House.jpg",
+        "title": "Subedei Ger Camp and Guest House.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Chongkian",
+        "source": "https://commons.wikimedia.org/wiki/File:Subedei_Ger_Camp_and_Guest_House.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286247003186%29.jpg/1280px-Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286247003186%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286247003186%29.jpg",
+        "title": "Ger Camp - Dornogovi Province - Mongolia (6247003186).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "David Berkowitz from New York, NY, USA",
+        "source": "https://commons.wikimedia.org/wiki/File:Ger_Camp_-_Dornogovi_Province_-_Mongolia_(6247003186).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Ger_and_Monastery_-_panoramio.jpg/1280px-Ger_and_Monastery_-_panoramio.jpg"
+  },
+  {
+    "_id": "stay_erdenet_hotel_copper",
+    "name": {
+      "mn": "Зэс хотын зочид буудал",
+      "en": "Copper City Hotel"
+    },
+    "type": "hotel",
+    "place_id": "place_erdenet",
+    "aimag": "Orkhon",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        104.0462,
+        49.0285
+      ]
+    },
+    "owner": {
+      "name": "Enkhjargal",
+      "phone": "+976 9900 1006",
+      "preferred_channel": "messenger",
+      "languages": [
+        "mn",
+        "en"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "double_room",
+        "count": 30,
+        "beds_per_unit": 2,
+        "price_mnt": 180000,
+        "price_basis": "per_unit",
+        "meals_included": false
+      }
+    ],
+    "total_beds": 60,
+    "amenities": [
+      "wifi",
+      "restaurant",
+      "gym",
+      "parking"
+    ],
+    "season": {
+      "year_round": true,
+      "open_from": null,
+      "open_to": null
+    },
+    "cancellation_policy_id": "policy_flexible",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash",
+      "card"
+    ],
+    "rating": 4.2,
+    "reviews_count": 27,
+    "is_mock": true,
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Continental_Hotel_%28Ulaanbaatar%29.jpg/1280px-Continental_Hotel_%28Ulaanbaatar%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Continental_Hotel_%28Ulaanbaatar%29.jpg",
+        "title": "Continental Hotel (Ulaanbaatar).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Chongkian",
+        "source": "https://commons.wikimedia.org/wiki/File:Continental_Hotel_(Ulaanbaatar).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/International_Hotel_%28Ulaanbaatar%29.jpg/1280px-International_Hotel_%28Ulaanbaatar%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/23/International_Hotel_%28Ulaanbaatar%29.jpg",
+        "title": "International Hotel (Ulaanbaatar).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Chongkian",
+        "source": "https://commons.wikimedia.org/wiki/File:International_Hotel_(Ulaanbaatar).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Hotel_in_Sainshand.jpg/1280px-Hotel_in_Sainshand.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Hotel_in_Sainshand.jpg",
+        "title": "Hotel in Sainshand.jpg",
+        "license": "Public domain",
+        "license_url": null,
+        "author": "David Castor (dcastor)",
+        "source": "https://commons.wikimedia.org/wiki/File:Hotel_in_Sainshand.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Continental_Hotel_%28Ulaanbaatar%29.jpg/1280px-Continental_Hotel_%28Ulaanbaatar%29.jpg"
+  },
+  {
+    "_id": "stay_bulgan_hotel_khan",
+    "name": {
+      "mn": "Булган хан зочид буудал",
+      "en": "Bulgan Khan Hotel"
+    },
+    "type": "hotel",
+    "place_id": "place_bulgan",
+    "aimag": "Bulgan",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        103.5327,
+        48.8135
+      ]
+    },
+    "owner": {
+      "name": "Batbayar",
+      "phone": "+976 9900 1007",
+      "preferred_channel": "messenger",
+      "languages": [
+        "mn",
+        "en"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "double_room",
+        "count": 18,
+        "beds_per_unit": 2,
+        "price_mnt": 130000,
+        "price_basis": "per_unit",
+        "meals_included": false
+      },
+      {
+        "unit_type": "family_room",
+        "count": 4,
+        "beds_per_unit": 4,
+        "price_mnt": 200000,
+        "price_basis": "per_unit",
+        "meals_included": false
+      }
+    ],
+    "total_beds": 52,
+    "amenities": [
+      "wifi",
+      "restaurant",
+      "parking"
+    ],
+    "season": {
+      "year_round": true,
+      "open_from": null,
+      "open_to": null
+    },
+    "cancellation_policy_id": "policy_flexible",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash",
+      "card"
+    ],
+    "rating": 3.9,
+    "reviews_count": 123,
+    "is_mock": true,
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Hotel_in_Sainshand.jpg/1280px-Hotel_in_Sainshand.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Hotel_in_Sainshand.jpg",
+        "title": "Hotel in Sainshand.jpg",
+        "license": "Public domain",
+        "license_url": null,
+        "author": "David Castor (dcastor)",
+        "source": "https://commons.wikimedia.org/wiki/File:Hotel_in_Sainshand.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Bastau_hotel_-_panoramio.jpg/1280px-Bastau_hotel_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Bastau_hotel_-_panoramio.jpg",
+        "title": "Bastau hotel - panoramio.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Mongolia Expeditions…",
+        "source": "https://commons.wikimedia.org/wiki/File:Bastau_hotel_-_panoramio.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Hotel_near_Khovsgol_lake_-_panoramio.jpg/1280px-Hotel_near_Khovsgol_lake_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Hotel_near_Khovsgol_lake_-_panoramio.jpg",
+        "title": "Hotel near Khovsgol lake - panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Alex Ang",
+        "source": "https://commons.wikimedia.org/wiki/File:Hotel_near_Khovsgol_lake_-_panoramio.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Hotel_in_Sainshand.jpg/1280px-Hotel_in_Sainshand.jpg"
+  },
+  {
+    "_id": "stay_bulgan_house_bayan",
+    "name": {
+      "mn": "Баян айраг хөдөөний байшин",
+      "en": "Bayan Airag Country House"
+    },
+    "type": "house",
+    "place_id": "place_bulgan",
+    "aimag": "Bulgan",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        103.6147,
+        48.8625
+      ]
+    },
+    "owner": {
+      "name": "Nomin",
+      "phone": "+976 9900 1008",
+      "preferred_channel": "phone",
+      "languages": [
+        "mn"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "whole_house",
+        "count": 1,
+        "beds_per_unit": 8,
+        "price_mnt": 320000,
+        "price_basis": "per_unit",
+        "meals_included": false
+      }
+    ],
+    "total_beds": 8,
+    "amenities": [
+      "kitchen",
+      "horse_riding",
+      "airag",
+      "fireplace"
+    ],
+    "season": {
+      "year_round": true,
+      "open_from": null,
+      "open_to": null
+    },
+    "cancellation_policy_id": "policy_moderate",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash"
+    ],
+    "rating": 4.7,
+    "reviews_count": 25,
+    "is_mock": true,
+    "region": "north",
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Mongolia_Herding_Life_6.JPG",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Mongolia_Herding_Life_6.JPG",
+        "title": "Mongolia Herding Life 6.JPG",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Taylor Weidman/The Vanishing Cultures Project",
+        "source": "https://commons.wikimedia.org/wiki/File:Mongolia_Herding_Life_6.JPG",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Tal_des_Kherlen_s%C3%BCdlich_des_Steppe_Nomads_Camp%2C_Mongolei_II.jpg/1280px-Tal_des_Kherlen_s%C3%BCdlich_des_Steppe_Nomads_Camp%2C_Mongolei_II.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Tal_des_Kherlen_s%C3%BCdlich_des_Steppe_Nomads_Camp%2C_Mongolei_II.jpg",
+        "title": "Tal des Kherlen südlich des Steppe Nomads Camp, Mongolei II.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "GerritR",
+        "source": "https://commons.wikimedia.org/wiki/File:Tal_des_Kherlen_s%C3%BCdlich_des_Steppe_Nomads_Camp,_Mongolei_II.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Traditional_meal_inside_a_ger_in_remote_Western_Mongolia.jpg/1280px-Traditional_meal_inside_a_ger_in_remote_Western_Mongolia.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Traditional_meal_inside_a_ger_in_remote_Western_Mongolia.jpg",
+        "title": "Traditional meal inside a ger in remote Western Mongolia.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Bfreeproductions",
+        "source": "https://commons.wikimedia.org/wiki/File:Traditional_meal_inside_a_ger_in_remote_Western_Mongolia.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Mongolia_Herding_Life_6.JPG"
+  },
+  {
+    "_id": "stay_uran_togoo_camp",
+    "name": {
+      "mn": "Галт уулын бааз",
+      "en": "Volcano Ger Camp"
+    },
+    "type": "ger_camp",
+    "place_id": "place_uran_togoo",
+    "aimag": "Bulgan",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        102.7606,
+        48.9881
+      ]
+    },
+    "owner": {
+      "name": "Davaasüren",
+      "phone": "+976 9900 1009",
+      "preferred_channel": "whatsapp",
+      "languages": [
+        "mn",
+        "en"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "ger",
+        "count": 12,
+        "beds_per_unit": 4,
+        "price_mnt": 85000,
+        "price_basis": "per_person",
+        "meals_included": true
+      }
+    ],
+    "total_beds": 48,
+    "amenities": [
+      "meals",
+      "hot_shower",
+      "guided_hike"
+    ],
+    "season": {
+      "year_round": false,
+      "open_from": "05-20",
+      "open_to": "10-10"
+    },
+    "cancellation_policy_id": "policy_moderate",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash"
+    ],
+    "rating": 4.2,
+    "reviews_count": 344,
+    "is_mock": true,
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246456067%29.jpg/1280px-Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246456067%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246456067%29.jpg",
+        "title": "Ger Camp - Dornogovi Province - Mongolia (6246456067).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "David Berkowitz from New York, NY, USA",
+        "source": "https://commons.wikimedia.org/wiki/File:Ger_Camp_-_Dornogovi_Province_-_Mongolia_(6246456067).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246451699%29.jpg/1280px-Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246451699%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246451699%29.jpg",
+        "title": "Ger Camp - Dornogovi Province - Mongolia (6246451699).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "David Berkowitz from New York, NY, USA",
+        "source": "https://commons.wikimedia.org/wiki/File:Ger_Camp_-_Dornogovi_Province_-_Mongolia_(6246451699).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246970316%29.jpg/1280px-Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246970316%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246970316%29.jpg",
+        "title": "Ger Camp - Dornogovi Province - Mongolia (6246970316).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "David Berkowitz from New York, NY, USA",
+        "source": "https://commons.wikimedia.org/wiki/File:Ger_Camp_-_Dornogovi_Province_-_Mongolia_(6246970316).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246456067%29.jpg/1280px-Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246456067%29.jpg"
+  },
+  {
+    "_id": "stay_murun_hotel_delger",
+    "name": {
+      "mn": "Дэлгэр Мөрөн зочид буудал",
+      "en": "Delger Mörön Hotel"
+    },
+    "type": "hotel",
+    "place_id": "place_murun",
+    "aimag": "Khövsgöl",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        100.1635,
+        49.6352
+      ]
+    },
+    "owner": {
+      "name": "Altantsetseg",
+      "phone": "+976 9900 1010",
+      "preferred_channel": "whatsapp",
+      "languages": [
+        "mn",
+        "en"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "double_room",
+        "count": 26,
+        "beds_per_unit": 2,
+        "price_mnt": 150000,
+        "price_basis": "per_unit",
+        "meals_included": false
+      },
+      {
+        "unit_type": "family_room",
+        "count": 6,
+        "beds_per_unit": 4,
+        "price_mnt": 230000,
+        "price_basis": "per_unit",
+        "meals_included": false
+      }
+    ],
+    "total_beds": 76,
+    "amenities": [
+      "wifi",
+      "restaurant",
+      "parking",
+      "airport_transfer"
+    ],
+    "season": {
+      "year_round": true,
+      "open_from": null,
+      "open_to": null
+    },
+    "cancellation_policy_id": "policy_flexible",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash",
+      "card"
+    ],
+    "rating": 4.0,
+    "reviews_count": 226,
+    "is_mock": true,
+    "region": "north",
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Hotel_50-100_in_M%C3%B6r%C3%B6n_city_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Hotel_50-100_in_M%C3%B6r%C3%B6n_city_-_panoramio.jpg",
+        "title": "Hotel 50-100 in Mörön city - panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Alex Ang",
+        "source": "https://commons.wikimedia.org/wiki/File:Hotel_50-100_in_M%C3%B6r%C3%B6n_city_-_panoramio.jpg",
+        "match": "near_stay",
+        "distance_m": 744,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Hotel_near_Khovsgol_lake_-_panoramio.jpg/1280px-Hotel_near_Khovsgol_lake_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Hotel_near_Khovsgol_lake_-_panoramio.jpg",
+        "title": "Hotel near Khovsgol lake - panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Alex Ang",
+        "source": "https://commons.wikimedia.org/wiki/File:Hotel_near_Khovsgol_lake_-_panoramio.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Comfort_Hotel_%28Darkhan%29.jpg/1280px-Comfort_Hotel_%28Darkhan%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Comfort_Hotel_%28Darkhan%29.jpg",
+        "title": "Comfort Hotel (Darkhan).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Chongkian",
+        "source": "https://commons.wikimedia.org/wiki/File:Comfort_Hotel_(Darkhan).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Hotel_50-100_in_M%C3%B6r%C3%B6n_city_-_panoramio.jpg"
+  },
+  {
+    "_id": "stay_khatgal_guesthouse_lake",
+    "name": {
+      "mn": "Нуурын эрэг гэр буудал",
+      "en": "Lakeside Guesthouse Khatgal"
+    },
+    "type": "guesthouse",
+    "place_id": "place_khatgal",
+    "aimag": "Khövsgöl",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        100.164,
+        50.4455
+      ]
+    },
+    "owner": {
+      "name": "Munkhbat",
+      "phone": "+976 9900 1011",
+      "preferred_channel": "phone",
+      "languages": [
+        "mn",
+        "en"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "ger",
+        "count": 6,
+        "beds_per_unit": 3,
+        "price_mnt": 50000,
+        "price_basis": "per_person",
+        "meals_included": false
+      },
+      {
+        "unit_type": "double_room",
+        "count": 5,
+        "beds_per_unit": 2,
+        "price_mnt": 110000,
+        "price_basis": "per_unit",
+        "meals_included": false
+      }
+    ],
+    "total_beds": 28,
+    "amenities": [
+      "wifi",
+      "kitchen",
+      "kayak_rental",
+      "horse_riding"
+    ],
+    "season": {
+      "year_round": true,
+      "open_from": null,
+      "open_to": null
+    },
+    "cancellation_policy_id": "policy_flexible",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash"
+    ],
+    "rating": 4.6,
+    "reviews_count": 241,
+    "is_mock": true,
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Inside_our_ger_%282397862327%29.jpg/1280px-Inside_our_ger_%282397862327%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Inside_our_ger_%282397862327%29.jpg",
+        "title": "Inside our ger (2397862327).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Honza Soukup from Czech Republic",
+        "source": "https://commons.wikimedia.org/wiki/File:Inside_our_ger_(2397862327).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Inside_a_Yurt_%2819210573564%29.jpg/1280px-Inside_a_Yurt_%2819210573564%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Inside_a_Yurt_%2819210573564%29.jpg",
+        "title": "Inside a Yurt (19210573564).jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Gary Todd from Xinzheng, China",
+        "source": "https://commons.wikimedia.org/wiki/File:Inside_a_Yurt_(19210573564).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Ganasger.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Ganasger.jpg",
+        "title": "Ganasger.jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "Stefan Ertmann",
+        "source": "https://commons.wikimedia.org/wiki/File:Ganasger.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Inside_our_ger_%282397862327%29.jpg/1280px-Inside_our_ger_%282397862327%29.jpg"
+  },
+  {
+    "_id": "stay_khatgal_camp_blue_pearl",
+    "name": {
+      "mn": "Хөх сувд бааз",
+      "en": "Blue Pearl Ger Camp"
+    },
+    "type": "ger_camp",
+    "place_id": "place_khatgal",
+    "aimag": "Khövsgöl",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        100.19,
+        50.4625
+      ]
+    },
+    "owner": {
+      "name": "Uyanga",
+      "phone": "+976 9900 1012",
+      "preferred_channel": "whatsapp",
+      "languages": [
+        "mn",
+        "en"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "ger",
+        "count": 25,
+        "beds_per_unit": 3,
+        "price_mnt": 120000,
+        "price_basis": "per_person",
+        "meals_included": true
+      },
+      {
+        "unit_type": "wooden_cabin",
+        "count": 6,
+        "beds_per_unit": 4,
+        "price_mnt": 150000,
+        "price_basis": "per_person",
+        "meals_included": true
+      }
+    ],
+    "total_beds": 99,
+    "amenities": [
+      "meals",
+      "hot_shower",
+      "sauna",
+      "boat_trips"
+    ],
+    "season": {
+      "year_round": false,
+      "open_from": "06-01",
+      "open_to": "10-15"
+    },
+    "cancellation_policy_id": "policy_moderate",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash"
+    ],
+    "rating": 4.5,
+    "reviews_count": 457,
+    "is_mock": true,
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246970316%29.jpg/1280px-Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246970316%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246970316%29.jpg",
+        "title": "Ger Camp - Dornogovi Province - Mongolia (6246970316).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "David Berkowitz from New York, NY, USA",
+        "source": "https://commons.wikimedia.org/wiki/File:Ger_Camp_-_Dornogovi_Province_-_Mongolia_(6246970316).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246987542%29.jpg/1280px-Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246987542%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246987542%29.jpg",
+        "title": "Ger Camp - Dornogovi Province - Mongolia (6246987542).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "David Berkowitz from New York, NY, USA",
+        "source": "https://commons.wikimedia.org/wiki/File:Ger_Camp_-_Dornogovi_Province_-_Mongolia_(6246987542).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Turista_s%C3%A1tort%C3%A1bor_%28Tourist_ger_camp%29_-_panoramio.jpg/1280px-Turista_s%C3%A1tort%C3%A1bor_%28Tourist_ger_camp%29_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Turista_s%C3%A1tort%C3%A1bor_%28Tourist_ger_camp%29_-_panoramio.jpg",
+        "title": "Turista sátortábor (Tourist ger camp) - panoramio.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Gyula Péter",
+        "source": "https://commons.wikimedia.org/wiki/File:Turista_s%C3%A1tort%C3%A1bor_(Tourist_ger_camp)_-_panoramio.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246970316%29.jpg/1280px-Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246970316%29.jpg"
+  },
+  {
+    "_id": "stay_toilogt_camp",
+    "name": {
+      "mn": "Тойлогт бааз",
+      "en": "Toilogt Lakeshore Camp"
+    },
+    "type": "ger_camp",
+    "place_id": "place_toilogt",
+    "aimag": "Khövsgöl",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        100.2207,
+        50.5187
+      ]
+    },
+    "owner": {
+      "name": "Tsogtbayar",
+      "phone": "+976 9900 1013",
+      "preferred_channel": "messenger",
+      "languages": [
+        "mn"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "ger",
+        "count": 30,
+        "beds_per_unit": 3,
+        "price_mnt": 140000,
+        "price_basis": "per_person",
+        "meals_included": true
+      },
+      {
+        "unit_type": "wooden_cabin",
+        "count": 10,
+        "beds_per_unit": 4,
+        "price_mnt": 180000,
+        "price_basis": "per_person",
+        "meals_included": true
+      }
+    ],
+    "total_beds": 130,
+    "amenities": [
+      "meals",
+      "hot_shower",
+      "sauna",
+      "boat_trips",
+      "horse_riding"
+    ],
+    "season": {
+      "year_round": false,
+      "open_from": "06-10",
+      "open_to": "09-20"
+    },
+    "cancellation_policy_id": "policy_strict",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash"
+    ],
+    "rating": 4.4,
+    "reviews_count": 93,
+    "is_mock": true,
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Turista_s%C3%A1tort%C3%A1bor_%28Tourist_ger_camp%29_-_panoramio.jpg/1280px-Turista_s%C3%A1tort%C3%A1bor_%28Tourist_ger_camp%29_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Turista_s%C3%A1tort%C3%A1bor_%28Tourist_ger_camp%29_-_panoramio.jpg",
+        "title": "Turista sátortábor (Tourist ger camp) - panoramio.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Gyula Péter",
+        "source": "https://commons.wikimedia.org/wiki/File:Turista_s%C3%A1tort%C3%A1bor_(Tourist_ger_camp)_-_panoramio.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Hotel_Camp_Ulziit_Khishig_03.jpg/1280px-Hotel_Camp_Ulziit_Khishig_03.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Hotel_Camp_Ulziit_Khishig_03.jpg",
+        "title": "Hotel Camp Ulziit Khishig 03.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Hotel_Camp_Ulziit_Khishig_03.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Hotel_Camp_Secret_of_Ongii_01.jpg/1280px-Hotel_Camp_Secret_of_Ongii_01.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Hotel_Camp_Secret_of_Ongii_01.jpg",
+        "title": "Hotel Camp Secret of Ongii 01.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Hotel_Camp_Secret_of_Ongii_01.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Turista_s%C3%A1tort%C3%A1bor_%28Tourist_ger_camp%29_-_panoramio.jpg/1280px-Turista_s%C3%A1tort%C3%A1bor_%28Tourist_ger_camp%29_-_panoramio.jpg"
+  },
+  {
+    "_id": "stay_jankhai_house_taiga",
+    "name": {
+      "mn": "Тайгын модон байшин",
+      "en": "Taiga Log House"
+    },
+    "type": "house",
+    "place_id": "place_jankhai",
+    "aimag": "Khövsgöl",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        100.292,
+        50.642
+      ]
+    },
+    "owner": {
+      "name": "Khulan",
+      "phone": "+976 9900 1014",
+      "preferred_channel": "messenger",
+      "languages": [
+        "mn",
+        "en"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "whole_house",
+        "count": 1,
+        "beds_per_unit": 10,
+        "price_mnt": 450000,
+        "price_basis": "per_unit",
+        "meals_included": false
+      }
+    ],
+    "total_beds": 10,
+    "amenities": [
+      "kitchen",
+      "sauna",
+      "fireplace",
+      "boat"
+    ],
+    "season": {
+      "year_round": true,
+      "open_from": null,
+      "open_to": null
+    },
+    "cancellation_policy_id": "policy_deposit_only",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash"
+    ],
+    "rating": 4.8,
+    "reviews_count": 91,
+    "is_mock": true,
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Traditional_meal_inside_a_ger_in_remote_Western_Mongolia.jpg/1280px-Traditional_meal_inside_a_ger_in_remote_Western_Mongolia.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Traditional_meal_inside_a_ger_in_remote_Western_Mongolia.jpg",
+        "title": "Traditional meal inside a ger in remote Western Mongolia.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Bfreeproductions",
+        "source": "https://commons.wikimedia.org/wiki/File:Traditional_meal_inside_a_ger_in_remote_Western_Mongolia.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/A_traditional_meal_inside_a_ger_in_remote_Western_Mongolia_2022-07-27.jpg/1280px-A_traditional_meal_inside_a_ger_in_remote_Western_Mongolia_2022-07-27.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/96/A_traditional_meal_inside_a_ger_in_remote_Western_Mongolia_2022-07-27.jpg",
+        "title": "A traditional meal inside a ger in remote Western Mongolia 2022-07-27.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Bfreeproductions",
+        "source": "https://commons.wikimedia.org/wiki/File:A_traditional_meal_inside_a_ger_in_remote_Western_Mongolia_2022-07-27.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Inside_The_Ger_%286141664020%29.jpg/1280px-Inside_The_Ger_%286141664020%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Inside_The_Ger_%286141664020%29.jpg",
+        "title": "Inside The Ger (6141664020).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Anthony Knuppel",
+        "source": "https://commons.wikimedia.org/wiki/File:Inside_The_Ger_(6141664020).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Traditional_meal_inside_a_ger_in_remote_Western_Mongolia.jpg/1280px-Traditional_meal_inside_a_ger_in_remote_Western_Mongolia.jpg"
+  },
+  {
+    "_id": "stay_jankhai_camp_nature",
+    "name": {
+      "mn": "Жанхай байгалийн бааз",
+      "en": "Jankhai Nature Camp"
+    },
+    "type": "ger_camp",
+    "place_id": "place_jankhai",
+    "aimag": "Khövsgöl",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        100.297,
+        50.634
+      ]
+    },
+    "owner": {
+      "name": "Erdenebileg",
+      "phone": "+976 9900 1015",
+      "preferred_channel": "phone",
+      "languages": [
+        "mn"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "ger",
+        "count": 14,
+        "beds_per_unit": 3,
+        "price_mnt": 110000,
+        "price_basis": "per_person",
+        "meals_included": true
+      }
+    ],
+    "total_beds": 42,
+    "amenities": [
+      "meals",
+      "hot_shower",
+      "horse_riding"
+    ],
+    "season": {
+      "year_round": false,
+      "open_from": "06-15",
+      "open_to": "09-15"
+    },
+    "cancellation_policy_id": "policy_moderate",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash"
+    ],
+    "rating": 4.1,
+    "reviews_count": 184,
+    "is_mock": true,
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Hotel_Camp_Secret_of_Ongii_01.jpg/1280px-Hotel_Camp_Secret_of_Ongii_01.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Hotel_Camp_Secret_of_Ongii_01.jpg",
+        "title": "Hotel Camp Secret of Ongii 01.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Hotel_Camp_Secret_of_Ongii_01.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Alag_Tsar_Tourist_Camp.jpg/1280px-Alag_Tsar_Tourist_Camp.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Alag_Tsar_Tourist_Camp.jpg",
+        "title": "Alag Tsar Tourist Camp.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Alag_Tsar_Tourist_Camp.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Subedei_Ger_Camp_and_Guest_House.jpg/1280px-Subedei_Ger_Camp_and_Guest_House.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Subedei_Ger_Camp_and_Guest_House.jpg",
+        "title": "Subedei Ger Camp and Guest House.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Chongkian",
+        "source": "https://commons.wikimedia.org/wiki/File:Subedei_Ger_Camp_and_Guest_House.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Hotel_Camp_Secret_of_Ongii_01.jpg/1280px-Hotel_Camp_Secret_of_Ongii_01.jpg"
+  },
+  {
+    "_id": "stay_kharkhorin_camp_erdene",
+    "name": {
+      "mn": "Эрдэнэ Зуу бааз",
+      "en": "Erdene Zuu Ger Camp"
+    },
+    "type": "ger_camp",
+    "place_id": "place_kharkhorin",
+    "aimag": "Övörkhangai",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        102.8556,
+        47.2072
+      ]
+    },
+    "owner": {
+      "name": "Solongo",
+      "phone": "+976 9900 1016",
+      "preferred_channel": "messenger",
+      "languages": [
+        "mn",
+        "en"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "ger",
+        "count": 20,
+        "beds_per_unit": 3,
+        "price_mnt": 100000,
+        "price_basis": "per_person",
+        "meals_included": true
+      }
+    ],
+    "total_beds": 60,
+    "amenities": [
+      "meals",
+      "hot_shower",
+      "wifi"
+    ],
+    "season": {
+      "year_round": false,
+      "open_from": "05-15",
+      "open_to": "10-15"
+    },
+    "cancellation_policy_id": "policy_moderate",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash"
+    ],
+    "rating": 4.3,
+    "reviews_count": 61,
+    "is_mock": true,
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Subedei_Ger_Camp_and_Guest_House.jpg/1280px-Subedei_Ger_Camp_and_Guest_House.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Subedei_Ger_Camp_and_Guest_House.jpg",
+        "title": "Subedei Ger Camp and Guest House.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Chongkian",
+        "source": "https://commons.wikimedia.org/wiki/File:Subedei_Ger_Camp_and_Guest_House.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286247003186%29.jpg/1280px-Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286247003186%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286247003186%29.jpg",
+        "title": "Ger Camp - Dornogovi Province - Mongolia (6247003186).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "David Berkowitz from New York, NY, USA",
+        "source": "https://commons.wikimedia.org/wiki/File:Ger_Camp_-_Dornogovi_Province_-_Mongolia_(6247003186).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246456067%29.jpg/1280px-Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246456067%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246456067%29.jpg",
+        "title": "Ger Camp - Dornogovi Province - Mongolia (6246456067).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "David Berkowitz from New York, NY, USA",
+        "source": "https://commons.wikimedia.org/wiki/File:Ger_Camp_-_Dornogovi_Province_-_Mongolia_(6246456067).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Subedei_Ger_Camp_and_Guest_House.jpg/1280px-Subedei_Ger_Camp_and_Guest_House.jpg"
+  },
+  {
+    "_id": "stay_elsen_tasarkhai_camp",
+    "name": {
+      "mn": "Бага говь бааз",
+      "en": "Mini Gobi Dune Camp"
+    },
+    "type": "ger_camp",
+    "place_id": "place_elsen_tasarkhai",
+    "aimag": "Bulgan",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        103.674,
+        47.375
+      ]
+    },
+    "owner": {
+      "name": "Byambadorj",
+      "phone": "+976 9900 1017",
+      "preferred_channel": "phone",
+      "languages": [
+        "mn"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "ger",
+        "count": 18,
+        "beds_per_unit": 3,
+        "price_mnt": 90000,
+        "price_basis": "per_person",
+        "meals_included": true
+      }
+    ],
+    "total_beds": 54,
+    "amenities": [
+      "meals",
+      "camel_riding",
+      "hot_shower"
+    ],
+    "season": {
+      "year_round": false,
+      "open_from": "05-15",
+      "open_to": "10-05"
+    },
+    "cancellation_policy_id": "policy_moderate",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash"
+    ],
+    "rating": 4.0,
+    "reviews_count": 321,
+    "is_mock": true,
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Turista_s%C3%A1tort%C3%A1bor_%28Tourist_ger_camp%29_-_panoramio.jpg/1280px-Turista_s%C3%A1tort%C3%A1bor_%28Tourist_ger_camp%29_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Turista_s%C3%A1tort%C3%A1bor_%28Tourist_ger_camp%29_-_panoramio.jpg",
+        "title": "Turista sátortábor (Tourist ger camp) - panoramio.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Gyula Péter",
+        "source": "https://commons.wikimedia.org/wiki/File:Turista_s%C3%A1tort%C3%A1bor_(Tourist_ger_camp)_-_panoramio.jpg",
+        "match": "near_stay",
+        "distance_m": 4182,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246456067%29.jpg/1280px-Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246456067%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246456067%29.jpg",
+        "title": "Ger Camp - Dornogovi Province - Mongolia (6246456067).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "David Berkowitz from New York, NY, USA",
+        "source": "https://commons.wikimedia.org/wiki/File:Ger_Camp_-_Dornogovi_Province_-_Mongolia_(6246456067).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246451699%29.jpg/1280px-Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246451699%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246451699%29.jpg",
+        "title": "Ger Camp - Dornogovi Province - Mongolia (6246451699).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "David Berkowitz from New York, NY, USA",
+        "source": "https://commons.wikimedia.org/wiki/File:Ger_Camp_-_Dornogovi_Province_-_Mongolia_(6246451699).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Turista_s%C3%A1tort%C3%A1bor_%28Tourist_ger_camp%29_-_panoramio.jpg/1280px-Turista_s%C3%A1tort%C3%A1bor_%28Tourist_ger_camp%29_-_panoramio.jpg"
+  },
+  {
+    "_id": "stay_tsetserleg_hotel_bulgan",
+    "name": {
+      "mn": "Булган уулын зочид буудал",
+      "en": "Bulgan Mountain Hotel Tsetserleg"
+    },
+    "type": "hotel",
+    "place_id": "place_tsetserleg",
+    "aimag": "Arkhangai",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        101.4552,
+        47.4757
+      ]
+    },
+    "owner": {
+      "name": "Gerelmaa",
+      "phone": "+976 9900 1018",
+      "preferred_channel": "phone",
+      "languages": [
+        "mn",
+        "en"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "double_room",
+        "count": 16,
+        "beds_per_unit": 2,
+        "price_mnt": 120000,
+        "price_basis": "per_unit",
+        "meals_included": false
+      }
+    ],
+    "total_beds": 32,
+    "amenities": [
+      "wifi",
+      "restaurant"
+    ],
+    "season": {
+      "year_round": true,
+      "open_from": null,
+      "open_to": null
+    },
+    "cancellation_policy_id": "policy_flexible",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash",
+      "card"
+    ],
+    "rating": 4.0,
+    "reviews_count": 425,
+    "is_mock": true,
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Royal_Hotel_%28Darkhan%29.jpg/1280px-Royal_Hotel_%28Darkhan%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Royal_Hotel_%28Darkhan%29.jpg",
+        "title": "Royal Hotel (Darkhan).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Chongkian",
+        "source": "https://commons.wikimedia.org/wiki/File:Royal_Hotel_(Darkhan).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Crystal_Hotel_%28Darkhan%29.jpg/1280px-Crystal_Hotel_%28Darkhan%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Crystal_Hotel_%28Darkhan%29.jpg",
+        "title": "Crystal Hotel (Darkhan).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Chongkian",
+        "source": "https://commons.wikimedia.org/wiki/File:Crystal_Hotel_(Darkhan).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Chinggis_Khaan_Hotel_-_Deluxe_Double_Room.jpg/1280px-Chinggis_Khaan_Hotel_-_Deluxe_Double_Room.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Chinggis_Khaan_Hotel_-_Deluxe_Double_Room.jpg",
+        "title": "Chinggis Khaan Hotel - Deluxe Double Room.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Fred Cherrygarden",
+        "source": "https://commons.wikimedia.org/wiki/File:Chinggis_Khaan_Hotel_-_Deluxe_Double_Room.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Royal_Hotel_%28Darkhan%29.jpg/1280px-Royal_Hotel_%28Darkhan%29.jpg"
+  },
+  {
+    "_id": "stay_terkhiin_camp_white_lake",
+    "name": {
+      "mn": "Цагаан нуур бааз",
+      "en": "White Lake Ger Camp"
+    },
+    "type": "ger_camp",
+    "place_id": "place_terkhiin_tsagaan",
+    "aimag": "Arkhangai",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        99.735,
+        48.178
+      ]
+    },
+    "owner": {
+      "name": "Naranbaatar",
+      "phone": "+976 9900 1019",
+      "preferred_channel": "messenger",
+      "languages": [
+        "mn"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "ger",
+        "count": 22,
+        "beds_per_unit": 3,
+        "price_mnt": 95000,
+        "price_basis": "per_person",
+        "meals_included": true
+      }
+    ],
+    "total_beds": 66,
+    "amenities": [
+      "meals",
+      "hot_shower",
+      "fishing",
+      "horse_riding"
+    ],
+    "season": {
+      "year_round": false,
+      "open_from": "06-01",
+      "open_to": "09-30"
+    },
+    "cancellation_policy_id": "policy_moderate",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash"
+    ],
+    "rating": 4.2,
+    "reviews_count": 286,
+    "is_mock": true,
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Un_Ger_-_panoramio.jpg/1280px-Un_Ger_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Un_Ger_-_panoramio.jpg",
+        "title": "Un Ger - panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Raul P",
+        "source": "https://commons.wikimedia.org/wiki/File:Un_Ger_-_panoramio.jpg",
+        "match": "near_stay",
+        "distance_m": 3454,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Maikhan_Tolgoi_tourist_camp_01.jpg/1280px-Maikhan_Tolgoi_tourist_camp_01.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Maikhan_Tolgoi_tourist_camp_01.jpg",
+        "title": "Maikhan Tolgoi tourist camp 01.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Maikhan_Tolgoi_tourist_camp_01.jpg",
+        "match": "near_stay",
+        "distance_m": 2028,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Maikhan_Tolgoi_tourist_camp_02.jpg/1280px-Maikhan_Tolgoi_tourist_camp_02.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Maikhan_Tolgoi_tourist_camp_02.jpg",
+        "title": "Maikhan Tolgoi tourist camp 02.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Maikhan_Tolgoi_tourist_camp_02.jpg",
+        "match": "near_stay",
+        "distance_m": 2028,
+        "is_illustrative": true
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Un_Ger_-_panoramio.jpg/1280px-Un_Ger_-_panoramio.jpg"
+  },
+  {
+    "_id": "stay_tariat_family_ger",
+    "name": {
+      "mn": "Тариатын малчин айлын гэр",
+      "en": "Tariat Herder Family Gers"
+    },
+    "type": "house",
+    "place_id": "place_tariat",
+    "aimag": "Arkhangai",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        99.8528,
+        48.1967
+      ]
+    },
+    "owner": {
+      "name": "Zolzaya",
+      "phone": "+976 9900 1020",
+      "preferred_channel": "messenger",
+      "languages": [
+        "mn"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "ger",
+        "count": 3,
+        "beds_per_unit": 4,
+        "price_mnt": 45000,
+        "price_basis": "per_person",
+        "meals_included": true
+      }
+    ],
+    "total_beds": 12,
+    "amenities": [
+      "meals",
+      "herding_experience",
+      "horse_riding"
+    ],
+    "season": {
+      "year_round": true,
+      "open_from": null,
+      "open_to": null
+    },
+    "cancellation_policy_id": "policy_flexible",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash"
+    ],
+    "rating": 4.9,
+    "reviews_count": 205,
+    "is_mock": true,
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Inside_The_Ger_%286141664020%29.jpg/1280px-Inside_The_Ger_%286141664020%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Inside_The_Ger_%286141664020%29.jpg",
+        "title": "Inside The Ger (6141664020).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Anthony Knuppel",
+        "source": "https://commons.wikimedia.org/wiki/File:Inside_The_Ger_(6141664020).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Inside_our_ger_%282397862327%29.jpg/1280px-Inside_our_ger_%282397862327%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Inside_our_ger_%282397862327%29.jpg",
+        "title": "Inside our ger (2397862327).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Honza Soukup from Czech Republic",
+        "source": "https://commons.wikimedia.org/wiki/File:Inside_our_ger_(2397862327).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Inside_a_Yurt_%2819210573564%29.jpg/1280px-Inside_a_Yurt_%2819210573564%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Inside_a_Yurt_%2819210573564%29.jpg",
+        "title": "Inside a Yurt (19210573564).jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Gary Todd from Xinzheng, China",
+        "source": "https://commons.wikimedia.org/wiki/File:Inside_a_Yurt_(19210573564).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Inside_The_Ger_%286141664020%29.jpg/1280px-Inside_The_Ger_%286141664020%29.jpg"
+  },
+  {
+    "_id": "stay_mandalgovi_hotel_gobi",
+    "name": {
+      "mn": "Дундговь зочид буудал",
+      "en": "Middle Gobi Hotel"
+    },
+    "type": "hotel",
+    "place_id": "place_mandalgovi",
+    "aimag": "Dundgovi",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        106.2698,
+        45.7635
+      ]
+    },
+    "owner": {
+      "name": "Otgonbayar",
+      "phone": "+976 9900 1021",
+      "preferred_channel": "messenger",
+      "languages": [
+        "mn",
+        "en"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "double_room",
+        "count": 14,
+        "beds_per_unit": 2,
+        "price_mnt": 110000,
+        "price_basis": "per_unit",
+        "meals_included": false
+      }
+    ],
+    "total_beds": 28,
+    "amenities": [
+      "wifi",
+      "restaurant",
+      "parking"
+    ],
+    "season": {
+      "year_round": true,
+      "open_from": null,
+      "open_to": null
+    },
+    "cancellation_policy_id": "policy_flexible",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash",
+      "card"
+    ],
+    "rating": 3.8,
+    "reviews_count": 294,
+    "is_mock": true,
+    "region": "south",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Chinggis_Khaan_Hotel_-_Deluxe_Double_Room.jpg/1280px-Chinggis_Khaan_Hotel_-_Deluxe_Double_Room.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Chinggis_Khaan_Hotel_-_Deluxe_Double_Room.jpg",
+        "title": "Chinggis Khaan Hotel - Deluxe Double Room.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Fred Cherrygarden",
+        "source": "https://commons.wikimedia.org/wiki/File:Chinggis_Khaan_Hotel_-_Deluxe_Double_Room.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Ulaanbaatar_Hotel.jpg/1280px-Ulaanbaatar_Hotel.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Ulaanbaatar_Hotel.jpg",
+        "title": "Ulaanbaatar Hotel.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Chongkian",
+        "source": "https://commons.wikimedia.org/wiki/File:Ulaanbaatar_Hotel.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Ulaanbaatar_Hotel_Room.jpg/1280px-Ulaanbaatar_Hotel_Room.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Ulaanbaatar_Hotel_Room.jpg",
+        "title": "Ulaanbaatar Hotel Room.jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "https://www.flickr.com/photos/sburt/",
+        "source": "https://commons.wikimedia.org/wiki/File:Ulaanbaatar_Hotel_Room.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Chinggis_Khaan_Hotel_-_Deluxe_Double_Room.jpg/1280px-Chinggis_Khaan_Hotel_-_Deluxe_Double_Room.jpg"
+  },
+  {
+    "_id": "stay_tsagaan_suvarga_camp",
+    "name": {
+      "mn": "Цагаан суварга бааз",
+      "en": "White Stupa Ger Camp"
+    },
+    "type": "ger_camp",
+    "place_id": "place_tsagaan_suvarga",
+    "aimag": "Dundgovi",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        105.766,
+        44.609
+      ]
+    },
+    "owner": {
+      "name": "Ariunaa",
+      "phone": "+976 9900 1022",
+      "preferred_channel": "phone",
+      "languages": [
+        "mn"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "ger",
+        "count": 16,
+        "beds_per_unit": 3,
+        "price_mnt": 90000,
+        "price_basis": "per_person",
+        "meals_included": true
+      }
+    ],
+    "total_beds": 48,
+    "amenities": [
+      "meals",
+      "solar_power",
+      "stargazing"
+    ],
+    "season": {
+      "year_round": false,
+      "open_from": "05-01",
+      "open_to": "10-15"
+    },
+    "cancellation_policy_id": "policy_moderate",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash"
+    ],
+    "rating": 4.1,
+    "reviews_count": 328,
+    "is_mock": true,
+    "region": "south",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Turista_s%C3%A1tort%C3%A1bor_%28Tourist_ger_camp%29_-_panoramio.jpg/1280px-Turista_s%C3%A1tort%C3%A1bor_%28Tourist_ger_camp%29_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Turista_s%C3%A1tort%C3%A1bor_%28Tourist_ger_camp%29_-_panoramio.jpg",
+        "title": "Turista sátortábor (Tourist ger camp) - panoramio.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Gyula Péter",
+        "source": "https://commons.wikimedia.org/wiki/File:Turista_s%C3%A1tort%C3%A1bor_(Tourist_ger_camp)_-_panoramio.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Hotel_Camp_Ulziit_Khishig_03.jpg/1280px-Hotel_Camp_Ulziit_Khishig_03.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Hotel_Camp_Ulziit_Khishig_03.jpg",
+        "title": "Hotel Camp Ulziit Khishig 03.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Hotel_Camp_Ulziit_Khishig_03.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Hotel_Camp_Secret_of_Ongii_01.jpg/1280px-Hotel_Camp_Secret_of_Ongii_01.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Hotel_Camp_Secret_of_Ongii_01.jpg",
+        "title": "Hotel Camp Secret of Ongii 01.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Hotel_Camp_Secret_of_Ongii_01.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Turista_s%C3%A1tort%C3%A1bor_%28Tourist_ger_camp%29_-_panoramio.jpg/1280px-Turista_s%C3%A1tort%C3%A1bor_%28Tourist_ger_camp%29_-_panoramio.jpg"
+  },
+  {
+    "_id": "stay_dalanzadgad_hotel_south",
+    "name": {
+      "mn": "Өмнийн говь зочид буудал",
+      "en": "South Gobi Hotel"
+    },
+    "type": "hotel",
+    "place_id": "place_dalanzadgad",
+    "aimag": "Ömnögovi",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        104.427,
+        43.5718
+      ]
+    },
+    "owner": {
+      "name": "Chinbat",
+      "phone": "+976 9900 1023",
+      "preferred_channel": "phone",
+      "languages": [
+        "mn",
+        "en"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "double_room",
+        "count": 30,
+        "beds_per_unit": 2,
+        "price_mnt": 170000,
+        "price_basis": "per_unit",
+        "meals_included": false
+      },
+      {
+        "unit_type": "family_room",
+        "count": 6,
+        "beds_per_unit": 4,
+        "price_mnt": 260000,
+        "price_basis": "per_unit",
+        "meals_included": false
+      }
+    ],
+    "total_beds": 84,
+    "amenities": [
+      "wifi",
+      "restaurant",
+      "parking",
+      "airport_transfer"
+    ],
+    "season": {
+      "year_round": true,
+      "open_from": null,
+      "open_to": null
+    },
+    "cancellation_policy_id": "policy_flexible",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash",
+      "card"
+    ],
+    "rating": 4.1,
+    "reviews_count": 307,
+    "is_mock": true,
+    "region": "south",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Ulaanbaatar_Hotel_Room.jpg/1280px-Ulaanbaatar_Hotel_Room.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Ulaanbaatar_Hotel_Room.jpg",
+        "title": "Ulaanbaatar Hotel Room.jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "https://www.flickr.com/photos/sburt/",
+        "source": "https://commons.wikimedia.org/wiki/File:Ulaanbaatar_Hotel_Room.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Ulaanbaatar_hotel.jpg/1280px-Ulaanbaatar_hotel.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Ulaanbaatar_hotel.jpg",
+        "title": "Ulaanbaatar hotel.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Bbadmaa",
+        "source": "https://commons.wikimedia.org/wiki/File:Ulaanbaatar_hotel.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Aurora_Hotel_%28Ulaanbaatar%29.jpg/1280px-Aurora_Hotel_%28Ulaanbaatar%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Aurora_Hotel_%28Ulaanbaatar%29.jpg",
+        "title": "Aurora Hotel (Ulaanbaatar).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Chongkian",
+        "source": "https://commons.wikimedia.org/wiki/File:Aurora_Hotel_(Ulaanbaatar).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Ulaanbaatar_Hotel_Room.jpg/1280px-Ulaanbaatar_Hotel_Room.jpg"
+  },
+  {
+    "_id": "stay_yolyn_am_camp",
+    "name": {
+      "mn": "Гурван сайхан бааз",
+      "en": "Gurvan Saikhan Ger Camp"
+    },
+    "type": "ger_camp",
+    "place_id": "place_yolyn_am",
+    "aimag": "Ömnögovi",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        104.12,
+        43.52
+      ]
+    },
+    "owner": {
+      "name": "Delgermaa",
+      "phone": "+976 9900 1024",
+      "preferred_channel": "phone",
+      "languages": [
+        "mn"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "ger",
+        "count": 30,
+        "beds_per_unit": 3,
+        "price_mnt": 130000,
+        "price_basis": "per_person",
+        "meals_included": true
+      }
+    ],
+    "total_beds": 90,
+    "amenities": [
+      "meals",
+      "hot_shower",
+      "wifi",
+      "horse_riding"
+    ],
+    "season": {
+      "year_round": false,
+      "open_from": "05-01",
+      "open_to": "10-20"
+    },
+    "cancellation_policy_id": "policy_moderate",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash"
+    ],
+    "rating": 4.4,
+    "reviews_count": 35,
+    "is_mock": true,
+    "region": "south",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Hotel_Camp_Secret_of_Ongii_01.jpg/1280px-Hotel_Camp_Secret_of_Ongii_01.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Hotel_Camp_Secret_of_Ongii_01.jpg",
+        "title": "Hotel Camp Secret of Ongii 01.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Hotel_Camp_Secret_of_Ongii_01.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Alag_Tsar_Tourist_Camp.jpg/1280px-Alag_Tsar_Tourist_Camp.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Alag_Tsar_Tourist_Camp.jpg",
+        "title": "Alag Tsar Tourist Camp.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Alag_Tsar_Tourist_Camp.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Subedei_Ger_Camp_and_Guest_House.jpg/1280px-Subedei_Ger_Camp_and_Guest_House.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Subedei_Ger_Camp_and_Guest_House.jpg",
+        "title": "Subedei Ger Camp and Guest House.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Chongkian",
+        "source": "https://commons.wikimedia.org/wiki/File:Subedei_Ger_Camp_and_Guest_House.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Hotel_Camp_Secret_of_Ongii_01.jpg/1280px-Hotel_Camp_Secret_of_Ongii_01.jpg"
+  },
+  {
+    "_id": "stay_bayanzag_camp",
+    "name": {
+      "mn": "Улаан эрэг бааз",
+      "en": "Flaming Cliffs Camp"
+    },
+    "type": "ger_camp",
+    "place_id": "place_bayanzag",
+    "aimag": "Ömnögovi",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        103.717,
+        44.153
+      ]
+    },
+    "owner": {
+      "name": "Purevdorj",
+      "phone": "+976 9900 1025",
+      "preferred_channel": "phone",
+      "languages": [
+        "mn"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "ger",
+        "count": 20,
+        "beds_per_unit": 3,
+        "price_mnt": 115000,
+        "price_basis": "per_person",
+        "meals_included": true
+      }
+    ],
+    "total_beds": 60,
+    "amenities": [
+      "meals",
+      "hot_shower",
+      "stargazing"
+    ],
+    "season": {
+      "year_round": false,
+      "open_from": "05-01",
+      "open_to": "10-15"
+    },
+    "cancellation_policy_id": "policy_moderate",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash"
+    ],
+    "rating": 4.3,
+    "reviews_count": 52,
+    "is_mock": true,
+    "region": "south",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Subedei_Ger_Camp_and_Guest_House.jpg/1280px-Subedei_Ger_Camp_and_Guest_House.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Subedei_Ger_Camp_and_Guest_House.jpg",
+        "title": "Subedei Ger Camp and Guest House.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Chongkian",
+        "source": "https://commons.wikimedia.org/wiki/File:Subedei_Ger_Camp_and_Guest_House.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286247003186%29.jpg/1280px-Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286247003186%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286247003186%29.jpg",
+        "title": "Ger Camp - Dornogovi Province - Mongolia (6247003186).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "David Berkowitz from New York, NY, USA",
+        "source": "https://commons.wikimedia.org/wiki/File:Ger_Camp_-_Dornogovi_Province_-_Mongolia_(6247003186).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246456067%29.jpg/1280px-Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246456067%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246456067%29.jpg",
+        "title": "Ger Camp - Dornogovi Province - Mongolia (6246456067).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "David Berkowitz from New York, NY, USA",
+        "source": "https://commons.wikimedia.org/wiki/File:Ger_Camp_-_Dornogovi_Province_-_Mongolia_(6246456067).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Subedei_Ger_Camp_and_Guest_House.jpg/1280px-Subedei_Ger_Camp_and_Guest_House.jpg"
+  },
+  {
+    "_id": "stay_khongor_camp_dunes",
+    "name": {
+      "mn": "Дуут манхан бааз",
+      "en": "Singing Dunes Camp"
+    },
+    "type": "ger_camp",
+    "place_id": "place_khongoryn_els",
+    "aimag": "Ömnögovi",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        102.3,
+        43.8025
+      ]
+    },
+    "owner": {
+      "name": "Bolormaa",
+      "phone": "+976 9900 1026",
+      "preferred_channel": "phone",
+      "languages": [
+        "mn"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "ger",
+        "count": 25,
+        "beds_per_unit": 3,
+        "price_mnt": 125000,
+        "price_basis": "per_person",
+        "meals_included": true
+      }
+    ],
+    "total_beds": 75,
+    "amenities": [
+      "meals",
+      "camel_riding",
+      "hot_shower",
+      "sandboarding"
+    ],
+    "season": {
+      "year_round": false,
+      "open_from": "05-01",
+      "open_to": "10-20"
+    },
+    "cancellation_policy_id": "policy_strict",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash"
+    ],
+    "rating": 4.5,
+    "reviews_count": 206,
+    "is_mock": true,
+    "region": "south",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Yurt_in_Gobi_Desert.jpg/1280px-Yurt_in_Gobi_Desert.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Yurt_in_Gobi_Desert.jpg",
+        "title": "Yurt in Gobi Desert.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Yurt_in_Gobi_Desert.jpg",
+        "match": "near_stay",
+        "distance_m": 3799,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Hotel_Camp_Gobi_Discovery_2.jpg/1280px-Hotel_Camp_Gobi_Discovery_2.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Hotel_Camp_Gobi_Discovery_2.jpg",
+        "title": "Hotel Camp Gobi Discovery 2.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Hotel_Camp_Gobi_Discovery_2.jpg",
+        "match": "near_stay",
+        "distance_m": 4380,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246456067%29.jpg/1280px-Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246456067%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246456067%29.jpg",
+        "title": "Ger Camp - Dornogovi Province - Mongolia (6246456067).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "David Berkowitz from New York, NY, USA",
+        "source": "https://commons.wikimedia.org/wiki/File:Ger_Camp_-_Dornogovi_Province_-_Mongolia_(6246456067).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Yurt_in_Gobi_Desert.jpg/1280px-Yurt_in_Gobi_Desert.jpg"
+  },
+  {
+    "_id": "stay_khongor_herder_family",
+    "name": {
+      "mn": "Хонгорын тэмээчин айл",
+      "en": "Khongor Camel Herder Family"
+    },
+    "type": "house",
+    "place_id": "place_khongoryn_els",
+    "aimag": "Ömnögovi",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        102.24,
+        43.8225
+      ]
+    },
+    "owner": {
+      "name": "Bat-Erdene",
+      "phone": "+976 9900 1027",
+      "preferred_channel": "phone",
+      "languages": [
+        "mn"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "ger",
+        "count": 2,
+        "beds_per_unit": 4,
+        "price_mnt": 50000,
+        "price_basis": "per_person",
+        "meals_included": true
+      }
+    ],
+    "total_beds": 8,
+    "amenities": [
+      "meals",
+      "camel_riding",
+      "herding_experience"
+    ],
+    "season": {
+      "year_round": true,
+      "open_from": null,
+      "open_to": null
+    },
+    "cancellation_policy_id": "policy_flexible",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash"
+    ],
+    "rating": 4.8,
+    "reviews_count": 439,
+    "is_mock": true,
+    "region": "south",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Inside_a_Yurt_%2819210573564%29.jpg/1280px-Inside_a_Yurt_%2819210573564%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Inside_a_Yurt_%2819210573564%29.jpg",
+        "title": "Inside a Yurt (19210573564).jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Gary Todd from Xinzheng, China",
+        "source": "https://commons.wikimedia.org/wiki/File:Inside_a_Yurt_(19210573564).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Traditional_ger_housing_for_a_nomadic_herding_family%2C_Western_Mongolia.jpg/1280px-Traditional_ger_housing_for_a_nomadic_herding_family%2C_Western_Mongolia.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Traditional_ger_housing_for_a_nomadic_herding_family%2C_Western_Mongolia.jpg",
+        "title": "Traditional ger housing for a nomadic herding family, Western Mongolia.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Bfreeproductions",
+        "source": "https://commons.wikimedia.org/wiki/File:Traditional_ger_housing_for_a_nomadic_herding_family,_Western_Mongolia.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Traditional_ger_for_a_nomadic_herding_family_in_remote_Western_Mongolia.jpg/1280px-Traditional_ger_for_a_nomadic_herding_family_in_remote_Western_Mongolia.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Traditional_ger_for_a_nomadic_herding_family_in_remote_Western_Mongolia.jpg",
+        "title": "Traditional ger for a nomadic herding family in remote Western Mongolia.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Bfreeproductions",
+        "source": "https://commons.wikimedia.org/wiki/File:Traditional_ger_for_a_nomadic_herding_family_in_remote_Western_Mongolia.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Inside_a_Yurt_%2819210573564%29.jpg/1280px-Inside_a_Yurt_%2819210573564%29.jpg"
+  },
+  {
+    "_id": "stay_olgii_guesthouse_kazakh",
+    "name": {
+      "mn": "Алтай казах гэр буудал",
+      "en": "Altai Kazakh Guesthouse"
+    },
+    "type": "guesthouse",
+    "place_id": "place_olgii",
+    "aimag": "Bayan-Ölgii",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        89.968,
+        48.9703
+      ]
+    },
+    "owner": {
+      "name": "Oyunchimeg",
+      "phone": "+976 9900 1028",
+      "preferred_channel": "messenger",
+      "languages": [
+        "mn",
+        "kk",
+        "en"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "double_room",
+        "count": 8,
+        "beds_per_unit": 2,
+        "price_mnt": 90000,
+        "price_basis": "per_unit",
+        "meals_included": true
+      },
+      {
+        "unit_type": "ger",
+        "count": 4,
+        "beds_per_unit": 4,
+        "price_mnt": 45000,
+        "price_basis": "per_person",
+        "meals_included": true
+      }
+    ],
+    "total_beds": 32,
+    "amenities": [
+      "wifi",
+      "meals",
+      "tour_desk",
+      "eagle_hunter_visit"
+    ],
+    "season": {
+      "year_round": true,
+      "open_from": null,
+      "open_to": null
+    },
+    "cancellation_policy_id": "policy_flexible",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash"
+    ],
+    "rating": 4.6,
+    "reviews_count": 171,
+    "is_mock": true,
+    "region": "west",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Bastau_hotel_-_panoramio.jpg/1280px-Bastau_hotel_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Bastau_hotel_-_panoramio.jpg",
+        "title": "Bastau hotel - panoramio.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Mongolia Expeditions…",
+        "source": "https://commons.wikimedia.org/wiki/File:Bastau_hotel_-_panoramio.jpg",
+        "match": "near_stay",
+        "distance_m": 278,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Kazakh_yurt_in_Bayan-Olgii%2C_Mongolia_2009.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Kazakh_yurt_in_Bayan-Olgii%2C_Mongolia_2009.jpg",
+        "title": "Kazakh yurt in Bayan-Olgii, Mongolia 2009.jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "Todd Anderson",
+        "source": "https://commons.wikimedia.org/wiki/File:Kazakh_yurt_in_Bayan-Olgii,_Mongolia_2009.jpg",
+        "match": "near_stay",
+        "distance_m": 459,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Ganasger.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Ganasger.jpg",
+        "title": "Ganasger.jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "Stefan Ertmann",
+        "source": "https://commons.wikimedia.org/wiki/File:Ganasger.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Bastau_hotel_-_panoramio.jpg/1280px-Bastau_hotel_-_panoramio.jpg"
+  },
+  {
+    "_id": "stay_olgii_hotel_eagle",
+    "name": {
+      "mn": "Алтан бүргэд зочид буудал",
+      "en": "Golden Eagle Hotel Ölgii"
+    },
+    "type": "hotel",
+    "place_id": "place_olgii",
+    "aimag": "Bayan-Ölgii",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        89.963,
+        48.9693
+      ]
+    },
+    "owner": {
+      "name": "Ganbold",
+      "phone": "+976 9900 1029",
+      "preferred_channel": "phone",
+      "languages": [
+        "mn",
+        "kk",
+        "en"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "double_room",
+        "count": 20,
+        "beds_per_unit": 2,
+        "price_mnt": 150000,
+        "price_basis": "per_unit",
+        "meals_included": false
+      }
+    ],
+    "total_beds": 40,
+    "amenities": [
+      "wifi",
+      "restaurant",
+      "parking"
+    ],
+    "season": {
+      "year_round": true,
+      "open_from": null,
+      "open_to": null
+    },
+    "cancellation_policy_id": "policy_strict",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash",
+      "card"
+    ],
+    "rating": 4.0,
+    "reviews_count": 53,
+    "is_mock": true,
+    "region": "west",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Bastau_hotel_-_panoramio.jpg/1280px-Bastau_hotel_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Bastau_hotel_-_panoramio.jpg",
+        "title": "Bastau hotel - panoramio.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Mongolia Expeditions…",
+        "source": "https://commons.wikimedia.org/wiki/File:Bastau_hotel_-_panoramio.jpg",
+        "match": "near_stay",
+        "distance_m": 384,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Kazakh_yurt_in_Bayan-Olgii%2C_Mongolia_2009.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Kazakh_yurt_in_Bayan-Olgii%2C_Mongolia_2009.jpg",
+        "title": "Kazakh yurt in Bayan-Olgii, Mongolia 2009.jpg",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "Todd Anderson",
+        "source": "https://commons.wikimedia.org/wiki/File:Kazakh_yurt_in_Bayan-Olgii,_Mongolia_2009.jpg",
+        "match": "near_stay",
+        "distance_m": 134,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Aurora_Hotel_%28Ulaanbaatar%29.jpg/1280px-Aurora_Hotel_%28Ulaanbaatar%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Aurora_Hotel_%28Ulaanbaatar%29.jpg",
+        "title": "Aurora Hotel (Ulaanbaatar).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Chongkian",
+        "source": "https://commons.wikimedia.org/wiki/File:Aurora_Hotel_(Ulaanbaatar).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Bastau_hotel_-_panoramio.jpg/1280px-Bastau_hotel_-_panoramio.jpg"
+  },
+  {
+    "_id": "stay_tavan_bogd_camp",
+    "name": {
+      "mn": "Таван Богд бааз",
+      "en": "Tavan Bogd Base Camp"
+    },
+    "type": "ger_camp",
+    "place_id": "place_tavan_bogd",
+    "aimag": "Bayan-Ölgii",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        87.92,
+        49.16
+      ]
+    },
+    "owner": {
+      "name": "Sarangerel",
+      "phone": "+976 9900 1030",
+      "preferred_channel": "messenger",
+      "languages": [
+        "mn",
+        "kk"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "ger",
+        "count": 10,
+        "beds_per_unit": 3,
+        "price_mnt": 100000,
+        "price_basis": "per_person",
+        "meals_included": true
+      }
+    ],
+    "total_beds": 30,
+    "amenities": [
+      "meals",
+      "guided_hike",
+      "horse_riding"
+    ],
+    "season": {
+      "year_round": false,
+      "open_from": "06-15",
+      "open_to": "09-15"
+    },
+    "cancellation_policy_id": "policy_moderate",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash"
+    ],
+    "rating": 4.4,
+    "reviews_count": 212,
+    "is_mock": true,
+    "region": "west",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246970316%29.jpg/1280px-Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246970316%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246970316%29.jpg",
+        "title": "Ger Camp - Dornogovi Province - Mongolia (6246970316).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "David Berkowitz from New York, NY, USA",
+        "source": "https://commons.wikimedia.org/wiki/File:Ger_Camp_-_Dornogovi_Province_-_Mongolia_(6246970316).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246987542%29.jpg/1280px-Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246987542%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246987542%29.jpg",
+        "title": "Ger Camp - Dornogovi Province - Mongolia (6246987542).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "David Berkowitz from New York, NY, USA",
+        "source": "https://commons.wikimedia.org/wiki/File:Ger_Camp_-_Dornogovi_Province_-_Mongolia_(6246987542).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Turista_s%C3%A1tort%C3%A1bor_%28Tourist_ger_camp%29_-_panoramio.jpg/1280px-Turista_s%C3%A1tort%C3%A1bor_%28Tourist_ger_camp%29_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Turista_s%C3%A1tort%C3%A1bor_%28Tourist_ger_camp%29_-_panoramio.jpg",
+        "title": "Turista sátortábor (Tourist ger camp) - panoramio.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Gyula Péter",
+        "source": "https://commons.wikimedia.org/wiki/File:Turista_s%C3%A1tort%C3%A1bor_(Tourist_ger_camp)_-_panoramio.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246970316%29.jpg/1280px-Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246970316%29.jpg"
+  },
+  {
+    "_id": "stay_olgii_eagle_hunter_family",
+    "name": {
+      "mn": "Бүргэдчин айлын гэр",
+      "en": "Eagle Hunter Family Ger"
+    },
+    "type": "house",
+    "place_id": "place_olgii",
+    "aimag": "Bayan-Ölgii",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        89.905,
+        49.0483
+      ]
+    },
+    "owner": {
+      "name": "Tömörbaatar",
+      "phone": "+976 9900 1031",
+      "preferred_channel": "whatsapp",
+      "languages": [
+        "mn",
+        "kk"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "ger",
+        "count": 2,
+        "beds_per_unit": 4,
+        "price_mnt": 55000,
+        "price_basis": "per_person",
+        "meals_included": true
+      }
+    ],
+    "total_beds": 8,
+    "amenities": [
+      "meals",
+      "eagle_hunter_visit",
+      "horse_riding"
+    ],
+    "season": {
+      "year_round": true,
+      "open_from": null,
+      "open_to": null
+    },
+    "cancellation_policy_id": "policy_flexible",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash"
+    ],
+    "rating": 4.9,
+    "reviews_count": 291,
+    "is_mock": true,
+    "region": "west",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Traditional_ger_for_a_nomadic_herding_family_in_remote_Western_Mongolia.jpg/1280px-Traditional_ger_for_a_nomadic_herding_family_in_remote_Western_Mongolia.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Traditional_ger_for_a_nomadic_herding_family_in_remote_Western_Mongolia.jpg",
+        "title": "Traditional ger for a nomadic herding family in remote Western Mongolia.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Bfreeproductions",
+        "source": "https://commons.wikimedia.org/wiki/File:Traditional_ger_for_a_nomadic_herding_family_in_remote_Western_Mongolia.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Mongolia_Herding_Life_6.JPG",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Mongolia_Herding_Life_6.JPG",
+        "title": "Mongolia Herding Life 6.JPG",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Taylor Weidman/The Vanishing Cultures Project",
+        "source": "https://commons.wikimedia.org/wiki/File:Mongolia_Herding_Life_6.JPG",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Tal_des_Kherlen_s%C3%BCdlich_des_Steppe_Nomads_Camp%2C_Mongolei_II.jpg/1280px-Tal_des_Kherlen_s%C3%BCdlich_des_Steppe_Nomads_Camp%2C_Mongolei_II.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Tal_des_Kherlen_s%C3%BCdlich_des_Steppe_Nomads_Camp%2C_Mongolei_II.jpg",
+        "title": "Tal des Kherlen südlich des Steppe Nomads Camp, Mongolei II.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "GerritR",
+        "source": "https://commons.wikimedia.org/wiki/File:Tal_des_Kherlen_s%C3%BCdlich_des_Steppe_Nomads_Camp,_Mongolei_II.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Traditional_ger_for_a_nomadic_herding_family_in_remote_Western_Mongolia.jpg/1280px-Traditional_ger_for_a_nomadic_herding_family_in_remote_Western_Mongolia.jpg"
+  },
+  {
+    "_id": "stay_khovd_hotel_buyant",
+    "name": {
+      "mn": "Буянт голын зочид буудал",
+      "en": "Buyant River Hotel"
+    },
+    "type": "hotel",
+    "place_id": "place_khovd",
+    "aimag": "Khovd",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        91.6439,
+        48.0066
+      ]
+    },
+    "owner": {
+      "name": "Enkhjargal",
+      "phone": "+976 9900 1032",
+      "preferred_channel": "messenger",
+      "languages": [
+        "mn",
+        "en"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "double_room",
+        "count": 24,
+        "beds_per_unit": 2,
+        "price_mnt": 140000,
+        "price_basis": "per_unit",
+        "meals_included": false
+      },
+      {
+        "unit_type": "family_room",
+        "count": 4,
+        "beds_per_unit": 4,
+        "price_mnt": 220000,
+        "price_basis": "per_unit",
+        "meals_included": false
+      }
+    ],
+    "total_beds": 64,
+    "amenities": [
+      "wifi",
+      "restaurant",
+      "parking",
+      "airport_transfer"
+    ],
+    "season": {
+      "year_round": true,
+      "open_from": null,
+      "open_to": null
+    },
+    "cancellation_policy_id": "policy_flexible",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash",
+      "card"
+    ],
+    "rating": 4.1,
+    "reviews_count": 122,
+    "is_mock": true,
+    "region": "west",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/International_Hotel_%28Ulaanbaatar%29.jpg/1280px-International_Hotel_%28Ulaanbaatar%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/23/International_Hotel_%28Ulaanbaatar%29.jpg",
+        "title": "International Hotel (Ulaanbaatar).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Chongkian",
+        "source": "https://commons.wikimedia.org/wiki/File:International_Hotel_(Ulaanbaatar).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Hotel_in_Sainshand.jpg/1280px-Hotel_in_Sainshand.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Hotel_in_Sainshand.jpg",
+        "title": "Hotel in Sainshand.jpg",
+        "license": "Public domain",
+        "license_url": null,
+        "author": "David Castor (dcastor)",
+        "source": "https://commons.wikimedia.org/wiki/File:Hotel_in_Sainshand.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Bastau_hotel_-_panoramio.jpg/1280px-Bastau_hotel_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Bastau_hotel_-_panoramio.jpg",
+        "title": "Bastau hotel - panoramio.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Mongolia Expeditions…",
+        "source": "https://commons.wikimedia.org/wiki/File:Bastau_hotel_-_panoramio.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/International_Hotel_%28Ulaanbaatar%29.jpg/1280px-International_Hotel_%28Ulaanbaatar%29.jpg"
+  },
+  {
+    "_id": "stay_khar_us_camp",
+    "name": {
+      "mn": "Хар ус бааз",
+      "en": "Khar Us Reed Camp"
+    },
+    "type": "ger_camp",
+    "place_id": "place_khar_us",
+    "aimag": "Khovd",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        92.308,
+        48.056
+      ]
+    },
+    "owner": {
+      "name": "Batbayar",
+      "phone": "+976 9900 1033",
+      "preferred_channel": "messenger",
+      "languages": [
+        "mn"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "ger",
+        "count": 10,
+        "beds_per_unit": 3,
+        "price_mnt": 80000,
+        "price_basis": "per_person",
+        "meals_included": true
+      }
+    ],
+    "total_beds": 30,
+    "amenities": [
+      "meals",
+      "birdwatching",
+      "boat_trips"
+    ],
+    "season": {
+      "year_round": false,
+      "open_from": "05-20",
+      "open_to": "09-30"
+    },
+    "cancellation_policy_id": "policy_moderate",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash"
+    ],
+    "rating": 4.0,
+    "reviews_count": 229,
+    "is_mock": true,
+    "region": "west",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Turista_s%C3%A1tort%C3%A1bor_%28Tourist_ger_camp%29_-_panoramio.jpg/1280px-Turista_s%C3%A1tort%C3%A1bor_%28Tourist_ger_camp%29_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Turista_s%C3%A1tort%C3%A1bor_%28Tourist_ger_camp%29_-_panoramio.jpg",
+        "title": "Turista sátortábor (Tourist ger camp) - panoramio.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Gyula Péter",
+        "source": "https://commons.wikimedia.org/wiki/File:Turista_s%C3%A1tort%C3%A1bor_(Tourist_ger_camp)_-_panoramio.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Hotel_Camp_Ulziit_Khishig_03.jpg/1280px-Hotel_Camp_Ulziit_Khishig_03.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Hotel_Camp_Ulziit_Khishig_03.jpg",
+        "title": "Hotel Camp Ulziit Khishig 03.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Hotel_Camp_Ulziit_Khishig_03.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Hotel_Camp_Secret_of_Ongii_01.jpg/1280px-Hotel_Camp_Secret_of_Ongii_01.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Hotel_Camp_Secret_of_Ongii_01.jpg",
+        "title": "Hotel Camp Secret of Ongii 01.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Hotel_Camp_Secret_of_Ongii_01.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Turista_s%C3%A1tort%C3%A1bor_%28Tourist_ger_camp%29_-_panoramio.jpg/1280px-Turista_s%C3%A1tort%C3%A1bor_%28Tourist_ger_camp%29_-_panoramio.jpg"
+  },
+  {
+    "_id": "stay_uliastai_hotel",
+    "name": {
+      "mn": "Завхан зочид буудал",
+      "en": "Zavkhan Hotel Uliastai"
+    },
+    "type": "hotel",
+    "place_id": "place_uliastai",
+    "aimag": "Zavkhan",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        96.8454,
+        47.7427
+      ]
+    },
+    "owner": {
+      "name": "Nomin",
+      "phone": "+976 9900 1034",
+      "preferred_channel": "phone",
+      "languages": [
+        "mn",
+        "en"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "double_room",
+        "count": 14,
+        "beds_per_unit": 2,
+        "price_mnt": 110000,
+        "price_basis": "per_unit",
+        "meals_included": false
+      }
+    ],
+    "total_beds": 28,
+    "amenities": [
+      "wifi",
+      "restaurant"
+    ],
+    "season": {
+      "year_round": true,
+      "open_from": null,
+      "open_to": null
+    },
+    "cancellation_policy_id": "policy_flexible",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash",
+      "card"
+    ],
+    "rating": 3.8,
+    "reviews_count": 158,
+    "is_mock": true,
+    "region": "west",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Bastau_hotel_-_panoramio.jpg/1280px-Bastau_hotel_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Bastau_hotel_-_panoramio.jpg",
+        "title": "Bastau hotel - panoramio.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Mongolia Expeditions…",
+        "source": "https://commons.wikimedia.org/wiki/File:Bastau_hotel_-_panoramio.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Hotel_near_Khovsgol_lake_-_panoramio.jpg/1280px-Hotel_near_Khovsgol_lake_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Hotel_near_Khovsgol_lake_-_panoramio.jpg",
+        "title": "Hotel near Khovsgol lake - panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Alex Ang",
+        "source": "https://commons.wikimedia.org/wiki/File:Hotel_near_Khovsgol_lake_-_panoramio.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Comfort_Hotel_%28Darkhan%29.jpg/1280px-Comfort_Hotel_%28Darkhan%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Comfort_Hotel_%28Darkhan%29.jpg",
+        "title": "Comfort Hotel (Darkhan).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Chongkian",
+        "source": "https://commons.wikimedia.org/wiki/File:Comfort_Hotel_(Darkhan).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Bastau_hotel_-_panoramio.jpg/1280px-Bastau_hotel_-_panoramio.jpg"
+  },
+  {
+    "_id": "stay_uvs_lake_camp",
+    "name": {
+      "mn": "Увс нуур бааз",
+      "en": "Uvs Lake Ger Camp"
+    },
+    "type": "ger_camp",
+    "place_id": "place_uvs_lake",
+    "aimag": "Uvs",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        92.72,
+        50.29
+      ]
+    },
+    "owner": {
+      "name": "Davaasüren",
+      "phone": "+976 9900 1035",
+      "preferred_channel": "phone",
+      "languages": [
+        "mn"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "ger",
+        "count": 12,
+        "beds_per_unit": 3,
+        "price_mnt": 85000,
+        "price_basis": "per_person",
+        "meals_included": true
+      }
+    ],
+    "total_beds": 36,
+    "amenities": [
+      "meals",
+      "hot_shower",
+      "fishing"
+    ],
+    "season": {
+      "year_round": false,
+      "open_from": "06-01",
+      "open_to": "09-20"
+    },
+    "cancellation_policy_id": "policy_moderate",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash"
+    ],
+    "rating": 4.1,
+    "reviews_count": 141,
+    "is_mock": true,
+    "region": "west",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Hotel_Camp_Secret_of_Ongii_01.jpg/1280px-Hotel_Camp_Secret_of_Ongii_01.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Hotel_Camp_Secret_of_Ongii_01.jpg",
+        "title": "Hotel Camp Secret of Ongii 01.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Hotel_Camp_Secret_of_Ongii_01.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Alag_Tsar_Tourist_Camp.jpg/1280px-Alag_Tsar_Tourist_Camp.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Alag_Tsar_Tourist_Camp.jpg",
+        "title": "Alag Tsar Tourist Camp.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Alag_Tsar_Tourist_Camp.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Subedei_Ger_Camp_and_Guest_House.jpg/1280px-Subedei_Ger_Camp_and_Guest_House.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Subedei_Ger_Camp_and_Guest_House.jpg",
+        "title": "Subedei Ger Camp and Guest House.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Chongkian",
+        "source": "https://commons.wikimedia.org/wiki/File:Subedei_Ger_Camp_and_Guest_House.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Hotel_Camp_Secret_of_Ongii_01.jpg/1280px-Hotel_Camp_Secret_of_Ongii_01.jpg"
+  },
+  {
+    "_id": "stay_chinggis_hotel_kherlen",
+    "name": {
+      "mn": "Хэрлэн зочид буудал",
+      "en": "Kherlen Hotel"
+    },
+    "type": "hotel",
+    "place_id": "place_chinggis_city",
+    "aimag": "Khentii",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        110.6576,
+        47.3204
+      ]
+    },
+    "owner": {
+      "name": "Altantsetseg",
+      "phone": "+976 9900 1036",
+      "preferred_channel": "messenger",
+      "languages": [
+        "mn",
+        "en"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "double_room",
+        "count": 18,
+        "beds_per_unit": 2,
+        "price_mnt": 120000,
+        "price_basis": "per_unit",
+        "meals_included": false
+      }
+    ],
+    "total_beds": 36,
+    "amenities": [
+      "wifi",
+      "restaurant",
+      "parking"
+    ],
+    "season": {
+      "year_round": true,
+      "open_from": null,
+      "open_to": null
+    },
+    "cancellation_policy_id": "policy_flexible",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash",
+      "card"
+    ],
+    "rating": 3.9,
+    "reviews_count": 246,
+    "is_mock": true,
+    "region": "east",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Comfort_Hotel_%28Darkhan%29.jpg/1280px-Comfort_Hotel_%28Darkhan%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Comfort_Hotel_%28Darkhan%29.jpg",
+        "title": "Comfort Hotel (Darkhan).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Chongkian",
+        "source": "https://commons.wikimedia.org/wiki/File:Comfort_Hotel_(Darkhan).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Royal_Hotel_%28Darkhan%29.jpg/1280px-Royal_Hotel_%28Darkhan%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Royal_Hotel_%28Darkhan%29.jpg",
+        "title": "Royal Hotel (Darkhan).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Chongkian",
+        "source": "https://commons.wikimedia.org/wiki/File:Royal_Hotel_(Darkhan).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Crystal_Hotel_%28Darkhan%29.jpg/1280px-Crystal_Hotel_%28Darkhan%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Crystal_Hotel_%28Darkhan%29.jpg",
+        "title": "Crystal Hotel (Darkhan).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Chongkian",
+        "source": "https://commons.wikimedia.org/wiki/File:Crystal_Hotel_(Darkhan).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Comfort_Hotel_%28Darkhan%29.jpg/1280px-Comfort_Hotel_%28Darkhan%29.jpg"
+  },
+  {
+    "_id": "stay_dadal_camp_gurvan_nuur",
+    "name": {
+      "mn": "Гурван нуур бааз",
+      "en": "Gurvan Nuur Camp Dadal"
+    },
+    "type": "ger_camp",
+    "place_id": "place_dadal",
+    "aimag": "Khentii",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        111.6164,
+        49.0336
+      ]
+    },
+    "owner": {
+      "name": "Munkhbat",
+      "phone": "+976 9900 1037",
+      "preferred_channel": "messenger",
+      "languages": [
+        "mn"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "ger",
+        "count": 15,
+        "beds_per_unit": 3,
+        "price_mnt": 90000,
+        "price_basis": "per_person",
+        "meals_included": true
+      },
+      {
+        "unit_type": "wooden_cabin",
+        "count": 6,
+        "beds_per_unit": 4,
+        "price_mnt": 120000,
+        "price_basis": "per_person",
+        "meals_included": true
+      }
+    ],
+    "total_beds": 69,
+    "amenities": [
+      "meals",
+      "sauna",
+      "fishing",
+      "horse_riding"
+    ],
+    "season": {
+      "year_round": false,
+      "open_from": "05-25",
+      "open_to": "10-10"
+    },
+    "cancellation_policy_id": "policy_moderate",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash"
+    ],
+    "rating": 4.3,
+    "reviews_count": 253,
+    "is_mock": true,
+    "region": "east",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Subedei_Ger_Camp_and_Guest_House.jpg/1280px-Subedei_Ger_Camp_and_Guest_House.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Subedei_Ger_Camp_and_Guest_House.jpg",
+        "title": "Subedei Ger Camp and Guest House.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Chongkian",
+        "source": "https://commons.wikimedia.org/wiki/File:Subedei_Ger_Camp_and_Guest_House.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286247003186%29.jpg/1280px-Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286247003186%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286247003186%29.jpg",
+        "title": "Ger Camp - Dornogovi Province - Mongolia (6247003186).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "David Berkowitz from New York, NY, USA",
+        "source": "https://commons.wikimedia.org/wiki/File:Ger_Camp_-_Dornogovi_Province_-_Mongolia_(6247003186).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246456067%29.jpg/1280px-Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246456067%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Ger_Camp_-_Dornogovi_Province_-_Mongolia_%286246456067%29.jpg",
+        "title": "Ger Camp - Dornogovi Province - Mongolia (6246456067).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "David Berkowitz from New York, NY, USA",
+        "source": "https://commons.wikimedia.org/wiki/File:Ger_Camp_-_Dornogovi_Province_-_Mongolia_(6246456067).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Subedei_Ger_Camp_and_Guest_House.jpg/1280px-Subedei_Ger_Camp_and_Guest_House.jpg"
+  },
+  {
+    "_id": "stay_dadal_log_house",
+    "name": {
+      "mn": "Онон голын модон байшин",
+      "en": "Onon River Log House"
+    },
+    "type": "house",
+    "place_id": "place_dadal",
+    "aimag": "Khentii",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        111.6664,
+        49.0536
+      ]
+    },
+    "owner": {
+      "name": "Uyanga",
+      "phone": "+976 9900 1038",
+      "preferred_channel": "messenger",
+      "languages": [
+        "mn"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "whole_house",
+        "count": 1,
+        "beds_per_unit": 8,
+        "price_mnt": 300000,
+        "price_basis": "per_unit",
+        "meals_included": false
+      }
+    ],
+    "total_beds": 8,
+    "amenities": [
+      "kitchen",
+      "sauna",
+      "fireplace",
+      "fishing"
+    ],
+    "season": {
+      "year_round": true,
+      "open_from": null,
+      "open_to": null
+    },
+    "cancellation_policy_id": "policy_deposit_only",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash"
+    ],
+    "rating": 4.7,
+    "reviews_count": 30,
+    "is_mock": true,
+    "region": "east",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Tal_des_Kherlen_s%C3%BCdlich_des_Steppe_Nomads_Camp%2C_Mongolei_II.jpg/1280px-Tal_des_Kherlen_s%C3%BCdlich_des_Steppe_Nomads_Camp%2C_Mongolei_II.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Tal_des_Kherlen_s%C3%BCdlich_des_Steppe_Nomads_Camp%2C_Mongolei_II.jpg",
+        "title": "Tal des Kherlen südlich des Steppe Nomads Camp, Mongolei II.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "GerritR",
+        "source": "https://commons.wikimedia.org/wiki/File:Tal_des_Kherlen_s%C3%BCdlich_des_Steppe_Nomads_Camp,_Mongolei_II.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Traditional_meal_inside_a_ger_in_remote_Western_Mongolia.jpg/1280px-Traditional_meal_inside_a_ger_in_remote_Western_Mongolia.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Traditional_meal_inside_a_ger_in_remote_Western_Mongolia.jpg",
+        "title": "Traditional meal inside a ger in remote Western Mongolia.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Bfreeproductions",
+        "source": "https://commons.wikimedia.org/wiki/File:Traditional_meal_inside_a_ger_in_remote_Western_Mongolia.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/A_traditional_meal_inside_a_ger_in_remote_Western_Mongolia_2022-07-27.jpg/1280px-A_traditional_meal_inside_a_ger_in_remote_Western_Mongolia_2022-07-27.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/96/A_traditional_meal_inside_a_ger_in_remote_Western_Mongolia_2022-07-27.jpg",
+        "title": "A traditional meal inside a ger in remote Western Mongolia 2022-07-27.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Bfreeproductions",
+        "source": "https://commons.wikimedia.org/wiki/File:A_traditional_meal_inside_a_ger_in_remote_Western_Mongolia_2022-07-27.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Tal_des_Kherlen_s%C3%BCdlich_des_Steppe_Nomads_Camp%2C_Mongolei_II.jpg/1280px-Tal_des_Kherlen_s%C3%BCdlich_des_Steppe_Nomads_Camp%2C_Mongolei_II.jpg"
+  },
+  {
+    "_id": "stay_choibalsan_hotel_kherlen",
+    "name": {
+      "mn": "Дорнод тал зочид буудал",
+      "en": "Eastern Steppe Hotel"
+    },
+    "type": "hotel",
+    "place_id": "place_choibalsan",
+    "aimag": "Dornod",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        114.5218,
+        48.0716
+      ]
+    },
+    "owner": {
+      "name": "Tsogtbayar",
+      "phone": "+976 9900 1039",
+      "preferred_channel": "phone",
+      "languages": [
+        "mn",
+        "en"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "double_room",
+        "count": 28,
+        "beds_per_unit": 2,
+        "price_mnt": 150000,
+        "price_basis": "per_unit",
+        "meals_included": false
+      },
+      {
+        "unit_type": "family_room",
+        "count": 6,
+        "beds_per_unit": 4,
+        "price_mnt": 230000,
+        "price_basis": "per_unit",
+        "meals_included": false
+      }
+    ],
+    "total_beds": 80,
+    "amenities": [
+      "wifi",
+      "restaurant",
+      "parking",
+      "airport_transfer"
+    ],
+    "season": {
+      "year_round": true,
+      "open_from": null,
+      "open_to": null
+    },
+    "cancellation_policy_id": "policy_flexible",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash",
+      "card"
+    ],
+    "rating": 4.0,
+    "reviews_count": 164,
+    "is_mock": true,
+    "region": "east",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Crystal_Hotel_%28Darkhan%29.jpg/1280px-Crystal_Hotel_%28Darkhan%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Crystal_Hotel_%28Darkhan%29.jpg",
+        "title": "Crystal Hotel (Darkhan).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Chongkian",
+        "source": "https://commons.wikimedia.org/wiki/File:Crystal_Hotel_(Darkhan).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Chinggis_Khaan_Hotel_-_Deluxe_Double_Room.jpg/1280px-Chinggis_Khaan_Hotel_-_Deluxe_Double_Room.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Chinggis_Khaan_Hotel_-_Deluxe_Double_Room.jpg",
+        "title": "Chinggis Khaan Hotel - Deluxe Double Room.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Fred Cherrygarden",
+        "source": "https://commons.wikimedia.org/wiki/File:Chinggis_Khaan_Hotel_-_Deluxe_Double_Room.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Ulaanbaatar_Hotel.jpg/1280px-Ulaanbaatar_Hotel.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Ulaanbaatar_Hotel.jpg",
+        "title": "Ulaanbaatar Hotel.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Chongkian",
+        "source": "https://commons.wikimedia.org/wiki/File:Ulaanbaatar_Hotel.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Crystal_Hotel_%28Darkhan%29.jpg/1280px-Crystal_Hotel_%28Darkhan%29.jpg"
+  },
+  {
+    "_id": "stay_baruun_urt_herder_family",
+    "name": {
+      "mn": "Дарьгангын адуучин айл",
+      "en": "Dariganga Horse Herder Family"
+    },
+    "type": "house",
+    "place_id": "place_baruun_urt",
+    "aimag": "Sükhbaatar",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        113.3492,
+        46.6206
+      ]
+    },
+    "owner": {
+      "name": "Khulan",
+      "phone": "+976 9900 1040",
+      "preferred_channel": "phone",
+      "languages": [
+        "mn"
+      ]
+    },
+    "units": [
+      {
+        "unit_type": "ger",
+        "count": 2,
+        "beds_per_unit": 4,
+        "price_mnt": 45000,
+        "price_basis": "per_person",
+        "meals_included": true
+      }
+    ],
+    "total_beds": 8,
+    "amenities": [
+      "meals",
+      "herding_experience",
+      "horse_riding"
+    ],
+    "season": {
+      "year_round": true,
+      "open_from": null,
+      "open_to": null
+    },
+    "cancellation_policy_id": "policy_flexible",
+    "check_in": "14:00",
+    "check_out": "11:00",
+    "payment_methods": [
+      "qpay",
+      "cash"
+    ],
+    "rating": 4.8,
+    "reviews_count": 70,
+    "is_mock": true,
+    "region": "east",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/A_traditional_meal_inside_a_ger_in_remote_Western_Mongolia_2022-07-27.jpg/1280px-A_traditional_meal_inside_a_ger_in_remote_Western_Mongolia_2022-07-27.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/96/A_traditional_meal_inside_a_ger_in_remote_Western_Mongolia_2022-07-27.jpg",
+        "title": "A traditional meal inside a ger in remote Western Mongolia 2022-07-27.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Bfreeproductions",
+        "source": "https://commons.wikimedia.org/wiki/File:A_traditional_meal_inside_a_ger_in_remote_Western_Mongolia_2022-07-27.jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Inside_The_Ger_%286141664020%29.jpg/1280px-Inside_The_Ger_%286141664020%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Inside_The_Ger_%286141664020%29.jpg",
+        "title": "Inside The Ger (6141664020).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Anthony Knuppel",
+        "source": "https://commons.wikimedia.org/wiki/File:Inside_The_Ger_(6141664020).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Inside_our_ger_%282397862327%29.jpg/1280px-Inside_our_ger_%282397862327%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Inside_our_ger_%282397862327%29.jpg",
+        "title": "Inside our ger (2397862327).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Honza Soukup from Czech Republic",
+        "source": "https://commons.wikimedia.org/wiki/File:Inside_our_ger_(2397862327).jpg",
+        "is_illustrative": true,
+        "match": "type",
+        "distance_m": null
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/A_traditional_meal_inside_a_ger_in_remote_Western_Mongolia_2022-07-27.jpg/1280px-A_traditional_meal_inside_a_ger_in_remote_Western_Mongolia_2022-07-27.jpg"
+  }
+]
