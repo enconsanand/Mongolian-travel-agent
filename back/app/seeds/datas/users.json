@@ -1,0 +1,20 @@
+[
+  {
+    "email": "shuree@nashatech.com",
+    "first_name": "Shurenchuluun",
+    "last_name": "Erdenebat",
+    "is_active": true
+  },
+  {
+    "email": "tsendee@nashatech.com",
+    "first_name": "Tsendayush",
+    "last_name": "Tserensaikhan",
+    "is_active": true
+  },
+  {
+    "email": "munkhuush@nashatech.com",
+    "first_name": "Munkhdelger",
+    "last_name": "Gonchigsuren",
+    "is_active": true
+  }
+]

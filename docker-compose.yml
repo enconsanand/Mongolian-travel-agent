@@ -1,0 +1,78 @@
+services:
+  back:
+    image: tmp_back:local
+    build:
+      context: .
+      dockerfile: back/Dockerfile
+      target: dev
+    command: uvicorn app.main:app --host 0.0.0.0 --reload --port ${BACK_PORT:-8000}
+    volumes:
+      - ./back/:/app/
+      - uv_cache:/root/.cache/uv
+    env_file:
+      - secret/.env
+    ports:
+      - "${BACK_PORT:-8000}:${BACK_PORT:-8000}"
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - network_back
+      - network_front
+    restart: unless-stopped
+
+  postgres:
+    image: postgres:16-alpine
+    volumes:
+      - db_data:/var/lib/postgresql/data/
+    env_file:
+      - secret/.env
+    ports:
+      - "${DB_PORT:-5431}:5432"
+    networks:
+      - network_back
+    environment:
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASS}
+      - POSTGRES_DB=${DB_NAME}
+      - POSTGRES_HOST=postgres
+    restart: unless-stopped
+
+  # Optional: enables distributed rate limiting across multiple workers/instances.
+  # Set REDIS_URL=redis://redis:6379/0 in secret/.env to activate it; otherwise the
+  # app falls back to an in-memory limiter.
+  redis:
+    image: redis:7-alpine
+    command: redis-server --save "" --appendonly no
+    networks:
+      - network_back
+    restart: unless-stopped
+
+  front:
+    image: tmp_front:local
+    build:
+      context: .
+      dockerfile: front/Dockerfile
+      target: dev
+    volumes:
+      - ./front/:/app/
+      - node_modules:/app/node_modules
+    env_file:
+      - secret/.env
+    command: pnpm run dev --port ${FRONT_PORT:-3000} --host 0.0.0.0
+    ports:
+      - "${FRONT_PORT:-3000}:${FRONT_PORT:-3000}"
+    depends_on:
+      - back
+    networks:
+      - network_front
+    restart: unless-stopped
+
+volumes:
+  db_data:
+  node_modules:
+  uv_cache:
+
+networks:
+  network_back:
+  network_front:

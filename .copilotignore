@@ -1,0 +1,7 @@
+# secret files
+.env*
+cred.*.json
+credentials.*.json
+cred/
+secret/
+!secret/.env.example
