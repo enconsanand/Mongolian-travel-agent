@@ -223,5 +223,5 @@ dmypy.json
 cred.*.json
 credentials.*.json
 cred/
-secret/
+secret/*
 !secret/.env.example

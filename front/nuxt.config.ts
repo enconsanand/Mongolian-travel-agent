@@ -96,7 +96,7 @@ export default defineNuxtConfig({
     Disallow: ['/api/', '/.nuxt/', '/admin/'],
     Allow: '/',
   },
-  css: ['~/assets/css/main.css'],
+  css: ['~/assets/css/main.css', '~/assets/css/trip-planner.css'],
   features: {
     inlineStyles: true,
   },
