@@ -1,8 +1,10 @@
+import json
 from enum import Enum
 from functools import lru_cache
+from typing import Annotated
 
 from pydantic import AnyHttpUrl, Field, computed_field, field_validator, model_validator
-from pydantic_settings import BaseSettings, SettingsConfigDict
+from pydantic_settings import BaseSettings, NoDecode, SettingsConfigDict
 
 
 class AppENV(str, Enum):
@@ -38,7 +40,8 @@ class Settings(BaseSettings):
     API_V1_STR: str = Field(default="/api/v1", description="API version prefix")
 
     # --- CORS ---
-    BACKEND_CORS_ORIGINS: list[AnyHttpUrl] = Field(default=[], description="Allowed CORS origins")
+    # NoDecode: pydantic-settings would otherwise JSON-decode this list before the validator runs.
+    BACKEND_CORS_ORIGINS: Annotated[list[AnyHttpUrl], NoDecode] = Field(default=[], description="Allowed CORS origins")
 
     # --- JWT Configuration ---
     JWT_SECRET: str = Field(..., min_length=32, description="Secret key for JWT generation")
@@ -99,10 +102,18 @@ class Settings(BaseSettings):
     @field_validator("BACKEND_CORS_ORIGINS", mode="before")
     @classmethod
     def assemble_cors_origins(cls, v: str | list[str]) -> list[str] | str:
-        """Parse CORS origins from comma-separated string or list."""
-        if isinstance(v, str) and not v.startswith("["):
-            return [i.strip() for i in v.split(",") if i.strip()]
-        return v
+        """Parse CORS origins from a comma-separated string or a JSON list."""
+        if not isinstance(v, str):
+            return v
+        value = v.strip()
+        if not value:
+            return []
+        if value.startswith("["):
+            parsed = json.loads(value)
+            if not isinstance(parsed, list):
+                raise ValueError("BACKEND_CORS_ORIGINS JSON value must be a list")
+            return parsed
+        return [item.strip() for item in value.split(",") if item.strip()]
 
     @model_validator(mode="after")
     def _require_redis_in_production(self) -> "Settings":
