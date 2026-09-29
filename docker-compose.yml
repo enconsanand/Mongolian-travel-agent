@@ -8,34 +8,32 @@ services:
     command: uvicorn app.main:app --host 0.0.0.0 --reload --port ${BACK_PORT:-8000}
     volumes:
       - ./back/:/app/
+      - ./data/:/data/:ro
       - uv_cache:/root/.cache/uv
     env_file:
       - secret/.env
+    # MongoDB: the app defaults to this compose file's `mongo` service; set MONGO_URI (and
+    # MONGO_DB_NAME) in secret/.env to use Atlas instead
+    environment:
+      - MOCK_DATA_DIR=/data/mock
     ports:
       - "${BACK_PORT:-8000}:${BACK_PORT:-8000}"
     depends_on:
-      - postgres
+      - mongo
       - redis
     networks:
       - network_back
       - network_front
     restart: unless-stopped
 
-  postgres:
-    image: postgres:16-alpine
+  mongo:
+    image: mongo:8
     volumes:
-      - db_data:/var/lib/postgresql/data/
-    env_file:
-      - secret/.env
+      - db_data:/data/db
     ports:
-      - "${DB_PORT:-5431}:5432"
+      - "${MONGO_PORT:-27018}:27017"
     networks:
       - network_back
-    environment:
-      - POSTGRES_USER=${DB_USER}
-      - POSTGRES_PASSWORD=${DB_PASS}
-      - POSTGRES_DB=${DB_NAME}
-      - POSTGRES_HOST=postgres
     restart: unless-stopped
 
   # Optional: enables distributed rate limiting across multiple workers/instances.

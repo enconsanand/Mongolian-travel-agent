@@ -1,0 +1,2197 @@
+{
+ "place_ub": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Ulan_Bator_-_panoramio_%285%29.jpg/1280px-Ulan_Bator_-_panoramio_%285%29.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Ulan_Bator_-_panoramio_%285%29.jpg",
+   "title": "Ulan Bator - panoramio (5).jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "AwOiSoAk KaOsIoWa",
+   "source": "https://commons.wikimedia.org/wiki/File:Ulan_Bator_-_panoramio_(5).jpg",
+   "match": "location",
+   "distance_m": 51
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Ulan_Bator_-_panoramio_%284%29.jpg/1280px-Ulan_Bator_-_panoramio_%284%29.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Ulan_Bator_-_panoramio_%284%29.jpg",
+   "title": "Ulan Bator - panoramio (4).jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "AwOiSoAk KaOsIoWa",
+   "source": "https://commons.wikimedia.org/wiki/File:Ulan_Bator_-_panoramio_(4).jpg",
+   "match": "location",
+   "distance_m": 55
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Felh%C5%91karcol%C3%B3_a_f%C5%91t%C3%A9ren_%28Skyscraper_on_the_central_square%29_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Felh%C5%91karcol%C3%B3_a_f%C5%91t%C3%A9ren_%28Skyscraper_on_the_central_square%29_-_panoramio.jpg",
+   "title": "Felhőkarcoló a főtéren (Skyscraper on the central square) - panoramio.jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "Gyula Péter",
+   "source": "https://commons.wikimedia.org/wiki/File:Felh%C5%91karcol%C3%B3_a_f%C5%91t%C3%A9ren_(Skyscraper_on_the_central_square)_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 77
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Sz%C3%BCheb%C3%A1tor_szobra_%28Statue_of_Suhbataar%29_-_panoramio.jpg/1280px-Sz%C3%BCheb%C3%A1tor_szobra_%28Statue_of_Suhbataar%29_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Sz%C3%BCheb%C3%A1tor_szobra_%28Statue_of_Suhbataar%29_-_panoramio.jpg",
+   "title": "Szühebátor szobra (Statue of Suhbataar) - panoramio.jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "Gyula Péter",
+   "source": "https://commons.wikimedia.org/wiki/File:Sz%C3%BCheb%C3%A1tor_szobra_(Statue_of_Suhbataar)_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 77
+  }
+ ],
+ "place_darkhan": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Darkhan_main_road.jpg/1280px-Darkhan_main_road.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Darkhan_main_road.jpg",
+   "title": "Darkhan main road.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "EnkhTS",
+   "source": "https://commons.wikimedia.org/wiki/File:Darkhan_main_road.jpg",
+   "match": "location",
+   "distance_m": 2128
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Darkhan-Uul_Cultural_Center_and_Mosque.jpg/1280px-Darkhan-Uul_Cultural_Center_and_Mosque.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Darkhan-Uul_Cultural_Center_and_Mosque.jpg",
+   "title": "Darkhan-Uul Cultural Center and Mosque.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Chongkian",
+   "source": "https://commons.wikimedia.org/wiki/File:Darkhan-Uul_Cultural_Center_and_Mosque.jpg",
+   "match": "location",
+   "distance_m": 5068
+  }
+ ],
+ "place_amarbayasgalant": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Amarbayasgalant_Monastery_-_panoramio.jpg/1280px-Amarbayasgalant_Monastery_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Amarbayasgalant_Monastery_-_panoramio.jpg",
+   "title": "Amarbayasgalant Monastery - panoramio.jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "Mongolia Expeditions…",
+   "source": "https://commons.wikimedia.org/wiki/File:Amarbayasgalant_Monastery_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 163
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Amarbayasgalant_monastery_new_-_panoramio.jpg/1280px-Amarbayasgalant_monastery_new_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Amarbayasgalant_monastery_new_-_panoramio.jpg",
+   "title": "Amarbayasgalant monastery new - panoramio.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Alex Ang",
+   "source": "https://commons.wikimedia.org/wiki/File:Amarbayasgalant_monastery_new_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 180
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Amarbayasgalant_monastery_-_panoramio.jpg/1280px-Amarbayasgalant_monastery_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Amarbayasgalant_monastery_-_panoramio.jpg",
+   "title": "Amarbayasgalant monastery - panoramio.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Alex Ang",
+   "source": "https://commons.wikimedia.org/wiki/File:Amarbayasgalant_monastery_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 180
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Ger_and_Monastery_-_panoramio.jpg/1280px-Ger_and_Monastery_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Ger_and_Monastery_-_panoramio.jpg",
+   "title": "Ger and Monastery - panoramio.jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "Mongolia Expeditions…",
+   "source": "https://commons.wikimedia.org/wiki/File:Ger_and_Monastery_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 264
+  }
+ ],
+ "place_erdenet": [
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Memorial_in_Erdenet_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Memorial_in_Erdenet_-_panoramio.jpg",
+   "title": "Memorial in Erdenet - panoramio.jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "Alex Ang",
+   "source": "https://commons.wikimedia.org/wiki/File:Memorial_in_Erdenet_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 1443
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Erdenet_city_in_winter_-_panoramio.jpg/1280px-Erdenet_city_in_winter_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Erdenet_city_in_winter_-_panoramio.jpg",
+   "title": "Erdenet city in winter - panoramio.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Alex Ang",
+   "source": "https://commons.wikimedia.org/wiki/File:Erdenet_city_in_winter_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 1756
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Erdenet_in_summer_-_panoramio.jpg/1280px-Erdenet_in_summer_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Erdenet_in_summer_-_panoramio.jpg",
+   "title": "Erdenet in summer - panoramio.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Alex Ang",
+   "source": "https://commons.wikimedia.org/wiki/File:Erdenet_in_summer_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 2186
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Snow_in_night_forest_by_Erdenet_-_panoramio.jpg/1280px-Snow_in_night_forest_by_Erdenet_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Snow_in_night_forest_by_Erdenet_-_panoramio.jpg",
+   "title": "Snow in night forest by Erdenet - panoramio.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Alex Ang",
+   "source": "https://commons.wikimedia.org/wiki/File:Snow_in_night_forest_by_Erdenet_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 3956
+  }
+ ],
+ "place_uran_togoo": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Volcano_Uran_Togoo_-_panoramio.jpg/1280px-Volcano_Uran_Togoo_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Volcano_Uran_Togoo_-_panoramio.jpg",
+   "title": "Volcano Uran Togoo - panoramio.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Alex Ang",
+   "source": "https://commons.wikimedia.org/wiki/File:Volcano_Uran_Togoo_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 594
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/UranTogooCaldera.jpg/1280px-UranTogooCaldera.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/56/UranTogooCaldera.jpg",
+   "title": "UranTogooCaldera.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Chinneeb",
+   "source": "https://commons.wikimedia.org/wiki/File:UranTogooCaldera.jpg",
+   "match": "location",
+   "distance_m": 400
+  }
+ ],
+ "place_murun": [
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Hotel_50-100_in_M%C3%B6r%C3%B6n_city_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Hotel_50-100_in_M%C3%B6r%C3%B6n_city_-_panoramio.jpg",
+   "title": "Hotel 50-100 in Mörön city - panoramio.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Alex Ang",
+   "source": "https://commons.wikimedia.org/wiki/File:Hotel_50-100_in_M%C3%B6r%C3%B6n_city_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 827
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Moron_city_-_panoramio.jpg/1280px-Moron_city_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Moron_city_-_panoramio.jpg",
+   "title": "Moron city - panoramio.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Alex Ang",
+   "source": "https://commons.wikimedia.org/wiki/File:Moron_city_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 273
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/%C2%B7%CB%99%C2%B7ChinaUli2010%C2%B7.%C2%B7_Ch%C3%B6wsg%C3%B6l-Aimag_-_panoramio_%285%29.jpg/1280px-%C2%B7%CB%99%C2%B7ChinaUli2010%C2%B7.%C2%B7_Ch%C3%B6wsg%C3%B6l-Aimag_-_panoramio_%285%29.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/6/68/%C2%B7%CB%99%C2%B7ChinaUli2010%C2%B7.%C2%B7_Ch%C3%B6wsg%C3%B6l-Aimag_-_panoramio_%285%29.jpg",
+   "title": "·˙·ChinaUli2010·.· Chöwsgöl-Aimag - panoramio (5).jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "·˙·ChinaUli2010·.·",
+   "source": "https://commons.wikimedia.org/wiki/File:%C2%B7%CB%99%C2%B7ChinaUli2010%C2%B7.%C2%B7_Ch%C3%B6wsg%C3%B6l-Aimag_-_panoramio_(5).jpg",
+   "match": "location",
+   "distance_m": 7942
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Statue_of_%C3%96nd%C3%B6r_Gongor_at_M%C3%B6r%C3%B6n_Museum.jpg/1280px-Statue_of_%C3%96nd%C3%B6r_Gongor_at_M%C3%B6r%C3%B6n_Museum.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Statue_of_%C3%96nd%C3%B6r_Gongor_at_M%C3%B6r%C3%B6n_Museum.jpg",
+   "title": "Statue of Öndör Gongor at Mörön Museum.jpg",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "Chinneeb",
+   "source": "https://commons.wikimedia.org/wiki/File:Statue_of_%C3%96nd%C3%B6r_Gongor_at_M%C3%B6r%C3%B6n_Museum.jpg",
+   "match": "location",
+   "distance_m": 333
+  }
+ ],
+ "place_khatgal": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/View_of_Khatgal.jpg/1280px-View_of_Khatgal.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/View_of_Khatgal.jpg",
+   "title": "View of Khatgal.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:View_of_Khatgal.jpg",
+   "match": "location",
+   "distance_m": 123
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Khovsgol_lake_-_panoramio.jpg/1280px-Khovsgol_lake_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Khovsgol_lake_-_panoramio.jpg",
+   "title": "Khovsgol lake - panoramio.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Alex Ang",
+   "source": "https://commons.wikimedia.org/wiki/File:Khovsgol_lake_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 1484
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/%D0%A1%D2%AE%D0%A5%D0%91%D0%90%D0%90%D0%A2%D0%90%D0%A0_%D0%BE%D0%BD%D0%B3%D0%BE%D1%86_-_panoramio.jpg/1280px-%D0%A1%D2%AE%D0%A5%D0%91%D0%90%D0%90%D0%A2%D0%90%D0%A0_%D0%BE%D0%BD%D0%B3%D0%BE%D1%86_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/%D0%A1%D2%AE%D0%A5%D0%91%D0%90%D0%90%D0%A2%D0%90%D0%A0_%D0%BE%D0%BD%D0%B3%D0%BE%D1%86_-_panoramio.jpg",
+   "title": "СҮХБААТАР онгоц - panoramio.jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "Mongolia Expeditions…",
+   "source": "https://commons.wikimedia.org/wiki/File:%D0%A1%D2%AE%D0%A5%D0%91%D0%90%D0%90%D0%A2%D0%90%D0%A0_%D0%BE%D0%BD%D0%B3%D0%BE%D1%86_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 1597
+  }
+ ],
+ "place_toilogt": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/%D0%A1%D2%AE%D0%A5%D0%91%D0%90%D0%90%D0%A2%D0%90%D0%A0_%D0%BE%D0%BD%D0%B3%D0%BE%D1%86_-_panoramio.jpg/1280px-%D0%A1%D2%AE%D0%A5%D0%91%D0%90%D0%90%D0%A2%D0%90%D0%A0_%D0%BE%D0%BD%D0%B3%D0%BE%D1%86_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/%D0%A1%D2%AE%D0%A5%D0%91%D0%90%D0%90%D0%A2%D0%90%D0%A0_%D0%BE%D0%BD%D0%B3%D0%BE%D1%86_-_panoramio.jpg",
+   "title": "СҮХБААТАР онгоц - panoramio.jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "Mongolia Expeditions…",
+   "source": "https://commons.wikimedia.org/wiki/File:%D0%A1%D2%AE%D0%A5%D0%91%D0%90%D0%90%D0%A2%D0%90%D0%A0_%D0%BE%D0%BD%D0%B3%D0%BE%D1%86_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 7857
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Khovsgol_lake_-_panoramio.jpg/1280px-Khovsgol_lake_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Khovsgol_lake_-_panoramio.jpg",
+   "title": "Khovsgol lake - panoramio.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Alex Ang",
+   "source": "https://commons.wikimedia.org/wiki/File:Khovsgol_lake_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 7884
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Swimming_in_Khovsgol_lake_-2010_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Swimming_in_Khovsgol_lake_-2010_-_panoramio.jpg",
+   "title": "Swimming in Khovsgol lake -2010 - panoramio.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Alex Ang",
+   "source": "https://commons.wikimedia.org/wiki/File:Swimming_in_Khovsgol_lake_-2010_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 8597
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Hotel_near_Khovsgol_lake_-_panoramio.jpg/1280px-Hotel_near_Khovsgol_lake_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Hotel_near_Khovsgol_lake_-_panoramio.jpg",
+   "title": "Hotel near Khovsgol lake - panoramio.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Alex Ang",
+   "source": "https://commons.wikimedia.org/wiki/File:Hotel_near_Khovsgol_lake_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 8814
+  }
+ ],
+ "place_jankhai": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Lake_with_yak_2.jpg/1280px-Lake_with_yak_2.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Lake_with_yak_2.jpg",
+   "title": "Lake with yak 2.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Armagnac~dewiki",
+   "source": "https://commons.wikimedia.org/wiki/File:Lake_with_yak_2.jpg",
+   "match": "location",
+   "distance_m": 8067
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Lake_with_yak.jpg/1280px-Lake_with_yak.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Lake_with_yak.jpg",
+   "title": "Lake with yak.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Armagnac~dewiki",
+   "source": "https://commons.wikimedia.org/wiki/File:Lake_with_yak.jpg",
+   "match": "location",
+   "distance_m": 8067
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Hotel_near_Khovsgol_lake_-_panoramio.jpg/1280px-Hotel_near_Khovsgol_lake_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Hotel_near_Khovsgol_lake_-_panoramio.jpg",
+   "title": "Hotel near Khovsgol lake - panoramio.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Alex Ang",
+   "source": "https://commons.wikimedia.org/wiki/File:Hotel_near_Khovsgol_lake_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 9164
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Swimming_in_Khovsgol_lake_-2010_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Swimming_in_Khovsgol_lake_-2010_-_panoramio.jpg",
+   "title": "Swimming in Khovsgol lake -2010 - panoramio.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Alex Ang",
+   "source": "https://commons.wikimedia.org/wiki/File:Swimming_in_Khovsgol_lake_-2010_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 9264
+  }
+ ],
+ "place_kharkhorin": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Erdenezuu_monastery_-_panoramio.jpg/1280px-Erdenezuu_monastery_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Erdenezuu_monastery_-_panoramio.jpg",
+   "title": "Erdenezuu monastery - panoramio.jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "Mongolia Expeditions…",
+   "source": "https://commons.wikimedia.org/wiki/File:Erdenezuu_monastery_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 439
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Distances_from_Kharkhorin.jpg/1280px-Distances_from_Kharkhorin.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Distances_from_Kharkhorin.jpg",
+   "title": "Distances from Kharkhorin.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Distances_from_Kharkhorin.jpg",
+   "match": "location",
+   "distance_m": 446
+  }
+ ],
+ "place_elsen_tasarkhai": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Landscape_of_Little_Gobi_in_Mongolia.jpg/1280px-Landscape_of_Little_Gobi_in_Mongolia.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Landscape_of_Little_Gobi_in_Mongolia.jpg",
+   "title": "Landscape of Little Gobi in Mongolia.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Yunyun415",
+   "source": "https://commons.wikimedia.org/wiki/File:Landscape_of_Little_Gobi_in_Mongolia.jpg",
+   "match": "location",
+   "distance_m": 4606
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Rashaant%2C_Mongolia_-_panoramio_%285%29.jpg/1280px-Rashaant%2C_Mongolia_-_panoramio_%285%29.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Rashaant%2C_Mongolia_-_panoramio_%285%29.jpg",
+   "title": "Rashaant, Mongolia - panoramio (5).jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "Gyula Péter",
+   "source": "https://commons.wikimedia.org/wiki/File:Rashaant,_Mongolia_-_panoramio_(5).jpg",
+   "match": "location",
+   "distance_m": 3159
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Rashaant%2C_Mongolia_-_panoramio_%282%29.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Rashaant%2C_Mongolia_-_panoramio_%282%29.jpg",
+   "title": "Rashaant, Mongolia - panoramio (2).jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "Gyula Péter",
+   "source": "https://commons.wikimedia.org/wiki/File:Rashaant,_Mongolia_-_panoramio_(2).jpg",
+   "match": "location",
+   "distance_m": 3159
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Rashaant%2C_Mongolia_-_panoramio_%286%29.jpg/1280px-Rashaant%2C_Mongolia_-_panoramio_%286%29.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Rashaant%2C_Mongolia_-_panoramio_%286%29.jpg",
+   "title": "Rashaant, Mongolia - panoramio (6).jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "Gyula Péter",
+   "source": "https://commons.wikimedia.org/wiki/File:Rashaant,_Mongolia_-_panoramio_(6).jpg",
+   "match": "location",
+   "distance_m": 3159
+  }
+ ],
+ "place_tsetserleg": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/River_near_Tsetserleg%2C_Mongolia_-_panoramio.jpg/1280px-River_near_Tsetserleg%2C_Mongolia_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/82/River_near_Tsetserleg%2C_Mongolia_-_panoramio.jpg",
+   "title": "River near Tsetserleg, Mongolia - panoramio.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "maveriqk",
+   "source": "https://commons.wikimedia.org/wiki/File:River_near_Tsetserleg,_Mongolia_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 5358
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/%D0%A6%D0%B5%D1%86%D0%B5%D1%80%D0%BB%D0%B5%D0%B3_-2010_-_panoramio.jpg/1280px-%D0%A6%D0%B5%D1%86%D0%B5%D1%80%D0%BB%D0%B5%D0%B3_-2010_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/76/%D0%A6%D0%B5%D1%86%D0%B5%D1%80%D0%BB%D0%B5%D0%B3_-2010_-_panoramio.jpg",
+   "title": "Цецерлег -2010 - panoramio.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Alex Ang",
+   "source": "https://commons.wikimedia.org/wiki/File:%D0%A6%D0%B5%D1%86%D0%B5%D1%80%D0%BB%D0%B5%D0%B3_-2010_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 986
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/%D0%A6%D1%8D%D1%86%D1%8D%D1%80%D0%BB%D1%8D%D0%B3_%D1%85%D0%BE%D1%82_-_panoramio.jpg/1280px-%D0%A6%D1%8D%D1%86%D1%8D%D1%80%D0%BB%D1%8D%D0%B3_%D1%85%D0%BE%D1%82_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/%D0%A6%D1%8D%D1%86%D1%8D%D1%80%D0%BB%D1%8D%D0%B3_%D1%85%D0%BE%D1%82_-_panoramio.jpg",
+   "title": "Цэцэрлэг хот - panoramio.jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "Mongolia Expeditions…",
+   "source": "https://commons.wikimedia.org/wiki/File:%D0%A6%D1%8D%D1%86%D1%8D%D1%80%D0%BB%D1%8D%D0%B3_%D1%85%D0%BE%D1%82_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 1940
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Tsetserleg%2C_Mongolia.jpg/1280px-Tsetserleg%2C_Mongolia.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Tsetserleg%2C_Mongolia.jpg",
+   "title": "Tsetserleg, Mongolia.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Tsetserleg,_Mongolia.jpg",
+   "match": "location",
+   "distance_m": 292
+  }
+ ],
+ "place_tariat": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/El_crater_-_panoramio.jpg/1280px-El_crater_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/El_crater_-_panoramio.jpg",
+   "title": "El crater - panoramio.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Raul P",
+   "source": "https://commons.wikimedia.org/wiki/File:El_crater_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 3826
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Vistas_desde_el_volc%C3%A1n_-_panoramio.jpg/1280px-Vistas_desde_el_volc%C3%A1n_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Vistas_desde_el_volc%C3%A1n_-_panoramio.jpg",
+   "title": "Vistas desde el volcán - panoramio.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Raul P",
+   "source": "https://commons.wikimedia.org/wiki/File:Vistas_desde_el_volc%C3%A1n_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 3826
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Lava_-_panoramio.jpg/1280px-Lava_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Lava_-_panoramio.jpg",
+   "title": "Lava - panoramio.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Raul P",
+   "source": "https://commons.wikimedia.org/wiki/File:Lava_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 3826
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/El_volc%C3%A1n_-_panoramio.jpg/1280px-El_volc%C3%A1n_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/El_volc%C3%A1n_-_panoramio.jpg",
+   "title": "El volcán - panoramio.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Raul P",
+   "source": "https://commons.wikimedia.org/wiki/File:El_volc%C3%A1n_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 3826
+  }
+ ],
+ "place_terkhiin_tsagaan": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Terkhiin_Tsagaan_Lake_04.jpg/1280px-Terkhiin_Tsagaan_Lake_04.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Terkhiin_Tsagaan_Lake_04.jpg",
+   "title": "Terkhiin Tsagaan Lake 04.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Terkhiin_Tsagaan_Lake_04.jpg",
+   "match": "location",
+   "distance_m": 3270
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Terkhiin_Tsagaan_Lake_03.jpg/1280px-Terkhiin_Tsagaan_Lake_03.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Terkhiin_Tsagaan_Lake_03.jpg",
+   "title": "Terkhiin Tsagaan Lake 03.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Terkhiin_Tsagaan_Lake_03.jpg",
+   "match": "location",
+   "distance_m": 3270
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Terkhiin_Tsagaan_Lake_02.jpg/1280px-Terkhiin_Tsagaan_Lake_02.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Terkhiin_Tsagaan_Lake_02.jpg",
+   "title": "Terkhiin Tsagaan Lake 02.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Terkhiin_Tsagaan_Lake_02.jpg",
+   "match": "location",
+   "distance_m": 3270
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Terkhiin_Tsagaan_Lake_01.jpg/1280px-Terkhiin_Tsagaan_Lake_01.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Terkhiin_Tsagaan_Lake_01.jpg",
+   "title": "Terkhiin Tsagaan Lake 01.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Terkhiin_Tsagaan_Lake_01.jpg",
+   "match": "location",
+   "distance_m": 3270
+  }
+ ],
+ "place_tsagaan_suvarga": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Tsagaan_Sufraga_II_%2820292272359%29.jpg/1280px-Tsagaan_Sufraga_II_%2820292272359%29.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Tsagaan_Sufraga_II_%2820292272359%29.jpg",
+   "title": "Tsagaan Sufraga II (20292272359).jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "author": "Rob Oo from NL",
+   "source": "https://commons.wikimedia.org/wiki/File:Tsagaan_Sufraga_II_(20292272359).jpg",
+   "match": "location",
+   "distance_m": 3796
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Tsagaan_Suvraga_%2819915873243%29.jpg/1280px-Tsagaan_Suvraga_%2819915873243%29.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Tsagaan_Suvraga_%2819915873243%29.jpg",
+   "title": "Tsagaan Suvraga (19915873243).jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "author": "Rob Oo from NL",
+   "source": "https://commons.wikimedia.org/wiki/File:Tsagaan_Suvraga_(19915873243).jpg",
+   "match": "location",
+   "distance_m": 3817
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Tsagaan_Sufraga_III_%2820290833200%29.jpg/1280px-Tsagaan_Sufraga_III_%2820290833200%29.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Tsagaan_Sufraga_III_%2820290833200%29.jpg",
+   "title": "Tsagaan Sufraga III (20290833200).jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "author": "Rob Oo from NL",
+   "source": "https://commons.wikimedia.org/wiki/File:Tsagaan_Sufraga_III_(20290833200).jpg",
+   "match": "location",
+   "distance_m": 3850
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Tsagaan_Suvraga_%2820268223089%29.jpg/1280px-Tsagaan_Suvraga_%2820268223089%29.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Tsagaan_Suvraga_%2820268223089%29.jpg",
+   "title": "Tsagaan Suvraga (20268223089).jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "author": "Rob Oo from NL",
+   "source": "https://commons.wikimedia.org/wiki/File:Tsagaan_Suvraga_(20268223089).jpg",
+   "match": "location",
+   "distance_m": 3897
+  }
+ ],
+ "place_yolyn_am": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Yolyn_Am_2015_%281%29.JPG/1280px-Yolyn_Am_2015_%281%29.JPG",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Yolyn_Am_2015_%281%29.JPG",
+   "title": "Yolyn Am 2015 (1).JPG",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Römert",
+   "source": "https://commons.wikimedia.org/wiki/File:Yolyn_Am_2015_(1).JPG",
+   "match": "location",
+   "distance_m": 432
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Yolyn_Am_2015_%289%29.JPG/1280px-Yolyn_Am_2015_%289%29.JPG",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Yolyn_Am_2015_%289%29.JPG",
+   "title": "Yolyn Am 2015 (9).JPG",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Römert",
+   "source": "https://commons.wikimedia.org/wiki/File:Yolyn_Am_2015_(9).JPG",
+   "match": "location",
+   "distance_m": 450
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Yolyn_Am_2015_%282%29.JPG/1280px-Yolyn_Am_2015_%282%29.JPG",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Yolyn_Am_2015_%282%29.JPG",
+   "title": "Yolyn Am 2015 (2).JPG",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Römert",
+   "source": "https://commons.wikimedia.org/wiki/File:Yolyn_Am_2015_(2).JPG",
+   "match": "location",
+   "distance_m": 493
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Yolyn_Am_01.jpg/1280px-Yolyn_Am_01.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Yolyn_Am_01.jpg",
+   "title": "Yolyn Am 01.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Yolyn_Am_01.jpg",
+   "match": "location",
+   "distance_m": 630
+  }
+ ],
+ "place_bayanzag": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Resized_pan-flaming-cropped2.jpg/1280px-Resized_pan-flaming-cropped2.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Resized_pan-flaming-cropped2.jpg",
+   "title": "Resized pan-flaming-cropped2.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "author": "Zoharby",
+   "source": "https://commons.wikimedia.org/wiki/File:Resized_pan-flaming-cropped2.jpg",
+   "match": "location",
+   "distance_m": 246
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Cliffs_%2819964536144%29.jpg/1280px-Cliffs_%2819964536144%29.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Cliffs_%2819964536144%29.jpg",
+   "title": "Cliffs (19964536144).jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "author": "Rob Oo from NL",
+   "source": "https://commons.wikimedia.org/wiki/File:Cliffs_(19964536144).jpg",
+   "match": "location",
+   "distance_m": 478
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Bayanzag_02.jpg/1280px-Bayanzag_02.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Bayanzag_02.jpg",
+   "title": "Bayanzag 02.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Bayanzag_02.jpg",
+   "match": "location",
+   "distance_m": 804
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Bayanzag_09.jpg/1280px-Bayanzag_09.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Bayanzag_09.jpg",
+   "title": "Bayanzag 09.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Bayanzag_09.jpg",
+   "match": "location",
+   "distance_m": 804
+  }
+ ],
+ "place_khongoryn_els": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Rainbow_over_Sand_Dunes_%2820274971770%29.jpg/1280px-Rainbow_over_Sand_Dunes_%2820274971770%29.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Rainbow_over_Sand_Dunes_%2820274971770%29.jpg",
+   "title": "Rainbow over Sand Dunes (20274971770).jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "author": "Rob Oo from NL",
+   "source": "https://commons.wikimedia.org/wiki/File:Rainbow_over_Sand_Dunes_(20274971770).jpg",
+   "match": "location",
+   "distance_m": 8112
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Singing_Sand_Dunes_%2820373864520%29.jpg/1280px-Singing_Sand_Dunes_%2820373864520%29.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Singing_Sand_Dunes_%2820373864520%29.jpg",
+   "title": "Singing Sand Dunes (20373864520).jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "author": "Rob Oo from NL",
+   "source": "https://commons.wikimedia.org/wiki/File:Singing_Sand_Dunes_(20373864520).jpg",
+   "match": "location",
+   "distance_m": 8141
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Khongoryn_Els_-_Oasi.jpg/1280px-Khongoryn_Els_-_Oasi.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Khongoryn_Els_-_Oasi.jpg",
+   "title": "Khongoryn Els - Oasi.jpg",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "Josep Renalias Lohen11",
+   "source": "https://commons.wikimedia.org/wiki/File:Khongoryn_Els_-_Oasi.jpg",
+   "match": "location",
+   "distance_m": 2115
+  }
+ ],
+ "place_olgii": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Bastau_hotel_-_panoramio.jpg/1280px-Bastau_hotel_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Bastau_hotel_-_panoramio.jpg",
+   "title": "Bastau hotel - panoramio.jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "Mongolia Expeditions…",
+   "source": "https://commons.wikimedia.org/wiki/File:Bastau_hotel_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 207
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Lenin_%5E_Sukhbaatar_bust_-_panoramio.jpg/1280px-Lenin_%5E_Sukhbaatar_bust_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Lenin_%5E_Sukhbaatar_bust_-_panoramio.jpg",
+   "title": "Lenin ^ Sukhbaatar bust - panoramio.jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "Mongolia Expeditions…",
+   "source": "https://commons.wikimedia.org/wiki/File:Lenin_%5E_Sukhbaatar_bust_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 215
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Ulgii_main_square_-_panoramio.jpg/1280px-Ulgii_main_square_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Ulgii_main_square_-_panoramio.jpg",
+   "title": "Ulgii main square - panoramio.jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "Mongolia Expeditions…",
+   "source": "https://commons.wikimedia.org/wiki/File:Ulgii_main_square_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 241
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Museum_in_Ulgii_-_panoramio.jpg/1280px-Museum_in_Ulgii_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Museum_in_Ulgii_-_panoramio.jpg",
+   "title": "Museum in Ulgii - panoramio.jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "Mongolia Expeditions…",
+   "source": "https://commons.wikimedia.org/wiki/File:Museum_in_Ulgii_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 357
+  }
+ ],
+ "place_tavan_bogd": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Altai_Tavan_Bogd_-_panoramio.jpg/1280px-Altai_Tavan_Bogd_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Altai_Tavan_Bogd_-_panoramio.jpg",
+   "title": "Altai Tavan Bogd - panoramio.jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "Mongolia Expeditions…",
+   "source": "https://commons.wikimedia.org/wiki/File:Altai_Tavan_Bogd_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 2600
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Altai_Tavan_Bogd_-_Potanin_glacier_-_panoramio.jpg/1280px-Altai_Tavan_Bogd_-_Potanin_glacier_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Altai_Tavan_Bogd_-_Potanin_glacier_-_panoramio.jpg",
+   "title": "Altai Tavan Bogd - Potanin glacier - panoramio.jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "Mongolia Expeditions…",
+   "source": "https://commons.wikimedia.org/wiki/File:Altai_Tavan_Bogd_-_Potanin_glacier_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 5166
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Tsagaan_river_canyon_-_panoramio.jpg/1280px-Tsagaan_river_canyon_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Tsagaan_river_canyon_-_panoramio.jpg",
+   "title": "Tsagaan river canyon - panoramio.jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "Mongolia Expeditions…",
+   "source": "https://commons.wikimedia.org/wiki/File:Tsagaan_river_canyon_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 9761
+  }
+ ],
+ "place_khovd": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Khovd_airport_-_panoramio.jpg/1280px-Khovd_airport_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Khovd_airport_-_panoramio.jpg",
+   "title": "Khovd airport - panoramio.jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "Wa18",
+   "source": "https://commons.wikimedia.org/wiki/File:Khovd_airport_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 4917
+  }
+ ],
+ "place_uliastai": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Chigestai_River_%26_Javkhlant_Temple_-_Uliastai%2C_Zavkhan_Aimag%2C_Mongolia.JPG/1280px-Chigestai_River_%26_Javkhlant_Temple_-_Uliastai%2C_Zavkhan_Aimag%2C_Mongolia.JPG",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Chigestai_River_%26_Javkhlant_Temple_-_Uliastai%2C_Zavkhan_Aimag%2C_Mongolia.JPG",
+   "title": "Chigestai River & Javkhlant Temple - Uliastai, Zavkhan Aimag, Mongolia.JPG",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Zdravote",
+   "source": "https://commons.wikimedia.org/wiki/File:Chigestai_River_%26_Javkhlant_Temple_-_Uliastai,_Zavkhan_Aimag,_Mongolia.JPG",
+   "match": "location",
+   "distance_m": 144
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Uliastai%2C_Mongolia_-_panoramio.jpg/1280px-Uliastai%2C_Mongolia_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Uliastai%2C_Mongolia_-_panoramio.jpg",
+   "title": "Uliastai, Mongolia - panoramio.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Ok Seree",
+   "source": "https://commons.wikimedia.org/wiki/File:Uliastai,_Mongolia_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 553
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Uliastai%2C_Mongolia_-_panoramio_%281%29.jpg/1280px-Uliastai%2C_Mongolia_-_panoramio_%281%29.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Uliastai%2C_Mongolia_-_panoramio_%281%29.jpg",
+   "title": "Uliastai, Mongolia - panoramio (1).jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Ok Seree",
+   "source": "https://commons.wikimedia.org/wiki/File:Uliastai,_Mongolia_-_panoramio_(1).jpg",
+   "match": "location",
+   "distance_m": 3954
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Government_Building_-_Uliastai%2C_Zavkhan_Aimag%2C_Mongolia.JPG/1280px-Government_Building_-_Uliastai%2C_Zavkhan_Aimag%2C_Mongolia.JPG",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Government_Building_-_Uliastai%2C_Zavkhan_Aimag%2C_Mongolia.JPG",
+   "title": "Government Building - Uliastai, Zavkhan Aimag, Mongolia.JPG",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Zdravote",
+   "source": "https://commons.wikimedia.org/wiki/File:Government_Building_-_Uliastai,_Zavkhan_Aimag,_Mongolia.JPG",
+   "match": "location",
+   "distance_m": 144
+  }
+ ],
+ "place_sukhbaatar_city": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Selenge_road.jpg/1280px-Selenge_road.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Selenge_road.jpg",
+   "title": "Selenge road.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "EnkhTS",
+   "source": "https://commons.wikimedia.org/wiki/File:Selenge_road.jpg",
+   "match": "location",
+   "distance_m": 877
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/S%C3%BCkhbaatar%2C_la_gare_%282%29.jpg/1280px-S%C3%BCkhbaatar%2C_la_gare_%282%29.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/S%C3%BCkhbaatar%2C_la_gare_%282%29.jpg",
+   "title": "Sükhbaatar, la gare (2).jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "© Pierre André",
+   "source": "https://commons.wikimedia.org/wiki/File:S%C3%BCkhbaatar,_la_gare_(2).jpg",
+   "match": "location",
+   "distance_m": 1334
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/S%C3%BCkhbaatar%2C_la_gare.jpg/1280px-S%C3%BCkhbaatar%2C_la_gare.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/40/S%C3%BCkhbaatar%2C_la_gare.jpg",
+   "title": "Sükhbaatar, la gare.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "PIERRE ANDRE LECLERCQ",
+   "source": "https://commons.wikimedia.org/wiki/File:S%C3%BCkhbaatar,_la_gare.jpg",
+   "match": "location",
+   "distance_m": 1334
+  }
+ ],
+ "place_choir": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Cafe_-_panoramio_-_mmpos1.jpg/1280px-Cafe_-_panoramio_-_mmpos1.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Cafe_-_panoramio_-_mmpos1.jpg",
+   "title": "Cafe - panoramio - mmpos1.jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "mmpos1",
+   "source": "https://commons.wikimedia.org/wiki/File:Cafe_-_panoramio_-_mmpos1.jpg",
+   "match": "location",
+   "distance_m": 284
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Choyr_general_view.JPG/1280px-Choyr_general_view.JPG",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Choyr_general_view.JPG",
+   "title": "Choyr general view.JPG",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Golf Bravo",
+   "source": "https://commons.wikimedia.org/wiki/File:Choyr_general_view.JPG",
+   "match": "location",
+   "distance_m": 632
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Bagakhangai_-_Choir_Road_%28A01_Route%29_in_Govis%C3%BCmber%2C_Mongolia_%282008%29.jpg/1280px-Bagakhangai_-_Choir_Road_%28A01_Route%29_in_Govis%C3%BCmber%2C_Mongolia_%282008%29.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Bagakhangai_-_Choir_Road_%28A01_Route%29_in_Govis%C3%BCmber%2C_Mongolia_%282008%29.jpg",
+   "title": "Bagakhangai - Choir Road (A01 Route) in Govisümber, Mongolia (2008).jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "author": "The Wandering Angel",
+   "source": "https://commons.wikimedia.org/wiki/File:Bagakhangai_-_Choir_Road_(A01_Route)_in_Govis%C3%BCmber,_Mongolia_(2008).jpg",
+   "match": "location",
+   "distance_m": 4140
+  }
+ ],
+ "place_sainshand": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Sainshand_panorama_-_panoramio.jpg/1280px-Sainshand_panorama_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Sainshand_panorama_-_panoramio.jpg",
+   "title": "Sainshand panorama - panoramio.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Daugilas",
+   "source": "https://commons.wikimedia.org/wiki/File:Sainshand_panorama_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 1214
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Sainshand_panorama.jpg/1280px-Sainshand_panorama.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Sainshand_panorama.jpg",
+   "title": "Sainshand panorama.jpg",
+   "license": "Public domain",
+   "license_url": null,
+   "author": "This image was produced by me, David Castor (user:dcastor). The pictures I submit to the Wikipedia Project are released ",
+   "source": "https://commons.wikimedia.org/wiki/File:Sainshand_panorama.jpg",
+   "match": "location",
+   "distance_m": 2444
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Sainshand_from_the_north.jpg/1280px-Sainshand_from_the_north.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Sainshand_from_the_north.jpg",
+   "title": "Sainshand from the north.jpg",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "Chinneeb",
+   "source": "https://commons.wikimedia.org/wiki/File:Sainshand_from_the_north.jpg",
+   "match": "location",
+   "distance_m": 1266
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Street_in_Sainshand.jpg/1280px-Street_in_Sainshand.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Street_in_Sainshand.jpg",
+   "title": "Street in Sainshand.jpg",
+   "license": "Public domain",
+   "license_url": null,
+   "author": "This image was produced by me, David Castor (user:dcastor). The pictures I submit to the Wikipedia Project are released ",
+   "source": "https://commons.wikimedia.org/wiki/File:Street_in_Sainshand.jpg",
+   "match": "location",
+   "distance_m": 2422
+  }
+ ],
+ "place_zamyn_uud": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/The_end_of_the_town_and_view_to_Gobi_desert_-_panoramio.jpg/1280px-The_end_of_the_town_and_view_to_Gobi_desert_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/The_end_of_the_town_and_view_to_Gobi_desert_-_panoramio.jpg",
+   "title": "The end of the town and view to Gobi desert - panoramio.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Daugilas",
+   "source": "https://commons.wikimedia.org/wiki/File:The_end_of_the_town_and_view_to_Gobi_desert_-_panoramio.jpg",
+   "match": "location",
+   "distance_m": 32
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Intersection_of_the_A01_National_Highway_and_Railwaymen%27s_Street_in_Zamyn-%C3%9C%C3%BCd%2C_Southern_Mongolia_%282012%29.jpg/1280px-Intersection_of_the_A01_National_Highway_and_Railwaymen%27s_Street_in_Zamyn-%C3%9C%C3%BCd%2C_Southern_Mongolia_%282012%29.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Intersection_of_the_A01_National_Highway_and_Railwaymen%27s_Street_in_Zamyn-%C3%9C%C3%BCd%2C_Southern_Mongolia_%282012%29.jpg",
+   "title": "Intersection of the A01 National Highway and Railwaymen's Street in Zamyn-Üüd, Southern Mongolia (2012).jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "author": "Ken Marshall",
+   "source": "https://commons.wikimedia.org/wiki/File:Intersection_of_the_A01_National_Highway_and_Railwaymen%27s_Street_in_Zamyn-%C3%9C%C3%BCd,_Southern_Mongolia_(2012).jpg",
+   "match": "location",
+   "distance_m": 815
+  }
+ ],
+ "stay_ub_hotel_blue_sky": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Ulaanbaatar_view_from_hotel_%282536896941%29.jpg/1280px-Ulaanbaatar_view_from_hotel_%282536896941%29.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Ulaanbaatar_view_from_hotel_%282536896941%29.jpg",
+   "title": "Ulaanbaatar view from hotel (2536896941).jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "author": "Francisco Anzola",
+   "source": "https://commons.wikimedia.org/wiki/File:Ulaanbaatar_view_from_hotel_(2536896941).jpg",
+   "match": "near_stay",
+   "distance_m": 224
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Ulaanbaatar_Hotel_%2811530027606%29.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Ulaanbaatar_Hotel_%2811530027606%29.jpg",
+   "title": "Ulaanbaatar Hotel (11530027606).jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "author": "Clay Gilliland",
+   "source": "https://commons.wikimedia.org/wiki/File:Ulaanbaatar_Hotel_(11530027606).jpg",
+   "match": "near_stay",
+   "distance_m": 122
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Bayangol_Hotel_%282537706168%29.jpg/1280px-Bayangol_Hotel_%282537706168%29.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Bayangol_Hotel_%282537706168%29.jpg",
+   "title": "Bayangol Hotel (2537706168).jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "author": "Francisco Anzola",
+   "source": "https://commons.wikimedia.org/wiki/File:Bayangol_Hotel_(2537706168).jpg",
+   "match": "near_stay",
+   "distance_m": 224
+  }
+ ],
+ "stay_amarbayasgalant_camp": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Ger_and_Monastery_-_panoramio.jpg/1280px-Ger_and_Monastery_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Ger_and_Monastery_-_panoramio.jpg",
+   "title": "Ger and Monastery - panoramio.jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "Mongolia Expeditions…",
+   "source": "https://commons.wikimedia.org/wiki/File:Ger_and_Monastery_-_panoramio.jpg",
+   "match": "near_stay",
+   "distance_m": 861
+  }
+ ],
+ "stay_murun_hotel_delger": [
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Hotel_50-100_in_M%C3%B6r%C3%B6n_city_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Hotel_50-100_in_M%C3%B6r%C3%B6n_city_-_panoramio.jpg",
+   "title": "Hotel 50-100 in Mörön city - panoramio.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Alex Ang",
+   "source": "https://commons.wikimedia.org/wiki/File:Hotel_50-100_in_M%C3%B6r%C3%B6n_city_-_panoramio.jpg",
+   "match": "near_stay",
+   "distance_m": 744
+  }
+ ],
+ "stay_elsen_tasarkhai_camp": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Turista_s%C3%A1tort%C3%A1bor_%28Tourist_ger_camp%29_-_panoramio.jpg/1280px-Turista_s%C3%A1tort%C3%A1bor_%28Tourist_ger_camp%29_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Turista_s%C3%A1tort%C3%A1bor_%28Tourist_ger_camp%29_-_panoramio.jpg",
+   "title": "Turista sátortábor (Tourist ger camp) - panoramio.jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "Gyula Péter",
+   "source": "https://commons.wikimedia.org/wiki/File:Turista_s%C3%A1tort%C3%A1bor_(Tourist_ger_camp)_-_panoramio.jpg",
+   "match": "near_stay",
+   "distance_m": 4182
+  }
+ ],
+ "stay_terkhiin_camp_white_lake": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Un_Ger_-_panoramio.jpg/1280px-Un_Ger_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Un_Ger_-_panoramio.jpg",
+   "title": "Un Ger - panoramio.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Raul P",
+   "source": "https://commons.wikimedia.org/wiki/File:Un_Ger_-_panoramio.jpg",
+   "match": "near_stay",
+   "distance_m": 3454
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Maikhan_Tolgoi_tourist_camp_01.jpg/1280px-Maikhan_Tolgoi_tourist_camp_01.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Maikhan_Tolgoi_tourist_camp_01.jpg",
+   "title": "Maikhan Tolgoi tourist camp 01.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Maikhan_Tolgoi_tourist_camp_01.jpg",
+   "match": "near_stay",
+   "distance_m": 2028
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Maikhan_Tolgoi_tourist_camp_02.jpg/1280px-Maikhan_Tolgoi_tourist_camp_02.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Maikhan_Tolgoi_tourist_camp_02.jpg",
+   "title": "Maikhan Tolgoi tourist camp 02.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Maikhan_Tolgoi_tourist_camp_02.jpg",
+   "match": "near_stay",
+   "distance_m": 2028
+  }
+ ],
+ "stay_khongor_camp_dunes": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Yurt_in_Gobi_Desert.jpg/1280px-Yurt_in_Gobi_Desert.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Yurt_in_Gobi_Desert.jpg",
+   "title": "Yurt in Gobi Desert.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Yurt_in_Gobi_Desert.jpg",
+   "match": "near_stay",
+   "distance_m": 3799
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Hotel_Camp_Gobi_Discovery_2.jpg/1280px-Hotel_Camp_Gobi_Discovery_2.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Hotel_Camp_Gobi_Discovery_2.jpg",
+   "title": "Hotel Camp Gobi Discovery 2.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Hotel_Camp_Gobi_Discovery_2.jpg",
+   "match": "near_stay",
+   "distance_m": 4380
+  }
+ ],
+ "stay_olgii_guesthouse_kazakh": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Bastau_hotel_-_panoramio.jpg/1280px-Bastau_hotel_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Bastau_hotel_-_panoramio.jpg",
+   "title": "Bastau hotel - panoramio.jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "Mongolia Expeditions…",
+   "source": "https://commons.wikimedia.org/wiki/File:Bastau_hotel_-_panoramio.jpg",
+   "match": "near_stay",
+   "distance_m": 278
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Kazakh_yurt_in_Bayan-Olgii%2C_Mongolia_2009.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Kazakh_yurt_in_Bayan-Olgii%2C_Mongolia_2009.jpg",
+   "title": "Kazakh yurt in Bayan-Olgii, Mongolia 2009.jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "author": "Todd Anderson",
+   "source": "https://commons.wikimedia.org/wiki/File:Kazakh_yurt_in_Bayan-Olgii,_Mongolia_2009.jpg",
+   "match": "near_stay",
+   "distance_m": 459
+  }
+ ],
+ "stay_olgii_hotel_eagle": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Bastau_hotel_-_panoramio.jpg/1280px-Bastau_hotel_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Bastau_hotel_-_panoramio.jpg",
+   "title": "Bastau hotel - panoramio.jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "Mongolia Expeditions…",
+   "source": "https://commons.wikimedia.org/wiki/File:Bastau_hotel_-_panoramio.jpg",
+   "match": "near_stay",
+   "distance_m": 384
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Kazakh_yurt_in_Bayan-Olgii%2C_Mongolia_2009.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Kazakh_yurt_in_Bayan-Olgii%2C_Mongolia_2009.jpg",
+   "title": "Kazakh yurt in Bayan-Olgii, Mongolia 2009.jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "author": "Todd Anderson",
+   "source": "https://commons.wikimedia.org/wiki/File:Kazakh_yurt_in_Bayan-Olgii,_Mongolia_2009.jpg",
+   "match": "near_stay",
+   "distance_m": 134
+  }
+ ],
+ "event_darkhan_autumn_fair": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Darkhan_50_Complex.jpg/1280px-Darkhan_50_Complex.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Darkhan_50_Complex.jpg",
+   "title": "Darkhan 50 Complex.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Chongkian",
+   "source": "https://commons.wikimedia.org/wiki/File:Darkhan_50_Complex.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Darkhan_%28cropped%29.jpg/1280px-Darkhan_%28cropped%29.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Darkhan_%28cropped%29.jpg",
+   "title": "Darkhan (cropped).jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Chongkian",
+   "source": "https://commons.wikimedia.org/wiki/File:Darkhan_(cropped).jpg",
+   "match": "event_topic",
+   "distance_m": null
+  }
+ ],
+ "event_khatgal_season_close_race": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_07.JPG/1280px-Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_07.JPG",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_07.JPG",
+   "title": "Koń mongolski w Parku Narodowym Gorchi-Tereldż 07.JPG",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Marcin Konsek",
+   "source": "https://commons.wikimedia.org/wiki/File:Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_07.JPG",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Konie_mongolskie_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_03.JPG/1280px-Konie_mongolskie_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_03.JPG",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Konie_mongolskie_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_03.JPG",
+   "title": "Konie mongolskie w Parku Narodowym Gorchi-Tereldż 03.JPG",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Marcin Konsek",
+   "source": "https://commons.wikimedia.org/wiki/File:Konie_mongolskie_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_03.JPG",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_06.JPG/1280px-Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_06.JPG",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_06.JPG",
+   "title": "Koń mongolski w Parku Narodowym Gorchi-Tereldż 06.JPG",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Marcin Konsek",
+   "source": "https://commons.wikimedia.org/wiki/File:Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_06.JPG",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_09.JPG/1280px-Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_09.JPG",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_09.JPG",
+   "title": "Koń mongolski w Parku Narodowym Gorchi-Tereldż 09.JPG",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Marcin Konsek",
+   "source": "https://commons.wikimedia.org/wiki/File:Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_09.JPG",
+   "match": "event_topic",
+   "distance_m": null
+  }
+ ],
+ "event_uran_togoo_hike_day": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/UranTogooCaldera.jpg/1280px-UranTogooCaldera.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/56/UranTogooCaldera.jpg",
+   "title": "UranTogooCaldera.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Chinneeb",
+   "source": "https://commons.wikimedia.org/wiki/File:UranTogooCaldera.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Volcano_Uran_Togoo_-_panoramio.jpg/1280px-Volcano_Uran_Togoo_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Volcano_Uran_Togoo_-_panoramio.jpg",
+   "title": "Volcano Uran Togoo - panoramio.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Alex Ang",
+   "source": "https://commons.wikimedia.org/wiki/File:Volcano_Uran_Togoo_-_panoramio.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/UranTogoo.jpg/1280px-UranTogoo.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/06/UranTogoo.jpg",
+   "title": "UranTogoo.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Yaan",
+   "source": "https://commons.wikimedia.org/wiki/File:UranTogoo.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  }
+ ],
+ "event_gobi_autumn_camel_race": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Camels_at_Khongoryn_Els_01.jpg/1280px-Camels_at_Khongoryn_Els_01.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Camels_at_Khongoryn_Els_01.jpg",
+   "title": "Camels at Khongoryn Els 01.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Camels_at_Khongoryn_Els_01.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Camel_at_Khongoryn_Els_01.jpg/1280px-Camel_at_Khongoryn_Els_01.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Camel_at_Khongoryn_Els_01.jpg",
+   "title": "Camel at Khongoryn Els 01.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Camel_at_Khongoryn_Els_01.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Camel_in_the_Gobi_desert.JPG/1280px-Camel_in_the_Gobi_desert.JPG",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Camel_in_the_Gobi_desert.JPG",
+   "title": "Camel in the Gobi desert.JPG",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Kelapstick",
+   "source": "https://commons.wikimedia.org/wiki/File:Camel_in_the_Gobi_desert.JPG",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Camels_in_Mongolia_20230908-3.jpg/1280px-Camels_in_Mongolia_20230908-3.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Camels_in_Mongolia_20230908-3.jpg",
+   "title": "Camels in Mongolia 20230908-3.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "ノボホショコロトソ",
+   "source": "https://commons.wikimedia.org/wiki/File:Camels_in_Mongolia_20230908-3.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  }
+ ],
+ "event_khuvsgul_ice_festival_2027": [
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Kh%C3%B6vsg%C3%B6l_%284848130333%29.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Kh%C3%B6vsg%C3%B6l_%284848130333%29.jpg",
+   "title": "Khövsgöl (4848130333).jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "author": "Enkhtuvshin from Budapest, Mongolia",
+   "source": "https://commons.wikimedia.org/wiki/File:Kh%C3%B6vsg%C3%B6l_(4848130333).jpg",
+   "match": "event_topic",
+   "distance_m": null
+  }
+ ],
+ "event_dundgovi_naadam_2027": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Naadam_2023_-_Horse_racing_05.jpg/1280px-Naadam_2023_-_Horse_racing_05.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Naadam_2023_-_Horse_racing_05.jpg",
+   "title": "Naadam 2023 - Horse racing 05.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_05.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Naadam_2023_-_Horse_racing_06.jpg/1280px-Naadam_2023_-_Horse_racing_06.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Naadam_2023_-_Horse_racing_06.jpg",
+   "title": "Naadam 2023 - Horse racing 06.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_06.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Musicians_at_Naadam_2023.jpg/1280px-Musicians_at_Naadam_2023.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Musicians_at_Naadam_2023.jpg",
+   "title": "Musicians at Naadam 2023.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Musicians_at_Naadam_2023.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Horse_racing_during_Naadam_festival_in_Mongolia_%2853928830770%29.jpg/1280px-Horse_racing_during_Naadam_festival_in_Mongolia_%2853928830770%29.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Horse_racing_during_Naadam_festival_in_Mongolia_%2853928830770%29.jpg",
+   "title": "Horse racing during Naadam festival in Mongolia (53928830770).jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "author": "dave massie",
+   "source": "https://commons.wikimedia.org/wiki/File:Horse_racing_during_Naadam_festival_in_Mongolia_(53928830770).jpg",
+   "match": "event_topic",
+   "distance_m": null
+  }
+ ],
+ "event_bulgan_naadam_2027": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Mongolian_Naadam_Wrestlers_-_2010.jpg/1280px-Mongolian_Naadam_Wrestlers_-_2010.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Mongolian_Naadam_Wrestlers_-_2010.jpg",
+   "title": "Mongolian Naadam Wrestlers - 2010.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "FischerFotos",
+   "source": "https://commons.wikimedia.org/wiki/File:Mongolian_Naadam_Wrestlers_-_2010.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Mongolian_wrestling_Bukh_during_the_Naadam.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Mongolian_wrestling_Bukh_during_the_Naadam.jpg",
+   "title": "Mongolian wrestling Bukh during the Naadam.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Orgio89",
+   "source": "https://commons.wikimedia.org/wiki/File:Mongolian_wrestling_Bukh_during_the_Naadam.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Mongolskie_zapasy_na_lokalnym_festiwalu_Naadam_%2824%29.jpg/1280px-Mongolskie_zapasy_na_lokalnym_festiwalu_Naadam_%2824%29.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Mongolskie_zapasy_na_lokalnym_festiwalu_Naadam_%2824%29.jpg",
+   "title": "Mongolskie zapasy na lokalnym festiwalu Naadam (24).jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Marcin Konsek",
+   "source": "https://commons.wikimedia.org/wiki/File:Mongolskie_zapasy_na_lokalnym_festiwalu_Naadam_(24).jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Young_Naadam_Horse_Racers_in_Mongolia_-_2010.jpg/1280px-Young_Naadam_Horse_Racers_in_Mongolia_-_2010.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Young_Naadam_Horse_Racers_in_Mongolia_-_2010.jpg",
+   "title": "Young Naadam Horse Racers in Mongolia - 2010.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "FischerFotos",
+   "source": "https://commons.wikimedia.org/wiki/File:Young_Naadam_Horse_Racers_in_Mongolia_-_2010.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  }
+ ],
+ "event_umnugovi_naadam_2027": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Young_Naadam_Horse_Racers_in_Mongolia_-_2010.jpg/1280px-Young_Naadam_Horse_Racers_in_Mongolia_-_2010.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Young_Naadam_Horse_Racers_in_Mongolia_-_2010.jpg",
+   "title": "Young Naadam Horse Racers in Mongolia - 2010.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "FischerFotos",
+   "source": "https://commons.wikimedia.org/wiki/File:Young_Naadam_Horse_Racers_in_Mongolia_-_2010.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Naadam_wrestling.jpg/1280px-Naadam_wrestling.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Naadam_wrestling.jpg",
+   "title": "Naadam wrestling.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Zoharby",
+   "source": "https://commons.wikimedia.org/wiki/File:Naadam_wrestling.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Mongolskie_zapasy_na_lokalnym_festiwalu_Naadam_%2809%29.jpg/1280px-Mongolskie_zapasy_na_lokalnym_festiwalu_Naadam_%2809%29.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Mongolskie_zapasy_na_lokalnym_festiwalu_Naadam_%2809%29.jpg",
+   "title": "Mongolskie zapasy na lokalnym festiwalu Naadam (09).jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Marcin Konsek",
+   "source": "https://commons.wikimedia.org/wiki/File:Mongolskie_zapasy_na_lokalnym_festiwalu_Naadam_(09).jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Naadam_2023_-_Horse_racing_09.jpg/1280px-Naadam_2023_-_Horse_racing_09.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Naadam_2023_-_Horse_racing_09.jpg",
+   "title": "Naadam 2023 - Horse racing 09.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_09.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  }
+ ],
+ "event_darkhan_naadam_2027": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Naadam_2023_-_Horse_racing_09.jpg/1280px-Naadam_2023_-_Horse_racing_09.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Naadam_2023_-_Horse_racing_09.jpg",
+   "title": "Naadam 2023 - Horse racing 09.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_09.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Naadam_2023_-_Horse_racing_13.jpg/1280px-Naadam_2023_-_Horse_racing_13.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Naadam_2023_-_Horse_racing_13.jpg",
+   "title": "Naadam 2023 - Horse racing 13.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_13.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Naadam_2023_-_Horse_racing_11.jpg/1280px-Naadam_2023_-_Horse_racing_11.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Naadam_2023_-_Horse_racing_11.jpg",
+   "title": "Naadam 2023 - Horse racing 11.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_11.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Naadam_2023_-_Horse_racing_02.jpg/1280px-Naadam_2023_-_Horse_racing_02.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Naadam_2023_-_Horse_racing_02.jpg",
+   "title": "Naadam 2023 - Horse racing 02.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_02.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  }
+ ],
+ "event_khuvsgul_naadam_2027": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Naadam_2023_-_Horse_racing_02.jpg/1280px-Naadam_2023_-_Horse_racing_02.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Naadam_2023_-_Horse_racing_02.jpg",
+   "title": "Naadam 2023 - Horse racing 02.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_02.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Naadam_2023_-_Horse_racing_12.jpg/1280px-Naadam_2023_-_Horse_racing_12.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Naadam_2023_-_Horse_racing_12.jpg",
+   "title": "Naadam 2023 - Horse racing 12.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_12.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Naadam_2023_-_Horse_racing_10.jpg/1280px-Naadam_2023_-_Horse_racing_10.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Naadam_2023_-_Horse_racing_10.jpg",
+   "title": "Naadam 2023 - Horse racing 10.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_10.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Naadam_2023_-_Horse_racing_08.jpg/1280px-Naadam_2023_-_Horse_racing_08.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Naadam_2023_-_Horse_racing_08.jpg",
+   "title": "Naadam 2023 - Horse racing 08.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_08.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  }
+ ],
+ "event_national_naadam_2027": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_34.JPG/1280px-Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_34.JPG",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_34.JPG",
+   "title": "Festiwal Naadam na stadionie narodowym w Ułan Bator 34.JPG",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Marcin Konsek",
+   "source": "https://commons.wikimedia.org/wiki/File:Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_34.JPG",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_29.JPG/1280px-Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_29.JPG",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_29.JPG",
+   "title": "Festiwal Naadam na stadionie narodowym w Ułan Bator 29.JPG",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Marcin Konsek",
+   "source": "https://commons.wikimedia.org/wiki/File:Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_29.JPG",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_19.JPG/1280px-Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_19.JPG",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_19.JPG",
+   "title": "Festiwal Naadam na stadionie narodowym w Ułan Bator 19.JPG",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Marcin Konsek",
+   "source": "https://commons.wikimedia.org/wiki/File:Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_19.JPG",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_18.JPG/1280px-Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_18.JPG",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_18.JPG",
+   "title": "Festiwal Naadam na stadionie narodowym w Ułan Bator 18.JPG",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Marcin Konsek",
+   "source": "https://commons.wikimedia.org/wiki/File:Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_18.JPG",
+   "match": "event_topic",
+   "distance_m": null
+  }
+ ],
+ "event_khatgal_naadam_2027": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Naadam_2023_-_Horse_racing_07.jpg/1280px-Naadam_2023_-_Horse_racing_07.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Naadam_2023_-_Horse_racing_07.jpg",
+   "title": "Naadam 2023 - Horse racing 07.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_07.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Naadam_2023_-_Horse_racing_03.jpg/1280px-Naadam_2023_-_Horse_racing_03.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Naadam_2023_-_Horse_racing_03.jpg",
+   "title": "Naadam 2023 - Horse racing 03.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_03.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Naadam_2023_-_Horse_racing_06.jpg/1280px-Naadam_2023_-_Horse_racing_06.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Naadam_2023_-_Horse_racing_06.jpg",
+   "title": "Naadam 2023 - Horse racing 06.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_06.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Musicians_at_Naadam_2023.jpg/1280px-Musicians_at_Naadam_2023.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Musicians_at_Naadam_2023.jpg",
+   "title": "Musicians at Naadam 2023.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Musicians_at_Naadam_2023.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  }
+ ],
+ "event_tariat_naadam_2027": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Musicians_at_Naadam_2023.jpg/1280px-Musicians_at_Naadam_2023.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Musicians_at_Naadam_2023.jpg",
+   "title": "Musicians at Naadam 2023.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Musicians_at_Naadam_2023.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Horse_racing_during_Naadam_festival_in_Mongolia_%2853928830770%29.jpg/1280px-Horse_racing_during_Naadam_festival_in_Mongolia_%2853928830770%29.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Horse_racing_during_Naadam_festival_in_Mongolia_%2853928830770%29.jpg",
+   "title": "Horse racing during Naadam festival in Mongolia (53928830770).jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "author": "dave massie",
+   "source": "https://commons.wikimedia.org/wiki/File:Horse_racing_during_Naadam_festival_in_Mongolia_(53928830770).jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Naadam_2023_-_Horse_racing_01.jpg/1280px-Naadam_2023_-_Horse_racing_01.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Naadam_2023_-_Horse_racing_01.jpg",
+   "title": "Naadam 2023 - Horse racing 01.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_01.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Naadam_2023%2C_Ulan_Bator_08.jpg/1280px-Naadam_2023%2C_Ulan_Bator_08.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Naadam_2023%2C_Ulan_Bator_08.jpg",
+   "title": "Naadam 2023, Ulan Bator 08.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023,_Ulan_Bator_08.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  }
+ ],
+ "event_amarbayasgalant_tsam_2027": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Amarbayasgalant_monastery_-_panoramio.jpg/1280px-Amarbayasgalant_monastery_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Amarbayasgalant_monastery_-_panoramio.jpg",
+   "title": "Amarbayasgalant monastery - panoramio.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Alex Ang",
+   "source": "https://commons.wikimedia.org/wiki/File:Amarbayasgalant_monastery_-_panoramio.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Amarbayasgalant_monastery_in_Mongolia_2.jpg/1280px-Amarbayasgalant_monastery_in_Mongolia_2.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Amarbayasgalant_monastery_in_Mongolia_2.jpg",
+   "title": "Amarbayasgalant monastery in Mongolia 2.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Martin Vorel",
+   "source": "https://commons.wikimedia.org/wiki/File:Amarbayasgalant_monastery_in_Mongolia_2.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Amarbayasgalant_monastery_in_Mongolia.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Amarbayasgalant_monastery_in_Mongolia.jpg",
+   "title": "Amarbayasgalant monastery in Mongolia.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Bloxgros",
+   "source": "https://commons.wikimedia.org/wiki/File:Amarbayasgalant_monastery_in_Mongolia.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Amarbayasgalant_Monastery_-_panoramio.jpg/1280px-Amarbayasgalant_Monastery_-_panoramio.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Amarbayasgalant_Monastery_-_panoramio.jpg",
+   "title": "Amarbayasgalant Monastery - panoramio.jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "Mongolia Expeditions…",
+   "source": "https://commons.wikimedia.org/wiki/File:Amarbayasgalant_Monastery_-_panoramio.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  }
+ ],
+ "event_kharkhorin_danshig_2027": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Erdene_Zuu_Monastery_10.jpg/1280px-Erdene_Zuu_Monastery_10.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Erdene_Zuu_Monastery_10.jpg",
+   "title": "Erdene Zuu Monastery 10.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Erdene_Zuu_Monastery_10.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Erdene_Zuu_Monastery_11.jpg/1280px-Erdene_Zuu_Monastery_11.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Erdene_Zuu_Monastery_11.jpg",
+   "title": "Erdene Zuu Monastery 11.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Erdene_Zuu_Monastery_11.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Erdene_Zuu_Monastery_13.jpg/1280px-Erdene_Zuu_Monastery_13.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Erdene_Zuu_Monastery_13.jpg",
+   "title": "Erdene Zuu Monastery 13.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Erdene_Zuu_Monastery_13.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Erdene_Zuu_Monastery_16.jpg/1280px-Erdene_Zuu_Monastery_16.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Erdene_Zuu_Monastery_16.jpg",
+   "title": "Erdene Zuu Monastery 16.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Erdene_Zuu_Monastery_16.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  }
+ ],
+ "event_golden_eagle_festival_2026": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Golden_Eagle_Festival_Mongolia_18.jpg/1280px-Golden_Eagle_Festival_Mongolia_18.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Golden_Eagle_Festival_Mongolia_18.jpg",
+   "title": "Golden Eagle Festival Mongolia 18.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Gabideen",
+   "source": "https://commons.wikimedia.org/wiki/File:Golden_Eagle_Festival_Mongolia_18.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Golden_Eagle_Festival_Mongolia_7.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Golden_Eagle_Festival_Mongolia_7.jpg",
+   "title": "Golden Eagle Festival Mongolia 7.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Gabideen",
+   "source": "https://commons.wikimedia.org/wiki/File:Golden_Eagle_Festival_Mongolia_7.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Golden_Eagle_Festival_Mongolia_15.jpg/1280px-Golden_Eagle_Festival_Mongolia_15.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Golden_Eagle_Festival_Mongolia_15.jpg",
+   "title": "Golden Eagle Festival Mongolia 15.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Gabideen",
+   "source": "https://commons.wikimedia.org/wiki/File:Golden_Eagle_Festival_Mongolia_15.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Golden_Eagle_Festival_Mongolia_22.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Golden_Eagle_Festival_Mongolia_22.jpg",
+   "title": "Golden Eagle Festival Mongolia 22.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Gabideen",
+   "source": "https://commons.wikimedia.org/wiki/File:Golden_Eagle_Festival_Mongolia_22.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  }
+ ],
+ "event_olgii_nauryz_2027": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Eagles_and_Hunters.JPG/1280px-Eagles_and_Hunters.JPG",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Eagles_and_Hunters.JPG",
+   "title": "Eagles and Hunters.JPG",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Altaihunters",
+   "source": "https://commons.wikimedia.org/wiki/File:Eagles_and_Hunters.JPG",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Parade_of_eagle_hunters.JPG/1280px-Parade_of_eagle_hunters.JPG",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Parade_of_eagle_hunters.JPG",
+   "title": "Parade of eagle hunters.JPG",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Altaihunters",
+   "source": "https://commons.wikimedia.org/wiki/File:Parade_of_eagle_hunters.JPG",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Young_eagle_hunter.JPG/1280px-Young_eagle_hunter.JPG",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Young_eagle_hunter.JPG",
+   "title": "Young eagle hunter.JPG",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Altaihunters",
+   "source": "https://commons.wikimedia.org/wiki/File:Young_eagle_hunter.JPG",
+   "match": "event_topic",
+   "distance_m": null
+  }
+ ],
+ "event_khovd_naadam_2027": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Naadam_2023_-_Horse_racing_03.jpg/1280px-Naadam_2023_-_Horse_racing_03.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Naadam_2023_-_Horse_racing_03.jpg",
+   "title": "Naadam 2023 - Horse racing 03.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_03.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Naadam_2023_-_Horse_racing_06.jpg/1280px-Naadam_2023_-_Horse_racing_06.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Naadam_2023_-_Horse_racing_06.jpg",
+   "title": "Naadam 2023 - Horse racing 06.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_06.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Musicians_at_Naadam_2023.jpg/1280px-Musicians_at_Naadam_2023.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Musicians_at_Naadam_2023.jpg",
+   "title": "Musicians at Naadam 2023.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Musicians_at_Naadam_2023.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Horse_racing_during_Naadam_festival_in_Mongolia_%2853928830770%29.jpg/1280px-Horse_racing_during_Naadam_festival_in_Mongolia_%2853928830770%29.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Horse_racing_during_Naadam_festival_in_Mongolia_%2853928830770%29.jpg",
+   "title": "Horse racing during Naadam festival in Mongolia (53928830770).jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "author": "dave massie",
+   "source": "https://commons.wikimedia.org/wiki/File:Horse_racing_during_Naadam_festival_in_Mongolia_(53928830770).jpg",
+   "match": "event_topic",
+   "distance_m": null
+  }
+ ],
+ "event_uvs_naadam_2027": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Naadam_2023_-_Horse_racing_05.jpg/1280px-Naadam_2023_-_Horse_racing_05.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Naadam_2023_-_Horse_racing_05.jpg",
+   "title": "Naadam 2023 - Horse racing 05.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_05.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Naadam_2023_-_Horse_racing_14.jpg/1280px-Naadam_2023_-_Horse_racing_14.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Naadam_2023_-_Horse_racing_14.jpg",
+   "title": "Naadam 2023 - Horse racing 14.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_14.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Naadam_2023_-_Horse_racing_03.jpg/1280px-Naadam_2023_-_Horse_racing_03.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Naadam_2023_-_Horse_racing_03.jpg",
+   "title": "Naadam 2023 - Horse racing 03.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_03.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Naadam_2023_-_Horse_racing_07.jpg/1280px-Naadam_2023_-_Horse_racing_07.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Naadam_2023_-_Horse_racing_07.jpg",
+   "title": "Naadam 2023 - Horse racing 07.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_07.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  }
+ ],
+ "event_zavkhan_naadam_2027": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Naadam_2023_-_Horse_racing_07.jpg/1280px-Naadam_2023_-_Horse_racing_07.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Naadam_2023_-_Horse_racing_07.jpg",
+   "title": "Naadam 2023 - Horse racing 07.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_07.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Naadam_2023_-_Horse_racing_06.jpg/1280px-Naadam_2023_-_Horse_racing_06.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Naadam_2023_-_Horse_racing_06.jpg",
+   "title": "Naadam 2023 - Horse racing 06.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_06.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Musicians_at_Naadam_2023.jpg/1280px-Musicians_at_Naadam_2023.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Musicians_at_Naadam_2023.jpg",
+   "title": "Musicians at Naadam 2023.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Musicians_at_Naadam_2023.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Horse_racing_during_Naadam_festival_in_Mongolia_%2853928830770%29.jpg/1280px-Horse_racing_during_Naadam_festival_in_Mongolia_%2853928830770%29.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Horse_racing_during_Naadam_festival_in_Mongolia_%2853928830770%29.jpg",
+   "title": "Horse racing during Naadam festival in Mongolia (53928830770).jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "author": "dave massie",
+   "source": "https://commons.wikimedia.org/wiki/File:Horse_racing_during_Naadam_festival_in_Mongolia_(53928830770).jpg",
+   "match": "event_topic",
+   "distance_m": null
+  }
+ ],
+ "event_khentii_naadam_2027": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Horse_racing_during_Naadam_festival_in_Mongolia_%2853928830770%29.jpg/1280px-Horse_racing_during_Naadam_festival_in_Mongolia_%2853928830770%29.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Horse_racing_during_Naadam_festival_in_Mongolia_%2853928830770%29.jpg",
+   "title": "Horse racing during Naadam festival in Mongolia (53928830770).jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "author": "dave massie",
+   "source": "https://commons.wikimedia.org/wiki/File:Horse_racing_during_Naadam_festival_in_Mongolia_(53928830770).jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Naadam_2023_-_Horse_racing_01.jpg/1280px-Naadam_2023_-_Horse_racing_01.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Naadam_2023_-_Horse_racing_01.jpg",
+   "title": "Naadam 2023 - Horse racing 01.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_01.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Naadam_2023%2C_Ulan_Bator_08.jpg/1280px-Naadam_2023%2C_Ulan_Bator_08.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Naadam_2023%2C_Ulan_Bator_08.jpg",
+   "title": "Naadam 2023, Ulan Bator 08.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023,_Ulan_Bator_08.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Naadam_2023%2C_Ulan_Bator_07.jpg/1280px-Naadam_2023%2C_Ulan_Bator_07.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Naadam_2023%2C_Ulan_Bator_07.jpg",
+   "title": "Naadam 2023, Ulan Bator 07.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023,_Ulan_Bator_07.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  }
+ ],
+ "event_dornod_naadam_2027": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Naadam_2023%2C_Ulan_Bator_07.jpg/1280px-Naadam_2023%2C_Ulan_Bator_07.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Naadam_2023%2C_Ulan_Bator_07.jpg",
+   "title": "Naadam 2023, Ulan Bator 07.jpg",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Bernard Gagnon",
+   "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023,_Ulan_Bator_07.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Mongolian_Naadam_Wrestlers_-_2010.jpg/1280px-Mongolian_Naadam_Wrestlers_-_2010.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Mongolian_Naadam_Wrestlers_-_2010.jpg",
+   "title": "Mongolian Naadam Wrestlers - 2010.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "FischerFotos",
+   "source": "https://commons.wikimedia.org/wiki/File:Mongolian_Naadam_Wrestlers_-_2010.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Mongolian_wrestling_Bukh_during_the_Naadam.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Mongolian_wrestling_Bukh_during_the_Naadam.jpg",
+   "title": "Mongolian wrestling Bukh during the Naadam.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Orgio89",
+   "source": "https://commons.wikimedia.org/wiki/File:Mongolian_wrestling_Bukh_during_the_Naadam.jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Mongolskie_zapasy_na_lokalnym_festiwalu_Naadam_%2824%29.jpg/1280px-Mongolskie_zapasy_na_lokalnym_festiwalu_Naadam_%2824%29.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Mongolskie_zapasy_na_lokalnym_festiwalu_Naadam_%2824%29.jpg",
+   "title": "Mongolskie zapasy na lokalnym festiwalu Naadam (24).jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Marcin Konsek",
+   "source": "https://commons.wikimedia.org/wiki/File:Mongolskie_zapasy_na_lokalnym_festiwalu_Naadam_(24).jpg",
+   "match": "event_topic",
+   "distance_m": null
+  }
+ ],
+ "event_sukhbaatar_horse_festival_2027": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Mongolski_ch%C5%82opiec_i_konie_na_stepie_podczas_lokalnego_festiwalu_Naadam_%2804%29.jpg/1280px-Mongolski_ch%C5%82opiec_i_konie_na_stepie_podczas_lokalnego_festiwalu_Naadam_%2804%29.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Mongolski_ch%C5%82opiec_i_konie_na_stepie_podczas_lokalnego_festiwalu_Naadam_%2804%29.jpg",
+   "title": "Mongolski chłopiec i konie na stepie podczas lokalnego festiwalu Naadam (04).jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Marcin Konsek",
+   "source": "https://commons.wikimedia.org/wiki/File:Mongolski_ch%C5%82opiec_i_konie_na_stepie_podczas_lokalnego_festiwalu_Naadam_(04).jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Mongolski_ch%C5%82opiec_i_konie_na_stepie_podczas_lokalnego_festiwalu_Naadam_%2803%29.jpg/1280px-Mongolski_ch%C5%82opiec_i_konie_na_stepie_podczas_lokalnego_festiwalu_Naadam_%2803%29.jpg",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Mongolski_ch%C5%82opiec_i_konie_na_stepie_podczas_lokalnego_festiwalu_Naadam_%2803%29.jpg",
+   "title": "Mongolski chłopiec i konie na stepie podczas lokalnego festiwalu Naadam (03).jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Marcin Konsek",
+   "source": "https://commons.wikimedia.org/wiki/File:Mongolski_ch%C5%82opiec_i_konie_na_stepie_podczas_lokalnego_festiwalu_Naadam_(03).jpg",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Festiwal_Naadam_na_stepie_na_obrze%C5%BCach_U%C5%82an_Bator_19.JPG/1280px-Festiwal_Naadam_na_stepie_na_obrze%C5%BCach_U%C5%82an_Bator_19.JPG",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Festiwal_Naadam_na_stepie_na_obrze%C5%BCach_U%C5%82an_Bator_19.JPG",
+   "title": "Festiwal Naadam na stepie na obrzeżach Ułan Bator 19.JPG",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Marcin Konsek",
+   "source": "https://commons.wikimedia.org/wiki/File:Festiwal_Naadam_na_stepie_na_obrze%C5%BCach_U%C5%82an_Bator_19.JPG",
+   "match": "event_topic",
+   "distance_m": null
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_07.JPG/1280px-Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_07.JPG",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_07.JPG",
+   "title": "Koń mongolski w Parku Narodowym Gorchi-Tereldż 07.JPG",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Marcin Konsek",
+   "source": "https://commons.wikimedia.org/wiki/File:Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_07.JPG",
+   "match": "event_topic",
+   "distance_m": null
+  }
+ ],
+ "event_dadal_chinggis_day_2026": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Chingghis_statue_at_Dadal_sum.JPG/1280px-Chingghis_statue_at_Dadal_sum.JPG",
+   "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Chingghis_statue_at_Dadal_sum.JPG",
+   "title": "Chingghis statue at Dadal sum.JPG",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "author": "Chinneeb",
+   "source": "https://commons.wikimedia.org/wiki/File:Chingghis_statue_at_Dadal_sum.JPG",
+   "match": "event_topic",
+   "distance_m": null
+  }
+ ]
+}

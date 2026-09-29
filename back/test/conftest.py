@@ -1,60 +1,35 @@
 """Shared pytest fixtures.
 
 Pure-unit tests (models, schemas, security, JWT, deps) need no database. The
-``db`` and ``client`` fixtures provide a Postgres-backed, transactionally
-isolated session for CRUD and API tests; if no database is reachable those
-tests are skipped rather than failing.
+``db`` and ``client`` fixtures provide a fresh in-memory MongoDB (mongomock)
+per test for CRUD and API tests, so no running MongoDB server is required.
 """
 
-import pytest
-from sqlalchemy.exc import OperationalError
-from sqlalchemy.orm import Session
+import os
 
-from app.db.base import Base  # noqa: F401  (imports models so metadata is populated)
-from app.db.session import engine
-from app.main import app
-from app.middlewares.rate_limit import InMemoryRateLimiter
-from app.v1.deps import get_db
+# Tests use mongomock; don't try to reach a real MongoDB when the app starts
+os.environ.setdefault("MONGO_INIT_ON_STARTUP", "false")
 
+import mongomock  # noqa: E402
+import pytest  # noqa: E402
 
-@pytest.fixture(scope="session")
-def _schema():
-    """Ensure the schema exists; skip DB-backed tests if Postgres is unreachable."""
-    from sqlalchemy import text
-
-    try:
-        connection = engine.connect()
-    except OperationalError as exc:  # pragma: no cover - depends on environment
-        pytest.skip(f"Database not available: {exc}")
-
-    try:
-        connection.execute(text('CREATE EXTENSION IF NOT EXISTS "uuid-ossp";'))
-        connection.commit()
-        Base.metadata.create_all(bind=connection)
-        connection.commit()
-    finally:
-        connection.close()
-
-    yield
+from app.main import app  # noqa: E402
+from app.middlewares.rate_limit import InMemoryRateLimiter  # noqa: E402
+from app.v1.deps import get_db  # noqa: E402
 
 
 @pytest.fixture
-def db(_schema):
-    """Function-scoped session wrapped in a transaction that is always rolled back."""
-    connection = engine.connect()
-    transaction = connection.begin()
-    session = Session(bind=connection, autoflush=False, expire_on_commit=False)
-    try:
-        yield session
-    finally:
-        session.close()
-        transaction.rollback()
-        connection.close()
+def db():
+    """Function-scoped in-memory database with the app's indexes."""
+    database = mongomock.MongoClient(tz_aware=True)["test_travel_mn"]
+    # mongomock can't build 2dsphere indexes; only the ones tests rely on matter here
+    database["users"].create_index("email", unique=True)
+    yield database
 
 
 @pytest.fixture
 def client(db, monkeypatch):
-    """TestClient whose endpoints use the isolated ``db`` session.
+    """TestClient whose endpoints use the isolated ``db``.
 
     Rate limiting is disabled so repeated auth calls don't trip the 5/min limit.
     """
@@ -65,10 +40,7 @@ def client(db, monkeypatch):
 
     monkeypatch.setattr(InMemoryRateLimiter, "is_allowed", _always_allowed)
 
-    def _override_get_db():
-        yield db
-
-    app.dependency_overrides[get_db] = _override_get_db
+    app.dependency_overrides[get_db] = lambda: db
     try:
         with TestClient(app) as test_client:
             yield test_client

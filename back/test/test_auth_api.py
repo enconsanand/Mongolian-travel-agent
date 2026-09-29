@@ -26,7 +26,6 @@ def _create_user(db, password: str = "password1", is_active: bool = True) -> Use
         is_active=is_active,
     )
     user = crud.user.create(db=db, obj_in=payload)
-    db.flush()
     return user
 
 

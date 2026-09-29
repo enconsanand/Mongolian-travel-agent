@@ -1,0 +1,2092 @@
+[
+  {
+    "_id": "place_ub",
+    "name": {
+      "mn": "Улаанбаатар",
+      "en": "Ulaanbaatar"
+    },
+    "aimag": "Ulaanbaatar",
+    "kind": "city",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        106.9177,
+        47.9186
+      ]
+    },
+    "fuel_available": true,
+    "note": {
+      "mn": "Нийслэл. Драгон автовокзал (баруун талд) хойд, баруун, өмнөд чиглэлийн автобусуудыг явуулдаг.",
+      "en": "Capital. Dragon bus terminal (west) serves north, west and south routes."
+    },
+    "region": "hub",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Ulan_Bator_-_panoramio_%285%29.jpg/1280px-Ulan_Bator_-_panoramio_%285%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Ulan_Bator_-_panoramio_%285%29.jpg",
+        "title": "Ulan Bator - panoramio (5).jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "AwOiSoAk KaOsIoWa",
+        "source": "https://commons.wikimedia.org/wiki/File:Ulan_Bator_-_panoramio_(5).jpg",
+        "match": "location",
+        "distance_m": 51,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Ulan_Bator_-_panoramio_%284%29.jpg/1280px-Ulan_Bator_-_panoramio_%284%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Ulan_Bator_-_panoramio_%284%29.jpg",
+        "title": "Ulan Bator - panoramio (4).jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "AwOiSoAk KaOsIoWa",
+        "source": "https://commons.wikimedia.org/wiki/File:Ulan_Bator_-_panoramio_(4).jpg",
+        "match": "location",
+        "distance_m": 55,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Felh%C5%91karcol%C3%B3_a_f%C5%91t%C3%A9ren_%28Skyscraper_on_the_central_square%29_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Felh%C5%91karcol%C3%B3_a_f%C5%91t%C3%A9ren_%28Skyscraper_on_the_central_square%29_-_panoramio.jpg",
+        "title": "Felhőkarcoló a főtéren (Skyscraper on the central square) - panoramio.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Gyula Péter",
+        "source": "https://commons.wikimedia.org/wiki/File:Felh%C5%91karcol%C3%B3_a_f%C5%91t%C3%A9ren_(Skyscraper_on_the_central_square)_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 77,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Sz%C3%BCheb%C3%A1tor_szobra_%28Statue_of_Suhbataar%29_-_panoramio.jpg/1280px-Sz%C3%BCheb%C3%A1tor_szobra_%28Statue_of_Suhbataar%29_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Sz%C3%BCheb%C3%A1tor_szobra_%28Statue_of_Suhbataar%29_-_panoramio.jpg",
+        "title": "Szühebátor szobra (Statue of Suhbataar) - panoramio.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Gyula Péter",
+        "source": "https://commons.wikimedia.org/wiki/File:Sz%C3%BCheb%C3%A1tor_szobra_(Statue_of_Suhbataar)_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 77,
+        "is_illustrative": false
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Ulan_Bator_-_panoramio_%285%29.jpg/1280px-Ulan_Bator_-_panoramio_%285%29.jpg"
+  },
+  {
+    "_id": "place_darkhan",
+    "name": {
+      "mn": "Дархан",
+      "en": "Darkhan"
+    },
+    "aimag": "Darkhan-Uul",
+    "kind": "aimag_center",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        105.9228,
+        49.4867
+      ]
+    },
+    "fuel_available": true,
+    "note": {
+      "mn": "Хоёр дахь том хот, УБ-аас Орос хүрэх хатуу хучилттай зам дээр.",
+      "en": "Second largest city, on the paved UB to Russia highway."
+    },
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Darkhan_main_road.jpg/1280px-Darkhan_main_road.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Darkhan_main_road.jpg",
+        "title": "Darkhan main road.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "EnkhTS",
+        "source": "https://commons.wikimedia.org/wiki/File:Darkhan_main_road.jpg",
+        "match": "location",
+        "distance_m": 2128,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Darkhan-Uul_Cultural_Center_and_Mosque.jpg/1280px-Darkhan-Uul_Cultural_Center_and_Mosque.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Darkhan-Uul_Cultural_Center_and_Mosque.jpg",
+        "title": "Darkhan-Uul Cultural Center and Mosque.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Chongkian",
+        "source": "https://commons.wikimedia.org/wiki/File:Darkhan-Uul_Cultural_Center_and_Mosque.jpg",
+        "match": "location",
+        "distance_m": 5068,
+        "is_illustrative": false
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Darkhan_main_road.jpg/1280px-Darkhan_main_road.jpg"
+  },
+  {
+    "_id": "place_amarbayasgalant",
+    "name": {
+      "mn": "Амарбаясгалант хийд",
+      "en": "Amarbayasgalant Monastery"
+    },
+    "aimag": "Selenge",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        105.0853,
+        49.4781
+      ]
+    },
+    "fuel_available": false,
+    "note": {
+      "mn": "XVIII зууны хийд; сүүлийн хэсэг нь шороон зам.",
+      "en": "18th-century monastery; last stretch is dirt."
+    },
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Amarbayasgalant_Monastery_-_panoramio.jpg/1280px-Amarbayasgalant_Monastery_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Amarbayasgalant_Monastery_-_panoramio.jpg",
+        "title": "Amarbayasgalant Monastery - panoramio.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Mongolia Expeditions…",
+        "source": "https://commons.wikimedia.org/wiki/File:Amarbayasgalant_Monastery_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 163,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Amarbayasgalant_monastery_new_-_panoramio.jpg/1280px-Amarbayasgalant_monastery_new_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Amarbayasgalant_monastery_new_-_panoramio.jpg",
+        "title": "Amarbayasgalant monastery new - panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Alex Ang",
+        "source": "https://commons.wikimedia.org/wiki/File:Amarbayasgalant_monastery_new_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 180,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Amarbayasgalant_monastery_-_panoramio.jpg/1280px-Amarbayasgalant_monastery_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Amarbayasgalant_monastery_-_panoramio.jpg",
+        "title": "Amarbayasgalant monastery - panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Alex Ang",
+        "source": "https://commons.wikimedia.org/wiki/File:Amarbayasgalant_monastery_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 180,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Ger_and_Monastery_-_panoramio.jpg/1280px-Ger_and_Monastery_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Ger_and_Monastery_-_panoramio.jpg",
+        "title": "Ger and Monastery - panoramio.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Mongolia Expeditions…",
+        "source": "https://commons.wikimedia.org/wiki/File:Ger_and_Monastery_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 264,
+        "is_illustrative": false
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Amarbayasgalant_Monastery_-_panoramio.jpg/1280px-Amarbayasgalant_Monastery_-_panoramio.jpg"
+  },
+  {
+    "_id": "place_erdenet",
+    "name": {
+      "mn": "Эрдэнэт",
+      "en": "Erdenet"
+    },
+    "aimag": "Orkhon",
+    "kind": "aimag_center",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        104.0442,
+        49.0275
+      ]
+    },
+    "fuel_available": true,
+    "note": {
+      "mn": "Зэсийн уурхайтай хот, сайн зочид буудал, шатахуунтай.",
+      "en": "Copper mining city, good hotels and fuel."
+    },
+    "region": "north",
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Memorial_in_Erdenet_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Memorial_in_Erdenet_-_panoramio.jpg",
+        "title": "Memorial in Erdenet - panoramio.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Alex Ang",
+        "source": "https://commons.wikimedia.org/wiki/File:Memorial_in_Erdenet_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 1443,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Erdenet_city_in_winter_-_panoramio.jpg/1280px-Erdenet_city_in_winter_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Erdenet_city_in_winter_-_panoramio.jpg",
+        "title": "Erdenet city in winter - panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Alex Ang",
+        "source": "https://commons.wikimedia.org/wiki/File:Erdenet_city_in_winter_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 1756,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Erdenet_in_summer_-_panoramio.jpg/1280px-Erdenet_in_summer_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Erdenet_in_summer_-_panoramio.jpg",
+        "title": "Erdenet in summer - panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Alex Ang",
+        "source": "https://commons.wikimedia.org/wiki/File:Erdenet_in_summer_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 2186,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Snow_in_night_forest_by_Erdenet_-_panoramio.jpg/1280px-Snow_in_night_forest_by_Erdenet_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Snow_in_night_forest_by_Erdenet_-_panoramio.jpg",
+        "title": "Snow in night forest by Erdenet - panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Alex Ang",
+        "source": "https://commons.wikimedia.org/wiki/File:Snow_in_night_forest_by_Erdenet_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 3956,
+        "is_illustrative": false
+      }
+    ],
+    "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Memorial_in_Erdenet_-_panoramio.jpg"
+  },
+  {
+    "_id": "place_bulgan",
+    "name": {
+      "mn": "Булган",
+      "en": "Bulgan"
+    },
+    "aimag": "Bulgan",
+    "kind": "aimag_center",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        103.5347,
+        48.8125
+      ]
+    },
+    "fuel_available": true,
+    "note": {
+      "mn": "Ногоон, жижиг аймгийн төв, Уран Тогоо руу явах гарц.",
+      "en": "Small green aimag center, gateway to Uran Togoo."
+    },
+    "region": "north",
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_lun",
+    "name": {
+      "mn": "Лүн",
+      "en": "Lün"
+    },
+    "aimag": "Töv",
+    "kind": "soum_center",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        105.25,
+        47.8667
+      ]
+    },
+    "fuel_available": true,
+    "note": {
+      "mn": "Туул голын гарам, замын хажуугийн гуанзнууд.",
+      "en": "Tuul river crossing, roadside guanz (canteens)."
+    },
+    "region": "north",
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_uran_togoo",
+    "name": {
+      "mn": "Уран Тогоо",
+      "en": "Uran Togoo Volcano"
+    },
+    "aimag": "Bulgan",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        102.7406,
+        48.9981
+      ]
+    },
+    "fuel_available": false,
+    "note": {
+      "mn": "Унтарсан галт уул, тогоо руу 1 цаг хөнгөн алхна.",
+      "en": "Extinct volcano, easy 1h hike to the crater."
+    },
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Volcano_Uran_Togoo_-_panoramio.jpg/1280px-Volcano_Uran_Togoo_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Volcano_Uran_Togoo_-_panoramio.jpg",
+        "title": "Volcano Uran Togoo - panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Alex Ang",
+        "source": "https://commons.wikimedia.org/wiki/File:Volcano_Uran_Togoo_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 594,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/UranTogooCaldera.jpg/1280px-UranTogooCaldera.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/56/UranTogooCaldera.jpg",
+        "title": "UranTogooCaldera.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Chinneeb",
+        "source": "https://commons.wikimedia.org/wiki/File:UranTogooCaldera.jpg",
+        "match": "location",
+        "distance_m": 400,
+        "is_illustrative": false
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Volcano_Uran_Togoo_-_panoramio.jpg/1280px-Volcano_Uran_Togoo_-_panoramio.jpg"
+  },
+  {
+    "_id": "place_khutag_undur",
+    "name": {
+      "mn": "Хутаг-Өндөр",
+      "en": "Khutag-Öndör"
+    },
+    "aimag": "Bulgan",
+    "kind": "soum_center",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        102.6833,
+        49.3833
+      ]
+    },
+    "fuel_available": true,
+    "note": {
+      "mn": "Булган, Мөрөн хоёрын хооронд найдвартай шатахуун авах сүүлийн цэг.",
+      "en": "Last reliable fuel between Bulgan and Mörön."
+    },
+    "region": "north",
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_murun",
+    "name": {
+      "mn": "Мөрөн",
+      "en": "Mörön"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "aimag_center",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        100.1625,
+        49.6342
+      ]
+    },
+    "fuel_available": true,
+    "note": {
+      "mn": "Хөвсгөл аймгийн төв, нисэх буудал, автовокзалтай.",
+      "en": "Khövsgöl aimag center, airport, bus station."
+    },
+    "region": "north",
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Hotel_50-100_in_M%C3%B6r%C3%B6n_city_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Hotel_50-100_in_M%C3%B6r%C3%B6n_city_-_panoramio.jpg",
+        "title": "Hotel 50-100 in Mörön city - panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Alex Ang",
+        "source": "https://commons.wikimedia.org/wiki/File:Hotel_50-100_in_M%C3%B6r%C3%B6n_city_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 827,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Moron_city_-_panoramio.jpg/1280px-Moron_city_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Moron_city_-_panoramio.jpg",
+        "title": "Moron city - panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Alex Ang",
+        "source": "https://commons.wikimedia.org/wiki/File:Moron_city_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 273,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/%C2%B7%CB%99%C2%B7ChinaUli2010%C2%B7.%C2%B7_Ch%C3%B6wsg%C3%B6l-Aimag_-_panoramio_%285%29.jpg/1280px-%C2%B7%CB%99%C2%B7ChinaUli2010%C2%B7.%C2%B7_Ch%C3%B6wsg%C3%B6l-Aimag_-_panoramio_%285%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/6/68/%C2%B7%CB%99%C2%B7ChinaUli2010%C2%B7.%C2%B7_Ch%C3%B6wsg%C3%B6l-Aimag_-_panoramio_%285%29.jpg",
+        "title": "·˙·ChinaUli2010·.· Chöwsgöl-Aimag - panoramio (5).jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "·˙·ChinaUli2010·.·",
+        "source": "https://commons.wikimedia.org/wiki/File:%C2%B7%CB%99%C2%B7ChinaUli2010%C2%B7.%C2%B7_Ch%C3%B6wsg%C3%B6l-Aimag_-_panoramio_(5).jpg",
+        "match": "location",
+        "distance_m": 7942,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Statue_of_%C3%96nd%C3%B6r_Gongor_at_M%C3%B6r%C3%B6n_Museum.jpg/1280px-Statue_of_%C3%96nd%C3%B6r_Gongor_at_M%C3%B6r%C3%B6n_Museum.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Statue_of_%C3%96nd%C3%B6r_Gongor_at_M%C3%B6r%C3%B6n_Museum.jpg",
+        "title": "Statue of Öndör Gongor at Mörön Museum.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Chinneeb",
+        "source": "https://commons.wikimedia.org/wiki/File:Statue_of_%C3%96nd%C3%B6r_Gongor_at_M%C3%B6r%C3%B6n_Museum.jpg",
+        "match": "location",
+        "distance_m": 333,
+        "is_illustrative": false
+      }
+    ],
+    "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Hotel_50-100_in_M%C3%B6r%C3%B6n_city_-_panoramio.jpg"
+  },
+  {
+    "_id": "place_khatgal",
+    "name": {
+      "mn": "Хатгал",
+      "en": "Khatgal"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "soum_center",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        100.16,
+        50.4425
+      ]
+    },
+    "fuel_available": true,
+    "note": {
+      "mn": "Хөвсгөл нуурын өмнөд захад орших тосгон.",
+      "en": "Village at the south tip of Khövsgöl Lake."
+    },
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/View_of_Khatgal.jpg/1280px-View_of_Khatgal.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/View_of_Khatgal.jpg",
+        "title": "View of Khatgal.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:View_of_Khatgal.jpg",
+        "match": "location",
+        "distance_m": 123,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Khovsgol_lake_-_panoramio.jpg/1280px-Khovsgol_lake_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Khovsgol_lake_-_panoramio.jpg",
+        "title": "Khovsgol lake - panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Alex Ang",
+        "source": "https://commons.wikimedia.org/wiki/File:Khovsgol_lake_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 1484,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/%D0%A1%D2%AE%D0%A5%D0%91%D0%90%D0%90%D0%A2%D0%90%D0%A0_%D0%BE%D0%BD%D0%B3%D0%BE%D1%86_-_panoramio.jpg/1280px-%D0%A1%D2%AE%D0%A5%D0%91%D0%90%D0%90%D0%A2%D0%90%D0%A0_%D0%BE%D0%BD%D0%B3%D0%BE%D1%86_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/%D0%A1%D2%AE%D0%A5%D0%91%D0%90%D0%90%D0%A2%D0%90%D0%A0_%D0%BE%D0%BD%D0%B3%D0%BE%D1%86_-_panoramio.jpg",
+        "title": "СҮХБААТАР онгоц - panoramio.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Mongolia Expeditions…",
+        "source": "https://commons.wikimedia.org/wiki/File:%D0%A1%D2%AE%D0%A5%D0%91%D0%90%D0%90%D0%A2%D0%90%D0%A0_%D0%BE%D0%BD%D0%B3%D0%BE%D1%86_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 1597,
+        "is_illustrative": false
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/View_of_Khatgal.jpg/1280px-View_of_Khatgal.jpg"
+  },
+  {
+    "_id": "place_toilogt",
+    "name": {
+      "mn": "Тойлогт",
+      "en": "Toilogt"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        100.2167,
+        50.5167
+      ]
+    },
+    "fuel_available": false,
+    "note": {
+      "mn": "Баруун эргийн хойг, олон жуулчны бааз бий.",
+      "en": "Peninsula on the west shore, many ger camps."
+    },
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/%D0%A1%D2%AE%D0%A5%D0%91%D0%90%D0%90%D0%A2%D0%90%D0%A0_%D0%BE%D0%BD%D0%B3%D0%BE%D1%86_-_panoramio.jpg/1280px-%D0%A1%D2%AE%D0%A5%D0%91%D0%90%D0%90%D0%A2%D0%90%D0%A0_%D0%BE%D0%BD%D0%B3%D0%BE%D1%86_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/%D0%A1%D2%AE%D0%A5%D0%91%D0%90%D0%90%D0%A2%D0%90%D0%A0_%D0%BE%D0%BD%D0%B3%D0%BE%D1%86_-_panoramio.jpg",
+        "title": "СҮХБААТАР онгоц - panoramio.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Mongolia Expeditions…",
+        "source": "https://commons.wikimedia.org/wiki/File:%D0%A1%D2%AE%D0%A5%D0%91%D0%90%D0%90%D0%A2%D0%90%D0%A0_%D0%BE%D0%BD%D0%B3%D0%BE%D1%86_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 7857,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Khovsgol_lake_-_panoramio.jpg/1280px-Khovsgol_lake_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Khovsgol_lake_-_panoramio.jpg",
+        "title": "Khovsgol lake - panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Alex Ang",
+        "source": "https://commons.wikimedia.org/wiki/File:Khovsgol_lake_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 7884,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Swimming_in_Khovsgol_lake_-2010_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Swimming_in_Khovsgol_lake_-2010_-_panoramio.jpg",
+        "title": "Swimming in Khovsgol lake -2010 - panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Alex Ang",
+        "source": "https://commons.wikimedia.org/wiki/File:Swimming_in_Khovsgol_lake_-2010_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 8597,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Hotel_near_Khovsgol_lake_-_panoramio.jpg/1280px-Hotel_near_Khovsgol_lake_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Hotel_near_Khovsgol_lake_-_panoramio.jpg",
+        "title": "Hotel near Khovsgol lake - panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Alex Ang",
+        "source": "https://commons.wikimedia.org/wiki/File:Hotel_near_Khovsgol_lake_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 8814,
+        "is_illustrative": false
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/%D0%A1%D2%AE%D0%A5%D0%91%D0%90%D0%90%D0%A2%D0%90%D0%A0_%D0%BE%D0%BD%D0%B3%D0%BE%D1%86_-_panoramio.jpg/1280px-%D0%A1%D2%AE%D0%A5%D0%91%D0%90%D0%90%D0%A2%D0%90%D0%A0_%D0%BE%D0%BD%D0%B3%D0%BE%D1%86_-_panoramio.jpg"
+  },
+  {
+    "_id": "place_jankhai",
+    "name": {
+      "mn": "Жанхай",
+      "en": "Jankhai"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        100.295,
+        50.638
+      ]
+    },
+    "fuel_available": false,
+    "note": {
+      "mn": "Баруун эргийн баазууд; зам нь чулуурхаг, удаан.",
+      "en": "West shore camps; road is rocky and slow."
+    },
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Lake_with_yak_2.jpg/1280px-Lake_with_yak_2.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Lake_with_yak_2.jpg",
+        "title": "Lake with yak 2.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Armagnac~dewiki",
+        "source": "https://commons.wikimedia.org/wiki/File:Lake_with_yak_2.jpg",
+        "match": "location",
+        "distance_m": 8067,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Lake_with_yak.jpg/1280px-Lake_with_yak.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Lake_with_yak.jpg",
+        "title": "Lake with yak.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Armagnac~dewiki",
+        "source": "https://commons.wikimedia.org/wiki/File:Lake_with_yak.jpg",
+        "match": "location",
+        "distance_m": 8067,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Hotel_near_Khovsgol_lake_-_panoramio.jpg/1280px-Hotel_near_Khovsgol_lake_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Hotel_near_Khovsgol_lake_-_panoramio.jpg",
+        "title": "Hotel near Khovsgol lake - panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Alex Ang",
+        "source": "https://commons.wikimedia.org/wiki/File:Hotel_near_Khovsgol_lake_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 9164,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Swimming_in_Khovsgol_lake_-2010_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Swimming_in_Khovsgol_lake_-2010_-_panoramio.jpg",
+        "title": "Swimming in Khovsgol lake -2010 - panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Alex Ang",
+        "source": "https://commons.wikimedia.org/wiki/File:Swimming_in_Khovsgol_lake_-2010_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 9264,
+        "is_illustrative": false
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Lake_with_yak_2.jpg/1280px-Lake_with_yak_2.jpg"
+  },
+  {
+    "_id": "place_kharkhorin",
+    "name": {
+      "mn": "Хархорин",
+      "en": "Kharkhorin"
+    },
+    "aimag": "Övörkhangai",
+    "kind": "soum_center",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        102.8436,
+        47.1972
+      ]
+    },
+    "fuel_available": true,
+    "note": {
+      "mn": "Эртний нийслэл, Эрдэнэ Зуу хийд.",
+      "en": "Ancient capital, Erdene Zuu monastery."
+    },
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Erdenezuu_monastery_-_panoramio.jpg/1280px-Erdenezuu_monastery_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Erdenezuu_monastery_-_panoramio.jpg",
+        "title": "Erdenezuu monastery - panoramio.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Mongolia Expeditions…",
+        "source": "https://commons.wikimedia.org/wiki/File:Erdenezuu_monastery_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 439,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Distances_from_Kharkhorin.jpg/1280px-Distances_from_Kharkhorin.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Distances_from_Kharkhorin.jpg",
+        "title": "Distances from Kharkhorin.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Distances_from_Kharkhorin.jpg",
+        "match": "location",
+        "distance_m": 446,
+        "is_illustrative": false
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Erdenezuu_monastery_-_panoramio.jpg/1280px-Erdenezuu_monastery_-_panoramio.jpg"
+  },
+  {
+    "_id": "place_elsen_tasarkhai",
+    "name": {
+      "mn": "Элсэн Тасархай",
+      "en": "Elsen Tasarkhai (Mini Gobi)"
+    },
+    "aimag": "Bulgan",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        103.68,
+        47.37
+      ]
+    },
+    "fuel_available": false,
+    "note": {
+      "mn": "Хатуу хучилттай замын яг хажууд элсэн манхан.",
+      "en": "Sand dunes right next to the paved road."
+    },
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Landscape_of_Little_Gobi_in_Mongolia.jpg/1280px-Landscape_of_Little_Gobi_in_Mongolia.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Landscape_of_Little_Gobi_in_Mongolia.jpg",
+        "title": "Landscape of Little Gobi in Mongolia.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Yunyun415",
+        "source": "https://commons.wikimedia.org/wiki/File:Landscape_of_Little_Gobi_in_Mongolia.jpg",
+        "match": "location",
+        "distance_m": 4606,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Rashaant%2C_Mongolia_-_panoramio_%285%29.jpg/1280px-Rashaant%2C_Mongolia_-_panoramio_%285%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Rashaant%2C_Mongolia_-_panoramio_%285%29.jpg",
+        "title": "Rashaant, Mongolia - panoramio (5).jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Gyula Péter",
+        "source": "https://commons.wikimedia.org/wiki/File:Rashaant,_Mongolia_-_panoramio_(5).jpg",
+        "match": "location",
+        "distance_m": 3159,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Rashaant%2C_Mongolia_-_panoramio_%282%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Rashaant%2C_Mongolia_-_panoramio_%282%29.jpg",
+        "title": "Rashaant, Mongolia - panoramio (2).jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Gyula Péter",
+        "source": "https://commons.wikimedia.org/wiki/File:Rashaant,_Mongolia_-_panoramio_(2).jpg",
+        "match": "location",
+        "distance_m": 3159,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Rashaant%2C_Mongolia_-_panoramio_%286%29.jpg/1280px-Rashaant%2C_Mongolia_-_panoramio_%286%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Rashaant%2C_Mongolia_-_panoramio_%286%29.jpg",
+        "title": "Rashaant, Mongolia - panoramio (6).jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Gyula Péter",
+        "source": "https://commons.wikimedia.org/wiki/File:Rashaant,_Mongolia_-_panoramio_(6).jpg",
+        "match": "location",
+        "distance_m": 3159,
+        "is_illustrative": false
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Landscape_of_Little_Gobi_in_Mongolia.jpg/1280px-Landscape_of_Little_Gobi_in_Mongolia.jpg"
+  },
+  {
+    "_id": "place_tsetserleg",
+    "name": {
+      "mn": "Цэцэрлэг",
+      "en": "Tsetserleg"
+    },
+    "aimag": "Arkhangai",
+    "kind": "aimag_center",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        101.4542,
+        47.4747
+      ]
+    },
+    "fuel_available": true,
+    "note": {
+      "mn": "Архангай аймгийн төв.",
+      "en": "Arkhangai aimag center."
+    },
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/River_near_Tsetserleg%2C_Mongolia_-_panoramio.jpg/1280px-River_near_Tsetserleg%2C_Mongolia_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/82/River_near_Tsetserleg%2C_Mongolia_-_panoramio.jpg",
+        "title": "River near Tsetserleg, Mongolia - panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "maveriqk",
+        "source": "https://commons.wikimedia.org/wiki/File:River_near_Tsetserleg,_Mongolia_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 5358,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/%D0%A6%D0%B5%D1%86%D0%B5%D1%80%D0%BB%D0%B5%D0%B3_-2010_-_panoramio.jpg/1280px-%D0%A6%D0%B5%D1%86%D0%B5%D1%80%D0%BB%D0%B5%D0%B3_-2010_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/76/%D0%A6%D0%B5%D1%86%D0%B5%D1%80%D0%BB%D0%B5%D0%B3_-2010_-_panoramio.jpg",
+        "title": "Цецерлег -2010 - panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Alex Ang",
+        "source": "https://commons.wikimedia.org/wiki/File:%D0%A6%D0%B5%D1%86%D0%B5%D1%80%D0%BB%D0%B5%D0%B3_-2010_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 986,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/%D0%A6%D1%8D%D1%86%D1%8D%D1%80%D0%BB%D1%8D%D0%B3_%D1%85%D0%BE%D1%82_-_panoramio.jpg/1280px-%D0%A6%D1%8D%D1%86%D1%8D%D1%80%D0%BB%D1%8D%D0%B3_%D1%85%D0%BE%D1%82_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/%D0%A6%D1%8D%D1%86%D1%8D%D1%80%D0%BB%D1%8D%D0%B3_%D1%85%D0%BE%D1%82_-_panoramio.jpg",
+        "title": "Цэцэрлэг хот - panoramio.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Mongolia Expeditions…",
+        "source": "https://commons.wikimedia.org/wiki/File:%D0%A6%D1%8D%D1%86%D1%8D%D1%80%D0%BB%D1%8D%D0%B3_%D1%85%D0%BE%D1%82_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 1940,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Tsetserleg%2C_Mongolia.jpg/1280px-Tsetserleg%2C_Mongolia.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Tsetserleg%2C_Mongolia.jpg",
+        "title": "Tsetserleg, Mongolia.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Tsetserleg,_Mongolia.jpg",
+        "match": "location",
+        "distance_m": 292,
+        "is_illustrative": false
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/River_near_Tsetserleg%2C_Mongolia_-_panoramio.jpg/1280px-River_near_Tsetserleg%2C_Mongolia_-_panoramio.jpg"
+  },
+  {
+    "_id": "place_tariat",
+    "name": {
+      "mn": "Тариат",
+      "en": "Tariat"
+    },
+    "aimag": "Arkhangai",
+    "kind": "soum_center",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        99.8828,
+        48.1567
+      ]
+    },
+    "fuel_available": true,
+    "note": {
+      "mn": "Хорго уул, Тэрхийн Цагаан нуурын дэргэд.",
+      "en": "Next to Khorgo volcano and Terkhiin Tsagaan Lake."
+    },
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/El_crater_-_panoramio.jpg/1280px-El_crater_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/El_crater_-_panoramio.jpg",
+        "title": "El crater - panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Raul P",
+        "source": "https://commons.wikimedia.org/wiki/File:El_crater_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 3826,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Vistas_desde_el_volc%C3%A1n_-_panoramio.jpg/1280px-Vistas_desde_el_volc%C3%A1n_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Vistas_desde_el_volc%C3%A1n_-_panoramio.jpg",
+        "title": "Vistas desde el volcán - panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Raul P",
+        "source": "https://commons.wikimedia.org/wiki/File:Vistas_desde_el_volc%C3%A1n_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 3826,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Lava_-_panoramio.jpg/1280px-Lava_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Lava_-_panoramio.jpg",
+        "title": "Lava - panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Raul P",
+        "source": "https://commons.wikimedia.org/wiki/File:Lava_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 3826,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/El_volc%C3%A1n_-_panoramio.jpg/1280px-El_volc%C3%A1n_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/El_volc%C3%A1n_-_panoramio.jpg",
+        "title": "El volcán - panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Raul P",
+        "source": "https://commons.wikimedia.org/wiki/File:El_volc%C3%A1n_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 3826,
+        "is_illustrative": false
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/El_crater_-_panoramio.jpg/1280px-El_crater_-_panoramio.jpg"
+  },
+  {
+    "_id": "place_terkhiin_tsagaan",
+    "name": {
+      "mn": "Тэрхийн Цагаан нуур",
+      "en": "Terkhiin Tsagaan Lake"
+    },
+    "aimag": "Arkhangai",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        99.72,
+        48.17
+      ]
+    },
+    "fuel_available": false,
+    "note": {
+      "mn": "Жуулчны баазуудтай цэнгэг устай нуур.",
+      "en": "Freshwater lake with ger camps."
+    },
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Terkhiin_Tsagaan_Lake_04.jpg/1280px-Terkhiin_Tsagaan_Lake_04.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Terkhiin_Tsagaan_Lake_04.jpg",
+        "title": "Terkhiin Tsagaan Lake 04.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Terkhiin_Tsagaan_Lake_04.jpg",
+        "match": "location",
+        "distance_m": 3270,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Terkhiin_Tsagaan_Lake_03.jpg/1280px-Terkhiin_Tsagaan_Lake_03.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Terkhiin_Tsagaan_Lake_03.jpg",
+        "title": "Terkhiin Tsagaan Lake 03.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Terkhiin_Tsagaan_Lake_03.jpg",
+        "match": "location",
+        "distance_m": 3270,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Terkhiin_Tsagaan_Lake_02.jpg/1280px-Terkhiin_Tsagaan_Lake_02.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Terkhiin_Tsagaan_Lake_02.jpg",
+        "title": "Terkhiin Tsagaan Lake 02.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Terkhiin_Tsagaan_Lake_02.jpg",
+        "match": "location",
+        "distance_m": 3270,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Terkhiin_Tsagaan_Lake_01.jpg/1280px-Terkhiin_Tsagaan_Lake_01.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Terkhiin_Tsagaan_Lake_01.jpg",
+        "title": "Terkhiin Tsagaan Lake 01.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Terkhiin_Tsagaan_Lake_01.jpg",
+        "match": "location",
+        "distance_m": 3270,
+        "is_illustrative": false
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Terkhiin_Tsagaan_Lake_04.jpg/1280px-Terkhiin_Tsagaan_Lake_04.jpg"
+  },
+  {
+    "_id": "place_shine_ider",
+    "name": {
+      "mn": "Шинэ-Идэр",
+      "en": "Shine-Ider"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "soum_center",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        99.53,
+        48.95
+      ]
+    },
+    "fuel_available": true,
+    "note": {
+      "mn": "Тариатаас Мөрөн хүрэх шороон зам дээрх жижиг сум.",
+      "en": "Small soum on the dirt road Tariat to Mörön."
+    },
+    "region": "north",
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_mandalgovi",
+    "name": {
+      "mn": "Мандалговь",
+      "en": "Mandalgovi"
+    },
+    "aimag": "Dundgovi",
+    "kind": "aimag_center",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        106.2708,
+        45.7625
+      ]
+    },
+    "fuel_available": true,
+    "note": {
+      "mn": "Дундговь аймгийн төв, Өмнөговь хүрэх замын хагас.",
+      "en": "Dundgovi aimag center, halfway to the south Gobi."
+    },
+    "region": "south",
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_tsagaan_suvarga",
+    "name": {
+      "mn": "Цагаан Суварга",
+      "en": "Tsagaan Suvarga"
+    },
+    "aimag": "Dundgovi",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        105.756,
+        44.599
+      ]
+    },
+    "fuel_available": false,
+    "note": {
+      "mn": "Өнгө алаг элэгдсэн хадан цохио, \"Цагаан суварга\".",
+      "en": "Colourful eroded cliffs, 'White Stupa'."
+    },
+    "region": "south",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Tsagaan_Sufraga_II_%2820292272359%29.jpg/1280px-Tsagaan_Sufraga_II_%2820292272359%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Tsagaan_Sufraga_II_%2820292272359%29.jpg",
+        "title": "Tsagaan Sufraga II (20292272359).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Rob Oo from NL",
+        "source": "https://commons.wikimedia.org/wiki/File:Tsagaan_Sufraga_II_(20292272359).jpg",
+        "match": "location",
+        "distance_m": 3796,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Tsagaan_Suvraga_%2819915873243%29.jpg/1280px-Tsagaan_Suvraga_%2819915873243%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Tsagaan_Suvraga_%2819915873243%29.jpg",
+        "title": "Tsagaan Suvraga (19915873243).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Rob Oo from NL",
+        "source": "https://commons.wikimedia.org/wiki/File:Tsagaan_Suvraga_(19915873243).jpg",
+        "match": "location",
+        "distance_m": 3817,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Tsagaan_Sufraga_III_%2820290833200%29.jpg/1280px-Tsagaan_Sufraga_III_%2820290833200%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Tsagaan_Sufraga_III_%2820290833200%29.jpg",
+        "title": "Tsagaan Sufraga III (20290833200).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Rob Oo from NL",
+        "source": "https://commons.wikimedia.org/wiki/File:Tsagaan_Sufraga_III_(20290833200).jpg",
+        "match": "location",
+        "distance_m": 3850,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Tsagaan_Suvraga_%2820268223089%29.jpg/1280px-Tsagaan_Suvraga_%2820268223089%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Tsagaan_Suvraga_%2820268223089%29.jpg",
+        "title": "Tsagaan Suvraga (20268223089).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Rob Oo from NL",
+        "source": "https://commons.wikimedia.org/wiki/File:Tsagaan_Suvraga_(20268223089).jpg",
+        "match": "location",
+        "distance_m": 3897,
+        "is_illustrative": false
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Tsagaan_Sufraga_II_%2820292272359%29.jpg/1280px-Tsagaan_Sufraga_II_%2820292272359%29.jpg"
+  },
+  {
+    "_id": "place_dalanzadgad",
+    "name": {
+      "mn": "Даланзадгад",
+      "en": "Dalanzadgad"
+    },
+    "aimag": "Ömnögovi",
+    "kind": "aimag_center",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        104.425,
+        43.5708
+      ]
+    },
+    "fuel_available": true,
+    "note": {
+      "mn": "Өмнөговь аймгийн төв, нисэх буудалтай.",
+      "en": "Ömnögovi aimag center, airport."
+    },
+    "region": "south",
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_yolyn_am",
+    "name": {
+      "mn": "Ёлын Ам",
+      "en": "Yolyn Am"
+    },
+    "aimag": "Ömnögovi",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        104.07,
+        43.49
+      ]
+    },
+    "fuel_available": false,
+    "note": {
+      "mn": "Говь Гурван Сайхан байгалийн цогцолборт газрын мөсөн хавцал.",
+      "en": "Ice canyon in Gurvan Saikhan National Park."
+    },
+    "region": "south",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Yolyn_Am_2015_%281%29.JPG/1280px-Yolyn_Am_2015_%281%29.JPG",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Yolyn_Am_2015_%281%29.JPG",
+        "title": "Yolyn Am 2015 (1).JPG",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Römert",
+        "source": "https://commons.wikimedia.org/wiki/File:Yolyn_Am_2015_(1).JPG",
+        "match": "location",
+        "distance_m": 432,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Yolyn_Am_2015_%289%29.JPG/1280px-Yolyn_Am_2015_%289%29.JPG",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Yolyn_Am_2015_%289%29.JPG",
+        "title": "Yolyn Am 2015 (9).JPG",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Römert",
+        "source": "https://commons.wikimedia.org/wiki/File:Yolyn_Am_2015_(9).JPG",
+        "match": "location",
+        "distance_m": 450,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Yolyn_Am_2015_%282%29.JPG/1280px-Yolyn_Am_2015_%282%29.JPG",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Yolyn_Am_2015_%282%29.JPG",
+        "title": "Yolyn Am 2015 (2).JPG",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Römert",
+        "source": "https://commons.wikimedia.org/wiki/File:Yolyn_Am_2015_(2).JPG",
+        "match": "location",
+        "distance_m": 493,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Yolyn_Am_01.jpg/1280px-Yolyn_Am_01.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Yolyn_Am_01.jpg",
+        "title": "Yolyn Am 01.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Yolyn_Am_01.jpg",
+        "match": "location",
+        "distance_m": 630,
+        "is_illustrative": false
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Yolyn_Am_2015_%281%29.JPG/1280px-Yolyn_Am_2015_%281%29.JPG"
+  },
+  {
+    "_id": "place_bayanzag",
+    "name": {
+      "mn": "Баянзаг",
+      "en": "Bayanzag (Flaming Cliffs)"
+    },
+    "aimag": "Ömnögovi",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        103.727,
+        44.138
+      ]
+    },
+    "fuel_available": false,
+    "note": {
+      "mn": "Үлэг гүрвэлийн олдвортой газар, нар жаргахад улаан хад.",
+      "en": "Dinosaur fossil site, red cliffs at sunset."
+    },
+    "region": "south",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Resized_pan-flaming-cropped2.jpg/1280px-Resized_pan-flaming-cropped2.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Resized_pan-flaming-cropped2.jpg",
+        "title": "Resized pan-flaming-cropped2.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "author": "Zoharby",
+        "source": "https://commons.wikimedia.org/wiki/File:Resized_pan-flaming-cropped2.jpg",
+        "match": "location",
+        "distance_m": 246,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Cliffs_%2819964536144%29.jpg/1280px-Cliffs_%2819964536144%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Cliffs_%2819964536144%29.jpg",
+        "title": "Cliffs (19964536144).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Rob Oo from NL",
+        "source": "https://commons.wikimedia.org/wiki/File:Cliffs_(19964536144).jpg",
+        "match": "location",
+        "distance_m": 478,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Bayanzag_02.jpg/1280px-Bayanzag_02.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Bayanzag_02.jpg",
+        "title": "Bayanzag 02.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Bayanzag_02.jpg",
+        "match": "location",
+        "distance_m": 804,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Bayanzag_09.jpg/1280px-Bayanzag_09.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Bayanzag_09.jpg",
+        "title": "Bayanzag 09.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Bayanzag_09.jpg",
+        "match": "location",
+        "distance_m": 804,
+        "is_illustrative": false
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Resized_pan-flaming-cropped2.jpg/1280px-Resized_pan-flaming-cropped2.jpg"
+  },
+  {
+    "_id": "place_khongoryn_els",
+    "name": {
+      "mn": "Хонгорын Элс",
+      "en": "Khongoryn Els"
+    },
+    "aimag": "Ömnögovi",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        102.28,
+        43.7725
+      ]
+    },
+    "fuel_available": false,
+    "note": {
+      "mn": "Дуут манхан, 300 м хүртэл өндөр.",
+      "en": "Singing sand dunes, up to 300 m high."
+    },
+    "region": "south",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Rainbow_over_Sand_Dunes_%2820274971770%29.jpg/1280px-Rainbow_over_Sand_Dunes_%2820274971770%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Rainbow_over_Sand_Dunes_%2820274971770%29.jpg",
+        "title": "Rainbow over Sand Dunes (20274971770).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Rob Oo from NL",
+        "source": "https://commons.wikimedia.org/wiki/File:Rainbow_over_Sand_Dunes_(20274971770).jpg",
+        "match": "location",
+        "distance_m": 8112,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Singing_Sand_Dunes_%2820373864520%29.jpg/1280px-Singing_Sand_Dunes_%2820373864520%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Singing_Sand_Dunes_%2820373864520%29.jpg",
+        "title": "Singing Sand Dunes (20373864520).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Rob Oo from NL",
+        "source": "https://commons.wikimedia.org/wiki/File:Singing_Sand_Dunes_(20373864520).jpg",
+        "match": "location",
+        "distance_m": 8141,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Khongoryn_Els_-_Oasi.jpg/1280px-Khongoryn_Els_-_Oasi.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Khongoryn_Els_-_Oasi.jpg",
+        "title": "Khongoryn Els - Oasi.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Josep Renalias Lohen11",
+        "source": "https://commons.wikimedia.org/wiki/File:Khongoryn_Els_-_Oasi.jpg",
+        "match": "location",
+        "distance_m": 2115,
+        "is_illustrative": false
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Rainbow_over_Sand_Dunes_%2820274971770%29.jpg/1280px-Rainbow_over_Sand_Dunes_%2820274971770%29.jpg"
+  },
+  {
+    "_id": "place_bulgan_soum_gobi",
+    "name": {
+      "mn": "Булган сум (Өмнөговь)",
+      "en": "Bulgan soum (Ömnögovi)"
+    },
+    "aimag": "Ömnögovi",
+    "kind": "soum_center",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        103.54,
+        44.093
+      ]
+    },
+    "fuel_available": true,
+    "note": {
+      "mn": "Мянган тэмээний баяр болдог газар.",
+      "en": "Host of the Thousand Camel Festival."
+    },
+    "region": "south",
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_olgii",
+    "name": {
+      "mn": "Өлгий",
+      "en": "Ölgii"
+    },
+    "aimag": "Bayan-Ölgii",
+    "kind": "aimag_center",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        89.965,
+        48.9683
+      ]
+    },
+    "fuel_available": true,
+    "note": {
+      "mn": "Казахууд олонхи нь амьдардаг хот, Алтай руу явах гарц; Бүргэдийн баяр.",
+      "en": "Kazakh-majority town, gateway to the Altai; Golden Eagle Festival."
+    },
+    "region": "west",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Bastau_hotel_-_panoramio.jpg/1280px-Bastau_hotel_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Bastau_hotel_-_panoramio.jpg",
+        "title": "Bastau hotel - panoramio.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Mongolia Expeditions…",
+        "source": "https://commons.wikimedia.org/wiki/File:Bastau_hotel_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 207,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Lenin_%5E_Sukhbaatar_bust_-_panoramio.jpg/1280px-Lenin_%5E_Sukhbaatar_bust_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Lenin_%5E_Sukhbaatar_bust_-_panoramio.jpg",
+        "title": "Lenin ^ Sukhbaatar bust - panoramio.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Mongolia Expeditions…",
+        "source": "https://commons.wikimedia.org/wiki/File:Lenin_%5E_Sukhbaatar_bust_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 215,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Ulgii_main_square_-_panoramio.jpg/1280px-Ulgii_main_square_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Ulgii_main_square_-_panoramio.jpg",
+        "title": "Ulgii main square - panoramio.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Mongolia Expeditions…",
+        "source": "https://commons.wikimedia.org/wiki/File:Ulgii_main_square_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 241,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Museum_in_Ulgii_-_panoramio.jpg/1280px-Museum_in_Ulgii_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Museum_in_Ulgii_-_panoramio.jpg",
+        "title": "Museum in Ulgii - panoramio.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Mongolia Expeditions…",
+        "source": "https://commons.wikimedia.org/wiki/File:Museum_in_Ulgii_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 357,
+        "is_illustrative": false
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Bastau_hotel_-_panoramio.jpg/1280px-Bastau_hotel_-_panoramio.jpg"
+  },
+  {
+    "_id": "place_tavan_bogd",
+    "name": {
+      "mn": "Алтай Таван Богд",
+      "en": "Altai Tavan Bogd (Tsagaan Gol)"
+    },
+    "aimag": "Bayan-Ölgii",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        87.9,
+        49.15
+      ]
+    },
+    "fuel_available": false,
+    "note": {
+      "mn": "Потанины мөсөн голын бааз орчим; хилийн бүсэд зөвшөөрөл шаардлагатай.",
+      "en": "Potanin glacier base camp area; permits needed near the border."
+    },
+    "region": "west",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Altai_Tavan_Bogd_-_panoramio.jpg/1280px-Altai_Tavan_Bogd_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Altai_Tavan_Bogd_-_panoramio.jpg",
+        "title": "Altai Tavan Bogd - panoramio.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Mongolia Expeditions…",
+        "source": "https://commons.wikimedia.org/wiki/File:Altai_Tavan_Bogd_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 2600,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Altai_Tavan_Bogd_-_Potanin_glacier_-_panoramio.jpg/1280px-Altai_Tavan_Bogd_-_Potanin_glacier_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Altai_Tavan_Bogd_-_Potanin_glacier_-_panoramio.jpg",
+        "title": "Altai Tavan Bogd - Potanin glacier - panoramio.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Mongolia Expeditions…",
+        "source": "https://commons.wikimedia.org/wiki/File:Altai_Tavan_Bogd_-_Potanin_glacier_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 5166,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Tsagaan_river_canyon_-_panoramio.jpg/1280px-Tsagaan_river_canyon_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Tsagaan_river_canyon_-_panoramio.jpg",
+        "title": "Tsagaan river canyon - panoramio.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Mongolia Expeditions…",
+        "source": "https://commons.wikimedia.org/wiki/File:Tsagaan_river_canyon_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 9761,
+        "is_illustrative": false
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Altai_Tavan_Bogd_-_panoramio.jpg/1280px-Altai_Tavan_Bogd_-_panoramio.jpg"
+  },
+  {
+    "_id": "place_khovd",
+    "name": {
+      "mn": "Ховд",
+      "en": "Khovd"
+    },
+    "aimag": "Khovd",
+    "kind": "aimag_center",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        91.6419,
+        48.0056
+      ]
+    },
+    "fuel_available": true,
+    "note": {
+      "mn": "Баруун бүсийн төв хот, нисэх буудалтай, УБ руу автобустай.",
+      "en": "Western hub city, airport, bus to UB."
+    },
+    "region": "west",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Khovd_airport_-_panoramio.jpg/1280px-Khovd_airport_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Khovd_airport_-_panoramio.jpg",
+        "title": "Khovd airport - panoramio.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Wa18",
+        "source": "https://commons.wikimedia.org/wiki/File:Khovd_airport_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 4917,
+        "is_illustrative": false
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Khovd_airport_-_panoramio.jpg/1280px-Khovd_airport_-_panoramio.jpg"
+  },
+  {
+    "_id": "place_khar_us",
+    "name": {
+      "mn": "Хар ус нуур",
+      "en": "Khar Us Lake"
+    },
+    "aimag": "Khovd",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        92.3,
+        48.05
+      ]
+    },
+    "fuel_available": false,
+    "note": {
+      "mn": "Зэгстэй нуур, шувуу ажиглах газар.",
+      "en": "Reed-lined lake, birdwatching."
+    },
+    "region": "west",
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_ulaangom",
+    "name": {
+      "mn": "Улаангом",
+      "en": "Ulaangom"
+    },
+    "aimag": "Uvs",
+    "kind": "aimag_center",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        92.0667,
+        49.9811
+      ]
+    },
+    "fuel_available": true,
+    "note": {
+      "mn": "Увс аймгийн төв, Увс нуурын ойролцоо.",
+      "en": "Uvs aimag center, near Uvs Lake."
+    },
+    "region": "west",
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_uvs_lake",
+    "name": {
+      "mn": "Увс нуур",
+      "en": "Uvs Lake"
+    },
+    "aimag": "Uvs",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        92.7,
+        50.3
+      ]
+    },
+    "fuel_available": false,
+    "note": {
+      "mn": "Монголын хамгийн том нуур, давстай, ЮНЕСКО-гийн сав газар.",
+      "en": "Largest lake in Mongolia, salty, UNESCO basin."
+    },
+    "region": "west",
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_uliastai",
+    "name": {
+      "mn": "Улиастай",
+      "en": "Uliastai"
+    },
+    "aimag": "Zavkhan",
+    "kind": "aimag_center",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        96.8444,
+        47.7417
+      ]
+    },
+    "fuel_available": true,
+    "note": {
+      "mn": "Уулын хөндийд орших Завхан аймгийн төв.",
+      "en": "Zavkhan aimag center in a mountain valley."
+    },
+    "region": "west",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Chigestai_River_%26_Javkhlant_Temple_-_Uliastai%2C_Zavkhan_Aimag%2C_Mongolia.JPG/1280px-Chigestai_River_%26_Javkhlant_Temple_-_Uliastai%2C_Zavkhan_Aimag%2C_Mongolia.JPG",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Chigestai_River_%26_Javkhlant_Temple_-_Uliastai%2C_Zavkhan_Aimag%2C_Mongolia.JPG",
+        "title": "Chigestai River & Javkhlant Temple - Uliastai, Zavkhan Aimag, Mongolia.JPG",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Zdravote",
+        "source": "https://commons.wikimedia.org/wiki/File:Chigestai_River_%26_Javkhlant_Temple_-_Uliastai,_Zavkhan_Aimag,_Mongolia.JPG",
+        "match": "location",
+        "distance_m": 144,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Uliastai%2C_Mongolia_-_panoramio.jpg/1280px-Uliastai%2C_Mongolia_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Uliastai%2C_Mongolia_-_panoramio.jpg",
+        "title": "Uliastai, Mongolia - panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Ok Seree",
+        "source": "https://commons.wikimedia.org/wiki/File:Uliastai,_Mongolia_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 553,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Uliastai%2C_Mongolia_-_panoramio_%281%29.jpg/1280px-Uliastai%2C_Mongolia_-_panoramio_%281%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Uliastai%2C_Mongolia_-_panoramio_%281%29.jpg",
+        "title": "Uliastai, Mongolia - panoramio (1).jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Ok Seree",
+        "source": "https://commons.wikimedia.org/wiki/File:Uliastai,_Mongolia_-_panoramio_(1).jpg",
+        "match": "location",
+        "distance_m": 3954,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Government_Building_-_Uliastai%2C_Zavkhan_Aimag%2C_Mongolia.JPG/1280px-Government_Building_-_Uliastai%2C_Zavkhan_Aimag%2C_Mongolia.JPG",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Government_Building_-_Uliastai%2C_Zavkhan_Aimag%2C_Mongolia.JPG",
+        "title": "Government Building - Uliastai, Zavkhan Aimag, Mongolia.JPG",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Zdravote",
+        "source": "https://commons.wikimedia.org/wiki/File:Government_Building_-_Uliastai,_Zavkhan_Aimag,_Mongolia.JPG",
+        "match": "location",
+        "distance_m": 144,
+        "is_illustrative": false
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Chigestai_River_%26_Javkhlant_Temple_-_Uliastai%2C_Zavkhan_Aimag%2C_Mongolia.JPG/1280px-Chigestai_River_%26_Javkhlant_Temple_-_Uliastai%2C_Zavkhan_Aimag%2C_Mongolia.JPG"
+  },
+  {
+    "_id": "place_altai_city",
+    "name": {
+      "mn": "Алтай",
+      "en": "Altai"
+    },
+    "aimag": "Govi-Altai",
+    "kind": "aimag_center",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        96.2583,
+        46.3722
+      ]
+    },
+    "fuel_available": true,
+    "note": {
+      "mn": "Говь-Алтай аймгийн төв.",
+      "en": "Govi-Altai aimag center."
+    },
+    "region": "west",
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_chinggis_city",
+    "name": {
+      "mn": "Чингис хот",
+      "en": "Chinggis city (Öndörkhaan)"
+    },
+    "aimag": "Khentii",
+    "kind": "aimag_center",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        110.6556,
+        47.3194
+      ]
+    },
+    "fuel_available": true,
+    "note": {
+      "mn": "Хэнтий аймгийн төв, зүүн тийш явахад эхний зогсоол.",
+      "en": "Khentii aimag center, first stop going east."
+    },
+    "region": "east",
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_dadal",
+    "name": {
+      "mn": "Дадал",
+      "en": "Dadal"
+    },
+    "aimag": "Khentii",
+    "kind": "soum_center",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        111.6264,
+        49.0236
+      ]
+    },
+    "fuel_available": true,
+    "note": {
+      "mn": "Ой модтой сум, Чингис хааны төрсөн нутаг гэдэг.",
+      "en": "Forested soum, said to be Chinggis Khaan's birthplace."
+    },
+    "region": "east",
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_choibalsan",
+    "name": {
+      "mn": "Чойбалсан",
+      "en": "Choibalsan"
+    },
+    "aimag": "Dornod",
+    "kind": "aimag_center",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        114.5228,
+        48.0706
+      ]
+    },
+    "fuel_available": true,
+    "note": {
+      "mn": "Зүүн бүсийн хамгийн том хот, нисэх буудалтай, Орос руу төмөр замтай.",
+      "en": "Largest eastern city, airport, rail to Russia."
+    },
+    "region": "east",
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_baruun_urt",
+    "name": {
+      "mn": "Баруун-Урт",
+      "en": "Baruun-Urt"
+    },
+    "aimag": "Sükhbaatar",
+    "kind": "aimag_center",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        113.2792,
+        46.6806
+      ]
+    },
+    "fuel_available": true,
+    "note": {
+      "mn": "Сүхбаатар аймгийн төв, дорнын уудам тал.",
+      "en": "Sükhbaatar aimag center, open eastern steppe."
+    },
+    "region": "east",
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_shiliin_bogd",
+    "name": {
+      "mn": "Шилийн Богд уул",
+      "en": "Shiliin Bogd Mountain"
+    },
+    "aimag": "Sükhbaatar",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        114.59,
+        45.47
+      ]
+    },
+    "fuel_available": false,
+    "note": {
+      "mn": "Тахилгат унтарсан галт уул, нар мандахыг угтан мөргөдөг; хилийн зөвшөөрөл хэрэгтэй.",
+      "en": "Sacred extinct volcano, sunrise pilgrimage; border permit."
+    },
+    "region": "east",
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_sukhbaatar_city",
+    "name": {
+      "mn": "Сүхбаатар хот",
+      "en": "Sükhbaatar (Selenge)"
+    },
+    "aimag": "Selenge",
+    "kind": "aimag_center",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        106.2078,
+        50.2314
+      ]
+    },
+    "fuel_available": true,
+    "note": {
+      "mn": "Орос руу гарах төмөр замын хилийн хот.",
+      "en": "Railway border town to Russia."
+    },
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Selenge_road.jpg/1280px-Selenge_road.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Selenge_road.jpg",
+        "title": "Selenge road.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "EnkhTS",
+        "source": "https://commons.wikimedia.org/wiki/File:Selenge_road.jpg",
+        "match": "location",
+        "distance_m": 877,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/S%C3%BCkhbaatar%2C_la_gare_%282%29.jpg/1280px-S%C3%BCkhbaatar%2C_la_gare_%282%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/S%C3%BCkhbaatar%2C_la_gare_%282%29.jpg",
+        "title": "Sükhbaatar, la gare (2).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "© Pierre André",
+        "source": "https://commons.wikimedia.org/wiki/File:S%C3%BCkhbaatar,_la_gare_(2).jpg",
+        "match": "location",
+        "distance_m": 1334,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/S%C3%BCkhbaatar%2C_la_gare.jpg/1280px-S%C3%BCkhbaatar%2C_la_gare.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/40/S%C3%BCkhbaatar%2C_la_gare.jpg",
+        "title": "Sükhbaatar, la gare.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "PIERRE ANDRE LECLERCQ",
+        "source": "https://commons.wikimedia.org/wiki/File:S%C3%BCkhbaatar,_la_gare.jpg",
+        "match": "location",
+        "distance_m": 1334,
+        "is_illustrative": false
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Selenge_road.jpg/1280px-Selenge_road.jpg"
+  },
+  {
+    "_id": "place_choir",
+    "name": {
+      "mn": "Чойр",
+      "en": "Choir"
+    },
+    "aimag": "Govisümber",
+    "kind": "aimag_center",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        108.3622,
+        46.3597
+      ]
+    },
+    "fuel_available": true,
+    "note": {
+      "mn": "Говь руу явах замын галт тэрэгний зогсоол.",
+      "en": "Rail stop on the way to the Gobi."
+    },
+    "region": "south",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Cafe_-_panoramio_-_mmpos1.jpg/1280px-Cafe_-_panoramio_-_mmpos1.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Cafe_-_panoramio_-_mmpos1.jpg",
+        "title": "Cafe - panoramio - mmpos1.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "mmpos1",
+        "source": "https://commons.wikimedia.org/wiki/File:Cafe_-_panoramio_-_mmpos1.jpg",
+        "match": "location",
+        "distance_m": 284,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Choyr_general_view.JPG/1280px-Choyr_general_view.JPG",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Choyr_general_view.JPG",
+        "title": "Choyr general view.JPG",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Golf Bravo",
+        "source": "https://commons.wikimedia.org/wiki/File:Choyr_general_view.JPG",
+        "match": "location",
+        "distance_m": 632,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Bagakhangai_-_Choir_Road_%28A01_Route%29_in_Govis%C3%BCmber%2C_Mongolia_%282008%29.jpg/1280px-Bagakhangai_-_Choir_Road_%28A01_Route%29_in_Govis%C3%BCmber%2C_Mongolia_%282008%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Bagakhangai_-_Choir_Road_%28A01_Route%29_in_Govis%C3%BCmber%2C_Mongolia_%282008%29.jpg",
+        "title": "Bagakhangai - Choir Road (A01 Route) in Govisümber, Mongolia (2008).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "The Wandering Angel",
+        "source": "https://commons.wikimedia.org/wiki/File:Bagakhangai_-_Choir_Road_(A01_Route)_in_Govis%C3%BCmber,_Mongolia_(2008).jpg",
+        "match": "location",
+        "distance_m": 4140,
+        "is_illustrative": false
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Cafe_-_panoramio_-_mmpos1.jpg/1280px-Cafe_-_panoramio_-_mmpos1.jpg"
+  },
+  {
+    "_id": "place_sainshand",
+    "name": {
+      "mn": "Сайншанд",
+      "en": "Sainshand"
+    },
+    "aimag": "Dornogovi",
+    "kind": "aimag_center",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        110.1397,
+        44.8925
+      ]
+    },
+    "fuel_available": true,
+    "note": {
+      "mn": "Дорноговийн төв, ойролцоо Хамрын хийдийн энергийн төв бий.",
+      "en": "Dornogovi center, Khamariin Khiid energy center nearby."
+    },
+    "region": "south",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Sainshand_panorama_-_panoramio.jpg/1280px-Sainshand_panorama_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Sainshand_panorama_-_panoramio.jpg",
+        "title": "Sainshand panorama - panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Daugilas",
+        "source": "https://commons.wikimedia.org/wiki/File:Sainshand_panorama_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 1214,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Sainshand_panorama.jpg/1280px-Sainshand_panorama.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Sainshand_panorama.jpg",
+        "title": "Sainshand panorama.jpg",
+        "license": "Public domain",
+        "license_url": null,
+        "author": "This image was produced by me, David Castor (user:dcastor). The pictures I submit to the Wikipedia Project are released ",
+        "source": "https://commons.wikimedia.org/wiki/File:Sainshand_panorama.jpg",
+        "match": "location",
+        "distance_m": 2444,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Sainshand_from_the_north.jpg/1280px-Sainshand_from_the_north.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Sainshand_from_the_north.jpg",
+        "title": "Sainshand from the north.jpg",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Chinneeb",
+        "source": "https://commons.wikimedia.org/wiki/File:Sainshand_from_the_north.jpg",
+        "match": "location",
+        "distance_m": 1266,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Street_in_Sainshand.jpg/1280px-Street_in_Sainshand.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Street_in_Sainshand.jpg",
+        "title": "Street in Sainshand.jpg",
+        "license": "Public domain",
+        "license_url": null,
+        "author": "This image was produced by me, David Castor (user:dcastor). The pictures I submit to the Wikipedia Project are released ",
+        "source": "https://commons.wikimedia.org/wiki/File:Street_in_Sainshand.jpg",
+        "match": "location",
+        "distance_m": 2422,
+        "is_illustrative": false
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Sainshand_panorama_-_panoramio.jpg/1280px-Sainshand_panorama_-_panoramio.jpg"
+  },
+  {
+    "_id": "place_zamyn_uud",
+    "name": {
+      "mn": "Замын-Үүд",
+      "en": "Zamyn-Üüd"
+    },
+    "aimag": "Dornogovi",
+    "kind": "soum_center",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        111.9,
+        43.7167
+      ]
+    },
+    "fuel_available": true,
+    "note": {
+      "mn": "Хятадтай хиллэдэг хот (Эрээн).",
+      "en": "Border town with China (Erenhot)."
+    },
+    "region": "south",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/The_end_of_the_town_and_view_to_Gobi_desert_-_panoramio.jpg/1280px-The_end_of_the_town_and_view_to_Gobi_desert_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/The_end_of_the_town_and_view_to_Gobi_desert_-_panoramio.jpg",
+        "title": "The end of the town and view to Gobi desert - panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Daugilas",
+        "source": "https://commons.wikimedia.org/wiki/File:The_end_of_the_town_and_view_to_Gobi_desert_-_panoramio.jpg",
+        "match": "location",
+        "distance_m": 32,
+        "is_illustrative": false
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Intersection_of_the_A01_National_Highway_and_Railwaymen%27s_Street_in_Zamyn-%C3%9C%C3%BCd%2C_Southern_Mongolia_%282012%29.jpg/1280px-Intersection_of_the_A01_National_Highway_and_Railwaymen%27s_Street_in_Zamyn-%C3%9C%C3%BCd%2C_Southern_Mongolia_%282012%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Intersection_of_the_A01_National_Highway_and_Railwaymen%27s_Street_in_Zamyn-%C3%9C%C3%BCd%2C_Southern_Mongolia_%282012%29.jpg",
+        "title": "Intersection of the A01 National Highway and Railwaymen's Street in Zamyn-Üüd, Southern Mongolia (2012).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Ken Marshall",
+        "source": "https://commons.wikimedia.org/wiki/File:Intersection_of_the_A01_National_Highway_and_Railwaymen%27s_Street_in_Zamyn-%C3%9C%C3%BCd,_Southern_Mongolia_(2012).jpg",
+        "match": "location",
+        "distance_m": 815,
+        "is_illustrative": false
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/The_end_of_the_town_and_view_to_Gobi_desert_-_panoramio.jpg/1280px-The_end_of_the_town_and_view_to_Gobi_desert_-_panoramio.jpg"
+  }
+]

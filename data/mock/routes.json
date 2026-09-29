@@ -1,0 +1,3376 @@
+[
+  {
+    "_id": "route_ub_darkhan",
+    "name": {
+      "mn": "Улаанбаатар – Дархан",
+      "en": "Ulaanbaatar to Darkhan"
+    },
+    "region": "north",
+    "from_place_id": "place_ub",
+    "to_place_id": "place_darkhan",
+    "waypoint_place_ids": [
+      "place_ub",
+      "place_darkhan"
+    ],
+    "total_distance_km": 213,
+    "total_drive_time_min": 185,
+    "recommended_days": 1,
+    "surface_km": {
+      "paved": 213
+    },
+    "vehicle_min": "sedan",
+    "summary": {
+      "mn": "УБ-аас хамгийн хурдан гарах аялал; амралтын өдрүүдэд тохиромжтой.",
+      "en": "Fastest trip out of UB; good weekend option."
+    },
+    "segments": [
+      {
+        "from_place_id": "place_ub",
+        "to_place_id": "place_darkhan",
+        "surface": "paved",
+        "road_condition": "good",
+        "distance_km": 213,
+        "drive_time_min": 185,
+        "fuel_at_end": true,
+        "hazards": [],
+        "notes": {
+          "mn": "Хойд зүгийн гол зам, хотоос гарах цэгүүдэд цагдаагийн шалган нэвтрүүлэх пост бий.",
+          "en": "Main north highway, police checkpoints at city exits."
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              106.9177,
+              47.9186
+            ],
+            [
+              106.8,
+              48.2
+            ],
+            [
+              106.73,
+              48.39
+            ],
+            [
+              106.45,
+              48.86
+            ],
+            [
+              106.2,
+              49.2
+            ],
+            [
+              105.9228,
+              49.4867
+            ]
+          ]
+        },
+        "seq": 1
+      }
+    ],
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          106.9177,
+          47.9186
+        ],
+        [
+          106.8,
+          48.2
+        ],
+        [
+          106.73,
+          48.39
+        ],
+        [
+          106.45,
+          48.86
+        ],
+        [
+          106.2,
+          49.2
+        ],
+        [
+          105.9228,
+          49.4867
+        ]
+      ]
+    },
+    "area": "north"
+  },
+  {
+    "_id": "route_ub_amarbayasgalant",
+    "name": {
+      "mn": "Улаанбаатар – Амарбаясгалант хийд",
+      "en": "Ulaanbaatar to Amarbayasgalant Monastery"
+    },
+    "region": "north",
+    "from_place_id": "place_ub",
+    "to_place_id": "place_amarbayasgalant",
+    "waypoint_place_ids": [
+      "place_ub",
+      "place_darkhan",
+      "place_amarbayasgalant"
+    ],
+    "total_distance_km": 284,
+    "total_drive_time_min": 280,
+    "recommended_days": 1,
+    "surface_km": {
+      "paved": 213,
+      "mixed": 71
+    },
+    "vehicle_min": "sedan",
+    "summary": {
+      "mn": "Ихэвчлэн хийдийн дэргэдэх баазад хонодог.",
+      "en": "Usually overnight at the monastery ger camp."
+    },
+    "segments": [
+      {
+        "from_place_id": "place_ub",
+        "to_place_id": "place_darkhan",
+        "surface": "paved",
+        "road_condition": "good",
+        "distance_km": 213,
+        "drive_time_min": 185,
+        "fuel_at_end": true,
+        "hazards": [],
+        "notes": {
+          "mn": "Хойд зүгийн гол зам, хотоос гарах цэгүүдэд цагдаагийн шалган нэвтрүүлэх пост бий.",
+          "en": "Main north highway, police checkpoints at city exits."
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              106.9177,
+              47.9186
+            ],
+            [
+              106.8,
+              48.2
+            ],
+            [
+              106.73,
+              48.39
+            ],
+            [
+              106.45,
+              48.86
+            ],
+            [
+              106.2,
+              49.2
+            ],
+            [
+              105.9228,
+              49.4867
+            ]
+          ]
+        },
+        "seq": 1
+      },
+      {
+        "from_place_id": "place_darkhan",
+        "to_place_id": "place_amarbayasgalant",
+        "surface": "mixed",
+        "road_condition": "fair",
+        "distance_km": 71,
+        "drive_time_min": 95,
+        "fuel_at_end": false,
+        "hazards": [
+          "mud_after_rain"
+        ],
+        "notes": {
+          "mn": "Салаа хүртэл хатуу хучилттай, дараа нь ~35 км шороон зам.",
+          "en": "Paved to the turnoff, then ~35 km dirt track."
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              105.9228,
+              49.4867
+            ],
+            [
+              105.5,
+              49.4
+            ],
+            [
+              105.25,
+              49.45
+            ],
+            [
+              105.0853,
+              49.4781
+            ]
+          ]
+        },
+        "seq": 2
+      }
+    ],
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          106.9177,
+          47.9186
+        ],
+        [
+          106.8,
+          48.2
+        ],
+        [
+          106.73,
+          48.39
+        ],
+        [
+          106.45,
+          48.86
+        ],
+        [
+          106.2,
+          49.2
+        ],
+        [
+          105.9228,
+          49.4867
+        ],
+        [
+          105.5,
+          49.4
+        ],
+        [
+          105.25,
+          49.45
+        ],
+        [
+          105.0853,
+          49.4781
+        ]
+      ]
+    },
+    "area": "north"
+  },
+  {
+    "_id": "route_ub_bulgan_via_lun",
+    "name": {
+      "mn": "Улаанбаатар – Булган (Лүнгээр)",
+      "en": "Ulaanbaatar to Bulgan via Lün"
+    },
+    "region": "north",
+    "from_place_id": "place_ub",
+    "to_place_id": "place_bulgan",
+    "waypoint_place_ids": [
+      "place_ub",
+      "place_lun",
+      "place_bulgan"
+    ],
+    "total_distance_km": 373,
+    "total_drive_time_min": 320,
+    "recommended_days": 1,
+    "surface_km": {
+      "paved": 373
+    },
+    "vehicle_min": "sedan",
+    "summary": {
+      "mn": "Булган хүрэх хамгийн дөт хатуу хучилттай зам.",
+      "en": "Shortest paved road to Bulgan."
+    },
+    "segments": [
+      {
+        "from_place_id": "place_ub",
+        "to_place_id": "place_lun",
+        "surface": "paved",
+        "road_condition": "good",
+        "distance_km": 140,
+        "drive_time_min": 120,
+        "fuel_at_end": true,
+        "hazards": [],
+        "notes": {
+          "mn": "10:00 цагаас өмнө УБ-аас гарах ачааны машин их.",
+          "en": "Heavy truck traffic leaving UB before 10:00."
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              106.9177,
+              47.9186
+            ],
+            [
+              106.4,
+              47.88
+            ],
+            [
+              105.6,
+              47.85
+            ],
+            [
+              105.25,
+              47.8667
+            ]
+          ]
+        },
+        "seq": 1
+      },
+      {
+        "from_place_id": "place_lun",
+        "to_place_id": "place_bulgan",
+        "surface": "paved",
+        "road_condition": "fair",
+        "distance_km": 233,
+        "drive_time_min": 200,
+        "fuel_at_end": true,
+        "hazards": [],
+        "notes": {
+          "mn": "Дашинчилэнгийн орчимд нүх ихтэй.",
+          "en": "Potholes near Dashinchilen."
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              105.25,
+              47.8667
+            ],
+            [
+              104.6,
+              47.95
+            ],
+            [
+              104.0,
+              47.85
+            ],
+            [
+              103.8,
+              48.3
+            ],
+            [
+              103.5347,
+              48.8125
+            ]
+          ]
+        },
+        "seq": 2
+      }
+    ],
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          106.9177,
+          47.9186
+        ],
+        [
+          106.4,
+          47.88
+        ],
+        [
+          105.6,
+          47.85
+        ],
+        [
+          105.25,
+          47.8667
+        ],
+        [
+          104.6,
+          47.95
+        ],
+        [
+          104.0,
+          47.85
+        ],
+        [
+          103.8,
+          48.3
+        ],
+        [
+          103.5347,
+          48.8125
+        ]
+      ]
+    },
+    "area": "north"
+  },
+  {
+    "_id": "route_ub_bulgan_via_erdenet",
+    "name": {
+      "mn": "Улаанбаатар – Булган (Дархан, Эрдэнэтээр)",
+      "en": "Ulaanbaatar to Bulgan via Darkhan and Erdenet"
+    },
+    "region": "north",
+    "from_place_id": "place_ub",
+    "to_place_id": "place_bulgan",
+    "waypoint_place_ids": [
+      "place_ub",
+      "place_darkhan",
+      "place_erdenet",
+      "place_bulgan"
+    ],
+    "total_distance_km": 427,
+    "total_drive_time_min": 370,
+    "recommended_days": 1,
+    "surface_km": {
+      "paved": 427
+    },
+    "vehicle_min": "sedan",
+    "summary": {
+      "mn": "Урт боловч зам сайн, үйлчилгээ олон.",
+      "en": "Longer but better road and more services."
+    },
+    "segments": [
+      {
+        "from_place_id": "place_ub",
+        "to_place_id": "place_darkhan",
+        "surface": "paved",
+        "road_condition": "good",
+        "distance_km": 213,
+        "drive_time_min": 185,
+        "fuel_at_end": true,
+        "hazards": [],
+        "notes": {
+          "mn": "Хойд зүгийн гол зам, хотоос гарах цэгүүдэд цагдаагийн шалган нэвтрүүлэх пост бий.",
+          "en": "Main north highway, police checkpoints at city exits."
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              106.9177,
+              47.9186
+            ],
+            [
+              106.8,
+              48.2
+            ],
+            [
+              106.73,
+              48.39
+            ],
+            [
+              106.45,
+              48.86
+            ],
+            [
+              106.2,
+              49.2
+            ],
+            [
+              105.9228,
+              49.4867
+            ]
+          ]
+        },
+        "seq": 1
+      },
+      {
+        "from_place_id": "place_darkhan",
+        "to_place_id": "place_erdenet",
+        "surface": "paved",
+        "road_condition": "good",
+        "distance_km": 164,
+        "drive_time_min": 140,
+        "fuel_at_end": true,
+        "hazards": [],
+        "notes": null,
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              105.9228,
+              49.4867
+            ],
+            [
+              105.4,
+              49.4
+            ],
+            [
+              104.95,
+              49.25
+            ],
+            [
+              104.5,
+              49.1
+            ],
+            [
+              104.0442,
+              49.0275
+            ]
+          ]
+        },
+        "seq": 2
+      },
+      {
+        "from_place_id": "place_erdenet",
+        "to_place_id": "place_bulgan",
+        "surface": "paved",
+        "road_condition": "good",
+        "distance_km": 50,
+        "drive_time_min": 45,
+        "fuel_at_end": true,
+        "hazards": [],
+        "notes": null,
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              104.0442,
+              49.0275
+            ],
+            [
+              103.8,
+              48.93
+            ],
+            [
+              103.5347,
+              48.8125
+            ]
+          ]
+        },
+        "seq": 3
+      }
+    ],
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          106.9177,
+          47.9186
+        ],
+        [
+          106.8,
+          48.2
+        ],
+        [
+          106.73,
+          48.39
+        ],
+        [
+          106.45,
+          48.86
+        ],
+        [
+          106.2,
+          49.2
+        ],
+        [
+          105.9228,
+          49.4867
+        ],
+        [
+          105.4,
+          49.4
+        ],
+        [
+          104.95,
+          49.25
+        ],
+        [
+          104.5,
+          49.1
+        ],
+        [
+          104.0442,
+          49.0275
+        ],
+        [
+          103.8,
+          48.93
+        ],
+        [
+          103.5347,
+          48.8125
+        ]
+      ]
+    },
+    "area": "north"
+  },
+  {
+    "_id": "route_bulgan_uran_togoo",
+    "name": {
+      "mn": "Булган – Уран Тогоо галт уул",
+      "en": "Bulgan to Uran Togoo Volcano"
+    },
+    "region": "north",
+    "from_place_id": "place_bulgan",
+    "to_place_id": "place_uran_togoo",
+    "waypoint_place_ids": [
+      "place_bulgan",
+      "place_uran_togoo"
+    ],
+    "total_distance_km": 69,
+    "total_drive_time_min": 90,
+    "recommended_days": 1,
+    "surface_km": {
+      "mixed": 69
+    },
+    "vehicle_min": "sedan",
+    "summary": {
+      "mn": "Булгангаас өдрийн аялал.",
+      "en": "Day trip from Bulgan."
+    },
+    "segments": [
+      {
+        "from_place_id": "place_bulgan",
+        "to_place_id": "place_uran_togoo",
+        "surface": "mixed",
+        "road_condition": "good",
+        "distance_km": 69,
+        "drive_time_min": 90,
+        "fuel_at_end": false,
+        "hazards": [],
+        "notes": {
+          "mn": "Сүүлийн 20 км нь өвстэй шороон зам.",
+          "en": "Last 20 km is a grassy track."
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              103.5347,
+              48.8125
+            ],
+            [
+              103.1,
+              48.9
+            ],
+            [
+              102.7406,
+              48.9981
+            ]
+          ]
+        },
+        "seq": 1
+      }
+    ],
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          103.5347,
+          48.8125
+        ],
+        [
+          103.1,
+          48.9
+        ],
+        [
+          102.7406,
+          48.9981
+        ]
+      ]
+    },
+    "area": "north"
+  },
+  {
+    "_id": "route_ub_khatgal_via_erdenet",
+    "name": {
+      "mn": "Улаанбаатар – Хөвсгөл нуур (Хатгал), Эрдэнэтээр",
+      "en": "Ulaanbaatar to Khövsgöl Lake (Khatgal) via Erdenet"
+    },
+    "region": "north",
+    "from_place_id": "place_ub",
+    "to_place_id": "place_khatgal",
+    "waypoint_place_ids": [
+      "place_ub",
+      "place_darkhan",
+      "place_erdenet",
+      "place_bulgan",
+      "place_murun",
+      "place_khatgal"
+    ],
+    "total_distance_km": 835,
+    "total_drive_time_min": 720,
+    "recommended_days": 2,
+    "surface_km": {
+      "paved": 835
+    },
+    "vehicle_min": "sedan",
+    "summary": {
+      "mn": "Бүхэлдээ хатуу хучилттай; ихэнх жолооч Булган эсвэл Мөрөнд нэг хоноод явдаг.",
+      "en": "Fully paved; most drivers split it with a night in Bulgan or Mörön."
+    },
+    "segments": [
+      {
+        "from_place_id": "place_ub",
+        "to_place_id": "place_darkhan",
+        "surface": "paved",
+        "road_condition": "good",
+        "distance_km": 213,
+        "drive_time_min": 185,
+        "fuel_at_end": true,
+        "hazards": [],
+        "notes": {
+          "mn": "Хойд зүгийн гол зам, хотоос гарах цэгүүдэд цагдаагийн шалган нэвтрүүлэх пост бий.",
+          "en": "Main north highway, police checkpoints at city exits."
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              106.9177,
+              47.9186
+            ],
+            [
+              106.8,
+              48.2
+            ],
+            [
+              106.73,
+              48.39
+            ],
+            [
+              106.45,
+              48.86
+            ],
+            [
+              106.2,
+              49.2
+            ],
+            [
+              105.9228,
+              49.4867
+            ]
+          ]
+        },
+        "seq": 1
+      },
+      {
+        "from_place_id": "place_darkhan",
+        "to_place_id": "place_erdenet",
+        "surface": "paved",
+        "road_condition": "good",
+        "distance_km": 164,
+        "drive_time_min": 140,
+        "fuel_at_end": true,
+        "hazards": [],
+        "notes": null,
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              105.9228,
+              49.4867
+            ],
+            [
+              105.4,
+              49.4
+            ],
+            [
+              104.95,
+              49.25
+            ],
+            [
+              104.5,
+              49.1
+            ],
+            [
+              104.0442,
+              49.0275
+            ]
+          ]
+        },
+        "seq": 2
+      },
+      {
+        "from_place_id": "place_erdenet",
+        "to_place_id": "place_bulgan",
+        "surface": "paved",
+        "road_condition": "good",
+        "distance_km": 50,
+        "drive_time_min": 45,
+        "fuel_at_end": true,
+        "hazards": [],
+        "notes": null,
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              104.0442,
+              49.0275
+            ],
+            [
+              103.8,
+              48.93
+            ],
+            [
+              103.5347,
+              48.8125
+            ]
+          ]
+        },
+        "seq": 3
+      },
+      {
+        "from_place_id": "place_bulgan",
+        "to_place_id": "place_murun",
+        "surface": "paved",
+        "road_condition": "fair",
+        "distance_km": 307,
+        "drive_time_min": 265,
+        "fuel_at_end": true,
+        "hazards": [
+          "livestock_on_road",
+          "long_no_fuel"
+        ],
+        "notes": {
+          "mn": "Хутаг-Өндөрт шатахуун авна; үйлчилгээгүй урт хэсэг бий.",
+          "en": "Refuel at Khutag-Öndör; long stretch without services."
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              103.5347,
+              48.8125
+            ],
+            [
+              103.1,
+              49.05
+            ],
+            [
+              102.6833,
+              49.3833
+            ],
+            [
+              101.9,
+              49.55
+            ],
+            [
+              101.2,
+              49.6
+            ],
+            [
+              100.6,
+              49.62
+            ],
+            [
+              100.1625,
+              49.6342
+            ]
+          ]
+        },
+        "seq": 4
+      },
+      {
+        "from_place_id": "place_murun",
+        "to_place_id": "place_khatgal",
+        "surface": "paved",
+        "road_condition": "good",
+        "distance_km": 101,
+        "drive_time_min": 85,
+        "fuel_at_end": true,
+        "hazards": [],
+        "notes": null,
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              100.1625,
+              49.6342
+            ],
+            [
+              100.12,
+              49.9
+            ],
+            [
+              100.14,
+              50.2
+            ],
+            [
+              100.16,
+              50.4425
+            ]
+          ]
+        },
+        "seq": 5
+      }
+    ],
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          106.9177,
+          47.9186
+        ],
+        [
+          106.8,
+          48.2
+        ],
+        [
+          106.73,
+          48.39
+        ],
+        [
+          106.45,
+          48.86
+        ],
+        [
+          106.2,
+          49.2
+        ],
+        [
+          105.9228,
+          49.4867
+        ],
+        [
+          105.4,
+          49.4
+        ],
+        [
+          104.95,
+          49.25
+        ],
+        [
+          104.5,
+          49.1
+        ],
+        [
+          104.0442,
+          49.0275
+        ],
+        [
+          103.8,
+          48.93
+        ],
+        [
+          103.5347,
+          48.8125
+        ],
+        [
+          103.1,
+          49.05
+        ],
+        [
+          102.6833,
+          49.3833
+        ],
+        [
+          101.9,
+          49.55
+        ],
+        [
+          101.2,
+          49.6
+        ],
+        [
+          100.6,
+          49.62
+        ],
+        [
+          100.1625,
+          49.6342
+        ],
+        [
+          100.12,
+          49.9
+        ],
+        [
+          100.14,
+          50.2
+        ],
+        [
+          100.16,
+          50.4425
+        ]
+      ]
+    },
+    "area": "khuvsgul"
+  },
+  {
+    "_id": "route_ub_khatgal_via_lun",
+    "name": {
+      "mn": "Улаанбаатар – Хөвсгөл нуур (Хатгал), Лүнгээр",
+      "en": "Ulaanbaatar to Khövsgöl Lake (Khatgal) via Lün"
+    },
+    "region": "north",
+    "from_place_id": "place_ub",
+    "to_place_id": "place_khatgal",
+    "waypoint_place_ids": [
+      "place_ub",
+      "place_lun",
+      "place_bulgan",
+      "place_murun",
+      "place_khatgal"
+    ],
+    "total_distance_km": 781,
+    "total_drive_time_min": 670,
+    "recommended_days": 2,
+    "surface_km": {
+      "paved": 781
+    },
+    "vehicle_min": "sedan",
+    "summary": {
+      "mn": "Дөт хатуу хучилттай хувилбар; үйлчилгээ цөөн.",
+      "en": "Shorter paved option; fewer services."
+    },
+    "segments": [
+      {
+        "from_place_id": "place_ub",
+        "to_place_id": "place_lun",
+        "surface": "paved",
+        "road_condition": "good",
+        "distance_km": 140,
+        "drive_time_min": 120,
+        "fuel_at_end": true,
+        "hazards": [],
+        "notes": {
+          "mn": "10:00 цагаас өмнө УБ-аас гарах ачааны машин их.",
+          "en": "Heavy truck traffic leaving UB before 10:00."
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              106.9177,
+              47.9186
+            ],
+            [
+              106.4,
+              47.88
+            ],
+            [
+              105.6,
+              47.85
+            ],
+            [
+              105.25,
+              47.8667
+            ]
+          ]
+        },
+        "seq": 1
+      },
+      {
+        "from_place_id": "place_lun",
+        "to_place_id": "place_bulgan",
+        "surface": "paved",
+        "road_condition": "fair",
+        "distance_km": 233,
+        "drive_time_min": 200,
+        "fuel_at_end": true,
+        "hazards": [],
+        "notes": {
+          "mn": "Дашинчилэнгийн орчимд нүх ихтэй.",
+          "en": "Potholes near Dashinchilen."
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              105.25,
+              47.8667
+            ],
+            [
+              104.6,
+              47.95
+            ],
+            [
+              104.0,
+              47.85
+            ],
+            [
+              103.8,
+              48.3
+            ],
+            [
+              103.5347,
+              48.8125
+            ]
+          ]
+        },
+        "seq": 2
+      },
+      {
+        "from_place_id": "place_bulgan",
+        "to_place_id": "place_murun",
+        "surface": "paved",
+        "road_condition": "fair",
+        "distance_km": 307,
+        "drive_time_min": 265,
+        "fuel_at_end": true,
+        "hazards": [
+          "livestock_on_road",
+          "long_no_fuel"
+        ],
+        "notes": {
+          "mn": "Хутаг-Өндөрт шатахуун авна; үйлчилгээгүй урт хэсэг бий.",
+          "en": "Refuel at Khutag-Öndör; long stretch without services."
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              103.5347,
+              48.8125
+            ],
+            [
+              103.1,
+              49.05
+            ],
+            [
+              102.6833,
+              49.3833
+            ],
+            [
+              101.9,
+              49.55
+            ],
+            [
+              101.2,
+              49.6
+            ],
+            [
+              100.6,
+              49.62
+            ],
+            [
+              100.1625,
+              49.6342
+            ]
+          ]
+        },
+        "seq": 3
+      },
+      {
+        "from_place_id": "place_murun",
+        "to_place_id": "place_khatgal",
+        "surface": "paved",
+        "road_condition": "good",
+        "distance_km": 101,
+        "drive_time_min": 85,
+        "fuel_at_end": true,
+        "hazards": [],
+        "notes": null,
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              100.1625,
+              49.6342
+            ],
+            [
+              100.12,
+              49.9
+            ],
+            [
+              100.14,
+              50.2
+            ],
+            [
+              100.16,
+              50.4425
+            ]
+          ]
+        },
+        "seq": 4
+      }
+    ],
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          106.9177,
+          47.9186
+        ],
+        [
+          106.4,
+          47.88
+        ],
+        [
+          105.6,
+          47.85
+        ],
+        [
+          105.25,
+          47.8667
+        ],
+        [
+          104.6,
+          47.95
+        ],
+        [
+          104.0,
+          47.85
+        ],
+        [
+          103.8,
+          48.3
+        ],
+        [
+          103.5347,
+          48.8125
+        ],
+        [
+          103.1,
+          49.05
+        ],
+        [
+          102.6833,
+          49.3833
+        ],
+        [
+          101.9,
+          49.55
+        ],
+        [
+          101.2,
+          49.6
+        ],
+        [
+          100.6,
+          49.62
+        ],
+        [
+          100.1625,
+          49.6342
+        ],
+        [
+          100.12,
+          49.9
+        ],
+        [
+          100.14,
+          50.2
+        ],
+        [
+          100.16,
+          50.4425
+        ]
+      ]
+    },
+    "area": "khuvsgul"
+  },
+  {
+    "_id": "route_khatgal_jankhai",
+    "name": {
+      "mn": "Хатгал – Жанхай (баруун эрэг)",
+      "en": "Khatgal to Jankhai (west shore)"
+    },
+    "region": "north",
+    "from_place_id": "place_khatgal",
+    "to_place_id": "place_jankhai",
+    "waypoint_place_ids": [
+      "place_khatgal",
+      "place_jankhai"
+    ],
+    "total_distance_km": 27,
+    "total_drive_time_min": 55,
+    "recommended_days": 1,
+    "surface_km": {
+      "dirt": 27
+    },
+    "vehicle_min": "suv_4x4",
+    "summary": {
+      "mn": "Нам гүм баазууд руу нуурын эргээр удаан явах зам.",
+      "en": "Slow lake-shore track to the quieter camps."
+    },
+    "segments": [
+      {
+        "from_place_id": "place_khatgal",
+        "to_place_id": "place_jankhai",
+        "surface": "dirt",
+        "road_condition": "poor",
+        "distance_km": 27,
+        "drive_time_min": 55,
+        "fuel_at_end": false,
+        "hazards": [
+          "mud_after_rain",
+          "rocky"
+        ],
+        "notes": {
+          "mn": "Тойлогтоор дамжих чулуурхаг эргийн зам, бороо орсны дараа 4x4 машин зөвлөнө.",
+          "en": "Rocky shore road via Toilogt, 4x4 recommended after rain."
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              100.16,
+              50.4425
+            ],
+            [
+              100.2167,
+              50.5167
+            ],
+            [
+              100.295,
+              50.638
+            ]
+          ]
+        },
+        "seq": 1
+      }
+    ],
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          100.16,
+          50.4425
+        ],
+        [
+          100.2167,
+          50.5167
+        ],
+        [
+          100.295,
+          50.638
+        ]
+      ]
+    },
+    "area": "khuvsgul"
+  },
+  {
+    "_id": "route_ub_murun_central",
+    "name": {
+      "mn": "Улаанбаатар – Мөрөн (Хархорин, Цэцэрлэг, Тариатаар)",
+      "en": "Ulaanbaatar to Mörön via Kharkhorin, Tsetserleg and Tariat"
+    },
+    "region": "north",
+    "from_place_id": "place_ub",
+    "to_place_id": "place_murun",
+    "waypoint_place_ids": [
+      "place_ub",
+      "place_kharkhorin",
+      "place_tsetserleg",
+      "place_tariat",
+      "place_murun"
+    ],
+    "total_distance_km": 843,
+    "total_drive_time_min": 955,
+    "recommended_days": 2,
+    "surface_km": {
+      "paved": 640,
+      "dirt": 203
+    },
+    "vehicle_min": "suv_4x4",
+    "summary": {
+      "mn": "Үзэсгэлэнтэй төвийн тойрог; Тариатаас Мөрөн хүрэх хэсэг нь шороон бөгөөд цаг агаараас хамаарна.",
+      "en": "Scenic central loop; the Tariat to Mörön part is dirt and weather sensitive."
+    },
+    "segments": [
+      {
+        "from_place_id": "place_ub",
+        "to_place_id": "place_kharkhorin",
+        "surface": "paved",
+        "road_condition": "good",
+        "distance_km": 361,
+        "drive_time_min": 310,
+        "fuel_at_end": true,
+        "hazards": [],
+        "notes": {
+          "mn": "Элсэн Тасархайн манханы хажуугаар өнгөрнө.",
+          "en": "Passes Elsen Tasarkhai dunes."
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              106.9177,
+              47.9186
+            ],
+            [
+              106.4,
+              47.88
+            ],
+            [
+              105.25,
+              47.8667
+            ],
+            [
+              104.1,
+              47.6
+            ],
+            [
+              103.68,
+              47.37
+            ],
+            [
+              103.2,
+              47.25
+            ],
+            [
+              102.8436,
+              47.1972
+            ]
+          ]
+        },
+        "seq": 1
+      },
+      {
+        "from_place_id": "place_kharkhorin",
+        "to_place_id": "place_tsetserleg",
+        "surface": "paved",
+        "road_condition": "good",
+        "distance_km": 122,
+        "drive_time_min": 105,
+        "fuel_at_end": true,
+        "hazards": [],
+        "notes": null,
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              102.8436,
+              47.1972
+            ],
+            [
+              102.3,
+              47.3
+            ],
+            [
+              101.8,
+              47.4
+            ],
+            [
+              101.4542,
+              47.4747
+            ]
+          ]
+        },
+        "seq": 2
+      },
+      {
+        "from_place_id": "place_tsetserleg",
+        "to_place_id": "place_tariat",
+        "surface": "paved",
+        "road_condition": "fair",
+        "distance_km": 157,
+        "drive_time_min": 135,
+        "fuel_at_end": true,
+        "hazards": [],
+        "notes": null,
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              101.4542,
+              47.4747
+            ],
+            [
+              101.0,
+              47.7
+            ],
+            [
+              100.5,
+              47.95
+            ],
+            [
+              99.8828,
+              48.1567
+            ]
+          ]
+        },
+        "seq": 3
+      },
+      {
+        "from_place_id": "place_tariat",
+        "to_place_id": "place_murun",
+        "surface": "dirt",
+        "road_condition": "poor",
+        "distance_km": 203,
+        "drive_time_min": 405,
+        "fuel_at_end": true,
+        "hazards": [
+          "river_crossing",
+          "mud_after_rain",
+          "no_signal"
+        ],
+        "notes": {
+          "mn": "Хучилтгүй, хэд хэдэн гол гатална; суудлын машинд тохиромжгүй.",
+          "en": "Unpaved, several stream crossings; not for sedans."
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              99.8828,
+              48.1567
+            ],
+            [
+              99.7,
+              48.5
+            ],
+            [
+              99.53,
+              48.95
+            ],
+            [
+              99.8,
+              49.3
+            ],
+            [
+              100.1625,
+              49.6342
+            ]
+          ]
+        },
+        "seq": 4
+      }
+    ],
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          106.9177,
+          47.9186
+        ],
+        [
+          106.4,
+          47.88
+        ],
+        [
+          105.25,
+          47.8667
+        ],
+        [
+          104.1,
+          47.6
+        ],
+        [
+          103.68,
+          47.37
+        ],
+        [
+          103.2,
+          47.25
+        ],
+        [
+          102.8436,
+          47.1972
+        ],
+        [
+          102.3,
+          47.3
+        ],
+        [
+          101.8,
+          47.4
+        ],
+        [
+          101.4542,
+          47.4747
+        ],
+        [
+          101.0,
+          47.7
+        ],
+        [
+          100.5,
+          47.95
+        ],
+        [
+          99.8828,
+          48.1567
+        ],
+        [
+          99.7,
+          48.5
+        ],
+        [
+          99.53,
+          48.95
+        ],
+        [
+          99.8,
+          49.3
+        ],
+        [
+          100.1625,
+          49.6342
+        ]
+      ]
+    },
+    "area": "khuvsgul"
+  },
+  {
+    "_id": "route_tariat_terkhiin",
+    "name": {
+      "mn": "Тариат – Тэрхийн Цагаан нуур",
+      "en": "Tariat to Terkhiin Tsagaan Lake"
+    },
+    "region": "north",
+    "from_place_id": "place_tariat",
+    "to_place_id": "place_terkhiin_tsagaan",
+    "waypoint_place_ids": [
+      "place_tariat",
+      "place_terkhiin_tsagaan"
+    ],
+    "total_distance_km": 14,
+    "total_drive_time_min": 30,
+    "recommended_days": 1,
+    "surface_km": {
+      "dirt": 14
+    },
+    "vehicle_min": "suv_4x4",
+    "summary": {
+      "mn": "Нуурын баазууд хүртэл ойрхон.",
+      "en": "Short hop to the lake camps."
+    },
+    "segments": [
+      {
+        "from_place_id": "place_tariat",
+        "to_place_id": "place_terkhiin_tsagaan",
+        "surface": "dirt",
+        "road_condition": "good",
+        "distance_km": 14,
+        "drive_time_min": 30,
+        "fuel_at_end": false,
+        "hazards": [],
+        "notes": {
+          "mn": "Лаавын талбайн дагуух богино зам.",
+          "en": "Short track along the lava field."
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              99.8828,
+              48.1567
+            ],
+            [
+              99.72,
+              48.17
+            ]
+          ]
+        },
+        "seq": 1
+      }
+    ],
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          99.8828,
+          48.1567
+        ],
+        [
+          99.72,
+          48.17
+        ]
+      ]
+    },
+    "area": "khuvsgul"
+  },
+  {
+    "_id": "route_ub_dalanzadgad",
+    "name": {
+      "mn": "Улаанбаатар – Даланзадгад (Өмнөговь)",
+      "en": "Ulaanbaatar to Dalanzadgad (South Gobi)"
+    },
+    "region": "south",
+    "from_place_id": "place_ub",
+    "to_place_id": "place_dalanzadgad",
+    "waypoint_place_ids": [
+      "place_ub",
+      "place_mandalgovi",
+      "place_dalanzadgad"
+    ],
+    "total_distance_km": 596,
+    "total_drive_time_min": 510,
+    "recommended_days": 2,
+    "surface_km": {
+      "paved": 596
+    },
+    "vehicle_min": "sedan",
+    "summary": {
+      "mn": "Бүхэлдээ хатуу хучилттай; онгоцоор ч явж болно.",
+      "en": "Fully paved; flights also available."
+    },
+    "segments": [
+      {
+        "from_place_id": "place_ub",
+        "to_place_id": "place_mandalgovi",
+        "surface": "paved",
+        "road_condition": "good",
+        "distance_km": 276,
+        "drive_time_min": 235,
+        "fuel_at_end": true,
+        "hazards": [],
+        "notes": null,
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              106.9177,
+              47.9186
+            ],
+            [
+              106.95,
+              47.6
+            ],
+            [
+              106.8,
+              47.1
+            ],
+            [
+              106.5,
+              46.5
+            ],
+            [
+              106.2708,
+              45.7625
+            ]
+          ]
+        },
+        "seq": 1
+      },
+      {
+        "from_place_id": "place_mandalgovi",
+        "to_place_id": "place_dalanzadgad",
+        "surface": "paved",
+        "road_condition": "good",
+        "distance_km": 320,
+        "drive_time_min": 275,
+        "fuel_at_end": true,
+        "hazards": [
+          "sandstorm_spring"
+        ],
+        "notes": {
+          "mn": "Цөлийн шулуун зам, хажуугийн хүчтэй салхитай.",
+          "en": "Straight desert highway, strong crosswinds."
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              106.2708,
+              45.7625
+            ],
+            [
+              105.9,
+              45.1
+            ],
+            [
+              105.3,
+              44.5
+            ],
+            [
+              104.8,
+              44.0
+            ],
+            [
+              104.425,
+              43.5708
+            ]
+          ]
+        },
+        "seq": 2
+      }
+    ],
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          106.9177,
+          47.9186
+        ],
+        [
+          106.95,
+          47.6
+        ],
+        [
+          106.8,
+          47.1
+        ],
+        [
+          106.5,
+          46.5
+        ],
+        [
+          106.2708,
+          45.7625
+        ],
+        [
+          105.9,
+          45.1
+        ],
+        [
+          105.3,
+          44.5
+        ],
+        [
+          104.8,
+          44.0
+        ],
+        [
+          104.425,
+          43.5708
+        ]
+      ]
+    },
+    "area": "gobi"
+  },
+  {
+    "_id": "route_mandalgovi_tsagaan_suvarga",
+    "name": {
+      "mn": "Мандалговь – Цагаан суварга",
+      "en": "Mandalgovi to Tsagaan Suvarga"
+    },
+    "region": "south",
+    "from_place_id": "place_mandalgovi",
+    "to_place_id": "place_tsagaan_suvarga",
+    "waypoint_place_ids": [
+      "place_mandalgovi",
+      "place_tsagaan_suvarga"
+    ],
+    "total_distance_km": 152,
+    "total_drive_time_min": 205,
+    "recommended_days": 1,
+    "surface_km": {
+      "mixed": 152
+    },
+    "vehicle_min": "sedan",
+    "summary": {
+      "mn": "Говийн тойрог аяллын түгээмэл эхний зогсоол.",
+      "en": "Common first stop on a Gobi loop."
+    },
+    "segments": [
+      {
+        "from_place_id": "place_mandalgovi",
+        "to_place_id": "place_tsagaan_suvarga",
+        "surface": "mixed",
+        "road_condition": "fair",
+        "distance_km": 152,
+        "drive_time_min": 205,
+        "fuel_at_end": false,
+        "hazards": [],
+        "notes": {
+          "mn": "~70 км хатуу хучилттай, дараа нь говийн шороон зам. Орон нутгийн жолооч эсвэл GPS хэрэгтэй.",
+          "en": "Paved ~70 km, then desert track. Needs a local driver or GPS."
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              106.2708,
+              45.7625
+            ],
+            [
+              105.95,
+              45.2
+            ],
+            [
+              105.85,
+              44.9
+            ],
+            [
+              105.756,
+              44.599
+            ]
+          ]
+        },
+        "seq": 1
+      }
+    ],
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          106.2708,
+          45.7625
+        ],
+        [
+          105.95,
+          45.2
+        ],
+        [
+          105.85,
+          44.9
+        ],
+        [
+          105.756,
+          44.599
+        ]
+      ]
+    },
+    "area": "gobi"
+  },
+  {
+    "_id": "route_dalanzadgad_yolyn_am",
+    "name": {
+      "mn": "Даланзадгад – Ёлын ам",
+      "en": "Dalanzadgad to Yolyn Am"
+    },
+    "region": "south",
+    "from_place_id": "place_dalanzadgad",
+    "to_place_id": "place_yolyn_am",
+    "waypoint_place_ids": [
+      "place_dalanzadgad",
+      "place_yolyn_am"
+    ],
+    "total_distance_km": 34,
+    "total_drive_time_min": 45,
+    "recommended_days": 1,
+    "surface_km": {
+      "mixed": 34
+    },
+    "vehicle_min": "sedan",
+    "summary": {
+      "mn": "Хагас өдрийн аялал.",
+      "en": "Half-day trip."
+    },
+    "segments": [
+      {
+        "from_place_id": "place_dalanzadgad",
+        "to_place_id": "place_yolyn_am",
+        "surface": "mixed",
+        "road_condition": "good",
+        "distance_km": 34,
+        "drive_time_min": 45,
+        "fuel_at_end": false,
+        "hazards": [],
+        "notes": {
+          "mn": "Цогцолборт газрын хураамж хүнд 5,000₮.",
+          "en": "Park entrance fee 5,000 MNT/person."
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              104.425,
+              43.5708
+            ],
+            [
+              104.25,
+              43.53
+            ],
+            [
+              104.07,
+              43.49
+            ]
+          ]
+        },
+        "seq": 1
+      }
+    ],
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          104.425,
+          43.5708
+        ],
+        [
+          104.25,
+          43.53
+        ],
+        [
+          104.07,
+          43.49
+        ]
+      ]
+    },
+    "area": "gobi"
+  },
+  {
+    "_id": "route_dalanzadgad_bayanzag",
+    "name": {
+      "mn": "Даланзадгад – Баянзаг",
+      "en": "Dalanzadgad to Bayanzag"
+    },
+    "region": "south",
+    "from_place_id": "place_dalanzadgad",
+    "to_place_id": "place_bayanzag",
+    "waypoint_place_ids": [
+      "place_dalanzadgad",
+      "place_bayanzag"
+    ],
+    "total_distance_km": 95,
+    "total_drive_time_min": 125,
+    "recommended_days": 1,
+    "surface_km": {
+      "mixed": 95
+    },
+    "vehicle_min": "sedan",
+    "summary": {
+      "mn": "Нар жаргахыг үзэхийн тулд үдээс хойш орой явна.",
+      "en": "Go late afternoon for the sunset."
+    },
+    "segments": [
+      {
+        "from_place_id": "place_dalanzadgad",
+        "to_place_id": "place_bayanzag",
+        "surface": "mixed",
+        "road_condition": "good",
+        "distance_km": 95,
+        "drive_time_min": 125,
+        "fuel_at_end": false,
+        "hazards": [],
+        "notes": null,
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              104.425,
+              43.5708
+            ],
+            [
+              104.1,
+              43.8
+            ],
+            [
+              103.727,
+              44.138
+            ]
+          ]
+        },
+        "seq": 1
+      }
+    ],
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          104.425,
+          43.5708
+        ],
+        [
+          104.1,
+          43.8
+        ],
+        [
+          103.727,
+          44.138
+        ]
+      ]
+    },
+    "area": "gobi"
+  },
+  {
+    "_id": "route_dalanzadgad_khongoryn_els",
+    "name": {
+      "mn": "Даланзадгад – Хонгорын элс",
+      "en": "Dalanzadgad to Khongoryn Els"
+    },
+    "region": "south",
+    "from_place_id": "place_dalanzadgad",
+    "to_place_id": "place_khongoryn_els",
+    "waypoint_place_ids": [
+      "place_dalanzadgad",
+      "place_khongoryn_els"
+    ],
+    "total_distance_km": 195,
+    "total_drive_time_min": 260,
+    "recommended_days": 1,
+    "surface_km": {
+      "mixed": 195
+    },
+    "vehicle_min": "suv_4x4",
+    "summary": {
+      "mn": "Одоо ихэнхдээ хатуу хучилттай, сүүлийн хэсэг нь элсэн зам.",
+      "en": "Mostly paved now, last part sand."
+    },
+    "segments": [
+      {
+        "from_place_id": "place_dalanzadgad",
+        "to_place_id": "place_khongoryn_els",
+        "surface": "mixed",
+        "road_condition": "good",
+        "distance_km": 195,
+        "drive_time_min": 260,
+        "fuel_at_end": false,
+        "hazards": [
+          "sand_stuck_risk"
+        ],
+        "notes": {
+          "mn": "Гурвантэс чиглэлийн шинэ хатуу хучилттай зам, сүүлийн ~60 км элсэн зам.",
+          "en": "New paved road toward Gurvantes, last ~60 km sand track."
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              104.425,
+              43.5708
+            ],
+            [
+              103.8,
+              43.62
+            ],
+            [
+              103.2,
+              43.68
+            ],
+            [
+              102.7,
+              43.73
+            ],
+            [
+              102.28,
+              43.7725
+            ]
+          ]
+        },
+        "seq": 1
+      }
+    ],
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          104.425,
+          43.5708
+        ],
+        [
+          103.8,
+          43.62
+        ],
+        [
+          103.2,
+          43.68
+        ],
+        [
+          102.7,
+          43.73
+        ],
+        [
+          102.28,
+          43.7725
+        ]
+      ]
+    },
+    "area": "gobi"
+  },
+  {
+    "_id": "route_bayanzag_khongoryn_els",
+    "name": {
+      "mn": "Баянзаг – Хонгорын элс",
+      "en": "Bayanzag to Khongoryn Els"
+    },
+    "region": "south",
+    "from_place_id": "place_bayanzag",
+    "to_place_id": "place_khongoryn_els",
+    "waypoint_place_ids": [
+      "place_bayanzag",
+      "place_khongoryn_els"
+    ],
+    "total_distance_km": 137,
+    "total_drive_time_min": 275,
+    "recommended_days": 1,
+    "surface_km": {
+      "dirt": 137
+    },
+    "vehicle_min": "suv_4x4",
+    "summary": {
+      "mn": "Говийн замгүй хэсэг, зөвхөн туршлагатай жолоочтой явна.",
+      "en": "Off-road Gobi track, only with experienced driver."
+    },
+    "segments": [
+      {
+        "from_place_id": "place_bayanzag",
+        "to_place_id": "place_khongoryn_els",
+        "surface": "dirt",
+        "road_condition": "poor",
+        "distance_km": 137,
+        "drive_time_min": 275,
+        "fuel_at_end": false,
+        "hazards": [
+          "sand_stuck_risk",
+          "no_signal"
+        ],
+        "notes": {
+          "mn": "Говийн сонгодог шороон зам, зөвхөн 4x4.",
+          "en": "Classic Gobi track, 4x4 only."
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              103.727,
+              44.138
+            ],
+            [
+              103.0,
+              43.95
+            ],
+            [
+              102.28,
+              43.7725
+            ]
+          ]
+        },
+        "seq": 1
+      }
+    ],
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          103.727,
+          44.138
+        ],
+        [
+          103.0,
+          43.95
+        ],
+        [
+          102.28,
+          43.7725
+        ]
+      ]
+    },
+    "area": "gobi"
+  },
+  {
+    "_id": "route_ub_khovd_central",
+    "name": {
+      "mn": "Улаанбаатар – Ховд (Цэцэрлэг, Улиастайгаар)",
+      "en": "Ulaanbaatar to Khovd via Tsetserleg and Uliastai"
+    },
+    "region": "west",
+    "from_place_id": "place_ub",
+    "to_place_id": "place_khovd",
+    "waypoint_place_ids": [
+      "place_ub",
+      "place_kharkhorin",
+      "place_tsetserleg",
+      "place_uliastai",
+      "place_khovd"
+    ],
+    "total_distance_km": 1308,
+    "total_drive_time_min": 1515,
+    "recommended_days": 4,
+    "surface_km": {
+      "paved": 483,
+      "mixed": 825
+    },
+    "vehicle_min": "sedan",
+    "summary": {
+      "mn": "3-4 өдөр машинаар явна; ихэнх хүмүүс Ховд эсвэл Өлгий рүү нисдэг.",
+      "en": "3 to 4 days of driving; most people fly to Khovd or Ölgii instead."
+    },
+    "segments": [
+      {
+        "from_place_id": "place_ub",
+        "to_place_id": "place_kharkhorin",
+        "surface": "paved",
+        "road_condition": "good",
+        "distance_km": 361,
+        "drive_time_min": 310,
+        "fuel_at_end": true,
+        "hazards": [],
+        "notes": {
+          "mn": "Элсэн Тасархайн манханы хажуугаар өнгөрнө.",
+          "en": "Passes Elsen Tasarkhai dunes."
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              106.9177,
+              47.9186
+            ],
+            [
+              106.4,
+              47.88
+            ],
+            [
+              105.25,
+              47.8667
+            ],
+            [
+              104.1,
+              47.6
+            ],
+            [
+              103.68,
+              47.37
+            ],
+            [
+              103.2,
+              47.25
+            ],
+            [
+              102.8436,
+              47.1972
+            ]
+          ]
+        },
+        "seq": 1
+      },
+      {
+        "from_place_id": "place_kharkhorin",
+        "to_place_id": "place_tsetserleg",
+        "surface": "paved",
+        "road_condition": "good",
+        "distance_km": 122,
+        "drive_time_min": 105,
+        "fuel_at_end": true,
+        "hazards": [],
+        "notes": null,
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              102.8436,
+              47.1972
+            ],
+            [
+              102.3,
+              47.3
+            ],
+            [
+              101.8,
+              47.4
+            ],
+            [
+              101.4542,
+              47.4747
+            ]
+          ]
+        },
+        "seq": 2
+      },
+      {
+        "from_place_id": "place_tsetserleg",
+        "to_place_id": "place_uliastai",
+        "surface": "mixed",
+        "road_condition": "fair",
+        "distance_km": 389,
+        "drive_time_min": 520,
+        "fuel_at_end": true,
+        "hazards": [
+          "long_no_fuel",
+          "livestock_on_road"
+        ],
+        "notes": {
+          "mn": "Урт уулын зам, хэсэгчлэн хатуу хучилттай, Тосонцэнгэлээр дайрна.",
+          "en": "Long mountain road, paved in parts, passes Tosontsengel."
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              101.4542,
+              47.4747
+            ],
+            [
+              100.4,
+              47.6
+            ],
+            [
+              99.0,
+              47.7
+            ],
+            [
+              97.8,
+              47.75
+            ],
+            [
+              96.8444,
+              47.7417
+            ]
+          ]
+        },
+        "seq": 3
+      },
+      {
+        "from_place_id": "place_uliastai",
+        "to_place_id": "place_khovd",
+        "surface": "mixed",
+        "road_condition": "fair",
+        "distance_km": 436,
+        "drive_time_min": 580,
+        "fuel_at_end": true,
+        "hazards": [
+          "long_no_fuel",
+          "no_signal"
+        ],
+        "notes": {
+          "mn": "Хатуу хучилт, хайрган зам холилдсон, үйлчилгээ маш цөөн.",
+          "en": "Mixed paved and gravel, very few services."
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              96.8444,
+              47.7417
+            ],
+            [
+              95.5,
+              47.9
+            ],
+            [
+              94.0,
+              48.0
+            ],
+            [
+              92.8,
+              48.0
+            ],
+            [
+              91.6419,
+              48.0056
+            ]
+          ]
+        },
+        "seq": 4
+      }
+    ],
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          106.9177,
+          47.9186
+        ],
+        [
+          106.4,
+          47.88
+        ],
+        [
+          105.25,
+          47.8667
+        ],
+        [
+          104.1,
+          47.6
+        ],
+        [
+          103.68,
+          47.37
+        ],
+        [
+          103.2,
+          47.25
+        ],
+        [
+          102.8436,
+          47.1972
+        ],
+        [
+          102.3,
+          47.3
+        ],
+        [
+          101.8,
+          47.4
+        ],
+        [
+          101.4542,
+          47.4747
+        ],
+        [
+          100.4,
+          47.6
+        ],
+        [
+          99.0,
+          47.7
+        ],
+        [
+          97.8,
+          47.75
+        ],
+        [
+          96.8444,
+          47.7417
+        ],
+        [
+          95.5,
+          47.9
+        ],
+        [
+          94.0,
+          48.0
+        ],
+        [
+          92.8,
+          48.0
+        ],
+        [
+          91.6419,
+          48.0056
+        ]
+      ]
+    },
+    "area": "west"
+  },
+  {
+    "_id": "route_khovd_olgii",
+    "name": {
+      "mn": "Ховд – Өлгий",
+      "en": "Khovd to Ölgii"
+    },
+    "region": "west",
+    "from_place_id": "place_khovd",
+    "to_place_id": "place_olgii",
+    "waypoint_place_ids": [
+      "place_khovd",
+      "place_olgii"
+    ],
+    "total_distance_km": 185,
+    "total_drive_time_min": 160,
+    "recommended_days": 1,
+    "surface_km": {
+      "paved": 185
+    },
+    "vehicle_min": "sedan",
+    "summary": {
+      "mn": "Алтайн бэлээр дайрах хагас өдрийн хатуу хучилттай зам.",
+      "en": "Paved half-day drive through the Altai foothills."
+    },
+    "segments": [
+      {
+        "from_place_id": "place_khovd",
+        "to_place_id": "place_olgii",
+        "surface": "paved",
+        "road_condition": "good",
+        "distance_km": 185,
+        "drive_time_min": 160,
+        "fuel_at_end": true,
+        "hazards": [],
+        "notes": {
+          "mn": "Даваатай, хатуу хучилттай уулын зам.",
+          "en": "Paved mountain road with passes."
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              91.6419,
+              48.0056
+            ],
+            [
+              91.2,
+              48.4
+            ],
+            [
+              90.5,
+              48.7
+            ],
+            [
+              89.965,
+              48.9683
+            ]
+          ]
+        },
+        "seq": 1
+      }
+    ],
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          91.6419,
+          48.0056
+        ],
+        [
+          91.2,
+          48.4
+        ],
+        [
+          90.5,
+          48.7
+        ],
+        [
+          89.965,
+          48.9683
+        ]
+      ]
+    },
+    "area": "west"
+  },
+  {
+    "_id": "route_olgii_tavan_bogd",
+    "name": {
+      "mn": "Өлгий – Алтай Таван Богд",
+      "en": "Ölgii to Altai Tavan Bogd"
+    },
+    "region": "west",
+    "from_place_id": "place_olgii",
+    "to_place_id": "place_tavan_bogd",
+    "waypoint_place_ids": [
+      "place_olgii",
+      "place_tavan_bogd"
+    ],
+    "total_distance_km": 170,
+    "total_drive_time_min": 340,
+    "recommended_days": 1,
+    "surface_km": {
+      "dirt": 170
+    },
+    "vehicle_min": "suv_4x4",
+    "summary": {
+      "mn": "Мөсөн голууд руу явах экспедицийн зам, зөвхөн 4x4, 6-9-р сард.",
+      "en": "Expedition road to the glaciers, 4x4 only, June to September."
+    },
+    "segments": [
+      {
+        "from_place_id": "place_olgii",
+        "to_place_id": "place_tavan_bogd",
+        "surface": "dirt",
+        "road_condition": "poor",
+        "distance_km": 170,
+        "drive_time_min": 340,
+        "fuel_at_end": false,
+        "hazards": [
+          "river_crossing",
+          "no_signal",
+          "snow_early_autumn"
+        ],
+        "notes": {
+          "mn": "Эвдэрхий зам, гол гатална; замдаа хилийн бүсийн зөвшөөрөл шалгана.",
+          "en": "Rough track, river crossings; border-zone permit checked on the way."
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              89.965,
+              48.9683
+            ],
+            [
+              89.4,
+              49.0
+            ],
+            [
+              88.6,
+              49.1
+            ],
+            [
+              87.9,
+              49.15
+            ]
+          ]
+        },
+        "seq": 1
+      }
+    ],
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          89.965,
+          48.9683
+        ],
+        [
+          89.4,
+          49.0
+        ],
+        [
+          88.6,
+          49.1
+        ],
+        [
+          87.9,
+          49.15
+        ]
+      ]
+    },
+    "area": "west"
+  },
+  {
+    "_id": "route_khovd_khar_us",
+    "name": {
+      "mn": "Ховд – Хар ус нуур",
+      "en": "Khovd to Khar Us Lake"
+    },
+    "region": "west",
+    "from_place_id": "place_khovd",
+    "to_place_id": "place_khar_us",
+    "waypoint_place_ids": [
+      "place_khovd",
+      "place_khar_us"
+    ],
+    "total_distance_km": 55,
+    "total_drive_time_min": 75,
+    "recommended_days": 1,
+    "surface_km": {
+      "mixed": 55
+    },
+    "vehicle_min": "sedan",
+    "summary": {
+      "mn": "Шувуу ажиглах богино аялал.",
+      "en": "Short trip for birdwatching."
+    },
+    "segments": [
+      {
+        "from_place_id": "place_khovd",
+        "to_place_id": "place_khar_us",
+        "surface": "mixed",
+        "road_condition": "good",
+        "distance_km": 55,
+        "drive_time_min": 75,
+        "fuel_at_end": false,
+        "hazards": [],
+        "notes": null,
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              91.6419,
+              48.0056
+            ],
+            [
+              92.3,
+              48.05
+            ]
+          ]
+        },
+        "seq": 1
+      }
+    ],
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          91.6419,
+          48.0056
+        ],
+        [
+          92.3,
+          48.05
+        ]
+      ]
+    },
+    "area": "west"
+  },
+  {
+    "_id": "route_khovd_uvs_lake",
+    "name": {
+      "mn": "Ховд – Увс нуур (Улаангомоор)",
+      "en": "Khovd to Uvs Lake via Ulaangom"
+    },
+    "region": "west",
+    "from_place_id": "place_khovd",
+    "to_place_id": "place_uvs_lake",
+    "waypoint_place_ids": [
+      "place_khovd",
+      "place_ulaangom",
+      "place_uvs_lake"
+    ],
+    "total_distance_km": 313,
+    "total_drive_time_min": 345,
+    "recommended_days": 1,
+    "surface_km": {
+      "paved": 249,
+      "dirt": 64
+    },
+    "vehicle_min": "suv_4x4",
+    "summary": {
+      "mn": "Улаангом хүртэл хатуу хучилттай, дараа нь талын шороон зам.",
+      "en": "Paved to Ulaangom, then steppe track."
+    },
+    "segments": [
+      {
+        "from_place_id": "place_khovd",
+        "to_place_id": "place_ulaangom",
+        "surface": "paved",
+        "road_condition": "good",
+        "distance_km": 249,
+        "drive_time_min": 215,
+        "fuel_at_end": true,
+        "hazards": [],
+        "notes": null,
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              91.6419,
+              48.0056
+            ],
+            [
+              91.8,
+              48.7
+            ],
+            [
+              92.0,
+              49.4
+            ],
+            [
+              92.0667,
+              49.9811
+            ]
+          ]
+        },
+        "seq": 1
+      },
+      {
+        "from_place_id": "place_ulaangom",
+        "to_place_id": "place_uvs_lake",
+        "surface": "dirt",
+        "road_condition": "fair",
+        "distance_km": 64,
+        "drive_time_min": 130,
+        "fuel_at_end": false,
+        "hazards": [],
+        "notes": {
+          "mn": "Нуурын эрэг хүрэх тэгш талын шороон зам.",
+          "en": "Flat steppe track to the lake shore."
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              92.0667,
+              49.9811
+            ],
+            [
+              92.4,
+              50.15
+            ],
+            [
+              92.7,
+              50.3
+            ]
+          ]
+        },
+        "seq": 2
+      }
+    ],
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          91.6419,
+          48.0056
+        ],
+        [
+          91.8,
+          48.7
+        ],
+        [
+          92.0,
+          49.4
+        ],
+        [
+          92.0667,
+          49.9811
+        ],
+        [
+          92.4,
+          50.15
+        ],
+        [
+          92.7,
+          50.3
+        ]
+      ]
+    },
+    "area": "west"
+  },
+  {
+    "_id": "route_ub_chinggis",
+    "name": {
+      "mn": "Улаанбаатар – Чингис хот",
+      "en": "Ulaanbaatar to Chinggis city"
+    },
+    "region": "east",
+    "from_place_id": "place_ub",
+    "to_place_id": "place_chinggis_city",
+    "waypoint_place_ids": [
+      "place_ub",
+      "place_chinggis_city"
+    ],
+    "total_distance_km": 324,
+    "total_drive_time_min": 280,
+    "recommended_days": 1,
+    "surface_km": {
+      "paved": 324
+    },
+    "vehicle_min": "sedan",
+    "summary": {
+      "mn": "Зүүн тийш хатуу хучилттай хялбар зам, нэг өдөр.",
+      "en": "Easy paved drive east, one day."
+    },
+    "segments": [
+      {
+        "from_place_id": "place_ub",
+        "to_place_id": "place_chinggis_city",
+        "surface": "paved",
+        "road_condition": "good",
+        "distance_km": 324,
+        "drive_time_min": 280,
+        "fuel_at_end": true,
+        "hazards": [],
+        "notes": {
+          "mn": "Зүүн зүгийн хатуу хучилттай зам, Чингис хааны хөшөөний салаагаар өнгөрнө.",
+          "en": "Paved east highway, passes the Chinggis Khaan statue turnoff."
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              106.9177,
+              47.9186
+            ],
+            [
+              107.5,
+              47.8
+            ],
+            [
+              108.5,
+              47.6
+            ],
+            [
+              109.6,
+              47.4
+            ],
+            [
+              110.6556,
+              47.3194
+            ]
+          ]
+        },
+        "seq": 1
+      }
+    ],
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          106.9177,
+          47.9186
+        ],
+        [
+          107.5,
+          47.8
+        ],
+        [
+          108.5,
+          47.6
+        ],
+        [
+          109.6,
+          47.4
+        ],
+        [
+          110.6556,
+          47.3194
+        ]
+      ]
+    },
+    "area": "east"
+  },
+  {
+    "_id": "route_ub_choibalsan",
+    "name": {
+      "mn": "Улаанбаатар – Чойбалсан",
+      "en": "Ulaanbaatar to Choibalsan"
+    },
+    "region": "east",
+    "from_place_id": "place_ub",
+    "to_place_id": "place_choibalsan",
+    "waypoint_place_ids": [
+      "place_ub",
+      "place_chinggis_city",
+      "place_choibalsan"
+    ],
+    "total_distance_km": 662,
+    "total_drive_time_min": 570,
+    "recommended_days": 2,
+    "surface_km": {
+      "paved": 662
+    },
+    "vehicle_min": "sedan",
+    "summary": {
+      "mn": "Бүхэлдээ хатуу хучилттай боловч урт; ихэвчлэн Чингис хотод хонодог.",
+      "en": "Fully paved but long; usually split in Chinggis city."
+    },
+    "segments": [
+      {
+        "from_place_id": "place_ub",
+        "to_place_id": "place_chinggis_city",
+        "surface": "paved",
+        "road_condition": "good",
+        "distance_km": 324,
+        "drive_time_min": 280,
+        "fuel_at_end": true,
+        "hazards": [],
+        "notes": {
+          "mn": "Зүүн зүгийн хатуу хучилттай зам, Чингис хааны хөшөөний салаагаар өнгөрнө.",
+          "en": "Paved east highway, passes the Chinggis Khaan statue turnoff."
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              106.9177,
+              47.9186
+            ],
+            [
+              107.5,
+              47.8
+            ],
+            [
+              108.5,
+              47.6
+            ],
+            [
+              109.6,
+              47.4
+            ],
+            [
+              110.6556,
+              47.3194
+            ]
+          ]
+        },
+        "seq": 1
+      },
+      {
+        "from_place_id": "place_chinggis_city",
+        "to_place_id": "place_choibalsan",
+        "surface": "paved",
+        "road_condition": "good",
+        "distance_km": 338,
+        "drive_time_min": 290,
+        "fuel_at_end": true,
+        "hazards": [
+          "wildlife_on_road",
+          "long_no_fuel"
+        ],
+        "notes": {
+          "mn": "Талын урт шулуун зам, зээрээс болгоомжил.",
+          "en": "Long straight steppe road, watch for gazelles."
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              110.6556,
+              47.3194
+            ],
+            [
+              111.8,
+              47.5
+            ],
+            [
+              113.2,
+              47.8
+            ],
+            [
+              114.5228,
+              48.0706
+            ]
+          ]
+        },
+        "seq": 2
+      }
+    ],
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          106.9177,
+          47.9186
+        ],
+        [
+          107.5,
+          47.8
+        ],
+        [
+          108.5,
+          47.6
+        ],
+        [
+          109.6,
+          47.4
+        ],
+        [
+          110.6556,
+          47.3194
+        ],
+        [
+          111.8,
+          47.5
+        ],
+        [
+          113.2,
+          47.8
+        ],
+        [
+          114.5228,
+          48.0706
+        ]
+      ]
+    },
+    "area": "east"
+  },
+  {
+    "_id": "route_chinggis_dadal",
+    "name": {
+      "mn": "Чингис хот – Дадал",
+      "en": "Chinggis city to Dadal"
+    },
+    "region": "east",
+    "from_place_id": "place_chinggis_city",
+    "to_place_id": "place_dadal",
+    "waypoint_place_ids": [
+      "place_chinggis_city",
+      "place_dadal"
+    ],
+    "total_distance_km": 228,
+    "total_drive_time_min": 305,
+    "recommended_days": 1,
+    "surface_km": {
+      "mixed": 228
+    },
+    "vehicle_min": "sedan",
+    "summary": {
+      "mn": "Ой, гол мөрөн, Чингис хааны төрсөн нутгийн дурсгалт газрууд.",
+      "en": "Forest and rivers, Chinggis Khaan birthplace sites."
+    },
+    "segments": [
+      {
+        "from_place_id": "place_chinggis_city",
+        "to_place_id": "place_dadal",
+        "surface": "mixed",
+        "road_condition": "fair",
+        "distance_km": 228,
+        "drive_time_min": 305,
+        "fuel_at_end": true,
+        "hazards": [
+          "mud_after_rain"
+        ],
+        "notes": {
+          "mn": "Биндэр хүртэл хатуу хучилттай, дараа нь ойгоор хайрган зам.",
+          "en": "Paved to Binder, then gravel through forest."
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              110.6556,
+              47.3194
+            ],
+            [
+              110.9,
+              48.0
+            ],
+            [
+              111.2,
+              48.5
+            ],
+            [
+              111.6264,
+              49.0236
+            ]
+          ]
+        },
+        "seq": 1
+      }
+    ],
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          110.6556,
+          47.3194
+        ],
+        [
+          110.9,
+          48.0
+        ],
+        [
+          111.2,
+          48.5
+        ],
+        [
+          111.6264,
+          49.0236
+        ]
+      ]
+    },
+    "area": "east"
+  },
+  {
+    "_id": "route_ub_shiliin_bogd",
+    "name": {
+      "mn": "Улаанбаатар – Шилийн Богд (Баруун-Уртаар)",
+      "en": "Ulaanbaatar to Shiliin Bogd via Baruun-Urt"
+    },
+    "region": "east",
+    "from_place_id": "place_ub",
+    "to_place_id": "place_shiliin_bogd",
+    "waypoint_place_ids": [
+      "place_ub",
+      "place_chinggis_city",
+      "place_baruun_urt",
+      "place_shiliin_bogd"
+    ],
+    "total_distance_km": 753,
+    "total_drive_time_min": 865,
+    "recommended_days": 2,
+    "surface_km": {
+      "paved": 562,
+      "dirt": 191
+    },
+    "vehicle_min": "suv_4x4",
+    "summary": {
+      "mn": "Алслагдсан талын аялал; сүүлийн хэсэг нь замгүй.",
+      "en": "Remote steppe trip; last part is off-road."
+    },
+    "segments": [
+      {
+        "from_place_id": "place_ub",
+        "to_place_id": "place_chinggis_city",
+        "surface": "paved",
+        "road_condition": "good",
+        "distance_km": 324,
+        "drive_time_min": 280,
+        "fuel_at_end": true,
+        "hazards": [],
+        "notes": {
+          "mn": "Зүүн зүгийн хатуу хучилттай зам, Чингис хааны хөшөөний салаагаар өнгөрнө.",
+          "en": "Paved east highway, passes the Chinggis Khaan statue turnoff."
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              106.9177,
+              47.9186
+            ],
+            [
+              107.5,
+              47.8
+            ],
+            [
+              108.5,
+              47.6
+            ],
+            [
+              109.6,
+              47.4
+            ],
+            [
+              110.6556,
+              47.3194
+            ]
+          ]
+        },
+        "seq": 1
+      },
+      {
+        "from_place_id": "place_chinggis_city",
+        "to_place_id": "place_baruun_urt",
+        "surface": "paved",
+        "road_condition": "good",
+        "distance_km": 238,
+        "drive_time_min": 205,
+        "fuel_at_end": true,
+        "hazards": [],
+        "notes": null,
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              110.6556,
+              47.3194
+            ],
+            [
+              111.6,
+              47.0
+            ],
+            [
+              112.5,
+              46.8
+            ],
+            [
+              113.2792,
+              46.6806
+            ]
+          ]
+        },
+        "seq": 2
+      },
+      {
+        "from_place_id": "place_baruun_urt",
+        "to_place_id": "place_shiliin_bogd",
+        "surface": "dirt",
+        "road_condition": "fair",
+        "distance_km": 191,
+        "drive_time_min": 380,
+        "fuel_at_end": false,
+        "hazards": [
+          "no_signal",
+          "long_no_fuel"
+        ],
+        "notes": {
+          "mn": "Уудам талын шороон зам, GPS-ээр чиглэнэ.",
+          "en": "Open steppe tracks, navigate by GPS."
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              113.2792,
+              46.6806
+            ],
+            [
+              113.6,
+              46.2
+            ],
+            [
+              114.1,
+              45.8
+            ],
+            [
+              114.59,
+              45.47
+            ]
+          ]
+        },
+        "seq": 3
+      }
+    ],
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          106.9177,
+          47.9186
+        ],
+        [
+          107.5,
+          47.8
+        ],
+        [
+          108.5,
+          47.6
+        ],
+        [
+          109.6,
+          47.4
+        ],
+        [
+          110.6556,
+          47.3194
+        ],
+        [
+          111.6,
+          47.0
+        ],
+        [
+          112.5,
+          46.8
+        ],
+        [
+          113.2792,
+          46.6806
+        ],
+        [
+          113.6,
+          46.2
+        ],
+        [
+          114.1,
+          45.8
+        ],
+        [
+          114.59,
+          45.47
+        ]
+      ]
+    },
+    "area": "east"
+  }
+]

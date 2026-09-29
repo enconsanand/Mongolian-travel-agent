@@ -19,7 +19,7 @@ def test_settings_allows_missing_redis_outside_production():
 
 
 def test_settings_allows_redis_in_production():
-    settings_obj = Settings(ENV="prod", REDIS_URL="redis://redis:6379/0")
+    settings_obj = Settings(ENV="prod", REDIS_URL="redis://redis:6379/0", MONGO_URI="mongodb+srv://cluster/db")
     assert settings_obj.REDIS_URL == "redis://redis:6379/0"
 
 
@@ -43,3 +43,11 @@ def test_settings_parses_comma_separated_cors_origins(monkeypatch: pytest.Monkey
         "http://localhost:3000",
         "http://127.0.0.1:3000",
     ]
+def test_settings_requires_mongo_uri_in_production():
+    # The default points at the local dev container; production must not silently use it
+    with pytest.raises(ValidationError):
+        Settings(ENV="prod", REDIS_URL="redis://redis:6379/0")
+
+
+def test_settings_defaults_mongo_uri_outside_production():
+    assert Settings(ENV="local").MONGO_URI == "mongodb://mongo:27017"

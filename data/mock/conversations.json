@@ -1,0 +1,57 @@
+[
+  {
+    "_id": "conv_jamba_east",
+    "user_id": "user_jamba",
+    "trip_id": "trip_jamba_east",
+    "lang": "mn",
+    "started_at": "2026-09-29T08:58:00Z",
+    "updated_at": "2026-09-29T09:12:00Z",
+    "messages": [
+      {
+        "role": "user",
+        "ts": "2026-09-29T08:58:00Z",
+        "text": "10/9-нөөс 4 хоног зүүн тийш, Дадал руу хоёулаа явмаар байна. Өөрсдөө машин барина. Төсөв 2.5 сая."
+      },
+      {
+        "role": "agent",
+        "ts": "2026-09-29T09:05:00Z",
+        "text": "Хоёр хувилбар гаргалаа: (1) Prado түрээслээд өөрсдөө жолоодох, Чингис хотод 1, Дадалд 2 хоно, 1,960,000₮. (2) Хамтын унаагаар Чингис хот, тэндээс жолоочтой Land Cruiser, баазад хонох, 1,690,000₮. Алийг нь сонгох вэ?",
+        "tool_calls": [
+          {
+            "name": "search_vehicles",
+            "args": {
+              "region": "east",
+              "rental_mode": "self_drive",
+              "date": "2026-10-09"
+            }
+          },
+          {
+            "name": "quote_budget",
+            "args": {
+              "trip_id": "trip_jamba_east"
+            }
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "ts": "2026-09-29T09:11:00Z",
+        "text": "Эхнийхийг нь авъя."
+      },
+      {
+        "role": "agent",
+        "ts": "2026-09-29T09:12:00Z",
+        "text": "1,960,000₮-ийг 5556 төгсгөлтэй Visa картаас төлөхийг зөвшөөрч байна уу? Prado-гийн 1,500,000₮ барьцааг түр түгжинэ.",
+        "tool_calls": [
+          {
+            "name": "request_payment_approval",
+            "args": {
+              "payment_id": "pay_jamba_001"
+            }
+          }
+        ]
+      }
+    ],
+    "is_mock": true
+  }
+]

@@ -1,0 +1,342 @@
+[
+  {
+    "_id": "ride_001",
+    "type": "driver_offer",
+    "from_place_id": "place_ub",
+    "to_place_id": "place_darkhan",
+    "date": "2026-10-03",
+    "depart_time": "09:00",
+    "seats_total": 7,
+    "seats_left": 3,
+    "price_per_seat_mnt": 25000,
+    "vehicle_id": "veh_van_03",
+    "driver_id": "driver_10",
+    "posted_by": null,
+    "luggage": {
+      "mn": "Нэг суудалд 1 цүнх + 1 жижиг цүнх",
+      "en": "1 bag + 1 small per seat"
+    },
+    "notes": {
+      "mn": "Драгон автовокзалын зогсоолоос хөдөлнө.",
+      "en": "Leaves from Dragon terminal parking."
+    },
+    "status": "open",
+    "bookable": true,
+    "is_mock": true,
+    "region": "north"
+  },
+  {
+    "_id": "ride_002",
+    "type": "driver_offer",
+    "from_place_id": "place_murun",
+    "to_place_id": "place_khatgal",
+    "date": "2026-10-03",
+    "depart_time": "11:00",
+    "seats_total": 7,
+    "seats_left": 5,
+    "price_per_seat_mnt": 22000,
+    "vehicle_id": "veh_van_04",
+    "driver_id": "driver_04",
+    "posted_by": null,
+    "luggage": {
+      "mn": "Нэг суудалд 1 цүнх + 1 жижиг цүнх",
+      "en": "1 bag + 1 small per seat"
+    },
+    "notes": {
+      "mn": "Дүүрмэгц хөдөлнө, 11:00 орчим.",
+      "en": "Leaves when full, around 11:00."
+    },
+    "status": "open",
+    "bookable": true,
+    "is_mock": true,
+    "region": "north"
+  },
+  {
+    "_id": "ride_003",
+    "type": "traveler_post",
+    "from_place_id": "place_ub",
+    "to_place_id": "place_khatgal",
+    "date": "2026-10-02",
+    "depart_time": "07:00",
+    "seats_total": 3,
+    "seats_left": 2,
+    "price_per_seat_mnt": 110000,
+    "vehicle_id": null,
+    "driver_id": null,
+    "posted_by": {
+      "name": "Tömöröö",
+      "phone": "+976 9911 3301",
+      "note": {
+        "mn": "Өөрийн Prado, шатахууны зардлаа хуваана",
+        "en": "Own Prado, splitting fuel"
+      }
+    },
+    "luggage": {
+      "mn": "Нэг суудалд 1 цүнх + 1 жижиг цүнх",
+      "en": "1 bag + 1 small per seat"
+    },
+    "notes": {
+      "mn": "Хоёр сул суудал, зөвхөн жижиг ачаа.",
+      "en": "Two free seats, small luggage only."
+    },
+    "status": "open",
+    "bookable": true,
+    "is_mock": true,
+    "region": "north"
+  },
+  {
+    "_id": "ride_004",
+    "type": "driver_offer",
+    "from_place_id": "place_ub",
+    "to_place_id": "place_dalanzadgad",
+    "date": "2026-10-08",
+    "depart_time": "08:00",
+    "seats_total": 7,
+    "seats_left": 4,
+    "price_per_seat_mnt": 70000,
+    "vehicle_id": "veh_van_02",
+    "driver_id": "driver_03",
+    "posted_by": null,
+    "luggage": {
+      "mn": "Нэг суудалд 1 цүнх + 1 жижиг цүнх",
+      "en": "1 bag + 1 small per seat"
+    },
+    "notes": {
+      "mn": "УАЗ фургон, Мандалговьд зогсоно.",
+      "en": "UAZ furgon, stops in Mandalgovi."
+    },
+    "status": "open",
+    "bookable": true,
+    "is_mock": true,
+    "region": "south"
+  },
+  {
+    "_id": "ride_005",
+    "type": "traveler_post",
+    "from_place_id": "place_dalanzadgad",
+    "to_place_id": "place_khongoryn_els",
+    "date": "2026-10-10",
+    "depart_time": "09:30",
+    "seats_total": 4,
+    "seats_left": 2,
+    "price_per_seat_mnt": 60000,
+    "vehicle_id": null,
+    "driver_id": null,
+    "posted_by": {
+      "name": "Marta",
+      "phone": "+34 600 000 000",
+      "note": {
+        "mn": "Жийп хөлсөлсөн аялагч",
+        "en": "Backpacker with hired jeep"
+      }
+    },
+    "luggage": {
+      "mn": "Нэг суудалд 1 цүнх + 1 жижиг цүнх",
+      "en": "1 bag + 1 small per seat"
+    },
+    "notes": {
+      "mn": "Манхан хүртэл жийпний зардлаа хуваана.",
+      "en": "Sharing jeep cost to the dunes."
+    },
+    "status": "open",
+    "bookable": true,
+    "is_mock": true,
+    "region": "south"
+  },
+  {
+    "_id": "ride_006",
+    "type": "driver_offer",
+    "from_place_id": "place_khovd",
+    "to_place_id": "place_olgii",
+    "date": "2026-10-02",
+    "depart_time": "10:00",
+    "seats_total": 7,
+    "seats_left": 1,
+    "price_per_seat_mnt": 45000,
+    "vehicle_id": "veh_van_06",
+    "driver_id": "driver_14",
+    "posted_by": null,
+    "luggage": {
+      "mn": "Нэг суудалд 1 цүнх + 1 жижиг цүнх",
+      "en": "1 bag + 1 small per seat"
+    },
+    "notes": {
+      "mn": "Баярын өдөр, бараг дүүрсэн.",
+      "en": "Festival day, almost full."
+    },
+    "status": "open",
+    "bookable": true,
+    "is_mock": true,
+    "region": "west"
+  },
+  {
+    "_id": "ride_007",
+    "type": "driver_offer",
+    "from_place_id": "place_olgii",
+    "to_place_id": "place_tavan_bogd",
+    "date": "2026-10-06",
+    "depart_time": "08:00",
+    "seats_total": 4,
+    "seats_left": 4,
+    "price_per_seat_mnt": 150000,
+    "vehicle_id": "veh_suv_06",
+    "driver_id": "driver_13",
+    "posted_by": null,
+    "luggage": {
+      "mn": "Нэг суудалд 1 цүнх + 1 жижиг цүнх",
+      "en": "1 bag + 1 small per seat"
+    },
+    "notes": {
+      "mn": "Улирал дуусч байна; эхлээд зөвшөөрлөө баталгаажуул.",
+      "en": "Season is ending; confirm permit first."
+    },
+    "status": "open",
+    "bookable": true,
+    "is_mock": true,
+    "region": "west"
+  },
+  {
+    "_id": "ride_008",
+    "type": "traveler_post",
+    "from_place_id": "place_ub",
+    "to_place_id": "place_olgii",
+    "date": "2026-10-01",
+    "depart_time": "06:00",
+    "seats_total": 3,
+    "seats_left": 3,
+    "price_per_seat_mnt": 250000,
+    "vehicle_id": null,
+    "driver_id": null,
+    "posted_by": {
+      "name": "Aibek",
+      "phone": "+976 9911 3302",
+      "note": {
+        "mn": "Баяраар нутаг руугаа явж байна",
+        "en": "Driving home for the festival"
+      }
+    },
+    "luggage": {
+      "mn": "Нэг суудалд 1 цүнх + 1 жижиг цүнх",
+      "en": "1 bag + 1 small per seat"
+    },
+    "notes": {
+      "mn": "Ховдоор дамжин 2 өдөр замд явна.",
+      "en": "2 days on the road via Khovd."
+    },
+    "status": "open",
+    "bookable": true,
+    "is_mock": true,
+    "region": "west"
+  },
+  {
+    "_id": "ride_009",
+    "type": "driver_offer",
+    "from_place_id": "place_ub",
+    "to_place_id": "place_chinggis_city",
+    "date": "2026-10-09",
+    "depart_time": "09:00",
+    "seats_total": 4,
+    "seats_left": 2,
+    "price_per_seat_mnt": 35000,
+    "vehicle_id": "veh_suv_07",
+    "driver_id": "driver_15",
+    "posted_by": null,
+    "luggage": {
+      "mn": "Нэг суудалд 1 цүнх + 1 жижиг цүнх",
+      "en": "1 bag + 1 small per seat"
+    },
+    "notes": {
+      "mn": "Хүсвэл Дадал хүртэл үргэлжлүүлнэ.",
+      "en": "Continues to Dadal on request."
+    },
+    "status": "open",
+    "bookable": true,
+    "is_mock": true,
+    "region": "east"
+  },
+  {
+    "_id": "ride_010",
+    "type": "driver_offer",
+    "from_place_id": "place_choibalsan",
+    "to_place_id": "place_ub",
+    "date": "2026-10-12",
+    "depart_time": "07:00",
+    "seats_total": 9,
+    "seats_left": 6,
+    "price_per_seat_mnt": 60000,
+    "vehicle_id": "veh_van_07",
+    "driver_id": "driver_16",
+    "posted_by": null,
+    "luggage": {
+      "mn": "Нэг суудалд 1 цүнх + 1 жижиг цүнх",
+      "en": "1 bag + 1 small per seat"
+    },
+    "notes": {
+      "mn": "Долоо хоног бүр Чойбалсангаас УБ руу явдаг.",
+      "en": "Weekly Choibalsan to UB run."
+    },
+    "status": "open",
+    "bookable": true,
+    "is_mock": true,
+    "region": "east"
+  },
+  {
+    "_id": "ride_011",
+    "type": "traveler_post",
+    "from_place_id": "place_ub",
+    "to_place_id": "place_bulgan",
+    "date": "2026-10-04",
+    "depart_time": "10:00",
+    "seats_total": 3,
+    "seats_left": 1,
+    "price_per_seat_mnt": 40000,
+    "vehicle_id": null,
+    "driver_id": null,
+    "posted_by": {
+      "name": "Saraa",
+      "phone": "+976 9911 3303",
+      "note": {
+        "mn": "Эцэг эхдээ очиж байна",
+        "en": "Visiting parents"
+      }
+    },
+    "luggage": {
+      "mn": "Нэг суудалд 1 цүнх + 1 жижиг цүнх",
+      "en": "1 bag + 1 small per seat"
+    },
+    "notes": {
+      "mn": "Нэг суудал үлдсэн.",
+      "en": "One seat left."
+    },
+    "status": "open",
+    "bookable": true,
+    "is_mock": true,
+    "region": "north"
+  },
+  {
+    "_id": "ride_012",
+    "type": "driver_offer",
+    "from_place_id": "place_darkhan",
+    "to_place_id": "place_ub",
+    "date": "2026-10-05",
+    "depart_time": "15:00",
+    "seats_total": 3,
+    "seats_left": 0,
+    "price_per_seat_mnt": 25000,
+    "vehicle_id": "veh_sedan_01",
+    "driver_id": "driver_05",
+    "posted_by": null,
+    "luggage": {
+      "mn": "Нэг суудалд 1 цүнх + 1 жижиг цүнх",
+      "en": "1 bag + 1 small per seat"
+    },
+    "notes": {
+      "mn": "Prius, УБ руу буцна.",
+      "en": "Prius, back to UB."
+    },
+    "status": "cancelled",
+    "bookable": false,
+    "is_mock": true,
+    "region": "north"
+  }
+]

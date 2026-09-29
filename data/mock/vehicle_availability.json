@@ -1,0 +1,2578 @@
+[
+  {
+    "_id": "vavail_van_01_2026-10-01",
+    "vehicle_id": "veh_van_01",
+    "date": "2026-10-01",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_van_01_2026-10-02",
+    "vehicle_id": "veh_van_01",
+    "date": "2026-10-02",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_van_01_2026-10-03",
+    "vehicle_id": "veh_van_01",
+    "date": "2026-10-03",
+    "status": "booked",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_van_01_2026-10-04",
+    "vehicle_id": "veh_van_01",
+    "date": "2026-10-04",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_van_01_2026-10-05",
+    "vehicle_id": "veh_van_01",
+    "date": "2026-10-05",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_van_01_2026-10-06",
+    "vehicle_id": "veh_van_01",
+    "date": "2026-10-06",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_van_01_2026-10-07",
+    "vehicle_id": "veh_van_01",
+    "date": "2026-10-07",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_van_01_2026-10-08",
+    "vehicle_id": "veh_van_01",
+    "date": "2026-10-08",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_van_01_2026-10-09",
+    "vehicle_id": "veh_van_01",
+    "date": "2026-10-09",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_van_01_2026-10-10",
+    "vehicle_id": "veh_van_01",
+    "date": "2026-10-10",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_van_01_2026-10-11",
+    "vehicle_id": "veh_van_01",
+    "date": "2026-10-11",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_van_01_2026-10-12",
+    "vehicle_id": "veh_van_01",
+    "date": "2026-10-12",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_van_01_2026-10-13",
+    "vehicle_id": "veh_van_01",
+    "date": "2026-10-13",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_van_01_2026-10-14",
+    "vehicle_id": "veh_van_01",
+    "date": "2026-10-14",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_van_02_2026-10-01",
+    "vehicle_id": "veh_van_02",
+    "date": "2026-10-01",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_van_02_2026-10-02",
+    "vehicle_id": "veh_van_02",
+    "date": "2026-10-02",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_van_02_2026-10-03",
+    "vehicle_id": "veh_van_02",
+    "date": "2026-10-03",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_van_02_2026-10-04",
+    "vehicle_id": "veh_van_02",
+    "date": "2026-10-04",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_van_02_2026-10-05",
+    "vehicle_id": "veh_van_02",
+    "date": "2026-10-05",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_van_02_2026-10-06",
+    "vehicle_id": "veh_van_02",
+    "date": "2026-10-06",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_van_02_2026-10-07",
+    "vehicle_id": "veh_van_02",
+    "date": "2026-10-07",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_van_02_2026-10-08",
+    "vehicle_id": "veh_van_02",
+    "date": "2026-10-08",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_van_02_2026-10-09",
+    "vehicle_id": "veh_van_02",
+    "date": "2026-10-09",
+    "status": "booked",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_van_02_2026-10-10",
+    "vehicle_id": "veh_van_02",
+    "date": "2026-10-10",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_van_02_2026-10-11",
+    "vehicle_id": "veh_van_02",
+    "date": "2026-10-11",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_van_02_2026-10-12",
+    "vehicle_id": "veh_van_02",
+    "date": "2026-10-12",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_van_02_2026-10-13",
+    "vehicle_id": "veh_van_02",
+    "date": "2026-10-13",
+    "status": "booked",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_van_02_2026-10-14",
+    "vehicle_id": "veh_van_02",
+    "date": "2026-10-14",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_van_03_2026-10-01",
+    "vehicle_id": "veh_van_03",
+    "date": "2026-10-01",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_van_03_2026-10-02",
+    "vehicle_id": "veh_van_03",
+    "date": "2026-10-02",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_van_03_2026-10-03",
+    "vehicle_id": "veh_van_03",
+    "date": "2026-10-03",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_van_03_2026-10-04",
+    "vehicle_id": "veh_van_03",
+    "date": "2026-10-04",
+    "status": "booked",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_van_03_2026-10-05",
+    "vehicle_id": "veh_van_03",
+    "date": "2026-10-05",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_van_03_2026-10-06",
+    "vehicle_id": "veh_van_03",
+    "date": "2026-10-06",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_van_03_2026-10-07",
+    "vehicle_id": "veh_van_03",
+    "date": "2026-10-07",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_van_03_2026-10-08",
+    "vehicle_id": "veh_van_03",
+    "date": "2026-10-08",
+    "status": "booked",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_van_03_2026-10-09",
+    "vehicle_id": "veh_van_03",
+    "date": "2026-10-09",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_van_03_2026-10-10",
+    "vehicle_id": "veh_van_03",
+    "date": "2026-10-10",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_van_03_2026-10-11",
+    "vehicle_id": "veh_van_03",
+    "date": "2026-10-11",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_van_03_2026-10-12",
+    "vehicle_id": "veh_van_03",
+    "date": "2026-10-12",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_van_03_2026-10-13",
+    "vehicle_id": "veh_van_03",
+    "date": "2026-10-13",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_van_03_2026-10-14",
+    "vehicle_id": "veh_van_03",
+    "date": "2026-10-14",
+    "status": "booked",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_van_04_2026-10-01",
+    "vehicle_id": "veh_van_04",
+    "date": "2026-10-01",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_van_04_2026-10-02",
+    "vehicle_id": "veh_van_04",
+    "date": "2026-10-02",
+    "status": "booked",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_van_04_2026-10-03",
+    "vehicle_id": "veh_van_04",
+    "date": "2026-10-03",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_van_04_2026-10-04",
+    "vehicle_id": "veh_van_04",
+    "date": "2026-10-04",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_van_04_2026-10-05",
+    "vehicle_id": "veh_van_04",
+    "date": "2026-10-05",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_van_04_2026-10-06",
+    "vehicle_id": "veh_van_04",
+    "date": "2026-10-06",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_van_04_2026-10-07",
+    "vehicle_id": "veh_van_04",
+    "date": "2026-10-07",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_van_04_2026-10-08",
+    "vehicle_id": "veh_van_04",
+    "date": "2026-10-08",
+    "status": "booked",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_van_04_2026-10-09",
+    "vehicle_id": "veh_van_04",
+    "date": "2026-10-09",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_van_04_2026-10-10",
+    "vehicle_id": "veh_van_04",
+    "date": "2026-10-10",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_van_04_2026-10-11",
+    "vehicle_id": "veh_van_04",
+    "date": "2026-10-11",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_van_04_2026-10-12",
+    "vehicle_id": "veh_van_04",
+    "date": "2026-10-12",
+    "status": "booked",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_van_04_2026-10-13",
+    "vehicle_id": "veh_van_04",
+    "date": "2026-10-13",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_van_04_2026-10-14",
+    "vehicle_id": "veh_van_04",
+    "date": "2026-10-14",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_suv_01_2026-10-01",
+    "vehicle_id": "veh_suv_01",
+    "date": "2026-10-01",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_01_2026-10-02",
+    "vehicle_id": "veh_suv_01",
+    "date": "2026-10-02",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_01_2026-10-03",
+    "vehicle_id": "veh_suv_01",
+    "date": "2026-10-03",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_01_2026-10-04",
+    "vehicle_id": "veh_suv_01",
+    "date": "2026-10-04",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_01_2026-10-05",
+    "vehicle_id": "veh_suv_01",
+    "date": "2026-10-05",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_01_2026-10-06",
+    "vehicle_id": "veh_suv_01",
+    "date": "2026-10-06",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_01_2026-10-07",
+    "vehicle_id": "veh_suv_01",
+    "date": "2026-10-07",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_01_2026-10-08",
+    "vehicle_id": "veh_suv_01",
+    "date": "2026-10-08",
+    "status": "booked",
+    "booking_id": "booking_010",
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_01_2026-10-09",
+    "vehicle_id": "veh_suv_01",
+    "date": "2026-10-09",
+    "status": "booked",
+    "booking_id": "booking_010",
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_01_2026-10-10",
+    "vehicle_id": "veh_suv_01",
+    "date": "2026-10-10",
+    "status": "booked",
+    "booking_id": "booking_010",
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_01_2026-10-11",
+    "vehicle_id": "veh_suv_01",
+    "date": "2026-10-11",
+    "status": "booked",
+    "booking_id": "booking_010",
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_01_2026-10-12",
+    "vehicle_id": "veh_suv_01",
+    "date": "2026-10-12",
+    "status": "booked",
+    "booking_id": "booking_010",
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_01_2026-10-13",
+    "vehicle_id": "veh_suv_01",
+    "date": "2026-10-13",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_01_2026-10-14",
+    "vehicle_id": "veh_suv_01",
+    "date": "2026-10-14",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_02_2026-10-01",
+    "vehicle_id": "veh_suv_02",
+    "date": "2026-10-01",
+    "status": "booked",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_02_2026-10-02",
+    "vehicle_id": "veh_suv_02",
+    "date": "2026-10-02",
+    "status": "booked",
+    "booking_id": "booking_009",
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_02_2026-10-03",
+    "vehicle_id": "veh_suv_02",
+    "date": "2026-10-03",
+    "status": "booked",
+    "booking_id": "booking_009",
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_02_2026-10-04",
+    "vehicle_id": "veh_suv_02",
+    "date": "2026-10-04",
+    "status": "booked",
+    "booking_id": "booking_009",
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_02_2026-10-05",
+    "vehicle_id": "veh_suv_02",
+    "date": "2026-10-05",
+    "status": "booked",
+    "booking_id": "booking_009",
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_02_2026-10-06",
+    "vehicle_id": "veh_suv_02",
+    "date": "2026-10-06",
+    "status": "booked",
+    "booking_id": "booking_009",
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_02_2026-10-07",
+    "vehicle_id": "veh_suv_02",
+    "date": "2026-10-07",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_02_2026-10-08",
+    "vehicle_id": "veh_suv_02",
+    "date": "2026-10-08",
+    "status": "booked",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_02_2026-10-09",
+    "vehicle_id": "veh_suv_02",
+    "date": "2026-10-09",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_02_2026-10-10",
+    "vehicle_id": "veh_suv_02",
+    "date": "2026-10-10",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_02_2026-10-11",
+    "vehicle_id": "veh_suv_02",
+    "date": "2026-10-11",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_02_2026-10-12",
+    "vehicle_id": "veh_suv_02",
+    "date": "2026-10-12",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_02_2026-10-13",
+    "vehicle_id": "veh_suv_02",
+    "date": "2026-10-13",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_02_2026-10-14",
+    "vehicle_id": "veh_suv_02",
+    "date": "2026-10-14",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_03_2026-10-01",
+    "vehicle_id": "veh_suv_03",
+    "date": "2026-10-01",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_suv_03_2026-10-02",
+    "vehicle_id": "veh_suv_03",
+    "date": "2026-10-02",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_suv_03_2026-10-03",
+    "vehicle_id": "veh_suv_03",
+    "date": "2026-10-03",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_suv_03_2026-10-04",
+    "vehicle_id": "veh_suv_03",
+    "date": "2026-10-04",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_suv_03_2026-10-05",
+    "vehicle_id": "veh_suv_03",
+    "date": "2026-10-05",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_suv_03_2026-10-06",
+    "vehicle_id": "veh_suv_03",
+    "date": "2026-10-06",
+    "status": "booked",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_suv_03_2026-10-07",
+    "vehicle_id": "veh_suv_03",
+    "date": "2026-10-07",
+    "status": "booked",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_suv_03_2026-10-08",
+    "vehicle_id": "veh_suv_03",
+    "date": "2026-10-08",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_suv_03_2026-10-09",
+    "vehicle_id": "veh_suv_03",
+    "date": "2026-10-09",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_suv_03_2026-10-10",
+    "vehicle_id": "veh_suv_03",
+    "date": "2026-10-10",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_suv_03_2026-10-11",
+    "vehicle_id": "veh_suv_03",
+    "date": "2026-10-11",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_suv_03_2026-10-12",
+    "vehicle_id": "veh_suv_03",
+    "date": "2026-10-12",
+    "status": "booked",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_suv_03_2026-10-13",
+    "vehicle_id": "veh_suv_03",
+    "date": "2026-10-13",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_suv_03_2026-10-14",
+    "vehicle_id": "veh_suv_03",
+    "date": "2026-10-14",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_suv_04_2026-10-01",
+    "vehicle_id": "veh_suv_04",
+    "date": "2026-10-01",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_suv_04_2026-10-02",
+    "vehicle_id": "veh_suv_04",
+    "date": "2026-10-02",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_suv_04_2026-10-03",
+    "vehicle_id": "veh_suv_04",
+    "date": "2026-10-03",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_suv_04_2026-10-04",
+    "vehicle_id": "veh_suv_04",
+    "date": "2026-10-04",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_suv_04_2026-10-05",
+    "vehicle_id": "veh_suv_04",
+    "date": "2026-10-05",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_suv_04_2026-10-06",
+    "vehicle_id": "veh_suv_04",
+    "date": "2026-10-06",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_suv_04_2026-10-07",
+    "vehicle_id": "veh_suv_04",
+    "date": "2026-10-07",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_suv_04_2026-10-08",
+    "vehicle_id": "veh_suv_04",
+    "date": "2026-10-08",
+    "status": "booked",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_suv_04_2026-10-09",
+    "vehicle_id": "veh_suv_04",
+    "date": "2026-10-09",
+    "status": "booked",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_suv_04_2026-10-10",
+    "vehicle_id": "veh_suv_04",
+    "date": "2026-10-10",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_suv_04_2026-10-11",
+    "vehicle_id": "veh_suv_04",
+    "date": "2026-10-11",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_suv_04_2026-10-12",
+    "vehicle_id": "veh_suv_04",
+    "date": "2026-10-12",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_suv_04_2026-10-13",
+    "vehicle_id": "veh_suv_04",
+    "date": "2026-10-13",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_suv_04_2026-10-14",
+    "vehicle_id": "veh_suv_04",
+    "date": "2026-10-14",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_suv_05_2026-10-01",
+    "vehicle_id": "veh_suv_05",
+    "date": "2026-10-01",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_suv_05_2026-10-02",
+    "vehicle_id": "veh_suv_05",
+    "date": "2026-10-02",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_suv_05_2026-10-03",
+    "vehicle_id": "veh_suv_05",
+    "date": "2026-10-03",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_suv_05_2026-10-04",
+    "vehicle_id": "veh_suv_05",
+    "date": "2026-10-04",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_suv_05_2026-10-05",
+    "vehicle_id": "veh_suv_05",
+    "date": "2026-10-05",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_suv_05_2026-10-06",
+    "vehicle_id": "veh_suv_05",
+    "date": "2026-10-06",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_suv_05_2026-10-07",
+    "vehicle_id": "veh_suv_05",
+    "date": "2026-10-07",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_suv_05_2026-10-08",
+    "vehicle_id": "veh_suv_05",
+    "date": "2026-10-08",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_suv_05_2026-10-09",
+    "vehicle_id": "veh_suv_05",
+    "date": "2026-10-09",
+    "status": "booked",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_suv_05_2026-10-10",
+    "vehicle_id": "veh_suv_05",
+    "date": "2026-10-10",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_suv_05_2026-10-11",
+    "vehicle_id": "veh_suv_05",
+    "date": "2026-10-11",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_suv_05_2026-10-12",
+    "vehicle_id": "veh_suv_05",
+    "date": "2026-10-12",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_suv_05_2026-10-13",
+    "vehicle_id": "veh_suv_05",
+    "date": "2026-10-13",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_suv_05_2026-10-14",
+    "vehicle_id": "veh_suv_05",
+    "date": "2026-10-14",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_sedan_01_2026-10-01",
+    "vehicle_id": "veh_sedan_01",
+    "date": "2026-10-01",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_sedan_01_2026-10-02",
+    "vehicle_id": "veh_sedan_01",
+    "date": "2026-10-02",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_sedan_01_2026-10-03",
+    "vehicle_id": "veh_sedan_01",
+    "date": "2026-10-03",
+    "status": "booked",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_sedan_01_2026-10-04",
+    "vehicle_id": "veh_sedan_01",
+    "date": "2026-10-04",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_sedan_01_2026-10-05",
+    "vehicle_id": "veh_sedan_01",
+    "date": "2026-10-05",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_sedan_01_2026-10-06",
+    "vehicle_id": "veh_sedan_01",
+    "date": "2026-10-06",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_sedan_01_2026-10-07",
+    "vehicle_id": "veh_sedan_01",
+    "date": "2026-10-07",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_sedan_01_2026-10-08",
+    "vehicle_id": "veh_sedan_01",
+    "date": "2026-10-08",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_sedan_01_2026-10-09",
+    "vehicle_id": "veh_sedan_01",
+    "date": "2026-10-09",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_sedan_01_2026-10-10",
+    "vehicle_id": "veh_sedan_01",
+    "date": "2026-10-10",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_sedan_01_2026-10-11",
+    "vehicle_id": "veh_sedan_01",
+    "date": "2026-10-11",
+    "status": "booked",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_sedan_01_2026-10-12",
+    "vehicle_id": "veh_sedan_01",
+    "date": "2026-10-12",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_sedan_01_2026-10-13",
+    "vehicle_id": "veh_sedan_01",
+    "date": "2026-10-13",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_sedan_01_2026-10-14",
+    "vehicle_id": "veh_sedan_01",
+    "date": "2026-10-14",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_sedan_02_2026-10-01",
+    "vehicle_id": "veh_sedan_02",
+    "date": "2026-10-01",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_sedan_02_2026-10-02",
+    "vehicle_id": "veh_sedan_02",
+    "date": "2026-10-02",
+    "status": "booked",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_sedan_02_2026-10-03",
+    "vehicle_id": "veh_sedan_02",
+    "date": "2026-10-03",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_sedan_02_2026-10-04",
+    "vehicle_id": "veh_sedan_02",
+    "date": "2026-10-04",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_sedan_02_2026-10-05",
+    "vehicle_id": "veh_sedan_02",
+    "date": "2026-10-05",
+    "status": "booked",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_sedan_02_2026-10-06",
+    "vehicle_id": "veh_sedan_02",
+    "date": "2026-10-06",
+    "status": "booked",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_sedan_02_2026-10-07",
+    "vehicle_id": "veh_sedan_02",
+    "date": "2026-10-07",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_sedan_02_2026-10-08",
+    "vehicle_id": "veh_sedan_02",
+    "date": "2026-10-08",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_sedan_02_2026-10-09",
+    "vehicle_id": "veh_sedan_02",
+    "date": "2026-10-09",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_sedan_02_2026-10-10",
+    "vehicle_id": "veh_sedan_02",
+    "date": "2026-10-10",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_sedan_02_2026-10-11",
+    "vehicle_id": "veh_sedan_02",
+    "date": "2026-10-11",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_sedan_02_2026-10-12",
+    "vehicle_id": "veh_sedan_02",
+    "date": "2026-10-12",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_sedan_02_2026-10-13",
+    "vehicle_id": "veh_sedan_02",
+    "date": "2026-10-13",
+    "status": "booked",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_sedan_02_2026-10-14",
+    "vehicle_id": "veh_sedan_02",
+    "date": "2026-10-14",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_van_05_2026-10-01",
+    "vehicle_id": "veh_van_05",
+    "date": "2026-10-01",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_van_05_2026-10-02",
+    "vehicle_id": "veh_van_05",
+    "date": "2026-10-02",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_van_05_2026-10-03",
+    "vehicle_id": "veh_van_05",
+    "date": "2026-10-03",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_van_05_2026-10-04",
+    "vehicle_id": "veh_van_05",
+    "date": "2026-10-04",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_van_05_2026-10-05",
+    "vehicle_id": "veh_van_05",
+    "date": "2026-10-05",
+    "status": "booked",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_van_05_2026-10-06",
+    "vehicle_id": "veh_van_05",
+    "date": "2026-10-06",
+    "status": "booked",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_van_05_2026-10-07",
+    "vehicle_id": "veh_van_05",
+    "date": "2026-10-07",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_van_05_2026-10-08",
+    "vehicle_id": "veh_van_05",
+    "date": "2026-10-08",
+    "status": "booked",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_van_05_2026-10-09",
+    "vehicle_id": "veh_van_05",
+    "date": "2026-10-09",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_van_05_2026-10-10",
+    "vehicle_id": "veh_van_05",
+    "date": "2026-10-10",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_van_05_2026-10-11",
+    "vehicle_id": "veh_van_05",
+    "date": "2026-10-11",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_van_05_2026-10-12",
+    "vehicle_id": "veh_van_05",
+    "date": "2026-10-12",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_van_05_2026-10-13",
+    "vehicle_id": "veh_van_05",
+    "date": "2026-10-13",
+    "status": "booked",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_van_05_2026-10-14",
+    "vehicle_id": "veh_van_05",
+    "date": "2026-10-14",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_suv_06_2026-10-01",
+    "vehicle_id": "veh_suv_06",
+    "date": "2026-10-01",
+    "status": "booked",
+    "booking_id": "booking_013",
+    "region": "west"
+  },
+  {
+    "_id": "vavail_suv_06_2026-10-02",
+    "vehicle_id": "veh_suv_06",
+    "date": "2026-10-02",
+    "status": "booked",
+    "booking_id": "booking_013",
+    "region": "west"
+  },
+  {
+    "_id": "vavail_suv_06_2026-10-03",
+    "vehicle_id": "veh_suv_06",
+    "date": "2026-10-03",
+    "status": "booked",
+    "booking_id": "booking_013",
+    "region": "west"
+  },
+  {
+    "_id": "vavail_suv_06_2026-10-04",
+    "vehicle_id": "veh_suv_06",
+    "date": "2026-10-04",
+    "status": "booked",
+    "booking_id": "booking_013",
+    "region": "west"
+  },
+  {
+    "_id": "vavail_suv_06_2026-10-05",
+    "vehicle_id": "veh_suv_06",
+    "date": "2026-10-05",
+    "status": "available",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_suv_06_2026-10-06",
+    "vehicle_id": "veh_suv_06",
+    "date": "2026-10-06",
+    "status": "booked",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_suv_06_2026-10-07",
+    "vehicle_id": "veh_suv_06",
+    "date": "2026-10-07",
+    "status": "booked",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_suv_06_2026-10-08",
+    "vehicle_id": "veh_suv_06",
+    "date": "2026-10-08",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_suv_06_2026-10-09",
+    "vehicle_id": "veh_suv_06",
+    "date": "2026-10-09",
+    "status": "available",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_suv_06_2026-10-10",
+    "vehicle_id": "veh_suv_06",
+    "date": "2026-10-10",
+    "status": "available",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_suv_06_2026-10-11",
+    "vehicle_id": "veh_suv_06",
+    "date": "2026-10-11",
+    "status": "booked",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_suv_06_2026-10-12",
+    "vehicle_id": "veh_suv_06",
+    "date": "2026-10-12",
+    "status": "available",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_suv_06_2026-10-13",
+    "vehicle_id": "veh_suv_06",
+    "date": "2026-10-13",
+    "status": "available",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_suv_06_2026-10-14",
+    "vehicle_id": "veh_suv_06",
+    "date": "2026-10-14",
+    "status": "available",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_van_06_2026-10-01",
+    "vehicle_id": "veh_van_06",
+    "date": "2026-10-01",
+    "status": "available",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_van_06_2026-10-02",
+    "vehicle_id": "veh_van_06",
+    "date": "2026-10-02",
+    "status": "available",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_van_06_2026-10-03",
+    "vehicle_id": "veh_van_06",
+    "date": "2026-10-03",
+    "status": "available",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_van_06_2026-10-04",
+    "vehicle_id": "veh_van_06",
+    "date": "2026-10-04",
+    "status": "available",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_van_06_2026-10-05",
+    "vehicle_id": "veh_van_06",
+    "date": "2026-10-05",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_van_06_2026-10-06",
+    "vehicle_id": "veh_van_06",
+    "date": "2026-10-06",
+    "status": "available",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_van_06_2026-10-07",
+    "vehicle_id": "veh_van_06",
+    "date": "2026-10-07",
+    "status": "available",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_van_06_2026-10-08",
+    "vehicle_id": "veh_van_06",
+    "date": "2026-10-08",
+    "status": "available",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_van_06_2026-10-09",
+    "vehicle_id": "veh_van_06",
+    "date": "2026-10-09",
+    "status": "available",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_van_06_2026-10-10",
+    "vehicle_id": "veh_van_06",
+    "date": "2026-10-10",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_van_06_2026-10-11",
+    "vehicle_id": "veh_van_06",
+    "date": "2026-10-11",
+    "status": "available",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_van_06_2026-10-12",
+    "vehicle_id": "veh_van_06",
+    "date": "2026-10-12",
+    "status": "available",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_van_06_2026-10-13",
+    "vehicle_id": "veh_van_06",
+    "date": "2026-10-13",
+    "status": "available",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_van_06_2026-10-14",
+    "vehicle_id": "veh_van_06",
+    "date": "2026-10-14",
+    "status": "available",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_suv_07_2026-10-01",
+    "vehicle_id": "veh_suv_07",
+    "date": "2026-10-01",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_07_2026-10-02",
+    "vehicle_id": "veh_suv_07",
+    "date": "2026-10-02",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_07_2026-10-03",
+    "vehicle_id": "veh_suv_07",
+    "date": "2026-10-03",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_07_2026-10-04",
+    "vehicle_id": "veh_suv_07",
+    "date": "2026-10-04",
+    "status": "booked",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_07_2026-10-05",
+    "vehicle_id": "veh_suv_07",
+    "date": "2026-10-05",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_07_2026-10-06",
+    "vehicle_id": "veh_suv_07",
+    "date": "2026-10-06",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_07_2026-10-07",
+    "vehicle_id": "veh_suv_07",
+    "date": "2026-10-07",
+    "status": "booked",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_07_2026-10-08",
+    "vehicle_id": "veh_suv_07",
+    "date": "2026-10-08",
+    "status": "booked",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_07_2026-10-09",
+    "vehicle_id": "veh_suv_07",
+    "date": "2026-10-09",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_07_2026-10-10",
+    "vehicle_id": "veh_suv_07",
+    "date": "2026-10-10",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_07_2026-10-11",
+    "vehicle_id": "veh_suv_07",
+    "date": "2026-10-11",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_07_2026-10-12",
+    "vehicle_id": "veh_suv_07",
+    "date": "2026-10-12",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_07_2026-10-13",
+    "vehicle_id": "veh_suv_07",
+    "date": "2026-10-13",
+    "status": "booked",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_suv_07_2026-10-14",
+    "vehicle_id": "veh_suv_07",
+    "date": "2026-10-14",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_van_07_2026-10-01",
+    "vehicle_id": "veh_van_07",
+    "date": "2026-10-01",
+    "status": "available",
+    "booking_id": null,
+    "region": "east"
+  },
+  {
+    "_id": "vavail_van_07_2026-10-02",
+    "vehicle_id": "veh_van_07",
+    "date": "2026-10-02",
+    "status": "available",
+    "booking_id": null,
+    "region": "east"
+  },
+  {
+    "_id": "vavail_van_07_2026-10-03",
+    "vehicle_id": "veh_van_07",
+    "date": "2026-10-03",
+    "status": "available",
+    "booking_id": null,
+    "region": "east"
+  },
+  {
+    "_id": "vavail_van_07_2026-10-04",
+    "vehicle_id": "veh_van_07",
+    "date": "2026-10-04",
+    "status": "available",
+    "booking_id": null,
+    "region": "east"
+  },
+  {
+    "_id": "vavail_van_07_2026-10-05",
+    "vehicle_id": "veh_van_07",
+    "date": "2026-10-05",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "east"
+  },
+  {
+    "_id": "vavail_van_07_2026-10-06",
+    "vehicle_id": "veh_van_07",
+    "date": "2026-10-06",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "east"
+  },
+  {
+    "_id": "vavail_van_07_2026-10-07",
+    "vehicle_id": "veh_van_07",
+    "date": "2026-10-07",
+    "status": "available",
+    "booking_id": null,
+    "region": "east"
+  },
+  {
+    "_id": "vavail_van_07_2026-10-08",
+    "vehicle_id": "veh_van_07",
+    "date": "2026-10-08",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "east"
+  },
+  {
+    "_id": "vavail_van_07_2026-10-09",
+    "vehicle_id": "veh_van_07",
+    "date": "2026-10-09",
+    "status": "available",
+    "booking_id": null,
+    "region": "east"
+  },
+  {
+    "_id": "vavail_van_07_2026-10-10",
+    "vehicle_id": "veh_van_07",
+    "date": "2026-10-10",
+    "status": "available",
+    "booking_id": null,
+    "region": "east"
+  },
+  {
+    "_id": "vavail_van_07_2026-10-11",
+    "vehicle_id": "veh_van_07",
+    "date": "2026-10-11",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "east"
+  },
+  {
+    "_id": "vavail_van_07_2026-10-12",
+    "vehicle_id": "veh_van_07",
+    "date": "2026-10-12",
+    "status": "available",
+    "booking_id": null,
+    "region": "east"
+  },
+  {
+    "_id": "vavail_van_07_2026-10-13",
+    "vehicle_id": "veh_van_07",
+    "date": "2026-10-13",
+    "status": "available",
+    "booking_id": null,
+    "region": "east"
+  },
+  {
+    "_id": "vavail_van_07_2026-10-14",
+    "vehicle_id": "veh_van_07",
+    "date": "2026-10-14",
+    "status": "available",
+    "booking_id": null,
+    "region": "east"
+  },
+  {
+    "_id": "vavail_rent_01_2026-10-01",
+    "vehicle_id": "veh_rent_01",
+    "date": "2026-10-01",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_01_2026-10-02",
+    "vehicle_id": "veh_rent_01",
+    "date": "2026-10-02",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_01_2026-10-03",
+    "vehicle_id": "veh_rent_01",
+    "date": "2026-10-03",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_01_2026-10-04",
+    "vehicle_id": "veh_rent_01",
+    "date": "2026-10-04",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_01_2026-10-05",
+    "vehicle_id": "veh_rent_01",
+    "date": "2026-10-05",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_01_2026-10-06",
+    "vehicle_id": "veh_rent_01",
+    "date": "2026-10-06",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_01_2026-10-07",
+    "vehicle_id": "veh_rent_01",
+    "date": "2026-10-07",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_01_2026-10-08",
+    "vehicle_id": "veh_rent_01",
+    "date": "2026-10-08",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_01_2026-10-09",
+    "vehicle_id": "veh_rent_01",
+    "date": "2026-10-09",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_01_2026-10-10",
+    "vehicle_id": "veh_rent_01",
+    "date": "2026-10-10",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_01_2026-10-11",
+    "vehicle_id": "veh_rent_01",
+    "date": "2026-10-11",
+    "status": "booked",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_01_2026-10-12",
+    "vehicle_id": "veh_rent_01",
+    "date": "2026-10-12",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_01_2026-10-13",
+    "vehicle_id": "veh_rent_01",
+    "date": "2026-10-13",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_01_2026-10-14",
+    "vehicle_id": "veh_rent_01",
+    "date": "2026-10-14",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_02_2026-10-01",
+    "vehicle_id": "veh_rent_02",
+    "date": "2026-10-01",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_02_2026-10-02",
+    "vehicle_id": "veh_rent_02",
+    "date": "2026-10-02",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_02_2026-10-03",
+    "vehicle_id": "veh_rent_02",
+    "date": "2026-10-03",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_02_2026-10-04",
+    "vehicle_id": "veh_rent_02",
+    "date": "2026-10-04",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_02_2026-10-05",
+    "vehicle_id": "veh_rent_02",
+    "date": "2026-10-05",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_02_2026-10-06",
+    "vehicle_id": "veh_rent_02",
+    "date": "2026-10-06",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_02_2026-10-07",
+    "vehicle_id": "veh_rent_02",
+    "date": "2026-10-07",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_02_2026-10-08",
+    "vehicle_id": "veh_rent_02",
+    "date": "2026-10-08",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_02_2026-10-09",
+    "vehicle_id": "veh_rent_02",
+    "date": "2026-10-09",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_02_2026-10-10",
+    "vehicle_id": "veh_rent_02",
+    "date": "2026-10-10",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_02_2026-10-11",
+    "vehicle_id": "veh_rent_02",
+    "date": "2026-10-11",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_02_2026-10-12",
+    "vehicle_id": "veh_rent_02",
+    "date": "2026-10-12",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_02_2026-10-13",
+    "vehicle_id": "veh_rent_02",
+    "date": "2026-10-13",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_02_2026-10-14",
+    "vehicle_id": "veh_rent_02",
+    "date": "2026-10-14",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_03_2026-10-01",
+    "vehicle_id": "veh_rent_03",
+    "date": "2026-10-01",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_03_2026-10-02",
+    "vehicle_id": "veh_rent_03",
+    "date": "2026-10-02",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_03_2026-10-03",
+    "vehicle_id": "veh_rent_03",
+    "date": "2026-10-03",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_03_2026-10-04",
+    "vehicle_id": "veh_rent_03",
+    "date": "2026-10-04",
+    "status": "booked",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_03_2026-10-05",
+    "vehicle_id": "veh_rent_03",
+    "date": "2026-10-05",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_03_2026-10-06",
+    "vehicle_id": "veh_rent_03",
+    "date": "2026-10-06",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_03_2026-10-07",
+    "vehicle_id": "veh_rent_03",
+    "date": "2026-10-07",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_03_2026-10-08",
+    "vehicle_id": "veh_rent_03",
+    "date": "2026-10-08",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_03_2026-10-09",
+    "vehicle_id": "veh_rent_03",
+    "date": "2026-10-09",
+    "status": "booked",
+    "booking_id": "booking_022",
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_03_2026-10-10",
+    "vehicle_id": "veh_rent_03",
+    "date": "2026-10-10",
+    "status": "booked",
+    "booking_id": "booking_022",
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_03_2026-10-11",
+    "vehicle_id": "veh_rent_03",
+    "date": "2026-10-11",
+    "status": "booked",
+    "booking_id": "booking_022",
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_03_2026-10-12",
+    "vehicle_id": "veh_rent_03",
+    "date": "2026-10-12",
+    "status": "booked",
+    "booking_id": "booking_022",
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_03_2026-10-13",
+    "vehicle_id": "veh_rent_03",
+    "date": "2026-10-13",
+    "status": "booked",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_03_2026-10-14",
+    "vehicle_id": "veh_rent_03",
+    "date": "2026-10-14",
+    "status": "available",
+    "booking_id": null,
+    "region": "hub"
+  },
+  {
+    "_id": "vavail_rent_04_2026-10-01",
+    "vehicle_id": "veh_rent_04",
+    "date": "2026-10-01",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_rent_04_2026-10-02",
+    "vehicle_id": "veh_rent_04",
+    "date": "2026-10-02",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_rent_04_2026-10-03",
+    "vehicle_id": "veh_rent_04",
+    "date": "2026-10-03",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_rent_04_2026-10-04",
+    "vehicle_id": "veh_rent_04",
+    "date": "2026-10-04",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_rent_04_2026-10-05",
+    "vehicle_id": "veh_rent_04",
+    "date": "2026-10-05",
+    "status": "booked",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_rent_04_2026-10-06",
+    "vehicle_id": "veh_rent_04",
+    "date": "2026-10-06",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_rent_04_2026-10-07",
+    "vehicle_id": "veh_rent_04",
+    "date": "2026-10-07",
+    "status": "booked",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_rent_04_2026-10-08",
+    "vehicle_id": "veh_rent_04",
+    "date": "2026-10-08",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_rent_04_2026-10-09",
+    "vehicle_id": "veh_rent_04",
+    "date": "2026-10-09",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_rent_04_2026-10-10",
+    "vehicle_id": "veh_rent_04",
+    "date": "2026-10-10",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_rent_04_2026-10-11",
+    "vehicle_id": "veh_rent_04",
+    "date": "2026-10-11",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_rent_04_2026-10-12",
+    "vehicle_id": "veh_rent_04",
+    "date": "2026-10-12",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_rent_04_2026-10-13",
+    "vehicle_id": "veh_rent_04",
+    "date": "2026-10-13",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_rent_04_2026-10-14",
+    "vehicle_id": "veh_rent_04",
+    "date": "2026-10-14",
+    "status": "available",
+    "booking_id": null,
+    "region": "north"
+  },
+  {
+    "_id": "vavail_rent_05_2026-10-01",
+    "vehicle_id": "veh_rent_05",
+    "date": "2026-10-01",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_rent_05_2026-10-02",
+    "vehicle_id": "veh_rent_05",
+    "date": "2026-10-02",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_rent_05_2026-10-03",
+    "vehicle_id": "veh_rent_05",
+    "date": "2026-10-03",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_rent_05_2026-10-04",
+    "vehicle_id": "veh_rent_05",
+    "date": "2026-10-04",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_rent_05_2026-10-05",
+    "vehicle_id": "veh_rent_05",
+    "date": "2026-10-05",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_rent_05_2026-10-06",
+    "vehicle_id": "veh_rent_05",
+    "date": "2026-10-06",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_rent_05_2026-10-07",
+    "vehicle_id": "veh_rent_05",
+    "date": "2026-10-07",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_rent_05_2026-10-08",
+    "vehicle_id": "veh_rent_05",
+    "date": "2026-10-08",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_rent_05_2026-10-09",
+    "vehicle_id": "veh_rent_05",
+    "date": "2026-10-09",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_rent_05_2026-10-10",
+    "vehicle_id": "veh_rent_05",
+    "date": "2026-10-10",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_rent_05_2026-10-11",
+    "vehicle_id": "veh_rent_05",
+    "date": "2026-10-11",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_rent_05_2026-10-12",
+    "vehicle_id": "veh_rent_05",
+    "date": "2026-10-12",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_rent_05_2026-10-13",
+    "vehicle_id": "veh_rent_05",
+    "date": "2026-10-13",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_rent_05_2026-10-14",
+    "vehicle_id": "veh_rent_05",
+    "date": "2026-10-14",
+    "status": "available",
+    "booking_id": null,
+    "region": "south"
+  },
+  {
+    "_id": "vavail_rent_06_2026-10-01",
+    "vehicle_id": "veh_rent_06",
+    "date": "2026-10-01",
+    "status": "available",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_rent_06_2026-10-02",
+    "vehicle_id": "veh_rent_06",
+    "date": "2026-10-02",
+    "status": "available",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_rent_06_2026-10-03",
+    "vehicle_id": "veh_rent_06",
+    "date": "2026-10-03",
+    "status": "available",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_rent_06_2026-10-04",
+    "vehicle_id": "veh_rent_06",
+    "date": "2026-10-04",
+    "status": "available",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_rent_06_2026-10-05",
+    "vehicle_id": "veh_rent_06",
+    "date": "2026-10-05",
+    "status": "available",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_rent_06_2026-10-06",
+    "vehicle_id": "veh_rent_06",
+    "date": "2026-10-06",
+    "status": "available",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_rent_06_2026-10-07",
+    "vehicle_id": "veh_rent_06",
+    "date": "2026-10-07",
+    "status": "booked",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_rent_06_2026-10-08",
+    "vehicle_id": "veh_rent_06",
+    "date": "2026-10-08",
+    "status": "available",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_rent_06_2026-10-09",
+    "vehicle_id": "veh_rent_06",
+    "date": "2026-10-09",
+    "status": "available",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_rent_06_2026-10-10",
+    "vehicle_id": "veh_rent_06",
+    "date": "2026-10-10",
+    "status": "available",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_rent_06_2026-10-11",
+    "vehicle_id": "veh_rent_06",
+    "date": "2026-10-11",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_rent_06_2026-10-12",
+    "vehicle_id": "veh_rent_06",
+    "date": "2026-10-12",
+    "status": "available",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_rent_06_2026-10-13",
+    "vehicle_id": "veh_rent_06",
+    "date": "2026-10-13",
+    "status": "available",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_rent_06_2026-10-14",
+    "vehicle_id": "veh_rent_06",
+    "date": "2026-10-14",
+    "status": "available",
+    "booking_id": null,
+    "region": "west"
+  },
+  {
+    "_id": "vavail_rent_07_2026-10-01",
+    "vehicle_id": "veh_rent_07",
+    "date": "2026-10-01",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "east"
+  },
+  {
+    "_id": "vavail_rent_07_2026-10-02",
+    "vehicle_id": "veh_rent_07",
+    "date": "2026-10-02",
+    "status": "available",
+    "booking_id": null,
+    "region": "east"
+  },
+  {
+    "_id": "vavail_rent_07_2026-10-03",
+    "vehicle_id": "veh_rent_07",
+    "date": "2026-10-03",
+    "status": "available",
+    "booking_id": null,
+    "region": "east"
+  },
+  {
+    "_id": "vavail_rent_07_2026-10-04",
+    "vehicle_id": "veh_rent_07",
+    "date": "2026-10-04",
+    "status": "available",
+    "booking_id": null,
+    "region": "east"
+  },
+  {
+    "_id": "vavail_rent_07_2026-10-05",
+    "vehicle_id": "veh_rent_07",
+    "date": "2026-10-05",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "east"
+  },
+  {
+    "_id": "vavail_rent_07_2026-10-06",
+    "vehicle_id": "veh_rent_07",
+    "date": "2026-10-06",
+    "status": "available",
+    "booking_id": null,
+    "region": "east"
+  },
+  {
+    "_id": "vavail_rent_07_2026-10-07",
+    "vehicle_id": "veh_rent_07",
+    "date": "2026-10-07",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "east"
+  },
+  {
+    "_id": "vavail_rent_07_2026-10-08",
+    "vehicle_id": "veh_rent_07",
+    "date": "2026-10-08",
+    "status": "booked",
+    "booking_id": null,
+    "region": "east"
+  },
+  {
+    "_id": "vavail_rent_07_2026-10-09",
+    "vehicle_id": "veh_rent_07",
+    "date": "2026-10-09",
+    "status": "available",
+    "booking_id": null,
+    "region": "east"
+  },
+  {
+    "_id": "vavail_rent_07_2026-10-10",
+    "vehicle_id": "veh_rent_07",
+    "date": "2026-10-10",
+    "status": "available",
+    "booking_id": null,
+    "region": "east"
+  },
+  {
+    "_id": "vavail_rent_07_2026-10-11",
+    "vehicle_id": "veh_rent_07",
+    "date": "2026-10-11",
+    "status": "available",
+    "booking_id": null,
+    "region": "east"
+  },
+  {
+    "_id": "vavail_rent_07_2026-10-12",
+    "vehicle_id": "veh_rent_07",
+    "date": "2026-10-12",
+    "status": "available",
+    "booking_id": null,
+    "region": "east"
+  },
+  {
+    "_id": "vavail_rent_07_2026-10-13",
+    "vehicle_id": "veh_rent_07",
+    "date": "2026-10-13",
+    "status": "maintenance",
+    "booking_id": null,
+    "region": "east"
+  },
+  {
+    "_id": "vavail_rent_07_2026-10-14",
+    "vehicle_id": "veh_rent_07",
+    "date": "2026-10-14",
+    "status": "available",
+    "booking_id": null,
+    "region": "east"
+  }
+]

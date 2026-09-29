@@ -1,3 +1,4 @@
+import asyncio
 import logging
 import time
 from contextlib import asynccontextmanager
@@ -6,12 +7,13 @@ from fastapi import FastAPI, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.core.config import settings
+from app.db.mongo import ensure_indexes, get_database
 from app.middlewares.body_size_limit import BodySizeLimitMiddleware
-from app.middlewares.db_session import DBSessionMiddleware
 from app.middlewares.input_validation import InputValidationMiddleware
 from app.middlewares.rate_limit import RateLimitMiddleware
 from app.middlewares.request_logging import RequestLoggingMiddleware
 from app.middlewares.security_headers import SecurityHeadersMiddleware
+from app.v1 import travel
 from app.v1.api_user import user_router
 
 # ============================================================================
@@ -31,6 +33,12 @@ logger = logging.getLogger(__name__)
 async def lifespan(app: FastAPI):
     """Application startup and shutdown events."""
     logger.info("Starting %s in %s mode", settings.PROJECT_NAME, settings.ENV.value)
+    if settings.MONGO_INIT_ON_STARTUP:
+        # Geo queries and the unique email need these even if the seeder never ran on this database.
+        # Blocking pymongo calls run in a thread so the event loop stays free.
+        failed = await asyncio.to_thread(ensure_indexes, get_database())
+        if failed:
+            logger.error("MongoDB indexes missing on: %s (geo search may fail)", ", ".join(failed))
     yield
     logger.info("Shutting down %s", settings.PROJECT_NAME)
 
@@ -93,9 +101,6 @@ def _configure_middlewares(app: FastAPI) -> None:
     # Request logging
     app.add_middleware(RequestLoggingMiddleware)
 
-    # Database session
-    app.add_middleware(DBSessionMiddleware)
-
     # Security headers (last to execute - always add headers)
     app.add_middleware(SecurityHeadersMiddleware)
 
@@ -112,6 +117,7 @@ def _configure_middlewares(app: FastAPI) -> None:
 def _configure_routes(app: FastAPI) -> None:
     """Configure application routes."""
     app.include_router(user_router, prefix=settings.API_V1_STR)
+    app.include_router(travel.router, prefix=settings.API_V1_STR)
 
     @app.get("/", tags=["Root"])
     async def root() -> dict:

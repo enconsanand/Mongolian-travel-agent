@@ -1,0 +1,312 @@
+[
+  {
+    "_id": "itin_khuvsgul_v1",
+    "trip_id": "trip_demo_khuvsgul",
+    "version": 1,
+    "created_at": "2026-09-25T09:15:00Z",
+    "reason": "initial_plan",
+    "days": [
+      {
+        "day": 1,
+        "date": "2026-10-02",
+        "from_place_id": "place_ub",
+        "to_place_id": "place_bulgan",
+        "route_id": "route_ub_bulgan_via_erdenet",
+        "stay_id": "stay_bulgan_hotel_khan"
+      },
+      {
+        "day": 2,
+        "date": "2026-10-03",
+        "from_place_id": "place_bulgan",
+        "to_place_id": "place_khatgal",
+        "route_id": "route_ub_khatgal_via_erdenet",
+        "stay_id": "stay_khatgal_camp_blue_pearl",
+        "event_ids": [
+          "event_khatgal_season_close_race"
+        ]
+      },
+      {
+        "day": 3,
+        "date": "2026-10-04",
+        "from_place_id": "place_khatgal",
+        "to_place_id": "place_khatgal",
+        "stay_id": "stay_khatgal_camp_blue_pearl"
+      },
+      {
+        "day": 4,
+        "date": "2026-10-05",
+        "from_place_id": "place_khatgal",
+        "to_place_id": "place_murun",
+        "stay_id": "stay_murun_hotel_delger"
+      },
+      {
+        "day": 5,
+        "date": "2026-10-06",
+        "from_place_id": "place_murun",
+        "to_place_id": "place_ub",
+        "route_id": "route_ub_khatgal_via_lun"
+      }
+    ]
+  },
+  {
+    "_id": "itin_khuvsgul_v2",
+    "trip_id": "trip_demo_khuvsgul",
+    "version": 2,
+    "created_at": "2026-10-02T15:05:00Z",
+    "reason": "delay",
+    "change_request": "Хүүхэд өвдөөд 4 цаг хоцорлоо, өнөөдөр Булган хүрэхгүй нь. Эрдэнэтэд хонох уу?",
+    "agent_summary": {
+      "mn": "Өнөө шөнө Булганы оронд Эрдэнэтэд хононо, Булганы буудлыг цуцална (уян хатан нөхцөл, 24 цагаас бага үлдсэн тул 50% буцаана), 2 дахь өдөр Хатгал хүртэл урт замыг туулна, бусад төлөвлөгөө өөрчлөгдөхгүй.",
+      "en": "Stop in Erdenet tonight instead of Bulgan, cancel the Bulgan hotel (flexible policy, under 24h so 50% refund), day 2 becomes a longer drive to Khatgal, rest of the plan unchanged."
+    },
+    "days": [
+      {
+        "day": 1,
+        "date": "2026-10-02",
+        "from_place_id": "place_ub",
+        "to_place_id": "place_erdenet",
+        "route_id": "route_ub_bulgan_via_erdenet",
+        "stay_id": "stay_erdenet_hotel_copper"
+      },
+      {
+        "day": 2,
+        "date": "2026-10-03",
+        "from_place_id": "place_erdenet",
+        "to_place_id": "place_khatgal",
+        "route_id": "route_ub_khatgal_via_erdenet",
+        "stay_id": "stay_khatgal_camp_blue_pearl",
+        "event_ids": [
+          "event_khatgal_season_close_race"
+        ],
+        "note": {
+          "mn": "Урт өдөр, ~9 цаг жолоодно",
+          "en": "Long day, ~9h driving"
+        }
+      },
+      {
+        "day": 3,
+        "date": "2026-10-04",
+        "from_place_id": "place_khatgal",
+        "to_place_id": "place_khatgal",
+        "stay_id": "stay_khatgal_camp_blue_pearl"
+      },
+      {
+        "day": 4,
+        "date": "2026-10-05",
+        "from_place_id": "place_khatgal",
+        "to_place_id": "place_murun",
+        "stay_id": "stay_murun_hotel_delger"
+      },
+      {
+        "day": 5,
+        "date": "2026-10-06",
+        "from_place_id": "place_murun",
+        "to_place_id": "place_ub",
+        "route_id": "route_ub_khatgal_via_lun"
+      }
+    ]
+  },
+  {
+    "_id": "itin_gobi_v1",
+    "trip_id": "trip_demo_gobi",
+    "version": 1,
+    "created_at": "2026-09-27T14:45:00Z",
+    "reason": "initial_plan",
+    "days": [
+      {
+        "day": 1,
+        "date": "2026-10-08",
+        "from_place_id": "place_ub",
+        "to_place_id": "place_tsagaan_suvarga",
+        "route_id": "route_mandalgovi_tsagaan_suvarga",
+        "stay_id": "stay_tsagaan_suvarga_camp"
+      },
+      {
+        "day": 2,
+        "date": "2026-10-09",
+        "from_place_id": "place_tsagaan_suvarga",
+        "to_place_id": "place_yolyn_am",
+        "route_id": "route_dalanzadgad_yolyn_am",
+        "stay_id": "stay_yolyn_am_camp"
+      },
+      {
+        "day": 3,
+        "date": "2026-10-10",
+        "from_place_id": "place_yolyn_am",
+        "to_place_id": "place_khongoryn_els",
+        "route_id": "route_dalanzadgad_khongoryn_els",
+        "stay_id": "stay_khongor_camp_dunes",
+        "event_ids": [
+          "event_gobi_autumn_camel_race"
+        ]
+      },
+      {
+        "day": 4,
+        "date": "2026-10-11",
+        "from_place_id": "place_khongoryn_els",
+        "to_place_id": "place_bayanzag",
+        "route_id": "route_bayanzag_khongoryn_els",
+        "stay_id": "stay_bayanzag_camp"
+      },
+      {
+        "day": 5,
+        "date": "2026-10-12",
+        "from_place_id": "place_bayanzag",
+        "to_place_id": "place_ub",
+        "route_id": "route_ub_dalanzadgad"
+      }
+    ]
+  },
+  {
+    "_id": "itin_anand_eagle_v1",
+    "trip_id": "trip_anand_eagle",
+    "version": 1,
+    "created_at": "2026-09-26T08:05:00Z",
+    "reason": "initial_plan",
+    "days": [
+      {
+        "day": 1,
+        "date": "2026-10-01",
+        "from_place_id": "place_ub",
+        "to_place_id": "place_olgii",
+        "transport": {
+          "kind": "flight",
+          "schedule_id": "sched_flight_ub_olgii"
+        },
+        "stay_id": "stay_olgii_guesthouse_kazakh"
+      },
+      {
+        "day": 2,
+        "date": "2026-10-02",
+        "from_place_id": "place_olgii",
+        "to_place_id": "place_olgii",
+        "stay_id": "stay_olgii_eagle_hunter_family",
+        "note": {
+          "mn": "Жолооч Сериктэй хамт бүргэдчин айлд зочилно",
+          "en": "Visit eagle hunter family with driver Serik"
+        }
+      },
+      {
+        "day": 3,
+        "date": "2026-10-03",
+        "from_place_id": "place_olgii",
+        "to_place_id": "place_olgii",
+        "stay_id": "stay_olgii_guesthouse_kazakh",
+        "event_ids": [
+          "event_golden_eagle_festival_2026"
+        ]
+      },
+      {
+        "day": 4,
+        "date": "2026-10-04",
+        "from_place_id": "place_olgii",
+        "to_place_id": "place_olgii",
+        "stay_id": "stay_olgii_guesthouse_kazakh",
+        "event_ids": [
+          "event_golden_eagle_festival_2026"
+        ]
+      },
+      {
+        "day": 5,
+        "date": "2026-10-05",
+        "from_place_id": "place_olgii",
+        "to_place_id": "place_ub",
+        "transport": {
+          "kind": "flight",
+          "schedule_id": "sched_flight_ub_olgii",
+          "note": {
+            "mn": "буцах чиглэл",
+            "en": "return leg"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "_id": "itin_tsende_darkhan_v1",
+    "trip_id": "trip_tsende_darkhan",
+    "version": 1,
+    "created_at": "2026-09-28T10:35:00Z",
+    "reason": "initial_plan",
+    "days": [
+      {
+        "day": 1,
+        "date": "2026-10-03",
+        "from_place_id": "place_ub",
+        "to_place_id": "place_darkhan",
+        "transport": {
+          "kind": "train",
+          "schedule_id": "sched_train_ub_sukhbaatar",
+          "seat_class": "kupe"
+        },
+        "stay_id": "stay_darkhan_house_khongor",
+        "event_ids": [
+          "event_darkhan_autumn_fair"
+        ]
+      },
+      {
+        "day": 2,
+        "date": "2026-10-04",
+        "from_place_id": "place_darkhan",
+        "to_place_id": "place_darkhan",
+        "stay_id": "stay_darkhan_house_khongor",
+        "event_ids": [
+          "event_darkhan_autumn_fair"
+        ]
+      },
+      {
+        "day": 3,
+        "date": "2026-10-05",
+        "from_place_id": "place_darkhan",
+        "to_place_id": "place_ub",
+        "transport": {
+          "kind": "shared_ride",
+          "ride_id": "ride_012"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "itin_jamba_east_v1",
+    "trip_id": "trip_jamba_east",
+    "version": 1,
+    "created_at": "2026-09-29T09:05:00Z",
+    "reason": "initial_plan",
+    "days": [
+      {
+        "day": 1,
+        "date": "2026-10-09",
+        "from_place_id": "place_ub",
+        "to_place_id": "place_chinggis_city",
+        "route_id": "route_ub_chinggis",
+        "transport": {
+          "kind": "self_drive",
+          "vehicle_id": "veh_rent_03"
+        },
+        "stay_id": "stay_chinggis_hotel_kherlen"
+      },
+      {
+        "day": 2,
+        "date": "2026-10-10",
+        "from_place_id": "place_chinggis_city",
+        "to_place_id": "place_dadal",
+        "route_id": "route_chinggis_dadal",
+        "stay_id": "stay_dadal_log_house"
+      },
+      {
+        "day": 3,
+        "date": "2026-10-11",
+        "from_place_id": "place_dadal",
+        "to_place_id": "place_dadal",
+        "stay_id": "stay_dadal_log_house"
+      },
+      {
+        "day": 4,
+        "date": "2026-10-12",
+        "from_place_id": "place_dadal",
+        "to_place_id": "place_ub",
+        "route_id": "route_ub_chinggis"
+      }
+    ]
+  }
+]

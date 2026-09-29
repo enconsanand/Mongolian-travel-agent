@@ -1,0 +1,428 @@
+[
+  {
+    "_id": "north",
+    "code": "north",
+    "name": {
+      "mn": "Хойд бүс",
+      "en": "North"
+    },
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            97.5,
+            46.4
+          ],
+          [
+            102.0,
+            46.4
+          ],
+          [
+            102.0,
+            46.0
+          ],
+          [
+            107.8,
+            46.0
+          ],
+          [
+            107.8,
+            46.6
+          ],
+          [
+            108.5,
+            46.6
+          ],
+          [
+            108.5,
+            52.2
+          ],
+          [
+            97.5,
+            52.2
+          ],
+          [
+            97.5,
+            46.4
+          ]
+        ]
+      ]
+    },
+    "boundary_is_approximate": true,
+    "aimags": [
+      {
+        "name": "Töv",
+        "name_mn": "Төв"
+      },
+      {
+        "name": "Selenge",
+        "name_mn": "Сэлэнгэ"
+      },
+      {
+        "name": "Darkhan-Uul",
+        "name_mn": "Дархан-Уул"
+      },
+      {
+        "name": "Orkhon",
+        "name_mn": "Орхон"
+      },
+      {
+        "name": "Bulgan",
+        "name_mn": "Булган"
+      },
+      {
+        "name": "Khövsgöl",
+        "name_mn": "Хөвсгөл"
+      },
+      {
+        "name": "Arkhangai",
+        "name_mn": "Архангай"
+      },
+      {
+        "name": "Övörkhangai",
+        "name_mn": "Өвөрхангай"
+      }
+    ],
+    "highlights": [
+      {
+        "mn": "Хөвсгөл нуур",
+        "en": "Khövsgöl Lake"
+      },
+      {
+        "mn": "Амарбаясгалант",
+        "en": "Amarbayasgalant"
+      },
+      {
+        "mn": "Хархорин, Эрдэнэ Зуу",
+        "en": "Kharkhorin, Erdene Zuu"
+      },
+      {
+        "mn": "Тэрхийн Цагаан нуур",
+        "en": "Terkhiin Tsagaan Lake"
+      },
+      {
+        "mn": "Уран Тогоо",
+        "en": "Uran Togoo"
+      }
+    ],
+    "best_months": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "min_days": 5,
+    "notes": {
+      "mn": "Ой, нуур, хийдүүд. Ихэнх зам нь хатуу хучилттай; Дархан, Эрдэнэт рүү галт тэрэг явдаг.",
+      "en": "Forests, lakes, monasteries. Mostly paved roads; train to Darkhan and Erdenet."
+    },
+    "is_mock": true
+  },
+  {
+    "_id": "west",
+    "code": "west",
+    "name": {
+      "mn": "Баруун бүс",
+      "en": "West"
+    },
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            87.7,
+            41.5
+          ],
+          [
+            97.5,
+            41.5
+          ],
+          [
+            97.5,
+            52.2
+          ],
+          [
+            87.7,
+            52.2
+          ],
+          [
+            87.7,
+            41.5
+          ]
+        ]
+      ]
+    },
+    "boundary_is_approximate": true,
+    "aimags": [
+      {
+        "name": "Bayan-Ölgii",
+        "name_mn": "Баян-Өлгий"
+      },
+      {
+        "name": "Uvs",
+        "name_mn": "Увс"
+      },
+      {
+        "name": "Khovd",
+        "name_mn": "Ховд"
+      },
+      {
+        "name": "Zavkhan",
+        "name_mn": "Завхан"
+      },
+      {
+        "name": "Govi-Altai",
+        "name_mn": "Говь-Алтай"
+      }
+    ],
+    "highlights": [
+      {
+        "mn": "Бүргэдийн баяр",
+        "en": "Golden Eagle Festival"
+      },
+      {
+        "mn": "Алтай Таван Богд",
+        "en": "Altai Tavan Bogd"
+      },
+      {
+        "mn": "Увс нуур",
+        "en": "Uvs Lake"
+      },
+      {
+        "mn": "Хар ус нуур",
+        "en": "Khar Us Lake"
+      },
+      {
+        "mn": "Казах соёл",
+        "en": "Kazakh culture"
+      }
+    ],
+    "best_months": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "min_days": 7,
+    "notes": {
+      "mn": "УБ-аас маш хол (1,400+ км); Өлгий эсвэл Ховд руу нисээд орон нутгийн жолооч хөлслөнө.",
+      "en": "Very far from UB (1,400+ km); fly to Ölgii or Khovd and hire a local driver."
+    },
+    "is_mock": true
+  },
+  {
+    "_id": "east",
+    "code": "east",
+    "name": {
+      "mn": "Зүүн бүс",
+      "en": "East"
+    },
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            108.5,
+            46.6
+          ],
+          [
+            109.0,
+            46.6
+          ],
+          [
+            109.0,
+            46.0
+          ],
+          [
+            112.0,
+            46.0
+          ],
+          [
+            112.0,
+            44.5
+          ],
+          [
+            119.95,
+            44.5
+          ],
+          [
+            119.95,
+            50.4
+          ],
+          [
+            108.5,
+            50.4
+          ],
+          [
+            108.5,
+            46.6
+          ]
+        ]
+      ]
+    },
+    "boundary_is_approximate": true,
+    "aimags": [
+      {
+        "name": "Khentii",
+        "name_mn": "Хэнтий"
+      },
+      {
+        "name": "Dornod",
+        "name_mn": "Дорнод"
+      },
+      {
+        "name": "Sükhbaatar",
+        "name_mn": "Сүхбаатар"
+      }
+    ],
+    "highlights": [
+      {
+        "mn": "Дадал (Чингис хааны төрсөн нутаг)",
+        "en": "Dadal (Chinggis Khaan birthplace)"
+      },
+      {
+        "mn": "Дорнын талын цагаан зээр",
+        "en": "Eastern steppe gazelles"
+      },
+      {
+        "mn": "Шилийн Богд",
+        "en": "Shiliin Bogd"
+      },
+      {
+        "mn": "Дарьганга",
+        "en": "Dariganga"
+      }
+    ],
+    "best_months": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "min_days": 4,
+    "notes": {
+      "mn": "Уудам тал, түүх; Чойбалсан хүртэл урт хатуу хучилттай зам.",
+      "en": "Open steppe and history; long paved road to Choibalsan."
+    },
+    "is_mock": true
+  },
+  {
+    "_id": "south",
+    "code": "south",
+    "name": {
+      "mn": "Өмнөд бүс",
+      "en": "South"
+    },
+    "boundary": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            97.5,
+            41.5
+          ],
+          [
+            112.0,
+            41.5
+          ],
+          [
+            112.0,
+            46.0
+          ],
+          [
+            109.0,
+            46.0
+          ],
+          [
+            109.0,
+            46.6
+          ],
+          [
+            107.8,
+            46.6
+          ],
+          [
+            107.8,
+            46.0
+          ],
+          [
+            102.0,
+            46.0
+          ],
+          [
+            102.0,
+            46.4
+          ],
+          [
+            97.5,
+            46.4
+          ],
+          [
+            97.5,
+            41.5
+          ]
+        ]
+      ]
+    },
+    "boundary_is_approximate": true,
+    "aimags": [
+      {
+        "name": "Ömnögovi",
+        "name_mn": "Өмнөговь"
+      },
+      {
+        "name": "Dundgovi",
+        "name_mn": "Дундговь"
+      },
+      {
+        "name": "Dornogovi",
+        "name_mn": "Дорноговь"
+      },
+      {
+        "name": "Govisümber",
+        "name_mn": "Говьсүмбэр"
+      },
+      {
+        "name": "Bayankhongor",
+        "name_mn": "Баянхонгор"
+      }
+    ],
+    "highlights": [
+      {
+        "mn": "Хонгорын элс",
+        "en": "Khongoryn Els dunes"
+      },
+      {
+        "mn": "Ёлын ам",
+        "en": "Yolyn Am"
+      },
+      {
+        "mn": "Баянзагийн улаан эрэг",
+        "en": "Bayanzag Flaming Cliffs"
+      },
+      {
+        "mn": "Цагаан суварга",
+        "en": "Tsagaan Suvarga"
+      },
+      {
+        "mn": "Мянган тэмээний баяр",
+        "en": "Thousand Camel Festival"
+      }
+    ],
+    "best_months": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "min_days": 5,
+    "notes": {
+      "mn": "Говь цөл; ихэнх жуулчны бааз 10-р сарын дундуур хаагдана. Даланзадгад руу онгоц, Сайншанд руу галт тэрэг явдаг.",
+      "en": "Gobi desert; most ger camps close mid-October. Flights to Dalanzadgad, train to Sainshand."
+    },
+    "is_mock": true
+  }
+]

@@ -64,11 +64,11 @@ bash-back:
 bash-front:
 	docker compose -f docker-compose.yml --env-file ./secret/.env run --rm front sh
 
-migrate: ## Run alembic migrations
-	docker compose -f docker-compose.yml --env-file ./secret/.env run --rm back uv run alembic upgrade head
+seed: ## Load data/mock into MongoDB, create login users and indexes (keeps trips, bookings, payments)
+	docker compose -f docker-compose.yml --env-file ./secret/.env run --rm back bash -c "export PYTHONPATH=. && uv run python ./app/seeder.py"
 
-seed: ## Seed the database
-	docker compose -f docker-compose.yml --env-file ./secret/.env run --rm back bash -c "export PYTHONPATH=. && python ./app/seeder.py"
+seed-reset: ## Like seed, but also replaces trips, bookings, payments and availability with the demo data
+	docker compose -f docker-compose.yml --env-file ./secret/.env run --rm back bash -c "export PYTHONPATH=. && uv run python ./app/seeder.py --reset"
 
 ruff-sort:
 	docker compose -f docker-compose.yml --env-file ./secret/.env run --rm back uv run ruff check --select I --fix
@@ -96,7 +96,7 @@ lint: ruff-sort ruff-check ruff-format mypy prettier eslint ts-check ## Run all 
 test: ## Run backend tests
 	docker compose -f docker-compose.yml --env-file ./secret/.env run --rm back uv run pytest
 
-install: down clear build migrate seed down up ## Full clean installation and startup
+install: down clear build seed down up ## Full clean installation and startup
 
 
 ######################## PRODUCTION ENVIRONMENT #############################

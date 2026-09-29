@@ -1,0 +1,335 @@
+[
+  {
+    "_id": "quote_anand_a",
+    "trip_id": "trip_anand_eagle",
+    "user_id": "user_anand",
+    "label": {
+      "mn": "Онгоц + орон нутгийн жолооч",
+      "en": "Fly + local driver"
+    },
+    "lines": [
+      {
+        "kind": "flight",
+        "ref_id": "sched_flight_ub_olgii",
+        "qty": 2,
+        "unit_price_mnt": 520000,
+        "total_mnt": 1040000,
+        "label": {
+          "mn": "УБ ⇄ Өлгий нислэг",
+          "en": "UB ⇄ Ölgii flights"
+        }
+      },
+      {
+        "kind": "vehicle",
+        "ref_id": "veh_suv_06",
+        "qty": 4,
+        "unit_price_mnt": 400000,
+        "total_mnt": 1600000,
+        "label": {
+          "mn": "Жолооч Сериктэй Land Cruiser, 4 өдөр",
+          "en": "Land Cruiser with driver Serik, 4 days"
+        }
+      },
+      {
+        "kind": "stay",
+        "ref_id": "stay_olgii_guesthouse_kazakh",
+        "qty": 3,
+        "unit_price_mnt": 90000,
+        "total_mnt": 270000,
+        "label": {
+          "mn": "Гэр буудлын 2 хүний өрөө, 3 шөнө",
+          "en": "Guesthouse double room, 3 nights"
+        }
+      },
+      {
+        "kind": "stay",
+        "ref_id": "stay_olgii_eagle_hunter_family",
+        "qty": 1,
+        "unit_price_mnt": 55000,
+        "total_mnt": 55000,
+        "label": {
+          "mn": "Бүргэдчин айлын гэр, 1 шөнө",
+          "en": "Eagle hunter family ger, 1 night"
+        }
+      },
+      {
+        "kind": "event",
+        "ref_id": "event_golden_eagle_festival_2026",
+        "qty": 2,
+        "unit_price_mnt": 60000,
+        "total_mnt": 120000,
+        "label": {
+          "mn": "Баярын тасалбар, 2 өдөр",
+          "en": "Festival tickets, 2 days"
+        }
+      }
+    ],
+    "total_mnt": 3085000,
+    "currency": "MNT",
+    "status": "accepted",
+    "valid_until": "2026-10-01T00:00:00Z",
+    "created_at": "2026-09-26T08:05:00Z",
+    "is_mock": true
+  },
+  {
+    "_id": "quote_anand_b",
+    "trip_id": "trip_anand_eagle",
+    "user_id": "user_anand",
+    "label": {
+      "mn": "Хамтын унаагаар газраар",
+      "en": "Shared ride overland"
+    },
+    "lines": [
+      {
+        "kind": "shared_ride",
+        "ref_id": "ride_008",
+        "qty": 1,
+        "unit_price_mnt": 250000,
+        "total_mnt": 250000,
+        "label": {
+          "mn": "Айбектай УБ → Өлгий суудал (2 өдөр)",
+          "en": "Seat UB → Ölgii with Aibek (2 days)"
+        }
+      },
+      {
+        "kind": "stay",
+        "ref_id": "stay_olgii_guesthouse_kazakh",
+        "qty": 3,
+        "unit_price_mnt": 90000,
+        "total_mnt": 270000,
+        "label": {
+          "mn": "Гэр буудал, 3 шөнө",
+          "en": "Guesthouse, 3 nights"
+        }
+      },
+      {
+        "kind": "event",
+        "ref_id": "event_golden_eagle_festival_2026",
+        "qty": 2,
+        "unit_price_mnt": 60000,
+        "total_mnt": 120000,
+        "label": {
+          "mn": "Баярын тасалбар",
+          "en": "Festival tickets"
+        }
+      },
+      {
+        "kind": "flight",
+        "ref_id": "sched_flight_ub_olgii",
+        "qty": 1,
+        "unit_price_mnt": 520000,
+        "total_mnt": 520000,
+        "label": {
+          "mn": "Онгоцоор буцна",
+          "en": "Fly back"
+        }
+      }
+    ],
+    "total_mnt": 1160000,
+    "currency": "MNT",
+    "status": "declined",
+    "valid_until": "2026-10-01T00:00:00Z",
+    "created_at": "2026-09-26T08:05:00Z",
+    "is_mock": true
+  },
+  {
+    "_id": "quote_tsende_a",
+    "trip_id": "trip_tsende_darkhan",
+    "user_id": "user_tsende",
+    "label": {
+      "mn": "Галт тэрэг + гэр бүлийн байшин",
+      "en": "Train + family house"
+    },
+    "lines": [
+      {
+        "kind": "train",
+        "ref_id": "sched_train_ub_sukhbaatar",
+        "qty": 3,
+        "unit_price_mnt": 38000,
+        "total_mnt": 114000,
+        "label": {
+          "mn": "УБ → Дархан купе суудал x3",
+          "en": "Kupe seats UB → Darkhan x3"
+        }
+      },
+      {
+        "kind": "stay",
+        "ref_id": "stay_darkhan_house_khongor",
+        "qty": 2,
+        "unit_price_mnt": 250000,
+        "total_mnt": 500000,
+        "label": {
+          "mn": "Бүтэн байшин, 2 шөнө",
+          "en": "Whole house, 2 nights"
+        }
+      },
+      {
+        "kind": "shared_ride",
+        "ref_id": "ride_012",
+        "qty": 3,
+        "unit_price_mnt": 25000,
+        "total_mnt": 75000,
+        "label": {
+          "mn": "Prius-аар УБ руу буцах, 3 суудал",
+          "en": "Prius back to UB, 3 seats"
+        }
+      }
+    ],
+    "total_mnt": 689000,
+    "currency": "MNT",
+    "status": "accepted",
+    "valid_until": "2026-10-01T00:00:00Z",
+    "created_at": "2026-09-28T10:35:00Z",
+    "is_mock": true
+  },
+  {
+    "_id": "quote_tsende_b",
+    "trip_id": "trip_tsende_darkhan",
+    "user_id": "user_tsende",
+    "label": {
+      "mn": "Автобус + зочид буудал",
+      "en": "Bus + hotel"
+    },
+    "lines": [
+      {
+        "kind": "bus",
+        "ref_id": "sched_bus_ub_darkhan",
+        "qty": 6,
+        "unit_price_mnt": 17000,
+        "total_mnt": 102000,
+        "label": {
+          "mn": "Хоёр чиглэлийн автобус x3",
+          "en": "Bus both ways x3"
+        }
+      },
+      {
+        "kind": "stay",
+        "ref_id": "stay_darkhan_hotel_selenge",
+        "qty": 2,
+        "unit_price_mnt": 160000,
+        "total_mnt": 320000,
+        "label": {
+          "mn": "2 хүний өрөө, 2 шөнө",
+          "en": "Double room, 2 nights"
+        }
+      }
+    ],
+    "total_mnt": 422000,
+    "currency": "MNT",
+    "status": "declined",
+    "valid_until": "2026-10-01T00:00:00Z",
+    "created_at": "2026-09-28T10:35:00Z",
+    "is_mock": true
+  },
+  {
+    "_id": "quote_jamba_a",
+    "trip_id": "trip_jamba_east",
+    "user_id": "user_jamba",
+    "label": {
+      "mn": "Өөрөө жолоодох Prado",
+      "en": "Self-drive Prado"
+    },
+    "lines": [
+      {
+        "kind": "vehicle",
+        "ref_id": "veh_rent_03",
+        "qty": 4,
+        "unit_price_mnt": 280000,
+        "total_mnt": 1120000,
+        "label": {
+          "mn": "Өөрөө жолоодох Prado, 4 өдөр",
+          "en": "Prado self-drive, 4 days"
+        }
+      },
+      {
+        "kind": "insurance",
+        "ref_id": "veh_rent_03",
+        "qty": 4,
+        "unit_price_mnt": 30000,
+        "total_mnt": 120000,
+        "label": {
+          "mn": "Даатгал, 4 өдөр",
+          "en": "Insurance, 4 days"
+        }
+      },
+      {
+        "kind": "stay",
+        "ref_id": "stay_chinggis_hotel_kherlen",
+        "qty": 1,
+        "unit_price_mnt": 120000,
+        "total_mnt": 120000,
+        "label": {
+          "mn": "Зочид буудал, 1 шөнө",
+          "en": "Hotel, 1 night"
+        }
+      },
+      {
+        "kind": "stay",
+        "ref_id": "stay_dadal_log_house",
+        "qty": 2,
+        "unit_price_mnt": 300000,
+        "total_mnt": 600000,
+        "label": {
+          "mn": "Модон байшин, 2 шөнө",
+          "en": "Log house, 2 nights"
+        }
+      }
+    ],
+    "total_mnt": 1960000,
+    "currency": "MNT",
+    "status": "accepted",
+    "valid_until": "2026-10-01T00:00:00Z",
+    "created_at": "2026-09-29T09:05:00Z",
+    "is_mock": true
+  },
+  {
+    "_id": "quote_jamba_b",
+    "trip_id": "trip_jamba_east",
+    "user_id": "user_jamba",
+    "label": {
+      "mn": "Жолоочтой + бааз",
+      "en": "Driver + camp"
+    },
+    "lines": [
+      {
+        "kind": "shared_ride",
+        "ref_id": "ride_009",
+        "qty": 2,
+        "unit_price_mnt": 35000,
+        "total_mnt": 70000,
+        "label": {
+          "mn": "УБ → Чингис хот 2 суудал",
+          "en": "2 seats UB → Chinggis"
+        }
+      },
+      {
+        "kind": "vehicle",
+        "ref_id": "veh_suv_07",
+        "qty": 3,
+        "unit_price_mnt": 420000,
+        "total_mnt": 1260000,
+        "label": {
+          "mn": "Жолоочтой Land Cruiser, 3 өдөр",
+          "en": "Land Cruiser with driver, 3 days"
+        }
+      },
+      {
+        "kind": "stay",
+        "ref_id": "stay_dadal_camp_gurvan_nuur",
+        "qty": 2,
+        "unit_price_mnt": 180000,
+        "total_mnt": 360000,
+        "label": {
+          "mn": "Жуулчны бааз, 2 хүн x 2 шөнө",
+          "en": "Ger camp, 2 people x 2 nights"
+        }
+      }
+    ],
+    "total_mnt": 1690000,
+    "currency": "MNT",
+    "status": "quoted",
+    "valid_until": "2026-10-01T00:00:00Z",
+    "created_at": "2026-09-29T09:05:00Z",
+    "is_mock": true
+  }
+]

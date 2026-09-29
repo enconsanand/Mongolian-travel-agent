@@ -1,0 +1,1926 @@
+[
+  {
+    "_id": "event_darkhan_autumn_fair",
+    "name": {
+      "mn": "Дархан намрын ургацын яармаг",
+      "en": "Darkhan Autumn Harvest & Airag Fair"
+    },
+    "place_id": "place_darkhan",
+    "aimag": "Darkhan-Uul",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        105.9228,
+        49.4867
+      ]
+    },
+    "category": "festival",
+    "start_date": "2026-10-03",
+    "end_date": "2026-10-04",
+    "ticket_price_mnt": 0,
+    "expected_attendance": 8000,
+    "stay_demand_multiplier": 1.3,
+    "description": {
+      "mn": "Төвийн талбайд нутгийн хүнсний ногоо, цагаан идээ, айраг, гар урлал.",
+      "en": "Local vegetables, dairy, airag, crafts in the central square."
+    },
+    "date_confidence": "approximate",
+    "is_mock": true,
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Darkhan_50_Complex.jpg/1280px-Darkhan_50_Complex.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Darkhan_50_Complex.jpg",
+        "title": "Darkhan 50 Complex.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Chongkian",
+        "source": "https://commons.wikimedia.org/wiki/File:Darkhan_50_Complex.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Darkhan_%28cropped%29.jpg/1280px-Darkhan_%28cropped%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Darkhan_%28cropped%29.jpg",
+        "title": "Darkhan (cropped).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Chongkian",
+        "source": "https://commons.wikimedia.org/wiki/File:Darkhan_(cropped).jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Darkhan_50_Complex.jpg/1280px-Darkhan_50_Complex.jpg"
+  },
+  {
+    "_id": "event_khatgal_season_close_race",
+    "name": {
+      "mn": "Хөвсгөлийн улирал хаалтын морины уралдаан",
+      "en": "Khövsgöl Season-Closing Horse Race"
+    },
+    "place_id": "place_khatgal",
+    "aimag": "Khövsgöl",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        100.16,
+        50.4425
+      ]
+    },
+    "category": "sport",
+    "start_date": "2026-10-03",
+    "end_date": "2026-10-03",
+    "ticket_price_mnt": 0,
+    "expected_attendance": 1500,
+    "stay_demand_multiplier": 1.5,
+    "description": {
+      "mn": "Баазууд өвөлждөг үед болдог жижиг морин уралдаан, түүдэг гал.",
+      "en": "Small local horse race and bonfire as camps close for winter."
+    },
+    "date_confidence": "approximate",
+    "is_mock": true,
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_07.JPG/1280px-Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_07.JPG",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_07.JPG",
+        "title": "Koń mongolski w Parku Narodowym Gorchi-Tereldż 07.JPG",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Marcin Konsek",
+        "source": "https://commons.wikimedia.org/wiki/File:Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_07.JPG",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Konie_mongolskie_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_03.JPG/1280px-Konie_mongolskie_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_03.JPG",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Konie_mongolskie_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_03.JPG",
+        "title": "Konie mongolskie w Parku Narodowym Gorchi-Tereldż 03.JPG",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Marcin Konsek",
+        "source": "https://commons.wikimedia.org/wiki/File:Konie_mongolskie_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_03.JPG",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_06.JPG/1280px-Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_06.JPG",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_06.JPG",
+        "title": "Koń mongolski w Parku Narodowym Gorchi-Tereldż 06.JPG",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Marcin Konsek",
+        "source": "https://commons.wikimedia.org/wiki/File:Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_06.JPG",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_09.JPG/1280px-Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_09.JPG",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_09.JPG",
+        "title": "Koń mongolski w Parku Narodowym Gorchi-Tereldż 09.JPG",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Marcin Konsek",
+        "source": "https://commons.wikimedia.org/wiki/File:Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_09.JPG",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_07.JPG/1280px-Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_07.JPG"
+  },
+  {
+    "_id": "event_uran_togoo_hike_day",
+    "name": {
+      "mn": "Уран Тогоо намрын аялал",
+      "en": "Uran Togoo Autumn Hike Day"
+    },
+    "place_id": "place_uran_togoo",
+    "aimag": "Bulgan",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        102.7406,
+        48.9981
+      ]
+    },
+    "category": "outdoor",
+    "start_date": "2026-10-04",
+    "end_date": "2026-10-04",
+    "ticket_price_mnt": 10000,
+    "expected_attendance": 400,
+    "stay_demand_multiplier": 1.2,
+    "description": {
+      "mn": "Булганы залуу сайн дурынхантай хамт тогоо руу хөтөчтэй бүлгийн аялал.",
+      "en": "Guided group hike to the crater with Bulgan youth volunteers."
+    },
+    "date_confidence": "approximate",
+    "is_mock": true,
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/UranTogooCaldera.jpg/1280px-UranTogooCaldera.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/56/UranTogooCaldera.jpg",
+        "title": "UranTogooCaldera.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Chinneeb",
+        "source": "https://commons.wikimedia.org/wiki/File:UranTogooCaldera.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Volcano_Uran_Togoo_-_panoramio.jpg/1280px-Volcano_Uran_Togoo_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Volcano_Uran_Togoo_-_panoramio.jpg",
+        "title": "Volcano Uran Togoo - panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Alex Ang",
+        "source": "https://commons.wikimedia.org/wiki/File:Volcano_Uran_Togoo_-_panoramio.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/UranTogoo.jpg/1280px-UranTogoo.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/06/UranTogoo.jpg",
+        "title": "UranTogoo.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Yaan",
+        "source": "https://commons.wikimedia.org/wiki/File:UranTogoo.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/UranTogooCaldera.jpg/1280px-UranTogooCaldera.jpg"
+  },
+  {
+    "_id": "event_gobi_autumn_camel_race",
+    "name": {
+      "mn": "Говийн намрын тэмээн уралдаан",
+      "en": "Gobi Autumn Camel Race"
+    },
+    "place_id": "place_dalanzadgad",
+    "aimag": "Ömnögovi",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        104.425,
+        43.5708
+      ]
+    },
+    "category": "sport",
+    "start_date": "2026-10-10",
+    "end_date": "2026-10-11",
+    "ticket_price_mnt": 0,
+    "expected_attendance": 3000,
+    "stay_demand_multiplier": 1.6,
+    "description": {
+      "mn": "Тэмээн уралдаан, тэмээн поло, малчдын гар урлалын лангуу.",
+      "en": "Camel races, camel polo, herder craft stalls."
+    },
+    "date_confidence": "approximate",
+    "is_mock": true,
+    "region": "south",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Camels_at_Khongoryn_Els_01.jpg/1280px-Camels_at_Khongoryn_Els_01.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Camels_at_Khongoryn_Els_01.jpg",
+        "title": "Camels at Khongoryn Els 01.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Camels_at_Khongoryn_Els_01.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Camel_at_Khongoryn_Els_01.jpg/1280px-Camel_at_Khongoryn_Els_01.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Camel_at_Khongoryn_Els_01.jpg",
+        "title": "Camel at Khongoryn Els 01.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Camel_at_Khongoryn_Els_01.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Camel_in_the_Gobi_desert.JPG/1280px-Camel_in_the_Gobi_desert.JPG",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Camel_in_the_Gobi_desert.JPG",
+        "title": "Camel in the Gobi desert.JPG",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Kelapstick",
+        "source": "https://commons.wikimedia.org/wiki/File:Camel_in_the_Gobi_desert.JPG",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Camels_in_Mongolia_20230908-3.jpg/1280px-Camels_in_Mongolia_20230908-3.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Camels_in_Mongolia_20230908-3.jpg",
+        "title": "Camels in Mongolia 20230908-3.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "ノボホショコロトソ",
+        "source": "https://commons.wikimedia.org/wiki/File:Camels_in_Mongolia_20230908-3.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Camels_at_Khongoryn_Els_01.jpg/1280px-Camels_at_Khongoryn_Els_01.jpg"
+  },
+  {
+    "_id": "event_ub_tsagaan_sar_2027",
+    "name": {
+      "mn": "Цагаан сар",
+      "en": "Tsagaan Sar (Lunar New Year)"
+    },
+    "place_id": "place_ub",
+    "aimag": "Ulaanbaatar",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        106.9177,
+        47.9186
+      ]
+    },
+    "category": "national_holiday",
+    "start_date": "2027-02-07",
+    "end_date": "2027-02-09",
+    "ticket_price_mnt": 0,
+    "expected_attendance": 1500000,
+    "stay_demand_multiplier": 0.8,
+    "description": {
+      "mn": "Гэр бүлүүд ахмадуудаа золгоно; олон дэлгүүр, үйлчилгээ 3 хоног хаадаг.",
+      "en": "Families visit elders; many shops and services close for 3 days."
+    },
+    "date_confidence": "approximate",
+    "is_mock": true,
+    "region": "hub",
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "event_khuvsgul_ice_festival_2027",
+    "name": {
+      "mn": "Хөвсгөлийн мөсний баяр",
+      "en": "Khövsgöl Ice Festival"
+    },
+    "place_id": "place_khatgal",
+    "aimag": "Khövsgöl",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        100.16,
+        50.4425
+      ]
+    },
+    "category": "festival",
+    "start_date": "2027-03-02",
+    "end_date": "2027-03-03",
+    "ticket_price_mnt": 20000,
+    "expected_attendance": 6000,
+    "stay_demand_multiplier": 2.5,
+    "description": {
+      "mn": "Мөсөн баримал, морин чарга, тэшүүрийн марафон, цаатан малчид.",
+      "en": "Ice sculptures, horse sledding, ice skating marathon, reindeer herders."
+    },
+    "date_confidence": "approximate",
+    "is_mock": true,
+    "region": "north",
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Kh%C3%B6vsg%C3%B6l_%284848130333%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Kh%C3%B6vsg%C3%B6l_%284848130333%29.jpg",
+        "title": "Khövsgöl (4848130333).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Enkhtuvshin from Budapest, Mongolia",
+        "source": "https://commons.wikimedia.org/wiki/File:Kh%C3%B6vsg%C3%B6l_(4848130333).jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      }
+    ],
+    "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Kh%C3%B6vsg%C3%B6l_%284848130333%29.jpg"
+  },
+  {
+    "_id": "event_thousand_camel_festival_2027",
+    "name": {
+      "mn": "Мянган тэмээний баяр",
+      "en": "Thousand Camel Festival"
+    },
+    "place_id": "place_bulgan_soum_gobi",
+    "aimag": "Ömnögovi",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        103.54,
+        44.093
+      ]
+    },
+    "category": "festival",
+    "start_date": "2027-03-06",
+    "end_date": "2027-03-07",
+    "ticket_price_mnt": 15000,
+    "expected_attendance": 4000,
+    "stay_demand_multiplier": 2.2,
+    "description": {
+      "mn": "Мянган хоёр бөхт тэмээтэй тэмээн уралдаан, тэмээн поло.",
+      "en": "Camel races and camel polo with a thousand Bactrian camels."
+    },
+    "date_confidence": "approximate",
+    "is_mock": true,
+    "region": "south",
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "event_dundgovi_naadam_2027",
+    "name": {
+      "mn": "Дундговь аймгийн наадам",
+      "en": "Dundgovi Aimag Naadam"
+    },
+    "place_id": "place_mandalgovi",
+    "aimag": "Dundgovi",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        106.2708,
+        45.7625
+      ]
+    },
+    "category": "naadam",
+    "start_date": "2027-07-05",
+    "end_date": "2027-07-06",
+    "ticket_price_mnt": 5000,
+    "expected_attendance": 10000,
+    "stay_demand_multiplier": 1.8,
+    "description": {
+      "mn": "Аймгийн цэнгэлдэхэд бөх, морь, сур харваа.",
+      "en": "Wrestling, horse racing, archery at the aimag stadium."
+    },
+    "date_confidence": "approximate",
+    "is_mock": true,
+    "region": "south",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Naadam_2023_-_Horse_racing_05.jpg/1280px-Naadam_2023_-_Horse_racing_05.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Naadam_2023_-_Horse_racing_05.jpg",
+        "title": "Naadam 2023 - Horse racing 05.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_05.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Naadam_2023_-_Horse_racing_06.jpg/1280px-Naadam_2023_-_Horse_racing_06.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Naadam_2023_-_Horse_racing_06.jpg",
+        "title": "Naadam 2023 - Horse racing 06.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_06.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Musicians_at_Naadam_2023.jpg/1280px-Musicians_at_Naadam_2023.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Musicians_at_Naadam_2023.jpg",
+        "title": "Musicians at Naadam 2023.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Musicians_at_Naadam_2023.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Horse_racing_during_Naadam_festival_in_Mongolia_%2853928830770%29.jpg/1280px-Horse_racing_during_Naadam_festival_in_Mongolia_%2853928830770%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Horse_racing_during_Naadam_festival_in_Mongolia_%2853928830770%29.jpg",
+        "title": "Horse racing during Naadam festival in Mongolia (53928830770).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "dave massie",
+        "source": "https://commons.wikimedia.org/wiki/File:Horse_racing_during_Naadam_festival_in_Mongolia_(53928830770).jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Naadam_2023_-_Horse_racing_05.jpg/1280px-Naadam_2023_-_Horse_racing_05.jpg"
+  },
+  {
+    "_id": "event_bulgan_naadam_2027",
+    "name": {
+      "mn": "Булган аймгийн наадам",
+      "en": "Bulgan Aimag Naadam"
+    },
+    "place_id": "place_bulgan",
+    "aimag": "Bulgan",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        103.5347,
+        48.8125
+      ]
+    },
+    "category": "naadam",
+    "start_date": "2027-07-06",
+    "end_date": "2027-07-07",
+    "ticket_price_mnt": 5000,
+    "expected_attendance": 9000,
+    "stay_demand_multiplier": 1.8,
+    "description": {
+      "mn": "Аймгийн наадам; морин уралдаан хотоос 15 км зайтай талд болно.",
+      "en": "Aimag-level naadam; horse races held on the steppe 15 km out of town."
+    },
+    "date_confidence": "approximate",
+    "is_mock": true,
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Mongolian_Naadam_Wrestlers_-_2010.jpg/1280px-Mongolian_Naadam_Wrestlers_-_2010.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Mongolian_Naadam_Wrestlers_-_2010.jpg",
+        "title": "Mongolian Naadam Wrestlers - 2010.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "FischerFotos",
+        "source": "https://commons.wikimedia.org/wiki/File:Mongolian_Naadam_Wrestlers_-_2010.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Mongolian_wrestling_Bukh_during_the_Naadam.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Mongolian_wrestling_Bukh_during_the_Naadam.jpg",
+        "title": "Mongolian wrestling Bukh during the Naadam.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Orgio89",
+        "source": "https://commons.wikimedia.org/wiki/File:Mongolian_wrestling_Bukh_during_the_Naadam.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Mongolskie_zapasy_na_lokalnym_festiwalu_Naadam_%2824%29.jpg/1280px-Mongolskie_zapasy_na_lokalnym_festiwalu_Naadam_%2824%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Mongolskie_zapasy_na_lokalnym_festiwalu_Naadam_%2824%29.jpg",
+        "title": "Mongolskie zapasy na lokalnym festiwalu Naadam (24).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Marcin Konsek",
+        "source": "https://commons.wikimedia.org/wiki/File:Mongolskie_zapasy_na_lokalnym_festiwalu_Naadam_(24).jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Young_Naadam_Horse_Racers_in_Mongolia_-_2010.jpg/1280px-Young_Naadam_Horse_Racers_in_Mongolia_-_2010.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Young_Naadam_Horse_Racers_in_Mongolia_-_2010.jpg",
+        "title": "Young Naadam Horse Racers in Mongolia - 2010.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "FischerFotos",
+        "source": "https://commons.wikimedia.org/wiki/File:Young_Naadam_Horse_Racers_in_Mongolia_-_2010.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Mongolian_Naadam_Wrestlers_-_2010.jpg/1280px-Mongolian_Naadam_Wrestlers_-_2010.jpg"
+  },
+  {
+    "_id": "event_umnugovi_naadam_2027",
+    "name": {
+      "mn": "Өмнөговь аймгийн наадам",
+      "en": "Ömnögovi Aimag Naadam"
+    },
+    "place_id": "place_dalanzadgad",
+    "aimag": "Ömnögovi",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        104.425,
+        43.5708
+      ]
+    },
+    "category": "naadam",
+    "start_date": "2027-07-07",
+    "end_date": "2027-07-08",
+    "ticket_price_mnt": 5000,
+    "expected_attendance": 12000,
+    "stay_demand_multiplier": 2.0,
+    "description": {
+      "mn": "Эрийн гурван наадамтай зэрэгцэн тэмээн уралдаантай говийн наадам.",
+      "en": "Gobi naadam with camel racing alongside the three manly games."
+    },
+    "date_confidence": "approximate",
+    "is_mock": true,
+    "region": "south",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Young_Naadam_Horse_Racers_in_Mongolia_-_2010.jpg/1280px-Young_Naadam_Horse_Racers_in_Mongolia_-_2010.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Young_Naadam_Horse_Racers_in_Mongolia_-_2010.jpg",
+        "title": "Young Naadam Horse Racers in Mongolia - 2010.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "FischerFotos",
+        "source": "https://commons.wikimedia.org/wiki/File:Young_Naadam_Horse_Racers_in_Mongolia_-_2010.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Naadam_wrestling.jpg/1280px-Naadam_wrestling.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Naadam_wrestling.jpg",
+        "title": "Naadam wrestling.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Zoharby",
+        "source": "https://commons.wikimedia.org/wiki/File:Naadam_wrestling.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Mongolskie_zapasy_na_lokalnym_festiwalu_Naadam_%2809%29.jpg/1280px-Mongolskie_zapasy_na_lokalnym_festiwalu_Naadam_%2809%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Mongolskie_zapasy_na_lokalnym_festiwalu_Naadam_%2809%29.jpg",
+        "title": "Mongolskie zapasy na lokalnym festiwalu Naadam (09).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Marcin Konsek",
+        "source": "https://commons.wikimedia.org/wiki/File:Mongolskie_zapasy_na_lokalnym_festiwalu_Naadam_(09).jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Naadam_2023_-_Horse_racing_09.jpg/1280px-Naadam_2023_-_Horse_racing_09.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Naadam_2023_-_Horse_racing_09.jpg",
+        "title": "Naadam 2023 - Horse racing 09.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_09.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Young_Naadam_Horse_Racers_in_Mongolia_-_2010.jpg/1280px-Young_Naadam_Horse_Racers_in_Mongolia_-_2010.jpg"
+  },
+  {
+    "_id": "event_darkhan_naadam_2027",
+    "name": {
+      "mn": "Дархан-Уул аймгийн наадам",
+      "en": "Darkhan-Uul Aimag Naadam"
+    },
+    "place_id": "place_darkhan",
+    "aimag": "Darkhan-Uul",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        105.9228,
+        49.4867
+      ]
+    },
+    "category": "naadam",
+    "start_date": "2027-07-08",
+    "end_date": "2027-07-09",
+    "ticket_price_mnt": 5000,
+    "expected_attendance": 15000,
+    "stay_demand_multiplier": 1.7,
+    "description": {
+      "mn": "Төв цэнгэлдэх, сур харваа, шагай харваа.",
+      "en": "Central stadium, archery and ankle-bone shooting."
+    },
+    "date_confidence": "approximate",
+    "is_mock": true,
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Naadam_2023_-_Horse_racing_09.jpg/1280px-Naadam_2023_-_Horse_racing_09.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Naadam_2023_-_Horse_racing_09.jpg",
+        "title": "Naadam 2023 - Horse racing 09.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_09.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Naadam_2023_-_Horse_racing_13.jpg/1280px-Naadam_2023_-_Horse_racing_13.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Naadam_2023_-_Horse_racing_13.jpg",
+        "title": "Naadam 2023 - Horse racing 13.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_13.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Naadam_2023_-_Horse_racing_11.jpg/1280px-Naadam_2023_-_Horse_racing_11.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Naadam_2023_-_Horse_racing_11.jpg",
+        "title": "Naadam 2023 - Horse racing 11.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_11.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Naadam_2023_-_Horse_racing_02.jpg/1280px-Naadam_2023_-_Horse_racing_02.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Naadam_2023_-_Horse_racing_02.jpg",
+        "title": "Naadam 2023 - Horse racing 02.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_02.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Naadam_2023_-_Horse_racing_09.jpg/1280px-Naadam_2023_-_Horse_racing_09.jpg"
+  },
+  {
+    "_id": "event_khuvsgul_naadam_2027",
+    "name": {
+      "mn": "Хөвсгөл аймгийн наадам",
+      "en": "Khövsgöl Aimag Naadam"
+    },
+    "place_id": "place_murun",
+    "aimag": "Khövsgöl",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        100.1625,
+        49.6342
+      ]
+    },
+    "category": "naadam",
+    "start_date": "2027-07-08",
+    "end_date": "2027-07-10",
+    "ticket_price_mnt": 5000,
+    "expected_attendance": 14000,
+    "stay_demand_multiplier": 2.0,
+    "description": {
+      "mn": "Мөрөнд болно; Мөрөнгийн зочид буудлууд хэдэн долоо хоногийн өмнө дүүрдэг.",
+      "en": "Held in Mörön; hotels in Mörön fill up weeks ahead."
+    },
+    "date_confidence": "approximate",
+    "is_mock": true,
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Naadam_2023_-_Horse_racing_02.jpg/1280px-Naadam_2023_-_Horse_racing_02.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Naadam_2023_-_Horse_racing_02.jpg",
+        "title": "Naadam 2023 - Horse racing 02.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_02.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Naadam_2023_-_Horse_racing_12.jpg/1280px-Naadam_2023_-_Horse_racing_12.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Naadam_2023_-_Horse_racing_12.jpg",
+        "title": "Naadam 2023 - Horse racing 12.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_12.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Naadam_2023_-_Horse_racing_10.jpg/1280px-Naadam_2023_-_Horse_racing_10.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Naadam_2023_-_Horse_racing_10.jpg",
+        "title": "Naadam 2023 - Horse racing 10.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_10.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Naadam_2023_-_Horse_racing_08.jpg/1280px-Naadam_2023_-_Horse_racing_08.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Naadam_2023_-_Horse_racing_08.jpg",
+        "title": "Naadam 2023 - Horse racing 08.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_08.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Naadam_2023_-_Horse_racing_02.jpg/1280px-Naadam_2023_-_Horse_racing_02.jpg"
+  },
+  {
+    "_id": "event_national_naadam_2027",
+    "name": {
+      "mn": "Үндэсний их баяр наадам",
+      "en": "National Naadam Festival"
+    },
+    "place_id": "place_ub",
+    "aimag": "Ulaanbaatar",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        106.9177,
+        47.9186
+      ]
+    },
+    "category": "naadam",
+    "start_date": "2027-07-11",
+    "end_date": "2027-07-15",
+    "ticket_price_mnt": 60000,
+    "expected_attendance": 300000,
+    "stay_demand_multiplier": 3.0,
+    "description": {
+      "mn": "Нээлтийн ёслол Үндэсний цэнгэлдэхэд, морин уралдаан Хүй Долоон Худагт.",
+      "en": "Opening ceremony at the National Stadium, horse races at Khui Doloon Khudag."
+    },
+    "date_confidence": "approximate",
+    "is_mock": true,
+    "region": "hub",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_34.JPG/1280px-Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_34.JPG",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_34.JPG",
+        "title": "Festiwal Naadam na stadionie narodowym w Ułan Bator 34.JPG",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Marcin Konsek",
+        "source": "https://commons.wikimedia.org/wiki/File:Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_34.JPG",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_29.JPG/1280px-Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_29.JPG",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_29.JPG",
+        "title": "Festiwal Naadam na stadionie narodowym w Ułan Bator 29.JPG",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Marcin Konsek",
+        "source": "https://commons.wikimedia.org/wiki/File:Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_29.JPG",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_19.JPG/1280px-Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_19.JPG",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_19.JPG",
+        "title": "Festiwal Naadam na stadionie narodowym w Ułan Bator 19.JPG",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Marcin Konsek",
+        "source": "https://commons.wikimedia.org/wiki/File:Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_19.JPG",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_18.JPG/1280px-Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_18.JPG",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_18.JPG",
+        "title": "Festiwal Naadam na stadionie narodowym w Ułan Bator 18.JPG",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Marcin Konsek",
+        "source": "https://commons.wikimedia.org/wiki/File:Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_18.JPG",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_34.JPG/1280px-Festiwal_Naadam_na_stadionie_narodowym_w_U%C5%82an_Bator_34.JPG"
+  },
+  {
+    "_id": "event_khatgal_naadam_2027",
+    "name": {
+      "mn": "Хатгал сумын наадам",
+      "en": "Khatgal Soum Naadam"
+    },
+    "place_id": "place_khatgal",
+    "aimag": "Khövsgöl",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        100.16,
+        50.4425
+      ]
+    },
+    "category": "naadam",
+    "start_date": "2027-07-18",
+    "end_date": "2027-07-19",
+    "ticket_price_mnt": 0,
+    "expected_attendance": 2500,
+    "stay_demand_multiplier": 1.6,
+    "description": {
+      "mn": "Нуурын эрэг дээрх жижиг наадам, зураг авахад гоё, жуулчдад нээлттэй.",
+      "en": "Small lakeside naadam, very photogenic, tourists welcome."
+    },
+    "date_confidence": "approximate",
+    "is_mock": true,
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Naadam_2023_-_Horse_racing_07.jpg/1280px-Naadam_2023_-_Horse_racing_07.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Naadam_2023_-_Horse_racing_07.jpg",
+        "title": "Naadam 2023 - Horse racing 07.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_07.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Naadam_2023_-_Horse_racing_03.jpg/1280px-Naadam_2023_-_Horse_racing_03.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Naadam_2023_-_Horse_racing_03.jpg",
+        "title": "Naadam 2023 - Horse racing 03.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_03.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Naadam_2023_-_Horse_racing_06.jpg/1280px-Naadam_2023_-_Horse_racing_06.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Naadam_2023_-_Horse_racing_06.jpg",
+        "title": "Naadam 2023 - Horse racing 06.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_06.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Musicians_at_Naadam_2023.jpg/1280px-Musicians_at_Naadam_2023.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Musicians_at_Naadam_2023.jpg",
+        "title": "Musicians at Naadam 2023.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Musicians_at_Naadam_2023.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Naadam_2023_-_Horse_racing_07.jpg/1280px-Naadam_2023_-_Horse_racing_07.jpg"
+  },
+  {
+    "_id": "event_tariat_naadam_2027",
+    "name": {
+      "mn": "Тариат сумын наадам",
+      "en": "Tariat Soum Naadam"
+    },
+    "place_id": "place_tariat",
+    "aimag": "Arkhangai",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        99.8828,
+        48.1567
+      ]
+    },
+    "category": "naadam",
+    "start_date": "2027-07-20",
+    "end_date": "2027-07-20",
+    "ticket_price_mnt": 0,
+    "expected_attendance": 1500,
+    "stay_demand_multiplier": 1.4,
+    "description": {
+      "mn": "Тэрхийн Цагаан нуурын дэргэдэх сумын наадам.",
+      "en": "Soum naadam by Terkhiin Tsagaan Lake."
+    },
+    "date_confidence": "approximate",
+    "is_mock": true,
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Musicians_at_Naadam_2023.jpg/1280px-Musicians_at_Naadam_2023.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Musicians_at_Naadam_2023.jpg",
+        "title": "Musicians at Naadam 2023.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Musicians_at_Naadam_2023.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Horse_racing_during_Naadam_festival_in_Mongolia_%2853928830770%29.jpg/1280px-Horse_racing_during_Naadam_festival_in_Mongolia_%2853928830770%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Horse_racing_during_Naadam_festival_in_Mongolia_%2853928830770%29.jpg",
+        "title": "Horse racing during Naadam festival in Mongolia (53928830770).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "dave massie",
+        "source": "https://commons.wikimedia.org/wiki/File:Horse_racing_during_Naadam_festival_in_Mongolia_(53928830770).jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Naadam_2023_-_Horse_racing_01.jpg/1280px-Naadam_2023_-_Horse_racing_01.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Naadam_2023_-_Horse_racing_01.jpg",
+        "title": "Naadam 2023 - Horse racing 01.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_01.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Naadam_2023%2C_Ulan_Bator_08.jpg/1280px-Naadam_2023%2C_Ulan_Bator_08.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Naadam_2023%2C_Ulan_Bator_08.jpg",
+        "title": "Naadam 2023, Ulan Bator 08.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023,_Ulan_Bator_08.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Musicians_at_Naadam_2023.jpg/1280px-Musicians_at_Naadam_2023.jpg"
+  },
+  {
+    "_id": "event_amarbayasgalant_tsam_2027",
+    "name": {
+      "mn": "Амарбаясгалант хийдийн цам",
+      "en": "Amarbayasgalant Tsam Dance"
+    },
+    "place_id": "place_amarbayasgalant",
+    "aimag": "Selenge",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        105.0853,
+        49.4781
+      ]
+    },
+    "category": "religious",
+    "start_date": "2027-08-21",
+    "end_date": "2027-08-22",
+    "ticket_price_mnt": 10000,
+    "expected_attendance": 3000,
+    "stay_demand_multiplier": 2.0,
+    "description": {
+      "mn": "Хийдийн зуны хурлын үеэр болдог багт цам бүжиг.",
+      "en": "Masked religious dance during the monastery's summer ceremony."
+    },
+    "date_confidence": "approximate",
+    "is_mock": true,
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Amarbayasgalant_monastery_-_panoramio.jpg/1280px-Amarbayasgalant_monastery_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Amarbayasgalant_monastery_-_panoramio.jpg",
+        "title": "Amarbayasgalant monastery - panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Alex Ang",
+        "source": "https://commons.wikimedia.org/wiki/File:Amarbayasgalant_monastery_-_panoramio.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Amarbayasgalant_monastery_in_Mongolia_2.jpg/1280px-Amarbayasgalant_monastery_in_Mongolia_2.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Amarbayasgalant_monastery_in_Mongolia_2.jpg",
+        "title": "Amarbayasgalant monastery in Mongolia 2.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Martin Vorel",
+        "source": "https://commons.wikimedia.org/wiki/File:Amarbayasgalant_monastery_in_Mongolia_2.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Amarbayasgalant_monastery_in_Mongolia.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Amarbayasgalant_monastery_in_Mongolia.jpg",
+        "title": "Amarbayasgalant monastery in Mongolia.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Bloxgros",
+        "source": "https://commons.wikimedia.org/wiki/File:Amarbayasgalant_monastery_in_Mongolia.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Amarbayasgalant_Monastery_-_panoramio.jpg/1280px-Amarbayasgalant_Monastery_-_panoramio.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Amarbayasgalant_Monastery_-_panoramio.jpg",
+        "title": "Amarbayasgalant Monastery - panoramio.jpg",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "author": "Mongolia Expeditions…",
+        "source": "https://commons.wikimedia.org/wiki/File:Amarbayasgalant_Monastery_-_panoramio.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Amarbayasgalant_monastery_-_panoramio.jpg/1280px-Amarbayasgalant_monastery_-_panoramio.jpg"
+  },
+  {
+    "_id": "event_kharkhorin_danshig_2027",
+    "name": {
+      "mn": "Хархорин Даншиг наадам",
+      "en": "Danshig Naadam at Kharkhorin"
+    },
+    "place_id": "place_kharkhorin",
+    "aimag": "Övörkhangai",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        102.8436,
+        47.1972
+      ]
+    },
+    "category": "naadam",
+    "start_date": "2027-08-06",
+    "end_date": "2027-08-08",
+    "ticket_price_mnt": 10000,
+    "expected_attendance": 8000,
+    "stay_demand_multiplier": 1.8,
+    "description": {
+      "mn": "Эрдэнэ Зуу хийдийн дэргэд болдог шашны утгатай наадам.",
+      "en": "Religious-themed naadam near Erdene Zuu monastery."
+    },
+    "date_confidence": "approximate",
+    "is_mock": true,
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Erdene_Zuu_Monastery_10.jpg/1280px-Erdene_Zuu_Monastery_10.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Erdene_Zuu_Monastery_10.jpg",
+        "title": "Erdene Zuu Monastery 10.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Erdene_Zuu_Monastery_10.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Erdene_Zuu_Monastery_11.jpg/1280px-Erdene_Zuu_Monastery_11.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Erdene_Zuu_Monastery_11.jpg",
+        "title": "Erdene Zuu Monastery 11.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Erdene_Zuu_Monastery_11.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Erdene_Zuu_Monastery_13.jpg/1280px-Erdene_Zuu_Monastery_13.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Erdene_Zuu_Monastery_13.jpg",
+        "title": "Erdene Zuu Monastery 13.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Erdene_Zuu_Monastery_13.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Erdene_Zuu_Monastery_16.jpg/1280px-Erdene_Zuu_Monastery_16.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Erdene_Zuu_Monastery_16.jpg",
+        "title": "Erdene Zuu Monastery 16.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Erdene_Zuu_Monastery_16.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Erdene_Zuu_Monastery_10.jpg/1280px-Erdene_Zuu_Monastery_10.jpg"
+  },
+  {
+    "_id": "event_golden_eagle_festival_2026",
+    "name": {
+      "mn": "Бүргэдийн баяр",
+      "en": "Golden Eagle Festival"
+    },
+    "place_id": "place_olgii",
+    "aimag": "Bayan-Ölgii",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        89.965,
+        48.9683
+      ]
+    },
+    "category": "festival",
+    "start_date": "2026-10-03",
+    "end_date": "2026-10-04",
+    "ticket_price_mnt": 60000,
+    "expected_attendance": 5000,
+    "stay_demand_multiplier": 2.8,
+    "description": {
+      "mn": "Казах бүргэдчид өрсөлдөнө; Өлгийн зочид буудлууд дүүрдэг.",
+      "en": "Kazakh eagle hunters compete; hotels in Ölgii sell out."
+    },
+    "date_confidence": "approximate",
+    "is_mock": true,
+    "region": "west",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Golden_Eagle_Festival_Mongolia_18.jpg/1280px-Golden_Eagle_Festival_Mongolia_18.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Golden_Eagle_Festival_Mongolia_18.jpg",
+        "title": "Golden Eagle Festival Mongolia 18.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Gabideen",
+        "source": "https://commons.wikimedia.org/wiki/File:Golden_Eagle_Festival_Mongolia_18.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Golden_Eagle_Festival_Mongolia_7.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Golden_Eagle_Festival_Mongolia_7.jpg",
+        "title": "Golden Eagle Festival Mongolia 7.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Gabideen",
+        "source": "https://commons.wikimedia.org/wiki/File:Golden_Eagle_Festival_Mongolia_7.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Golden_Eagle_Festival_Mongolia_15.jpg/1280px-Golden_Eagle_Festival_Mongolia_15.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Golden_Eagle_Festival_Mongolia_15.jpg",
+        "title": "Golden Eagle Festival Mongolia 15.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Gabideen",
+        "source": "https://commons.wikimedia.org/wiki/File:Golden_Eagle_Festival_Mongolia_15.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Golden_Eagle_Festival_Mongolia_22.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Golden_Eagle_Festival_Mongolia_22.jpg",
+        "title": "Golden Eagle Festival Mongolia 22.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Gabideen",
+        "source": "https://commons.wikimedia.org/wiki/File:Golden_Eagle_Festival_Mongolia_22.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Golden_Eagle_Festival_Mongolia_18.jpg/1280px-Golden_Eagle_Festival_Mongolia_18.jpg"
+  },
+  {
+    "_id": "event_olgii_nauryz_2027",
+    "name": {
+      "mn": "Наурыз",
+      "en": "Nauryz (Kazakh New Year)"
+    },
+    "place_id": "place_olgii",
+    "aimag": "Bayan-Ölgii",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        89.965,
+        48.9683
+      ]
+    },
+    "category": "festival",
+    "start_date": "2027-03-22",
+    "end_date": "2027-03-22",
+    "ticket_price_mnt": 0,
+    "expected_attendance": 6000,
+    "stay_demand_multiplier": 1.5,
+    "description": {
+      "mn": "Казахуудын хаврын шинэ жил, хөгжим, хоол, морин тоглоом.",
+      "en": "Kazakh spring new year, music, food and horse games."
+    },
+    "date_confidence": "approximate",
+    "is_mock": true,
+    "region": "west",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Eagles_and_Hunters.JPG/1280px-Eagles_and_Hunters.JPG",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Eagles_and_Hunters.JPG",
+        "title": "Eagles and Hunters.JPG",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Altaihunters",
+        "source": "https://commons.wikimedia.org/wiki/File:Eagles_and_Hunters.JPG",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Parade_of_eagle_hunters.JPG/1280px-Parade_of_eagle_hunters.JPG",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Parade_of_eagle_hunters.JPG",
+        "title": "Parade of eagle hunters.JPG",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Altaihunters",
+        "source": "https://commons.wikimedia.org/wiki/File:Parade_of_eagle_hunters.JPG",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Young_eagle_hunter.JPG/1280px-Young_eagle_hunter.JPG",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Young_eagle_hunter.JPG",
+        "title": "Young eagle hunter.JPG",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Altaihunters",
+        "source": "https://commons.wikimedia.org/wiki/File:Young_eagle_hunter.JPG",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Eagles_and_Hunters.JPG/1280px-Eagles_and_Hunters.JPG"
+  },
+  {
+    "_id": "event_khovd_naadam_2027",
+    "name": {
+      "mn": "Ховд аймгийн наадам",
+      "en": "Khovd Aimag Naadam"
+    },
+    "place_id": "place_khovd",
+    "aimag": "Khovd",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        91.6419,
+        48.0056
+      ]
+    },
+    "category": "naadam",
+    "start_date": "2027-07-07",
+    "end_date": "2027-07-08",
+    "ticket_price_mnt": 5000,
+    "expected_attendance": 11000,
+    "stay_demand_multiplier": 1.8,
+    "description": {
+      "mn": "Олон ястан оролцдог баруун бүсийн наадам.",
+      "en": "Western naadam with many ethnic groups taking part."
+    },
+    "date_confidence": "approximate",
+    "is_mock": true,
+    "region": "west",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Naadam_2023_-_Horse_racing_03.jpg/1280px-Naadam_2023_-_Horse_racing_03.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Naadam_2023_-_Horse_racing_03.jpg",
+        "title": "Naadam 2023 - Horse racing 03.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_03.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Naadam_2023_-_Horse_racing_06.jpg/1280px-Naadam_2023_-_Horse_racing_06.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Naadam_2023_-_Horse_racing_06.jpg",
+        "title": "Naadam 2023 - Horse racing 06.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_06.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Musicians_at_Naadam_2023.jpg/1280px-Musicians_at_Naadam_2023.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Musicians_at_Naadam_2023.jpg",
+        "title": "Musicians at Naadam 2023.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Musicians_at_Naadam_2023.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Horse_racing_during_Naadam_festival_in_Mongolia_%2853928830770%29.jpg/1280px-Horse_racing_during_Naadam_festival_in_Mongolia_%2853928830770%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Horse_racing_during_Naadam_festival_in_Mongolia_%2853928830770%29.jpg",
+        "title": "Horse racing during Naadam festival in Mongolia (53928830770).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "dave massie",
+        "source": "https://commons.wikimedia.org/wiki/File:Horse_racing_during_Naadam_festival_in_Mongolia_(53928830770).jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Naadam_2023_-_Horse_racing_03.jpg/1280px-Naadam_2023_-_Horse_racing_03.jpg"
+  },
+  {
+    "_id": "event_uvs_naadam_2027",
+    "name": {
+      "mn": "Увс аймгийн наадам",
+      "en": "Uvs Aimag Naadam"
+    },
+    "place_id": "place_ulaangom",
+    "aimag": "Uvs",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        92.0667,
+        49.9811
+      ]
+    },
+    "category": "naadam",
+    "start_date": "2027-07-08",
+    "end_date": "2027-07-09",
+    "ticket_price_mnt": 5000,
+    "expected_attendance": 8000,
+    "stay_demand_multiplier": 1.7,
+    "description": {
+      "mn": "Улаангомд болох аймгийн наадам.",
+      "en": "Aimag naadam in Ulaangom."
+    },
+    "date_confidence": "approximate",
+    "is_mock": true,
+    "region": "west",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Naadam_2023_-_Horse_racing_05.jpg/1280px-Naadam_2023_-_Horse_racing_05.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Naadam_2023_-_Horse_racing_05.jpg",
+        "title": "Naadam 2023 - Horse racing 05.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_05.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Naadam_2023_-_Horse_racing_14.jpg/1280px-Naadam_2023_-_Horse_racing_14.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Naadam_2023_-_Horse_racing_14.jpg",
+        "title": "Naadam 2023 - Horse racing 14.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_14.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Naadam_2023_-_Horse_racing_03.jpg/1280px-Naadam_2023_-_Horse_racing_03.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Naadam_2023_-_Horse_racing_03.jpg",
+        "title": "Naadam 2023 - Horse racing 03.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_03.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Naadam_2023_-_Horse_racing_07.jpg/1280px-Naadam_2023_-_Horse_racing_07.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Naadam_2023_-_Horse_racing_07.jpg",
+        "title": "Naadam 2023 - Horse racing 07.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_07.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Naadam_2023_-_Horse_racing_05.jpg/1280px-Naadam_2023_-_Horse_racing_05.jpg"
+  },
+  {
+    "_id": "event_zavkhan_naadam_2027",
+    "name": {
+      "mn": "Завхан аймгийн наадам",
+      "en": "Zavkhan Aimag Naadam"
+    },
+    "place_id": "place_uliastai",
+    "aimag": "Zavkhan",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        96.8444,
+        47.7417
+      ]
+    },
+    "category": "naadam",
+    "start_date": "2027-07-06",
+    "end_date": "2027-07-07",
+    "ticket_price_mnt": 5000,
+    "expected_attendance": 7000,
+    "stay_demand_multiplier": 1.6,
+    "description": {
+      "mn": "Улиастайн уулын хөндийд болох наадам.",
+      "en": "Mountain-valley naadam in Uliastai."
+    },
+    "date_confidence": "approximate",
+    "is_mock": true,
+    "region": "west",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Naadam_2023_-_Horse_racing_07.jpg/1280px-Naadam_2023_-_Horse_racing_07.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Naadam_2023_-_Horse_racing_07.jpg",
+        "title": "Naadam 2023 - Horse racing 07.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_07.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Naadam_2023_-_Horse_racing_06.jpg/1280px-Naadam_2023_-_Horse_racing_06.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Naadam_2023_-_Horse_racing_06.jpg",
+        "title": "Naadam 2023 - Horse racing 06.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_06.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Musicians_at_Naadam_2023.jpg/1280px-Musicians_at_Naadam_2023.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Musicians_at_Naadam_2023.jpg",
+        "title": "Musicians at Naadam 2023.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Musicians_at_Naadam_2023.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Horse_racing_during_Naadam_festival_in_Mongolia_%2853928830770%29.jpg/1280px-Horse_racing_during_Naadam_festival_in_Mongolia_%2853928830770%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Horse_racing_during_Naadam_festival_in_Mongolia_%2853928830770%29.jpg",
+        "title": "Horse racing during Naadam festival in Mongolia (53928830770).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "dave massie",
+        "source": "https://commons.wikimedia.org/wiki/File:Horse_racing_during_Naadam_festival_in_Mongolia_(53928830770).jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Naadam_2023_-_Horse_racing_07.jpg/1280px-Naadam_2023_-_Horse_racing_07.jpg"
+  },
+  {
+    "_id": "event_khentii_naadam_2027",
+    "name": {
+      "mn": "Хэнтий аймгийн наадам",
+      "en": "Khentii Aimag Naadam"
+    },
+    "place_id": "place_chinggis_city",
+    "aimag": "Khentii",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        110.6556,
+        47.3194
+      ]
+    },
+    "category": "naadam",
+    "start_date": "2027-07-07",
+    "end_date": "2027-07-08",
+    "ticket_price_mnt": 5000,
+    "expected_attendance": 9000,
+    "stay_demand_multiplier": 1.7,
+    "description": {
+      "mn": "Чингис хотод болно.",
+      "en": "Held in Chinggis city."
+    },
+    "date_confidence": "approximate",
+    "is_mock": true,
+    "region": "east",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Horse_racing_during_Naadam_festival_in_Mongolia_%2853928830770%29.jpg/1280px-Horse_racing_during_Naadam_festival_in_Mongolia_%2853928830770%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Horse_racing_during_Naadam_festival_in_Mongolia_%2853928830770%29.jpg",
+        "title": "Horse racing during Naadam festival in Mongolia (53928830770).jpg",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "author": "dave massie",
+        "source": "https://commons.wikimedia.org/wiki/File:Horse_racing_during_Naadam_festival_in_Mongolia_(53928830770).jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Naadam_2023_-_Horse_racing_01.jpg/1280px-Naadam_2023_-_Horse_racing_01.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Naadam_2023_-_Horse_racing_01.jpg",
+        "title": "Naadam 2023 - Horse racing 01.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023_-_Horse_racing_01.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Naadam_2023%2C_Ulan_Bator_08.jpg/1280px-Naadam_2023%2C_Ulan_Bator_08.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Naadam_2023%2C_Ulan_Bator_08.jpg",
+        "title": "Naadam 2023, Ulan Bator 08.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023,_Ulan_Bator_08.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Naadam_2023%2C_Ulan_Bator_07.jpg/1280px-Naadam_2023%2C_Ulan_Bator_07.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Naadam_2023%2C_Ulan_Bator_07.jpg",
+        "title": "Naadam 2023, Ulan Bator 07.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023,_Ulan_Bator_07.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Horse_racing_during_Naadam_festival_in_Mongolia_%2853928830770%29.jpg/1280px-Horse_racing_during_Naadam_festival_in_Mongolia_%2853928830770%29.jpg"
+  },
+  {
+    "_id": "event_dornod_naadam_2027",
+    "name": {
+      "mn": "Дорнод аймгийн наадам",
+      "en": "Dornod Aimag Naadam"
+    },
+    "place_id": "place_choibalsan",
+    "aimag": "Dornod",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        114.5228,
+        48.0706
+      ]
+    },
+    "category": "naadam",
+    "start_date": "2027-07-08",
+    "end_date": "2027-07-09",
+    "ticket_price_mnt": 5000,
+    "expected_attendance": 10000,
+    "stay_demand_multiplier": 1.7,
+    "description": {
+      "mn": "Зүүн бүсийн хамгийн том наадам.",
+      "en": "Largest naadam in the east."
+    },
+    "date_confidence": "approximate",
+    "is_mock": true,
+    "region": "east",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Naadam_2023%2C_Ulan_Bator_07.jpg/1280px-Naadam_2023%2C_Ulan_Bator_07.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Naadam_2023%2C_Ulan_Bator_07.jpg",
+        "title": "Naadam 2023, Ulan Bator 07.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Bernard Gagnon",
+        "source": "https://commons.wikimedia.org/wiki/File:Naadam_2023,_Ulan_Bator_07.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Mongolian_Naadam_Wrestlers_-_2010.jpg/1280px-Mongolian_Naadam_Wrestlers_-_2010.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Mongolian_Naadam_Wrestlers_-_2010.jpg",
+        "title": "Mongolian Naadam Wrestlers - 2010.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "FischerFotos",
+        "source": "https://commons.wikimedia.org/wiki/File:Mongolian_Naadam_Wrestlers_-_2010.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Mongolian_wrestling_Bukh_during_the_Naadam.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Mongolian_wrestling_Bukh_during_the_Naadam.jpg",
+        "title": "Mongolian wrestling Bukh during the Naadam.jpg",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Orgio89",
+        "source": "https://commons.wikimedia.org/wiki/File:Mongolian_wrestling_Bukh_during_the_Naadam.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Mongolskie_zapasy_na_lokalnym_festiwalu_Naadam_%2824%29.jpg/1280px-Mongolskie_zapasy_na_lokalnym_festiwalu_Naadam_%2824%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Mongolskie_zapasy_na_lokalnym_festiwalu_Naadam_%2824%29.jpg",
+        "title": "Mongolskie zapasy na lokalnym festiwalu Naadam (24).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Marcin Konsek",
+        "source": "https://commons.wikimedia.org/wiki/File:Mongolskie_zapasy_na_lokalnym_festiwalu_Naadam_(24).jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Naadam_2023%2C_Ulan_Bator_07.jpg/1280px-Naadam_2023%2C_Ulan_Bator_07.jpg"
+  },
+  {
+    "_id": "event_sukhbaatar_horse_festival_2027",
+    "name": {
+      "mn": "Сүхбаатар аймгийн морин наадам",
+      "en": "Sükhbaatar Horse Festival"
+    },
+    "place_id": "place_baruun_urt",
+    "aimag": "Sükhbaatar",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        113.2792,
+        46.6806
+      ]
+    },
+    "category": "sport",
+    "start_date": "2027-08-14",
+    "end_date": "2027-08-15",
+    "ticket_price_mnt": 5000,
+    "expected_attendance": 4000,
+    "stay_demand_multiplier": 1.5,
+    "description": {
+      "mn": "Дорнын талын алдартай адуу, холын зайн уралдаан.",
+      "en": "Famous eastern steppe horses, long-distance races."
+    },
+    "date_confidence": "approximate",
+    "is_mock": true,
+    "region": "east",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Mongolski_ch%C5%82opiec_i_konie_na_stepie_podczas_lokalnego_festiwalu_Naadam_%2804%29.jpg/1280px-Mongolski_ch%C5%82opiec_i_konie_na_stepie_podczas_lokalnego_festiwalu_Naadam_%2804%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Mongolski_ch%C5%82opiec_i_konie_na_stepie_podczas_lokalnego_festiwalu_Naadam_%2804%29.jpg",
+        "title": "Mongolski chłopiec i konie na stepie podczas lokalnego festiwalu Naadam (04).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Marcin Konsek",
+        "source": "https://commons.wikimedia.org/wiki/File:Mongolski_ch%C5%82opiec_i_konie_na_stepie_podczas_lokalnego_festiwalu_Naadam_(04).jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Mongolski_ch%C5%82opiec_i_konie_na_stepie_podczas_lokalnego_festiwalu_Naadam_%2803%29.jpg/1280px-Mongolski_ch%C5%82opiec_i_konie_na_stepie_podczas_lokalnego_festiwalu_Naadam_%2803%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Mongolski_ch%C5%82opiec_i_konie_na_stepie_podczas_lokalnego_festiwalu_Naadam_%2803%29.jpg",
+        "title": "Mongolski chłopiec i konie na stepie podczas lokalnego festiwalu Naadam (03).jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Marcin Konsek",
+        "source": "https://commons.wikimedia.org/wiki/File:Mongolski_ch%C5%82opiec_i_konie_na_stepie_podczas_lokalnego_festiwalu_Naadam_(03).jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Festiwal_Naadam_na_stepie_na_obrze%C5%BCach_U%C5%82an_Bator_19.JPG/1280px-Festiwal_Naadam_na_stepie_na_obrze%C5%BCach_U%C5%82an_Bator_19.JPG",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Festiwal_Naadam_na_stepie_na_obrze%C5%BCach_U%C5%82an_Bator_19.JPG",
+        "title": "Festiwal Naadam na stepie na obrzeżach Ułan Bator 19.JPG",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Marcin Konsek",
+        "source": "https://commons.wikimedia.org/wiki/File:Festiwal_Naadam_na_stepie_na_obrze%C5%BCach_U%C5%82an_Bator_19.JPG",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      },
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_07.JPG/1280px-Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_07.JPG",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_07.JPG",
+        "title": "Koń mongolski w Parku Narodowym Gorchi-Tereldż 07.JPG",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Marcin Konsek",
+        "source": "https://commons.wikimedia.org/wiki/File:Ko%C5%84_mongolski_w_Parku_Narodowym_Gorchi-Tereld%C5%BC_07.JPG",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Mongolski_ch%C5%82opiec_i_konie_na_stepie_podczas_lokalnego_festiwalu_Naadam_%2804%29.jpg/1280px-Mongolski_ch%C5%82opiec_i_konie_na_stepie_podczas_lokalnego_festiwalu_Naadam_%2804%29.jpg"
+  },
+  {
+    "_id": "event_dadal_chinggis_day_2026",
+    "name": {
+      "mn": "Их Эзэн Чингис хааны өдөр (Дадал)",
+      "en": "Chinggis Khaan Day in Dadal"
+    },
+    "place_id": "place_dadal",
+    "aimag": "Khentii",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        111.6264,
+        49.0236
+      ]
+    },
+    "category": "national_holiday",
+    "start_date": "2026-11-11",
+    "end_date": "2026-11-11",
+    "ticket_price_mnt": 0,
+    "expected_attendance": 2000,
+    "stay_demand_multiplier": 1.4,
+    "description": {
+      "mn": "Билгийн тооллын баяраар төрсөн нутгийн дурсгалд ёслол үйлдэнэ.",
+      "en": "Ceremonies at the birthplace monuments on the lunar-calendar holiday."
+    },
+    "date_confidence": "approximate",
+    "is_mock": true,
+    "region": "east",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Chingghis_statue_at_Dadal_sum.JPG/1280px-Chingghis_statue_at_Dadal_sum.JPG",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Chingghis_statue_at_Dadal_sum.JPG",
+        "title": "Chingghis statue at Dadal sum.JPG",
+        "license": "CC BY-SA 3.0",
+        "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "author": "Chinneeb",
+        "source": "https://commons.wikimedia.org/wiki/File:Chingghis_statue_at_Dadal_sum.JPG",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": true
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Chingghis_statue_at_Dadal_sum.JPG/1280px-Chingghis_statue_at_Dadal_sum.JPG"
+  },
+  {
+    "_id": "event_playtime_festival_2027",
+    "name": {
+      "mn": "Playtime наадам",
+      "en": "Playtime Festival"
+    },
+    "place_id": "place_ub",
+    "aimag": "Ulaanbaatar",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        106.9177,
+        47.9186
+      ]
+    },
+    "category": "music_festival",
+    "start_date": "2027-07-02",
+    "end_date": "2027-07-04",
+    "ticket_price_mnt": 250000,
+    "expected_attendance": 20000,
+    "stay_demand_multiplier": 1.6,
+    "description": {
+      "mn": "Хамгийн том рок, поп хөгжмийн наадам, Улаанбаатарын захад задгай тайзтай, майханд хонож болно.",
+      "en": "Biggest rock and pop music festival, open-air stage on the outskirts of Ulaanbaatar with camping."
+    },
+    "date_confidence": "approximate",
+    "is_mock": true,
+    "region": "hub",
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "event_choibalsan_autumn_fair",
+    "name": {
+      "mn": "Дорнодын намрын яармаг",
+      "en": "Dornod Autumn Fair"
+    },
+    "place_id": "place_choibalsan",
+    "aimag": "Dornod",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        114.5228,
+        48.0706
+      ]
+    },
+    "category": "festival",
+    "start_date": "2026-10-09",
+    "end_date": "2026-10-10",
+    "ticket_price_mnt": 0,
+    "expected_attendance": 5000,
+    "stay_demand_multiplier": 1.3,
+    "description": {
+      "mn": "Өвлийн өмнөх мах, цагаан идээ, гар урлал.",
+      "en": "Meat, dairy and crafts before winter."
+    },
+    "date_confidence": "approximate",
+    "is_mock": true,
+    "region": "east",
+    "images": [],
+    "cover_image_url": null
+  }
+]

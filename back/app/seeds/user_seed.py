@@ -2,7 +2,7 @@ import logging
 import os
 import secrets
 
-from sqlalchemy.orm import Session
+from pymongo.database import Database
 
 from app import crud, schemas
 from app.utils.functions import load_data
@@ -10,7 +10,7 @@ from app.utils.functions import load_data
 logger = logging.getLogger(__name__)
 
 
-def _seed_password() -> str:
+def seed_password() -> str:
     """Never store seed passwords in version control; take from env or generate."""
     password = os.environ.get("SEED_DEV_PASSWORD")
     if password:
@@ -20,8 +20,7 @@ def _seed_password() -> str:
     return password
 
 
-def create_users(db: Session):
-    password = _seed_password()
+def create_users(db: Database, password: str):
     for row in load_data("users.json"):
         email = row.get("email")
         if crud.user.get_by_email(db=db, email=email):

@@ -1,0 +1,20 @@
+[
+  {
+    "_id": "mem_jamba_1",
+    "user_id": "user_jamba",
+    "kind": "preference",
+    "text": "Өөрөө машин барих дуртай, жолооч хөлслөхгүй.",
+    "source_conversation_id": "conv_jamba_east",
+    "created_at": "2026-09-29T09:11:00Z",
+    "is_mock": true
+  },
+  {
+    "_id": "mem_tsende_1",
+    "user_id": "user_tsende",
+    "kind": "preference",
+    "text": "Хүүхэдтэй, галт тэргээр аялах дуртай.",
+    "source_conversation_id": null,
+    "created_at": "2026-09-28T10:40:00Z",
+    "is_mock": true
+  }
+]

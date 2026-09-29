@@ -71,19 +71,12 @@
     pnpm add <package-name>
     ```
 
-3. Alembic auto generate migration files
+3. Database (MongoDB) — full guide: [docs/DATABASE.md](docs/DATABASE.md)
 
-    ```sh
-    # access backend docker
-    make bash-back
-    ```
-
-    - then run autogenerate the changes of models using [alembic](https://alembic.sqlalchemy.org/en/latest/).
-    - it will be generate migration file in `back/alembic/versions` folder.
-
-    ```sh
-    alembic revision --autogenerate -m "your commit message"
-    ```
+    - The `mongo` service runs MongoDB locally; set `MONGO_URI` in `secret/.env` to use Atlas instead.
+    - `make seed` loads every collection in `data/mock/` (see its README), creates the login users
+      (password from `SEED_DEV_PASSWORD`) and all indexes. Re-running it resets the mock collections.
+    - There are no migrations: collections and indexes are defined in `back/app/db/mongo.py`.
 
 4. Create python virtual environment in local project folder
 

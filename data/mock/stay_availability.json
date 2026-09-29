@@ -1,0 +1,7422 @@
+[
+  {
+    "_id": "avail_ub_hotel_blue_sky_double_room_2026-10-01",
+    "stay_id": "stay_ub_hotel_blue_sky",
+    "date": "2026-10-01",
+    "unit_type": "double_room",
+    "total": 40,
+    "available": 17,
+    "status": "open",
+    "price_mnt": 280000
+  },
+  {
+    "_id": "avail_ub_hotel_blue_sky_family_room_2026-10-01",
+    "stay_id": "stay_ub_hotel_blue_sky",
+    "date": "2026-10-01",
+    "unit_type": "family_room",
+    "total": 10,
+    "available": 8,
+    "status": "open",
+    "price_mnt": 420000
+  },
+  {
+    "_id": "avail_ub_hotel_blue_sky_double_room_2026-10-02",
+    "stay_id": "stay_ub_hotel_blue_sky",
+    "date": "2026-10-02",
+    "unit_type": "double_room",
+    "total": 40,
+    "available": 7,
+    "status": "open",
+    "price_mnt": 280000
+  },
+  {
+    "_id": "avail_ub_hotel_blue_sky_family_room_2026-10-02",
+    "stay_id": "stay_ub_hotel_blue_sky",
+    "date": "2026-10-02",
+    "unit_type": "family_room",
+    "total": 10,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 420000
+  },
+  {
+    "_id": "avail_ub_hotel_blue_sky_double_room_2026-10-03",
+    "stay_id": "stay_ub_hotel_blue_sky",
+    "date": "2026-10-03",
+    "unit_type": "double_room",
+    "total": 40,
+    "available": 17,
+    "status": "open",
+    "price_mnt": 280000
+  },
+  {
+    "_id": "avail_ub_hotel_blue_sky_family_room_2026-10-03",
+    "stay_id": "stay_ub_hotel_blue_sky",
+    "date": "2026-10-03",
+    "unit_type": "family_room",
+    "total": 10,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 420000
+  },
+  {
+    "_id": "avail_ub_hotel_blue_sky_double_room_2026-10-04",
+    "stay_id": "stay_ub_hotel_blue_sky",
+    "date": "2026-10-04",
+    "unit_type": "double_room",
+    "total": 40,
+    "available": 13,
+    "status": "open",
+    "price_mnt": 280000
+  },
+  {
+    "_id": "avail_ub_hotel_blue_sky_family_room_2026-10-04",
+    "stay_id": "stay_ub_hotel_blue_sky",
+    "date": "2026-10-04",
+    "unit_type": "family_room",
+    "total": 10,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 420000
+  },
+  {
+    "_id": "avail_ub_hotel_blue_sky_double_room_2026-10-05",
+    "stay_id": "stay_ub_hotel_blue_sky",
+    "date": "2026-10-05",
+    "unit_type": "double_room",
+    "total": 40,
+    "available": 36,
+    "status": "open",
+    "price_mnt": 280000
+  },
+  {
+    "_id": "avail_ub_hotel_blue_sky_family_room_2026-10-05",
+    "stay_id": "stay_ub_hotel_blue_sky",
+    "date": "2026-10-05",
+    "unit_type": "family_room",
+    "total": 10,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 420000
+  },
+  {
+    "_id": "avail_ub_hotel_blue_sky_double_room_2026-10-06",
+    "stay_id": "stay_ub_hotel_blue_sky",
+    "date": "2026-10-06",
+    "unit_type": "double_room",
+    "total": 40,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 280000
+  },
+  {
+    "_id": "avail_ub_hotel_blue_sky_family_room_2026-10-06",
+    "stay_id": "stay_ub_hotel_blue_sky",
+    "date": "2026-10-06",
+    "unit_type": "family_room",
+    "total": 10,
+    "available": 8,
+    "status": "open",
+    "price_mnt": 420000
+  },
+  {
+    "_id": "avail_ub_hotel_blue_sky_double_room_2026-10-07",
+    "stay_id": "stay_ub_hotel_blue_sky",
+    "date": "2026-10-07",
+    "unit_type": "double_room",
+    "total": 40,
+    "available": 6,
+    "status": "open",
+    "price_mnt": 280000
+  },
+  {
+    "_id": "avail_ub_hotel_blue_sky_family_room_2026-10-07",
+    "stay_id": "stay_ub_hotel_blue_sky",
+    "date": "2026-10-07",
+    "unit_type": "family_room",
+    "total": 10,
+    "available": 7,
+    "status": "open",
+    "price_mnt": 420000
+  },
+  {
+    "_id": "avail_ub_hotel_blue_sky_double_room_2026-10-08",
+    "stay_id": "stay_ub_hotel_blue_sky",
+    "date": "2026-10-08",
+    "unit_type": "double_room",
+    "total": 40,
+    "available": 30,
+    "status": "open",
+    "price_mnt": 280000
+  },
+  {
+    "_id": "avail_ub_hotel_blue_sky_family_room_2026-10-08",
+    "stay_id": "stay_ub_hotel_blue_sky",
+    "date": "2026-10-08",
+    "unit_type": "family_room",
+    "total": 10,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 420000
+  },
+  {
+    "_id": "avail_ub_hotel_blue_sky_double_room_2026-10-09",
+    "stay_id": "stay_ub_hotel_blue_sky",
+    "date": "2026-10-09",
+    "unit_type": "double_room",
+    "total": 40,
+    "available": 6,
+    "status": "open",
+    "price_mnt": 280000
+  },
+  {
+    "_id": "avail_ub_hotel_blue_sky_family_room_2026-10-09",
+    "stay_id": "stay_ub_hotel_blue_sky",
+    "date": "2026-10-09",
+    "unit_type": "family_room",
+    "total": 10,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 420000
+  },
+  {
+    "_id": "avail_ub_hotel_blue_sky_double_room_2026-10-10",
+    "stay_id": "stay_ub_hotel_blue_sky",
+    "date": "2026-10-10",
+    "unit_type": "double_room",
+    "total": 40,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 280000
+  },
+  {
+    "_id": "avail_ub_hotel_blue_sky_family_room_2026-10-10",
+    "stay_id": "stay_ub_hotel_blue_sky",
+    "date": "2026-10-10",
+    "unit_type": "family_room",
+    "total": 10,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 420000
+  },
+  {
+    "_id": "avail_ub_hotel_blue_sky_double_room_2026-10-11",
+    "stay_id": "stay_ub_hotel_blue_sky",
+    "date": "2026-10-11",
+    "unit_type": "double_room",
+    "total": 40,
+    "available": 16,
+    "status": "open",
+    "price_mnt": 280000
+  },
+  {
+    "_id": "avail_ub_hotel_blue_sky_family_room_2026-10-11",
+    "stay_id": "stay_ub_hotel_blue_sky",
+    "date": "2026-10-11",
+    "unit_type": "family_room",
+    "total": 10,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 420000
+  },
+  {
+    "_id": "avail_ub_hotel_blue_sky_double_room_2026-10-12",
+    "stay_id": "stay_ub_hotel_blue_sky",
+    "date": "2026-10-12",
+    "unit_type": "double_room",
+    "total": 40,
+    "available": 20,
+    "status": "open",
+    "price_mnt": 280000
+  },
+  {
+    "_id": "avail_ub_hotel_blue_sky_family_room_2026-10-12",
+    "stay_id": "stay_ub_hotel_blue_sky",
+    "date": "2026-10-12",
+    "unit_type": "family_room",
+    "total": 10,
+    "available": 10,
+    "status": "open",
+    "price_mnt": 420000
+  },
+  {
+    "_id": "avail_ub_hotel_blue_sky_double_room_2026-10-13",
+    "stay_id": "stay_ub_hotel_blue_sky",
+    "date": "2026-10-13",
+    "unit_type": "double_room",
+    "total": 40,
+    "available": 26,
+    "status": "open",
+    "price_mnt": 280000
+  },
+  {
+    "_id": "avail_ub_hotel_blue_sky_family_room_2026-10-13",
+    "stay_id": "stay_ub_hotel_blue_sky",
+    "date": "2026-10-13",
+    "unit_type": "family_room",
+    "total": 10,
+    "available": 10,
+    "status": "open",
+    "price_mnt": 420000
+  },
+  {
+    "_id": "avail_ub_hotel_blue_sky_double_room_2026-10-14",
+    "stay_id": "stay_ub_hotel_blue_sky",
+    "date": "2026-10-14",
+    "unit_type": "double_room",
+    "total": 40,
+    "available": 20,
+    "status": "open",
+    "price_mnt": 280000
+  },
+  {
+    "_id": "avail_ub_hotel_blue_sky_family_room_2026-10-14",
+    "stay_id": "stay_ub_hotel_blue_sky",
+    "date": "2026-10-14",
+    "unit_type": "family_room",
+    "total": 10,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 420000
+  },
+  {
+    "_id": "avail_ub_guesthouse_nomad_dorm_bed_2026-10-01",
+    "stay_id": "stay_ub_guesthouse_nomad",
+    "date": "2026-10-01",
+    "unit_type": "dorm_bed",
+    "total": 16,
+    "available": 8,
+    "status": "open",
+    "price_mnt": 35000
+  },
+  {
+    "_id": "avail_ub_guesthouse_nomad_double_room_2026-10-01",
+    "stay_id": "stay_ub_guesthouse_nomad",
+    "date": "2026-10-01",
+    "unit_type": "double_room",
+    "total": 6,
+    "available": 6,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_ub_guesthouse_nomad_dorm_bed_2026-10-02",
+    "stay_id": "stay_ub_guesthouse_nomad",
+    "date": "2026-10-02",
+    "unit_type": "dorm_bed",
+    "total": 16,
+    "available": 6,
+    "status": "open",
+    "price_mnt": 35000
+  },
+  {
+    "_id": "avail_ub_guesthouse_nomad_double_room_2026-10-02",
+    "stay_id": "stay_ub_guesthouse_nomad",
+    "date": "2026-10-02",
+    "unit_type": "double_room",
+    "total": 6,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_ub_guesthouse_nomad_dorm_bed_2026-10-03",
+    "stay_id": "stay_ub_guesthouse_nomad",
+    "date": "2026-10-03",
+    "unit_type": "dorm_bed",
+    "total": 16,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 35000
+  },
+  {
+    "_id": "avail_ub_guesthouse_nomad_double_room_2026-10-03",
+    "stay_id": "stay_ub_guesthouse_nomad",
+    "date": "2026-10-03",
+    "unit_type": "double_room",
+    "total": 6,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_ub_guesthouse_nomad_dorm_bed_2026-10-04",
+    "stay_id": "stay_ub_guesthouse_nomad",
+    "date": "2026-10-04",
+    "unit_type": "dorm_bed",
+    "total": 16,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 35000
+  },
+  {
+    "_id": "avail_ub_guesthouse_nomad_double_room_2026-10-04",
+    "stay_id": "stay_ub_guesthouse_nomad",
+    "date": "2026-10-04",
+    "unit_type": "double_room",
+    "total": 6,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_ub_guesthouse_nomad_dorm_bed_2026-10-05",
+    "stay_id": "stay_ub_guesthouse_nomad",
+    "date": "2026-10-05",
+    "unit_type": "dorm_bed",
+    "total": 16,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 35000
+  },
+  {
+    "_id": "avail_ub_guesthouse_nomad_double_room_2026-10-05",
+    "stay_id": "stay_ub_guesthouse_nomad",
+    "date": "2026-10-05",
+    "unit_type": "double_room",
+    "total": 6,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_ub_guesthouse_nomad_dorm_bed_2026-10-06",
+    "stay_id": "stay_ub_guesthouse_nomad",
+    "date": "2026-10-06",
+    "unit_type": "dorm_bed",
+    "total": 16,
+    "available": 8,
+    "status": "open",
+    "price_mnt": 35000
+  },
+  {
+    "_id": "avail_ub_guesthouse_nomad_double_room_2026-10-06",
+    "stay_id": "stay_ub_guesthouse_nomad",
+    "date": "2026-10-06",
+    "unit_type": "double_room",
+    "total": 6,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_ub_guesthouse_nomad_dorm_bed_2026-10-07",
+    "stay_id": "stay_ub_guesthouse_nomad",
+    "date": "2026-10-07",
+    "unit_type": "dorm_bed",
+    "total": 16,
+    "available": 9,
+    "status": "open",
+    "price_mnt": 35000
+  },
+  {
+    "_id": "avail_ub_guesthouse_nomad_double_room_2026-10-07",
+    "stay_id": "stay_ub_guesthouse_nomad",
+    "date": "2026-10-07",
+    "unit_type": "double_room",
+    "total": 6,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_ub_guesthouse_nomad_dorm_bed_2026-10-08",
+    "stay_id": "stay_ub_guesthouse_nomad",
+    "date": "2026-10-08",
+    "unit_type": "dorm_bed",
+    "total": 16,
+    "available": 8,
+    "status": "open",
+    "price_mnt": 35000
+  },
+  {
+    "_id": "avail_ub_guesthouse_nomad_double_room_2026-10-08",
+    "stay_id": "stay_ub_guesthouse_nomad",
+    "date": "2026-10-08",
+    "unit_type": "double_room",
+    "total": 6,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_ub_guesthouse_nomad_dorm_bed_2026-10-09",
+    "stay_id": "stay_ub_guesthouse_nomad",
+    "date": "2026-10-09",
+    "unit_type": "dorm_bed",
+    "total": 16,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 35000
+  },
+  {
+    "_id": "avail_ub_guesthouse_nomad_double_room_2026-10-09",
+    "stay_id": "stay_ub_guesthouse_nomad",
+    "date": "2026-10-09",
+    "unit_type": "double_room",
+    "total": 6,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_ub_guesthouse_nomad_dorm_bed_2026-10-10",
+    "stay_id": "stay_ub_guesthouse_nomad",
+    "date": "2026-10-10",
+    "unit_type": "dorm_bed",
+    "total": 16,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 35000
+  },
+  {
+    "_id": "avail_ub_guesthouse_nomad_double_room_2026-10-10",
+    "stay_id": "stay_ub_guesthouse_nomad",
+    "date": "2026-10-10",
+    "unit_type": "double_room",
+    "total": 6,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_ub_guesthouse_nomad_dorm_bed_2026-10-11",
+    "stay_id": "stay_ub_guesthouse_nomad",
+    "date": "2026-10-11",
+    "unit_type": "dorm_bed",
+    "total": 16,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 35000
+  },
+  {
+    "_id": "avail_ub_guesthouse_nomad_double_room_2026-10-11",
+    "stay_id": "stay_ub_guesthouse_nomad",
+    "date": "2026-10-11",
+    "unit_type": "double_room",
+    "total": 6,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_ub_guesthouse_nomad_dorm_bed_2026-10-12",
+    "stay_id": "stay_ub_guesthouse_nomad",
+    "date": "2026-10-12",
+    "unit_type": "dorm_bed",
+    "total": 16,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 35000
+  },
+  {
+    "_id": "avail_ub_guesthouse_nomad_double_room_2026-10-12",
+    "stay_id": "stay_ub_guesthouse_nomad",
+    "date": "2026-10-12",
+    "unit_type": "double_room",
+    "total": 6,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_ub_guesthouse_nomad_dorm_bed_2026-10-13",
+    "stay_id": "stay_ub_guesthouse_nomad",
+    "date": "2026-10-13",
+    "unit_type": "dorm_bed",
+    "total": 16,
+    "available": 14,
+    "status": "open",
+    "price_mnt": 35000
+  },
+  {
+    "_id": "avail_ub_guesthouse_nomad_double_room_2026-10-13",
+    "stay_id": "stay_ub_guesthouse_nomad",
+    "date": "2026-10-13",
+    "unit_type": "double_room",
+    "total": 6,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_ub_guesthouse_nomad_dorm_bed_2026-10-14",
+    "stay_id": "stay_ub_guesthouse_nomad",
+    "date": "2026-10-14",
+    "unit_type": "dorm_bed",
+    "total": 16,
+    "available": 15,
+    "status": "open",
+    "price_mnt": 35000
+  },
+  {
+    "_id": "avail_ub_guesthouse_nomad_double_room_2026-10-14",
+    "stay_id": "stay_ub_guesthouse_nomad",
+    "date": "2026-10-14",
+    "unit_type": "double_room",
+    "total": 6,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_darkhan_hotel_selenge_double_room_2026-10-01",
+    "stay_id": "stay_darkhan_hotel_selenge",
+    "date": "2026-10-01",
+    "unit_type": "double_room",
+    "total": 24,
+    "available": 21,
+    "status": "open",
+    "price_mnt": 160000
+  },
+  {
+    "_id": "avail_darkhan_hotel_selenge_suite_2026-10-01",
+    "stay_id": "stay_darkhan_hotel_selenge",
+    "date": "2026-10-01",
+    "unit_type": "suite",
+    "total": 4,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 260000
+  },
+  {
+    "_id": "avail_darkhan_hotel_selenge_double_room_2026-10-02",
+    "stay_id": "stay_darkhan_hotel_selenge",
+    "date": "2026-10-02",
+    "unit_type": "double_room",
+    "total": 24,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 160000
+  },
+  {
+    "_id": "avail_darkhan_hotel_selenge_suite_2026-10-02",
+    "stay_id": "stay_darkhan_hotel_selenge",
+    "date": "2026-10-02",
+    "unit_type": "suite",
+    "total": 4,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 260000
+  },
+  {
+    "_id": "avail_darkhan_hotel_selenge_double_room_2026-10-03",
+    "stay_id": "stay_darkhan_hotel_selenge",
+    "date": "2026-10-03",
+    "unit_type": "double_room",
+    "total": 24,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 160000
+  },
+  {
+    "_id": "avail_darkhan_hotel_selenge_suite_2026-10-03",
+    "stay_id": "stay_darkhan_hotel_selenge",
+    "date": "2026-10-03",
+    "unit_type": "suite",
+    "total": 4,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 260000
+  },
+  {
+    "_id": "avail_darkhan_hotel_selenge_double_room_2026-10-04",
+    "stay_id": "stay_darkhan_hotel_selenge",
+    "date": "2026-10-04",
+    "unit_type": "double_room",
+    "total": 24,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 160000
+  },
+  {
+    "_id": "avail_darkhan_hotel_selenge_suite_2026-10-04",
+    "stay_id": "stay_darkhan_hotel_selenge",
+    "date": "2026-10-04",
+    "unit_type": "suite",
+    "total": 4,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 260000
+  },
+  {
+    "_id": "avail_darkhan_hotel_selenge_double_room_2026-10-05",
+    "stay_id": "stay_darkhan_hotel_selenge",
+    "date": "2026-10-05",
+    "unit_type": "double_room",
+    "total": 24,
+    "available": 12,
+    "status": "open",
+    "price_mnt": 160000
+  },
+  {
+    "_id": "avail_darkhan_hotel_selenge_suite_2026-10-05",
+    "stay_id": "stay_darkhan_hotel_selenge",
+    "date": "2026-10-05",
+    "unit_type": "suite",
+    "total": 4,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 260000
+  },
+  {
+    "_id": "avail_darkhan_hotel_selenge_double_room_2026-10-06",
+    "stay_id": "stay_darkhan_hotel_selenge",
+    "date": "2026-10-06",
+    "unit_type": "double_room",
+    "total": 24,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 160000
+  },
+  {
+    "_id": "avail_darkhan_hotel_selenge_suite_2026-10-06",
+    "stay_id": "stay_darkhan_hotel_selenge",
+    "date": "2026-10-06",
+    "unit_type": "suite",
+    "total": 4,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 260000
+  },
+  {
+    "_id": "avail_darkhan_hotel_selenge_double_room_2026-10-07",
+    "stay_id": "stay_darkhan_hotel_selenge",
+    "date": "2026-10-07",
+    "unit_type": "double_room",
+    "total": 24,
+    "available": 8,
+    "status": "open",
+    "price_mnt": 160000
+  },
+  {
+    "_id": "avail_darkhan_hotel_selenge_suite_2026-10-07",
+    "stay_id": "stay_darkhan_hotel_selenge",
+    "date": "2026-10-07",
+    "unit_type": "suite",
+    "total": 4,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 260000
+  },
+  {
+    "_id": "avail_darkhan_hotel_selenge_double_room_2026-10-08",
+    "stay_id": "stay_darkhan_hotel_selenge",
+    "date": "2026-10-08",
+    "unit_type": "double_room",
+    "total": 24,
+    "available": 7,
+    "status": "open",
+    "price_mnt": 160000
+  },
+  {
+    "_id": "avail_darkhan_hotel_selenge_suite_2026-10-08",
+    "stay_id": "stay_darkhan_hotel_selenge",
+    "date": "2026-10-08",
+    "unit_type": "suite",
+    "total": 4,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 260000
+  },
+  {
+    "_id": "avail_darkhan_hotel_selenge_double_room_2026-10-09",
+    "stay_id": "stay_darkhan_hotel_selenge",
+    "date": "2026-10-09",
+    "unit_type": "double_room",
+    "total": 24,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 160000
+  },
+  {
+    "_id": "avail_darkhan_hotel_selenge_suite_2026-10-09",
+    "stay_id": "stay_darkhan_hotel_selenge",
+    "date": "2026-10-09",
+    "unit_type": "suite",
+    "total": 4,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 260000
+  },
+  {
+    "_id": "avail_darkhan_hotel_selenge_double_room_2026-10-10",
+    "stay_id": "stay_darkhan_hotel_selenge",
+    "date": "2026-10-10",
+    "unit_type": "double_room",
+    "total": 24,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 160000
+  },
+  {
+    "_id": "avail_darkhan_hotel_selenge_suite_2026-10-10",
+    "stay_id": "stay_darkhan_hotel_selenge",
+    "date": "2026-10-10",
+    "unit_type": "suite",
+    "total": 4,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 260000
+  },
+  {
+    "_id": "avail_darkhan_hotel_selenge_double_room_2026-10-11",
+    "stay_id": "stay_darkhan_hotel_selenge",
+    "date": "2026-10-11",
+    "unit_type": "double_room",
+    "total": 24,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 160000
+  },
+  {
+    "_id": "avail_darkhan_hotel_selenge_suite_2026-10-11",
+    "stay_id": "stay_darkhan_hotel_selenge",
+    "date": "2026-10-11",
+    "unit_type": "suite",
+    "total": 4,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 260000
+  },
+  {
+    "_id": "avail_darkhan_hotel_selenge_double_room_2026-10-12",
+    "stay_id": "stay_darkhan_hotel_selenge",
+    "date": "2026-10-12",
+    "unit_type": "double_room",
+    "total": 24,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 160000
+  },
+  {
+    "_id": "avail_darkhan_hotel_selenge_suite_2026-10-12",
+    "stay_id": "stay_darkhan_hotel_selenge",
+    "date": "2026-10-12",
+    "unit_type": "suite",
+    "total": 4,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 260000
+  },
+  {
+    "_id": "avail_darkhan_hotel_selenge_double_room_2026-10-13",
+    "stay_id": "stay_darkhan_hotel_selenge",
+    "date": "2026-10-13",
+    "unit_type": "double_room",
+    "total": 24,
+    "available": 21,
+    "status": "open",
+    "price_mnt": 160000
+  },
+  {
+    "_id": "avail_darkhan_hotel_selenge_suite_2026-10-13",
+    "stay_id": "stay_darkhan_hotel_selenge",
+    "date": "2026-10-13",
+    "unit_type": "suite",
+    "total": 4,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 260000
+  },
+  {
+    "_id": "avail_darkhan_hotel_selenge_double_room_2026-10-14",
+    "stay_id": "stay_darkhan_hotel_selenge",
+    "date": "2026-10-14",
+    "unit_type": "double_room",
+    "total": 24,
+    "available": 11,
+    "status": "open",
+    "price_mnt": 160000
+  },
+  {
+    "_id": "avail_darkhan_hotel_selenge_suite_2026-10-14",
+    "stay_id": "stay_darkhan_hotel_selenge",
+    "date": "2026-10-14",
+    "unit_type": "suite",
+    "total": 4,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 260000
+  },
+  {
+    "_id": "avail_darkhan_house_khongor_whole_house_2026-10-01",
+    "stay_id": "stay_darkhan_house_khongor",
+    "date": "2026-10-01",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 250000
+  },
+  {
+    "_id": "avail_darkhan_house_khongor_whole_house_2026-10-02",
+    "stay_id": "stay_darkhan_house_khongor",
+    "date": "2026-10-02",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 250000
+  },
+  {
+    "_id": "avail_darkhan_house_khongor_whole_house_2026-10-03",
+    "stay_id": "stay_darkhan_house_khongor",
+    "date": "2026-10-03",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 250000
+  },
+  {
+    "_id": "avail_darkhan_house_khongor_whole_house_2026-10-04",
+    "stay_id": "stay_darkhan_house_khongor",
+    "date": "2026-10-04",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 250000
+  },
+  {
+    "_id": "avail_darkhan_house_khongor_whole_house_2026-10-05",
+    "stay_id": "stay_darkhan_house_khongor",
+    "date": "2026-10-05",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 250000
+  },
+  {
+    "_id": "avail_darkhan_house_khongor_whole_house_2026-10-06",
+    "stay_id": "stay_darkhan_house_khongor",
+    "date": "2026-10-06",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 250000
+  },
+  {
+    "_id": "avail_darkhan_house_khongor_whole_house_2026-10-07",
+    "stay_id": "stay_darkhan_house_khongor",
+    "date": "2026-10-07",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 250000
+  },
+  {
+    "_id": "avail_darkhan_house_khongor_whole_house_2026-10-08",
+    "stay_id": "stay_darkhan_house_khongor",
+    "date": "2026-10-08",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 250000
+  },
+  {
+    "_id": "avail_darkhan_house_khongor_whole_house_2026-10-09",
+    "stay_id": "stay_darkhan_house_khongor",
+    "date": "2026-10-09",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 250000
+  },
+  {
+    "_id": "avail_darkhan_house_khongor_whole_house_2026-10-10",
+    "stay_id": "stay_darkhan_house_khongor",
+    "date": "2026-10-10",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 250000
+  },
+  {
+    "_id": "avail_darkhan_house_khongor_whole_house_2026-10-11",
+    "stay_id": "stay_darkhan_house_khongor",
+    "date": "2026-10-11",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 250000
+  },
+  {
+    "_id": "avail_darkhan_house_khongor_whole_house_2026-10-12",
+    "stay_id": "stay_darkhan_house_khongor",
+    "date": "2026-10-12",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 250000
+  },
+  {
+    "_id": "avail_darkhan_house_khongor_whole_house_2026-10-13",
+    "stay_id": "stay_darkhan_house_khongor",
+    "date": "2026-10-13",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 250000
+  },
+  {
+    "_id": "avail_darkhan_house_khongor_whole_house_2026-10-14",
+    "stay_id": "stay_darkhan_house_khongor",
+    "date": "2026-10-14",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 250000
+  },
+  {
+    "_id": "avail_amarbayasgalant_camp_ger_2026-10-01",
+    "stay_id": "stay_amarbayasgalant_camp",
+    "date": "2026-10-01",
+    "unit_type": "ger",
+    "total": 15,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 95000
+  },
+  {
+    "_id": "avail_amarbayasgalant_camp_ger_2026-10-02",
+    "stay_id": "stay_amarbayasgalant_camp",
+    "date": "2026-10-02",
+    "unit_type": "ger",
+    "total": 15,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 95000
+  },
+  {
+    "_id": "avail_amarbayasgalant_camp_ger_2026-10-03",
+    "stay_id": "stay_amarbayasgalant_camp",
+    "date": "2026-10-03",
+    "unit_type": "ger",
+    "total": 15,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 95000
+  },
+  {
+    "_id": "avail_amarbayasgalant_camp_ger_2026-10-04",
+    "stay_id": "stay_amarbayasgalant_camp",
+    "date": "2026-10-04",
+    "unit_type": "ger",
+    "total": 15,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 95000
+  },
+  {
+    "_id": "avail_amarbayasgalant_camp_ger_2026-10-05",
+    "stay_id": "stay_amarbayasgalant_camp",
+    "date": "2026-10-05",
+    "unit_type": "ger",
+    "total": 15,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 95000
+  },
+  {
+    "_id": "avail_amarbayasgalant_camp_ger_2026-10-06",
+    "stay_id": "stay_amarbayasgalant_camp",
+    "date": "2026-10-06",
+    "unit_type": "ger",
+    "total": 15,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 95000
+  },
+  {
+    "_id": "avail_amarbayasgalant_camp_ger_2026-10-07",
+    "stay_id": "stay_amarbayasgalant_camp",
+    "date": "2026-10-07",
+    "unit_type": "ger",
+    "total": 15,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 95000
+  },
+  {
+    "_id": "avail_amarbayasgalant_camp_ger_2026-10-08",
+    "stay_id": "stay_amarbayasgalant_camp",
+    "date": "2026-10-08",
+    "unit_type": "ger",
+    "total": 15,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 95000
+  },
+  {
+    "_id": "avail_amarbayasgalant_camp_ger_2026-10-09",
+    "stay_id": "stay_amarbayasgalant_camp",
+    "date": "2026-10-09",
+    "unit_type": "ger",
+    "total": 15,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 95000
+  },
+  {
+    "_id": "avail_amarbayasgalant_camp_ger_2026-10-10",
+    "stay_id": "stay_amarbayasgalant_camp",
+    "date": "2026-10-10",
+    "unit_type": "ger",
+    "total": 15,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 95000
+  },
+  {
+    "_id": "avail_amarbayasgalant_camp_ger_2026-10-11",
+    "stay_id": "stay_amarbayasgalant_camp",
+    "date": "2026-10-11",
+    "unit_type": "ger",
+    "total": 15,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 95000
+  },
+  {
+    "_id": "avail_amarbayasgalant_camp_ger_2026-10-12",
+    "stay_id": "stay_amarbayasgalant_camp",
+    "date": "2026-10-12",
+    "unit_type": "ger",
+    "total": 15,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 95000
+  },
+  {
+    "_id": "avail_amarbayasgalant_camp_ger_2026-10-13",
+    "stay_id": "stay_amarbayasgalant_camp",
+    "date": "2026-10-13",
+    "unit_type": "ger",
+    "total": 15,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 95000
+  },
+  {
+    "_id": "avail_amarbayasgalant_camp_ger_2026-10-14",
+    "stay_id": "stay_amarbayasgalant_camp",
+    "date": "2026-10-14",
+    "unit_type": "ger",
+    "total": 15,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 95000
+  },
+  {
+    "_id": "avail_erdenet_hotel_copper_double_room_2026-10-01",
+    "stay_id": "stay_erdenet_hotel_copper",
+    "date": "2026-10-01",
+    "unit_type": "double_room",
+    "total": 30,
+    "available": 27,
+    "status": "open",
+    "price_mnt": 180000
+  },
+  {
+    "_id": "avail_erdenet_hotel_copper_double_room_2026-10-02",
+    "stay_id": "stay_erdenet_hotel_copper",
+    "date": "2026-10-02",
+    "unit_type": "double_room",
+    "total": 30,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 180000
+  },
+  {
+    "_id": "avail_erdenet_hotel_copper_double_room_2026-10-03",
+    "stay_id": "stay_erdenet_hotel_copper",
+    "date": "2026-10-03",
+    "unit_type": "double_room",
+    "total": 30,
+    "available": 12,
+    "status": "open",
+    "price_mnt": 180000
+  },
+  {
+    "_id": "avail_erdenet_hotel_copper_double_room_2026-10-04",
+    "stay_id": "stay_erdenet_hotel_copper",
+    "date": "2026-10-04",
+    "unit_type": "double_room",
+    "total": 30,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 180000
+  },
+  {
+    "_id": "avail_erdenet_hotel_copper_double_room_2026-10-05",
+    "stay_id": "stay_erdenet_hotel_copper",
+    "date": "2026-10-05",
+    "unit_type": "double_room",
+    "total": 30,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 180000
+  },
+  {
+    "_id": "avail_erdenet_hotel_copper_double_room_2026-10-06",
+    "stay_id": "stay_erdenet_hotel_copper",
+    "date": "2026-10-06",
+    "unit_type": "double_room",
+    "total": 30,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 180000
+  },
+  {
+    "_id": "avail_erdenet_hotel_copper_double_room_2026-10-07",
+    "stay_id": "stay_erdenet_hotel_copper",
+    "date": "2026-10-07",
+    "unit_type": "double_room",
+    "total": 30,
+    "available": 21,
+    "status": "open",
+    "price_mnt": 180000
+  },
+  {
+    "_id": "avail_erdenet_hotel_copper_double_room_2026-10-08",
+    "stay_id": "stay_erdenet_hotel_copper",
+    "date": "2026-10-08",
+    "unit_type": "double_room",
+    "total": 30,
+    "available": 23,
+    "status": "open",
+    "price_mnt": 180000
+  },
+  {
+    "_id": "avail_erdenet_hotel_copper_double_room_2026-10-09",
+    "stay_id": "stay_erdenet_hotel_copper",
+    "date": "2026-10-09",
+    "unit_type": "double_room",
+    "total": 30,
+    "available": 22,
+    "status": "open",
+    "price_mnt": 180000
+  },
+  {
+    "_id": "avail_erdenet_hotel_copper_double_room_2026-10-10",
+    "stay_id": "stay_erdenet_hotel_copper",
+    "date": "2026-10-10",
+    "unit_type": "double_room",
+    "total": 30,
+    "available": 16,
+    "status": "open",
+    "price_mnt": 180000
+  },
+  {
+    "_id": "avail_erdenet_hotel_copper_double_room_2026-10-11",
+    "stay_id": "stay_erdenet_hotel_copper",
+    "date": "2026-10-11",
+    "unit_type": "double_room",
+    "total": 30,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 180000
+  },
+  {
+    "_id": "avail_erdenet_hotel_copper_double_room_2026-10-12",
+    "stay_id": "stay_erdenet_hotel_copper",
+    "date": "2026-10-12",
+    "unit_type": "double_room",
+    "total": 30,
+    "available": 12,
+    "status": "open",
+    "price_mnt": 180000
+  },
+  {
+    "_id": "avail_erdenet_hotel_copper_double_room_2026-10-13",
+    "stay_id": "stay_erdenet_hotel_copper",
+    "date": "2026-10-13",
+    "unit_type": "double_room",
+    "total": 30,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 180000
+  },
+  {
+    "_id": "avail_erdenet_hotel_copper_double_room_2026-10-14",
+    "stay_id": "stay_erdenet_hotel_copper",
+    "date": "2026-10-14",
+    "unit_type": "double_room",
+    "total": 30,
+    "available": 28,
+    "status": "open",
+    "price_mnt": 180000
+  },
+  {
+    "_id": "avail_bulgan_hotel_khan_double_room_2026-10-01",
+    "stay_id": "stay_bulgan_hotel_khan",
+    "date": "2026-10-01",
+    "unit_type": "double_room",
+    "total": 18,
+    "available": 16,
+    "status": "open",
+    "price_mnt": 130000
+  },
+  {
+    "_id": "avail_bulgan_hotel_khan_family_room_2026-10-01",
+    "stay_id": "stay_bulgan_hotel_khan",
+    "date": "2026-10-01",
+    "unit_type": "family_room",
+    "total": 4,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 200000
+  },
+  {
+    "_id": "avail_bulgan_hotel_khan_double_room_2026-10-02",
+    "stay_id": "stay_bulgan_hotel_khan",
+    "date": "2026-10-02",
+    "unit_type": "double_room",
+    "total": 18,
+    "available": 12,
+    "status": "open",
+    "price_mnt": 130000
+  },
+  {
+    "_id": "avail_bulgan_hotel_khan_family_room_2026-10-02",
+    "stay_id": "stay_bulgan_hotel_khan",
+    "date": "2026-10-02",
+    "unit_type": "family_room",
+    "total": 4,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 200000
+  },
+  {
+    "_id": "avail_bulgan_hotel_khan_double_room_2026-10-03",
+    "stay_id": "stay_bulgan_hotel_khan",
+    "date": "2026-10-03",
+    "unit_type": "double_room",
+    "total": 18,
+    "available": 10,
+    "status": "open",
+    "price_mnt": 130000
+  },
+  {
+    "_id": "avail_bulgan_hotel_khan_family_room_2026-10-03",
+    "stay_id": "stay_bulgan_hotel_khan",
+    "date": "2026-10-03",
+    "unit_type": "family_room",
+    "total": 4,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 200000
+  },
+  {
+    "_id": "avail_bulgan_hotel_khan_double_room_2026-10-04",
+    "stay_id": "stay_bulgan_hotel_khan",
+    "date": "2026-10-04",
+    "unit_type": "double_room",
+    "total": 18,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 130000
+  },
+  {
+    "_id": "avail_bulgan_hotel_khan_family_room_2026-10-04",
+    "stay_id": "stay_bulgan_hotel_khan",
+    "date": "2026-10-04",
+    "unit_type": "family_room",
+    "total": 4,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 200000
+  },
+  {
+    "_id": "avail_bulgan_hotel_khan_double_room_2026-10-05",
+    "stay_id": "stay_bulgan_hotel_khan",
+    "date": "2026-10-05",
+    "unit_type": "double_room",
+    "total": 18,
+    "available": 13,
+    "status": "open",
+    "price_mnt": 130000
+  },
+  {
+    "_id": "avail_bulgan_hotel_khan_family_room_2026-10-05",
+    "stay_id": "stay_bulgan_hotel_khan",
+    "date": "2026-10-05",
+    "unit_type": "family_room",
+    "total": 4,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 200000
+  },
+  {
+    "_id": "avail_bulgan_hotel_khan_double_room_2026-10-06",
+    "stay_id": "stay_bulgan_hotel_khan",
+    "date": "2026-10-06",
+    "unit_type": "double_room",
+    "total": 18,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 130000
+  },
+  {
+    "_id": "avail_bulgan_hotel_khan_family_room_2026-10-06",
+    "stay_id": "stay_bulgan_hotel_khan",
+    "date": "2026-10-06",
+    "unit_type": "family_room",
+    "total": 4,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 200000
+  },
+  {
+    "_id": "avail_bulgan_hotel_khan_double_room_2026-10-07",
+    "stay_id": "stay_bulgan_hotel_khan",
+    "date": "2026-10-07",
+    "unit_type": "double_room",
+    "total": 18,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 130000
+  },
+  {
+    "_id": "avail_bulgan_hotel_khan_family_room_2026-10-07",
+    "stay_id": "stay_bulgan_hotel_khan",
+    "date": "2026-10-07",
+    "unit_type": "family_room",
+    "total": 4,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 200000
+  },
+  {
+    "_id": "avail_bulgan_hotel_khan_double_room_2026-10-08",
+    "stay_id": "stay_bulgan_hotel_khan",
+    "date": "2026-10-08",
+    "unit_type": "double_room",
+    "total": 18,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 130000
+  },
+  {
+    "_id": "avail_bulgan_hotel_khan_family_room_2026-10-08",
+    "stay_id": "stay_bulgan_hotel_khan",
+    "date": "2026-10-08",
+    "unit_type": "family_room",
+    "total": 4,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 200000
+  },
+  {
+    "_id": "avail_bulgan_hotel_khan_double_room_2026-10-09",
+    "stay_id": "stay_bulgan_hotel_khan",
+    "date": "2026-10-09",
+    "unit_type": "double_room",
+    "total": 18,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 130000
+  },
+  {
+    "_id": "avail_bulgan_hotel_khan_family_room_2026-10-09",
+    "stay_id": "stay_bulgan_hotel_khan",
+    "date": "2026-10-09",
+    "unit_type": "family_room",
+    "total": 4,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 200000
+  },
+  {
+    "_id": "avail_bulgan_hotel_khan_double_room_2026-10-10",
+    "stay_id": "stay_bulgan_hotel_khan",
+    "date": "2026-10-10",
+    "unit_type": "double_room",
+    "total": 18,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 130000
+  },
+  {
+    "_id": "avail_bulgan_hotel_khan_family_room_2026-10-10",
+    "stay_id": "stay_bulgan_hotel_khan",
+    "date": "2026-10-10",
+    "unit_type": "family_room",
+    "total": 4,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 200000
+  },
+  {
+    "_id": "avail_bulgan_hotel_khan_double_room_2026-10-11",
+    "stay_id": "stay_bulgan_hotel_khan",
+    "date": "2026-10-11",
+    "unit_type": "double_room",
+    "total": 18,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 130000
+  },
+  {
+    "_id": "avail_bulgan_hotel_khan_family_room_2026-10-11",
+    "stay_id": "stay_bulgan_hotel_khan",
+    "date": "2026-10-11",
+    "unit_type": "family_room",
+    "total": 4,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 200000
+  },
+  {
+    "_id": "avail_bulgan_hotel_khan_double_room_2026-10-12",
+    "stay_id": "stay_bulgan_hotel_khan",
+    "date": "2026-10-12",
+    "unit_type": "double_room",
+    "total": 18,
+    "available": 15,
+    "status": "open",
+    "price_mnt": 130000
+  },
+  {
+    "_id": "avail_bulgan_hotel_khan_family_room_2026-10-12",
+    "stay_id": "stay_bulgan_hotel_khan",
+    "date": "2026-10-12",
+    "unit_type": "family_room",
+    "total": 4,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 200000
+  },
+  {
+    "_id": "avail_bulgan_hotel_khan_double_room_2026-10-13",
+    "stay_id": "stay_bulgan_hotel_khan",
+    "date": "2026-10-13",
+    "unit_type": "double_room",
+    "total": 18,
+    "available": 11,
+    "status": "open",
+    "price_mnt": 130000
+  },
+  {
+    "_id": "avail_bulgan_hotel_khan_family_room_2026-10-13",
+    "stay_id": "stay_bulgan_hotel_khan",
+    "date": "2026-10-13",
+    "unit_type": "family_room",
+    "total": 4,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 200000
+  },
+  {
+    "_id": "avail_bulgan_hotel_khan_double_room_2026-10-14",
+    "stay_id": "stay_bulgan_hotel_khan",
+    "date": "2026-10-14",
+    "unit_type": "double_room",
+    "total": 18,
+    "available": 8,
+    "status": "open",
+    "price_mnt": 130000
+  },
+  {
+    "_id": "avail_bulgan_hotel_khan_family_room_2026-10-14",
+    "stay_id": "stay_bulgan_hotel_khan",
+    "date": "2026-10-14",
+    "unit_type": "family_room",
+    "total": 4,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 200000
+  },
+  {
+    "_id": "avail_bulgan_house_bayan_whole_house_2026-10-01",
+    "stay_id": "stay_bulgan_house_bayan",
+    "date": "2026-10-01",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 320000
+  },
+  {
+    "_id": "avail_bulgan_house_bayan_whole_house_2026-10-02",
+    "stay_id": "stay_bulgan_house_bayan",
+    "date": "2026-10-02",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 320000
+  },
+  {
+    "_id": "avail_bulgan_house_bayan_whole_house_2026-10-03",
+    "stay_id": "stay_bulgan_house_bayan",
+    "date": "2026-10-03",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 320000
+  },
+  {
+    "_id": "avail_bulgan_house_bayan_whole_house_2026-10-04",
+    "stay_id": "stay_bulgan_house_bayan",
+    "date": "2026-10-04",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 320000
+  },
+  {
+    "_id": "avail_bulgan_house_bayan_whole_house_2026-10-05",
+    "stay_id": "stay_bulgan_house_bayan",
+    "date": "2026-10-05",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 320000
+  },
+  {
+    "_id": "avail_bulgan_house_bayan_whole_house_2026-10-06",
+    "stay_id": "stay_bulgan_house_bayan",
+    "date": "2026-10-06",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 320000
+  },
+  {
+    "_id": "avail_bulgan_house_bayan_whole_house_2026-10-07",
+    "stay_id": "stay_bulgan_house_bayan",
+    "date": "2026-10-07",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 320000
+  },
+  {
+    "_id": "avail_bulgan_house_bayan_whole_house_2026-10-08",
+    "stay_id": "stay_bulgan_house_bayan",
+    "date": "2026-10-08",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 320000
+  },
+  {
+    "_id": "avail_bulgan_house_bayan_whole_house_2026-10-09",
+    "stay_id": "stay_bulgan_house_bayan",
+    "date": "2026-10-09",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 320000
+  },
+  {
+    "_id": "avail_bulgan_house_bayan_whole_house_2026-10-10",
+    "stay_id": "stay_bulgan_house_bayan",
+    "date": "2026-10-10",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 320000
+  },
+  {
+    "_id": "avail_bulgan_house_bayan_whole_house_2026-10-11",
+    "stay_id": "stay_bulgan_house_bayan",
+    "date": "2026-10-11",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 320000
+  },
+  {
+    "_id": "avail_bulgan_house_bayan_whole_house_2026-10-12",
+    "stay_id": "stay_bulgan_house_bayan",
+    "date": "2026-10-12",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 320000
+  },
+  {
+    "_id": "avail_bulgan_house_bayan_whole_house_2026-10-13",
+    "stay_id": "stay_bulgan_house_bayan",
+    "date": "2026-10-13",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 320000
+  },
+  {
+    "_id": "avail_bulgan_house_bayan_whole_house_2026-10-14",
+    "stay_id": "stay_bulgan_house_bayan",
+    "date": "2026-10-14",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 320000
+  },
+  {
+    "_id": "avail_uran_togoo_camp_ger_2026-10-01",
+    "stay_id": "stay_uran_togoo_camp",
+    "date": "2026-10-01",
+    "unit_type": "ger",
+    "total": 12,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 85000
+  },
+  {
+    "_id": "avail_uran_togoo_camp_ger_2026-10-02",
+    "stay_id": "stay_uran_togoo_camp",
+    "date": "2026-10-02",
+    "unit_type": "ger",
+    "total": 12,
+    "available": 7,
+    "status": "open",
+    "price_mnt": 85000
+  },
+  {
+    "_id": "avail_uran_togoo_camp_ger_2026-10-03",
+    "stay_id": "stay_uran_togoo_camp",
+    "date": "2026-10-03",
+    "unit_type": "ger",
+    "total": 12,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 85000
+  },
+  {
+    "_id": "avail_uran_togoo_camp_ger_2026-10-04",
+    "stay_id": "stay_uran_togoo_camp",
+    "date": "2026-10-04",
+    "unit_type": "ger",
+    "total": 12,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 85000
+  },
+  {
+    "_id": "avail_uran_togoo_camp_ger_2026-10-05",
+    "stay_id": "stay_uran_togoo_camp",
+    "date": "2026-10-05",
+    "unit_type": "ger",
+    "total": 12,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 85000
+  },
+  {
+    "_id": "avail_uran_togoo_camp_ger_2026-10-06",
+    "stay_id": "stay_uran_togoo_camp",
+    "date": "2026-10-06",
+    "unit_type": "ger",
+    "total": 12,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 85000
+  },
+  {
+    "_id": "avail_uran_togoo_camp_ger_2026-10-07",
+    "stay_id": "stay_uran_togoo_camp",
+    "date": "2026-10-07",
+    "unit_type": "ger",
+    "total": 12,
+    "available": 9,
+    "status": "open",
+    "price_mnt": 85000
+  },
+  {
+    "_id": "avail_uran_togoo_camp_ger_2026-10-08",
+    "stay_id": "stay_uran_togoo_camp",
+    "date": "2026-10-08",
+    "unit_type": "ger",
+    "total": 12,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 85000
+  },
+  {
+    "_id": "avail_uran_togoo_camp_ger_2026-10-09",
+    "stay_id": "stay_uran_togoo_camp",
+    "date": "2026-10-09",
+    "unit_type": "ger",
+    "total": 12,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 85000
+  },
+  {
+    "_id": "avail_uran_togoo_camp_ger_2026-10-10",
+    "stay_id": "stay_uran_togoo_camp",
+    "date": "2026-10-10",
+    "unit_type": "ger",
+    "total": 12,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 85000
+  },
+  {
+    "_id": "avail_uran_togoo_camp_ger_2026-10-11",
+    "stay_id": "stay_uran_togoo_camp",
+    "date": "2026-10-11",
+    "unit_type": "ger",
+    "total": 12,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 85000
+  },
+  {
+    "_id": "avail_uran_togoo_camp_ger_2026-10-12",
+    "stay_id": "stay_uran_togoo_camp",
+    "date": "2026-10-12",
+    "unit_type": "ger",
+    "total": 12,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 85000
+  },
+  {
+    "_id": "avail_uran_togoo_camp_ger_2026-10-13",
+    "stay_id": "stay_uran_togoo_camp",
+    "date": "2026-10-13",
+    "unit_type": "ger",
+    "total": 12,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 85000
+  },
+  {
+    "_id": "avail_uran_togoo_camp_ger_2026-10-14",
+    "stay_id": "stay_uran_togoo_camp",
+    "date": "2026-10-14",
+    "unit_type": "ger",
+    "total": 12,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 85000
+  },
+  {
+    "_id": "avail_murun_hotel_delger_double_room_2026-10-01",
+    "stay_id": "stay_murun_hotel_delger",
+    "date": "2026-10-01",
+    "unit_type": "double_room",
+    "total": 26,
+    "available": 13,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_murun_hotel_delger_family_room_2026-10-01",
+    "stay_id": "stay_murun_hotel_delger",
+    "date": "2026-10-01",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 230000
+  },
+  {
+    "_id": "avail_murun_hotel_delger_double_room_2026-10-02",
+    "stay_id": "stay_murun_hotel_delger",
+    "date": "2026-10-02",
+    "unit_type": "double_room",
+    "total": 26,
+    "available": 17,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_murun_hotel_delger_family_room_2026-10-02",
+    "stay_id": "stay_murun_hotel_delger",
+    "date": "2026-10-02",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 230000
+  },
+  {
+    "_id": "avail_murun_hotel_delger_double_room_2026-10-03",
+    "stay_id": "stay_murun_hotel_delger",
+    "date": "2026-10-03",
+    "unit_type": "double_room",
+    "total": 26,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_murun_hotel_delger_family_room_2026-10-03",
+    "stay_id": "stay_murun_hotel_delger",
+    "date": "2026-10-03",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 230000
+  },
+  {
+    "_id": "avail_murun_hotel_delger_double_room_2026-10-04",
+    "stay_id": "stay_murun_hotel_delger",
+    "date": "2026-10-04",
+    "unit_type": "double_room",
+    "total": 26,
+    "available": 9,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_murun_hotel_delger_family_room_2026-10-04",
+    "stay_id": "stay_murun_hotel_delger",
+    "date": "2026-10-04",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 230000
+  },
+  {
+    "_id": "avail_murun_hotel_delger_double_room_2026-10-05",
+    "stay_id": "stay_murun_hotel_delger",
+    "date": "2026-10-05",
+    "unit_type": "double_room",
+    "total": 26,
+    "available": 13,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_murun_hotel_delger_family_room_2026-10-05",
+    "stay_id": "stay_murun_hotel_delger",
+    "date": "2026-10-05",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 230000
+  },
+  {
+    "_id": "avail_murun_hotel_delger_double_room_2026-10-06",
+    "stay_id": "stay_murun_hotel_delger",
+    "date": "2026-10-06",
+    "unit_type": "double_room",
+    "total": 26,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_murun_hotel_delger_family_room_2026-10-06",
+    "stay_id": "stay_murun_hotel_delger",
+    "date": "2026-10-06",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 6,
+    "status": "open",
+    "price_mnt": 230000
+  },
+  {
+    "_id": "avail_murun_hotel_delger_double_room_2026-10-07",
+    "stay_id": "stay_murun_hotel_delger",
+    "date": "2026-10-07",
+    "unit_type": "double_room",
+    "total": 26,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_murun_hotel_delger_family_room_2026-10-07",
+    "stay_id": "stay_murun_hotel_delger",
+    "date": "2026-10-07",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 230000
+  },
+  {
+    "_id": "avail_murun_hotel_delger_double_room_2026-10-08",
+    "stay_id": "stay_murun_hotel_delger",
+    "date": "2026-10-08",
+    "unit_type": "double_room",
+    "total": 26,
+    "available": 6,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_murun_hotel_delger_family_room_2026-10-08",
+    "stay_id": "stay_murun_hotel_delger",
+    "date": "2026-10-08",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 6,
+    "status": "open",
+    "price_mnt": 230000
+  },
+  {
+    "_id": "avail_murun_hotel_delger_double_room_2026-10-09",
+    "stay_id": "stay_murun_hotel_delger",
+    "date": "2026-10-09",
+    "unit_type": "double_room",
+    "total": 26,
+    "available": 19,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_murun_hotel_delger_family_room_2026-10-09",
+    "stay_id": "stay_murun_hotel_delger",
+    "date": "2026-10-09",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 230000
+  },
+  {
+    "_id": "avail_murun_hotel_delger_double_room_2026-10-10",
+    "stay_id": "stay_murun_hotel_delger",
+    "date": "2026-10-10",
+    "unit_type": "double_room",
+    "total": 26,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_murun_hotel_delger_family_room_2026-10-10",
+    "stay_id": "stay_murun_hotel_delger",
+    "date": "2026-10-10",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 230000
+  },
+  {
+    "_id": "avail_murun_hotel_delger_double_room_2026-10-11",
+    "stay_id": "stay_murun_hotel_delger",
+    "date": "2026-10-11",
+    "unit_type": "double_room",
+    "total": 26,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_murun_hotel_delger_family_room_2026-10-11",
+    "stay_id": "stay_murun_hotel_delger",
+    "date": "2026-10-11",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 230000
+  },
+  {
+    "_id": "avail_murun_hotel_delger_double_room_2026-10-12",
+    "stay_id": "stay_murun_hotel_delger",
+    "date": "2026-10-12",
+    "unit_type": "double_room",
+    "total": 26,
+    "available": 23,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_murun_hotel_delger_family_room_2026-10-12",
+    "stay_id": "stay_murun_hotel_delger",
+    "date": "2026-10-12",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 230000
+  },
+  {
+    "_id": "avail_murun_hotel_delger_double_room_2026-10-13",
+    "stay_id": "stay_murun_hotel_delger",
+    "date": "2026-10-13",
+    "unit_type": "double_room",
+    "total": 26,
+    "available": 20,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_murun_hotel_delger_family_room_2026-10-13",
+    "stay_id": "stay_murun_hotel_delger",
+    "date": "2026-10-13",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 230000
+  },
+  {
+    "_id": "avail_murun_hotel_delger_double_room_2026-10-14",
+    "stay_id": "stay_murun_hotel_delger",
+    "date": "2026-10-14",
+    "unit_type": "double_room",
+    "total": 26,
+    "available": 9,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_murun_hotel_delger_family_room_2026-10-14",
+    "stay_id": "stay_murun_hotel_delger",
+    "date": "2026-10-14",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 230000
+  },
+  {
+    "_id": "avail_khatgal_guesthouse_lake_ger_2026-10-01",
+    "stay_id": "stay_khatgal_guesthouse_lake",
+    "date": "2026-10-01",
+    "unit_type": "ger",
+    "total": 6,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 50000
+  },
+  {
+    "_id": "avail_khatgal_guesthouse_lake_double_room_2026-10-01",
+    "stay_id": "stay_khatgal_guesthouse_lake",
+    "date": "2026-10-01",
+    "unit_type": "double_room",
+    "total": 5,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_khatgal_guesthouse_lake_ger_2026-10-02",
+    "stay_id": "stay_khatgal_guesthouse_lake",
+    "date": "2026-10-02",
+    "unit_type": "ger",
+    "total": 6,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 50000
+  },
+  {
+    "_id": "avail_khatgal_guesthouse_lake_double_room_2026-10-02",
+    "stay_id": "stay_khatgal_guesthouse_lake",
+    "date": "2026-10-02",
+    "unit_type": "double_room",
+    "total": 5,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_khatgal_guesthouse_lake_ger_2026-10-03",
+    "stay_id": "stay_khatgal_guesthouse_lake",
+    "date": "2026-10-03",
+    "unit_type": "ger",
+    "total": 6,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 50000
+  },
+  {
+    "_id": "avail_khatgal_guesthouse_lake_double_room_2026-10-03",
+    "stay_id": "stay_khatgal_guesthouse_lake",
+    "date": "2026-10-03",
+    "unit_type": "double_room",
+    "total": 5,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_khatgal_guesthouse_lake_ger_2026-10-04",
+    "stay_id": "stay_khatgal_guesthouse_lake",
+    "date": "2026-10-04",
+    "unit_type": "ger",
+    "total": 6,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 50000
+  },
+  {
+    "_id": "avail_khatgal_guesthouse_lake_double_room_2026-10-04",
+    "stay_id": "stay_khatgal_guesthouse_lake",
+    "date": "2026-10-04",
+    "unit_type": "double_room",
+    "total": 5,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_khatgal_guesthouse_lake_ger_2026-10-05",
+    "stay_id": "stay_khatgal_guesthouse_lake",
+    "date": "2026-10-05",
+    "unit_type": "ger",
+    "total": 6,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 50000
+  },
+  {
+    "_id": "avail_khatgal_guesthouse_lake_double_room_2026-10-05",
+    "stay_id": "stay_khatgal_guesthouse_lake",
+    "date": "2026-10-05",
+    "unit_type": "double_room",
+    "total": 5,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_khatgal_guesthouse_lake_ger_2026-10-06",
+    "stay_id": "stay_khatgal_guesthouse_lake",
+    "date": "2026-10-06",
+    "unit_type": "ger",
+    "total": 6,
+    "available": 6,
+    "status": "open",
+    "price_mnt": 50000
+  },
+  {
+    "_id": "avail_khatgal_guesthouse_lake_double_room_2026-10-06",
+    "stay_id": "stay_khatgal_guesthouse_lake",
+    "date": "2026-10-06",
+    "unit_type": "double_room",
+    "total": 5,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_khatgal_guesthouse_lake_ger_2026-10-07",
+    "stay_id": "stay_khatgal_guesthouse_lake",
+    "date": "2026-10-07",
+    "unit_type": "ger",
+    "total": 6,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 50000
+  },
+  {
+    "_id": "avail_khatgal_guesthouse_lake_double_room_2026-10-07",
+    "stay_id": "stay_khatgal_guesthouse_lake",
+    "date": "2026-10-07",
+    "unit_type": "double_room",
+    "total": 5,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_khatgal_guesthouse_lake_ger_2026-10-08",
+    "stay_id": "stay_khatgal_guesthouse_lake",
+    "date": "2026-10-08",
+    "unit_type": "ger",
+    "total": 6,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 50000
+  },
+  {
+    "_id": "avail_khatgal_guesthouse_lake_double_room_2026-10-08",
+    "stay_id": "stay_khatgal_guesthouse_lake",
+    "date": "2026-10-08",
+    "unit_type": "double_room",
+    "total": 5,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_khatgal_guesthouse_lake_ger_2026-10-09",
+    "stay_id": "stay_khatgal_guesthouse_lake",
+    "date": "2026-10-09",
+    "unit_type": "ger",
+    "total": 6,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 50000
+  },
+  {
+    "_id": "avail_khatgal_guesthouse_lake_double_room_2026-10-09",
+    "stay_id": "stay_khatgal_guesthouse_lake",
+    "date": "2026-10-09",
+    "unit_type": "double_room",
+    "total": 5,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_khatgal_guesthouse_lake_ger_2026-10-10",
+    "stay_id": "stay_khatgal_guesthouse_lake",
+    "date": "2026-10-10",
+    "unit_type": "ger",
+    "total": 6,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 50000
+  },
+  {
+    "_id": "avail_khatgal_guesthouse_lake_double_room_2026-10-10",
+    "stay_id": "stay_khatgal_guesthouse_lake",
+    "date": "2026-10-10",
+    "unit_type": "double_room",
+    "total": 5,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_khatgal_guesthouse_lake_ger_2026-10-11",
+    "stay_id": "stay_khatgal_guesthouse_lake",
+    "date": "2026-10-11",
+    "unit_type": "ger",
+    "total": 6,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 50000
+  },
+  {
+    "_id": "avail_khatgal_guesthouse_lake_double_room_2026-10-11",
+    "stay_id": "stay_khatgal_guesthouse_lake",
+    "date": "2026-10-11",
+    "unit_type": "double_room",
+    "total": 5,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_khatgal_guesthouse_lake_ger_2026-10-12",
+    "stay_id": "stay_khatgal_guesthouse_lake",
+    "date": "2026-10-12",
+    "unit_type": "ger",
+    "total": 6,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 50000
+  },
+  {
+    "_id": "avail_khatgal_guesthouse_lake_double_room_2026-10-12",
+    "stay_id": "stay_khatgal_guesthouse_lake",
+    "date": "2026-10-12",
+    "unit_type": "double_room",
+    "total": 5,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_khatgal_guesthouse_lake_ger_2026-10-13",
+    "stay_id": "stay_khatgal_guesthouse_lake",
+    "date": "2026-10-13",
+    "unit_type": "ger",
+    "total": 6,
+    "available": 6,
+    "status": "open",
+    "price_mnt": 50000
+  },
+  {
+    "_id": "avail_khatgal_guesthouse_lake_double_room_2026-10-13",
+    "stay_id": "stay_khatgal_guesthouse_lake",
+    "date": "2026-10-13",
+    "unit_type": "double_room",
+    "total": 5,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_khatgal_guesthouse_lake_ger_2026-10-14",
+    "stay_id": "stay_khatgal_guesthouse_lake",
+    "date": "2026-10-14",
+    "unit_type": "ger",
+    "total": 6,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 50000
+  },
+  {
+    "_id": "avail_khatgal_guesthouse_lake_double_room_2026-10-14",
+    "stay_id": "stay_khatgal_guesthouse_lake",
+    "date": "2026-10-14",
+    "unit_type": "double_room",
+    "total": 5,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_khatgal_camp_blue_pearl_ger_2026-10-01",
+    "stay_id": "stay_khatgal_camp_blue_pearl",
+    "date": "2026-10-01",
+    "unit_type": "ger",
+    "total": 25,
+    "available": 13,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_khatgal_camp_blue_pearl_wooden_cabin_2026-10-01",
+    "stay_id": "stay_khatgal_camp_blue_pearl",
+    "date": "2026-10-01",
+    "unit_type": "wooden_cabin",
+    "total": 6,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_khatgal_camp_blue_pearl_ger_2026-10-02",
+    "stay_id": "stay_khatgal_camp_blue_pearl",
+    "date": "2026-10-02",
+    "unit_type": "ger",
+    "total": 25,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_khatgal_camp_blue_pearl_wooden_cabin_2026-10-02",
+    "stay_id": "stay_khatgal_camp_blue_pearl",
+    "date": "2026-10-02",
+    "unit_type": "wooden_cabin",
+    "total": 6,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_khatgal_camp_blue_pearl_ger_2026-10-03",
+    "stay_id": "stay_khatgal_camp_blue_pearl",
+    "date": "2026-10-03",
+    "unit_type": "ger",
+    "total": 25,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_khatgal_camp_blue_pearl_wooden_cabin_2026-10-03",
+    "stay_id": "stay_khatgal_camp_blue_pearl",
+    "date": "2026-10-03",
+    "unit_type": "wooden_cabin",
+    "total": 6,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_khatgal_camp_blue_pearl_ger_2026-10-04",
+    "stay_id": "stay_khatgal_camp_blue_pearl",
+    "date": "2026-10-04",
+    "unit_type": "ger",
+    "total": 25,
+    "available": 6,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_khatgal_camp_blue_pearl_wooden_cabin_2026-10-04",
+    "stay_id": "stay_khatgal_camp_blue_pearl",
+    "date": "2026-10-04",
+    "unit_type": "wooden_cabin",
+    "total": 6,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_khatgal_camp_blue_pearl_ger_2026-10-05",
+    "stay_id": "stay_khatgal_camp_blue_pearl",
+    "date": "2026-10-05",
+    "unit_type": "ger",
+    "total": 25,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_khatgal_camp_blue_pearl_wooden_cabin_2026-10-05",
+    "stay_id": "stay_khatgal_camp_blue_pearl",
+    "date": "2026-10-05",
+    "unit_type": "wooden_cabin",
+    "total": 6,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_khatgal_camp_blue_pearl_ger_2026-10-06",
+    "stay_id": "stay_khatgal_camp_blue_pearl",
+    "date": "2026-10-06",
+    "unit_type": "ger",
+    "total": 25,
+    "available": 8,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_khatgal_camp_blue_pearl_wooden_cabin_2026-10-06",
+    "stay_id": "stay_khatgal_camp_blue_pearl",
+    "date": "2026-10-06",
+    "unit_type": "wooden_cabin",
+    "total": 6,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_khatgal_camp_blue_pearl_ger_2026-10-07",
+    "stay_id": "stay_khatgal_camp_blue_pearl",
+    "date": "2026-10-07",
+    "unit_type": "ger",
+    "total": 25,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_khatgal_camp_blue_pearl_wooden_cabin_2026-10-07",
+    "stay_id": "stay_khatgal_camp_blue_pearl",
+    "date": "2026-10-07",
+    "unit_type": "wooden_cabin",
+    "total": 6,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_khatgal_camp_blue_pearl_ger_2026-10-08",
+    "stay_id": "stay_khatgal_camp_blue_pearl",
+    "date": "2026-10-08",
+    "unit_type": "ger",
+    "total": 25,
+    "available": 21,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_khatgal_camp_blue_pearl_wooden_cabin_2026-10-08",
+    "stay_id": "stay_khatgal_camp_blue_pearl",
+    "date": "2026-10-08",
+    "unit_type": "wooden_cabin",
+    "total": 6,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_khatgal_camp_blue_pearl_ger_2026-10-09",
+    "stay_id": "stay_khatgal_camp_blue_pearl",
+    "date": "2026-10-09",
+    "unit_type": "ger",
+    "total": 25,
+    "available": 10,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_khatgal_camp_blue_pearl_wooden_cabin_2026-10-09",
+    "stay_id": "stay_khatgal_camp_blue_pearl",
+    "date": "2026-10-09",
+    "unit_type": "wooden_cabin",
+    "total": 6,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_khatgal_camp_blue_pearl_ger_2026-10-10",
+    "stay_id": "stay_khatgal_camp_blue_pearl",
+    "date": "2026-10-10",
+    "unit_type": "ger",
+    "total": 25,
+    "available": 18,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_khatgal_camp_blue_pearl_wooden_cabin_2026-10-10",
+    "stay_id": "stay_khatgal_camp_blue_pearl",
+    "date": "2026-10-10",
+    "unit_type": "wooden_cabin",
+    "total": 6,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_khatgal_camp_blue_pearl_ger_2026-10-11",
+    "stay_id": "stay_khatgal_camp_blue_pearl",
+    "date": "2026-10-11",
+    "unit_type": "ger",
+    "total": 25,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_khatgal_camp_blue_pearl_wooden_cabin_2026-10-11",
+    "stay_id": "stay_khatgal_camp_blue_pearl",
+    "date": "2026-10-11",
+    "unit_type": "wooden_cabin",
+    "total": 6,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_khatgal_camp_blue_pearl_ger_2026-10-12",
+    "stay_id": "stay_khatgal_camp_blue_pearl",
+    "date": "2026-10-12",
+    "unit_type": "ger",
+    "total": 25,
+    "available": 24,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_khatgal_camp_blue_pearl_wooden_cabin_2026-10-12",
+    "stay_id": "stay_khatgal_camp_blue_pearl",
+    "date": "2026-10-12",
+    "unit_type": "wooden_cabin",
+    "total": 6,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_khatgal_camp_blue_pearl_ger_2026-10-13",
+    "stay_id": "stay_khatgal_camp_blue_pearl",
+    "date": "2026-10-13",
+    "unit_type": "ger",
+    "total": 25,
+    "available": 15,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_khatgal_camp_blue_pearl_wooden_cabin_2026-10-13",
+    "stay_id": "stay_khatgal_camp_blue_pearl",
+    "date": "2026-10-13",
+    "unit_type": "wooden_cabin",
+    "total": 6,
+    "available": 6,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_khatgal_camp_blue_pearl_ger_2026-10-14",
+    "stay_id": "stay_khatgal_camp_blue_pearl",
+    "date": "2026-10-14",
+    "unit_type": "ger",
+    "total": 25,
+    "available": 24,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_khatgal_camp_blue_pearl_wooden_cabin_2026-10-14",
+    "stay_id": "stay_khatgal_camp_blue_pearl",
+    "date": "2026-10-14",
+    "unit_type": "wooden_cabin",
+    "total": 6,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_toilogt_camp_ger_2026-10-01",
+    "stay_id": "stay_toilogt_camp",
+    "date": "2026-10-01",
+    "unit_type": "ger",
+    "total": 30,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 140000
+  },
+  {
+    "_id": "avail_toilogt_camp_wooden_cabin_2026-10-01",
+    "stay_id": "stay_toilogt_camp",
+    "date": "2026-10-01",
+    "unit_type": "wooden_cabin",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 180000
+  },
+  {
+    "_id": "avail_toilogt_camp_ger_2026-10-02",
+    "stay_id": "stay_toilogt_camp",
+    "date": "2026-10-02",
+    "unit_type": "ger",
+    "total": 30,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 140000
+  },
+  {
+    "_id": "avail_toilogt_camp_wooden_cabin_2026-10-02",
+    "stay_id": "stay_toilogt_camp",
+    "date": "2026-10-02",
+    "unit_type": "wooden_cabin",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 180000
+  },
+  {
+    "_id": "avail_toilogt_camp_ger_2026-10-03",
+    "stay_id": "stay_toilogt_camp",
+    "date": "2026-10-03",
+    "unit_type": "ger",
+    "total": 30,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 140000
+  },
+  {
+    "_id": "avail_toilogt_camp_wooden_cabin_2026-10-03",
+    "stay_id": "stay_toilogt_camp",
+    "date": "2026-10-03",
+    "unit_type": "wooden_cabin",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 180000
+  },
+  {
+    "_id": "avail_toilogt_camp_ger_2026-10-04",
+    "stay_id": "stay_toilogt_camp",
+    "date": "2026-10-04",
+    "unit_type": "ger",
+    "total": 30,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 140000
+  },
+  {
+    "_id": "avail_toilogt_camp_wooden_cabin_2026-10-04",
+    "stay_id": "stay_toilogt_camp",
+    "date": "2026-10-04",
+    "unit_type": "wooden_cabin",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 180000
+  },
+  {
+    "_id": "avail_toilogt_camp_ger_2026-10-05",
+    "stay_id": "stay_toilogt_camp",
+    "date": "2026-10-05",
+    "unit_type": "ger",
+    "total": 30,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 140000
+  },
+  {
+    "_id": "avail_toilogt_camp_wooden_cabin_2026-10-05",
+    "stay_id": "stay_toilogt_camp",
+    "date": "2026-10-05",
+    "unit_type": "wooden_cabin",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 180000
+  },
+  {
+    "_id": "avail_toilogt_camp_ger_2026-10-06",
+    "stay_id": "stay_toilogt_camp",
+    "date": "2026-10-06",
+    "unit_type": "ger",
+    "total": 30,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 140000
+  },
+  {
+    "_id": "avail_toilogt_camp_wooden_cabin_2026-10-06",
+    "stay_id": "stay_toilogt_camp",
+    "date": "2026-10-06",
+    "unit_type": "wooden_cabin",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 180000
+  },
+  {
+    "_id": "avail_toilogt_camp_ger_2026-10-07",
+    "stay_id": "stay_toilogt_camp",
+    "date": "2026-10-07",
+    "unit_type": "ger",
+    "total": 30,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 140000
+  },
+  {
+    "_id": "avail_toilogt_camp_wooden_cabin_2026-10-07",
+    "stay_id": "stay_toilogt_camp",
+    "date": "2026-10-07",
+    "unit_type": "wooden_cabin",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 180000
+  },
+  {
+    "_id": "avail_toilogt_camp_ger_2026-10-08",
+    "stay_id": "stay_toilogt_camp",
+    "date": "2026-10-08",
+    "unit_type": "ger",
+    "total": 30,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 140000
+  },
+  {
+    "_id": "avail_toilogt_camp_wooden_cabin_2026-10-08",
+    "stay_id": "stay_toilogt_camp",
+    "date": "2026-10-08",
+    "unit_type": "wooden_cabin",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 180000
+  },
+  {
+    "_id": "avail_toilogt_camp_ger_2026-10-09",
+    "stay_id": "stay_toilogt_camp",
+    "date": "2026-10-09",
+    "unit_type": "ger",
+    "total": 30,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 140000
+  },
+  {
+    "_id": "avail_toilogt_camp_wooden_cabin_2026-10-09",
+    "stay_id": "stay_toilogt_camp",
+    "date": "2026-10-09",
+    "unit_type": "wooden_cabin",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 180000
+  },
+  {
+    "_id": "avail_toilogt_camp_ger_2026-10-10",
+    "stay_id": "stay_toilogt_camp",
+    "date": "2026-10-10",
+    "unit_type": "ger",
+    "total": 30,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 140000
+  },
+  {
+    "_id": "avail_toilogt_camp_wooden_cabin_2026-10-10",
+    "stay_id": "stay_toilogt_camp",
+    "date": "2026-10-10",
+    "unit_type": "wooden_cabin",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 180000
+  },
+  {
+    "_id": "avail_toilogt_camp_ger_2026-10-11",
+    "stay_id": "stay_toilogt_camp",
+    "date": "2026-10-11",
+    "unit_type": "ger",
+    "total": 30,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 140000
+  },
+  {
+    "_id": "avail_toilogt_camp_wooden_cabin_2026-10-11",
+    "stay_id": "stay_toilogt_camp",
+    "date": "2026-10-11",
+    "unit_type": "wooden_cabin",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 180000
+  },
+  {
+    "_id": "avail_toilogt_camp_ger_2026-10-12",
+    "stay_id": "stay_toilogt_camp",
+    "date": "2026-10-12",
+    "unit_type": "ger",
+    "total": 30,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 140000
+  },
+  {
+    "_id": "avail_toilogt_camp_wooden_cabin_2026-10-12",
+    "stay_id": "stay_toilogt_camp",
+    "date": "2026-10-12",
+    "unit_type": "wooden_cabin",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 180000
+  },
+  {
+    "_id": "avail_toilogt_camp_ger_2026-10-13",
+    "stay_id": "stay_toilogt_camp",
+    "date": "2026-10-13",
+    "unit_type": "ger",
+    "total": 30,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 140000
+  },
+  {
+    "_id": "avail_toilogt_camp_wooden_cabin_2026-10-13",
+    "stay_id": "stay_toilogt_camp",
+    "date": "2026-10-13",
+    "unit_type": "wooden_cabin",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 180000
+  },
+  {
+    "_id": "avail_toilogt_camp_ger_2026-10-14",
+    "stay_id": "stay_toilogt_camp",
+    "date": "2026-10-14",
+    "unit_type": "ger",
+    "total": 30,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 140000
+  },
+  {
+    "_id": "avail_toilogt_camp_wooden_cabin_2026-10-14",
+    "stay_id": "stay_toilogt_camp",
+    "date": "2026-10-14",
+    "unit_type": "wooden_cabin",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 180000
+  },
+  {
+    "_id": "avail_jankhai_house_taiga_whole_house_2026-10-01",
+    "stay_id": "stay_jankhai_house_taiga",
+    "date": "2026-10-01",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 450000
+  },
+  {
+    "_id": "avail_jankhai_house_taiga_whole_house_2026-10-02",
+    "stay_id": "stay_jankhai_house_taiga",
+    "date": "2026-10-02",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 450000
+  },
+  {
+    "_id": "avail_jankhai_house_taiga_whole_house_2026-10-03",
+    "stay_id": "stay_jankhai_house_taiga",
+    "date": "2026-10-03",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 450000
+  },
+  {
+    "_id": "avail_jankhai_house_taiga_whole_house_2026-10-04",
+    "stay_id": "stay_jankhai_house_taiga",
+    "date": "2026-10-04",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 450000
+  },
+  {
+    "_id": "avail_jankhai_house_taiga_whole_house_2026-10-05",
+    "stay_id": "stay_jankhai_house_taiga",
+    "date": "2026-10-05",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 450000
+  },
+  {
+    "_id": "avail_jankhai_house_taiga_whole_house_2026-10-06",
+    "stay_id": "stay_jankhai_house_taiga",
+    "date": "2026-10-06",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 450000
+  },
+  {
+    "_id": "avail_jankhai_house_taiga_whole_house_2026-10-07",
+    "stay_id": "stay_jankhai_house_taiga",
+    "date": "2026-10-07",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 450000
+  },
+  {
+    "_id": "avail_jankhai_house_taiga_whole_house_2026-10-08",
+    "stay_id": "stay_jankhai_house_taiga",
+    "date": "2026-10-08",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 450000
+  },
+  {
+    "_id": "avail_jankhai_house_taiga_whole_house_2026-10-09",
+    "stay_id": "stay_jankhai_house_taiga",
+    "date": "2026-10-09",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 450000
+  },
+  {
+    "_id": "avail_jankhai_house_taiga_whole_house_2026-10-10",
+    "stay_id": "stay_jankhai_house_taiga",
+    "date": "2026-10-10",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 450000
+  },
+  {
+    "_id": "avail_jankhai_house_taiga_whole_house_2026-10-11",
+    "stay_id": "stay_jankhai_house_taiga",
+    "date": "2026-10-11",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 450000
+  },
+  {
+    "_id": "avail_jankhai_house_taiga_whole_house_2026-10-12",
+    "stay_id": "stay_jankhai_house_taiga",
+    "date": "2026-10-12",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 450000
+  },
+  {
+    "_id": "avail_jankhai_house_taiga_whole_house_2026-10-13",
+    "stay_id": "stay_jankhai_house_taiga",
+    "date": "2026-10-13",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 450000
+  },
+  {
+    "_id": "avail_jankhai_house_taiga_whole_house_2026-10-14",
+    "stay_id": "stay_jankhai_house_taiga",
+    "date": "2026-10-14",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 450000
+  },
+  {
+    "_id": "avail_jankhai_camp_nature_ger_2026-10-01",
+    "stay_id": "stay_jankhai_camp_nature",
+    "date": "2026-10-01",
+    "unit_type": "ger",
+    "total": 14,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_jankhai_camp_nature_ger_2026-10-02",
+    "stay_id": "stay_jankhai_camp_nature",
+    "date": "2026-10-02",
+    "unit_type": "ger",
+    "total": 14,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_jankhai_camp_nature_ger_2026-10-03",
+    "stay_id": "stay_jankhai_camp_nature",
+    "date": "2026-10-03",
+    "unit_type": "ger",
+    "total": 14,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_jankhai_camp_nature_ger_2026-10-04",
+    "stay_id": "stay_jankhai_camp_nature",
+    "date": "2026-10-04",
+    "unit_type": "ger",
+    "total": 14,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_jankhai_camp_nature_ger_2026-10-05",
+    "stay_id": "stay_jankhai_camp_nature",
+    "date": "2026-10-05",
+    "unit_type": "ger",
+    "total": 14,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_jankhai_camp_nature_ger_2026-10-06",
+    "stay_id": "stay_jankhai_camp_nature",
+    "date": "2026-10-06",
+    "unit_type": "ger",
+    "total": 14,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_jankhai_camp_nature_ger_2026-10-07",
+    "stay_id": "stay_jankhai_camp_nature",
+    "date": "2026-10-07",
+    "unit_type": "ger",
+    "total": 14,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_jankhai_camp_nature_ger_2026-10-08",
+    "stay_id": "stay_jankhai_camp_nature",
+    "date": "2026-10-08",
+    "unit_type": "ger",
+    "total": 14,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_jankhai_camp_nature_ger_2026-10-09",
+    "stay_id": "stay_jankhai_camp_nature",
+    "date": "2026-10-09",
+    "unit_type": "ger",
+    "total": 14,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_jankhai_camp_nature_ger_2026-10-10",
+    "stay_id": "stay_jankhai_camp_nature",
+    "date": "2026-10-10",
+    "unit_type": "ger",
+    "total": 14,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_jankhai_camp_nature_ger_2026-10-11",
+    "stay_id": "stay_jankhai_camp_nature",
+    "date": "2026-10-11",
+    "unit_type": "ger",
+    "total": 14,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_jankhai_camp_nature_ger_2026-10-12",
+    "stay_id": "stay_jankhai_camp_nature",
+    "date": "2026-10-12",
+    "unit_type": "ger",
+    "total": 14,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_jankhai_camp_nature_ger_2026-10-13",
+    "stay_id": "stay_jankhai_camp_nature",
+    "date": "2026-10-13",
+    "unit_type": "ger",
+    "total": 14,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_jankhai_camp_nature_ger_2026-10-14",
+    "stay_id": "stay_jankhai_camp_nature",
+    "date": "2026-10-14",
+    "unit_type": "ger",
+    "total": 14,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_kharkhorin_camp_erdene_ger_2026-10-01",
+    "stay_id": "stay_kharkhorin_camp_erdene",
+    "date": "2026-10-01",
+    "unit_type": "ger",
+    "total": 20,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 100000
+  },
+  {
+    "_id": "avail_kharkhorin_camp_erdene_ger_2026-10-02",
+    "stay_id": "stay_kharkhorin_camp_erdene",
+    "date": "2026-10-02",
+    "unit_type": "ger",
+    "total": 20,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 100000
+  },
+  {
+    "_id": "avail_kharkhorin_camp_erdene_ger_2026-10-03",
+    "stay_id": "stay_kharkhorin_camp_erdene",
+    "date": "2026-10-03",
+    "unit_type": "ger",
+    "total": 20,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 100000
+  },
+  {
+    "_id": "avail_kharkhorin_camp_erdene_ger_2026-10-04",
+    "stay_id": "stay_kharkhorin_camp_erdene",
+    "date": "2026-10-04",
+    "unit_type": "ger",
+    "total": 20,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 100000
+  },
+  {
+    "_id": "avail_kharkhorin_camp_erdene_ger_2026-10-05",
+    "stay_id": "stay_kharkhorin_camp_erdene",
+    "date": "2026-10-05",
+    "unit_type": "ger",
+    "total": 20,
+    "available": 12,
+    "status": "open",
+    "price_mnt": 100000
+  },
+  {
+    "_id": "avail_kharkhorin_camp_erdene_ger_2026-10-06",
+    "stay_id": "stay_kharkhorin_camp_erdene",
+    "date": "2026-10-06",
+    "unit_type": "ger",
+    "total": 20,
+    "available": 14,
+    "status": "open",
+    "price_mnt": 100000
+  },
+  {
+    "_id": "avail_kharkhorin_camp_erdene_ger_2026-10-07",
+    "stay_id": "stay_kharkhorin_camp_erdene",
+    "date": "2026-10-07",
+    "unit_type": "ger",
+    "total": 20,
+    "available": 10,
+    "status": "open",
+    "price_mnt": 100000
+  },
+  {
+    "_id": "avail_kharkhorin_camp_erdene_ger_2026-10-08",
+    "stay_id": "stay_kharkhorin_camp_erdene",
+    "date": "2026-10-08",
+    "unit_type": "ger",
+    "total": 20,
+    "available": 13,
+    "status": "open",
+    "price_mnt": 100000
+  },
+  {
+    "_id": "avail_kharkhorin_camp_erdene_ger_2026-10-09",
+    "stay_id": "stay_kharkhorin_camp_erdene",
+    "date": "2026-10-09",
+    "unit_type": "ger",
+    "total": 20,
+    "available": 7,
+    "status": "open",
+    "price_mnt": 100000
+  },
+  {
+    "_id": "avail_kharkhorin_camp_erdene_ger_2026-10-10",
+    "stay_id": "stay_kharkhorin_camp_erdene",
+    "date": "2026-10-10",
+    "unit_type": "ger",
+    "total": 20,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 100000
+  },
+  {
+    "_id": "avail_kharkhorin_camp_erdene_ger_2026-10-11",
+    "stay_id": "stay_kharkhorin_camp_erdene",
+    "date": "2026-10-11",
+    "unit_type": "ger",
+    "total": 20,
+    "available": 11,
+    "status": "open",
+    "price_mnt": 100000
+  },
+  {
+    "_id": "avail_kharkhorin_camp_erdene_ger_2026-10-12",
+    "stay_id": "stay_kharkhorin_camp_erdene",
+    "date": "2026-10-12",
+    "unit_type": "ger",
+    "total": 20,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 100000
+  },
+  {
+    "_id": "avail_kharkhorin_camp_erdene_ger_2026-10-13",
+    "stay_id": "stay_kharkhorin_camp_erdene",
+    "date": "2026-10-13",
+    "unit_type": "ger",
+    "total": 20,
+    "available": 11,
+    "status": "open",
+    "price_mnt": 100000
+  },
+  {
+    "_id": "avail_kharkhorin_camp_erdene_ger_2026-10-14",
+    "stay_id": "stay_kharkhorin_camp_erdene",
+    "date": "2026-10-14",
+    "unit_type": "ger",
+    "total": 20,
+    "available": 6,
+    "status": "open",
+    "price_mnt": 100000
+  },
+  {
+    "_id": "avail_elsen_tasarkhai_camp_ger_2026-10-01",
+    "stay_id": "stay_elsen_tasarkhai_camp",
+    "date": "2026-10-01",
+    "unit_type": "ger",
+    "total": 18,
+    "available": 8,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_elsen_tasarkhai_camp_ger_2026-10-02",
+    "stay_id": "stay_elsen_tasarkhai_camp",
+    "date": "2026-10-02",
+    "unit_type": "ger",
+    "total": 18,
+    "available": 12,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_elsen_tasarkhai_camp_ger_2026-10-03",
+    "stay_id": "stay_elsen_tasarkhai_camp",
+    "date": "2026-10-03",
+    "unit_type": "ger",
+    "total": 18,
+    "available": 14,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_elsen_tasarkhai_camp_ger_2026-10-04",
+    "stay_id": "stay_elsen_tasarkhai_camp",
+    "date": "2026-10-04",
+    "unit_type": "ger",
+    "total": 18,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_elsen_tasarkhai_camp_ger_2026-10-05",
+    "stay_id": "stay_elsen_tasarkhai_camp",
+    "date": "2026-10-05",
+    "unit_type": "ger",
+    "total": 18,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_elsen_tasarkhai_camp_ger_2026-10-06",
+    "stay_id": "stay_elsen_tasarkhai_camp",
+    "date": "2026-10-06",
+    "unit_type": "ger",
+    "total": 18,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_elsen_tasarkhai_camp_ger_2026-10-07",
+    "stay_id": "stay_elsen_tasarkhai_camp",
+    "date": "2026-10-07",
+    "unit_type": "ger",
+    "total": 18,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_elsen_tasarkhai_camp_ger_2026-10-08",
+    "stay_id": "stay_elsen_tasarkhai_camp",
+    "date": "2026-10-08",
+    "unit_type": "ger",
+    "total": 18,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_elsen_tasarkhai_camp_ger_2026-10-09",
+    "stay_id": "stay_elsen_tasarkhai_camp",
+    "date": "2026-10-09",
+    "unit_type": "ger",
+    "total": 18,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_elsen_tasarkhai_camp_ger_2026-10-10",
+    "stay_id": "stay_elsen_tasarkhai_camp",
+    "date": "2026-10-10",
+    "unit_type": "ger",
+    "total": 18,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_elsen_tasarkhai_camp_ger_2026-10-11",
+    "stay_id": "stay_elsen_tasarkhai_camp",
+    "date": "2026-10-11",
+    "unit_type": "ger",
+    "total": 18,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_elsen_tasarkhai_camp_ger_2026-10-12",
+    "stay_id": "stay_elsen_tasarkhai_camp",
+    "date": "2026-10-12",
+    "unit_type": "ger",
+    "total": 18,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_elsen_tasarkhai_camp_ger_2026-10-13",
+    "stay_id": "stay_elsen_tasarkhai_camp",
+    "date": "2026-10-13",
+    "unit_type": "ger",
+    "total": 18,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_elsen_tasarkhai_camp_ger_2026-10-14",
+    "stay_id": "stay_elsen_tasarkhai_camp",
+    "date": "2026-10-14",
+    "unit_type": "ger",
+    "total": 18,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_tsetserleg_hotel_bulgan_double_room_2026-10-01",
+    "stay_id": "stay_tsetserleg_hotel_bulgan",
+    "date": "2026-10-01",
+    "unit_type": "double_room",
+    "total": 16,
+    "available": 13,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_tsetserleg_hotel_bulgan_double_room_2026-10-02",
+    "stay_id": "stay_tsetserleg_hotel_bulgan",
+    "date": "2026-10-02",
+    "unit_type": "double_room",
+    "total": 16,
+    "available": 10,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_tsetserleg_hotel_bulgan_double_room_2026-10-03",
+    "stay_id": "stay_tsetserleg_hotel_bulgan",
+    "date": "2026-10-03",
+    "unit_type": "double_room",
+    "total": 16,
+    "available": 6,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_tsetserleg_hotel_bulgan_double_room_2026-10-04",
+    "stay_id": "stay_tsetserleg_hotel_bulgan",
+    "date": "2026-10-04",
+    "unit_type": "double_room",
+    "total": 16,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_tsetserleg_hotel_bulgan_double_room_2026-10-05",
+    "stay_id": "stay_tsetserleg_hotel_bulgan",
+    "date": "2026-10-05",
+    "unit_type": "double_room",
+    "total": 16,
+    "available": 8,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_tsetserleg_hotel_bulgan_double_room_2026-10-06",
+    "stay_id": "stay_tsetserleg_hotel_bulgan",
+    "date": "2026-10-06",
+    "unit_type": "double_room",
+    "total": 16,
+    "available": 12,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_tsetserleg_hotel_bulgan_double_room_2026-10-07",
+    "stay_id": "stay_tsetserleg_hotel_bulgan",
+    "date": "2026-10-07",
+    "unit_type": "double_room",
+    "total": 16,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_tsetserleg_hotel_bulgan_double_room_2026-10-08",
+    "stay_id": "stay_tsetserleg_hotel_bulgan",
+    "date": "2026-10-08",
+    "unit_type": "double_room",
+    "total": 16,
+    "available": 14,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_tsetserleg_hotel_bulgan_double_room_2026-10-09",
+    "stay_id": "stay_tsetserleg_hotel_bulgan",
+    "date": "2026-10-09",
+    "unit_type": "double_room",
+    "total": 16,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_tsetserleg_hotel_bulgan_double_room_2026-10-10",
+    "stay_id": "stay_tsetserleg_hotel_bulgan",
+    "date": "2026-10-10",
+    "unit_type": "double_room",
+    "total": 16,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_tsetserleg_hotel_bulgan_double_room_2026-10-11",
+    "stay_id": "stay_tsetserleg_hotel_bulgan",
+    "date": "2026-10-11",
+    "unit_type": "double_room",
+    "total": 16,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_tsetserleg_hotel_bulgan_double_room_2026-10-12",
+    "stay_id": "stay_tsetserleg_hotel_bulgan",
+    "date": "2026-10-12",
+    "unit_type": "double_room",
+    "total": 16,
+    "available": 11,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_tsetserleg_hotel_bulgan_double_room_2026-10-13",
+    "stay_id": "stay_tsetserleg_hotel_bulgan",
+    "date": "2026-10-13",
+    "unit_type": "double_room",
+    "total": 16,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_tsetserleg_hotel_bulgan_double_room_2026-10-14",
+    "stay_id": "stay_tsetserleg_hotel_bulgan",
+    "date": "2026-10-14",
+    "unit_type": "double_room",
+    "total": 16,
+    "available": 7,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_terkhiin_camp_white_lake_ger_2026-10-01",
+    "stay_id": "stay_terkhiin_camp_white_lake",
+    "date": "2026-10-01",
+    "unit_type": "ger",
+    "total": 22,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 95000
+  },
+  {
+    "_id": "avail_terkhiin_camp_white_lake_ger_2026-10-02",
+    "stay_id": "stay_terkhiin_camp_white_lake",
+    "date": "2026-10-02",
+    "unit_type": "ger",
+    "total": 22,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 95000
+  },
+  {
+    "_id": "avail_terkhiin_camp_white_lake_ger_2026-10-03",
+    "stay_id": "stay_terkhiin_camp_white_lake",
+    "date": "2026-10-03",
+    "unit_type": "ger",
+    "total": 22,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 95000
+  },
+  {
+    "_id": "avail_terkhiin_camp_white_lake_ger_2026-10-04",
+    "stay_id": "stay_terkhiin_camp_white_lake",
+    "date": "2026-10-04",
+    "unit_type": "ger",
+    "total": 22,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 95000
+  },
+  {
+    "_id": "avail_terkhiin_camp_white_lake_ger_2026-10-05",
+    "stay_id": "stay_terkhiin_camp_white_lake",
+    "date": "2026-10-05",
+    "unit_type": "ger",
+    "total": 22,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 95000
+  },
+  {
+    "_id": "avail_terkhiin_camp_white_lake_ger_2026-10-06",
+    "stay_id": "stay_terkhiin_camp_white_lake",
+    "date": "2026-10-06",
+    "unit_type": "ger",
+    "total": 22,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 95000
+  },
+  {
+    "_id": "avail_terkhiin_camp_white_lake_ger_2026-10-07",
+    "stay_id": "stay_terkhiin_camp_white_lake",
+    "date": "2026-10-07",
+    "unit_type": "ger",
+    "total": 22,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 95000
+  },
+  {
+    "_id": "avail_terkhiin_camp_white_lake_ger_2026-10-08",
+    "stay_id": "stay_terkhiin_camp_white_lake",
+    "date": "2026-10-08",
+    "unit_type": "ger",
+    "total": 22,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 95000
+  },
+  {
+    "_id": "avail_terkhiin_camp_white_lake_ger_2026-10-09",
+    "stay_id": "stay_terkhiin_camp_white_lake",
+    "date": "2026-10-09",
+    "unit_type": "ger",
+    "total": 22,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 95000
+  },
+  {
+    "_id": "avail_terkhiin_camp_white_lake_ger_2026-10-10",
+    "stay_id": "stay_terkhiin_camp_white_lake",
+    "date": "2026-10-10",
+    "unit_type": "ger",
+    "total": 22,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 95000
+  },
+  {
+    "_id": "avail_terkhiin_camp_white_lake_ger_2026-10-11",
+    "stay_id": "stay_terkhiin_camp_white_lake",
+    "date": "2026-10-11",
+    "unit_type": "ger",
+    "total": 22,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 95000
+  },
+  {
+    "_id": "avail_terkhiin_camp_white_lake_ger_2026-10-12",
+    "stay_id": "stay_terkhiin_camp_white_lake",
+    "date": "2026-10-12",
+    "unit_type": "ger",
+    "total": 22,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 95000
+  },
+  {
+    "_id": "avail_terkhiin_camp_white_lake_ger_2026-10-13",
+    "stay_id": "stay_terkhiin_camp_white_lake",
+    "date": "2026-10-13",
+    "unit_type": "ger",
+    "total": 22,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 95000
+  },
+  {
+    "_id": "avail_terkhiin_camp_white_lake_ger_2026-10-14",
+    "stay_id": "stay_terkhiin_camp_white_lake",
+    "date": "2026-10-14",
+    "unit_type": "ger",
+    "total": 22,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 95000
+  },
+  {
+    "_id": "avail_tariat_family_ger_ger_2026-10-01",
+    "stay_id": "stay_tariat_family_ger",
+    "date": "2026-10-01",
+    "unit_type": "ger",
+    "total": 3,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_tariat_family_ger_ger_2026-10-02",
+    "stay_id": "stay_tariat_family_ger",
+    "date": "2026-10-02",
+    "unit_type": "ger",
+    "total": 3,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_tariat_family_ger_ger_2026-10-03",
+    "stay_id": "stay_tariat_family_ger",
+    "date": "2026-10-03",
+    "unit_type": "ger",
+    "total": 3,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_tariat_family_ger_ger_2026-10-04",
+    "stay_id": "stay_tariat_family_ger",
+    "date": "2026-10-04",
+    "unit_type": "ger",
+    "total": 3,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_tariat_family_ger_ger_2026-10-05",
+    "stay_id": "stay_tariat_family_ger",
+    "date": "2026-10-05",
+    "unit_type": "ger",
+    "total": 3,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_tariat_family_ger_ger_2026-10-06",
+    "stay_id": "stay_tariat_family_ger",
+    "date": "2026-10-06",
+    "unit_type": "ger",
+    "total": 3,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_tariat_family_ger_ger_2026-10-07",
+    "stay_id": "stay_tariat_family_ger",
+    "date": "2026-10-07",
+    "unit_type": "ger",
+    "total": 3,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_tariat_family_ger_ger_2026-10-08",
+    "stay_id": "stay_tariat_family_ger",
+    "date": "2026-10-08",
+    "unit_type": "ger",
+    "total": 3,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_tariat_family_ger_ger_2026-10-09",
+    "stay_id": "stay_tariat_family_ger",
+    "date": "2026-10-09",
+    "unit_type": "ger",
+    "total": 3,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_tariat_family_ger_ger_2026-10-10",
+    "stay_id": "stay_tariat_family_ger",
+    "date": "2026-10-10",
+    "unit_type": "ger",
+    "total": 3,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_tariat_family_ger_ger_2026-10-11",
+    "stay_id": "stay_tariat_family_ger",
+    "date": "2026-10-11",
+    "unit_type": "ger",
+    "total": 3,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_tariat_family_ger_ger_2026-10-12",
+    "stay_id": "stay_tariat_family_ger",
+    "date": "2026-10-12",
+    "unit_type": "ger",
+    "total": 3,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_tariat_family_ger_ger_2026-10-13",
+    "stay_id": "stay_tariat_family_ger",
+    "date": "2026-10-13",
+    "unit_type": "ger",
+    "total": 3,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_tariat_family_ger_ger_2026-10-14",
+    "stay_id": "stay_tariat_family_ger",
+    "date": "2026-10-14",
+    "unit_type": "ger",
+    "total": 3,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_mandalgovi_hotel_gobi_double_room_2026-10-01",
+    "stay_id": "stay_mandalgovi_hotel_gobi",
+    "date": "2026-10-01",
+    "unit_type": "double_room",
+    "total": 14,
+    "available": 6,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_mandalgovi_hotel_gobi_double_room_2026-10-02",
+    "stay_id": "stay_mandalgovi_hotel_gobi",
+    "date": "2026-10-02",
+    "unit_type": "double_room",
+    "total": 14,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_mandalgovi_hotel_gobi_double_room_2026-10-03",
+    "stay_id": "stay_mandalgovi_hotel_gobi",
+    "date": "2026-10-03",
+    "unit_type": "double_room",
+    "total": 14,
+    "available": 7,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_mandalgovi_hotel_gobi_double_room_2026-10-04",
+    "stay_id": "stay_mandalgovi_hotel_gobi",
+    "date": "2026-10-04",
+    "unit_type": "double_room",
+    "total": 14,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_mandalgovi_hotel_gobi_double_room_2026-10-05",
+    "stay_id": "stay_mandalgovi_hotel_gobi",
+    "date": "2026-10-05",
+    "unit_type": "double_room",
+    "total": 14,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_mandalgovi_hotel_gobi_double_room_2026-10-06",
+    "stay_id": "stay_mandalgovi_hotel_gobi",
+    "date": "2026-10-06",
+    "unit_type": "double_room",
+    "total": 14,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_mandalgovi_hotel_gobi_double_room_2026-10-07",
+    "stay_id": "stay_mandalgovi_hotel_gobi",
+    "date": "2026-10-07",
+    "unit_type": "double_room",
+    "total": 14,
+    "available": 14,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_mandalgovi_hotel_gobi_double_room_2026-10-08",
+    "stay_id": "stay_mandalgovi_hotel_gobi",
+    "date": "2026-10-08",
+    "unit_type": "double_room",
+    "total": 14,
+    "available": 13,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_mandalgovi_hotel_gobi_double_room_2026-10-09",
+    "stay_id": "stay_mandalgovi_hotel_gobi",
+    "date": "2026-10-09",
+    "unit_type": "double_room",
+    "total": 14,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_mandalgovi_hotel_gobi_double_room_2026-10-10",
+    "stay_id": "stay_mandalgovi_hotel_gobi",
+    "date": "2026-10-10",
+    "unit_type": "double_room",
+    "total": 14,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_mandalgovi_hotel_gobi_double_room_2026-10-11",
+    "stay_id": "stay_mandalgovi_hotel_gobi",
+    "date": "2026-10-11",
+    "unit_type": "double_room",
+    "total": 14,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_mandalgovi_hotel_gobi_double_room_2026-10-12",
+    "stay_id": "stay_mandalgovi_hotel_gobi",
+    "date": "2026-10-12",
+    "unit_type": "double_room",
+    "total": 14,
+    "available": 10,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_mandalgovi_hotel_gobi_double_room_2026-10-13",
+    "stay_id": "stay_mandalgovi_hotel_gobi",
+    "date": "2026-10-13",
+    "unit_type": "double_room",
+    "total": 14,
+    "available": 14,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_mandalgovi_hotel_gobi_double_room_2026-10-14",
+    "stay_id": "stay_mandalgovi_hotel_gobi",
+    "date": "2026-10-14",
+    "unit_type": "double_room",
+    "total": 14,
+    "available": 14,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_tsagaan_suvarga_camp_ger_2026-10-01",
+    "stay_id": "stay_tsagaan_suvarga_camp",
+    "date": "2026-10-01",
+    "unit_type": "ger",
+    "total": 16,
+    "available": 6,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_tsagaan_suvarga_camp_ger_2026-10-02",
+    "stay_id": "stay_tsagaan_suvarga_camp",
+    "date": "2026-10-02",
+    "unit_type": "ger",
+    "total": 16,
+    "available": 8,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_tsagaan_suvarga_camp_ger_2026-10-03",
+    "stay_id": "stay_tsagaan_suvarga_camp",
+    "date": "2026-10-03",
+    "unit_type": "ger",
+    "total": 16,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_tsagaan_suvarga_camp_ger_2026-10-04",
+    "stay_id": "stay_tsagaan_suvarga_camp",
+    "date": "2026-10-04",
+    "unit_type": "ger",
+    "total": 16,
+    "available": 7,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_tsagaan_suvarga_camp_ger_2026-10-05",
+    "stay_id": "stay_tsagaan_suvarga_camp",
+    "date": "2026-10-05",
+    "unit_type": "ger",
+    "total": 16,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_tsagaan_suvarga_camp_ger_2026-10-06",
+    "stay_id": "stay_tsagaan_suvarga_camp",
+    "date": "2026-10-06",
+    "unit_type": "ger",
+    "total": 16,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_tsagaan_suvarga_camp_ger_2026-10-07",
+    "stay_id": "stay_tsagaan_suvarga_camp",
+    "date": "2026-10-07",
+    "unit_type": "ger",
+    "total": 16,
+    "available": 16,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_tsagaan_suvarga_camp_ger_2026-10-08",
+    "stay_id": "stay_tsagaan_suvarga_camp",
+    "date": "2026-10-08",
+    "unit_type": "ger",
+    "total": 16,
+    "available": 13,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_tsagaan_suvarga_camp_ger_2026-10-09",
+    "stay_id": "stay_tsagaan_suvarga_camp",
+    "date": "2026-10-09",
+    "unit_type": "ger",
+    "total": 16,
+    "available": 10,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_tsagaan_suvarga_camp_ger_2026-10-10",
+    "stay_id": "stay_tsagaan_suvarga_camp",
+    "date": "2026-10-10",
+    "unit_type": "ger",
+    "total": 16,
+    "available": 8,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_tsagaan_suvarga_camp_ger_2026-10-11",
+    "stay_id": "stay_tsagaan_suvarga_camp",
+    "date": "2026-10-11",
+    "unit_type": "ger",
+    "total": 16,
+    "available": 11,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_tsagaan_suvarga_camp_ger_2026-10-12",
+    "stay_id": "stay_tsagaan_suvarga_camp",
+    "date": "2026-10-12",
+    "unit_type": "ger",
+    "total": 16,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_tsagaan_suvarga_camp_ger_2026-10-13",
+    "stay_id": "stay_tsagaan_suvarga_camp",
+    "date": "2026-10-13",
+    "unit_type": "ger",
+    "total": 16,
+    "available": 12,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_tsagaan_suvarga_camp_ger_2026-10-14",
+    "stay_id": "stay_tsagaan_suvarga_camp",
+    "date": "2026-10-14",
+    "unit_type": "ger",
+    "total": 16,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_dalanzadgad_hotel_south_double_room_2026-10-01",
+    "stay_id": "stay_dalanzadgad_hotel_south",
+    "date": "2026-10-01",
+    "unit_type": "double_room",
+    "total": 30,
+    "available": 26,
+    "status": "open",
+    "price_mnt": 170000
+  },
+  {
+    "_id": "avail_dalanzadgad_hotel_south_family_room_2026-10-01",
+    "stay_id": "stay_dalanzadgad_hotel_south",
+    "date": "2026-10-01",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 6,
+    "status": "open",
+    "price_mnt": 260000
+  },
+  {
+    "_id": "avail_dalanzadgad_hotel_south_double_room_2026-10-02",
+    "stay_id": "stay_dalanzadgad_hotel_south",
+    "date": "2026-10-02",
+    "unit_type": "double_room",
+    "total": 30,
+    "available": 14,
+    "status": "open",
+    "price_mnt": 170000
+  },
+  {
+    "_id": "avail_dalanzadgad_hotel_south_family_room_2026-10-02",
+    "stay_id": "stay_dalanzadgad_hotel_south",
+    "date": "2026-10-02",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 260000
+  },
+  {
+    "_id": "avail_dalanzadgad_hotel_south_double_room_2026-10-03",
+    "stay_id": "stay_dalanzadgad_hotel_south",
+    "date": "2026-10-03",
+    "unit_type": "double_room",
+    "total": 30,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 170000
+  },
+  {
+    "_id": "avail_dalanzadgad_hotel_south_family_room_2026-10-03",
+    "stay_id": "stay_dalanzadgad_hotel_south",
+    "date": "2026-10-03",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 260000
+  },
+  {
+    "_id": "avail_dalanzadgad_hotel_south_double_room_2026-10-04",
+    "stay_id": "stay_dalanzadgad_hotel_south",
+    "date": "2026-10-04",
+    "unit_type": "double_room",
+    "total": 30,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 170000
+  },
+  {
+    "_id": "avail_dalanzadgad_hotel_south_family_room_2026-10-04",
+    "stay_id": "stay_dalanzadgad_hotel_south",
+    "date": "2026-10-04",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 260000
+  },
+  {
+    "_id": "avail_dalanzadgad_hotel_south_double_room_2026-10-05",
+    "stay_id": "stay_dalanzadgad_hotel_south",
+    "date": "2026-10-05",
+    "unit_type": "double_room",
+    "total": 30,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 170000
+  },
+  {
+    "_id": "avail_dalanzadgad_hotel_south_family_room_2026-10-05",
+    "stay_id": "stay_dalanzadgad_hotel_south",
+    "date": "2026-10-05",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 260000
+  },
+  {
+    "_id": "avail_dalanzadgad_hotel_south_double_room_2026-10-06",
+    "stay_id": "stay_dalanzadgad_hotel_south",
+    "date": "2026-10-06",
+    "unit_type": "double_room",
+    "total": 30,
+    "available": 24,
+    "status": "open",
+    "price_mnt": 170000
+  },
+  {
+    "_id": "avail_dalanzadgad_hotel_south_family_room_2026-10-06",
+    "stay_id": "stay_dalanzadgad_hotel_south",
+    "date": "2026-10-06",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 260000
+  },
+  {
+    "_id": "avail_dalanzadgad_hotel_south_double_room_2026-10-07",
+    "stay_id": "stay_dalanzadgad_hotel_south",
+    "date": "2026-10-07",
+    "unit_type": "double_room",
+    "total": 30,
+    "available": 23,
+    "status": "open",
+    "price_mnt": 170000
+  },
+  {
+    "_id": "avail_dalanzadgad_hotel_south_family_room_2026-10-07",
+    "stay_id": "stay_dalanzadgad_hotel_south",
+    "date": "2026-10-07",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 260000
+  },
+  {
+    "_id": "avail_dalanzadgad_hotel_south_double_room_2026-10-08",
+    "stay_id": "stay_dalanzadgad_hotel_south",
+    "date": "2026-10-08",
+    "unit_type": "double_room",
+    "total": 30,
+    "available": 27,
+    "status": "open",
+    "price_mnt": 170000
+  },
+  {
+    "_id": "avail_dalanzadgad_hotel_south_family_room_2026-10-08",
+    "stay_id": "stay_dalanzadgad_hotel_south",
+    "date": "2026-10-08",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 260000
+  },
+  {
+    "_id": "avail_dalanzadgad_hotel_south_double_room_2026-10-09",
+    "stay_id": "stay_dalanzadgad_hotel_south",
+    "date": "2026-10-09",
+    "unit_type": "double_room",
+    "total": 30,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 170000
+  },
+  {
+    "_id": "avail_dalanzadgad_hotel_south_family_room_2026-10-09",
+    "stay_id": "stay_dalanzadgad_hotel_south",
+    "date": "2026-10-09",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 260000
+  },
+  {
+    "_id": "avail_dalanzadgad_hotel_south_double_room_2026-10-10",
+    "stay_id": "stay_dalanzadgad_hotel_south",
+    "date": "2026-10-10",
+    "unit_type": "double_room",
+    "total": 30,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 170000
+  },
+  {
+    "_id": "avail_dalanzadgad_hotel_south_family_room_2026-10-10",
+    "stay_id": "stay_dalanzadgad_hotel_south",
+    "date": "2026-10-10",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 260000
+  },
+  {
+    "_id": "avail_dalanzadgad_hotel_south_double_room_2026-10-11",
+    "stay_id": "stay_dalanzadgad_hotel_south",
+    "date": "2026-10-11",
+    "unit_type": "double_room",
+    "total": 30,
+    "available": 10,
+    "status": "open",
+    "price_mnt": 170000
+  },
+  {
+    "_id": "avail_dalanzadgad_hotel_south_family_room_2026-10-11",
+    "stay_id": "stay_dalanzadgad_hotel_south",
+    "date": "2026-10-11",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 260000
+  },
+  {
+    "_id": "avail_dalanzadgad_hotel_south_double_room_2026-10-12",
+    "stay_id": "stay_dalanzadgad_hotel_south",
+    "date": "2026-10-12",
+    "unit_type": "double_room",
+    "total": 30,
+    "available": 7,
+    "status": "open",
+    "price_mnt": 170000
+  },
+  {
+    "_id": "avail_dalanzadgad_hotel_south_family_room_2026-10-12",
+    "stay_id": "stay_dalanzadgad_hotel_south",
+    "date": "2026-10-12",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 260000
+  },
+  {
+    "_id": "avail_dalanzadgad_hotel_south_double_room_2026-10-13",
+    "stay_id": "stay_dalanzadgad_hotel_south",
+    "date": "2026-10-13",
+    "unit_type": "double_room",
+    "total": 30,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 170000
+  },
+  {
+    "_id": "avail_dalanzadgad_hotel_south_family_room_2026-10-13",
+    "stay_id": "stay_dalanzadgad_hotel_south",
+    "date": "2026-10-13",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 260000
+  },
+  {
+    "_id": "avail_dalanzadgad_hotel_south_double_room_2026-10-14",
+    "stay_id": "stay_dalanzadgad_hotel_south",
+    "date": "2026-10-14",
+    "unit_type": "double_room",
+    "total": 30,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 170000
+  },
+  {
+    "_id": "avail_dalanzadgad_hotel_south_family_room_2026-10-14",
+    "stay_id": "stay_dalanzadgad_hotel_south",
+    "date": "2026-10-14",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 260000
+  },
+  {
+    "_id": "avail_yolyn_am_camp_ger_2026-10-01",
+    "stay_id": "stay_yolyn_am_camp",
+    "date": "2026-10-01",
+    "unit_type": "ger",
+    "total": 30,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 130000
+  },
+  {
+    "_id": "avail_yolyn_am_camp_ger_2026-10-02",
+    "stay_id": "stay_yolyn_am_camp",
+    "date": "2026-10-02",
+    "unit_type": "ger",
+    "total": 30,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 130000
+  },
+  {
+    "_id": "avail_yolyn_am_camp_ger_2026-10-03",
+    "stay_id": "stay_yolyn_am_camp",
+    "date": "2026-10-03",
+    "unit_type": "ger",
+    "total": 30,
+    "available": 18,
+    "status": "open",
+    "price_mnt": 130000
+  },
+  {
+    "_id": "avail_yolyn_am_camp_ger_2026-10-04",
+    "stay_id": "stay_yolyn_am_camp",
+    "date": "2026-10-04",
+    "unit_type": "ger",
+    "total": 30,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 130000
+  },
+  {
+    "_id": "avail_yolyn_am_camp_ger_2026-10-05",
+    "stay_id": "stay_yolyn_am_camp",
+    "date": "2026-10-05",
+    "unit_type": "ger",
+    "total": 30,
+    "available": 17,
+    "status": "open",
+    "price_mnt": 130000
+  },
+  {
+    "_id": "avail_yolyn_am_camp_ger_2026-10-06",
+    "stay_id": "stay_yolyn_am_camp",
+    "date": "2026-10-06",
+    "unit_type": "ger",
+    "total": 30,
+    "available": 30,
+    "status": "open",
+    "price_mnt": 130000
+  },
+  {
+    "_id": "avail_yolyn_am_camp_ger_2026-10-07",
+    "stay_id": "stay_yolyn_am_camp",
+    "date": "2026-10-07",
+    "unit_type": "ger",
+    "total": 30,
+    "available": 25,
+    "status": "open",
+    "price_mnt": 130000
+  },
+  {
+    "_id": "avail_yolyn_am_camp_ger_2026-10-08",
+    "stay_id": "stay_yolyn_am_camp",
+    "date": "2026-10-08",
+    "unit_type": "ger",
+    "total": 30,
+    "available": 7,
+    "status": "open",
+    "price_mnt": 130000
+  },
+  {
+    "_id": "avail_yolyn_am_camp_ger_2026-10-09",
+    "stay_id": "stay_yolyn_am_camp",
+    "date": "2026-10-09",
+    "unit_type": "ger",
+    "total": 30,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 130000
+  },
+  {
+    "_id": "avail_yolyn_am_camp_ger_2026-10-10",
+    "stay_id": "stay_yolyn_am_camp",
+    "date": "2026-10-10",
+    "unit_type": "ger",
+    "total": 30,
+    "available": 13,
+    "status": "open",
+    "price_mnt": 130000
+  },
+  {
+    "_id": "avail_yolyn_am_camp_ger_2026-10-11",
+    "stay_id": "stay_yolyn_am_camp",
+    "date": "2026-10-11",
+    "unit_type": "ger",
+    "total": 30,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 130000
+  },
+  {
+    "_id": "avail_yolyn_am_camp_ger_2026-10-12",
+    "stay_id": "stay_yolyn_am_camp",
+    "date": "2026-10-12",
+    "unit_type": "ger",
+    "total": 30,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 130000
+  },
+  {
+    "_id": "avail_yolyn_am_camp_ger_2026-10-13",
+    "stay_id": "stay_yolyn_am_camp",
+    "date": "2026-10-13",
+    "unit_type": "ger",
+    "total": 30,
+    "available": 17,
+    "status": "open",
+    "price_mnt": 130000
+  },
+  {
+    "_id": "avail_yolyn_am_camp_ger_2026-10-14",
+    "stay_id": "stay_yolyn_am_camp",
+    "date": "2026-10-14",
+    "unit_type": "ger",
+    "total": 30,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 130000
+  },
+  {
+    "_id": "avail_bayanzag_camp_ger_2026-10-01",
+    "stay_id": "stay_bayanzag_camp",
+    "date": "2026-10-01",
+    "unit_type": "ger",
+    "total": 20,
+    "available": 13,
+    "status": "open",
+    "price_mnt": 115000
+  },
+  {
+    "_id": "avail_bayanzag_camp_ger_2026-10-02",
+    "stay_id": "stay_bayanzag_camp",
+    "date": "2026-10-02",
+    "unit_type": "ger",
+    "total": 20,
+    "available": 7,
+    "status": "open",
+    "price_mnt": 115000
+  },
+  {
+    "_id": "avail_bayanzag_camp_ger_2026-10-03",
+    "stay_id": "stay_bayanzag_camp",
+    "date": "2026-10-03",
+    "unit_type": "ger",
+    "total": 20,
+    "available": 10,
+    "status": "open",
+    "price_mnt": 115000
+  },
+  {
+    "_id": "avail_bayanzag_camp_ger_2026-10-04",
+    "stay_id": "stay_bayanzag_camp",
+    "date": "2026-10-04",
+    "unit_type": "ger",
+    "total": 20,
+    "available": 12,
+    "status": "open",
+    "price_mnt": 115000
+  },
+  {
+    "_id": "avail_bayanzag_camp_ger_2026-10-05",
+    "stay_id": "stay_bayanzag_camp",
+    "date": "2026-10-05",
+    "unit_type": "ger",
+    "total": 20,
+    "available": 8,
+    "status": "open",
+    "price_mnt": 115000
+  },
+  {
+    "_id": "avail_bayanzag_camp_ger_2026-10-06",
+    "stay_id": "stay_bayanzag_camp",
+    "date": "2026-10-06",
+    "unit_type": "ger",
+    "total": 20,
+    "available": 19,
+    "status": "open",
+    "price_mnt": 115000
+  },
+  {
+    "_id": "avail_bayanzag_camp_ger_2026-10-07",
+    "stay_id": "stay_bayanzag_camp",
+    "date": "2026-10-07",
+    "unit_type": "ger",
+    "total": 20,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 115000
+  },
+  {
+    "_id": "avail_bayanzag_camp_ger_2026-10-08",
+    "stay_id": "stay_bayanzag_camp",
+    "date": "2026-10-08",
+    "unit_type": "ger",
+    "total": 20,
+    "available": 13,
+    "status": "open",
+    "price_mnt": 115000
+  },
+  {
+    "_id": "avail_bayanzag_camp_ger_2026-10-09",
+    "stay_id": "stay_bayanzag_camp",
+    "date": "2026-10-09",
+    "unit_type": "ger",
+    "total": 20,
+    "available": 9,
+    "status": "open",
+    "price_mnt": 115000
+  },
+  {
+    "_id": "avail_bayanzag_camp_ger_2026-10-10",
+    "stay_id": "stay_bayanzag_camp",
+    "date": "2026-10-10",
+    "unit_type": "ger",
+    "total": 20,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 115000
+  },
+  {
+    "_id": "avail_bayanzag_camp_ger_2026-10-11",
+    "stay_id": "stay_bayanzag_camp",
+    "date": "2026-10-11",
+    "unit_type": "ger",
+    "total": 20,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 115000
+  },
+  {
+    "_id": "avail_bayanzag_camp_ger_2026-10-12",
+    "stay_id": "stay_bayanzag_camp",
+    "date": "2026-10-12",
+    "unit_type": "ger",
+    "total": 20,
+    "available": 11,
+    "status": "open",
+    "price_mnt": 115000
+  },
+  {
+    "_id": "avail_bayanzag_camp_ger_2026-10-13",
+    "stay_id": "stay_bayanzag_camp",
+    "date": "2026-10-13",
+    "unit_type": "ger",
+    "total": 20,
+    "available": 13,
+    "status": "open",
+    "price_mnt": 115000
+  },
+  {
+    "_id": "avail_bayanzag_camp_ger_2026-10-14",
+    "stay_id": "stay_bayanzag_camp",
+    "date": "2026-10-14",
+    "unit_type": "ger",
+    "total": 20,
+    "available": 13,
+    "status": "open",
+    "price_mnt": 115000
+  },
+  {
+    "_id": "avail_khongor_camp_dunes_ger_2026-10-01",
+    "stay_id": "stay_khongor_camp_dunes",
+    "date": "2026-10-01",
+    "unit_type": "ger",
+    "total": 25,
+    "available": 25,
+    "status": "open",
+    "price_mnt": 125000
+  },
+  {
+    "_id": "avail_khongor_camp_dunes_ger_2026-10-02",
+    "stay_id": "stay_khongor_camp_dunes",
+    "date": "2026-10-02",
+    "unit_type": "ger",
+    "total": 25,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 125000
+  },
+  {
+    "_id": "avail_khongor_camp_dunes_ger_2026-10-03",
+    "stay_id": "stay_khongor_camp_dunes",
+    "date": "2026-10-03",
+    "unit_type": "ger",
+    "total": 25,
+    "available": 13,
+    "status": "open",
+    "price_mnt": 125000
+  },
+  {
+    "_id": "avail_khongor_camp_dunes_ger_2026-10-04",
+    "stay_id": "stay_khongor_camp_dunes",
+    "date": "2026-10-04",
+    "unit_type": "ger",
+    "total": 25,
+    "available": 7,
+    "status": "open",
+    "price_mnt": 125000
+  },
+  {
+    "_id": "avail_khongor_camp_dunes_ger_2026-10-05",
+    "stay_id": "stay_khongor_camp_dunes",
+    "date": "2026-10-05",
+    "unit_type": "ger",
+    "total": 25,
+    "available": 15,
+    "status": "open",
+    "price_mnt": 125000
+  },
+  {
+    "_id": "avail_khongor_camp_dunes_ger_2026-10-06",
+    "stay_id": "stay_khongor_camp_dunes",
+    "date": "2026-10-06",
+    "unit_type": "ger",
+    "total": 25,
+    "available": 17,
+    "status": "open",
+    "price_mnt": 125000
+  },
+  {
+    "_id": "avail_khongor_camp_dunes_ger_2026-10-07",
+    "stay_id": "stay_khongor_camp_dunes",
+    "date": "2026-10-07",
+    "unit_type": "ger",
+    "total": 25,
+    "available": 23,
+    "status": "open",
+    "price_mnt": 125000
+  },
+  {
+    "_id": "avail_khongor_camp_dunes_ger_2026-10-08",
+    "stay_id": "stay_khongor_camp_dunes",
+    "date": "2026-10-08",
+    "unit_type": "ger",
+    "total": 25,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 125000
+  },
+  {
+    "_id": "avail_khongor_camp_dunes_ger_2026-10-09",
+    "stay_id": "stay_khongor_camp_dunes",
+    "date": "2026-10-09",
+    "unit_type": "ger",
+    "total": 25,
+    "available": 11,
+    "status": "open",
+    "price_mnt": 125000
+  },
+  {
+    "_id": "avail_khongor_camp_dunes_ger_2026-10-10",
+    "stay_id": "stay_khongor_camp_dunes",
+    "date": "2026-10-10",
+    "unit_type": "ger",
+    "total": 25,
+    "available": 8,
+    "status": "open",
+    "price_mnt": 125000
+  },
+  {
+    "_id": "avail_khongor_camp_dunes_ger_2026-10-11",
+    "stay_id": "stay_khongor_camp_dunes",
+    "date": "2026-10-11",
+    "unit_type": "ger",
+    "total": 25,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 125000
+  },
+  {
+    "_id": "avail_khongor_camp_dunes_ger_2026-10-12",
+    "stay_id": "stay_khongor_camp_dunes",
+    "date": "2026-10-12",
+    "unit_type": "ger",
+    "total": 25,
+    "available": 9,
+    "status": "open",
+    "price_mnt": 125000
+  },
+  {
+    "_id": "avail_khongor_camp_dunes_ger_2026-10-13",
+    "stay_id": "stay_khongor_camp_dunes",
+    "date": "2026-10-13",
+    "unit_type": "ger",
+    "total": 25,
+    "available": 13,
+    "status": "open",
+    "price_mnt": 125000
+  },
+  {
+    "_id": "avail_khongor_camp_dunes_ger_2026-10-14",
+    "stay_id": "stay_khongor_camp_dunes",
+    "date": "2026-10-14",
+    "unit_type": "ger",
+    "total": 25,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 125000
+  },
+  {
+    "_id": "avail_khongor_herder_family_ger_2026-10-01",
+    "stay_id": "stay_khongor_herder_family",
+    "date": "2026-10-01",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 50000
+  },
+  {
+    "_id": "avail_khongor_herder_family_ger_2026-10-02",
+    "stay_id": "stay_khongor_herder_family",
+    "date": "2026-10-02",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 50000
+  },
+  {
+    "_id": "avail_khongor_herder_family_ger_2026-10-03",
+    "stay_id": "stay_khongor_herder_family",
+    "date": "2026-10-03",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 50000
+  },
+  {
+    "_id": "avail_khongor_herder_family_ger_2026-10-04",
+    "stay_id": "stay_khongor_herder_family",
+    "date": "2026-10-04",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 50000
+  },
+  {
+    "_id": "avail_khongor_herder_family_ger_2026-10-05",
+    "stay_id": "stay_khongor_herder_family",
+    "date": "2026-10-05",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 50000
+  },
+  {
+    "_id": "avail_khongor_herder_family_ger_2026-10-06",
+    "stay_id": "stay_khongor_herder_family",
+    "date": "2026-10-06",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 50000
+  },
+  {
+    "_id": "avail_khongor_herder_family_ger_2026-10-07",
+    "stay_id": "stay_khongor_herder_family",
+    "date": "2026-10-07",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 50000
+  },
+  {
+    "_id": "avail_khongor_herder_family_ger_2026-10-08",
+    "stay_id": "stay_khongor_herder_family",
+    "date": "2026-10-08",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 50000
+  },
+  {
+    "_id": "avail_khongor_herder_family_ger_2026-10-09",
+    "stay_id": "stay_khongor_herder_family",
+    "date": "2026-10-09",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 50000
+  },
+  {
+    "_id": "avail_khongor_herder_family_ger_2026-10-10",
+    "stay_id": "stay_khongor_herder_family",
+    "date": "2026-10-10",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 50000
+  },
+  {
+    "_id": "avail_khongor_herder_family_ger_2026-10-11",
+    "stay_id": "stay_khongor_herder_family",
+    "date": "2026-10-11",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 50000
+  },
+  {
+    "_id": "avail_khongor_herder_family_ger_2026-10-12",
+    "stay_id": "stay_khongor_herder_family",
+    "date": "2026-10-12",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 50000
+  },
+  {
+    "_id": "avail_khongor_herder_family_ger_2026-10-13",
+    "stay_id": "stay_khongor_herder_family",
+    "date": "2026-10-13",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 50000
+  },
+  {
+    "_id": "avail_khongor_herder_family_ger_2026-10-14",
+    "stay_id": "stay_khongor_herder_family",
+    "date": "2026-10-14",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 50000
+  },
+  {
+    "_id": "avail_olgii_guesthouse_kazakh_double_room_2026-10-01",
+    "stay_id": "stay_olgii_guesthouse_kazakh",
+    "date": "2026-10-01",
+    "unit_type": "double_room",
+    "total": 8,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_olgii_guesthouse_kazakh_ger_2026-10-01",
+    "stay_id": "stay_olgii_guesthouse_kazakh",
+    "date": "2026-10-01",
+    "unit_type": "ger",
+    "total": 4,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_olgii_guesthouse_kazakh_double_room_2026-10-02",
+    "stay_id": "stay_olgii_guesthouse_kazakh",
+    "date": "2026-10-02",
+    "unit_type": "double_room",
+    "total": 8,
+    "available": 7,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_olgii_guesthouse_kazakh_ger_2026-10-02",
+    "stay_id": "stay_olgii_guesthouse_kazakh",
+    "date": "2026-10-02",
+    "unit_type": "ger",
+    "total": 4,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_olgii_guesthouse_kazakh_double_room_2026-10-03",
+    "stay_id": "stay_olgii_guesthouse_kazakh",
+    "date": "2026-10-03",
+    "unit_type": "double_room",
+    "total": 8,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_olgii_guesthouse_kazakh_ger_2026-10-03",
+    "stay_id": "stay_olgii_guesthouse_kazakh",
+    "date": "2026-10-03",
+    "unit_type": "ger",
+    "total": 4,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_olgii_guesthouse_kazakh_double_room_2026-10-04",
+    "stay_id": "stay_olgii_guesthouse_kazakh",
+    "date": "2026-10-04",
+    "unit_type": "double_room",
+    "total": 8,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_olgii_guesthouse_kazakh_ger_2026-10-04",
+    "stay_id": "stay_olgii_guesthouse_kazakh",
+    "date": "2026-10-04",
+    "unit_type": "ger",
+    "total": 4,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_olgii_guesthouse_kazakh_double_room_2026-10-05",
+    "stay_id": "stay_olgii_guesthouse_kazakh",
+    "date": "2026-10-05",
+    "unit_type": "double_room",
+    "total": 8,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_olgii_guesthouse_kazakh_ger_2026-10-05",
+    "stay_id": "stay_olgii_guesthouse_kazakh",
+    "date": "2026-10-05",
+    "unit_type": "ger",
+    "total": 4,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_olgii_guesthouse_kazakh_double_room_2026-10-06",
+    "stay_id": "stay_olgii_guesthouse_kazakh",
+    "date": "2026-10-06",
+    "unit_type": "double_room",
+    "total": 8,
+    "available": 8,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_olgii_guesthouse_kazakh_ger_2026-10-06",
+    "stay_id": "stay_olgii_guesthouse_kazakh",
+    "date": "2026-10-06",
+    "unit_type": "ger",
+    "total": 4,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_olgii_guesthouse_kazakh_double_room_2026-10-07",
+    "stay_id": "stay_olgii_guesthouse_kazakh",
+    "date": "2026-10-07",
+    "unit_type": "double_room",
+    "total": 8,
+    "available": 7,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_olgii_guesthouse_kazakh_ger_2026-10-07",
+    "stay_id": "stay_olgii_guesthouse_kazakh",
+    "date": "2026-10-07",
+    "unit_type": "ger",
+    "total": 4,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_olgii_guesthouse_kazakh_double_room_2026-10-08",
+    "stay_id": "stay_olgii_guesthouse_kazakh",
+    "date": "2026-10-08",
+    "unit_type": "double_room",
+    "total": 8,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_olgii_guesthouse_kazakh_ger_2026-10-08",
+    "stay_id": "stay_olgii_guesthouse_kazakh",
+    "date": "2026-10-08",
+    "unit_type": "ger",
+    "total": 4,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_olgii_guesthouse_kazakh_double_room_2026-10-09",
+    "stay_id": "stay_olgii_guesthouse_kazakh",
+    "date": "2026-10-09",
+    "unit_type": "double_room",
+    "total": 8,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_olgii_guesthouse_kazakh_ger_2026-10-09",
+    "stay_id": "stay_olgii_guesthouse_kazakh",
+    "date": "2026-10-09",
+    "unit_type": "ger",
+    "total": 4,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_olgii_guesthouse_kazakh_double_room_2026-10-10",
+    "stay_id": "stay_olgii_guesthouse_kazakh",
+    "date": "2026-10-10",
+    "unit_type": "double_room",
+    "total": 8,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_olgii_guesthouse_kazakh_ger_2026-10-10",
+    "stay_id": "stay_olgii_guesthouse_kazakh",
+    "date": "2026-10-10",
+    "unit_type": "ger",
+    "total": 4,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_olgii_guesthouse_kazakh_double_room_2026-10-11",
+    "stay_id": "stay_olgii_guesthouse_kazakh",
+    "date": "2026-10-11",
+    "unit_type": "double_room",
+    "total": 8,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_olgii_guesthouse_kazakh_ger_2026-10-11",
+    "stay_id": "stay_olgii_guesthouse_kazakh",
+    "date": "2026-10-11",
+    "unit_type": "ger",
+    "total": 4,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_olgii_guesthouse_kazakh_double_room_2026-10-12",
+    "stay_id": "stay_olgii_guesthouse_kazakh",
+    "date": "2026-10-12",
+    "unit_type": "double_room",
+    "total": 8,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_olgii_guesthouse_kazakh_ger_2026-10-12",
+    "stay_id": "stay_olgii_guesthouse_kazakh",
+    "date": "2026-10-12",
+    "unit_type": "ger",
+    "total": 4,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_olgii_guesthouse_kazakh_double_room_2026-10-13",
+    "stay_id": "stay_olgii_guesthouse_kazakh",
+    "date": "2026-10-13",
+    "unit_type": "double_room",
+    "total": 8,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_olgii_guesthouse_kazakh_ger_2026-10-13",
+    "stay_id": "stay_olgii_guesthouse_kazakh",
+    "date": "2026-10-13",
+    "unit_type": "ger",
+    "total": 4,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_olgii_guesthouse_kazakh_double_room_2026-10-14",
+    "stay_id": "stay_olgii_guesthouse_kazakh",
+    "date": "2026-10-14",
+    "unit_type": "double_room",
+    "total": 8,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_olgii_guesthouse_kazakh_ger_2026-10-14",
+    "stay_id": "stay_olgii_guesthouse_kazakh",
+    "date": "2026-10-14",
+    "unit_type": "ger",
+    "total": 4,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_olgii_hotel_eagle_double_room_2026-10-01",
+    "stay_id": "stay_olgii_hotel_eagle",
+    "date": "2026-10-01",
+    "unit_type": "double_room",
+    "total": 20,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_olgii_hotel_eagle_double_room_2026-10-02",
+    "stay_id": "stay_olgii_hotel_eagle",
+    "date": "2026-10-02",
+    "unit_type": "double_room",
+    "total": 20,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_olgii_hotel_eagle_double_room_2026-10-03",
+    "stay_id": "stay_olgii_hotel_eagle",
+    "date": "2026-10-03",
+    "unit_type": "double_room",
+    "total": 20,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_olgii_hotel_eagle_double_room_2026-10-04",
+    "stay_id": "stay_olgii_hotel_eagle",
+    "date": "2026-10-04",
+    "unit_type": "double_room",
+    "total": 20,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_olgii_hotel_eagle_double_room_2026-10-05",
+    "stay_id": "stay_olgii_hotel_eagle",
+    "date": "2026-10-05",
+    "unit_type": "double_room",
+    "total": 20,
+    "available": 6,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_olgii_hotel_eagle_double_room_2026-10-06",
+    "stay_id": "stay_olgii_hotel_eagle",
+    "date": "2026-10-06",
+    "unit_type": "double_room",
+    "total": 20,
+    "available": 16,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_olgii_hotel_eagle_double_room_2026-10-07",
+    "stay_id": "stay_olgii_hotel_eagle",
+    "date": "2026-10-07",
+    "unit_type": "double_room",
+    "total": 20,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_olgii_hotel_eagle_double_room_2026-10-08",
+    "stay_id": "stay_olgii_hotel_eagle",
+    "date": "2026-10-08",
+    "unit_type": "double_room",
+    "total": 20,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_olgii_hotel_eagle_double_room_2026-10-09",
+    "stay_id": "stay_olgii_hotel_eagle",
+    "date": "2026-10-09",
+    "unit_type": "double_room",
+    "total": 20,
+    "available": 11,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_olgii_hotel_eagle_double_room_2026-10-10",
+    "stay_id": "stay_olgii_hotel_eagle",
+    "date": "2026-10-10",
+    "unit_type": "double_room",
+    "total": 20,
+    "available": 20,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_olgii_hotel_eagle_double_room_2026-10-11",
+    "stay_id": "stay_olgii_hotel_eagle",
+    "date": "2026-10-11",
+    "unit_type": "double_room",
+    "total": 20,
+    "available": 9,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_olgii_hotel_eagle_double_room_2026-10-12",
+    "stay_id": "stay_olgii_hotel_eagle",
+    "date": "2026-10-12",
+    "unit_type": "double_room",
+    "total": 20,
+    "available": 9,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_olgii_hotel_eagle_double_room_2026-10-13",
+    "stay_id": "stay_olgii_hotel_eagle",
+    "date": "2026-10-13",
+    "unit_type": "double_room",
+    "total": 20,
+    "available": 6,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_olgii_hotel_eagle_double_room_2026-10-14",
+    "stay_id": "stay_olgii_hotel_eagle",
+    "date": "2026-10-14",
+    "unit_type": "double_room",
+    "total": 20,
+    "available": 7,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_tavan_bogd_camp_ger_2026-10-01",
+    "stay_id": "stay_tavan_bogd_camp",
+    "date": "2026-10-01",
+    "unit_type": "ger",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 100000
+  },
+  {
+    "_id": "avail_tavan_bogd_camp_ger_2026-10-02",
+    "stay_id": "stay_tavan_bogd_camp",
+    "date": "2026-10-02",
+    "unit_type": "ger",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 100000
+  },
+  {
+    "_id": "avail_tavan_bogd_camp_ger_2026-10-03",
+    "stay_id": "stay_tavan_bogd_camp",
+    "date": "2026-10-03",
+    "unit_type": "ger",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 100000
+  },
+  {
+    "_id": "avail_tavan_bogd_camp_ger_2026-10-04",
+    "stay_id": "stay_tavan_bogd_camp",
+    "date": "2026-10-04",
+    "unit_type": "ger",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 100000
+  },
+  {
+    "_id": "avail_tavan_bogd_camp_ger_2026-10-05",
+    "stay_id": "stay_tavan_bogd_camp",
+    "date": "2026-10-05",
+    "unit_type": "ger",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 100000
+  },
+  {
+    "_id": "avail_tavan_bogd_camp_ger_2026-10-06",
+    "stay_id": "stay_tavan_bogd_camp",
+    "date": "2026-10-06",
+    "unit_type": "ger",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 100000
+  },
+  {
+    "_id": "avail_tavan_bogd_camp_ger_2026-10-07",
+    "stay_id": "stay_tavan_bogd_camp",
+    "date": "2026-10-07",
+    "unit_type": "ger",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 100000
+  },
+  {
+    "_id": "avail_tavan_bogd_camp_ger_2026-10-08",
+    "stay_id": "stay_tavan_bogd_camp",
+    "date": "2026-10-08",
+    "unit_type": "ger",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 100000
+  },
+  {
+    "_id": "avail_tavan_bogd_camp_ger_2026-10-09",
+    "stay_id": "stay_tavan_bogd_camp",
+    "date": "2026-10-09",
+    "unit_type": "ger",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 100000
+  },
+  {
+    "_id": "avail_tavan_bogd_camp_ger_2026-10-10",
+    "stay_id": "stay_tavan_bogd_camp",
+    "date": "2026-10-10",
+    "unit_type": "ger",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 100000
+  },
+  {
+    "_id": "avail_tavan_bogd_camp_ger_2026-10-11",
+    "stay_id": "stay_tavan_bogd_camp",
+    "date": "2026-10-11",
+    "unit_type": "ger",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 100000
+  },
+  {
+    "_id": "avail_tavan_bogd_camp_ger_2026-10-12",
+    "stay_id": "stay_tavan_bogd_camp",
+    "date": "2026-10-12",
+    "unit_type": "ger",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 100000
+  },
+  {
+    "_id": "avail_tavan_bogd_camp_ger_2026-10-13",
+    "stay_id": "stay_tavan_bogd_camp",
+    "date": "2026-10-13",
+    "unit_type": "ger",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 100000
+  },
+  {
+    "_id": "avail_tavan_bogd_camp_ger_2026-10-14",
+    "stay_id": "stay_tavan_bogd_camp",
+    "date": "2026-10-14",
+    "unit_type": "ger",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 100000
+  },
+  {
+    "_id": "avail_olgii_eagle_hunter_family_ger_2026-10-01",
+    "stay_id": "stay_olgii_eagle_hunter_family",
+    "date": "2026-10-01",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 55000
+  },
+  {
+    "_id": "avail_olgii_eagle_hunter_family_ger_2026-10-02",
+    "stay_id": "stay_olgii_eagle_hunter_family",
+    "date": "2026-10-02",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 55000
+  },
+  {
+    "_id": "avail_olgii_eagle_hunter_family_ger_2026-10-03",
+    "stay_id": "stay_olgii_eagle_hunter_family",
+    "date": "2026-10-03",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 55000
+  },
+  {
+    "_id": "avail_olgii_eagle_hunter_family_ger_2026-10-04",
+    "stay_id": "stay_olgii_eagle_hunter_family",
+    "date": "2026-10-04",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 55000
+  },
+  {
+    "_id": "avail_olgii_eagle_hunter_family_ger_2026-10-05",
+    "stay_id": "stay_olgii_eagle_hunter_family",
+    "date": "2026-10-05",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 55000
+  },
+  {
+    "_id": "avail_olgii_eagle_hunter_family_ger_2026-10-06",
+    "stay_id": "stay_olgii_eagle_hunter_family",
+    "date": "2026-10-06",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 55000
+  },
+  {
+    "_id": "avail_olgii_eagle_hunter_family_ger_2026-10-07",
+    "stay_id": "stay_olgii_eagle_hunter_family",
+    "date": "2026-10-07",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 55000
+  },
+  {
+    "_id": "avail_olgii_eagle_hunter_family_ger_2026-10-08",
+    "stay_id": "stay_olgii_eagle_hunter_family",
+    "date": "2026-10-08",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 55000
+  },
+  {
+    "_id": "avail_olgii_eagle_hunter_family_ger_2026-10-09",
+    "stay_id": "stay_olgii_eagle_hunter_family",
+    "date": "2026-10-09",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 55000
+  },
+  {
+    "_id": "avail_olgii_eagle_hunter_family_ger_2026-10-10",
+    "stay_id": "stay_olgii_eagle_hunter_family",
+    "date": "2026-10-10",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 55000
+  },
+  {
+    "_id": "avail_olgii_eagle_hunter_family_ger_2026-10-11",
+    "stay_id": "stay_olgii_eagle_hunter_family",
+    "date": "2026-10-11",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 55000
+  },
+  {
+    "_id": "avail_olgii_eagle_hunter_family_ger_2026-10-12",
+    "stay_id": "stay_olgii_eagle_hunter_family",
+    "date": "2026-10-12",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 55000
+  },
+  {
+    "_id": "avail_olgii_eagle_hunter_family_ger_2026-10-13",
+    "stay_id": "stay_olgii_eagle_hunter_family",
+    "date": "2026-10-13",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 55000
+  },
+  {
+    "_id": "avail_olgii_eagle_hunter_family_ger_2026-10-14",
+    "stay_id": "stay_olgii_eagle_hunter_family",
+    "date": "2026-10-14",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 55000
+  },
+  {
+    "_id": "avail_khovd_hotel_buyant_double_room_2026-10-01",
+    "stay_id": "stay_khovd_hotel_buyant",
+    "date": "2026-10-01",
+    "unit_type": "double_room",
+    "total": 24,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 140000
+  },
+  {
+    "_id": "avail_khovd_hotel_buyant_family_room_2026-10-01",
+    "stay_id": "stay_khovd_hotel_buyant",
+    "date": "2026-10-01",
+    "unit_type": "family_room",
+    "total": 4,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 220000
+  },
+  {
+    "_id": "avail_khovd_hotel_buyant_double_room_2026-10-02",
+    "stay_id": "stay_khovd_hotel_buyant",
+    "date": "2026-10-02",
+    "unit_type": "double_room",
+    "total": 24,
+    "available": 23,
+    "status": "open",
+    "price_mnt": 140000
+  },
+  {
+    "_id": "avail_khovd_hotel_buyant_family_room_2026-10-02",
+    "stay_id": "stay_khovd_hotel_buyant",
+    "date": "2026-10-02",
+    "unit_type": "family_room",
+    "total": 4,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 220000
+  },
+  {
+    "_id": "avail_khovd_hotel_buyant_double_room_2026-10-03",
+    "stay_id": "stay_khovd_hotel_buyant",
+    "date": "2026-10-03",
+    "unit_type": "double_room",
+    "total": 24,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 140000
+  },
+  {
+    "_id": "avail_khovd_hotel_buyant_family_room_2026-10-03",
+    "stay_id": "stay_khovd_hotel_buyant",
+    "date": "2026-10-03",
+    "unit_type": "family_room",
+    "total": 4,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 220000
+  },
+  {
+    "_id": "avail_khovd_hotel_buyant_double_room_2026-10-04",
+    "stay_id": "stay_khovd_hotel_buyant",
+    "date": "2026-10-04",
+    "unit_type": "double_room",
+    "total": 24,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 140000
+  },
+  {
+    "_id": "avail_khovd_hotel_buyant_family_room_2026-10-04",
+    "stay_id": "stay_khovd_hotel_buyant",
+    "date": "2026-10-04",
+    "unit_type": "family_room",
+    "total": 4,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 220000
+  },
+  {
+    "_id": "avail_khovd_hotel_buyant_double_room_2026-10-05",
+    "stay_id": "stay_khovd_hotel_buyant",
+    "date": "2026-10-05",
+    "unit_type": "double_room",
+    "total": 24,
+    "available": 11,
+    "status": "open",
+    "price_mnt": 140000
+  },
+  {
+    "_id": "avail_khovd_hotel_buyant_family_room_2026-10-05",
+    "stay_id": "stay_khovd_hotel_buyant",
+    "date": "2026-10-05",
+    "unit_type": "family_room",
+    "total": 4,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 220000
+  },
+  {
+    "_id": "avail_khovd_hotel_buyant_double_room_2026-10-06",
+    "stay_id": "stay_khovd_hotel_buyant",
+    "date": "2026-10-06",
+    "unit_type": "double_room",
+    "total": 24,
+    "available": 20,
+    "status": "open",
+    "price_mnt": 140000
+  },
+  {
+    "_id": "avail_khovd_hotel_buyant_family_room_2026-10-06",
+    "stay_id": "stay_khovd_hotel_buyant",
+    "date": "2026-10-06",
+    "unit_type": "family_room",
+    "total": 4,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 220000
+  },
+  {
+    "_id": "avail_khovd_hotel_buyant_double_room_2026-10-07",
+    "stay_id": "stay_khovd_hotel_buyant",
+    "date": "2026-10-07",
+    "unit_type": "double_room",
+    "total": 24,
+    "available": 17,
+    "status": "open",
+    "price_mnt": 140000
+  },
+  {
+    "_id": "avail_khovd_hotel_buyant_family_room_2026-10-07",
+    "stay_id": "stay_khovd_hotel_buyant",
+    "date": "2026-10-07",
+    "unit_type": "family_room",
+    "total": 4,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 220000
+  },
+  {
+    "_id": "avail_khovd_hotel_buyant_double_room_2026-10-08",
+    "stay_id": "stay_khovd_hotel_buyant",
+    "date": "2026-10-08",
+    "unit_type": "double_room",
+    "total": 24,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 140000
+  },
+  {
+    "_id": "avail_khovd_hotel_buyant_family_room_2026-10-08",
+    "stay_id": "stay_khovd_hotel_buyant",
+    "date": "2026-10-08",
+    "unit_type": "family_room",
+    "total": 4,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 220000
+  },
+  {
+    "_id": "avail_khovd_hotel_buyant_double_room_2026-10-09",
+    "stay_id": "stay_khovd_hotel_buyant",
+    "date": "2026-10-09",
+    "unit_type": "double_room",
+    "total": 24,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 140000
+  },
+  {
+    "_id": "avail_khovd_hotel_buyant_family_room_2026-10-09",
+    "stay_id": "stay_khovd_hotel_buyant",
+    "date": "2026-10-09",
+    "unit_type": "family_room",
+    "total": 4,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 220000
+  },
+  {
+    "_id": "avail_khovd_hotel_buyant_double_room_2026-10-10",
+    "stay_id": "stay_khovd_hotel_buyant",
+    "date": "2026-10-10",
+    "unit_type": "double_room",
+    "total": 24,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 140000
+  },
+  {
+    "_id": "avail_khovd_hotel_buyant_family_room_2026-10-10",
+    "stay_id": "stay_khovd_hotel_buyant",
+    "date": "2026-10-10",
+    "unit_type": "family_room",
+    "total": 4,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 220000
+  },
+  {
+    "_id": "avail_khovd_hotel_buyant_double_room_2026-10-11",
+    "stay_id": "stay_khovd_hotel_buyant",
+    "date": "2026-10-11",
+    "unit_type": "double_room",
+    "total": 24,
+    "available": 16,
+    "status": "open",
+    "price_mnt": 140000
+  },
+  {
+    "_id": "avail_khovd_hotel_buyant_family_room_2026-10-11",
+    "stay_id": "stay_khovd_hotel_buyant",
+    "date": "2026-10-11",
+    "unit_type": "family_room",
+    "total": 4,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 220000
+  },
+  {
+    "_id": "avail_khovd_hotel_buyant_double_room_2026-10-12",
+    "stay_id": "stay_khovd_hotel_buyant",
+    "date": "2026-10-12",
+    "unit_type": "double_room",
+    "total": 24,
+    "available": 12,
+    "status": "open",
+    "price_mnt": 140000
+  },
+  {
+    "_id": "avail_khovd_hotel_buyant_family_room_2026-10-12",
+    "stay_id": "stay_khovd_hotel_buyant",
+    "date": "2026-10-12",
+    "unit_type": "family_room",
+    "total": 4,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 220000
+  },
+  {
+    "_id": "avail_khovd_hotel_buyant_double_room_2026-10-13",
+    "stay_id": "stay_khovd_hotel_buyant",
+    "date": "2026-10-13",
+    "unit_type": "double_room",
+    "total": 24,
+    "available": 7,
+    "status": "open",
+    "price_mnt": 140000
+  },
+  {
+    "_id": "avail_khovd_hotel_buyant_family_room_2026-10-13",
+    "stay_id": "stay_khovd_hotel_buyant",
+    "date": "2026-10-13",
+    "unit_type": "family_room",
+    "total": 4,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 220000
+  },
+  {
+    "_id": "avail_khovd_hotel_buyant_double_room_2026-10-14",
+    "stay_id": "stay_khovd_hotel_buyant",
+    "date": "2026-10-14",
+    "unit_type": "double_room",
+    "total": 24,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 140000
+  },
+  {
+    "_id": "avail_khovd_hotel_buyant_family_room_2026-10-14",
+    "stay_id": "stay_khovd_hotel_buyant",
+    "date": "2026-10-14",
+    "unit_type": "family_room",
+    "total": 4,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 220000
+  },
+  {
+    "_id": "avail_khar_us_camp_ger_2026-10-01",
+    "stay_id": "stay_khar_us_camp",
+    "date": "2026-10-01",
+    "unit_type": "ger",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 80000
+  },
+  {
+    "_id": "avail_khar_us_camp_ger_2026-10-02",
+    "stay_id": "stay_khar_us_camp",
+    "date": "2026-10-02",
+    "unit_type": "ger",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 80000
+  },
+  {
+    "_id": "avail_khar_us_camp_ger_2026-10-03",
+    "stay_id": "stay_khar_us_camp",
+    "date": "2026-10-03",
+    "unit_type": "ger",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 80000
+  },
+  {
+    "_id": "avail_khar_us_camp_ger_2026-10-04",
+    "stay_id": "stay_khar_us_camp",
+    "date": "2026-10-04",
+    "unit_type": "ger",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 80000
+  },
+  {
+    "_id": "avail_khar_us_camp_ger_2026-10-05",
+    "stay_id": "stay_khar_us_camp",
+    "date": "2026-10-05",
+    "unit_type": "ger",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 80000
+  },
+  {
+    "_id": "avail_khar_us_camp_ger_2026-10-06",
+    "stay_id": "stay_khar_us_camp",
+    "date": "2026-10-06",
+    "unit_type": "ger",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 80000
+  },
+  {
+    "_id": "avail_khar_us_camp_ger_2026-10-07",
+    "stay_id": "stay_khar_us_camp",
+    "date": "2026-10-07",
+    "unit_type": "ger",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 80000
+  },
+  {
+    "_id": "avail_khar_us_camp_ger_2026-10-08",
+    "stay_id": "stay_khar_us_camp",
+    "date": "2026-10-08",
+    "unit_type": "ger",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 80000
+  },
+  {
+    "_id": "avail_khar_us_camp_ger_2026-10-09",
+    "stay_id": "stay_khar_us_camp",
+    "date": "2026-10-09",
+    "unit_type": "ger",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 80000
+  },
+  {
+    "_id": "avail_khar_us_camp_ger_2026-10-10",
+    "stay_id": "stay_khar_us_camp",
+    "date": "2026-10-10",
+    "unit_type": "ger",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 80000
+  },
+  {
+    "_id": "avail_khar_us_camp_ger_2026-10-11",
+    "stay_id": "stay_khar_us_camp",
+    "date": "2026-10-11",
+    "unit_type": "ger",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 80000
+  },
+  {
+    "_id": "avail_khar_us_camp_ger_2026-10-12",
+    "stay_id": "stay_khar_us_camp",
+    "date": "2026-10-12",
+    "unit_type": "ger",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 80000
+  },
+  {
+    "_id": "avail_khar_us_camp_ger_2026-10-13",
+    "stay_id": "stay_khar_us_camp",
+    "date": "2026-10-13",
+    "unit_type": "ger",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 80000
+  },
+  {
+    "_id": "avail_khar_us_camp_ger_2026-10-14",
+    "stay_id": "stay_khar_us_camp",
+    "date": "2026-10-14",
+    "unit_type": "ger",
+    "total": 10,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 80000
+  },
+  {
+    "_id": "avail_uliastai_hotel_double_room_2026-10-01",
+    "stay_id": "stay_uliastai_hotel",
+    "date": "2026-10-01",
+    "unit_type": "double_room",
+    "total": 14,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_uliastai_hotel_double_room_2026-10-02",
+    "stay_id": "stay_uliastai_hotel",
+    "date": "2026-10-02",
+    "unit_type": "double_room",
+    "total": 14,
+    "available": 10,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_uliastai_hotel_double_room_2026-10-03",
+    "stay_id": "stay_uliastai_hotel",
+    "date": "2026-10-03",
+    "unit_type": "double_room",
+    "total": 14,
+    "available": 14,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_uliastai_hotel_double_room_2026-10-04",
+    "stay_id": "stay_uliastai_hotel",
+    "date": "2026-10-04",
+    "unit_type": "double_room",
+    "total": 14,
+    "available": 14,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_uliastai_hotel_double_room_2026-10-05",
+    "stay_id": "stay_uliastai_hotel",
+    "date": "2026-10-05",
+    "unit_type": "double_room",
+    "total": 14,
+    "available": 12,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_uliastai_hotel_double_room_2026-10-06",
+    "stay_id": "stay_uliastai_hotel",
+    "date": "2026-10-06",
+    "unit_type": "double_room",
+    "total": 14,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_uliastai_hotel_double_room_2026-10-07",
+    "stay_id": "stay_uliastai_hotel",
+    "date": "2026-10-07",
+    "unit_type": "double_room",
+    "total": 14,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_uliastai_hotel_double_room_2026-10-08",
+    "stay_id": "stay_uliastai_hotel",
+    "date": "2026-10-08",
+    "unit_type": "double_room",
+    "total": 14,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_uliastai_hotel_double_room_2026-10-09",
+    "stay_id": "stay_uliastai_hotel",
+    "date": "2026-10-09",
+    "unit_type": "double_room",
+    "total": 14,
+    "available": 7,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_uliastai_hotel_double_room_2026-10-10",
+    "stay_id": "stay_uliastai_hotel",
+    "date": "2026-10-10",
+    "unit_type": "double_room",
+    "total": 14,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_uliastai_hotel_double_room_2026-10-11",
+    "stay_id": "stay_uliastai_hotel",
+    "date": "2026-10-11",
+    "unit_type": "double_room",
+    "total": 14,
+    "available": 6,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_uliastai_hotel_double_room_2026-10-12",
+    "stay_id": "stay_uliastai_hotel",
+    "date": "2026-10-12",
+    "unit_type": "double_room",
+    "total": 14,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_uliastai_hotel_double_room_2026-10-13",
+    "stay_id": "stay_uliastai_hotel",
+    "date": "2026-10-13",
+    "unit_type": "double_room",
+    "total": 14,
+    "available": 7,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_uliastai_hotel_double_room_2026-10-14",
+    "stay_id": "stay_uliastai_hotel",
+    "date": "2026-10-14",
+    "unit_type": "double_room",
+    "total": 14,
+    "available": 9,
+    "status": "open",
+    "price_mnt": 110000
+  },
+  {
+    "_id": "avail_uvs_lake_camp_ger_2026-10-01",
+    "stay_id": "stay_uvs_lake_camp",
+    "date": "2026-10-01",
+    "unit_type": "ger",
+    "total": 12,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 85000
+  },
+  {
+    "_id": "avail_uvs_lake_camp_ger_2026-10-02",
+    "stay_id": "stay_uvs_lake_camp",
+    "date": "2026-10-02",
+    "unit_type": "ger",
+    "total": 12,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 85000
+  },
+  {
+    "_id": "avail_uvs_lake_camp_ger_2026-10-03",
+    "stay_id": "stay_uvs_lake_camp",
+    "date": "2026-10-03",
+    "unit_type": "ger",
+    "total": 12,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 85000
+  },
+  {
+    "_id": "avail_uvs_lake_camp_ger_2026-10-04",
+    "stay_id": "stay_uvs_lake_camp",
+    "date": "2026-10-04",
+    "unit_type": "ger",
+    "total": 12,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 85000
+  },
+  {
+    "_id": "avail_uvs_lake_camp_ger_2026-10-05",
+    "stay_id": "stay_uvs_lake_camp",
+    "date": "2026-10-05",
+    "unit_type": "ger",
+    "total": 12,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 85000
+  },
+  {
+    "_id": "avail_uvs_lake_camp_ger_2026-10-06",
+    "stay_id": "stay_uvs_lake_camp",
+    "date": "2026-10-06",
+    "unit_type": "ger",
+    "total": 12,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 85000
+  },
+  {
+    "_id": "avail_uvs_lake_camp_ger_2026-10-07",
+    "stay_id": "stay_uvs_lake_camp",
+    "date": "2026-10-07",
+    "unit_type": "ger",
+    "total": 12,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 85000
+  },
+  {
+    "_id": "avail_uvs_lake_camp_ger_2026-10-08",
+    "stay_id": "stay_uvs_lake_camp",
+    "date": "2026-10-08",
+    "unit_type": "ger",
+    "total": 12,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 85000
+  },
+  {
+    "_id": "avail_uvs_lake_camp_ger_2026-10-09",
+    "stay_id": "stay_uvs_lake_camp",
+    "date": "2026-10-09",
+    "unit_type": "ger",
+    "total": 12,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 85000
+  },
+  {
+    "_id": "avail_uvs_lake_camp_ger_2026-10-10",
+    "stay_id": "stay_uvs_lake_camp",
+    "date": "2026-10-10",
+    "unit_type": "ger",
+    "total": 12,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 85000
+  },
+  {
+    "_id": "avail_uvs_lake_camp_ger_2026-10-11",
+    "stay_id": "stay_uvs_lake_camp",
+    "date": "2026-10-11",
+    "unit_type": "ger",
+    "total": 12,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 85000
+  },
+  {
+    "_id": "avail_uvs_lake_camp_ger_2026-10-12",
+    "stay_id": "stay_uvs_lake_camp",
+    "date": "2026-10-12",
+    "unit_type": "ger",
+    "total": 12,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 85000
+  },
+  {
+    "_id": "avail_uvs_lake_camp_ger_2026-10-13",
+    "stay_id": "stay_uvs_lake_camp",
+    "date": "2026-10-13",
+    "unit_type": "ger",
+    "total": 12,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 85000
+  },
+  {
+    "_id": "avail_uvs_lake_camp_ger_2026-10-14",
+    "stay_id": "stay_uvs_lake_camp",
+    "date": "2026-10-14",
+    "unit_type": "ger",
+    "total": 12,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 85000
+  },
+  {
+    "_id": "avail_chinggis_hotel_kherlen_double_room_2026-10-01",
+    "stay_id": "stay_chinggis_hotel_kherlen",
+    "date": "2026-10-01",
+    "unit_type": "double_room",
+    "total": 18,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_chinggis_hotel_kherlen_double_room_2026-10-02",
+    "stay_id": "stay_chinggis_hotel_kherlen",
+    "date": "2026-10-02",
+    "unit_type": "double_room",
+    "total": 18,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_chinggis_hotel_kherlen_double_room_2026-10-03",
+    "stay_id": "stay_chinggis_hotel_kherlen",
+    "date": "2026-10-03",
+    "unit_type": "double_room",
+    "total": 18,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_chinggis_hotel_kherlen_double_room_2026-10-04",
+    "stay_id": "stay_chinggis_hotel_kherlen",
+    "date": "2026-10-04",
+    "unit_type": "double_room",
+    "total": 18,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_chinggis_hotel_kherlen_double_room_2026-10-05",
+    "stay_id": "stay_chinggis_hotel_kherlen",
+    "date": "2026-10-05",
+    "unit_type": "double_room",
+    "total": 18,
+    "available": 17,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_chinggis_hotel_kherlen_double_room_2026-10-06",
+    "stay_id": "stay_chinggis_hotel_kherlen",
+    "date": "2026-10-06",
+    "unit_type": "double_room",
+    "total": 18,
+    "available": 9,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_chinggis_hotel_kherlen_double_room_2026-10-07",
+    "stay_id": "stay_chinggis_hotel_kherlen",
+    "date": "2026-10-07",
+    "unit_type": "double_room",
+    "total": 18,
+    "available": 8,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_chinggis_hotel_kherlen_double_room_2026-10-08",
+    "stay_id": "stay_chinggis_hotel_kherlen",
+    "date": "2026-10-08",
+    "unit_type": "double_room",
+    "total": 18,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_chinggis_hotel_kherlen_double_room_2026-10-09",
+    "stay_id": "stay_chinggis_hotel_kherlen",
+    "date": "2026-10-09",
+    "unit_type": "double_room",
+    "total": 18,
+    "available": 15,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_chinggis_hotel_kherlen_double_room_2026-10-10",
+    "stay_id": "stay_chinggis_hotel_kherlen",
+    "date": "2026-10-10",
+    "unit_type": "double_room",
+    "total": 18,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_chinggis_hotel_kherlen_double_room_2026-10-11",
+    "stay_id": "stay_chinggis_hotel_kherlen",
+    "date": "2026-10-11",
+    "unit_type": "double_room",
+    "total": 18,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_chinggis_hotel_kherlen_double_room_2026-10-12",
+    "stay_id": "stay_chinggis_hotel_kherlen",
+    "date": "2026-10-12",
+    "unit_type": "double_room",
+    "total": 18,
+    "available": 10,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_chinggis_hotel_kherlen_double_room_2026-10-13",
+    "stay_id": "stay_chinggis_hotel_kherlen",
+    "date": "2026-10-13",
+    "unit_type": "double_room",
+    "total": 18,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_chinggis_hotel_kherlen_double_room_2026-10-14",
+    "stay_id": "stay_chinggis_hotel_kherlen",
+    "date": "2026-10-14",
+    "unit_type": "double_room",
+    "total": 18,
+    "available": 13,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_dadal_camp_gurvan_nuur_ger_2026-10-01",
+    "stay_id": "stay_dadal_camp_gurvan_nuur",
+    "date": "2026-10-01",
+    "unit_type": "ger",
+    "total": 15,
+    "available": 13,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_dadal_camp_gurvan_nuur_wooden_cabin_2026-10-01",
+    "stay_id": "stay_dadal_camp_gurvan_nuur",
+    "date": "2026-10-01",
+    "unit_type": "wooden_cabin",
+    "total": 6,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_dadal_camp_gurvan_nuur_ger_2026-10-02",
+    "stay_id": "stay_dadal_camp_gurvan_nuur",
+    "date": "2026-10-02",
+    "unit_type": "ger",
+    "total": 15,
+    "available": 7,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_dadal_camp_gurvan_nuur_wooden_cabin_2026-10-02",
+    "stay_id": "stay_dadal_camp_gurvan_nuur",
+    "date": "2026-10-02",
+    "unit_type": "wooden_cabin",
+    "total": 6,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_dadal_camp_gurvan_nuur_ger_2026-10-03",
+    "stay_id": "stay_dadal_camp_gurvan_nuur",
+    "date": "2026-10-03",
+    "unit_type": "ger",
+    "total": 15,
+    "available": 4,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_dadal_camp_gurvan_nuur_wooden_cabin_2026-10-03",
+    "stay_id": "stay_dadal_camp_gurvan_nuur",
+    "date": "2026-10-03",
+    "unit_type": "wooden_cabin",
+    "total": 6,
+    "available": 6,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_dadal_camp_gurvan_nuur_ger_2026-10-04",
+    "stay_id": "stay_dadal_camp_gurvan_nuur",
+    "date": "2026-10-04",
+    "unit_type": "ger",
+    "total": 15,
+    "available": 9,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_dadal_camp_gurvan_nuur_wooden_cabin_2026-10-04",
+    "stay_id": "stay_dadal_camp_gurvan_nuur",
+    "date": "2026-10-04",
+    "unit_type": "wooden_cabin",
+    "total": 6,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_dadal_camp_gurvan_nuur_ger_2026-10-05",
+    "stay_id": "stay_dadal_camp_gurvan_nuur",
+    "date": "2026-10-05",
+    "unit_type": "ger",
+    "total": 15,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_dadal_camp_gurvan_nuur_wooden_cabin_2026-10-05",
+    "stay_id": "stay_dadal_camp_gurvan_nuur",
+    "date": "2026-10-05",
+    "unit_type": "wooden_cabin",
+    "total": 6,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_dadal_camp_gurvan_nuur_ger_2026-10-06",
+    "stay_id": "stay_dadal_camp_gurvan_nuur",
+    "date": "2026-10-06",
+    "unit_type": "ger",
+    "total": 15,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_dadal_camp_gurvan_nuur_wooden_cabin_2026-10-06",
+    "stay_id": "stay_dadal_camp_gurvan_nuur",
+    "date": "2026-10-06",
+    "unit_type": "wooden_cabin",
+    "total": 6,
+    "available": 6,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_dadal_camp_gurvan_nuur_ger_2026-10-07",
+    "stay_id": "stay_dadal_camp_gurvan_nuur",
+    "date": "2026-10-07",
+    "unit_type": "ger",
+    "total": 15,
+    "available": 13,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_dadal_camp_gurvan_nuur_wooden_cabin_2026-10-07",
+    "stay_id": "stay_dadal_camp_gurvan_nuur",
+    "date": "2026-10-07",
+    "unit_type": "wooden_cabin",
+    "total": 6,
+    "available": 6,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_dadal_camp_gurvan_nuur_ger_2026-10-08",
+    "stay_id": "stay_dadal_camp_gurvan_nuur",
+    "date": "2026-10-08",
+    "unit_type": "ger",
+    "total": 15,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_dadal_camp_gurvan_nuur_wooden_cabin_2026-10-08",
+    "stay_id": "stay_dadal_camp_gurvan_nuur",
+    "date": "2026-10-08",
+    "unit_type": "wooden_cabin",
+    "total": 6,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_dadal_camp_gurvan_nuur_ger_2026-10-09",
+    "stay_id": "stay_dadal_camp_gurvan_nuur",
+    "date": "2026-10-09",
+    "unit_type": "ger",
+    "total": 15,
+    "available": 13,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_dadal_camp_gurvan_nuur_wooden_cabin_2026-10-09",
+    "stay_id": "stay_dadal_camp_gurvan_nuur",
+    "date": "2026-10-09",
+    "unit_type": "wooden_cabin",
+    "total": 6,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_dadal_camp_gurvan_nuur_ger_2026-10-10",
+    "stay_id": "stay_dadal_camp_gurvan_nuur",
+    "date": "2026-10-10",
+    "unit_type": "ger",
+    "total": 15,
+    "available": 9,
+    "status": "open",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_dadal_camp_gurvan_nuur_wooden_cabin_2026-10-10",
+    "stay_id": "stay_dadal_camp_gurvan_nuur",
+    "date": "2026-10-10",
+    "unit_type": "wooden_cabin",
+    "total": 6,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_dadal_camp_gurvan_nuur_ger_2026-10-11",
+    "stay_id": "stay_dadal_camp_gurvan_nuur",
+    "date": "2026-10-11",
+    "unit_type": "ger",
+    "total": 15,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_dadal_camp_gurvan_nuur_wooden_cabin_2026-10-11",
+    "stay_id": "stay_dadal_camp_gurvan_nuur",
+    "date": "2026-10-11",
+    "unit_type": "wooden_cabin",
+    "total": 6,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_dadal_camp_gurvan_nuur_ger_2026-10-12",
+    "stay_id": "stay_dadal_camp_gurvan_nuur",
+    "date": "2026-10-12",
+    "unit_type": "ger",
+    "total": 15,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_dadal_camp_gurvan_nuur_wooden_cabin_2026-10-12",
+    "stay_id": "stay_dadal_camp_gurvan_nuur",
+    "date": "2026-10-12",
+    "unit_type": "wooden_cabin",
+    "total": 6,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_dadal_camp_gurvan_nuur_ger_2026-10-13",
+    "stay_id": "stay_dadal_camp_gurvan_nuur",
+    "date": "2026-10-13",
+    "unit_type": "ger",
+    "total": 15,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_dadal_camp_gurvan_nuur_wooden_cabin_2026-10-13",
+    "stay_id": "stay_dadal_camp_gurvan_nuur",
+    "date": "2026-10-13",
+    "unit_type": "wooden_cabin",
+    "total": 6,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_dadal_camp_gurvan_nuur_ger_2026-10-14",
+    "stay_id": "stay_dadal_camp_gurvan_nuur",
+    "date": "2026-10-14",
+    "unit_type": "ger",
+    "total": 15,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 90000
+  },
+  {
+    "_id": "avail_dadal_camp_gurvan_nuur_wooden_cabin_2026-10-14",
+    "stay_id": "stay_dadal_camp_gurvan_nuur",
+    "date": "2026-10-14",
+    "unit_type": "wooden_cabin",
+    "total": 6,
+    "available": 0,
+    "status": "closed_for_season",
+    "price_mnt": 120000
+  },
+  {
+    "_id": "avail_dadal_log_house_whole_house_2026-10-01",
+    "stay_id": "stay_dadal_log_house",
+    "date": "2026-10-01",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 300000
+  },
+  {
+    "_id": "avail_dadal_log_house_whole_house_2026-10-02",
+    "stay_id": "stay_dadal_log_house",
+    "date": "2026-10-02",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 300000
+  },
+  {
+    "_id": "avail_dadal_log_house_whole_house_2026-10-03",
+    "stay_id": "stay_dadal_log_house",
+    "date": "2026-10-03",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 300000
+  },
+  {
+    "_id": "avail_dadal_log_house_whole_house_2026-10-04",
+    "stay_id": "stay_dadal_log_house",
+    "date": "2026-10-04",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 300000
+  },
+  {
+    "_id": "avail_dadal_log_house_whole_house_2026-10-05",
+    "stay_id": "stay_dadal_log_house",
+    "date": "2026-10-05",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 300000
+  },
+  {
+    "_id": "avail_dadal_log_house_whole_house_2026-10-06",
+    "stay_id": "stay_dadal_log_house",
+    "date": "2026-10-06",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 300000
+  },
+  {
+    "_id": "avail_dadal_log_house_whole_house_2026-10-07",
+    "stay_id": "stay_dadal_log_house",
+    "date": "2026-10-07",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 300000
+  },
+  {
+    "_id": "avail_dadal_log_house_whole_house_2026-10-08",
+    "stay_id": "stay_dadal_log_house",
+    "date": "2026-10-08",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 300000
+  },
+  {
+    "_id": "avail_dadal_log_house_whole_house_2026-10-09",
+    "stay_id": "stay_dadal_log_house",
+    "date": "2026-10-09",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 300000
+  },
+  {
+    "_id": "avail_dadal_log_house_whole_house_2026-10-10",
+    "stay_id": "stay_dadal_log_house",
+    "date": "2026-10-10",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 300000
+  },
+  {
+    "_id": "avail_dadal_log_house_whole_house_2026-10-11",
+    "stay_id": "stay_dadal_log_house",
+    "date": "2026-10-11",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 300000
+  },
+  {
+    "_id": "avail_dadal_log_house_whole_house_2026-10-12",
+    "stay_id": "stay_dadal_log_house",
+    "date": "2026-10-12",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 300000
+  },
+  {
+    "_id": "avail_dadal_log_house_whole_house_2026-10-13",
+    "stay_id": "stay_dadal_log_house",
+    "date": "2026-10-13",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 300000
+  },
+  {
+    "_id": "avail_dadal_log_house_whole_house_2026-10-14",
+    "stay_id": "stay_dadal_log_house",
+    "date": "2026-10-14",
+    "unit_type": "whole_house",
+    "total": 1,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 300000
+  },
+  {
+    "_id": "avail_choibalsan_hotel_kherlen_double_room_2026-10-01",
+    "stay_id": "stay_choibalsan_hotel_kherlen",
+    "date": "2026-10-01",
+    "unit_type": "double_room",
+    "total": 28,
+    "available": 12,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_choibalsan_hotel_kherlen_family_room_2026-10-01",
+    "stay_id": "stay_choibalsan_hotel_kherlen",
+    "date": "2026-10-01",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 230000
+  },
+  {
+    "_id": "avail_choibalsan_hotel_kherlen_double_room_2026-10-02",
+    "stay_id": "stay_choibalsan_hotel_kherlen",
+    "date": "2026-10-02",
+    "unit_type": "double_room",
+    "total": 28,
+    "available": 16,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_choibalsan_hotel_kherlen_family_room_2026-10-02",
+    "stay_id": "stay_choibalsan_hotel_kherlen",
+    "date": "2026-10-02",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 230000
+  },
+  {
+    "_id": "avail_choibalsan_hotel_kherlen_double_room_2026-10-03",
+    "stay_id": "stay_choibalsan_hotel_kherlen",
+    "date": "2026-10-03",
+    "unit_type": "double_room",
+    "total": 28,
+    "available": 24,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_choibalsan_hotel_kherlen_family_room_2026-10-03",
+    "stay_id": "stay_choibalsan_hotel_kherlen",
+    "date": "2026-10-03",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 230000
+  },
+  {
+    "_id": "avail_choibalsan_hotel_kherlen_double_room_2026-10-04",
+    "stay_id": "stay_choibalsan_hotel_kherlen",
+    "date": "2026-10-04",
+    "unit_type": "double_room",
+    "total": 28,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_choibalsan_hotel_kherlen_family_room_2026-10-04",
+    "stay_id": "stay_choibalsan_hotel_kherlen",
+    "date": "2026-10-04",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 5,
+    "status": "open",
+    "price_mnt": 230000
+  },
+  {
+    "_id": "avail_choibalsan_hotel_kherlen_double_room_2026-10-05",
+    "stay_id": "stay_choibalsan_hotel_kherlen",
+    "date": "2026-10-05",
+    "unit_type": "double_room",
+    "total": 28,
+    "available": 16,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_choibalsan_hotel_kherlen_family_room_2026-10-05",
+    "stay_id": "stay_choibalsan_hotel_kherlen",
+    "date": "2026-10-05",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 6,
+    "status": "open",
+    "price_mnt": 230000
+  },
+  {
+    "_id": "avail_choibalsan_hotel_kherlen_double_room_2026-10-06",
+    "stay_id": "stay_choibalsan_hotel_kherlen",
+    "date": "2026-10-06",
+    "unit_type": "double_room",
+    "total": 28,
+    "available": 25,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_choibalsan_hotel_kherlen_family_room_2026-10-06",
+    "stay_id": "stay_choibalsan_hotel_kherlen",
+    "date": "2026-10-06",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 230000
+  },
+  {
+    "_id": "avail_choibalsan_hotel_kherlen_double_room_2026-10-07",
+    "stay_id": "stay_choibalsan_hotel_kherlen",
+    "date": "2026-10-07",
+    "unit_type": "double_room",
+    "total": 28,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_choibalsan_hotel_kherlen_family_room_2026-10-07",
+    "stay_id": "stay_choibalsan_hotel_kherlen",
+    "date": "2026-10-07",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 6,
+    "status": "open",
+    "price_mnt": 230000
+  },
+  {
+    "_id": "avail_choibalsan_hotel_kherlen_double_room_2026-10-08",
+    "stay_id": "stay_choibalsan_hotel_kherlen",
+    "date": "2026-10-08",
+    "unit_type": "double_room",
+    "total": 28,
+    "available": 27,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_choibalsan_hotel_kherlen_family_room_2026-10-08",
+    "stay_id": "stay_choibalsan_hotel_kherlen",
+    "date": "2026-10-08",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 230000
+  },
+  {
+    "_id": "avail_choibalsan_hotel_kherlen_double_room_2026-10-09",
+    "stay_id": "stay_choibalsan_hotel_kherlen",
+    "date": "2026-10-09",
+    "unit_type": "double_room",
+    "total": 28,
+    "available": 17,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_choibalsan_hotel_kherlen_family_room_2026-10-09",
+    "stay_id": "stay_choibalsan_hotel_kherlen",
+    "date": "2026-10-09",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 230000
+  },
+  {
+    "_id": "avail_choibalsan_hotel_kherlen_double_room_2026-10-10",
+    "stay_id": "stay_choibalsan_hotel_kherlen",
+    "date": "2026-10-10",
+    "unit_type": "double_room",
+    "total": 28,
+    "available": 17,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_choibalsan_hotel_kherlen_family_room_2026-10-10",
+    "stay_id": "stay_choibalsan_hotel_kherlen",
+    "date": "2026-10-10",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 230000
+  },
+  {
+    "_id": "avail_choibalsan_hotel_kherlen_double_room_2026-10-11",
+    "stay_id": "stay_choibalsan_hotel_kherlen",
+    "date": "2026-10-11",
+    "unit_type": "double_room",
+    "total": 28,
+    "available": 28,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_choibalsan_hotel_kherlen_family_room_2026-10-11",
+    "stay_id": "stay_choibalsan_hotel_kherlen",
+    "date": "2026-10-11",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 6,
+    "status": "open",
+    "price_mnt": 230000
+  },
+  {
+    "_id": "avail_choibalsan_hotel_kherlen_double_room_2026-10-12",
+    "stay_id": "stay_choibalsan_hotel_kherlen",
+    "date": "2026-10-12",
+    "unit_type": "double_room",
+    "total": 28,
+    "available": 12,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_choibalsan_hotel_kherlen_family_room_2026-10-12",
+    "stay_id": "stay_choibalsan_hotel_kherlen",
+    "date": "2026-10-12",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 230000
+  },
+  {
+    "_id": "avail_choibalsan_hotel_kherlen_double_room_2026-10-13",
+    "stay_id": "stay_choibalsan_hotel_kherlen",
+    "date": "2026-10-13",
+    "unit_type": "double_room",
+    "total": 28,
+    "available": 18,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_choibalsan_hotel_kherlen_family_room_2026-10-13",
+    "stay_id": "stay_choibalsan_hotel_kherlen",
+    "date": "2026-10-13",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 230000
+  },
+  {
+    "_id": "avail_choibalsan_hotel_kherlen_double_room_2026-10-14",
+    "stay_id": "stay_choibalsan_hotel_kherlen",
+    "date": "2026-10-14",
+    "unit_type": "double_room",
+    "total": 28,
+    "available": 19,
+    "status": "open",
+    "price_mnt": 150000
+  },
+  {
+    "_id": "avail_choibalsan_hotel_kherlen_family_room_2026-10-14",
+    "stay_id": "stay_choibalsan_hotel_kherlen",
+    "date": "2026-10-14",
+    "unit_type": "family_room",
+    "total": 6,
+    "available": 3,
+    "status": "open",
+    "price_mnt": 230000
+  },
+  {
+    "_id": "avail_baruun_urt_herder_family_ger_2026-10-01",
+    "stay_id": "stay_baruun_urt_herder_family",
+    "date": "2026-10-01",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_baruun_urt_herder_family_ger_2026-10-02",
+    "stay_id": "stay_baruun_urt_herder_family",
+    "date": "2026-10-02",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_baruun_urt_herder_family_ger_2026-10-03",
+    "stay_id": "stay_baruun_urt_herder_family",
+    "date": "2026-10-03",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_baruun_urt_herder_family_ger_2026-10-04",
+    "stay_id": "stay_baruun_urt_herder_family",
+    "date": "2026-10-04",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_baruun_urt_herder_family_ger_2026-10-05",
+    "stay_id": "stay_baruun_urt_herder_family",
+    "date": "2026-10-05",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_baruun_urt_herder_family_ger_2026-10-06",
+    "stay_id": "stay_baruun_urt_herder_family",
+    "date": "2026-10-06",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_baruun_urt_herder_family_ger_2026-10-07",
+    "stay_id": "stay_baruun_urt_herder_family",
+    "date": "2026-10-07",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_baruun_urt_herder_family_ger_2026-10-08",
+    "stay_id": "stay_baruun_urt_herder_family",
+    "date": "2026-10-08",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_baruun_urt_herder_family_ger_2026-10-09",
+    "stay_id": "stay_baruun_urt_herder_family",
+    "date": "2026-10-09",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 2,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_baruun_urt_herder_family_ger_2026-10-10",
+    "stay_id": "stay_baruun_urt_herder_family",
+    "date": "2026-10-10",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_baruun_urt_herder_family_ger_2026-10-11",
+    "stay_id": "stay_baruun_urt_herder_family",
+    "date": "2026-10-11",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_baruun_urt_herder_family_ger_2026-10-12",
+    "stay_id": "stay_baruun_urt_herder_family",
+    "date": "2026-10-12",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_baruun_urt_herder_family_ger_2026-10-13",
+    "stay_id": "stay_baruun_urt_herder_family",
+    "date": "2026-10-13",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 1,
+    "status": "open",
+    "price_mnt": 45000
+  },
+  {
+    "_id": "avail_baruun_urt_herder_family_ger_2026-10-14",
+    "stay_id": "stay_baruun_urt_herder_family",
+    "date": "2026-10-14",
+    "unit_type": "ger",
+    "total": 2,
+    "available": 0,
+    "status": "open",
+    "price_mnt": 45000
+  }
+]

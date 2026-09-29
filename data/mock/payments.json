@@ -1,0 +1,316 @@
+[
+  {
+    "_id": "pay_anand_001",
+    "user_id": "user_anand",
+    "trip_id": "trip_anand_eagle",
+    "quote_id": "quote_anand_a",
+    "booking_ids": [
+      "booking_011",
+      "booking_012",
+      "booking_013",
+      "booking_014",
+      "booking_015",
+      "booking_016",
+      "booking_017"
+    ],
+    "amount_mnt": 3085000,
+    "currency": "MNT",
+    "method": {
+      "type": "card",
+      "brand": "visa",
+      "last4": "4242",
+      "is_test_card": true
+    },
+    "provider": "stripe_test",
+    "provider_ref": "pi_test_anand_001",
+    "status": "paid",
+    "status_history": [
+      {
+        "status": "quoted",
+        "at": "2026-09-26T08:05:00Z",
+        "actor": "agent"
+      },
+      {
+        "status": "approved_by_user",
+        "at": "2026-09-26T08:11:00Z",
+        "actor": "user"
+      },
+      {
+        "status": "paid",
+        "at": "2026-09-26T08:11:05Z",
+        "actor": "agent"
+      }
+    ],
+    "consent": {
+      "approved_by_user": true,
+      "max_amount_mnt": 3100000,
+      "approved_at": "2026-09-26T08:11:00Z"
+    },
+    "idempotency_key": "idem_pay_anand_001",
+    "is_sandbox": true,
+    "is_mock": true
+  },
+  {
+    "_id": "pay_tsende_001",
+    "user_id": "user_tsende",
+    "trip_id": "trip_tsende_darkhan",
+    "quote_id": "quote_tsende_a",
+    "booking_ids": [
+      "booking_018"
+    ],
+    "amount_mnt": 114000,
+    "currency": "MNT",
+    "method": {
+      "type": "card",
+      "brand": "visa",
+      "last4": "1881",
+      "is_test_card": true
+    },
+    "provider": "stripe_test",
+    "provider_ref": "pi_test_tsende_001",
+    "status": "paid",
+    "status_history": [
+      {
+        "status": "quoted",
+        "at": "2026-09-28T10:35:00Z",
+        "actor": "agent"
+      },
+      {
+        "status": "approved_by_user",
+        "at": "2026-09-28T10:40:00Z",
+        "actor": "user"
+      },
+      {
+        "status": "paid",
+        "at": "2026-09-28T10:40:04Z",
+        "actor": "agent"
+      }
+    ],
+    "consent": {
+      "approved_by_user": true,
+      "max_amount_mnt": 700000,
+      "approved_at": "2026-09-28T10:40:00Z"
+    },
+    "idempotency_key": "idem_pay_tsende_001",
+    "is_sandbox": true,
+    "is_mock": true
+  },
+  {
+    "_id": "pay_tsende_002",
+    "user_id": "user_tsende",
+    "trip_id": "trip_tsende_darkhan",
+    "quote_id": "quote_tsende_a",
+    "booking_ids": [
+      "booking_019"
+    ],
+    "amount_mnt": 150000,
+    "currency": "MNT",
+    "method": {
+      "type": "qpay",
+      "invoice_id": "qpay_sbx_000102"
+    },
+    "provider": "qpay_sandbox",
+    "provider_ref": "qp_test_tsende_002",
+    "status": "paid",
+    "status_history": [
+      {
+        "status": "quoted",
+        "at": "2026-09-28T10:35:00Z",
+        "actor": "agent"
+      },
+      {
+        "status": "approved_by_user",
+        "at": "2026-09-28T10:40:00Z",
+        "actor": "user"
+      },
+      {
+        "status": "paid",
+        "at": "2026-09-28T10:42:30Z",
+        "actor": "user"
+      }
+    ],
+    "consent": {
+      "approved_by_user": true,
+      "max_amount_mnt": 700000,
+      "approved_at": "2026-09-28T10:40:00Z"
+    },
+    "idempotency_key": "idem_pay_tsende_002",
+    "is_sandbox": true,
+    "is_mock": true
+  },
+  {
+    "_id": "pay_tsende_003",
+    "user_id": "user_tsende",
+    "trip_id": "trip_tsende_darkhan",
+    "quote_id": "quote_tsende_a",
+    "booking_ids": [
+      "booking_020"
+    ],
+    "amount_mnt": 75000,
+    "currency": "MNT",
+    "method": {
+      "type": "card",
+      "brand": "visa",
+      "last4": "1881",
+      "is_test_card": true
+    },
+    "provider": "stripe_test",
+    "provider_ref": "pi_test_tsende_003",
+    "status": "refunded",
+    "status_history": [
+      {
+        "status": "quoted",
+        "at": "2026-09-28T10:35:00Z",
+        "actor": "agent"
+      },
+      {
+        "status": "approved_by_user",
+        "at": "2026-09-28T10:40:00Z",
+        "actor": "user"
+      },
+      {
+        "status": "paid",
+        "at": "2026-09-28T10:40:06Z",
+        "actor": "agent"
+      },
+      {
+        "status": "cancelled",
+        "at": "2026-10-04T18:20:00Z",
+        "actor": "owner"
+      },
+      {
+        "status": "refunded",
+        "at": "2026-10-04T18:21:00Z",
+        "actor": "agent"
+      }
+    ],
+    "consent": {
+      "approved_by_user": true,
+      "max_amount_mnt": 700000,
+      "approved_at": "2026-09-28T10:40:00Z"
+    },
+    "idempotency_key": "idem_pay_tsende_003",
+    "is_sandbox": true,
+    "is_mock": true
+  },
+  {
+    "_id": "pay_tsende_004",
+    "user_id": "user_tsende",
+    "trip_id": "trip_tsende_darkhan",
+    "quote_id": null,
+    "booking_ids": [
+      "booking_021"
+    ],
+    "amount_mnt": 51000,
+    "currency": "MNT",
+    "method": {
+      "type": "card",
+      "brand": "visa",
+      "last4": "1881",
+      "is_test_card": true
+    },
+    "provider": "stripe_test",
+    "provider_ref": "pi_test_tsende_004",
+    "status": "paid",
+    "status_history": [
+      {
+        "status": "quoted",
+        "at": "2026-10-04T18:22:00Z",
+        "actor": "agent"
+      },
+      {
+        "status": "approved_by_user",
+        "at": "2026-10-04T18:25:00Z",
+        "actor": "user"
+      },
+      {
+        "status": "paid",
+        "at": "2026-10-04T18:25:03Z",
+        "actor": "agent"
+      }
+    ],
+    "consent": {
+      "approved_by_user": true,
+      "max_amount_mnt": 100000,
+      "approved_at": "2026-10-04T18:25:00Z"
+    },
+    "idempotency_key": "idem_pay_tsende_004",
+    "is_sandbox": true,
+    "is_mock": true
+  },
+  {
+    "_id": "pay_jamba_001",
+    "user_id": "user_jamba",
+    "trip_id": "trip_jamba_east",
+    "quote_id": "quote_jamba_a",
+    "booking_ids": [
+      "booking_022",
+      "booking_023",
+      "booking_024"
+    ],
+    "amount_mnt": 1960000,
+    "currency": "MNT",
+    "method": {
+      "type": "card",
+      "brand": "visa",
+      "last4": "5556",
+      "is_test_card": true
+    },
+    "provider": "stripe_test",
+    "provider_ref": "pi_test_jamba_001",
+    "status": "approved_by_user",
+    "status_history": [
+      {
+        "status": "quoted",
+        "at": "2026-09-29T09:05:00Z",
+        "actor": "agent"
+      },
+      {
+        "status": "approved_by_user",
+        "at": "2026-09-29T09:12:00Z",
+        "actor": "user"
+      }
+    ],
+    "consent": {
+      "approved_by_user": true,
+      "max_amount_mnt": 2000000,
+      "approved_at": "2026-09-29T09:12:00Z"
+    },
+    "idempotency_key": "idem_pay_jamba_001",
+    "is_sandbox": true,
+    "is_mock": true
+  },
+  {
+    "_id": "pay_jamba_002",
+    "user_id": "user_jamba",
+    "trip_id": "trip_jamba_east",
+    "quote_id": "quote_jamba_b",
+    "booking_ids": [],
+    "amount_mnt": 1690000,
+    "currency": "MNT",
+    "method": {
+      "type": "card",
+      "brand": "visa",
+      "last4": "5556",
+      "is_test_card": true
+    },
+    "provider": "stripe_test",
+    "provider_ref": "pi_test_jamba_002",
+    "status": "quoted",
+    "status_history": [
+      {
+        "status": "quoted",
+        "at": "2026-09-29T09:05:00Z",
+        "actor": "agent"
+      }
+    ],
+    "consent": {
+      "approved_by_user": false,
+      "max_amount_mnt": null,
+      "approved_at": null
+    },
+    "idempotency_key": "idem_pay_jamba_002",
+    "is_sandbox": true,
+    "is_mock": true
+  }
+]
