@@ -16,7 +16,7 @@ from uuid import uuid4
 from pymongo import ReturnDocument
 from pymongo.database import Database
 
-from app.llm import LLMError, ModelGateway
+from app.llm import LLMError, ModelGateway, configured_gateway
 from app.models.user import User
 from app.modules.orchestrator.assembler import assemble
 from app.modules.orchestrator.catalog import HUB, Catalog
@@ -38,6 +38,11 @@ class ProposalNotFound(Exception):
 
 class PlannerUnavailable(Exception):
     """The planner model could not read the request (unreachable, out of quota, or answered out of shape)."""
+
+
+def gateway() -> ModelGateway:
+    """The configured model gateway (a FastAPI dependency; tests override it)."""
+    return configured_gateway()
 
 
 def _name(doc: Json, lang: str) -> str:
@@ -97,8 +102,15 @@ def _assembly(assembly: Assembly, summary: str) -> Json:
 
 
 def _out(doc: Json) -> Json:
-    out = {k: v for k, v in doc.items() if k not in ("_id", "expires_at")}
-    return {"id": doc["_id"], **out, "expires_at": doc["expires_at"].isoformat()}
+    """The public shape: anyone with the id may read a proposal, so who accepted it stays private."""
+    out = {k: v for k, v in doc.items() if k not in ("_id", "accepted", "created_at", "expires_at")}
+    return {
+        "id": doc["_id"],
+        **out,
+        "accepted": bool(doc.get("accepted")),
+        "created_at": doc["created_at"].isoformat(),
+        "expires_at": doc["expires_at"].isoformat(),
+    }
 
 
 def _live(db: Database, proposal_id: str, now: datetime) -> Json:
