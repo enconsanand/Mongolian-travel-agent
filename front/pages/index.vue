@@ -21,6 +21,7 @@ const {
   preferenceCards,
   voiceStatusLabel,
   planSearchSteps,
+  planError,
   setLocale,
   selectPresetOption,
   setCustomPreference,
@@ -112,7 +113,10 @@ useHead(() => ({
       :cancel-label="messages.cancel"
       :dialog-label="messages.dialogLabel"
       :steps="planSearchSteps"
+      :error-message="planError ? messages.errors[planError] : null"
+      :retry-label="messages.retry"
       @close="closePlanDialog"
+      @retry="openPlanDialog"
     />
   </div>
 </template>

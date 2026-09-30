@@ -4,15 +4,20 @@ definePageMeta({
 })
 
 const auth = useAuth()
+const route = useRoute()
 const { form: loginForm, errors, isValid, validateForm } = useLoginForm()
 
 const handleLogin = async (): Promise<void> => {
   if (!validateForm()) return
 
-  await auth.login({
-    username: loginForm.value.username,
-    password: loginForm.value.password,
-  })
+  const redirect = typeof route.query.redirect === 'string' ? route.query.redirect : null
+  await auth.login(
+    {
+      username: loginForm.value.username,
+      password: loginForm.value.password,
+    },
+    redirect
+  )
 }
 </script>
 

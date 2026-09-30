@@ -14,7 +14,11 @@ export const useAuth = () => {
   const isLoggedIn = computed(() => cookieAuth.isAuthenticated.value)
   const access_token = computed(() => cookieAuth.authToken.value || '')
 
-  const login = async (credentials: LoginInput): Promise<boolean> => {
+  /** Only a path on this site: never an absolute or protocol-relative URL (open redirect) */
+  const safeRedirect = (redirect?: string | null): string =>
+    redirect && redirect.startsWith('/') && !redirect.startsWith('//') && !redirect.startsWith('/\\') ? redirect : '/'
+
+  const login = async (credentials: LoginInput, redirect?: string | null): Promise<boolean> => {
     loading.value = true
     error.value = []
 
@@ -38,7 +42,7 @@ export const useAuth = () => {
         cookieAuth.setAuth(data.access_token, credentials.username)
 
         toast.success('Login successful')
-        await router.push('/')
+        await router.push(safeRedirect(redirect))
         return true
       }
 

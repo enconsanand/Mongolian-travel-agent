@@ -3,7 +3,7 @@ export type AppLocale = 'mn' | 'en'
 export const PREFERENCE_GROUP_IDS = ['groupSize', 'duration', 'budget', 'travelStyle'] as const
 export type PreferenceGroupId = (typeof PREFERENCE_GROUP_IDS)[number]
 
-export const PLAN_SEARCH_STEP_IDS = ['speech', 'camps', 'events'] as const
+export const PLAN_SEARCH_STEP_IDS = ['intent', 'places', 'stays', 'writing'] as const
 export type PlanSearchStepId = (typeof PLAN_SEARCH_STEP_IDS)[number]
 
 export type PlanSearchStepStatus = 'pending' | 'active' | 'complete'
@@ -136,5 +136,7 @@ export interface TripPlannerMessages {
   buildingTitle: string
   buildingHint: string
   dialogLabel: string
+  retry: string
+  errors: Record<'planner_unavailable' | 'error', string>
   steps: Record<PlanSearchStepId, Record<PlanSearchStepStatus, string>>
 }

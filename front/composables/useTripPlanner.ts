@@ -1,6 +1,5 @@
 import {
-  PLAN_SEARCH_CAMPS_READY_MS,
-  PLAN_SEARCH_EVENTS_READY_MS,
+  PLAN_STEP_STARTS_MS,
   PREFERENCE_GROUPS,
   TRIP_PLANNER_MESSAGES,
   localizePreferenceGroup,
@@ -18,6 +17,8 @@ import type {
   TripPreferences,
 } from '~/types/trip-planner'
 import { localIsoDate, travelPeriodError } from '~/utils/dates'
+import { toPlanRequestBody } from '~/utils/tripPlan'
+import { requestProposal } from './useTripPlan'
 
 const CHIP_PREFERENCE_IDS: ChipPreferenceId[] = ['groupSize', 'budget', 'travelStyle']
 
@@ -35,22 +36,30 @@ function areChipPreferencesSelected(value: TripPreferences): boolean {
 }
 
 function createInitialStepStatuses(): Record<PlanSearchStepId, PlanSearchStepStatus> {
-  return {
-    speech: 'complete',
-    camps: 'active',
-    events: 'pending',
-  }
+  return { intent: 'active', places: 'pending', stays: 'pending', writing: 'pending' }
+}
+
+/** Steps before ``stepId`` complete, ``stepId`` active, the rest pending */
+function statusesFrom(stepId: PlanSearchStepId): Record<PlanSearchStepId, PlanSearchStepStatus> {
+  const at = PLAN_SEARCH_STEP_IDS.indexOf(stepId)
+  return Object.fromEntries(
+    PLAN_SEARCH_STEP_IDS.map((id, i) => [id, i < at ? 'complete' : i === at ? 'active' : 'pending'])
+  ) as Record<PlanSearchStepId, PlanSearchStepStatus>
 }
 
 export function useTripPlanner() {
-  const locale = ref<AppLocale>('mn')
+  const api = useApi()
+  const locale = useState<AppLocale>('app-locale', () => 'mn')
   const tripRequest = ref('')
   const isListening = ref(false)
   const isPlanDialogOpen = ref(false)
   const preferences = ref<TripPreferences>(createEmptyPreferences())
   const showPreferenceError = ref(false)
   const stepStatuses = ref(createInitialStepStatuses())
+  const planError = ref<'planner_unavailable' | 'error' | null>(null)
   const stepTimers: ReturnType<typeof setTimeout>[] = []
+  // Bumped on every request and on close, so a late answer to a cancelled request is ignored
+  let requestSeq = 0
 
   const messages = computed<TripPlannerMessages>(() => TRIP_PLANNER_MESSAGES[locale.value])
 
@@ -135,7 +144,7 @@ export function useTripPlanner() {
     stepTimers.length = 0
   }
 
-  function openPlanDialog() {
+  async function openPlanDialog() {
     if (!arePreferencesComplete.value) {
       showPreferenceError.value = true
       return
@@ -144,22 +153,33 @@ export function useTripPlanner() {
     showPreferenceError.value = false
     clearStepTimers()
     stepStatuses.value = createInitialStepStatuses()
+    planError.value = null
     isPlanDialogOpen.value = true
+    const seq = ++requestSeq
 
-    stepTimers.push(
-      setTimeout(() => {
-        stepStatuses.value = { ...stepStatuses.value, camps: 'complete', events: 'active' }
-      }, PLAN_SEARCH_CAMPS_READY_MS)
-    )
+    for (const [stepId, delay] of Object.entries(PLAN_STEP_STARTS_MS) as [PlanSearchStepId, number][]) {
+      stepTimers.push(setTimeout(() => (stepStatuses.value = statusesFrom(stepId)), delay))
+    }
 
-    stepTimers.push(
-      setTimeout(() => {
-        stepStatuses.value = { ...stepStatuses.value, events: 'complete' }
-      }, PLAN_SEARCH_EVENTS_READY_MS)
+    const { proposal, error } = await requestProposal(
+      api,
+      toPlanRequestBody(preferences.value, tripRequest.value),
+      locale.value
     )
+    if (seq !== requestSeq) return
+    clearStepTimers()
+
+    if (!proposal) {
+      planError.value = error === 'planner_unavailable' ? 'planner_unavailable' : 'error'
+      return
+    }
+    stepStatuses.value = { intent: 'complete', places: 'complete', stays: 'complete', writing: 'complete' }
+    isPlanDialogOpen.value = false
+    await navigateTo(`/plan/${proposal.id}`)
   }
 
   function closePlanDialog() {
+    requestSeq++
     clearStepTimers()
     isPlanDialogOpen.value = false
   }
@@ -180,6 +200,7 @@ export function useTripPlanner() {
     preferenceCards,
     voiceStatusLabel,
     planSearchSteps,
+    planError,
     setLocale,
     selectPresetOption,
     setCustomPreference,

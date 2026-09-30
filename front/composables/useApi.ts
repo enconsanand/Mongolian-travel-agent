@@ -11,6 +11,7 @@ interface ApiResponse<T> {
 
 export const useApi = () => {
   const config = useRuntimeConfig()
+  const router = useRouter()
   const baseURL = config.public.apiBase
 
   const apiFetch = async <T>(path: string, options: FetchOptions<'json'> = {}): Promise<ApiResponse<T>> => {
@@ -46,7 +47,7 @@ export const useApi = () => {
     if (statusCode === HTTP_STATUS.UNAUTHORIZED) {
       const auth = getAuthCookie(COOKIE_NAMES.AUTH_TOKEN)
       auth.value = null
-      navigateTo(ROUTES.LOGIN)
+      navigateTo({ path: ROUTES.LOGIN, query: { redirect: router.currentRoute.value.fullPath } })
       return {
         data: null,
         error: new AuthError('Session expired. Please login again.'),
