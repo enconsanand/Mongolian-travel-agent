@@ -5,24 +5,25 @@ Roles:
 - ``writer``: the reply the user reads, in Mongolian (Workers AI until the Mongolian LLM adapter lands).
 
 Each role has an ordered list of routes; a failed route falls through to the next. User and tool content is
-redacted before it leaves the process, tool calls are checked against the tools offered, and structured
-output is validated with Pydantic and repaired once.
+redacted before it leaves the process, tool calls are checked against the tools offered (arguments are coerced
+to the tool's schema: Workers AI sends "2" for an integer), and structured output is validated with Pydantic
+and repaired once.
 """
 
 import json
 import logging
 import re
 from collections.abc import Mapping, Sequence
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from typing import Any, Literal, TypeVar
 
-from pydantic import BaseModel, ValidationError
+from pydantic import BaseModel, ConfigDict, Field, ValidationError, create_model
 
 from app.llm.errors import LLMError
 from app.llm.meter import UsageMeter
 from app.llm.providers.base import ModelProvider
 from app.llm.redaction import redact_message
-from app.llm.types import Completion, Message, ToolSpec
+from app.llm.types import Completion, Message, ToolCall, ToolSpec
 
 log = logging.getLogger(__name__)
 
@@ -89,7 +90,7 @@ class ModelGateway:
         if policy is None:
             raise LLMError("not_configured", f"no routes for role {role!r}")
         outgoing = [redact_message(m) for m in messages] if self._redact else list(messages)
-        offered = {t.name for t in tools}
+        offered = {t.name: t for t in tools}
         failures: list[str] = []
         for route in policy.routes:
             provider = self._providers.get(route.provider)
@@ -108,6 +109,7 @@ class ModelGateway:
                 unknown = [c.name for c in result.tool_calls if c.name not in offered]
                 if unknown:
                     raise LLMError("bad_response", f"called tools that were not offered: {unknown}")
+                result = replace(result, tool_calls=tuple(_checked_call(c, offered[c.name]) for c in result.tool_calls))
             except LLMError as exc:
                 self.meter.failure(role, route.provider, route.model)
                 failures.append(f"{route.provider}/{route.model}: {exc.code} {exc}")
@@ -143,6 +145,32 @@ class ModelGateway:
                 Message.user(f"That reply was not valid: {error}. Reply with the JSON object only."),
             ]
         raise LLMError("schema_invalid", f"{role}: {output.__name__}: {error}")
+
+
+_JSON_TYPES: dict[str, Any] = {"string": str, "integer": int, "number": float, "boolean": bool, "array": list}
+
+
+def _arguments_model(tool: ToolSpec) -> type[BaseModel]:
+    """A lax Pydantic model of the tool's top-level properties, so ``"2"`` becomes ``2`` for an integer."""
+    schema = tool.parameters
+    required = set(schema.get("required", []))
+    fields: dict[str, Any] = {}
+    for name, prop in schema.get("properties", {}).items():
+        annotation = _JSON_TYPES.get(prop.get("type", ""), Any)
+        bounds = {"ge": prop.get("minimum"), "le": prop.get("maximum")}
+        default = ... if name in required else None
+        if name not in required:
+            annotation = annotation | None
+        fields[name] = (annotation, Field(default, **{k: v for k, v in bounds.items() if v is not None}))
+    return create_model(f"{tool.name}_arguments", __config__=ConfigDict(extra="allow"), **fields)
+
+
+def _checked_call(call: ToolCall, tool: ToolSpec) -> ToolCall:
+    try:
+        arguments = _arguments_model(tool).model_validate(call.arguments)
+    except ValidationError as exc:
+        raise LLMError("bad_response", f"arguments for {call.name!r} do not fit its schema: {_short(exc)}") from exc
+    return replace(call, arguments=arguments.model_dump(exclude_unset=True))
 
 
 def _with_json_instruction(messages: Sequence[Message], schema: dict[str, Any]) -> list[Message]:

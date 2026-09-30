@@ -112,6 +112,43 @@ def test_tool_calls_outside_the_offered_tools_are_rejected():
     assert result.tool_calls[0].name == "find_stays_near"
 
 
+TYPED_TOOL = ToolSpec(
+    "find_stays_near",
+    "Find stays",
+    {
+        "type": "object",
+        "properties": {
+            "place": {"type": "string"},
+            "nights": {"type": "integer", "minimum": 1},
+            "guests": {"type": "integer"},
+        },
+        "required": ["place", "nights"],
+    },
+)
+
+
+def test_tool_arguments_are_coerced_to_the_offered_schema():
+    # Workers AI's llama sends numbers as strings: {"guests": "2"}
+    llama = FakeProvider(
+        Completion(tool_calls=(ToolCall("c", "find_stays_near", {"place": "Тэрэлж", "nights": "2", "guests": "2"}),))
+    )
+    result = gateway(llama).complete("planner", [Message.user("x")], tools=[TYPED_TOOL])
+    assert result.tool_calls[0].arguments == {"place": "Тэрэлж", "nights": 2, "guests": 2}
+
+
+@pytest.mark.parametrize(
+    "arguments",
+    [{"place": "Тэрэлж", "nights": "two"}, {"place": "Тэрэлж"}, {"place": "Тэрэлж", "nights": 0}],
+)
+def test_tool_arguments_that_do_not_fit_the_schema_fail_the_route(arguments):
+    sloppy = FakeProvider(Completion(tool_calls=(ToolCall("c", "find_stays_near", arguments),)), name="sloppy")
+    backup = FakeProvider(
+        Completion(tool_calls=(ToolCall("c", "find_stays_near", {"place": "Тэрэлж", "nights": 1}),)), name="backup"
+    )
+    result = gateway(sloppy, backup).complete("planner", [Message.user("x")], tools=[TYPED_TOOL])
+    assert result.provider == "backup"
+
+
 def test_user_and_tool_content_is_redacted_before_it_leaves():
     fake = FakeProvider(name="fake")
     call = ToolCall("c", "find_stays_near", {})
