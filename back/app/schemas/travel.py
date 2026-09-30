@@ -432,7 +432,7 @@ class TripDoc(Doc):
     start_date: str
     end_date: str
     region: Region
-    route_id: str
+    route_id: str | None = None  # a planner-built trip can cross regions: no single stored route
     vehicle_id: str | None = None
     driver_id: str | None = None
     current_version: int = Field(ge=1)

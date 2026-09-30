@@ -8,7 +8,7 @@ from pydantic import ValidationError
 
 from app.core.config import settings
 from app.db.validators import NOT_VALIDATED, json_schema_for, validator_for
-from app.schemas.travel import DOC_MODELS, StayDoc
+from app.schemas.travel import DOC_MODELS, StayDoc, TripDoc
 
 DATA = Path(settings.MOCK_DATA_DIR)
 
@@ -67,3 +67,11 @@ def test_stay_validator_shape():
     assert schema["properties"]["type"]["enum"] == ["ger_camp", "guesthouse", "hotel", "house"]
     assert schema["properties"]["name"]["required"] == ["mn", "en"]
     assert schema["properties"]["rating"]["maximum"] == 5
+
+
+def test_planned_trip_needs_no_stored_route():
+    # A trip the planner builds can cross regions; no single routes row fits it
+    trip = json.loads((DATA / "trips.json").read_text(encoding="utf-8"))[0]
+    del trip["route_id"]
+    assert TripDoc.model_validate(trip).route_id is None
+    assert "route_id" not in validator_for(TripDoc)["$jsonSchema"]["required"]
