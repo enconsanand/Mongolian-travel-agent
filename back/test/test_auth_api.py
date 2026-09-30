@@ -5,12 +5,12 @@ import uuid
 import redis.asyncio as aioredis
 
 from app import crud, schemas
+from app.api.v1.common import auth as auth_module
+from app.api.v1.common.auth import _subnet_for
 from app.core.config import settings
 from app.core.token_denylist import TokenDenylistUnavailable
 from app.core.token_denylist import token_denylist as denylist_instance
 from app.models.user import User
-from app.v1.common import auth as auth_module
-from app.v1.common.auth import _subnet_for
 
 LOGIN_URL = "/api/v1/auth/login"
 LOGOUT_URL = "/api/v1/auth/logout"
