@@ -19,7 +19,9 @@ def test_settings_allows_missing_redis_outside_production():
 
 
 def test_settings_allows_redis_in_production():
-    settings_obj = Settings(ENV="prod", REDIS_URL="redis://redis:6379/0", MONGO_URI="mongodb+srv://cluster/db")
+    settings_obj = Settings(
+        ENV="prod", REDIS_URL="redis://redis:6379/0", MONGO_URI="mongodb+srv://cluster/db", PAYMENT_RAIL="qpay"
+    )
     assert settings_obj.REDIS_URL == "redis://redis:6379/0"
 
 
@@ -49,3 +51,12 @@ def test_settings_requires_mongo_uri_in_production():
 
 def test_settings_defaults_mongo_uri_outside_production():
     assert Settings(ENV="local").MONGO_URI == "mongodb://mongo:27017/?directConnection=true"
+
+
+def test_payment_simulator_is_refused_in_production():
+    with pytest.raises(ValidationError, match="PAYMENT_RAIL"):
+        Settings(ENV="prod", REDIS_URL="redis://redis:6379/0", MONGO_URI="mongodb+srv://cluster/db")
+
+
+def test_payment_rail_defaults_to_the_simulator_locally():
+    assert Settings(ENV="local").PAYMENT_RAIL == "sim"

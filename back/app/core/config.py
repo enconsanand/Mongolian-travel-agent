@@ -2,7 +2,7 @@ import json
 from enum import Enum
 from functools import lru_cache
 from pathlib import Path
-from typing import Annotated
+from typing import Annotated, Literal
 
 from pydantic import AnyHttpUrl, Field, computed_field, field_validator, model_validator
 from pydantic_settings import BaseSettings, NoDecode, SettingsConfigDict
@@ -95,6 +95,14 @@ class Settings(BaseSettings):
     MONGO_INIT_ON_STARTUP: bool = Field(
         default=True, description="Create missing indexes when the app starts (idempotent)"
     )
+    # --- Payments ---
+    # sim: the QPay adapter against the qpay-sim service; qpay: real QPay Merchant V2 (sandbox or production)
+    PAYMENT_RAIL: Literal["sim", "qpay", "bonum"] = Field(default="sim", description="Payment rail in use")
+    QPAY_BASE_URL: str = Field(default="http://qpay-sim:8010", description="QPay Merchant V2 base URL")
+    QPAY_USERNAME: str = Field(default="sim_merchant", description="QPay merchant username")
+    QPAY_PASSWORD: str = Field(default="sim_password", description="QPay merchant password")
+    QPAY_INVOICE_CODE: str = Field(default="SIM_INVOICE", description="QPay invoice code of the merchant")
+
     MOCK_DATA_DIR: str = Field(
         default=str(Path(__file__).resolve().parents[3] / "data" / "mock"),
         description="Folder with the mock-data JSON collections loaded by the seeder",
@@ -132,6 +140,9 @@ class Settings(BaseSettings):
         # The default points at the local dev container; production must say where its database is
         if self.ENV.is_production and "MONGO_URI" not in self.model_fields_set:
             raise ValueError("MONGO_URI must be set when ENV is 'stg' or 'prod'")
+        # The simulator must never stand in for real payments outside development
+        if self.ENV.is_production and self.PAYMENT_RAIL == "sim":
+            raise ValueError("PAYMENT_RAIL=sim is not allowed when ENV is 'stg' or 'prod'")
         return self
 
 

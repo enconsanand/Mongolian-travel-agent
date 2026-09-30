@@ -63,6 +63,23 @@ services:
       - network_back
     restart: unless-stopped
 
+  # QPay Merchant V2 simulator (PAYMENT_RAIL=sim). Same image as back; controls at http://localhost:8010/_sim/docs
+  qpay-sim:
+    image: tmp_back:local
+    build:
+      context: .
+      dockerfile: back/Dockerfile
+      target: dev
+    command: uvicorn app.services.qpay_sim:app --host 0.0.0.0 --port 8010 --reload
+    volumes:
+      - ./back/:/app/
+      - uv_cache:/root/.cache/uv
+    ports:
+      - "${QPAY_SIM_PORT:-8010}:8010"
+    networks:
+      - network_back
+    restart: unless-stopped
+
   front:
     image: tmp_front:local
     build:

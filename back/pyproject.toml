@@ -9,6 +9,7 @@ dependencies = [
     "cryptography>=46",
     "fastapi>=0.139.0",
     "gunicorn>=26.0.0",
+    "httpx>=0.28.1",
     "pre-commit>=4.6.2",
     "pydantic-settings>=2.14.2",
     "pydantic[email]>=2.13.4",
@@ -23,7 +24,6 @@ dependencies = [
 
 [dependency-groups]
 dev = [
-    "httpx>=0.28.1",
     "import-linter>=2.15",
     "mongomock>=4.3",
     "mypy>=1.13.0",
