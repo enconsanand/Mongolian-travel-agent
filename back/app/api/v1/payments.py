@@ -4,7 +4,6 @@ The router holds no payment logic; it maps ``app.modules.payment`` results and e
 """
 
 from datetime import UTC, datetime
-from functools import lru_cache
 from typing import Annotated, Any
 
 from fastapi import APIRouter, Depends, HTTPException, Request, status
@@ -14,26 +13,15 @@ from starlette.concurrency import run_in_threadpool
 
 from app import ap2
 from app.api.v1.deps import ActiveUser, DbSession
-from app.core.config import settings
-from app.modules import payment
-from app.modules.payment.rails import InstrumentType, PaymentRail, RailError, build_rail
+from app.db.outbox import dispatch
+from app.modules import booking, payment
+from app.modules.payment.rails import InstrumentType, PaymentRail, RailError, configured_rail
 
 router = APIRouter()
 
 
-@lru_cache
-def _configured_rail() -> PaymentRail:
-    return build_rail(
-        settings.PAYMENT_RAIL,
-        base_url=settings.QPAY_BASE_URL,
-        username=settings.QPAY_USERNAME,
-        password=settings.QPAY_PASSWORD,
-        invoice_code=settings.QPAY_INVOICE_CODE,
-    )
-
-
 def get_rail() -> PaymentRail:
-    return _configured_rail()
+    return configured_rail()
 
 
 Rail = Annotated[PaymentRail, Depends(get_rail)]
@@ -155,4 +143,6 @@ async def rail_callback(
     except RailError as exc:
         # Could not ask the rail; a non-200 lets the provider retry the callback
         raise HTTPException(status.HTTP_503_SERVICE_UNAVAILABLE) from exc
+    # Confirm the booking now instead of waiting for the background loop; it is idempotent either way
+    await run_in_threadpool(dispatch, db, booking.OUTBOX_HANDLERS, now=now)
     return PlainTextResponse("SUCCESS")

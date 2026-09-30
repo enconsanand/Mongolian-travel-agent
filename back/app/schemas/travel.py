@@ -515,6 +515,7 @@ class BookingDoc(Doc):
     kind: Literal["stay", "vehicle", "vehicle_rental", "transport", "shared_ride", "event_ticket"]
     status: BookingStatus
     total_price_mnt: int = Field(ge=0)
+    checkout_id: str | None = None
     payment_id: str | None = None
     payment_method: str | None = None
     note: Text | None = None

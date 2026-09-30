@@ -90,3 +90,50 @@ def test_one_payment_per_transaction_id(real_db):
     with pytest.raises(DuplicateKeyError):
         real_db["payments"].insert_one({"_id": "p2", "idempotency_key": "k2", "transaction_id": "t"})
     real_db["payments"].insert_many([{"_id": "p3", "idempotency_key": "k3"}, {"_id": "p4", "idempotency_key": "k4"}])
+
+
+# ----------------------------------------------------------------------------- booking saga on a replica set
+
+
+def _seed_stay(db, available):
+    from app.seeds.mock_seed import load_mock_collections
+
+    load_mock_collections(db, real_server=True)
+    db["trips"].update_one({"_id": "trip_jamba_east"}, {"$set": {"user_id": USER, "status": "planned"}})
+    row = db["stay_availability"].find_one({"status": "open", "available": {"$gte": 2}})
+    stay = db["stays"].find_one({"_id": row["stay_id"]})
+    db["stay_availability"].update_many(
+        {"stay_id": row["stay_id"], "unit_type": row["unit_type"]}, {"$set": {"status": "open", "available": available}}
+    )
+    return stay, row
+
+
+def test_failed_hold_is_rolled_back_by_the_transaction(real_db):
+    from datetime import date, timedelta
+
+    from app.modules import booking
+
+    stay, row = _seed_stay(real_db, available=3)
+    second = (date.fromisoformat(row["date"]) + timedelta(days=1)).isoformat()
+    real_db["stay_availability"].update_one(
+        {"stay_id": row["stay_id"], "unit_type": row["unit_type"], "date": second}, {"$set": {"available": 0}}
+    )
+    req = booking.StayRequest(row["stay_id"], row["unit_type"], row["date"], 2, 1, 1)
+    with pytest.raises(booking.BookingError):
+        booking.create_checkout(real_db, user_id=USER, trip_id="trip_jamba_east", stays=[req], now=NOW)
+    first = real_db["stay_availability"].find_one(
+        {"stay_id": row["stay_id"], "unit_type": row["unit_type"], "date": row["date"]}
+    )
+    assert first["available"] == 3  # the abort undid the first night's hold
+    assert real_db["holds"].count_documents({}) == 0
+
+
+def test_checkout_documents_pass_the_strict_validators(real_db):
+    from app.modules import booking
+
+    stay, row = _seed_stay(real_db, available=3)
+    req = booking.StayRequest(row["stay_id"], row["unit_type"], row["date"], 1, 1, 1)
+    checkout = booking.create_checkout(real_db, user_id=USER, trip_id="trip_jamba_east", stays=[req], now=NOW)
+    # load_mock_collections(real_server=True) created every collection with its $jsonSchema validator
+    assert real_db["checkouts"].find_one({"_id": checkout["_id"]})["status"] == "open"
+    assert real_db["bookings"].count_documents({"checkout_id": checkout["_id"], "status": "held"}) == 1

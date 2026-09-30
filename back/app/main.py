@@ -6,7 +6,8 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api.v1 import payments, travel
+from app import workers
+from app.api.v1 import bookings, payments, travel
 from app.api.v1.api_user import user_router
 from app.core.config import settings
 from app.db.mongo import ensure_indexes, get_database
@@ -39,7 +40,10 @@ async def lifespan(app: FastAPI):
         failed = await asyncio.to_thread(ensure_indexes, get_database())
         if failed:
             logger.error("MongoDB indexes missing on: %s (geo search may fail)", ", ".join(failed))
+    stop = workers.start() if settings.BACKGROUND_WORKERS else None
     yield
+    if stop:
+        stop.set()
     logger.info("Shutting down %s", settings.PROJECT_NAME)
 
 
@@ -119,6 +123,7 @@ def _configure_routes(app: FastAPI) -> None:
     app.include_router(user_router, prefix=settings.API_V1_STR)
     app.include_router(travel.router, prefix=settings.API_V1_STR)
     app.include_router(payments.router, prefix=settings.API_V1_STR)
+    app.include_router(bookings.router, prefix=settings.API_V1_STR)
 
     @app.get("/", tags=["Root"])
     async def root() -> dict:

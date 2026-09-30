@@ -9,6 +9,7 @@ import os
 
 # Tests use mongomock; don't try to reach a real MongoDB when the app starts
 os.environ.setdefault("MONGO_INIT_ON_STARTUP", "false")
+os.environ.setdefault("BACKGROUND_WORKERS", "false")
 
 import mongomock  # noqa: E402
 import pytest  # noqa: E402
