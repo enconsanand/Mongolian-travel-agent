@@ -1,0 +1,20 @@
+{
+  "_comment": "Made by front/utils/ap2.ts (WebCrypto) against a checkout signed by back/app/ap2. Regenerate only when the mandate format changes on purpose.",
+  "merchant_jwk": {
+    "kty": "EC",
+    "crv": "P-256",
+    "x": "pE0E0sblKY4Ft4Vuda-o6VuJgfVa67R3nAD8z9IhM54",
+    "y": "ghtRcCDADYVK6g4OdFSZyTKDVcXbtl-ZEXVJBjcbe_E",
+    "kid": "merchant-vector"
+  },
+  "checkout_jwt": "eyJhbGciOiJFUzI1NiIsImtpZCI6Im1lcmNoYW50LXZlY3RvciIsInR5cCI6IkpXVCJ9.eyJjaGVja291dF9pZCI6ImNoa192ZWN0b3IiLCJleHAiOjE3OTAwMDA5MDAsImlhdCI6MTc5MDAwMDAwMCwiaXNzIjoibWVyY2hhbnRfbXRhIiwibGluZXMiOlt7ImRhdGUiOiIyMDI2LTEwLTAzIiwia2luZCI6InN0YXkiLCJsYWJlbCI6eyJlbiI6IkJsdWUgUGVhcmwgR2VyIENhbXAiLCJtbiI6ItCl06nRhSDRgdGD0LLQtCDQsdCw0LDQtyJ9LCJxdHkiOjEsInJlZl9pZCI6InN0YXlfa2hhdGdhbF9jYW1wX2JsdWVfcGVhcmwiLCJ0b3RhbF9tbnQiOjE4MDAwMCwidW5pdF9wcmljZV9tbnQiOjE4MDAwMCwidW5pdF90eXBlIjoiZ2VyIn1dLCJ0b3RhbCI6eyJhbW91bnQiOjE4MDAwMDAwLCJjdXJyZW5jeSI6Ik1OVCJ9LCJ0cmlwX2lkIjoidHJpcF9qYW1iYV9lYXN0In0.M0TJtHb2CIxQC_SvtVT0ThX3FJQSZZsW2nHUTN1p0-wSQyDpsPLCSkNZj8YO_PI1nns7vJcC3oQszc6-zyOf5A",
+  "checkout_hash": "P3dQtMw-HrwMFGj27IgHgur9MqayOglMFPce-Ecx-6E",
+  "now": 1790000000,
+  "user_jwk": {
+    "kty": "EC",
+    "crv": "P-256",
+    "x": "OC3y1xJA9cvUhU-doRwEvi7lSSSKvMgK-KfVOyMGi7Q",
+    "y": "OhRN6XNKU9nXzsmChwyhwJcq7nToaiiGk9DqlalBHbk"
+  },
+  "payment_mandate": "eyJhbGciOiJFUzI1NiIsImtpZCI6ImJyb3dzZXItdmVjdG9yIiwidHlwIjoiZGMrc2Qtand0In0.eyJ2Y3QiOiJtYW5kYXRlLnBheW1lbnQuMSIsInRyYW5zYWN0aW9uX2lkIjoiUDNkUXRNdy1IcndNRkdqMjdJZ0hndXI5TXFheU9nbE1GUGNlLUVjeC02RSIsInBheWVlIjp7ImlkIjoibWVyY2hhbnRfbXRhIiwibmFtZSI6Ik1vbmdvbGlhbiBUcmF2ZWwgQWdlbnQifSwicGF5bWVudF9hbW91bnQiOnsiYW1vdW50IjoxODAwMDAwMCwiY3VycmVuY3kiOiJNTlQifSwicGF5bWVudF9pbnN0cnVtZW50Ijp7InR5cGUiOiJxcGF5X3FyIn0sImlhdCI6MTc5MDAwMDAwMCwiZXhwIjoxNzkwMDAwNjAwfQ.C-NjI650f0GPXkfIi2STsCAoNnolUsAwhcLV9fP2mOYZH9wetJSKWpFJs0ht4zwqsQpRRa2QRHxdtEfLef0CIA~"
+}

@@ -92,6 +92,9 @@ importers:
       tw-animate-css:
         specifier: ^1.4.0
         version: 1.4.0
+      uqr:
+        specifier: ^0.1.2
+        version: 0.1.2
       vue:
         specifier: ^3.5.30
         version: 3.5.30(typescript@5.9.3)

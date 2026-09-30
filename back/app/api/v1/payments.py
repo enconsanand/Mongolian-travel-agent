@@ -13,6 +13,8 @@ from starlette.concurrency import run_in_threadpool
 
 from app import ap2
 from app.api.v1.deps import ActiveUser, DbSession
+from app.core.config import settings
+from app.core.keys import merchant_public_jwk
 from app.db.outbox import dispatch
 from app.modules import booking, payment
 from app.modules.payment.rails import InstrumentType, PaymentRail, RailError, configured_rail
@@ -53,6 +55,12 @@ Now = Annotated[datetime, Depends(get_now)]
 # ----------------------------------------------------------------------------- keys
 
 
+@router.get("/merchant/jwks", tags=["Payments"])
+def merchant_jwks() -> dict[str, Any]:
+    """The merchant public key, so the browser can check the checkout signature before showing it to the user."""
+    return {"merchant_id": settings.MERCHANT_ID, "keys": [merchant_public_jwk()]}
+
+
 class KeyIn(BaseModel):
     jwk: dict[str, Any] = Field(description="Public EC P-256 JWK made with WebCrypto (non-extractable private key)")
 
@@ -76,11 +84,14 @@ class PayIn(BaseModel):
     instrument: InstrumentType = "qpay_qr"
 
 
-def _public(p: dict[str, Any]) -> dict[str, Any]:
+def public_payment(p: dict[str, Any]) -> dict[str, Any]:
     charge = p.get("charge") or {}
     return {
         "id": p["_id"],
         "status": p["status"],
+        "provider": p["provider"],
+        # Only the simulator's invoice id is exposed: the demo UI uses it to press "pay" on the simulator
+        "sim_invoice_id": p["provider_ref"] if p["provider"] == "sim" else None,
         "amount_mnt": p["amount_mnt"],
         "checkout_id": p.get("checkout_id"),
         "qr_text": charge.get("qr_text"),
@@ -107,7 +118,7 @@ def pay_checkout(
         )
     except payment.PaymentError as exc:
         raise _http(exc) from exc
-    return _public(started.payment)
+    return public_payment(started.payment)
 
 
 # ----------------------------------------------------------------------------- rail callbacks

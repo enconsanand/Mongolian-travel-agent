@@ -70,6 +70,8 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       apiBase: process.env.NUXT_PUBLIC_API_BASE || 'http://localhost:8000/api/v1',
+      // Demo only: base URL of the QPay simulator, for the "Pay with Sim Bank" button. Leave empty for real QPay.
+      qpaySimBase: process.env.NUXT_PUBLIC_QPAY_SIM_BASE || '',
     },
   },
   modules: ['@pinia/nuxt', '@nuxt/image', '@nuxtjs/robots', '@primevue/nuxt-module', '@nuxt/eslint'],
@@ -131,6 +133,8 @@ export default defineNuxtConfig({
           'Content-Security-Policy': (() => {
             const apiBase = process.env.NUXT_PUBLIC_API_BASE || 'http://localhost:8000/api/v1'
             const apiOrigin = new URL(apiBase).origin
+            const simBase = process.env.NUXT_PUBLIC_QPAY_SIM_BASE
+            const simOrigin = simBase ? ' ' + new URL(simBase).origin : ''
 
             return [
               "default-src 'self'",
@@ -138,7 +142,7 @@ export default defineNuxtConfig({
               "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net",
               "font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net",
               "img-src 'self' data: https:",
-              "connect-src 'self' " + apiOrigin + ' ws: wss:',
+              "connect-src 'self' " + apiOrigin + simOrigin + ' ws: wss:',
               "frame-ancestors 'none'",
               "base-uri 'self'",
               "form-action 'self'",
