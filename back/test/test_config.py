@@ -26,10 +26,6 @@ def test_settings_allows_redis_in_production():
 def _required_settings_env(monkeypatch: pytest.MonkeyPatch) -> None:
     monkeypatch.setenv("PROJECT_NAME", "test")
     monkeypatch.setenv("JWT_SECRET", "x" * 32)
-    monkeypatch.setenv("DB_HOST", "localhost")
-    monkeypatch.setenv("DB_USER", "postgres")
-    monkeypatch.setenv("DB_PASS", "postgres")
-    monkeypatch.setenv("DB_NAME", "test")
     monkeypatch.setenv("ENV", "local")
 
 
@@ -43,6 +39,8 @@ def test_settings_parses_comma_separated_cors_origins(monkeypatch: pytest.Monkey
         "http://localhost:3000",
         "http://127.0.0.1:3000",
     ]
+
+
 def test_settings_requires_mongo_uri_in_production():
     # The default points at the local dev container; production must not silently use it
     with pytest.raises(ValidationError):
@@ -50,4 +48,4 @@ def test_settings_requires_mongo_uri_in_production():
 
 
 def test_settings_defaults_mongo_uri_outside_production():
-    assert Settings(ENV="local").MONGO_URI == "mongodb://mongo:27017"
+    assert Settings(ENV="local").MONGO_URI == "mongodb://mongo:27017/?directConnection=true"
