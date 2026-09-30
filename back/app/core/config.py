@@ -1,8 +1,8 @@
 import json
 from enum import Enum
 from functools import lru_cache
-from typing import Annotated
 from pathlib import Path
+from typing import Annotated
 
 from pydantic import AnyHttpUrl, Field, computed_field, field_validator, model_validator
 from pydantic_settings import BaseSettings, NoDecode, SettingsConfigDict
@@ -85,7 +85,11 @@ class Settings(BaseSettings):
 
     # --- Database (MongoDB) ---
     MONGO_URI: str = Field(
-        default="mongodb://mongo:27017", description="MongoDB connection string (local container or Atlas SRV URI)"
+        default="mongodb://mongo:27017/?directConnection=true",
+        description=(
+            "MongoDB connection string (local replica-set container or Atlas SRV URI). "
+            "Must point at a replica set: the booking saga and outbox use transactions and change streams."
+        ),
     )
     MONGO_DB_NAME: str = Field(default="travel_mn", description="MongoDB database name")
     MONGO_INIT_ON_STARTUP: bool = Field(

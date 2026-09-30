@@ -2,7 +2,7 @@ name: Lint and Format Check
 
 on:
   pull_request:
-    branches: [main]
+    branches: [master, develop]
 
 permissions:
   checks: write
@@ -40,8 +40,12 @@ jobs:
       - name: Type Check
         run: uv run mypy
 
-      # - name: Test
-      #   run: uv run pytest
+      - name: Test
+        env:
+          PROJECT_NAME: ci
+          JWT_SECRET: ci-only-jwt-secret-not-used-anywhere-32b
+          MOCK_DATA_DIR: ${{ github.workspace }}/data/mock
+        run: uv run pytest
 
   frontend:
     name: Frontend (Nuxt)

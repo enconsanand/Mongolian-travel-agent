@@ -9,7 +9,6 @@ dependencies = [
     "fastapi>=0.139.0",
     "gunicorn>=26.0.0",
     "pre-commit>=4.6.2",
-    "psycopg2-binary>=2.9.12",
     "pydantic-settings>=2.14.2",
     "pydantic[email]>=2.13.4",
     "pymongo>=4.10",

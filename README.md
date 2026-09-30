@@ -74,6 +74,8 @@
 3. Database (MongoDB) — full guide: [docs/DATABASE.md](docs/DATABASE.md)
 
     - The `mongo` service runs MongoDB locally; set `MONGO_URI` in `secret/.env` to use Atlas instead.
+    - It runs as a single-node replica set (`rs0`): the booking saga and outbox need transactions and change streams.
+      From your host machine connect with `mongodb://localhost:27018/?directConnection=true`.
     - `make seed` loads every collection in `data/mock/` (see its README), creates the login users
       (password from `SEED_DEV_PASSWORD`) and all indexes. Re-running it resets the mock collections.
     - There are no migrations: collections and indexes are defined in `back/app/db/mongo.py`.
