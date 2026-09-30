@@ -328,6 +328,42 @@ def _open_charge(db: Database, rail: PaymentRail, payment: dict, checkout: dict,
     return db[PaymentDoc.collection].find_one({"_id": payment["_id"]}) or payment
 
 
+# ----------------------------------------------------------------------------- cancel
+
+
+def cancel_unpaid_charge(db: Database, rail: PaymentRail, *, checkout_id: str, now: datetime) -> bool:
+    """Close the rail invoice of an unpaid payment so it can no longer be paid; ``awaiting_payment -> expired``.
+
+    Returns False when the checkout may still be paid (the rail refused the cancel, e.g. it is already paid, or the
+    rail is down): the caller must not release inventory yet. True when nothing can be paid any more.
+    """
+    payment = db[PaymentDoc.collection].find_one({"checkout_id": checkout_id})
+    if payment is None or payment["status"] in ("approved_by_user", "expired", "failed", "cancelled"):
+        if payment is not None and payment["status"] == "approved_by_user":
+            db[PaymentDoc.collection].update_one(
+                {"_id": payment["_id"], "status": "approved_by_user"},
+                {
+                    "$set": {"status": "expired"},
+                    "$push": {"status_history": {"status": "expired", "at": iso(now), "actor": "system"}},
+                },
+            )
+        return True
+    if payment["status"] != "awaiting_payment":
+        return False  # paid (or refunded): the booking side settles it
+    try:
+        rail.cancel(payment["provider_ref"])
+    except RailError:
+        return False
+    result = db[PaymentDoc.collection].update_one(
+        {"_id": payment["_id"], "status": "awaiting_payment"},
+        {
+            "$set": {"status": "expired"},
+            "$push": {"status_history": {"status": "expired", "at": iso(now), "actor": "system"}},
+        },
+    )
+    return result.modified_count == 1
+
+
 # ----------------------------------------------------------------------------- callback
 
 

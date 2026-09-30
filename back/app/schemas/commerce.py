@@ -164,8 +164,8 @@ class UserKeyDoc(Doc):
 
 
 class OutboxEventDoc(Doc):
-    """An event written in the same transaction as the change it announces; a change-stream dispatcher
-    delivers it and sets ``dispatched_at``."""
+    """An event written in the same transaction as the change it announces. ``app.db.outbox.dispatch`` claims
+    it (sets ``dispatched_at``) and runs the handler; a failing handler puts it back with ``last_error``."""
 
     collection: ClassVar[str] = "outbox"
 
@@ -182,6 +182,7 @@ class OutboxEventDoc(Doc):
     created_at: str
     dispatched_at: str | None = None
     attempts: int = Field(default=0, ge=0)
+    last_error: str | None = None
 
 
 # Commerce collections, keyed by collection name. No mock files; the seeder creates them with validators.

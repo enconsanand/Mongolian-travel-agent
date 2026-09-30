@@ -137,6 +137,10 @@ EN: 1) The agent searches reference data (stays with free units, seats left, fre
 
 MN: 1) Агент лавлах өгөгдлөөс хайна (сул буудал, суудал, машин, арга хэмжээ). 2) Аялалд 2–3 `quotes` бичнэ. 3) Хэрэглэгч нэгийг сонгоход `bookings` үүснэ (`pending_payment`). 4) Хэрэглэгч дүнг зөвшөөрнө (`payments.consent`), агент төлж, захиалга `confirmed` болно. 5) Цуцалбал `refunds` үүснэ. Алхам бүр `audit_log`-д бичигдэнэ.
 
+EN (as implemented for stays): `POST /me/trips/{id}/checkouts` holds every night (`holds`, `stay_availability.available` decremented, bookings `held`) and returns the merchant-signed checkout → the browser signs an AP2 Payment Mandate → `POST /me/checkouts/{id}/pay` opens the QPay invoice → the QPay callback is verified and writes `payment.paid` to `outbox` → the booking handler confirms holds and bookings and sets the trip `booked`. Unpaid checkouts expire after 15 minutes: the invoice is closed and the units are returned. A payment that lands after its holds lapsed takes the units again, or cancels every booking of the checkout and flags a refund.
+
+MN (буудлын хувьд хэрэгжсэн): checkout нь шөнө бүрийг hold хийнэ → хэрэглэгч AP2 Payment Mandate-д гарын үсэг зурна → QPay invoice → callback шалгагдаж `payment.paid` outbox-д → booking баталгаажиж аялал `booked` болно. Төлөгдөөгүй checkout 15 минутад дуусч, өрөө буцна.
+
 Payment status / Төлбөрийн төлөв: `quoted → approved_by_user → awaiting_payment → paid → (cancelled → refunded)`, or `awaiting_payment → expired / failed`
 
 EN: Live payments go through AP2 mandates and a rail (`provider`: `qpay`, `bonum`, `sim`); `stripe_test` and `qpay_sandbox` only appear in the older mock rows. See section 12.

@@ -108,6 +108,9 @@ class Settings(BaseSettings):
     # Where payment rails reach our webhooks (the compose service name for qpay-sim; a public URL for QPay)
     PUBLIC_BASE_URL: str = Field(default="http://back:8000", description="Base URL for payment callbacks")
 
+    BACKGROUND_WORKERS: bool = Field(
+        default=True, description="Run the outbox delivery and checkout-expiry loop inside the API process"
+    )
     MOCK_DATA_DIR: str = Field(
         default=str(Path(__file__).resolve().parents[3] / "data" / "mock"),
         description="Folder with the mock-data JSON collections loaded by the seeder",
