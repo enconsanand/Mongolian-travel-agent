@@ -23,6 +23,12 @@ def get_database() -> Database:
 
 _region_key: list[tuple[str, int | str]] = [("region", ASCENDING)]
 
+
+def _only_strings(field: str) -> dict:
+    """Partial index filter: index only documents where ``field`` is a string (skips null / missing)."""
+    return {"partialFilterExpression": {field: {"$type": "string"}}}
+
+
 # (collection, keys, options). The only list of indexes: the app creates them at startup and the seeder
 # creates them on every collection it loads.
 INDEXES: list[tuple[str, list[tuple[str, int | str]], dict]] = [
@@ -50,6 +56,29 @@ INDEXES: list[tuple[str, list[tuple[str, int | str]], dict]] = [
     ("quotes", [("trip_id", ASCENDING)], {}),
     ("payments", [("idempotency_key", ASCENDING)], {"unique": True}),
     ("payments", [("user_id", ASCENDING), ("status", ASCENDING)], {}),
+    # One payment per AP2 transaction (checkout hash); older mock payments have none
+    ("payments", [("transaction_id", ASCENDING)], {"unique": True, **_only_strings("transaction_id")}),
+    # --- commerce (app.schemas.commerce)
+    ("checkouts", [("checkout_hash", ASCENDING)], {"unique": True}),
+    ("checkouts", [("trip_id", ASCENDING)], {}),
+    ("mandates", [("hash", ASCENDING)], {"unique": True}),
+    # Replay protection: one closed mandate of each kind per checkout
+    (
+        "mandates",
+        [("kind", ASCENDING), ("transaction_id", ASCENDING)],
+        {"unique": True, "partialFilterExpression": {"form": "closed"}},
+    ),
+    ("mandates", [("trip_id", ASCENDING)], {}),
+    ("holds", [("stay_id", ASCENDING), ("date", ASCENDING), ("unit_type", ASCENDING)], {}),
+    # The expiry sweeper's query; not a TTL index, which would drop holds without returning their units
+    ("holds", [("status", ASCENDING), ("expires_at", ASCENDING)], {}),
+    ("holds", [("trip_id", ASCENDING)], {}),
+    (
+        "payment_events",
+        [("provider", ASCENDING), ("provider_ref", ASCENDING), ("kind", ASCENDING)],
+        {"unique": True},
+    ),
+    ("outbox", [("dispatched_at", ASCENDING), ("created_at", ASCENDING)], {}),
     ("refunds", [("payment_id", ASCENDING)], {}),
     ("itinerary_versions", [("trip_id", ASCENDING), ("version", ASCENDING)], {"unique": True}),
     ("trips", [("user_id", ASCENDING)], {}),

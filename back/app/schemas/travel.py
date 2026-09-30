@@ -501,7 +501,8 @@ class QuoteDoc(Doc):
     created_at: str
 
 
-BookingStatus = Literal["pending_owner", "pending_payment", "confirmed", "cancelled"]
+# held: inventory is on hold for an open checkout (booking saga step 1)
+BookingStatus = Literal["pending_owner", "held", "pending_payment", "confirmed", "cancelled"]
 
 
 class BookingDoc(Doc):
@@ -547,7 +548,17 @@ class BookingDoc(Doc):
     tickets: int | None = None
 
 
-PaymentStatus = Literal["quoted", "approved_by_user", "paid", "cancelled", "refunded"]
+# awaiting_payment: invoice created, waiting for the rail; expired / failed: it never got paid
+PaymentStatus = Literal[
+    "quoted",
+    "approved_by_user",
+    "awaiting_payment",
+    "paid",
+    "expired",
+    "failed",
+    "cancelled",
+    "refunded",
+]
 
 
 class PaymentMethodRef(Sub):
@@ -571,7 +582,13 @@ class Consent(Sub):
 
 
 class PaymentDoc(Doc):
-    """Sandbox payment. Lifecycle: quoted -> approved_by_user -> paid -> (cancelled -> refunded)."""
+    """Payment for a trip.
+
+    Lifecycle: quoted -> approved_by_user -> awaiting_payment -> paid -> (cancelled -> refunded), or
+    awaiting_payment -> expired / failed. ``provider`` ``qpay`` / ``bonum`` / ``sim`` are the live rails;
+    ``stripe_test`` and ``qpay_sandbox`` only appear in the older mock rows. Payments made through AP2 point at
+    their checkout and Payment Mandate; ``transaction_id`` (the checkout hash) is unique among them.
+    """
 
     collection: ClassVar[str] = "payments"
 
@@ -582,13 +599,16 @@ class PaymentDoc(Doc):
     amount_mnt: int = Field(ge=0)
     currency: Literal["MNT"] = "MNT"
     method: PaymentMethodRef
-    provider: Literal["stripe_test", "qpay_sandbox"]
+    provider: Literal["qpay", "bonum", "sim", "stripe_test", "qpay_sandbox"]
     provider_ref: str
     status: PaymentStatus
     status_history: list[StatusChange]
     consent: Consent
     idempotency_key: str
     is_sandbox: bool
+    checkout_id: str | None = None
+    payment_mandate_id: str | None = None
+    transaction_id: str | None = None
 
 
 class RefundDoc(Doc):

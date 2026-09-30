@@ -9,6 +9,7 @@ from app.core.config import settings
 from app.db.mongo import create_indexes_for
 from app.db.validators import create_validated_collection, refresh_validator
 from app.models.user import User
+from app.schemas.commerce import COMMERCE_MODELS
 from app.schemas.travel import DOC_MODELS, MockUserDoc
 
 logger = logging.getLogger(__name__)
@@ -98,8 +99,8 @@ def load_mock_collections(
     Reference collections are replaced. Stateful collections keep their data and only get missing
     demo rows, unless ``reset`` is set: then they are replaced too (wipes real trips/payments; for
     local development only). With ``real_server`` each collection also gets its ``$jsonSchema``
-    validator and indexes (mongomock in tests supports neither). ``users`` is handled by
-    ``upsert_mock_users``.
+    validator and indexes (mongomock in tests supports neither). The commerce collections are created
+    (or, with ``reset``, emptied) as well. ``users`` is handled by ``upsert_mock_users``.
     """
     folder = Path(data_dir or settings.MOCK_DATA_DIR)
     if not folder.is_dir():
@@ -112,6 +113,14 @@ def load_mock_collections(
         else:
             _replace_collection(db, name, docs, real_server)
             logger.info("Loaded %4d docs into %s", len(docs), name)
+
+    # Commerce collections have no mock files; make sure they exist with their validator and indexes. A reset
+    # empties them too, since the trips, payments and inventory they point at were just replaced.
+    for name in COMMERCE_MODELS:
+        if reset:
+            db[name].drop()
+        _add_missing(db, name, [], real_server)
+        logger.info("%s %s (commerce, no mock data)", "Emptied" if reset else "Ensured", name)
 
 
 def upsert_mock_users(db: Database, password: str, data_dir: str | None = None) -> None:

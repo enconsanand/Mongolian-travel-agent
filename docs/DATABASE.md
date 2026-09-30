@@ -137,7 +137,10 @@ EN: 1) The agent searches reference data (stays with free units, seats left, fre
 
 MN: 1) Агент лавлах өгөгдлөөс хайна (сул буудал, суудал, машин, арга хэмжээ). 2) Аялалд 2–3 `quotes` бичнэ. 3) Хэрэглэгч нэгийг сонгоход `bookings` үүснэ (`pending_payment`). 4) Хэрэглэгч дүнг зөвшөөрнө (`payments.consent`), агент төлж, захиалга `confirmed` болно. 5) Цуцалбал `refunds` үүснэ. Алхам бүр `audit_log`-д бичигдэнэ.
 
-Payment status / Төлбөрийн төлөв: `quoted → approved_by_user → paid → (cancelled → refunded)`
+Payment status / Төлбөрийн төлөв: `quoted → approved_by_user → awaiting_payment → paid → (cancelled → refunded)`, or `awaiting_payment → expired / failed`
+
+EN: Live payments go through AP2 mandates and a rail (`provider`: `qpay`, `bonum`, `sim`); `stripe_test` and `qpay_sandbox` only appear in the older mock rows. See section 12.
+MN: Бодит төлбөр AP2 mandate болон rail-аар (`qpay`, `bonum`, `sim`) явна; `stripe_test`, `qpay_sandbox` нь зөвхөн хуучин mock мөрөнд. 12-р хэсгийг үз.
 
 ## 8. API
 
@@ -820,3 +823,21 @@ Indexes: `email unique`
 **ToolCall**: `name` str, `args` dict
 
 **DayTransport**: `kind` `flight` \| `train` \| `bus` \| `shared_ride` \| `self_drive`, `schedule_id` str?, `seat_class` `standard` \| `economy` \| `hard_seat` \| `platzkart` \| `kupe`?, `ride_id` str?, `vehicle_id` str?, `note` Text?
+
+## 12. Commerce collections / Худалдааны collection
+
+EN: Written only by the running app (no mock files). Schema: [`back/app/schemas/commerce.py`](../back/app/schemas/commerce.py). `make seed` creates them with strict validators and indexes; `make seed-reset` empties them. AP2 terms follow the [Agent Payments Protocol v0.2](https://ap2-protocol.org/ap2/specification/).
+
+MN: Зөвхөн ажиллаж буй апп бичнэ (mock файлгүй). `make seed` validator, индекстэй нь үүсгэнэ; `make seed-reset` хоосолно.
+
+| Collection       | What / Юу                                                                                                       | Key indexes                                                     |
+| ---------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| `checkouts`      | The exact basket the user approves, signed by the platform (`checkout_jwt`); `checkout_hash` = AP2 transaction id | `checkout_hash` unique                                          |
+| `mandates`       | AP2 Checkout / Payment Mandates as received (`sd_jwt`) and whether they verified; kept as dispute evidence        | `hash` unique; `(kind, transaction_id)` unique for closed ones  |
+| `holds`          | Units taken out of `stay_availability` until paid or expired; a sweeper returns them (no TTL: it would leak units) | `(status, expires_at)`                                          |
+| `payment_events` | What QPay / Bonum / sim told us: callbacks (hints) and verified checks                                           | `(provider, provider_ref, kind)` unique: repeated callbacks = 1 |
+| `outbox`         | Events written in the same transaction as the change (`payment.paid`, `booking.confirmed`, `hold.expired`, ...)  | `(dispatched_at, created_at)`                                   |
+
+EN: Changes to existing collections: `payments` gains `checkout_id`, `payment_mandate_id`, `transaction_id` (unique when set), providers `qpay` / `bonum` / `sim` and statuses `awaiting_payment` / `expired` / `failed`; `bookings.status` gains `held`. All additions; the mock data is unchanged.
+
+MN: Одоогийн collection-д: `payments`-т `checkout_id`, `payment_mandate_id`, `transaction_id`, шинэ provider, төлөв; `bookings.status`-т `held` нэмэгдсэн. Бүгд нэмэлт, mock өгөгдөл өөрчлөгдөөгүй.
