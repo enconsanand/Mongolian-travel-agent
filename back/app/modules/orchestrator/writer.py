@@ -49,6 +49,10 @@ def _template(request: PlanRequest, days: Sequence[PlanDay], places: Mapping[str
     km, h = ("км", "цаг") if request.lang == "mn" else ("km", "h")
     notes = []
     for d in days:
+        if d.from_place_id == d.to_place_id and not d.via_place_ids:
+            place = places.get(d.to_place_id, d.to_place_id)
+            notes.append(f"{place}: чөлөөт өдөр" if request.lang == "mn" else f"Free day in {place}")
+            continue
         route = " → ".join(places.get(p, p) for p in (d.from_place_id, *d.via_place_ids, d.to_place_id))
         notes.append(f"{route}, {d.distance_km} {km} (~{round(d.drive_time_min / 60)} {h})" if d.distance_km else route)
     if request.lang == "mn":

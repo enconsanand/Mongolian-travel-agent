@@ -109,3 +109,12 @@ def test_the_template_is_in_english_for_english_requests():
         {},
     )
     assert "day" in writing.summary.lower() and writing.notes[0].startswith("Ulaanbaatar → Khatgal, 650 km")
+
+
+def test_the_template_calls_a_day_in_one_place_a_free_day():
+    gw, _ = gateway(LLMError("unavailable"))
+    rest = PlanDay(day=2, date="2026-10-04", from_place_id="place_khatgal", to_place_id="place_khatgal")
+    writing = write(gw, REQUEST, [DAYS[0], rest, DAYS[1].model_copy(update={"day": 3})], NAMES, {}, {})
+    assert writing.notes[1] == "Хатгал: чөлөөт өдөр"
+    english = write(gw, REQUEST.model_copy(update={"lang": "en"}), [rest], {"place_khatgal": "Khatgal"}, {}, {})
+    assert english.notes == ["Free day in Khatgal"]
