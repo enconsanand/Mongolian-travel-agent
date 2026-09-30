@@ -609,6 +609,8 @@ class PaymentDoc(Doc):
     checkout_id: str | None = None
     payment_mandate_id: str | None = None
     transaction_id: str | None = None
+    # What the rail returned for the user to pay with (QR text, short link, deeplinks) and its payment id
+    charge: dict[str, Any] | None = None
 
 
 class RefundDoc(Doc):

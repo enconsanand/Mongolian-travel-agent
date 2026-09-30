@@ -38,7 +38,7 @@ def _closed_payment_mandate(**overrides):
 def test_commerce_models_are_separate_from_mock_collections():
     # Mock files map 1:1 to DOC_MODELS; commerce collections have no mock file
     assert not set(COMMERCE_MODELS) & set(DOC_MODELS)
-    assert set(COMMERCE_MODELS) == {"checkouts", "mandates", "holds", "payment_events", "outbox"}
+    assert set(COMMERCE_MODELS) == {"checkouts", "mandates", "holds", "payment_events", "outbox", "user_keys"}
     assert set(COMMERCE_MODELS) <= set(MODELS)
 
 

@@ -62,11 +62,12 @@ INDEXES: list[tuple[str, list[tuple[str, int | str]], dict]] = [
     ("checkouts", [("checkout_hash", ASCENDING)], {"unique": True}),
     ("checkouts", [("trip_id", ASCENDING)], {}),
     ("mandates", [("hash", ASCENDING)], {"unique": True}),
-    # Replay protection: one closed mandate of each kind per checkout
+    # Replay protection: a checkout's closed mandate of each kind is used once. Rejected mandates are kept as
+    # evidence with their real transaction_id, so the index only covers used ones.
     (
         "mandates",
         [("kind", ASCENDING), ("transaction_id", ASCENDING)],
-        {"unique": True, "partialFilterExpression": {"form": "closed"}},
+        {"unique": True, "partialFilterExpression": {"form": "closed", "status": "used"}},
     ),
     ("mandates", [("trip_id", ASCENDING)], {}),
     ("holds", [("stay_id", ASCENDING), ("date", ASCENDING), ("unit_type", ASCENDING)], {}),
@@ -79,6 +80,7 @@ INDEXES: list[tuple[str, list[tuple[str, int | str]], dict]] = [
         {"unique": True},
     ),
     ("outbox", [("dispatched_at", ASCENDING), ("created_at", ASCENDING)], {}),
+    ("user_keys", [("user_id", ASCENDING)], {}),
     ("refunds", [("payment_id", ASCENDING)], {}),
     ("itinerary_versions", [("trip_id", ASCENDING), ("version", ASCENDING)], {"unique": True}),
     ("trips", [("user_id", ASCENDING)], {}),

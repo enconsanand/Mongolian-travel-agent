@@ -99,6 +99,12 @@ lint: ruff-sort ruff-check ruff-format mypy lint-imports prettier eslint ts-chec
 test: ## Run backend tests
 	docker compose -f docker-compose.yml --env-file ./secret/.env run --rm back uv run pytest
 
+test-integration: ## Payment tests on the compose MongoDB replica set (transactions, unique indexes)
+	docker compose -f docker-compose.yml --env-file ./secret/.env run --rm -e MONGO_TEST_URI="mongodb://mongo:27017/?directConnection=true" back uv run pytest --no-cov test/test_payment_integration.py
+
+merchant-key: ## Print a new EC P-256 merchant signing key for MERCHANT_KEY_PEM
+	docker compose -f docker-compose.yml --env-file ./secret/.env run --rm back uv run python -c "from cryptography.hazmat.primitives import serialization as s; from cryptography.hazmat.primitives.asymmetric import ec; print(ec.generate_private_key(ec.SECP256R1()).private_bytes(s.Encoding.PEM, s.PrivateFormat.PKCS8, s.NoEncryption()).decode())"
+
 install: down clear build seed down up ## Full clean installation and startup
 
 

@@ -20,7 +20,11 @@ def test_settings_allows_missing_redis_outside_production():
 
 def test_settings_allows_redis_in_production():
     settings_obj = Settings(
-        ENV="prod", REDIS_URL="redis://redis:6379/0", MONGO_URI="mongodb+srv://cluster/db", PAYMENT_RAIL="qpay"
+        ENV="prod",
+        REDIS_URL="redis://redis:6379/0",
+        MONGO_URI="mongodb+srv://cluster/db",
+        PAYMENT_RAIL="qpay",
+        MERCHANT_KEY_PEM="-----BEGIN PRIVATE KEY-----",
     )
     assert settings_obj.REDIS_URL == "redis://redis:6379/0"
 
@@ -60,3 +64,8 @@ def test_payment_simulator_is_refused_in_production():
 
 def test_payment_rail_defaults_to_the_simulator_locally():
     assert Settings(ENV="local").PAYMENT_RAIL == "sim"
+
+
+def test_merchant_key_is_required_in_production():
+    with pytest.raises(ValidationError, match="MERCHANT_KEY_PEM"):
+        Settings(ENV="prod", REDIS_URL="redis://redis:6379/0", MONGO_URI="mongodb+srv://c/db", PAYMENT_RAIL="qpay")

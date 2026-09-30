@@ -833,9 +833,10 @@ MN: Зөвхөн ажиллаж буй апп бичнэ (mock файлгүй). 
 | Collection       | What / Юу                                                                                                       | Key indexes                                                     |
 | ---------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
 | `checkouts`      | The exact basket the user approves, signed by the platform (`checkout_jwt`); `checkout_hash` = AP2 transaction id | `checkout_hash` unique                                          |
-| `mandates`       | AP2 Checkout / Payment Mandates as received (`sd_jwt`) and whether they verified; kept as dispute evidence        | `hash` unique; `(kind, transaction_id)` unique for closed ones  |
+| `mandates`       | AP2 Checkout / Payment Mandates as received (`sd_jwt`) and whether they verified; kept as dispute evidence        | `hash` unique; `(kind, transaction_id)` unique once used        |
 | `holds`          | Units taken out of `stay_availability` until paid or expired; a sweeper returns them (no TTL: it would leak units) | `(status, expires_at)`                                          |
 | `payment_events` | What QPay / Bonum / sim told us: callbacks (hints) and verified checks                                           | `(provider, provider_ref, kind)` unique: repeated callbacks = 1 |
+| `user_keys`      | Public P-256 keys users' browsers created (WebCrypto); direct-mode mandates are verified against them; `_id` = RFC 7638 thumbprint | `user_id` |
 | `outbox`         | Events written in the same transaction as the change (`payment.paid`, `booking.confirmed`, `hold.expired`, ...)  | `(dispatched_at, created_at)`                                   |
 
 EN: Changes to existing collections: `payments` gains `checkout_id`, `payment_mandate_id`, `transaction_id` (unique when set), providers `qpay` / `bonum` / `sim` and statuses `awaiting_payment` / `expired` / `failed`; `bookings.status` gains `held`. All additions; the mock data is unchanged.
