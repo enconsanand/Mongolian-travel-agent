@@ -8,7 +8,7 @@ from pydantic import BaseModel, ConfigDict, Field, model_validator
 from app.utils.i18n import Lang
 
 Style = Literal["value", "comfort", "culture"]
-PlanWarning = Literal["unresolved_place", "no_availability", "over_budget", "too_many_places", "no_stay_for_group"]
+PlanWarning = Literal["unresolved_place", "no_availability", "over_budget", "too_many_places"]
 
 MAX_TRIP_DAYS = 30
 
@@ -67,6 +67,7 @@ class PlanDay(BaseModel):
     date: str
     from_place_id: str
     to_place_id: str
+    via_place_ids: list[str] = []  # visited on the way when there are more places than nights
     route_id: str | None = None
     distance_km: int = 0
     drive_time_min: int = 0
