@@ -66,6 +66,9 @@ class Settings(BaseSettings):
     # --- Rate Limiting ---
     RATE_LIMIT_REQUESTS_PER_MINUTE: int = Field(default=60, description="Global rate limit")
     RATE_LIMIT_AUTH_REQUESTS_PER_MINUTE: int = Field(default=5, description="Auth-specific rate limit")
+    RATE_LIMIT_PLANNER_REQUESTS_PER_MINUTE: int = Field(
+        default=6, description="Trip planner proposals and revisions (each costs several model calls)"
+    )
     LOGIN_MAX_FAILED_ATTEMPTS: int = Field(
         default=10, description="Failed logins per account before a temporary lockout"
     )
