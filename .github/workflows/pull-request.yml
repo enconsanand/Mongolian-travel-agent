@@ -40,6 +40,9 @@ jobs:
       - name: Type Check
         run: uv run mypy
 
+      - name: Module boundaries
+        run: uv run lint-imports
+
       - name: Test
         env:
           PROJECT_NAME: ci

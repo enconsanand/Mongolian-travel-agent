@@ -82,6 +82,9 @@ ruff-format:
 mypy:
 	docker compose -f docker-compose.yml --env-file ./secret/.env run --rm back uv run mypy
 
+lint-imports: ## Check module boundaries (import-linter)
+	docker compose -f docker-compose.yml --env-file ./secret/.env run --rm back uv run lint-imports
+
 prettier:
 	docker compose -f docker-compose.yml --env-file ./secret/.env run --rm front pnpm format:write
 
@@ -91,7 +94,7 @@ eslint:
 ts-check:
 	docker compose -f docker-compose.yml --env-file ./secret/.env run --rm front pnpm typescript:check
 
-lint: ruff-sort ruff-check ruff-format mypy prettier eslint ts-check ## Run all linters and formatters
+lint: ruff-sort ruff-check ruff-format mypy lint-imports prettier eslint ts-check ## Run all linters and formatters
 
 test: ## Run backend tests
 	docker compose -f docker-compose.yml --env-file ./secret/.env run --rm back uv run pytest

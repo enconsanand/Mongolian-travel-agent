@@ -8,12 +8,12 @@ from fastapi import APIRouter, Depends, HTTPException, Request, status
 from fastapi.concurrency import run_in_threadpool
 from fastapi.security import OAuth2PasswordRequestForm
 
+from app.api.v1.deps import ActiveUser, DbSession, decode_access_token, oauth2_scheme
 from app.core.auth import authenticate_user, create_access_token
 from app.core.config import settings
 from app.core.token_denylist import TokenDenylistUnavailable, token_denylist
 from app.middlewares.rate_limit import build_rate_limiter, get_client_ip
 from app.schemas.user import Token, UserResponse
-from app.v1.deps import ActiveUser, DbSession, decode_access_token, oauth2_scheme
 
 router = APIRouter()
 

@@ -13,9 +13,9 @@ os.environ.setdefault("MONGO_INIT_ON_STARTUP", "false")
 import mongomock  # noqa: E402
 import pytest  # noqa: E402
 
+from app.api.v1.deps import get_db  # noqa: E402
 from app.main import app  # noqa: E402
 from app.middlewares.rate_limit import InMemoryRateLimiter  # noqa: E402
-from app.v1.deps import get_db  # noqa: E402
 
 
 @pytest.fixture

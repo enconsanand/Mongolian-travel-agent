@@ -8,10 +8,10 @@ from fastapi import HTTPException
 from jose import jwt
 
 import app.core.auth as core_auth_module
+from app.api.v1.deps import get_current_user
 from app.core.auth import _create_token, create_access_token
 from app.core.config import settings
 from app.core.security import get_password_hash, verify_password
-from app.v1.deps import get_current_user
 
 
 def test_password_hash_roundtrip():

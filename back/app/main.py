@@ -6,6 +6,8 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
 
+from app.api.v1 import travel
+from app.api.v1.api_user import user_router
 from app.core.config import settings
 from app.db.mongo import ensure_indexes, get_database
 from app.middlewares.body_size_limit import BodySizeLimitMiddleware
@@ -13,8 +15,6 @@ from app.middlewares.input_validation import InputValidationMiddleware
 from app.middlewares.rate_limit import RateLimitMiddleware
 from app.middlewares.request_logging import RequestLoggingMiddleware
 from app.middlewares.security_headers import SecurityHeadersMiddleware
-from app.v1 import travel
-from app.v1.api_user import user_router
 
 # ============================================================================
 # Logging Configuration

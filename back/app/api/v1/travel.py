@@ -10,9 +10,9 @@ from typing import Annotated, Any
 from fastapi import APIRouter, Depends, HTTPException, Query, status
 from pymongo.collection import Collection
 
+from app.api.v1.deps import ActiveUser, DbSession
 from app.schemas import travel as s
 from app.utils.i18n import Lang, get_lang, localize
-from app.v1.deps import ActiveUser, DbSession
 
 router = APIRouter()
 
