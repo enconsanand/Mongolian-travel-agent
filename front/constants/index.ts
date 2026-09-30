@@ -3,6 +3,19 @@ export const API_ENDPOINTS = {
     LOGIN: '/auth/login',
     LOGOUT: '/auth/logout',
   },
+  PAYMENTS: {
+    KEYS: '/me/keys',
+    MERCHANT_JWKS: '/merchant/jwks',
+    PAY: (checkoutId: string) => `/me/checkouts/${checkoutId}/pay`,
+  },
+  BOOKINGS: {
+    CREATE_CHECKOUT: (tripId: string) => `/me/trips/${tripId}/checkouts`,
+    CHECKOUT: (checkoutId: string) => `/me/checkouts/${checkoutId}`,
+  },
+  TRAVEL: {
+    MY_TRIPS: '/me/trips',
+    STAYS: '/stays',
+  },
   USERS: {
     LIST: '/users',
     CREATE: '/users',

@@ -7,6 +7,7 @@ from pydantic import BaseModel, Field
 
 from app.api.v1.deps import ActiveUser, DbSession
 from app.api.v1.payments import Now
+from app.api.v1.payments import public_payment as _public_payment
 from app.modules import booking
 from app.schemas.travel import UnitType
 
@@ -68,10 +69,10 @@ def get_checkout(checkout_id: str, db: DbSession, user: ActiveUser) -> dict[str,
     checkout = db["checkouts"].find_one({"_id": checkout_id, "user_id": user.id})
     if checkout is None:
         raise HTTPException(status.HTTP_404_NOT_FOUND, detail={"code": "checkout_not_found"})
-    pay = db["payments"].find_one({"checkout_id": checkout_id}, {"_id": 1, "status": 1})
+    pay = db["payments"].find_one({"checkout_id": checkout_id})
     bookings = list(db["bookings"].find({"checkout_id": checkout_id}, {"_id": 1, "status": 1, "stay_id": 1}))
     return {
         **_checkout_out(checkout),
-        "payment": {"id": pay["_id"], "status": pay["status"]} if pay else None,
+        "payment": _public_payment(pay) if pay else None,
         "bookings": [{"id": b["_id"], "status": b["status"], "stay_id": b.get("stay_id")} for b in bookings],
     }

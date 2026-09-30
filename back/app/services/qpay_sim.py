@@ -21,6 +21,7 @@ from typing import Annotated, Any
 
 import httpx
 from fastapi import BackgroundTasks, Depends, FastAPI, Header, HTTPException, Query, status
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 USERNAME = os.environ.get("QPAY_SIM_USERNAME", "sim_merchant")
@@ -72,6 +73,8 @@ class State:
 
 state = State()
 app = FastAPI(title="QPay Merchant V2 simulator", docs_url="/_sim/docs", openapi_url="/_sim/openapi.json")
+# Demo only: the web app's "Pay with Sim Bank" button calls /_sim from the browser. Real QPay has no such endpoint.
+app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["GET", "POST"], allow_headers=["*"])
 
 
 def _chaos() -> None:

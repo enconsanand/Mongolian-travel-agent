@@ -51,6 +51,7 @@ def test_pay_a_checkout_end_to_end(api, db):
     assert resp.status_code == 200, resp.text
     body = resp.json()
     assert body["status"] == "awaiting_payment" and body["qr_text"] and body["amount_mnt"] == 180000
+    assert body["provider"] == "sim" and body["sim_invoice_id"].startswith("sim_inv_")
 
     invoice = db["payments"].find_one({"_id": body["id"]})["provider_ref"]
     api.sim.post(f"/_sim/invoices/{invoice}/pay", params={"callbacks": 2})
@@ -83,3 +84,11 @@ def test_private_key_registration_is_refused(api):
 def test_webhook_with_a_bad_token_is_404(api):
     assert api.post("/api/v1/webhooks/sim/pay_chk_1/wrong").status_code == 404
     assert api.post("/api/v1/webhooks/qpay/pay_chk_1/wrong").status_code == 404  # not the active rail
+
+
+def test_merchant_jwks_verifies_checkouts(api, db):
+    jwks = api.get("/api/v1/merchant/jwks").json()
+    checkout_jwt = insert_checkout(db)
+    claims = ap2.verify_checkout(checkout_jwt, jwks["keys"][0], now=int(NOW.timestamp()))
+    assert claims["iss"] == jwks["merchant_id"]
+    assert "d" not in jwks["keys"][0]
