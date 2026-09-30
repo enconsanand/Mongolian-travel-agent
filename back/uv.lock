@@ -593,6 +593,7 @@ dependencies = [
     { name = "cryptography" },
     { name = "fastapi" },
     { name = "gunicorn" },
+    { name = "httpx" },
     { name = "pre-commit" },
     { name = "pydantic", extra = ["email"] },
     { name = "pydantic-settings" },
@@ -607,7 +608,6 @@ dependencies = [
 
 [package.dev-dependencies]
 dev = [
-    { name = "httpx" },
     { name = "import-linter" },
     { name = "mongomock" },
     { name = "mypy" },
@@ -622,6 +622,7 @@ requires-dist = [
     { name = "cryptography", specifier = ">=46" },
     { name = "fastapi", specifier = ">=0.139.0" },
     { name = "gunicorn", specifier = ">=26.0.0" },
+    { name = "httpx", specifier = ">=0.28.1" },
     { name = "pre-commit", specifier = ">=4.6.2" },
     { name = "pydantic", extras = ["email"], specifier = ">=2.13.4" },
     { name = "pydantic-settings", specifier = ">=2.14.2" },
@@ -636,7 +637,6 @@ requires-dist = [
 
 [package.metadata.requires-dev]
 dev = [
-    { name = "httpx", specifier = ">=0.28.1" },
     { name = "import-linter", specifier = ">=2.15" },
     { name = "mongomock", specifier = ">=4.3" },
     { name = "mypy", specifier = ">=1.13.0" },
