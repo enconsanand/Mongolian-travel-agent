@@ -25,6 +25,9 @@ class AppENV(str, Enum):
         return self in (AppENV.LOCAL, AppENV.DEV)
 
 
+LLM_PROVIDERS = {"workers_ai", "fake"}
+
+
 class Settings(BaseSettings):
     """Application settings loaded from environment variables."""
 
@@ -108,6 +111,20 @@ class Settings(BaseSettings):
     # Where payment rails reach our webhooks (the compose service name for qpay-sim; a public URL for QPay)
     PUBLIC_BASE_URL: str = Field(default="http://back:8000", description="Base URL for payment callbacks")
 
+    # --- LLM (model gateway) ---
+    # Routes per role: "provider:model", comma-separated fallbacks tried in order.
+    # Providers: workers_ai (Cloudflare Workers AI), fake (scripted/echo, needs no key; not allowed in stg/prod).
+    LLM_PLANNER: str = Field(default="fake", description="Planner role: tool calling and structured output")
+    LLM_WRITER: str = Field(default="fake", description="Writer role: the reply the user reads, in Mongolian")
+    LLM_MAX_TOKENS: int = Field(default=1024, ge=1, le=8192, description="Default completion size per call")
+    LLM_TIMEOUT_SECONDS: float = Field(default=60.0, gt=0, description="HTTP timeout per model call")
+    LLM_JSON_MODE: Literal["json_schema", "json_object", "prompt"] = Field(
+        default="json_schema", description="How structured output is requested from OpenAI-compatible providers"
+    )
+    CLOUDFLARE_ACCOUNT_ID: str | None = Field(default=None, description="Cloudflare account id for Workers AI")
+    CLOUDFLARE_API_TOKEN: str | None = Field(default=None, description="API token with Workers AI read access")
+    CLOUDFLARE_AI_GATEWAY: str | None = Field(default=None, description="AI Gateway id (optional: cache, logs)")
+
     BACKGROUND_WORKERS: bool = Field(
         default=True, description="Run the outbox delivery and checkout-expiry loop inside the API process"
     )
@@ -153,6 +170,21 @@ class Settings(BaseSettings):
             raise ValueError("PAYMENT_RAIL=sim is not allowed when ENV is 'stg' or 'prod'")
         if self.ENV.is_production and not self.MERCHANT_KEY_PEM:
             raise ValueError("MERCHANT_KEY_PEM must be set when ENV is 'stg' or 'prod'")
+        return self
+
+    @model_validator(mode="after")
+    def _check_llm_routes(self) -> "Settings":
+        for field in ("LLM_PLANNER", "LLM_WRITER"):
+            providers = [part.strip().partition(":")[0] for part in getattr(self, field).split(",") if part.strip()]
+            if not providers:
+                raise ValueError(f"{field} must name at least one provider")
+            unknown = set(providers) - LLM_PROVIDERS
+            if unknown:
+                raise ValueError(f"{field}: unknown providers {sorted(unknown)}; use {sorted(LLM_PROVIDERS)}")
+            if "workers_ai" in providers and not (self.CLOUDFLARE_ACCOUNT_ID and self.CLOUDFLARE_API_TOKEN):
+                raise ValueError(f"{field} uses workers_ai: set CLOUDFLARE_ACCOUNT_ID and CLOUDFLARE_API_TOKEN")
+            if self.ENV.is_production and "fake" in providers:
+                raise ValueError(f"{field}: the fake provider is not allowed when ENV is 'stg' or 'prod'")
         return self
 
 

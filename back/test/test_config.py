@@ -5,6 +5,13 @@ from pydantic import ValidationError
 
 from app.core.config import Settings
 
+PROD_LLM = {
+    "LLM_PLANNER": "workers_ai:@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+    "LLM_WRITER": "workers_ai:@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+    "CLOUDFLARE_ACCOUNT_ID": "acc",
+    "CLOUDFLARE_API_TOKEN": "token",
+}
+
 
 def test_settings_requires_redis_in_production():
     # Rate limiting and token revocation only work across workers with Redis,
@@ -25,6 +32,7 @@ def test_settings_allows_redis_in_production():
         MONGO_URI="mongodb+srv://cluster/db",
         PAYMENT_RAIL="qpay",
         MERCHANT_KEY_PEM="-----BEGIN PRIVATE KEY-----",
+        **PROD_LLM,
     )
     assert settings_obj.REDIS_URL == "redis://redis:6379/0"
 
@@ -69,3 +77,33 @@ def test_payment_rail_defaults_to_the_simulator_locally():
 def test_merchant_key_is_required_in_production():
     with pytest.raises(ValidationError, match="MERCHANT_KEY_PEM"):
         Settings(ENV="prod", REDIS_URL="redis://redis:6379/0", MONGO_URI="mongodb+srv://c/db", PAYMENT_RAIL="qpay")
+
+
+def test_llm_defaults_to_the_fake_provider_locally():
+    settings_obj = Settings(ENV="local")
+    assert settings_obj.LLM_PLANNER == "fake"
+    assert settings_obj.LLM_WRITER == "fake"
+
+
+def test_fake_llm_is_refused_in_production():
+    base = {
+        "ENV": "prod",
+        "REDIS_URL": "redis://redis:6379/0",
+        "MONGO_URI": "mongodb+srv://c/db",
+        "PAYMENT_RAIL": "qpay",
+        "MERCHANT_KEY_PEM": "-----BEGIN PRIVATE KEY-----",
+    }
+    with pytest.raises(ValidationError, match="fake provider"):
+        Settings(**base, **{**PROD_LLM, "LLM_WRITER": "workers_ai:@cf/x,fake"})
+
+
+def test_workers_ai_needs_cloudflare_credentials():
+    with pytest.raises(ValidationError, match="CLOUDFLARE_ACCOUNT_ID"):
+        Settings(ENV="local", LLM_PLANNER="workers_ai:@cf/meta/llama-3.3-70b-instruct-fp8-fast")
+
+
+def test_unknown_llm_provider_is_refused():
+    with pytest.raises(ValidationError, match="unknown providers"):
+        Settings(ENV="local", LLM_WRITER="openai:gpt")
+    with pytest.raises(ValidationError, match="at least one provider"):
+        Settings(ENV="local", LLM_PLANNER=" , ")
