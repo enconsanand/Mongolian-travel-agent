@@ -1,13 +1,15 @@
 """MongoDB ``$jsonSchema`` validators generated from the Pydantic document schemas.
 
 MongoDB's $jsonSchema is JSON Schema draft 4 with ``bsonType`` and without ``$ref``, so the
-Pydantic schema is inlined and translated. This keeps one source of truth (``app.schemas.travel``).
+Pydantic schema is inlined and translated. This keeps one source of truth (``app.schemas.travel`` and
+``app.schemas.commerce``).
 """
 
 from typing import Any
 
 from pymongo.database import Database
 
+from app.schemas.commerce import COMMERCE_MODELS
 from app.schemas.travel import DOC_MODELS, Doc
 
 _BSON_TYPES: dict[str, str | list[str]] = {
@@ -21,6 +23,9 @@ _BSON_TYPES: dict[str, str | list[str]] = {
 }
 # JSON Schema keywords MongoDB understands and that we copy as-is
 _KEEP = {"required", "enum", "minimum", "maximum", "minItems", "maxItems", "minLength", "maxLength", "pattern"}
+
+# Every validated collection: the mock-data ones plus the commerce ones only the app writes
+MODELS: dict[str, type[Doc]] = {**DOC_MODELS, **COMMERCE_MODELS}
 
 # ``users`` also holds login fields owned by app.models.User, so it has no strict validator
 NOT_VALIDATED = {"users"}
@@ -67,7 +72,7 @@ def validator_for(model: type[Doc]) -> dict[str, Any]:
 
 def create_validated_collection(db: Database, name: str, schema: str | None = None) -> None:
     """Create collection ``name`` (must not exist) with the validator of collection ``schema`` (default: name)."""
-    model = DOC_MODELS.get(schema or name)
+    model = MODELS.get(schema or name)
     if model is None or (schema or name) in NOT_VALIDATED:
         db.create_collection(name)
         return
@@ -76,7 +81,7 @@ def create_validated_collection(db: Database, name: str, schema: str | None = No
 
 def refresh_validator(db: Database, name: str) -> None:
     """Replace the validator of an existing collection with the current schema (needs collMod rights)."""
-    model = DOC_MODELS.get(name)
+    model = MODELS.get(name)
     if model is None or name in NOT_VALIDATED:
         return
     db.command({"collMod": name, "validator": validator_for(model), "validationLevel": "strict"})
