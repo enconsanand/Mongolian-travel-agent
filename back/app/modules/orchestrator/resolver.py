@@ -1,6 +1,7 @@
 """Place names as the traveller wrote them → place ids, never silently dropping one.
 
-Matching, in order: a place's Mongolian or English name; a region word ("Говь", "баруун"); an aimag name. A
+Matching, in order: a place's Mongolian/English name or alias; a region word; an aimag name. An explicit
+"аймаг"/"aimag" query searches the province first. A
 name matches at the start of a word, so case endings still match ("Хонгорын Элсэнд" → Хонгорын Элс). One
 place → included. Several → ``choose`` (the planner model) picks one of them; an answer outside that list, or
 a failure, falls back to the best candidate. Nothing → ``unresolved``, which the traveller is shown.
@@ -32,6 +33,8 @@ _MIN_PARTIAL = 4  # a query shorter than this must match a whole name
 
 def _norm(text: str) -> str:
     text = unicodedata.normalize("NFKD", text.lower())
+    # й is a distinct Cyrillic letter, not an optional Latin accent.
+    text = text.replace("и\u0306", "й")
     text = "".join(c for c in text if not unicodedata.combining(c)).translate(_CYRILLIC_FOLD)
     return " ".join(re.findall(r"\w+", text))
 
@@ -45,19 +48,26 @@ def _starts_word(needle: str, haystack: str) -> bool:
 
 
 def _match_len(query: str, names: Sequence[str]) -> int:
-    """Length of the longest name that matches the query (0: no match)."""
+    """Exact names beat names inside a sentence, which beat partial queries."""
     best = 0
     for raw in names:
         name = _significant(raw)
         if not name:
             continue
-        if _starts_word(name, query) or (len(query) >= _MIN_PARTIAL and _starts_word(query, name)):
-            best = max(best, len(name))
+        if query == name:
+            best = max(best, 3000 + len(name))
+        elif _starts_word(name, query):
+            best = max(best, 2000 + len(name))
+        elif len(query) >= _MIN_PARTIAL and _starts_word(query, name):
+            best = max(best, 1000 + len(query))
     return best
 
 
 def _by_name(query: str, catalog: Catalog) -> list[str]:
-    scored = {pid: _match_len(query, (p["name"]["mn"], p["name"]["en"])) for pid, p in catalog.places.items()}
+    scored = {
+        pid: _match_len(query, (p["name"]["mn"], p["name"]["en"], *p.get("aliases", [])))
+        for pid, p in catalog.places.items()
+    }
     top = max(scored.values(), default=0)
     return [pid for pid, score in scored.items() if top and score == top]
 
@@ -99,6 +109,18 @@ def candidates(name: str, catalog: Catalog) -> list[str]:
     query = _significant(name) or _norm(name)
     if not query:
         return []
+    if set(_norm(name).split()) & {"аймаг", "aimag"}:
+        return _by_aimag(query, catalog)
+    # Keep broad requests broad even when a landmark contains the same word
+    # ("Говь" vs "Говь Гурвансайхан", "Хөвсгөл" vs "Хөвсгөл нуур").
+    if any(_norm(name) in aliases for aliases in _REGION_WORDS.values()):
+        return _by_region(query, catalog)
+    if any(
+        _norm(name) in {_norm(a["name"]), _norm(a["name_mn"])}
+        for region in catalog.regions
+        for a in region.get("aimags", [])
+    ):
+        return _by_aimag(query, catalog)
     return _by_name(query, catalog) or _by_region(query, catalog) or _by_aimag(query, catalog)
 
 

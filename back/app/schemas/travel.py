@@ -98,6 +98,15 @@ class RegionDoc(Doc):
     notes: Text
 
 
+class CoordinateSource(Sub):
+    """Provenance of a landmark point (not a verified road entrance)."""
+
+    url: str
+    source_id: str
+    retrieved_on: str
+    coordinate_role: Literal["landmark", "representative_point"]
+
+
 class PlaceDoc(Doc):
     collection: ClassVar[str] = "places"
 
@@ -106,6 +115,8 @@ class PlaceDoc(Doc):
     region: RegionOrHub
     kind: Literal["city", "aimag_center", "soum_center", "attraction"]
     location: Point
+    aliases: list[str] = []
+    coordinate_source: CoordinateSource | None = None
     fuel_available: bool
     note: Text | None = None
     images: list[Image] = []

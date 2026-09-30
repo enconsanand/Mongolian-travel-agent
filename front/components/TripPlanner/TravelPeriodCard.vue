@@ -1,14 +1,15 @@
 <script setup lang="ts">
 import PreferenceCardFrame from '~/components/TripPlanner/PreferenceCardFrame.vue'
 import type { PeriodPreferenceCard } from '~/types/trip-planner'
-import { localIsoDate, travelPeriodError } from '~/utils/dates'
+import { addDays, localIsoDate, MAX_TRIP_DAYS, travelPeriodError } from '~/utils/dates'
 
-const { card, requiredLabel, startLabel, endLabel, invalidLabel } = defineProps<{
+const { card, requiredLabel, startLabel, endLabel, invalidLabel, tooLongLabel } = defineProps<{
   card: PeriodPreferenceCard
   requiredLabel: string
   startLabel: string
   endLabel: string
   invalidLabel: string
+  tooLongLabel: string
 }>()
 
 const emit = defineEmits<{
@@ -17,8 +18,12 @@ const emit = defineEmits<{
 }>()
 
 const today = localIsoDate()
-const isRangeInvalid = computed(() => travelPeriodError(card.period) === 'outOfOrder')
+const rangeError = computed(() => {
+  const error = travelPeriodError(card.period)
+  return error === 'outOfOrder' ? invalidLabel : error === 'tooLong' ? tooLongLabel : ''
+})
 const endMin = computed(() => card.period.startDate || today)
+const endMax = computed(() => (card.period.startDate ? addDays(card.period.startDate, MAX_TRIP_DAYS - 1) : undefined))
 
 function dateValue(event: Event): string {
   return (event.target as HTMLInputElement).value
@@ -53,12 +58,13 @@ function dateValue(event: Event): string {
           type="date"
           required
           :min="endMin"
+          :max="endMax"
           :value="card.period.endDate"
           :aria-label="endLabel"
           @input="emit('set-end', dateValue($event))"
         />
       </label>
     </div>
-    <p v-if="isRangeInvalid" class="mt-3 text-sm text-rose-300" role="alert">{{ invalidLabel }}</p>
+    <p v-if="rangeError" class="mt-3 text-sm text-rose-300" role="alert">{{ rangeError }}</p>
   </PreferenceCardFrame>
 </template>

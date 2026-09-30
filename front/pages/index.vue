@@ -72,6 +72,7 @@ useHead(() => ({
             :start-label="messages.periodStartLabel"
             :end-label="messages.periodEndLabel"
             :invalid-label="messages.periodInvalid"
+            :too-long-label="messages.periodTooLong"
             @set-start="setTravelPeriod('startDate', $event)"
             @set-end="setTravelPeriod('endDate', $event)"
           />

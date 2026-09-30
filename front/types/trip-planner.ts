@@ -129,6 +129,8 @@ export interface TripPlannerMessages {
   periodStartLabel: string
   periodEndLabel: string
   periodInvalid: string
+  periodTooLong: string
+  groupTooLarge: string
   customValue: string
   generate: string
   close: string

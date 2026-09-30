@@ -58,7 +58,8 @@ def propose(api, fake, *, must=("Хатгал", "Тэрэлж"), body=BODY, **hi
 def test_propose_returns_the_plan_with_display_names(api, fake):
     plan = propose(api, fake)
     assert plan["version"] == 1 and len(plan["days"]) == 4
-    assert plan["places"][1] == {"query": "Тэрэлж", "place_id": None, "status": "unresolved"}
+    assert plan["places"][1] == {"query": "Тэрэлж", "place_id": "place_terelj", "status": "included"}
+    assert plan["catalog"]["places"]["place_terelj"]["name"] == "Горхи-Тэрэлж"
     assert plan["catalog"]["places"]["place_khatgal"]["name"] == "Хатгал"
     stay_id = next(d["stay_id"] for d in plan["days"] if d["stay_id"])
     stay = plan["catalog"]["stays"][stay_id]

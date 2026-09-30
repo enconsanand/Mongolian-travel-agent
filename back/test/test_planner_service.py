@@ -52,13 +52,14 @@ def visited(proposal):
 
 
 def test_a_proposal_includes_the_places_and_reports_the_unknown_ones(db, gw, fake):
-    fake.push(intent(must_places=["Хатгал", "Тэрэлж"]))
+    fake.push(intent(must_places=["Хатгал", "Тэрэлж", "Атлантис"]))
     proposal = service.propose(db, gw, REQUEST, NOW)
 
     assert proposal["version"] == 1 and proposal["id"].startswith("plan_")
     assert proposal["places"] == [
         {"query": "Хатгал", "place_id": "place_khatgal", "status": "included"},
-        {"query": "Тэрэлж", "place_id": None, "status": "unresolved"},
+        {"query": "Тэрэлж", "place_id": "place_terelj", "status": "included"},
+        {"query": "Атлантис", "place_id": None, "status": "unresolved"},
     ]
     assert "place_khatgal" in visited(proposal) and "unresolved_place" in proposal["warnings"]
     assert proposal["summary"] and all(d["note"] for d in proposal["days"])  # the writer's template
@@ -80,6 +81,22 @@ def test_a_revision_rereads_the_request_with_every_change(db, gw, fake):
     assert sum(1 for d in second["days"][:-1] if d["to_place_id"] == "place_khatgal") == 2
     planner_calls = [r for r in fake.requests if "Changes, oldest first" in r["messages"][-1].content]
     assert planner_calls and "Тэрхийн Цагаан нуурыг нэм" in planner_calls[-1]["messages"][-1].content
+
+
+def test_erdene_zuu_request_uses_the_monastery_and_a_nearby_kharkhorin_stay(db, gw, fake):
+    # The nearby seeded camp has availability from October 4 (October 3 is full).
+    request = REQUEST.model_copy(update={"text": "Erdenezuu хийдээр аялмаар", "start_date": date(2026, 10, 4)})
+    fake.push(intent(must_places=["Erdenezuu хийд"]))
+    proposal = service.propose(db, gw, request, NOW)
+
+    assert proposal["places"] == [{"query": "Erdenezuu хийд", "place_id": "place_erdene_zuu", "status": "included"}]
+    assert "place_erdene_zuu" in visited(proposal)
+    assert "unresolved_place" not in proposal["warnings"]
+    nights = [d for d in proposal["days"] if d["to_place_id"] == "place_erdene_zuu"]
+    assert nights and all(d["stay_id"] for d in nights)
+    for day in nights:
+        stay = db.stays.find_one({"_id": day["stay_id"]})
+        assert stay["place_id"] == "place_kharkhorin"
 
 
 def test_avoided_places_are_left_out(db, gw, fake):

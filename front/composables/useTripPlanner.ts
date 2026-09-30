@@ -31,8 +31,15 @@ function createEmptyPreferences(): TripPreferences {
   }
 }
 
+/** The planner's limit (PlanRequest.guests in back/app/modules/orchestrator/types.py) */
+const MAX_GUESTS = 60
+
 function areChipPreferencesSelected(value: TripPreferences): boolean {
   return CHIP_PREFERENCE_IDS.every((id) => value[id] !== null)
+}
+
+function isGroupTooLarge(value: TripPreferences): boolean {
+  return value.groupSize?.kind === 'custom' && Math.round(value.groupSize.amount) > MAX_GUESTS
 }
 
 function createInitialStepStatuses(): Record<PlanSearchStepId, PlanSearchStepStatus> {
@@ -68,7 +75,10 @@ export function useTripPlanner() {
   const voiceStatusLabel = computed(() => (isListening.value ? messages.value.listening : messages.value.tapToSpeak))
 
   const arePreferencesComplete = computed(
-    () => areChipPreferencesSelected(preferences.value) && travelPeriodError(preferences.value.duration) === null
+    () =>
+      areChipPreferencesSelected(preferences.value) &&
+      !isGroupTooLarge(preferences.value) &&
+      travelPeriodError(preferences.value.duration) === null
   )
 
   const preferenceCards = computed<PreferenceCard[]>(() =>
@@ -85,7 +95,9 @@ export function useTripPlanner() {
       return {
         ...group,
         selection,
-        showMissing: showPreferenceError.value && selection === null,
+        showMissing:
+          showPreferenceError.value &&
+          (selection === null || (group.id === 'groupSize' && isGroupTooLarge(preferences.value))),
       }
     })
   )
@@ -93,10 +105,13 @@ export function useTripPlanner() {
   const preferenceErrorMessage = computed(() => {
     if (!showPreferenceError.value || arePreferencesComplete.value) return ''
 
-    const onlyDateOrderIsWrong =
-      areChipPreferencesSelected(preferences.value) && travelPeriodError(preferences.value.duration) === 'outOfOrder'
+    if (!areChipPreferencesSelected(preferences.value)) return messages.value.preferencesIncomplete
+    if (isGroupTooLarge(preferences.value)) return messages.value.groupTooLarge
 
-    return onlyDateOrderIsWrong ? messages.value.periodInvalid : messages.value.preferencesIncomplete
+    const periodError = travelPeriodError(preferences.value.duration)
+    if (periodError === 'outOfOrder') return messages.value.periodInvalid
+    if (periodError === 'tooLong') return messages.value.periodTooLong
+    return messages.value.preferencesIncomplete
   })
 
   const planSearchSteps = computed<PlanSearchStepView[]>(() =>
