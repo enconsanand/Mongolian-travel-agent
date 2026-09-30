@@ -43,7 +43,7 @@ def test_intent_is_read_from_the_request_with_today_and_the_dates_in_the_prompt(
 
 
 def test_changes_are_sent_after_the_request_in_order():
-    gw, fake = gateway(reply({"must_places": ["Хөвсгөл"], "nights_hint": {"Хөвсгөл": 3}}))
+    gw, fake = gateway(reply({"must_places": ["Хөвсгөл"], "nights": [{"place": "Хөвсгөл", "nights": 3}]}))
     intent = extract_intent(gw, REQUEST, ["Тэрхийн Цагааныг хас", "Хөвсгөлд 3 хонъё"], TODAY)
     assert intent.nights_hint == {"Хөвсгөл": 3}
     user = fake.requests[0]["messages"][-1].content
@@ -118,3 +118,53 @@ def test_the_template_calls_a_day_in_one_place_a_free_day():
     assert writing.notes[1] == "Хатгал: чөлөөт өдөр"
     english = write(gw, REQUEST.model_copy(update={"lang": "en"}), [rest], {"place_khatgal": "Khatgal"}, {}, {})
     assert english.notes == ["Free day in Khatgal"]
+
+
+def _objects(node):
+    if isinstance(node, dict):
+        yield node
+        for value in node.values():
+            yield from _objects(value)
+    elif isinstance(node, list):
+        for value in node:
+            yield from _objects(value)
+
+
+def test_the_intent_schema_leaves_the_model_nothing_open_ended():
+    # Workers AI's llama, decoding against a free-form map, invented keys until it ran out of tokens
+    schema = TripIntent.model_json_schema()
+    assert not [n for n in _objects(schema) if isinstance(n.get("additionalProperties"), dict)]
+    assert all("maxItems" in n for n in _objects(schema) if n.get("type") == "array")
+
+
+def test_nights_are_read_as_a_list_of_places():
+    gw, _ = gateway(reply({"must_places": ["Хатгал"], "nights": [{"place": "Хатгал", "nights": 3}]}))
+    request = REQUEST.model_copy(update={"text": "Хатгалд 3 хонъё"})
+    assert extract_intent(gw, request, [], TODAY).nights_hint == {"Хатгал": 3}
+
+
+@pytest.mark.parametrize(
+    "text, kept",
+    [
+        ("Хатгал явна", {}),  # the model's own idea: no number of nights in the request
+        ("Хатгалд 3 хонъё", {"Хатгал": 3}),
+        ("Хатгалд гурван шөнө", {"Хатгал": 3}),
+        ("three nights in Khatgal", {"Хатгал": 3}),
+    ],
+)
+def test_nights_the_traveller_did_not_ask_for_are_dropped(text, kept):
+    gw, _ = gateway(reply({"must_places": ["Хатгал"], "nights": [{"place": "Хатгал", "nights": 3}]}))
+    assert extract_intent(gw, REQUEST.model_copy(update={"text": text}), [], TODAY).nights_hint == kept
+
+
+def test_nights_from_a_change_are_kept():
+    gw, _ = gateway(reply({"must_places": ["Хатгал"], "nights": [{"place": "Хатгал", "nights": 2}]}))
+    intent = extract_intent(gw, REQUEST, ["Хатгалд 2 хонъё"], TODAY)
+    assert intent.nights_hint == {"Хатгал": 2}
+
+
+def test_the_writer_is_told_which_places_are_not_in_the_plan():
+    gw, fake = gateway(reply({"summary": "x", "notes": ["a", "b"]}))
+    write(gw, REQUEST, DAYS, NAMES, {}, {}, missing=["Тэрэлж"])
+    prompt = fake.requests[0]["messages"][-1].content
+    assert "Тэрэлж" in prompt.split("Not in the plan")[1]

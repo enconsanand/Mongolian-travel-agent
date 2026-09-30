@@ -70,7 +70,7 @@ def test_a_proposal_includes_the_places_and_reports_the_unknown_ones(db, gw, fak
 def test_a_revision_rereads_the_request_with_every_change(db, gw, fake):
     fake.push(intent(must_places=["Хатгал"]))
     first = service.propose(db, gw, REQUEST, NOW)
-    fake.push(intent(must_places=["Хатгал", "Тэрхийн Цагаан нуур"], nights_hint={"Хатгал": 2}))
+    fake.push(intent(must_places=["Хатгал", "Тэрхийн Цагаан нуур"], nights=[{"place": "Хатгал", "nights": 2}]))
 
     second = service.revise(db, gw, first["id"], "Тэрхийн Цагаан нуурыг нэм, Хатгалд 2 хонъё", NOW)
 
@@ -108,8 +108,8 @@ def test_an_unknown_or_expired_proposal_is_not_found(db, gw, fake):
 
 
 def test_stay_requests_have_one_line_per_stay_block(db, gw, fake):
-    fake.push(intent(must_places=["Хатгал"], nights_hint={"Хатгал": 4}))
-    proposal = service.propose(db, gw, REQUEST, NOW)
+    fake.push(intent(must_places=["Хатгал"], nights=[{"place": "Хатгал", "nights": 4}]))
+    proposal = service.propose(db, gw, REQUEST.model_copy(update={"text": "Хатгалд 4 хонъё"}), NOW)
     [line] = service.stay_requests(proposal)
     first = proposal["days"][0]["stay"]
     assert line == {
@@ -123,8 +123,8 @@ def test_stay_requests_have_one_line_per_stay_block(db, gw, fake):
 
 
 def test_restay_picks_again_when_a_stay_filled_up(db, gw, fake):
-    fake.push(intent(must_places=["Хатгал"], nights_hint={"Хатгал": 4}))
-    proposal = service.propose(db, gw, REQUEST, NOW)
+    fake.push(intent(must_places=["Хатгал"], nights=[{"place": "Хатгал", "nights": 4}]))
+    proposal = service.propose(db, gw, REQUEST.model_copy(update={"text": "Хатгалд 4 хонъё"}), NOW)
     taken = proposal["days"][0]["stay"]
     db["stay_availability"].update_many(
         {"stay_id": taken["stay_id"], "unit_type": taken["unit_type"]}, {"$set": {"available": 0}}

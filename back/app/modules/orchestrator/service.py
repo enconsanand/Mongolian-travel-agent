@@ -69,7 +69,8 @@ def _build(db: Database, gateway: ModelGateway, request: PlanRequest, changes: S
     assembly = assemble(db, catalog, request, place_ids, hints)
     if any(p.status == "unresolved" for p in places):
         assembly.warnings.insert(0, "unresolved_place")
-    summary = _write(gateway, request, assembly, catalog)
+    missing = [p.query for p in places if p.status == "unresolved"]
+    summary = _write(gateway, request, assembly, catalog, missing)
     return {
         "request": request.model_dump(mode="json"),
         "changes": list(changes),
@@ -81,13 +82,15 @@ def _build(db: Database, gateway: ModelGateway, request: PlanRequest, changes: S
     }
 
 
-def _write(gateway: ModelGateway, request: PlanRequest, assembly: Assembly, catalog: Catalog) -> str:
+def _write(
+    gateway: ModelGateway, request: PlanRequest, assembly: Assembly, catalog: Catalog, missing: Sequence[str]
+) -> str:
     """Put the writer's note on each day; return its summary."""
     lang = request.lang
     stays = {s["_id"]: _name(s, lang) for s in catalog.stays}
     events = {e["_id"]: _name(e, lang) for e in catalog.events}
     places = {pid: _name(p, lang) for pid, p in catalog.places.items()}
-    writing = write(gateway, request, assembly.days, places, stays, events)
+    writing = write(gateway, request, assembly.days, places, stays, events, missing)
     assembly.days = [d.model_copy(update={"note": note}) for d, note in zip(assembly.days, writing.notes, strict=True)]
     return writing.summary
 

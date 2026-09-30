@@ -102,7 +102,9 @@ def test_accept_needs_sign_in(api, fake):
 
 
 def test_accept_holds_every_stay_in_one_checkout(api, fake, db):
-    plan = propose(api, fake, must=("Хатгал",), nights_hint={"Хатгал": 3})
+    plan = propose(
+        api, fake, must=("Хатгал",), body={**BODY, "text": "Хатгалд 3 хонъё"}, nights=[{"place": "Хатгал", "nights": 3}]
+    )
     sign_in()
     response = api.post(f"/api/v1/me/planner/proposals/{plan['id']}/accept")
     assert response.status_code == 201, response.text
@@ -114,7 +116,9 @@ def test_accept_holds_every_stay_in_one_checkout(api, fake, db):
 
 
 def test_accept_when_a_stay_filled_up_is_409_with_a_new_plan(api, fake, db):
-    plan = propose(api, fake, must=("Хатгал",), nights_hint={"Хатгал": 3})
+    plan = propose(
+        api, fake, must=("Хатгал",), body={**BODY, "text": "Хатгалд 3 хонъё"}, nights=[{"place": "Хатгал", "nights": 3}]
+    )
     taken = plan["days"][0]["stay"]
     db["stay_availability"].update_many(
         {"stay_id": taken["stay_id"], "unit_type": taken["unit_type"]}, {"$set": {"available": 0}}

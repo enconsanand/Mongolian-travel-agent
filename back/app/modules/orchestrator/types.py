@@ -37,13 +37,32 @@ class PlanRequest(BaseModel):
         return (self.end_date - self.start_date).days
 
 
-class TripIntent(BaseModel):
-    """What the planner model read from the request. Names only: ids come from the resolver."""
+class PlaceNights(BaseModel):
+    place: str = Field(description="The place as the traveller wrote it")
+    nights: int = Field(ge=1, le=MAX_TRIP_DAYS)
 
-    must_places: list[str] = Field(default=[], description="Every place the traveller wants to visit, as written")
-    avoid_places: list[str] = Field(default=[], description="Places the traveller does not want")
-    interests: list[str] = Field(default=[], description="Activities, e.g. horse riding, stargazing, festival")
-    nights_hint: dict[str, int] = Field(default={}, description="Place name as written -> nights wanted there")
+
+class TripIntent(BaseModel):
+    """What the planner model read from the request. Names only: ids come from the resolver.
+
+    Every list is bounded and there is no free-form map: decoding against an open-ended schema, Workers AI's
+    llama kept inventing keys until it ran out of tokens.
+    """
+
+    must_places: list[str] = Field(
+        default=[], max_length=12, description="Every place the traveller wants to visit, as written"
+    )
+    avoid_places: list[str] = Field(default=[], max_length=12, description="Places the traveller does not want")
+    interests: list[str] = Field(
+        default=[], max_length=8, description="Activities, e.g. horse riding, stargazing, festival"
+    )
+    nights: list[PlaceNights] = Field(
+        default=[], max_length=12, description="Only where the traveller asked for a number of nights"
+    )
+
+    @property
+    def nights_hint(self) -> dict[str, int]:
+        return {n.place: n.nights for n in self.nights}
 
 
 class ResolvedPlace(BaseModel):
