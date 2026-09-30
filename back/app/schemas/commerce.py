@@ -142,6 +142,24 @@ class PaymentEventDoc(Doc):
     received_at: str
 
 
+# ----------------------------------------------------------------------------- user signing keys
+
+
+class UserKeyDoc(Doc):
+    """A public key a user's browser created (WebCrypto P-256, private part never leaves the device).
+
+    Direct-mode mandates are verified against it. ``_id`` is the RFC 7638 thumbprint, so the same key registers
+    once.
+    """
+
+    collection: ClassVar[str] = "user_keys"
+
+    user_id: str
+    jwk: dict[str, str]
+    created_at: str
+    revoked_at: str | None = None
+
+
 # ----------------------------------------------------------------------------- transactional outbox
 
 
@@ -168,5 +186,5 @@ class OutboxEventDoc(Doc):
 
 # Commerce collections, keyed by collection name. No mock files; the seeder creates them with validators.
 COMMERCE_MODELS: dict[str, type[Doc]] = {
-    m.collection: m for m in (CheckoutDoc, MandateDoc, HoldDoc, PaymentEventDoc, OutboxEventDoc)
+    m.collection: m for m in (CheckoutDoc, MandateDoc, HoldDoc, PaymentEventDoc, OutboxEventDoc, UserKeyDoc)
 }

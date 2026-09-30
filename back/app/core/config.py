@@ -102,6 +102,11 @@ class Settings(BaseSettings):
     QPAY_USERNAME: str = Field(default="sim_merchant", description="QPay merchant username")
     QPAY_PASSWORD: str = Field(default="sim_password", description="QPay merchant password")
     QPAY_INVOICE_CODE: str = Field(default="SIM_INVOICE", description="QPay invoice code of the merchant")
+    # AP2 merchant of record: the platform signs checkouts with this key; payee id in every Payment Mandate
+    MERCHANT_ID: str = Field(default="merchant_mta", description="Merchant id used as AP2 payee")
+    MERCHANT_KEY_PEM: str | None = Field(default=None, description="PKCS#8 EC P-256 private key (PEM)")
+    # Where payment rails reach our webhooks (the compose service name for qpay-sim; a public URL for QPay)
+    PUBLIC_BASE_URL: str = Field(default="http://back:8000", description="Base URL for payment callbacks")
 
     MOCK_DATA_DIR: str = Field(
         default=str(Path(__file__).resolve().parents[3] / "data" / "mock"),
@@ -143,6 +148,8 @@ class Settings(BaseSettings):
         # The simulator must never stand in for real payments outside development
         if self.ENV.is_production and self.PAYMENT_RAIL == "sim":
             raise ValueError("PAYMENT_RAIL=sim is not allowed when ENV is 'stg' or 'prod'")
+        if self.ENV.is_production and not self.MERCHANT_KEY_PEM:
+            raise ValueError("MERCHANT_KEY_PEM must be set when ENV is 'stg' or 'prod'")
         return self
 
 
