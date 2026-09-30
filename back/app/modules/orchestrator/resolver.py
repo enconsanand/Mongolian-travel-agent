@@ -94,16 +94,23 @@ def _pick(query: str, candidates: list[str], catalog: Catalog, choose: Chooser) 
     return max(candidates, key=lambda pid: _rank(catalog, pid))
 
 
+def candidates(name: str, catalog: Catalog) -> list[str]:
+    """Every place the name could mean (empty: none)."""
+    query = _significant(name) or _norm(name)
+    if not query:
+        return []
+    return _by_name(query, catalog) or _by_region(query, catalog) or _by_aimag(query, catalog)
+
+
 def resolve(names: Sequence[str], catalog: Catalog, choose: Chooser) -> list[ResolvedPlace]:
     resolved: list[ResolvedPlace] = []
     for name in names:
-        query = _significant(name) or _norm(name)
-        if not query:
+        if not _norm(name):
             continue
-        candidates = _by_name(query, catalog) or _by_region(query, catalog) or _by_aimag(query, catalog)
-        if not candidates:
+        options = candidates(name, catalog)
+        if not options:
             resolved.append(ResolvedPlace(query=name, place_id=None, status="unresolved"))
             continue
-        chosen = _pick(query, candidates, catalog, choose)
+        chosen = _pick(_significant(name) or _norm(name), options, catalog, choose)
         resolved.append(ResolvedPlace(query=name, place_id=chosen, status="included"))
     return resolved
