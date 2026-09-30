@@ -7,7 +7,7 @@ from fastapi import FastAPI, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
 
 from app import workers
-from app.api.v1 import bookings, payments, travel
+from app.api.v1 import bookings, payments, planner, travel
 from app.api.v1.api_user import user_router
 from app.core.config import settings
 from app.db.mongo import ensure_indexes, get_database
@@ -124,6 +124,7 @@ def _configure_routes(app: FastAPI) -> None:
     app.include_router(travel.router, prefix=settings.API_V1_STR)
     app.include_router(payments.router, prefix=settings.API_V1_STR)
     app.include_router(bookings.router, prefix=settings.API_V1_STR)
+    app.include_router(planner.router, prefix=settings.API_V1_STR)
 
     @app.get("/", tags=["Root"])
     async def root() -> dict:

@@ -16,6 +16,12 @@ export const API_ENDPOINTS = {
     MY_TRIPS: '/me/trips',
     STAYS: '/stays',
   },
+  PLANNER: {
+    PROPOSALS: '/planner/proposals',
+    PROPOSAL: (id: string) => `/planner/proposals/${id}`,
+    REVISE: (id: string) => `/planner/proposals/${id}/revise`,
+    ACCEPT: (id: string) => `/me/planner/proposals/${id}/accept`,
+  },
   USERS: {
     LIST: '/users',
     CREATE: '/users',

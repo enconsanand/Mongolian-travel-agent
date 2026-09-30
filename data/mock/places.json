@@ -142,6 +142,12 @@
       "en": "18th-century monastery; last stretch is dirt."
     },
     "region": "north",
+    "aliases": [
+      "Amarbayasgalant",
+      "Амарбаясгалант",
+      "Amarbayasgalant Monastery",
+      "Амарбаясгалант хийд"
+    ],
     "images": [
       {
         "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Amarbayasgalant_Monastery_-_panoramio.jpg/1280px-Amarbayasgalant_Monastery_-_panoramio.jpg",
@@ -336,6 +342,11 @@
       "en": "Extinct volcano, easy 1h hike to the crater."
     },
     "region": "north",
+    "aliases": [
+      "Uran Togoo Volcano",
+      "Uran Togoo",
+      "Уран Тогоо"
+    ],
     "images": [
       {
         "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Volcano_Uran_Togoo_-_panoramio.jpg/1280px-Volcano_Uran_Togoo_-_panoramio.jpg",
@@ -738,6 +749,11 @@
       "en": "Sand dunes right next to the paved road."
     },
     "region": "north",
+    "aliases": [
+      "Mini Gobi",
+      "Elsen Tasarkhai",
+      "Элсэн тасархай"
+    ],
     "images": [
       {
         "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Landscape_of_Little_Gobi_in_Mongolia.jpg/1280px-Landscape_of_Little_Gobi_in_Mongolia.jpg",
@@ -957,6 +973,12 @@
       "en": "Freshwater lake with ger camps."
     },
     "region": "north",
+    "aliases": [
+      "Terkhiin Tsagaan Nuur",
+      "White Lake",
+      "Terkhiin Tsagaan Lake",
+      "Тэрхийн Цагаан нуур"
+    ],
     "images": [
       {
         "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Terkhiin_Tsagaan_Lake_04.jpg/1280px-Terkhiin_Tsagaan_Lake_04.jpg",
@@ -1078,6 +1100,12 @@
       "en": "Colourful eroded cliffs, 'White Stupa'."
     },
     "region": "south",
+    "aliases": [
+      "White Stupa",
+      "Tsagaan Suvraga",
+      "Tsagaan Suvarga",
+      "Цагаан Суварга"
+    ],
     "images": [
       {
         "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Tsagaan_Sufraga_II_%2820292272359%29.jpg/1280px-Tsagaan_Sufraga_II_%2820292272359%29.jpg",
@@ -1175,6 +1203,12 @@
       "en": "Ice canyon in Gurvan Saikhan National Park."
     },
     "region": "south",
+    "aliases": [
+      "Yoliin Am",
+      "Vulture Valley",
+      "Yolyn Am",
+      "Ёлын ам"
+    ],
     "images": [
       {
         "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Yolyn_Am_2015_%281%29.JPG/1280px-Yolyn_Am_2015_%281%29.JPG",
@@ -1248,6 +1282,11 @@
       "en": "Dinosaur fossil site, red cliffs at sunset."
     },
     "region": "south",
+    "aliases": [
+      "Flaming Cliffs",
+      "Bayanzag",
+      "Баянзаг"
+    ],
     "images": [
       {
         "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Resized_pan-flaming-cropped2.jpg/1280px-Resized_pan-flaming-cropped2.jpg",
@@ -1321,6 +1360,12 @@
       "en": "Singing sand dunes, up to 300 m high."
     },
     "region": "south",
+    "aliases": [
+      "Khongor Sands",
+      "Khongoriin Els",
+      "Khongoryn Els",
+      "Хонгорын элс"
+    ],
     "images": [
       {
         "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Rainbow_over_Sand_Dunes_%2820274971770%29.jpg/1280px-Rainbow_over_Sand_Dunes_%2820274971770%29.jpg",
@@ -1479,6 +1524,12 @@
       "en": "Potanin glacier base camp area; permits needed near the border."
     },
     "region": "west",
+    "aliases": [
+      "Tavan Bogd",
+      "Алтай таванбогд",
+      "Altai Tavan Bogd National Park",
+      "Алтай Таван Богд"
+    ],
     "images": [
       {
         "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Altai_Tavan_Bogd_-_panoramio.jpg/1280px-Altai_Tavan_Bogd_-_panoramio.jpg",
@@ -1577,6 +1628,12 @@
       "en": "Reed-lined lake, birdwatching."
     },
     "region": "west",
+    "aliases": [
+      "Khar Us Nuur",
+      "Хар ус нуур",
+      "Khar-Us Lake",
+      "Хар-Ус нуур"
+    ],
     "images": [],
     "cover_image_url": null
   },
@@ -1625,6 +1682,11 @@
       "en": "Largest lake in Mongolia, salty, UNESCO basin."
     },
     "region": "west",
+    "aliases": [
+      "Uvs Nuur",
+      "Uvs Lake",
+      "Увс нуур"
+    ],
     "images": [],
     "cover_image_url": null
   },
@@ -1842,6 +1904,11 @@
       "en": "Sacred extinct volcano, sunrise pilgrimage; border permit."
     },
     "region": "east",
+    "aliases": [
+      "Shiliin Bogd Mountain",
+      "Shiliin Bogd",
+      "Шилийн Богд"
+    ],
     "images": [],
     "cover_image_url": null
   },
@@ -1988,6 +2055,10 @@
       "en": "Dornogovi center, Khamariin Khiid energy center nearby."
     },
     "region": "south",
+    "aliases": [
+      "Sainshand",
+      "Сайншанд"
+    ],
     "images": [
       {
         "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Sainshand_panorama_-_panoramio.jpg/1280px-Sainshand_panorama_-_panoramio.jpg",
@@ -2088,5 +2159,4153 @@
       }
     ],
     "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/The_end_of_the_town_and_view_to_Gobi_desert_-_panoramio.jpg/1280px-The_end_of_the_town_and_view_to_Gobi_desert_-_panoramio.jpg"
+  },
+  {
+    "_id": "place_achit",
+    "name": {
+      "mn": "Ачит нуур",
+      "en": "Achit Lake"
+    },
+    "aimag": "Uvs",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        90.5,
+        49.5
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Achit Nuur",
+      "Achit Lake",
+      "Ачит нуур"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Achit_Lake",
+      "source_id": "Achit_Lake",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Freshwater lake in western Mongolia.",
+      "mn": "Баруун Монголын цэнгэг уст нуур."
+    },
+    "region": "west",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_aglag",
+    "name": {
+      "mn": "Аглаг бүтээлийн хийд",
+      "en": "Aglag Buteel Monastery"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        106.12264,
+        48.44885
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Aglag Buteel",
+      "Аглаг",
+      "Aglag Buteel Monastery",
+      "Аглаг бүтээлийн хийд"
+    ],
+    "coordinate_source": {
+      "url": "https://mapcarta.com/de/W1549618003",
+      "source_id": "OSM way 1549618003",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Monastery with rock carvings and walking paths.",
+      "mn": "Хадны сийлбэр, явган аяллын замтай хийд."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_altai_petroglyphs",
+    "name": {
+      "mn": "Монгол Алтайн хадны зургийн цогцолбор",
+      "en": "Petroglyphic Complexes of the Mongolian Altai"
+    },
+    "aimag": "Bayan-Ölgii",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3952778,
+        49.3338889
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Mongolian Altai Petroglyphs",
+      "Цагаан салаа Бага Ойгор",
+      "Petroglyphic Complexes of the Mongolian Altai",
+      "Монгол Алтайн хадны зургийн цогцолбор"
+    ],
+    "coordinate_source": {
+      "url": "https://www.wikidata.org/wiki/Q4361429",
+      "source_id": "Q4361429",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Rock-art heritage landscape in the Mongolian Altai.",
+      "mn": "Монгол Алтайн хадны зургийн өв бүхий нутаг."
+    },
+    "region": "west",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_altan_ovoo",
+    "name": {
+      "mn": "Алтан овоо",
+      "en": "Altan Ovoo"
+    },
+    "aimag": "Sükhbaatar",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        113.83553,
+        45.31136
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Dariganga Altan Ovoo",
+      "Altan Ovoo",
+      "Алтан овоо"
+    ],
+    "coordinate_source": {
+      "url": "https://mapcarta.com/16411588",
+      "source_id": "Dari Ovoo",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Sacred volcanic hill near Dariganga.",
+      "mn": "Дарьгангын ойролцоох тахилгат галт уул."
+    },
+    "region": "east",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_altanbulag",
+    "name": {
+      "mn": "Алтанбулаг",
+      "en": "Altanbulag, Selenge"
+    },
+    "aimag": "Selenge",
+    "kind": "soum_center",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        106.49417,
+        50.31667
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Altanbulag Selenge",
+      "Altanbulag, Selenge",
+      "Алтанбулаг"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Altanbulag%2C_Selenge",
+      "source_id": "Altanbulag,_Selenge",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Historic border town in Selenge.",
+      "mn": "Сэлэнгэ аймгийн түүхэн хилийн суурин."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_ariyabal",
+    "name": {
+      "mn": "Арьяабалын сүм",
+      "en": "Aryabal Meditation Temple"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        107.42742,
+        47.93552
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Aryabal",
+      "Ariyabal",
+      "Арьяабал",
+      "Aryabal Meditation Temple",
+      "Арьяабалын сүм"
+    ],
+    "coordinate_source": {
+      "url": "https://mapcarta.com/W247465544",
+      "source_id": "OSM way 247465544",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Hillside Buddhist temple in the Terelj area.",
+      "mn": "Тэрэлжийн уулын энгэрт орших буддын сүм."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_asralt",
+    "name": {
+      "mn": "Асралт хайрхан",
+      "en": "Asralt Khairkhan"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        107.41278,
+        48.46556
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Asralt Khairkhan Mountain",
+      "Asralt Khairkhan",
+      "Асралт хайрхан"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Asralt_Khairkhan",
+      "source_id": "Asralt_Khairkhan",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "High mountain in the Khentii range.",
+      "mn": "Хэнтийн нурууны өндөр уул."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_avarga",
+    "name": {
+      "mn": "Аваргын балгас",
+      "en": "Avraga"
+    },
+    "aimag": "Khentii",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        109.15278,
+        47.09444
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Avarga",
+      "Avraga ruins",
+      "Avraga",
+      "Аваргын балгас"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Avraga",
+      "source_id": "Avraga",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Archaeological ruins in the Khuduu Aral area.",
+      "mn": "Хөдөө арлын нутаг дахь эртний хотын туурь."
+    },
+    "region": "east",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_baga_gazriin",
+    "name": {
+      "mn": "Бага газрын чулуу",
+      "en": "Baga Gazaryn Chuluu"
+    },
+    "aimag": "Dundgovi",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        106.03074,
+        46.1988
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Baga Gazriin Chuluu",
+      "Baga Gazaryn Chuluu",
+      "Бага газрын чулуу"
+    ],
+    "coordinate_source": {
+      "url": "https://mn.geoview.info/baga_gazriin_chuluu%2C199162313w",
+      "source_id": "OSM way 199162313",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Rock formations in the Middle Gobi.",
+      "mn": "Дундговийн өвөрмөц тогтоцтой хад чулуун уулс."
+    },
+    "region": "south",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_baga_turgen",
+    "name": {
+      "mn": "Бага Түргэний хүрхрээ",
+      "en": "Baga Turgen waterfall"
+    },
+    "aimag": "Bayan-Ölgii",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3609722,
+        48.5071111
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Baga Turgen",
+      "Baga Turgen waterfall",
+      "Бага Түргэний хүрхрээ"
+    ],
+    "coordinate_source": {
+      "url": "https://www.wikidata.org/wiki/Q133270705",
+      "source_id": "Q133270705",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Waterfall in the western Altai mountains.",
+      "mn": "Баруун Алтайн уулс дахь хүрхрээ."
+    },
+    "region": "west",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_baldan_bereeven",
+    "name": {
+      "mn": "Балдан Бэрээвэн хийд",
+      "en": "Baldan Bereeven Monastery"
+    },
+    "aimag": "Khentii",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        109.4390028,
+        48.2024389
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Baldan Bereeven",
+      "Baldan Bereeven Khiid",
+      "Балдан Бэрээвэн",
+      "Baldan Bereeven Monastery",
+      "Балдан Бэрээвэн хийд"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Baldan_Bereeven_Monastery",
+      "source_id": "Baldan_Bereeven_Monastery",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Monastery in the mountains of Khentii.",
+      "mn": "Хэнтийн уулс дунд орших хийд."
+    },
+    "region": "east",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_bayan_nuur_zavkhan",
+    "name": {
+      "mn": "Завханы Баян нуур",
+      "en": "Bayan Lake"
+    },
+    "aimag": "Zavkhan",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        95.118,
+        48.456
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Bayan Nuur Zavkhan",
+      "Завханы Баян нуур"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Bayan_Lake",
+      "source_id": "Bayan_Lake",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Lake in Zavkhan; distinct from lakes of the same name elsewhere.",
+      "mn": "Завхан аймгийн Баян нуур; бусад ижил нэртэй нуураас ялгаатай."
+    },
+    "region": "west",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_bogd_khan_mountain",
+    "name": {
+      "mn": "Богд хан уул",
+      "en": "Bogd Khan Mountain"
+    },
+    "aimag": "Ulaanbaatar",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        106.98639,
+        47.80389
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Богд уул",
+      "Bogd Khan Uul",
+      "Bogd Khan Mountain",
+      "Богд хан уул"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Bogd_Khan_Mountain",
+      "source_id": "Bogd_Khan_Mountain",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Mountain south of Ulaanbaatar with hiking areas.",
+      "mn": "Улаанбаатарын өмнөд талын явган аяллын бүс бүхий уул."
+    },
+    "region": "hub",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_bogd_palace",
+    "name": {
+      "mn": "Богд хааны ордон музей",
+      "en": "Winter Palace of the Bogd Khan"
+    },
+    "aimag": "Ulaanbaatar",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        106.90667,
+        47.8975
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Bogd Khan Palace",
+      "Богдын музей",
+      "Winter Palace of the Bogd Khan",
+      "Богд хааны ордон музей"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Winter_Palace_of_the_Bogd_Khan",
+      "source_id": "Winter_Palace_of_the_Bogd_Khan",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Historic palace and museum of the Bogd Khan.",
+      "mn": "Богд хааны түүхэн ордон, музей."
+    },
+    "region": "hub",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_bugiin_tsav",
+    "name": {
+      "mn": "Бүгийн цав",
+      "en": "Bügiin Tsav"
+    },
+    "aimag": "Ömnögovi",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        100.0273167,
+        43.88115
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Bugiin Tsav",
+      "Bügiin Tsav",
+      "Бүгийн цав"
+    ],
+    "coordinate_source": {
+      "url": "https://cfile214.uf.daum.net/attach/27106A3357DB9FD22DBCBB",
+      "source_id": "Bugin Tsav GPS",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Remote Gobi fossil landscape.",
+      "mn": "Говийн алслагдсан чулуужсан олдворт газар."
+    },
+    "region": "south",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_buir_lake",
+    "name": {
+      "mn": "Буйр нуур",
+      "en": "Buir Lake"
+    },
+    "aimag": "Dornod",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        117.69222,
+        47.80694
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Buir Nuur",
+      "Buyr Lake",
+      "Buir Lake",
+      "Буйр нуур"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Buir_Lake",
+      "source_id": "Buir_Lake",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Large lake in eastern Mongolia, shared with China.",
+      "mn": "Монгол, Хятадын хил дамнан орших зүүн нутгийн том нуур."
+    },
+    "region": "east",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_burkhan_buudai",
+    "name": {
+      "mn": "Бурхан буудай",
+      "en": "Burkhan Buudai"
+    },
+    "aimag": "Govi-Altai",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        96.75028,
+        45.67472
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Burkhan Buudai Mountain",
+      "Burkhan Buudai",
+      "Бурхан буудай"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Burkhan_Buudai",
+      "source_id": "Burkhan_Buudai",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Mountain in Govi-Altai.",
+      "mn": "Говь-Алтай аймгийн уул."
+    },
+    "region": "west",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_burkhan_khaldun",
+    "name": {
+      "mn": "Бурхан Халдун",
+      "en": "Burkhan Khaldun"
+    },
+    "aimag": "Khentii",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        109.0102959,
+        48.7619601
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Burhan Khaldun",
+      "Burkhan Khaldun",
+      "Бурхан Халдун"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Burkhan_Khaldun",
+      "source_id": "Burkhan_Khaldun",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Sacred mountain in Khentii associated with Chinggis Khaan.",
+      "mn": "Чингис хааны түүхтэй холбоотой Хэнтийн тахилгат уул."
+    },
+    "region": "east",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_buun_tsagaan",
+    "name": {
+      "mn": "Бөөн Цагаан нуур",
+      "en": "Böön Tsagaan Lake"
+    },
+    "aimag": "Bayankhongor",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        99.1419444,
+        45.5961111
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Buun Tsagaan Nuur",
+      "Boon Tsagaan",
+      "Böön Tsagaan Lake",
+      "Бөөн Цагаан нуур"
+    ],
+    "coordinate_source": {
+      "url": "https://www.wikidata.org/wiki/Q749776",
+      "source_id": "Q749776",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Lake in the Valley of Lakes in Bayankhongor.",
+      "mn": "Баянхонгорын Нууруудын хөндийд орших нуур."
+    },
+    "region": "south",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_chinggis_museum",
+    "name": {
+      "mn": "Чингис хаан үндэсний музей",
+      "en": "Chinggis Khaan National Museum"
+    },
+    "aimag": "Ulaanbaatar",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        106.914917,
+        47.922528
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Chinggis Khan Museum",
+      "Чингис хааны музей",
+      "Chinggis Khaan National Museum",
+      "Чингис хаан үндэсний музей"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Chinggis_Khaan_National_Museum",
+      "source_id": "Chinggis_Khaan_National_Museum",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Museum dedicated to Chinggis Khaan and Mongolian history.",
+      "mn": "Чингис хаан болон Монголын түүхийн музей."
+    },
+    "region": "hub",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_chinggis_statue",
+    "name": {
+      "mn": "Чингис хааны морьт хөшөө",
+      "en": "Equestrian statue of Genghis Khan"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        107.52975,
+        47.8080556
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Цонжин болдог",
+      "Tsonjin Boldog",
+      "Chinggis Khan Statue",
+      "Equestrian statue of Genghis Khan",
+      "Чингис хааны морьт хөшөө"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Equestrian_statue_of_Genghis_Khan",
+      "source_id": "Equestrian_statue_of_Genghis_Khan",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Equestrian statue complex at Tsonjin Boldog.",
+      "mn": "Цонжин Болдог дахь морьт хөшөөний цогцолбор."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_choijin_lama",
+    "name": {
+      "mn": "Чойжин ламын сүм музей",
+      "en": "Choijin Lama Temple"
+    },
+    "aimag": "Ulaanbaatar",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        106.91833,
+        47.915
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Choijin Lama",
+      "Чойжин ламын сүм",
+      "Choijin Lama Temple",
+      "Чойжин ламын сүм музей"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Choijin_Lama_Temple",
+      "source_id": "Choijin_Lama_Temple",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Historic Buddhist temple museum in central Ulaanbaatar.",
+      "mn": "Улаанбаатарын төв дэх буддын сүм музей."
+    },
+    "region": "hub",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_choir_bogd",
+    "name": {
+      "mn": "Чойрын Богд",
+      "en": "Choir Bogd"
+    },
+    "aimag": "Govisümber",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        108.7673278,
+        46.2143056
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Choiriin Bogd",
+      "Choir Bogd",
+      "Чойрын Богд"
+    ],
+    "coordinate_source": {
+      "url": "https://whc.unesco.org/en/tentativelists/6817/",
+      "source_id": "Choiriin Bogd mountain",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Sacred mountain and monastery ruins near Choir.",
+      "mn": "Чойрын ойролцоох тахилгат уул, хийдийн туурь."
+    },
+    "region": "south",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_chuluut_gorge",
+    "name": {
+      "mn": "Чулуутын хавцал",
+      "en": "Chuluut River Gorge"
+    },
+    "aimag": "Arkhangai",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        100.2736667,
+        48.1322667
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Чулуутын гол",
+      "Чулуут голын хавцал",
+      "Chuluut Gorge",
+      "Chuluut River",
+      "Chuluut River Gorge",
+      "Чулуутын хавцал"
+    ],
+    "coordinate_source": {
+      "url": "https://www.spanglefish.com/gowildernessmongolia/gpsreferences.asp",
+      "source_id": "Chuluut Gorge and river",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "River gorge in Arkhangai.",
+      "mn": "Архангай аймгийн голын хавцал."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_danzanravjaa_museum",
+    "name": {
+      "mn": "Данзанравжаагийн музей",
+      "en": "Danzanravjaa Museum"
+    },
+    "aimag": "Dornogovi",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        110.139355,
+        44.892794
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Danzan Ravjaa Museum",
+      "Danzanravjaa Museum",
+      "Данзанравжаагийн музей"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Danzanravjaa_Museum",
+      "source_id": "Danzanravjaa_Museum",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Museum of Danzanravjaa in Sainshand.",
+      "mn": "Сайншанд дахь Данзанравжаагийн музей."
+    },
+    "region": "south",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_darkhad_valley",
+    "name": {
+      "mn": "Дархадын хотгор",
+      "en": "Darkhad Valley"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        99.5,
+        51.167
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Darkhad Depression",
+      "Darkhad Valley",
+      "Дархадын хотгор"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Darkhad_Valley",
+      "source_id": "Darkhad_Valley",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Broad valley in northern Khuvsgul.",
+      "mn": "Хөвсгөлийн хойд нутгийн өргөн хотгор."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_deluun_boldog",
+    "name": {
+      "mn": "Дэлүүн Болдог",
+      "en": "Delüün Boldog"
+    },
+    "aimag": "Khentii",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        111.62472,
+        49.02167
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Deluun Boldog",
+      "Delüün Boldog",
+      "Дэлүүн Болдог"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Del%C3%BC%C3%BCn_Boldog",
+      "source_id": "Delüün_Boldog",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Historic site near Dadal associated with Chinggis Khaan.",
+      "mn": "Дадалын ойролцоох Чингис хааны түүхтэй холбоотой газар."
+    },
+    "region": "east",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_durgun_lake",
+    "name": {
+      "mn": "Дөргөн нуур",
+      "en": "Dörgön Lake"
+    },
+    "aimag": "Khovd",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        93.417,
+        47.7
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Durgun Lake",
+      "Dorgon Nuur",
+      "Dörgön Lake",
+      "Дөргөн нуур"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/D%C3%B6rg%C3%B6n_Lake",
+      "source_id": "Dörgön_Lake",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Lake in the Great Lakes Depression of western Mongolia.",
+      "mn": "Баруун Монголын Их нууруудын хотгор дахь нуур."
+    },
+    "region": "west",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_eej_khairkhan",
+    "name": {
+      "mn": "Ээж хайрхан",
+      "en": "Eej Khairkhan"
+    },
+    "aimag": "Govi-Altai",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        96.2171,
+        44.9437
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Eej Khairkhan Mountain",
+      "Eej Khairkhan",
+      "Ээж хайрхан"
+    ],
+    "coordinate_source": {
+      "url": "https://mapcarta.com/W552847517",
+      "source_id": "OSM way 552847517",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Sacred mountain landscape in Govi-Altai.",
+      "mn": "Говь-Алтайн тахилгат уулын нутаг."
+    },
+    "region": "west",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_eej_mod",
+    "name": {
+      "mn": "Ээж мод",
+      "en": "Eej Mod"
+    },
+    "aimag": "Selenge",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        106.2015217,
+        50.1540283
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Mother Tree",
+      "Eej Mod",
+      "Ээж мод"
+    ],
+    "coordinate_source": {
+      "url": "https://www.lonelyplanet.com/points-of-interest/eej-mod/1462248",
+      "source_id": "Eej Mod GPS",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Sacred Mother Tree pilgrimage site in Selenge.",
+      "mn": "Сэлэнгийн Ээж модны тахилгат газар."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_erdene_zuu",
+    "name": {
+      "mn": "Эрдэнэ Зуу хийд",
+      "en": "Erdene Zuu Monastery"
+    },
+    "aimag": "Övörkhangai",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        102.8433333,
+        47.2016667
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Эрдэнэзуу",
+      "Erdenezuu",
+      "Erdene Zuu",
+      "Эрдэнэ зуу",
+      "Erdene Zuu Monastery",
+      "Эрдэнэ Зуу хийд"
+    ],
+    "coordinate_source": {
+      "url": "https://www.wikidata.org/wiki/Q1058965",
+      "source_id": "Q1058965",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Historic Buddhist monastery beside Kharkhorin.",
+      "mn": "Хархорины дэргэдэх буддын түүхэн хийд."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_gandan",
+    "name": {
+      "mn": "Гандантэгчэнлин хийд",
+      "en": "Gandantegchinlen Monastery"
+    },
+    "aimag": "Ulaanbaatar",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        106.895,
+        47.92306
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Гандан",
+      "Gandan",
+      "Gandantegchinlen",
+      "Gandantegchinlen Monastery",
+      "Гандантэгчэнлин хийд"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Gandantegchinlen_Monastery",
+      "source_id": "Gandantegchinlen_Monastery",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Buddhist monastery in Ulaanbaatar.",
+      "mn": "Улаанбаатар дахь буддын шашны хийд."
+    },
+    "region": "hub",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_ganga_lake",
+    "name": {
+      "mn": "Ганга нуур",
+      "en": "Ganga Lake"
+    },
+    "aimag": "Sükhbaatar",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        113.98582,
+        45.26709
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Ganga Nuur",
+      "Ganga Lake",
+      "Ганга нуур"
+    ],
+    "coordinate_source": {
+      "url": "https://mapcarta.com/W200578959",
+      "source_id": "OSM way 200578959",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Lake and wetland near Dariganga.",
+      "mn": "Дарьгангын нуур, ус намгархаг газар."
+    },
+    "region": "east",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_gobi_gurvansaikhan",
+    "name": {
+      "mn": "Говь Гурвансайхан",
+      "en": "Gobi Gurvansaikhan National Park"
+    },
+    "aimag": "Ömnögovi",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        101.589663,
+        43.802729
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Gurvan Saikhan",
+      "Гурвансайхан",
+      "Gobi Gurvansaikhan National Park",
+      "Говь Гурвансайхан"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Gobi_Gurvansaikhan_National_Park",
+      "source_id": "Gobi_Gurvansaikhan_National_Park",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "National park spanning mountains and desert landscapes.",
+      "mn": "Уулс, говийн тогтоц бүхий байгалийн цогцолборт газар."
+    },
+    "region": "south",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_gunjiin_sum",
+    "name": {
+      "mn": "Гүнжийн сүм",
+      "en": "Gunjiin Sum"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        107.5562833,
+        48.1835
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Gunjiin Süm",
+      "Gunjiin Temple",
+      "Gunjiin Sum",
+      "Гүнжийн сүм"
+    ],
+    "coordinate_source": {
+      "url": "https://www.lonelyplanet.com/points-of-interest/gunjiin-sum/498964",
+      "source_id": "Gunjiin Sum GPS",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Historic temple ruins in the forested Terelj area.",
+      "mn": "Тэрэлжийн ойт нутаг дахь түүхэн сүмийн туурь."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_ikh_bogd",
+    "name": {
+      "mn": "Их Богд",
+      "en": "Ikh Bogd"
+    },
+    "aimag": "Bayankhongor",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        100.23083,
+        44.995
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Ikh Bogd Mountain",
+      "Ikh Bogd",
+      "Их Богд"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Ikh_Bogd",
+      "source_id": "Ikh_Bogd",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Mountain of the Gobi Altai in Bayankhongor.",
+      "mn": "Баянхонгор дахь Говь-Алтайн нурууны уул."
+    },
+    "region": "south",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_ikh_burkhant",
+    "name": {
+      "mn": "Их Бурхант",
+      "en": "Ikh Burkhant"
+    },
+    "aimag": "Dornod",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        118.45153,
+        47.87365
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Ikh Burkhant complex",
+      "Ikh Burkhant",
+      "Их Бурхант"
+    ],
+    "coordinate_source": {
+      "url": "https://mapcarta.com/W912989688",
+      "source_id": "OSM way 912989688",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Historic stone Buddha complex by the Khalkh River.",
+      "mn": "Халхын голын эрэг дэх чулуун бурхны түүхэн цогцолбор."
+    },
+    "region": "east",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_ikh_gazriin",
+    "name": {
+      "mn": "Их газрын чулуу",
+      "en": "Ikh Gazriin Chuluu"
+    },
+    "aimag": "Dundgovi",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        107.25,
+        45.75
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Ikh Gazaryn Chuluu",
+      "Ikh Gazriin Chuluu",
+      "Их газрын чулуу"
+    ],
+    "coordinate_source": {
+      "url": "https://cdn.greensoft.mn/uploads/users/366/files/Key%20Sites%20for%20Conservation.pdf",
+      "source_id": "MN049, p71",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Granite rock formations in Dundgovi.",
+      "mn": "Дундговийн боржин чулуун тогтоцтой уулс."
+    },
+    "region": "south",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_ikh_nart",
+    "name": {
+      "mn": "Их Нартын чулуу",
+      "en": "Ikh Nartiin Chuluu Nature Reserve"
+    },
+    "aimag": "Dornogovi",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        108.633,
+        45.567
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Ikh Nart",
+      "Ikh Nartiin Chuluu",
+      "Ikh Nartiin Chuluu Nature Reserve",
+      "Их Нартын чулуу"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Ikh_Nartiin_Chuluu_Nature_Reserve",
+      "source_id": "Ikh_Nartiin_Chuluu_Nature_Reserve",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Protected rocky landscape in Dornogovi.",
+      "mn": "Дорноговийн хадат уулс бүхий хамгаалалттай газар."
+    },
+    "region": "south",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_khagiin_khar",
+    "name": {
+      "mn": "Хагийн Хар нуур",
+      "en": "Khagiin Khar Lake"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        107.9118,
+        48.4103
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Khagiin Khar Nuur",
+      "Khagiin Khar Lake",
+      "Хагийн Хар нуур"
+    ],
+    "coordinate_source": {
+      "url": "https://mapcarta.com/W50158686",
+      "source_id": "OSM way 50158686",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Remote lake in the Khentii mountains.",
+      "mn": "Хэнтийн уулсын алслагдсан нуур."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_khalkhgol_monument",
+    "name": {
+      "mn": "Халхголын ялалтын хөшөө",
+      "en": "Khalkhgol Victory Monument"
+    },
+    "aimag": "Dornod",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        118.5990667,
+        47.63485
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Халхголын хөшөө",
+      "Khalkhgol Victory Monument",
+      "Халхголын ялалтын хөшөө"
+    ],
+    "coordinate_source": {
+      "url": "https://www.lonelyplanet.com/points-of-interest/yalaltiin-khoshuu/1454351",
+      "source_id": "Yalaltiin Khoshuu GPS",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Memorial complex commemorating the Khalkhin Gol battles.",
+      "mn": "Халхголын дайны ялалтын дурсгалын цогцолбор."
+    },
+    "region": "east",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_khalkhin_gol",
+    "name": {
+      "mn": "Халхын гол",
+      "en": "Khalkhyn Gol"
+    },
+    "aimag": "Dornod",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        117.83556,
+        47.89556
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Khalkhin Gol",
+      "Khalkha River",
+      "Khalkhyn Gol",
+      "Халхын гол"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Khalkhyn_Gol",
+      "source_id": "Khalkhyn_Gol",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "River in eastern Mongolia with nearby historic battle sites.",
+      "mn": "Зүүн Монголын түүхэн тулалдааны дурсгалт газруудын ойролцоох гол."
+    },
+    "region": "east",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_khamar",
+    "name": {
+      "mn": "Хамарын хийд",
+      "en": "Khamar Monastery"
+    },
+    "aimag": "Dornogovi",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        110.2734806,
+        44.5972167
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Khamariin Khiid",
+      "Khamar",
+      "Хамар хийд",
+      "Khamar Monastery",
+      "Хамарын хийд"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Khamar_Monastery",
+      "source_id": "Khamar_Monastery",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Buddhist monastery south of Sainshand.",
+      "mn": "Сайншандаас өмнө орших буддын хийд."
+    },
+    "region": "south",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_khan_bayanzurkh",
+    "name": {
+      "mn": "Хан Баянзүрх уул",
+      "en": "Khan Bayanzurkh"
+    },
+    "aimag": "Dornogovi",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        110.04444,
+        44.69227
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Хүслийн хар уул",
+      "Khusliin Khar Uul",
+      "Khan Bayanzurkh",
+      "Хан Баянзүрх уул"
+    ],
+    "coordinate_source": {
+      "url": "https://mapcarta.com/W1498438002",
+      "source_id": "OSM way 1498438002",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Sacred mountain near Sainshand, also called the Wishing Mountain.",
+      "mn": "Сайншандын ойролцоох Хүслийн хар уул хэмээн нэрлэдэг тахилгат уул."
+    },
+    "region": "south",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_khan_khentii",
+    "name": {
+      "mn": "Хан Хэнтийн дархан цаазат газар",
+      "en": "Khan Khentii Strictly Protected Area"
+    },
+    "aimag": "Khentii",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        108.59,
+        48.92
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Khan Khentii",
+      "Khan Khentii Strictly Protected Area",
+      "Хан Хэнтийн дархан цаазат газар"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Khan_Khentii_Strictly_Protected_Area",
+      "source_id": "Khan_Khentii_Strictly_Protected_Area",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Protected mountain and forest landscape.",
+      "mn": "Хамгаалалттай уул, ойт нутаг."
+    },
+    "region": "east",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_khangai",
+    "name": {
+      "mn": "Хангайн нурууны байгалийн цогцолборт газар",
+      "en": "Khangai Nuruu National Park"
+    },
+    "aimag": "Arkhangai",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        101.4,
+        47.2
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Khangai Nuruu",
+      "Khangai Nuruu National Park",
+      "Хангайн нурууны байгалийн цогцолборт газар"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Khangai_Nuruu_National_Park",
+      "source_id": "Khangai_Nuruu_National_Park",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "National park in the Khangai mountains.",
+      "mn": "Хангайн нурууны байгалийн цогцолборт газар."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_khankh",
+    "name": {
+      "mn": "Ханх",
+      "en": "Khankh"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "soum_center",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        100.65361,
+        51.51167
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Khankh soum",
+      "Khankh",
+      "Ханх"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Khankh%2C_Kh%C3%B6vsg%C3%B6l",
+      "source_id": "Khankh,_Khövsgöl",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Settlement at the northern end of Lake Khuvsgul.",
+      "mn": "Хөвсгөл нуурын хойд захын суурин."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_khar_balgas",
+    "name": {
+      "mn": "Хар балгас",
+      "en": "Ordu-Baliq"
+    },
+    "aimag": "Arkhangai",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        102.65944,
+        47.43111
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Khar Balgas",
+      "Khara Balgas",
+      "Ордубалык",
+      "Ordu-Baliq",
+      "Хар балгас"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Ordu-Baliq",
+      "source_id": "Ordu-Baliq",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Ruins of the Uyghur capital Ordu-Baliq.",
+      "mn": "Уйгурын нийслэл Орду-Балык хотын туурь."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_khar_lake_khovd",
+    "name": {
+      "mn": "Ховдын Хар нуур",
+      "en": "Khar Lake (Khovd)"
+    },
+    "aimag": "Khovd",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        93.2,
+        48.08
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Khar Nuur Khovd",
+      "Khar Lake (Khovd)",
+      "Ховдын Хар нуур"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Khar_Lake_%28Khovd%29",
+      "source_id": "Khar_Lake_(Khovd)",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Khar Lake in Khovd, distinct from Ulaagchin Khar Lake.",
+      "mn": "Ховд аймгийн Хар нуур; Улаагчны Хар нуураас өөр нуур."
+    },
+    "region": "west",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_khar_zurkh",
+    "name": {
+      "mn": "Хар зүрхний Хөх нуур",
+      "en": "Khar Zurkhnii Khukh Nuur"
+    },
+    "aimag": "Khentii",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        108.9464717,
+        48.0175817
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Khar Zurkhnii Khukh Nuur",
+      "Khökh Nuur",
+      "Хар зүрхний Хөх нуур",
+      "Харзүрхний Хөх нуур"
+    ],
+    "coordinate_source": {
+      "url": "https://www.lonelyplanet.com/points-of-interest/khoekh-nuur/1405861",
+      "source_id": "Khökh Nuur coronation site GPS",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Lake associated with Temujin's proclamation as khan.",
+      "mn": "Тэмүжинг хаанд өргөмжилсөн түүхтэй нуур."
+    },
+    "region": "east",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_kharakhorum",
+    "name": {
+      "mn": "Хархорумын туурь",
+      "en": "Karakorum"
+    },
+    "aimag": "Övörkhangai",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        102.84778,
+        47.21028
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Хархорум",
+      "Karakorum ruins",
+      "Karakorum",
+      "Хархорумын туурь"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Karakorum",
+      "source_id": "Karakorum",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Archaeological site of the ancient Mongol capital.",
+      "mn": "Монголын эртний нийслэлийн археологийн дурсгалт газар."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_kharkhiraa",
+    "name": {
+      "mn": "Хархираа уул",
+      "en": "Kharkhiraa"
+    },
+    "aimag": "Uvs",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        91.38528,
+        49.56972
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Kharkhiraa Mountain",
+      "Kharkhiraa",
+      "Хархираа уул"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Kharkhiraa",
+      "source_id": "Kharkhiraa",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Mountain in Uvs.",
+      "mn": "Увс аймгийн уул."
+    },
+    "region": "west",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_kharkhorum_museum",
+    "name": {
+      "mn": "Хархорум музей",
+      "en": "Kharakhorum Museum"
+    },
+    "aimag": "Övörkhangai",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        102.83928,
+        47.195307
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Kharkhorum Museum",
+      "Kharakhorum Museum",
+      "Хархорум музей"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Kharakhorum_Museum",
+      "source_id": "Kharakhorum_Museum",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Museum of the ancient capital and surrounding heritage.",
+      "mn": "Эртний нийслэл болон ойр орчмын түүхийн музей."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_khasagt",
+    "name": {
+      "mn": "Хасагт хайрхан",
+      "en": "Khasagt Khairkhan"
+    },
+    "aimag": "Govi-Altai",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        95.80083,
+        46.78917
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Khasagt Khairkhan Mountain",
+      "Khasagt Khairkhan",
+      "Хасагт хайрхан"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Khasagt_Khairkhan",
+      "source_id": "Khasagt_Khairkhan",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Mountain in Govi-Altai.",
+      "mn": "Говь-Алтай аймгийн уул."
+    },
+    "region": "west",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_khermen_tsav",
+    "name": {
+      "mn": "Хэрмэн цав",
+      "en": "Khermen Tsav"
+    },
+    "aimag": "Ömnögovi",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        99.8329333,
+        43.4667667
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Herm en Tsav",
+      "Hermiin Tsav",
+      "Khermen Tsav",
+      "Хэрмэн цав"
+    ],
+    "coordinate_source": {
+      "url": "https://www.lonelyplanet.com/points-of-interest/khermen-tsav/1406657",
+      "source_id": "Khermen Tsav GPS",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Remote sandstone canyon landscape in the Gobi.",
+      "mn": "Говийн алслагдсан элсэн чулуун цав, хавцал."
+    },
+    "region": "south",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_khetsuu_khad",
+    "name": {
+      "mn": "Хэцүү хад",
+      "en": "Khetsuu Khad"
+    },
+    "aimag": "Uvs",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        93.47703,
+        49.03505
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Khetsuu Rock",
+      "Khetsuu Khad",
+      "Хэцүү хад"
+    ],
+    "coordinate_source": {
+      "url": "https://mapcarta.com/N11506787269",
+      "source_id": "OSM node 11506787269",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Rock formations beside Khyargas Lake.",
+      "mn": "Хяргас нуурын эргийн хад чулуун тогтоц."
+    },
+    "region": "west",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_khogno_khan",
+    "name": {
+      "mn": "Хөгнө хан",
+      "en": "Khogno Khan National Park"
+    },
+    "aimag": "Bulgan",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        103.64,
+        47.47
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Khogno Khan",
+      "Khugnu Khan",
+      "Хөгнө тарна",
+      "Khögnö Khan",
+      "Хөгнө хан"
+    ],
+    "coordinate_source": {
+      "url": "https://www.wikidata.org/wiki/Q93828284",
+      "source_id": "Q93828284",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Mountain and protected landscape near Elsen Tasarkhai.",
+      "mn": "Элсэн тасархайн ойролцоох уул, хамгаалалттай нутаг."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_khoid_tsenkher",
+    "name": {
+      "mn": "Хойд Цэнхэрийн агуй",
+      "en": "Khoit Tsenkher Cave"
+    },
+    "aimag": "Khovd",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        91.9566944,
+        47.3473611
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Khoid Tsenkher",
+      "Цэнхэрийн агуй",
+      "Khoit Tsenkher Cave",
+      "Хойд Цэнхэрийн агуй"
+    ],
+    "coordinate_source": {
+      "url": "https://www.mongoliancave.com/CaveEng/2",
+      "source_id": "Khoit Tsenkheriin cave",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Cave known for ancient rock paintings.",
+      "mn": "Эртний хадны зургаараа алдартай агуй."
+    },
+    "region": "west",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_khorgo",
+    "name": {
+      "mn": "Хорго",
+      "en": "Khorgo"
+    },
+    "aimag": "Arkhangai",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        99.8552778,
+        48.1863889
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Khorgo volcano",
+      "Хоргын тогоо",
+      "Khorgo",
+      "Хорго"
+    ],
+    "coordinate_source": {
+      "url": "https://www.wikidata.org/wiki/Q2462320",
+      "source_id": "Q2462320",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Volcanic crater near Terkhiin Tsagaan Lake.",
+      "mn": "Тэрхийн Цагаан нуурын ойролцоох галт уулын тогоо."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_khoridol_saridag",
+    "name": {
+      "mn": "Хорьдол Сарьдаг",
+      "en": "Khoridol Saridag mountains"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        99.7922,
+        50.6894
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Khoridol Saridag",
+      "Khoridol Saridag mountains",
+      "Хорьдол Сарьдаг"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Khoridol_Saridag_mountains",
+      "source_id": "Khoridol_Saridag_mountains",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Mountain range west of Lake Khuvsgul.",
+      "mn": "Хөвсгөл нуурын баруун талын уулсын нуруу."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_khoton",
+    "name": {
+      "mn": "Хотон нуур",
+      "en": "Khoton Lake"
+    },
+    "aimag": "Bayan-Ölgii",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.3,
+        48.65
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Khoton Nuur",
+      "Khoton Lake",
+      "Хотон нуур"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Khoton_Lake",
+      "source_id": "Khoton_Lake",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Lake in the Altai Tavan Bogd area.",
+      "mn": "Алтай Таван Богдын нутаг дахь нуур."
+    },
+    "region": "west",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_khuduu_aral",
+    "name": {
+      "mn": "Хөдөө арал",
+      "en": "Khuduu Aral"
+    },
+    "aimag": "Khentii",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        109.059667,
+        47.180722
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Khuduu Aral",
+      "Huduu Aral",
+      "Хөдөө арал"
+    ],
+    "coordinate_source": {
+      "url": "https://whc.unesco.org/en/tentativelists/5952",
+      "source_id": "UNESCO tentative list 5952",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Historic cultural landscape along the Kherlen River.",
+      "mn": "Хэрлэн голын дагуух түүх, соёлын дурсгалт нутаг."
+    },
+    "region": "east",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_khuiten",
+    "name": {
+      "mn": "Хүйтэн оргил",
+      "en": "Khüiten Peak"
+    },
+    "aimag": "Bayan-Ölgii",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        87.81889,
+        49.14583
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Khuiten Peak",
+      "Khüiten Peak",
+      "Хүйтэн оргил"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Kh%C3%BCiten_Peak",
+      "source_id": "Khüiten_Peak",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "High summit on the Mongolia-China border.",
+      "mn": "Монгол, Хятадын хил дээрх өндөр оргил."
+    },
+    "region": "west",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_khukh_burd",
+    "name": {
+      "mn": "Сүм Хөх Бүрд",
+      "en": "Sum Khukh Burd"
+    },
+    "aimag": "Dundgovi",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        105.76014,
+        46.15472
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Süm Khökh Bürd",
+      "Sum Khukh Burd",
+      "Сүм Хөх Бүрд"
+    ],
+    "coordinate_source": {
+      "url": "https://mapcarta.com/N3774871391",
+      "source_id": "OSM node 3774871391",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Oasis and historic ruins in Dundgovi.",
+      "mn": "Дундговийн баян бүрд, түүхэн туурь."
+    },
+    "region": "south",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_khurgan",
+    "name": {
+      "mn": "Хурган нуур",
+      "en": "Khurgan Lake"
+    },
+    "aimag": "Bayan-Ölgii",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        88.60611,
+        48.54611
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Khurgan Nuur",
+      "Khurgan Lake",
+      "Хурган нуур"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Khurgan_Lake",
+      "source_id": "Khurgan_Lake",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Lake adjoining Khoton Lake in the western Altai.",
+      "mn": "Баруун Алтайн Хотон нуурын залгаа нуур."
+    },
+    "region": "west",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_khushuu_tsaidam",
+    "name": {
+      "mn": "Хөшөө Цайдам",
+      "en": "Orkhon inscriptions"
+    },
+    "aimag": "Arkhangai",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        102.84111,
+        47.56056
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Khushuu Tsaidam",
+      "Күлтегин",
+      "Kultigin",
+      "Orkhon inscriptions",
+      "Хөшөө Цайдам"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Orkhon_inscriptions",
+      "source_id": "Orkhon_inscriptions",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Historic Turkic inscriptions and memorial site.",
+      "mn": "Түрэгийн бичээс, гэрэлт хөшөө бүхий дурсгалт газар."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_khustain_nuruu",
+    "name": {
+      "mn": "Хустайн нуруу",
+      "en": "Khustain Nuruu National Park"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        105.87833,
+        47.765
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Хустай",
+      "Khustai",
+      "Hustai National Park",
+      "Khustain Nuruu",
+      "Khustain Nuruu National Park",
+      "Хустайн нуруу"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Khustain_Nuruu_National_Park",
+      "source_id": "Khustain_Nuruu_National_Park",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "National park known for takhi horses.",
+      "mn": "Тахь адуугаараа алдартай байгалийн цогцолборт газар."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_khuvsgul_lake",
+    "name": {
+      "mn": "Хөвсгөл нуур",
+      "en": "Lake Khövsgöl"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        100.5,
+        51.1
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Khuvsgul",
+      "Khovsgol Lake",
+      "Khuvsgul Lake",
+      "Huvsgul",
+      "Хөвсгөл далай",
+      "Lake Khövsgöl",
+      "Хөвсгөл нуур"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Lake_Kh%C3%B6vsg%C3%B6l",
+      "source_id": "Lake_Khövsgöl",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Large freshwater lake in northern Mongolia.",
+      "mn": "Хойд Монголын том цэнгэг уст нуур."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_khyargas",
+    "name": {
+      "mn": "Хяргас нуур",
+      "en": "Khyargas Lake"
+    },
+    "aimag": "Uvs",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        93.417,
+        49.133
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Khyargas Nuur",
+      "Hyargas",
+      "Khyargas Lake",
+      "Хяргас нуур"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Khyargas_Lake",
+      "source_id": "Khyargas_Lake",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Large saline lake in Uvs.",
+      "mn": "Увс аймгийн том давст нуур."
+    },
+    "region": "west",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_manzushir",
+    "name": {
+      "mn": "Манзушир хийд",
+      "en": "Manjusri Monastery"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        106.99222,
+        47.76444
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Манзушир",
+      "Manzushir",
+      "Manzushri",
+      "Manjusri Monastery",
+      "Манзушир хийд"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Manjusri_Monastery",
+      "source_id": "Manjusri_Monastery",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Monastery ruins on the southern side of Bogd Khan Mountain.",
+      "mn": "Богд хан уулын өмнөд энгэрийн хийдийн туурь."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_mongol_daguur",
+    "name": {
+      "mn": "Монгол Дагуур",
+      "en": "Mongol Daguur"
+    },
+    "aimag": "Dornod",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        115.1,
+        49.7
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Mongol Daguur Biosphere Reserve",
+      "Mongol Daguur",
+      "Монгол Дагуур"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Mongol_Daguur",
+      "source_id": "Mongol_Daguur",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Protected steppe and wetland landscape in northeastern Mongolia.",
+      "mn": "Зүүн хойд Монголын хамгаалалттай тал, ус намгархаг нутаг."
+    },
+    "region": "east",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_mukhart",
+    "name": {
+      "mn": "Мухартын гол",
+      "en": "Mukhart River"
+    },
+    "aimag": "Zavkhan",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        95.941884,
+        48.210264
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Mukhart",
+      "Mukhartyn gol",
+      "Мухарт",
+      "Мухартын гол"
+    ],
+    "coordinate_source": {
+      "url": "https://www.steppe-mongolia.com/discover-mongolia/destinations/mukhart_river_zavkhan",
+      "source_id": "Mukhartyn gol embedded Google map center",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "River emerging beside the sand dunes in Zavkhan.",
+      "mn": "Завханы элсэн манхны дэргэдээс эх авдаг гол."
+    },
+    "region": "west",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_munkh_saridag",
+    "name": {
+      "mn": "Мөнх Сарьдаг",
+      "en": "Mönkh Saridag"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        100.61472,
+        51.71889
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Munkh Saridag",
+      "Mönkh Saridag",
+      "Мөнх Сарьдаг"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/M%C3%B6nkh_Saridag",
+      "source_id": "Mönkh_Saridag",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "High mountain on the Mongolia-Russia border.",
+      "mn": "Монгол, Оросын хил дээрх өндөр уул."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_munkhkhairkhan",
+    "name": {
+      "mn": "Мөнххайрхан уул",
+      "en": "Mönkhkhairkhan Mountain"
+    },
+    "aimag": "Khovd",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        91.47333,
+        46.89
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Munkhkhairkhan",
+      "Mönkhkhairkhan Mountain",
+      "Мөнххайрхан уул"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/M%C3%B6nkhkhairkhan_Mountain",
+      "source_id": "Mönkhkhairkhan_Mountain",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "High mountain in the Mongolian Altai.",
+      "mn": "Монгол Алтайн нурууны өндөр уул."
+    },
+    "region": "west",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_naiman_nuur",
+    "name": {
+      "mn": "Хүйсийн найман нуур",
+      "en": "Naiman Nuur"
+    },
+    "aimag": "Övörkhangai",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        101.8103,
+        46.5589
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Найман нуур",
+      "Khuisiin Naiman Nuur",
+      "Eight Lakes",
+      "Naiman Nuur",
+      "Хүйсийн найман нуур"
+    ],
+    "coordinate_source": {
+      "url": "https://mrt.gov.mn/up/news/BodlogoTululvlult/%D0%A5%D0%B0%D0%B2%D1%81%D1%80%D0%B0%D0%BB%D1%828.pdf",
+      "source_id": "Huisiin naiman nuur, p18",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Mountain lake group in the Khangai region.",
+      "mn": "Хангайн уулсын бүлэг нуур."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_national_museum",
+    "name": {
+      "mn": "Монголын үндэсний музей",
+      "en": "National Museum of Mongolia"
+    },
+    "aimag": "Ulaanbaatar",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        106.9154,
+        47.9208
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "National Museum",
+      "Үндэсний түүхийн музей",
+      "National Museum of Mongolia",
+      "Монголын үндэсний музей"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/National_Museum_of_Mongolia",
+      "source_id": "National_Museum_of_Mongolia",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Museum of Mongolian history and culture.",
+      "mn": "Монголын түүх, соёлын музей."
+    },
+    "region": "hub",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_nemegt",
+    "name": {
+      "mn": "Нэмэгтийн хотгор",
+      "en": "Nemegt Basin"
+    },
+    "aimag": "Ömnögovi",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        101,
+        43.5
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Nemegt",
+      "Нэмэгт",
+      "Nemegt Basin",
+      "Нэмэгтийн хотгор"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Nemegt_Basin",
+      "source_id": "Nemegt_Basin",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Remote basin known for dinosaur fossils.",
+      "mn": "Үлэг гүрвэлийн олдворт алслагдсан хотгор."
+    },
+    "region": "south",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_numrug",
+    "name": {
+      "mn": "Нөмрөгийн дархан цаазат газар",
+      "en": "Nömrög National Park"
+    },
+    "aimag": "Dornod",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        119.5,
+        47.0
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Numrug",
+      "Нөмрөг",
+      "Nömrög National Park",
+      "Нөмрөгийн дархан цаазат газар"
+    ],
+    "coordinate_source": {
+      "url": "https://portals.iucn.org/library/sites/library/files/documents/PAPS-011.pdf",
+      "source_id": "Numrug, p98",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Protected forest and steppe in the far east of Mongolia.",
+      "mn": "Монголын зүүн захын хамгаалалттай ойт хээрийн нутаг."
+    },
+    "region": "east",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_ongi",
+    "name": {
+      "mn": "Онгийн хийд",
+      "en": "Ongi Monastery"
+    },
+    "aimag": "Dundgovi",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        104.004278,
+        45.3398083
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Ongiin Khiid",
+      "Ongi",
+      "Онги хийд",
+      "Ongi Monastery",
+      "Онгийн хийд"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Ongi_Monastery",
+      "source_id": "Ongi_Monastery",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Monastery ruins beside the Ongi River.",
+      "mn": "Онги голын эрэг дэх хийдийн туурь."
+    },
+    "region": "south",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_onon_balj",
+    "name": {
+      "mn": "Онон-Балжийн байгалийн цогцолборт газар",
+      "en": "Onon-Balj National Park"
+    },
+    "aimag": "Khentii",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        111.1,
+        48.98
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Onon Balj",
+      "Онон Балж",
+      "Onon-Balj National Park",
+      "Онон-Балжийн байгалийн цогцолборт газар"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Onon-Balj_National_Park",
+      "source_id": "Onon-Balj_National_Park",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "National park around the Onon and Balj rivers.",
+      "mn": "Онон, Балж голын савын байгалийн цогцолборт газар."
+    },
+    "region": "east",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_orkhon_valley",
+    "name": {
+      "mn": "Орхоны хөндий",
+      "en": "Orkhon Valley"
+    },
+    "aimag": "Arkhangai",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        102.83139,
+        47.55667
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Orkhon Valley",
+      "Орхоны хөндий"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Orkhon_Valley",
+      "source_id": "Orkhon_Valley",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Cultural landscape along the Orkhon River.",
+      "mn": "Орхон голын дагуух соёлын өвт хөндий."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_orkhon_waterfall",
+    "name": {
+      "mn": "Улаан цутгалан",
+      "en": "Orkhon waterfall"
+    },
+    "aimag": "Övörkhangai",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        101.96025,
+        46.78725
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Orkhon waterfall",
+      "Орхоны хүрхрээ",
+      "Ulaan Tsutgalan",
+      "Улаан цутгалан"
+    ],
+    "coordinate_source": {
+      "url": "https://www.wikidata.org/wiki/Q4470791",
+      "source_id": "Q4470791",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Waterfall in the Orkhon Valley, also called Ulaan Tsutgalan.",
+      "mn": "Орхоны хөндийн Улаан цутгалан хэмээх хүрхрээ."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_orog",
+    "name": {
+      "mn": "Орог нуур",
+      "en": "Orog Lake"
+    },
+    "aimag": "Bayankhongor",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        100.70472,
+        45.055
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Orog Nuur",
+      "Orog Lake",
+      "Орог нуур"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Orog_Lake",
+      "source_id": "Orog_Lake",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Lake in Bayankhongor's Valley of Lakes.",
+      "mn": "Баянхонгорын Нууруудын хөндийн нуур."
+    },
+    "region": "south",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_otgontenger",
+    "name": {
+      "mn": "Отгонтэнгэр",
+      "en": "Otgontenger"
+    },
+    "aimag": "Zavkhan",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        97.5525,
+        47.60833
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Отгонтэнгэр хайрхан",
+      "Otgontenger Mountain",
+      "Otgontenger",
+      "Отгонтэнгэр"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Otgontenger",
+      "source_id": "Otgontenger",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Sacred mountain in Zavkhan.",
+      "mn": "Завхан аймгийн тахилгат уул."
+    },
+    "region": "west",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_potanin",
+    "name": {
+      "mn": "Потанины мөсөн гол",
+      "en": "Potanin Glacier"
+    },
+    "aimag": "Bayan-Ölgii",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        87.92,
+        49.14
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Potanin",
+      "Potanin Glacier",
+      "Потанины мөсөн гол"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Potanin_Glacier",
+      "source_id": "Potanin_Glacier",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Glacier in the Altai Tavan Bogd mountains.",
+      "mn": "Алтай Таван Богдын мөсөн гол."
+    },
+    "region": "west",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_renchinlkhumbe",
+    "name": {
+      "mn": "Рэнчинлхүмбэ",
+      "en": "Renchinlkhümbe"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "soum_center",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        99.67083,
+        51.10861
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Renchinlkhumbe",
+      "Renchinlkhümbe",
+      "Рэнчинлхүмбэ"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Renchinlkh%C3%BCmbe",
+      "source_id": "Renchinlkhümbe",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Settlement in the Darkhad Valley.",
+      "mn": "Дархадын хотгор дахь суурин."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_saikhany_khutul",
+    "name": {
+      "mn": "Сайханы хөтөл",
+      "en": "Saikhany Khutul"
+    },
+    "aimag": "Selenge",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        106.15414,
+        50.30861
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Saikhanii Khutul",
+      "Saikhany Khutul",
+      "Сайханы хөтөл"
+    ],
+    "coordinate_source": {
+      "url": "https://mapcarta.com/N4896343922",
+      "source_id": "OSM node 4896343922",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Viewpoint above the Selenge river landscape.",
+      "mn": "Сэлэнгэ мөрний нутгийг харах үзэмжит хөтөл."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_sangiin_dalai",
+    "name": {
+      "mn": "Сангийн далай нуур",
+      "en": "Sangiin Dalai Lake"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        99,
+        49.25
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Sangiin Dalai",
+      "Sangiin Dalai Lake",
+      "Сангийн далай нуур"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Sangiin_Dalai_Lake",
+      "source_id": "Sangiin_Dalai_Lake",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Lake in southern Khuvsgul.",
+      "mn": "Хөвсгөлийн өмнөд нутгийн нуур."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_senjit",
+    "name": {
+      "mn": "Сэнжит хад",
+      "en": "Senjit Khad"
+    },
+    "aimag": "Zavkhan",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        96.14864,
+        48.21555
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Senjit Rock",
+      "Senjit Khad",
+      "Сэнжит хад"
+    ],
+    "coordinate_source": {
+      "url": "https://mapcarta.com/W1446949824",
+      "source_id": "OSM way 1446949824",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Natural rock arch in Zavkhan.",
+      "mn": "Завхан дахь байгалийн чулуун нуман тогтоц."
+    },
+    "region": "west",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_shankh",
+    "name": {
+      "mn": "Шанх хийд",
+      "en": "Shankh Monastery"
+    },
+    "aimag": "Övörkhangai",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        102.954,
+        47.0514
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Шанхын хийд",
+      "Shankh",
+      "Shankh Monastery",
+      "Шанх хийд"
+    ],
+    "coordinate_source": {
+      "url": "https://www.wikidata.org/wiki/Q1630910",
+      "source_id": "Q1630910",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Historic Buddhist monastery near Kharkhorin.",
+      "mn": "Хархорины ойролцоох буддын түүхэн хийд."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_sharga",
+    "name": {
+      "mn": "Шаргын говь",
+      "en": "Sharga Nature Reserve"
+    },
+    "aimag": "Govi-Altai",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        94.5,
+        46
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Sharga",
+      "Sharga Nature Reserve",
+      "Шаргын говь"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Sharga_Nature_Reserve",
+      "source_id": "Sharga_Nature_Reserve",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Protected desert-steppe landscape in Govi-Altai.",
+      "mn": "Говь-Алтайн хамгаалалттай цөлөрхөг хээр."
+    },
+    "region": "west",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_shargaljuut",
+    "name": {
+      "mn": "Шаргалжуутын халуун рашаан",
+      "en": "Shargaljuut Hot Springs"
+    },
+    "aimag": "Bayankhongor",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        101.2260278,
+        46.3324167
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Shargaljuut hot springs",
+      "Шаргалжуутын рашаан",
+      "Shargaljuut",
+      "Шаргалжуут"
+    ],
+    "coordinate_source": {
+      "url": "https://pangea.stanford.edu/ERE/pdf/IGAstandard/NZGW/2003/Bignall.pdf",
+      "source_id": "Shargaljuut spring N1, Table 1",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Hot springs in Bayankhongor.",
+      "mn": "Баянхонгорын халуун рашаан."
+    },
+    "region": "south",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_sukhbaatar_square",
+    "name": {
+      "mn": "Сүхбаатарын талбай",
+      "en": "Sükhbaatar Square"
+    },
+    "aimag": "Ulaanbaatar",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        106.9175,
+        47.91889
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Төв талбай",
+      "Sukhbaatar Square",
+      "Chinggis Square",
+      "Sükhbaatar Square",
+      "Сүхбаатарын талбай"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/S%C3%BCkhbaatar_Square",
+      "source_id": "Sükhbaatar_Square",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Central square of Ulaanbaatar.",
+      "mn": "Улаанбаатар хотын төв талбай."
+    },
+    "region": "hub",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_suvaraga_khairkhan",
+    "name": {
+      "mn": "Суварга хайрхан",
+      "en": "Suvaraga Khairkhan"
+    },
+    "aimag": "Arkhangai",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        101.36583,
+        47.05611
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Suvraga Khairkhan",
+      "Suvaraga Khairkhan",
+      "Суварга хайрхан"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Suvraga_Khairkhan",
+      "source_id": "Suvraga_Khairkhan",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Sacred mountain in Arkhangai.",
+      "mn": "Архангайн тахилгат уул."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_taikhar",
+    "name": {
+      "mn": "Тайхар чулуу",
+      "en": "Taikhar Rock"
+    },
+    "aimag": "Arkhangai",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        101.283,
+        47.6
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Taikhar Chuluu",
+      "Тайхар",
+      "Taikhar Rock",
+      "Тайхар чулуу"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Taikhar_Rock",
+      "source_id": "Taikhar_Rock",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Prominent isolated rock near Tsetserleg.",
+      "mn": "Цэцэрлэгийн ойролцоох дангаараа сүндэрлэх чулуу."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_taliin_agui",
+    "name": {
+      "mn": "Талын агуй",
+      "en": "Taliin Agui"
+    },
+    "aimag": "Sükhbaatar",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        114.5005722,
+        45.5902778
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Talyn Agui",
+      "Taliin Agui",
+      "Талын агуй"
+    ],
+    "coordinate_source": {
+      "url": "https://mongoliancave.com/CaveEng/1",
+      "source_id": "Taliin cave",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Volcanic cave in the Dariganga region.",
+      "mn": "Дарьгангын галт уулын гаралтай агуй."
+    },
+    "region": "east",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_telmen",
+    "name": {
+      "mn": "Тэлмэн нуур",
+      "en": "Telmen Lake"
+    },
+    "aimag": "Zavkhan",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        97.317,
+        48.833
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Telmen Nuur",
+      "Telmen Lake",
+      "Тэлмэн нуур"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Telmen_Lake",
+      "source_id": "Telmen_Lake",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Lake in Zavkhan.",
+      "mn": "Завхан аймгийн нуур."
+    },
+    "region": "west",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_terelj",
+    "name": {
+      "mn": "Горхи-Тэрэлж",
+      "en": "Gorkhi-Terelj National Park"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        107.576006,
+        48.150204
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Тэрэлж",
+      "Terelj",
+      "Gorkhi Terelj",
+      "Gorkhi-Terelj National Park",
+      "Горхи-Тэрэлж"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Gorkhi-Terelj_National_Park",
+      "source_id": "Gorkhi-Terelj_National_Park",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "National park with mountain valleys and rock formations.",
+      "mn": "Уулын хөндий, хад чулуун тогтоцтой байгалийн цогцолборт газар."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_tolbo",
+    "name": {
+      "mn": "Толбо нуур",
+      "en": "Tolbo Lake"
+    },
+    "aimag": "Bayan-Ölgii",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        90.05,
+        48.56
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Tolbo Nuur",
+      "Tolbo Lake",
+      "Толбо нуур"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Tolbo_Lake",
+      "source_id": "Tolbo_Lake",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Mountain lake near Olgii.",
+      "mn": "Өлгий хотын ойролцоох уулын нуур."
+    },
+    "region": "west",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_tsagaan_agui",
+    "name": {
+      "mn": "Цагаан агуй",
+      "en": "Tsagaan Agui"
+    },
+    "aimag": "Bayankhongor",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        101.170389,
+        44.712028
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Tsagaan Cave",
+      "Tsagaan Agui",
+      "Цагаан агуй"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Tsagaan_Agui",
+      "source_id": "Tsagaan_Agui",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Cave and archaeological site in Bayankhongor.",
+      "mn": "Баянхонгор дахь агуй, археологийн дурсгалт газар."
+    },
+    "region": "south",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_tsagaan_nuur",
+    "name": {
+      "mn": "Цагааннуур",
+      "en": "Tsagaannuur, Khövsgöl"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "soum_center",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        99.35333,
+        51.35444
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Tsagaan Nuur",
+      "Цагааннуур сум",
+      "Tsagaannuur, Khövsgöl",
+      "Цагааннуур"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Tsagaannuur%2C_Kh%C3%B6vsg%C3%B6l",
+      "source_id": "Tsagaannuur,_Khövsgöl",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Settlement in northern Khuvsgul near the taiga.",
+      "mn": "Хөвсгөлийн хойд тайгын ойролцоох суурин."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_tsambagarav",
+    "name": {
+      "mn": "Цамбагарав",
+      "en": "Tsambagarav"
+    },
+    "aimag": "Bayan-Ölgii",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        90.725,
+        48.68167
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Tsambagarav Mountain",
+      "Tsambagarav",
+      "Цамбагарав"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Tsambagarav",
+      "source_id": "Tsambagarav",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "High mountain in the western Altai.",
+      "mn": "Баруун Алтайн өндөр уул."
+    },
+    "region": "west",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_tsenkher_springs",
+    "name": {
+      "mn": "Цэнхэрийн халуун рашаан",
+      "en": "Tsenkher hot spring"
+    },
+    "aimag": "Arkhangai",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        101.6485,
+        47.319917
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Tsenkher Hot Springs",
+      "Цэнхэрийн рашаан",
+      "Tsenkher hot spring",
+      "Цэнхэрийн халуун рашаан"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Tsenkher_Hot_Spring",
+      "source_id": "Tsenkher_Hot_Spring",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Hot springs near Tsetserleg in Arkhangai.",
+      "mn": "Архангайн Цэцэрлэг хотын ойролцоох халуун рашаан."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_tujiin_nars",
+    "name": {
+      "mn": "Тужийн нарс",
+      "en": "Tujiin Nars"
+    },
+    "aimag": "Selenge",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        106.4,
+        50.1
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Tuzhiin Nars",
+      "Tujiin Nars",
+      "Тужийн нарс"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/List_of_national_parks_of_Mongolia",
+      "source_id": "Tujiin Nars",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Protected pine forest in Selenge.",
+      "mn": "Сэлэнгийн хамгаалалттай нарсан ой."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_turtle_rock",
+    "name": {
+      "mn": "Мэлхий хад",
+      "en": "Turtle Rock Mongolia"
+    },
+    "aimag": "Ulaanbaatar",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        107.4229,
+        47.9074
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Melkhii Khad",
+      "Turtle Rock",
+      "Turtle Rock Mongolia",
+      "Мэлхий хад"
+    ],
+    "coordinate_source": {
+      "url": "https://mapcarta.com/N280751202",
+      "source_id": "OSM node 280751202",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Turtle-shaped rock formation in the Terelj area.",
+      "mn": "Тэрэлжийн мэлхий хэлбэртэй хад."
+    },
+    "region": "hub",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_tuvkhun",
+    "name": {
+      "mn": "Төвхөн хийд",
+      "en": "Tövkhön Monastery"
+    },
+    "aimag": "Övörkhangai",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        102.25499,
+        47.01221
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Tuvkhun",
+      "Tuvkhon",
+      "Төвхөн",
+      "Tövkhön Monastery",
+      "Төвхөн хийд"
+    ],
+    "coordinate_source": {
+      "url": "https://www.wikidata.org/wiki/Q7857142",
+      "source_id": "Q7857142",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Historic monastery in the Khangai mountains.",
+      "mn": "Хангайн уулс дахь түүхэн хийд."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_ugii_nuur",
+    "name": {
+      "mn": "Өгий нуур",
+      "en": "Ögii Lake"
+    },
+    "aimag": "Arkhangai",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        102.7672222,
+        47.7608333
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Ugii Nuur",
+      "Ogii Lake",
+      "Өгий",
+      "Ögii Lake",
+      "Өгий нуур"
+    ],
+    "coordinate_source": {
+      "url": "https://www.wikidata.org/wiki/Q2000570",
+      "source_id": "Q2000570",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Freshwater lake in Arkhangai.",
+      "mn": "Архангайн цэнгэг уст нуур."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_ulaagchin_khar",
+    "name": {
+      "mn": "Улаагчны Хар нуур",
+      "en": "Khar Lake (Zavkhan)"
+    },
+    "aimag": "Zavkhan",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        96.1,
+        48.35
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Ulaagchiin Khar Nuur",
+      "Хар нуур Завхан",
+      "Khar Lake (Zavkhan)",
+      "Улаагчны Хар нуур"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Khar_Lake_%28Zavkhan%29",
+      "source_id": "Khar_Lake_(Zavkhan)",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Lake surrounded by dunes and mountains in Zavkhan.",
+      "mn": "Завханы элс, уулсаар хүрээлэгдсэн нуур."
+    },
+    "region": "west",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_uureg",
+    "name": {
+      "mn": "Үүрэг нуур",
+      "en": "Üüreg Lake"
+    },
+    "aimag": "Uvs",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        91,
+        50.167
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Uureg Lake",
+      "Uureg Nuur",
+      "Üüreg Lake",
+      "Үүрэг нуур"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/%C3%9C%C3%BCreg_Lake",
+      "source_id": "Üüreg_Lake",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Mountain lake in Uvs.",
+      "mn": "Увс аймгийн уулын нуур."
+    },
+    "region": "west",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_uushgiin_uvur",
+    "name": {
+      "mn": "Уушгийн өвөр",
+      "en": "Uushgiin Övör"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        99.9275,
+        49.655139
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Uushgiin Uvur",
+      "Уушигийн өвөр",
+      "Uushgiin Övör",
+      "Уушгийн өвөр"
+    ],
+    "coordinate_source": {
+      "url": "https://commons.wikimedia.org/wiki/File:Deer_stones_at_Uushgiin_Uvur_01.jpg",
+      "source_id": "Deer stones at Uushgiin Uvur 01 camera location",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "representative_point"
+    },
+    "note": {
+      "en": "Deer-stone archaeological site near Murun.",
+      "mn": "Мөрөнгийн ойролцоох буган чулуун дурсгалт газар."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_zaisan",
+    "name": {
+      "mn": "Зайсан толгой",
+      "en": "Zaisan Memorial"
+    },
+    "aimag": "Ulaanbaatar",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        106.91583,
+        47.88417
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Зайсан",
+      "Zaisan",
+      "Zaisan Memorial",
+      "Зайсан толгой"
+    ],
+    "coordinate_source": {
+      "url": "https://en.wikipedia.org/wiki/Zaisan_Memorial",
+      "source_id": "Zaisan_Memorial",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Hilltop memorial overlooking Ulaanbaatar.",
+      "mn": "Улаанбаатарыг тольдох толгойн оройн дурсгал."
+    },
+    "region": "hub",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_zanabazar_museum",
+    "name": {
+      "mn": "Занабазарын нэрэмжит дүрслэх урлагийн музей",
+      "en": "Zanabazar Museum of Fine Arts"
+    },
+    "aimag": "Ulaanbaatar",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        106.9096944,
+        47.9201944
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Zanabazar Museum",
+      "Занабазарын музей",
+      "Zanabazar Museum of Fine Arts",
+      "Занабазарын нэрэмжит дүрслэх урлагийн музей"
+    ],
+    "coordinate_source": {
+      "url": "https://www.wikidata.org/wiki/Q2370206",
+      "source_id": "Q2370206",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Fine arts museum in Ulaanbaatar.",
+      "mn": "Улаанбаатарын дүрслэх урлагийн музей."
+    },
+    "region": "hub",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
+  },
+  {
+    "_id": "place_zorgol",
+    "name": {
+      "mn": "Зоргол хайрхан",
+      "en": "Zorgol Khairkhan"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        105.87832,
+        46.92332
+      ]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Zorgol Khairkhan Mountain",
+      "Zorgol Khairkhan",
+      "Зоргол хайрхан"
+    ],
+    "coordinate_source": {
+      "url": "https://mapcarta.com/N2381057453",
+      "source_id": "OSM node 2381057453",
+      "retrieved_on": "2026-09-30",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "en": "Rocky sacred mountain in Tov.",
+      "mn": "Төв аймгийн хадат тахилгат уул."
+    },
+    "region": "north",
+    "is_mock": false,
+    "images": [],
+    "cover_image_url": null
   }
 ]

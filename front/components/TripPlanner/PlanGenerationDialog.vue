@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { PlanSearchStepStatus, PlanSearchStepView } from '~/types/trip-planner'
 
-const { open, title, hint, closeLabel, cancelLabel, dialogLabel, steps } = defineProps<{
+const { open, title, hint, closeLabel, cancelLabel, dialogLabel, steps, errorMessage, retryLabel } = defineProps<{
   open: boolean
   title: string
   hint: string
@@ -9,10 +9,13 @@ const { open, title, hint, closeLabel, cancelLabel, dialogLabel, steps } = defin
   cancelLabel: string
   dialogLabel: string
   steps: PlanSearchStepView[]
+  errorMessage: string | null
+  retryLabel: string
 }>()
 
 const emit = defineEmits<{
   close: []
+  retry: []
 }>()
 
 function stepIcon(status: PlanSearchStepStatus): string {
@@ -69,7 +72,12 @@ onUnmounted(() => {
         <p class="mt-1 text-xs text-slate-400">{{ hint }}</p>
       </div>
 
-      <ul class="mt-6 space-y-3 text-sm">
+      <p v-if="errorMessage" class="mt-6 rounded-lg bg-rose-500/10 p-3 text-center text-sm text-rose-300" role="alert">
+        <i class="pi pi-exclamation-triangle mr-1" aria-hidden="true" />
+        {{ errorMessage }}
+      </p>
+
+      <ul v-else class="mt-6 space-y-3 text-sm">
         <li v-for="step in steps" :key="step.id" class="flex items-center gap-3" :class="stepClass(step.status)">
           <i :class="stepIcon(step.status)" class="shrink-0 text-lg" aria-hidden="true" />
           {{ step.label }}
@@ -77,8 +85,16 @@ onUnmounted(() => {
       </ul>
 
       <button
+        v-if="errorMessage"
         type="button"
-        class="mt-6 w-full rounded-lg border border-slate-700 py-2.5 text-sm text-slate-300 hover:bg-slate-800"
+        class="generate-button mt-6 w-full rounded-lg py-2.5 text-sm font-semibold text-slate-900"
+        @click="emit('retry')"
+      >
+        {{ retryLabel }}
+      </button>
+      <button
+        type="button"
+        class="mt-3 w-full rounded-lg border border-slate-700 py-2.5 text-sm text-slate-300 hover:bg-slate-800"
         @click="emit('close')"
       >
         {{ cancelLabel }}

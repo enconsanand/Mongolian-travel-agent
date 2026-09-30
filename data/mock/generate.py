@@ -2,7 +2,8 @@
 """Generates Mongolia travel mock data (one JSON array per MongoDB collection).
 
 Run:  python3 generate.py   -> writes *.json next to this file.
-All data is MOCK: names, phones, prices and event dates are plausible, not real.
+Commerce data is MOCK: names, phones, prices and event dates are plausible, not real.
+Curated destinations in ../landmarks/catalog.json are real, with coordinate provenance.
 Coordinates are GeoJSON order: [lng, lat].
 """
 import json, math, random, os
@@ -808,6 +809,22 @@ for p in places:  # sanity check: every place's point falls in its region's poly
     want = p["region"] if p["region"] != "hub" else "north"
     got = [r["_id"] for r in regions if _in_poly(x, y, r["boundary"]["coordinates"][0])]
     assert got == [want], (p["_id"], want, got)
+
+# ---------------------------------------------------------------- sourced landmarks
+# Load after the legacy approximate-region polygon check: those display polygons are not
+# administrative boundaries. Curated landmarks use their reviewed aimag, not those polygons.
+# Also load after random mock inventory generation, keeping all existing commerce data stable.
+LANDMARKS = os.path.join(OUT, "..", "landmarks")
+with open(os.path.join(LANDMARKS, "catalog.json"), encoding="utf-8") as f:
+    for landmark in json.load(f):
+        assert landmark["_id"] not in PLACE, f"Duplicate place: {landmark['_id']}"
+        landmark["region"] = AIMAG_REGION[landmark["aimag"]]
+        landmark["is_mock"] = False
+        places.append(landmark)
+        PLACE[landmark["_id"]] = landmark
+with open(os.path.join(LANDMARKS, "aliases.json"), encoding="utf-8") as f:
+    for pid, aliases in json.load(f).items():
+        PLACE[pid]["aliases"] = aliases
 
 # ---------------------------------------------------------------- images
 # Freely licensed photos from Wikimedia Commons, each with author, license and source link.

@@ -105,6 +105,9 @@ test-integration: ## Payment tests on the compose MongoDB replica set (transacti
 merchant-key: ## Print a new EC P-256 merchant signing key for MERCHANT_KEY_PEM
 	docker compose -f docker-compose.yml --env-file ./secret/.env run --rm back uv run python -c "from cryptography.hazmat.primitives import serialization as s; from cryptography.hazmat.primitives.asymmetric import ec; print(ec.generate_private_key(ec.SECP256R1()).private_bytes(s.Encoding.PEM, s.PrivateFormat.PKCS8, s.NoEncryption()).decode())"
 
+llm-smoke: ## Real calls through the configured LLM routes (tool call, JSON, Mongolian reply); uses Workers AI quota
+	docker compose -f docker-compose.yml --env-file ./secret/.env run --rm --no-deps back bash -c "export PYTHONPATH=. && uv run python -m app.llm.smoke"
+
 install: down clear build seed down up ## Full clean installation and startup
 
 

@@ -21,6 +21,7 @@ const {
   preferenceCards,
   voiceStatusLabel,
   planSearchSteps,
+  planError,
   setLocale,
   selectPresetOption,
   setCustomPreference,
@@ -71,6 +72,7 @@ useHead(() => ({
             :start-label="messages.periodStartLabel"
             :end-label="messages.periodEndLabel"
             :invalid-label="messages.periodInvalid"
+            :too-long-label="messages.periodTooLong"
             @set-start="setTravelPeriod('startDate', $event)"
             @set-end="setTravelPeriod('endDate', $event)"
           />
@@ -112,7 +114,10 @@ useHead(() => ({
       :cancel-label="messages.cancel"
       :dialog-label="messages.dialogLabel"
       :steps="planSearchSteps"
+      :error-message="planError ? messages.errors[planError] : null"
+      :retry-label="messages.retry"
       @close="closePlanDialog"
+      @retry="openPlanDialog"
     />
   </div>
 </template>

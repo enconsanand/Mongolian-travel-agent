@@ -5,8 +5,8 @@ import type {
   TripPlannerMessages,
 } from '~/types/trip-planner'
 
-export const PLAN_SEARCH_CAMPS_READY_MS = 2500
-export const PLAN_SEARCH_EVENTS_READY_MS = 5000
+/** When each planning step is shown as started while the request runs (the server does them in this order) */
+export const PLAN_STEP_STARTS_MS = { places: 2500, stays: 5000, writing: 8000 } as const
 
 export const VOICE_METER_DELAYS_MS = [0, 150, 300, 450, 200] as const
 
@@ -28,28 +28,40 @@ export const TRIP_PLANNER_MESSAGES: Record<AppLocale, TripPlannerMessages> = {
     periodStartLabel: 'Эхлэх өдөр',
     periodEndLabel: 'Дуусах өдөр',
     periodInvalid: 'Дуусах өдөр эхлэх өдрөөс хойш байх ёстой.',
+    periodTooLong: 'Аялал хамгийн ихдээ 30 хоног байна.',
+    groupTooLarge: 'Хүний тоо хамгийн ихдээ 60 байна.',
     customValue: 'Өөр утга',
     generate: 'Аяллын хөтөлбөр үүсгэх',
     close: 'Хаах',
     cancel: 'Хаах',
     buildingTitle: 'Аяллын хөтөлбөр бэлдэж байна...',
-    buildingHint: 'Ихэвчлэн 10–20 секунд болно',
+    buildingHint: 'Ихэвчлэн 10–30 секунд болно',
     dialogLabel: 'Төлөвлөгөө үүсгэх явц',
+    retry: 'Дахин оролдох',
+    errors: {
+      planner_unavailable: 'AI төлөвлөгч түр ажиллахгүй байна. Хэсэг хүлээгээд дахин оролдоно уу.',
+      error: 'Хөтөлбөр үүсгэж чадсангүй. Дахин оролдоно уу.',
+    },
     steps: {
-      speech: {
-        pending: 'Anir STT: яриа ба текстийг задлах',
-        active: 'Anir STT: яриа ба текстийг задалж байна...',
-        complete: 'Anir STT: яриа ба текстийг задаллаа',
+      intent: {
+        pending: 'Workers AI: хүсэлтийг ойлгох',
+        active: 'Workers AI: хүсэлтийг ойлгож байна...',
+        complete: 'Workers AI: хүсэлтийг ойлголоо',
       },
-      camps: {
-        pending: 'MongoDB: гэр баазын сул өрөө хайх',
-        active: 'MongoDB: гэр баазын сул өрөө хайж байна...',
-        complete: 'MongoDB: гэр баазын сул өрөө олдлоо',
+      places: {
+        pending: 'Очих газруудыг тодорхойлох',
+        active: 'Очих газруудыг тодорхойлж, маршрут гаргаж байна...',
+        complete: 'Маршрут бэлэн',
       },
-      events: {
-        pending: 'Cultural events: Наадмын арга хэмжээ хайх...',
-        active: 'Cultural events: Наадмын арга хэмжээ хайж байна...',
-        complete: 'Cultural events: Наадмын арга хэмжээ олдлоо',
+      stays: {
+        pending: 'Гэр бааз, буудлын сул өрөө, арга хэмжээ хайх',
+        active: 'Гэр бааз, буудлын сул өрөө, арга хэмжээ хайж байна...',
+        complete: 'Буудал, арга хэмжээ олдлоо',
+      },
+      writing: {
+        pending: 'Хөтөлбөрийн тайлбар бичих',
+        active: 'Хөтөлбөрийн тайлбар бичиж байна...',
+        complete: 'Хөтөлбөр бэлэн',
       },
     },
   },
@@ -70,28 +82,40 @@ export const TRIP_PLANNER_MESSAGES: Record<AppLocale, TripPlannerMessages> = {
     periodStartLabel: 'Start date',
     periodEndLabel: 'End date',
     periodInvalid: 'The end date must be on or after the start date.',
+    periodTooLong: 'A trip can be at most 30 days.',
+    groupTooLarge: 'A group can be at most 60 people.',
     customValue: 'Custom',
     generate: 'Generate My Itinerary',
     close: 'Close',
     cancel: 'Cancel',
     buildingTitle: 'Creating Your Itinerary...',
-    buildingHint: 'This usually takes 10–20 seconds',
+    buildingHint: 'This usually takes 10–30 seconds',
     dialogLabel: 'Itinerary creation progress',
+    retry: 'Try again',
+    errors: {
+      planner_unavailable: 'The AI planner is unavailable right now. Please try again in a moment.',
+      error: 'Could not create the itinerary. Please try again.',
+    },
     steps: {
-      speech: {
-        pending: 'Parsing your travel request (Anir STT)...',
-        active: 'Parsing your travel request (Anir STT)...',
-        complete: 'Travel request parsed (Anir STT)',
+      intent: {
+        pending: 'Workers AI: understand your request',
+        active: 'Workers AI: understanding your request...',
+        complete: 'Workers AI: request understood',
       },
-      camps: {
-        pending: 'Searching available Ger Camps (MongoDB)...',
-        active: 'Searching available Ger Camps (MongoDB)...',
-        complete: 'Available ger camps found (MongoDB)',
+      places: {
+        pending: 'Find the places and the route',
+        active: 'Finding the places and the route...',
+        complete: 'Route ready',
       },
-      events: {
-        pending: 'Matching local cultural events & Naadam...',
-        active: 'Matching local cultural events & Naadam...',
-        complete: 'Local cultural events & Naadam matched',
+      stays: {
+        pending: 'Search free ger camps, hotels and events',
+        active: 'Searching free ger camps, hotels and events...',
+        complete: 'Stays and events found',
+      },
+      writing: {
+        pending: 'Write the itinerary',
+        active: 'Writing the itinerary...',
+        complete: 'Itinerary ready',
       },
     },
   },
@@ -133,7 +157,7 @@ export const PREFERENCE_GROUPS: PreferenceGroupDefinition[] = [
     ],
     customField: {
       placeholder: '4',
-      unit: { mn: 'сая₮', en: 'MNT' },
+      unit: { mn: 'сая₮', en: 'M MNT' },
       ariaLabel: { mn: 'Нийт төсвийг өөрөө оруулах', en: 'Enter a custom total budget' },
     },
   },

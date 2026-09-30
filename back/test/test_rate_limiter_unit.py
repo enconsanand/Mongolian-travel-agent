@@ -174,3 +174,33 @@ def test_build_rate_limiter_passes_fail_open_flag_to_redis_backend(monkeypatch):
     limiter = build_rate_limiter(fail_open=False)
     assert isinstance(limiter, RedisRateLimiter)
     assert limiter._fail_open is False
+
+
+def test_planner_requests_have_their_own_tight_limit(monkeypatch):
+    # Each proposal or revision costs several model calls on a metered allocation
+    from fastapi import FastAPI
+    from fastapi.testclient import TestClient
+
+    from app.core.config import settings
+    from app.middlewares import rate_limit
+
+    monkeypatch.setattr(rate_limit, "build_rate_limiter", rate_limit.InMemoryRateLimiter)
+    app = FastAPI()
+    app.add_middleware(rate_limit.RateLimitMiddleware)
+
+    @app.post("/api/v1/planner/proposals")
+    @app.post("/api/v1/planner/proposals/{pid}/revise")
+    def plan(pid: str = "") -> dict:
+        return {}
+
+    @app.get("/api/v1/planner/proposals/{pid}")
+    def read(pid: str) -> dict:
+        return {}
+
+    client = TestClient(app)
+    limit = settings.RATE_LIMIT_PLANNER_REQUESTS_PER_MINUTE
+    assert limit < settings.RATE_LIMIT_REQUESTS_PER_MINUTE
+    codes = [client.post("/api/v1/planner/proposals").status_code for _ in range(limit)]
+    assert codes == [200] * limit
+    assert client.post("/api/v1/planner/proposals/p/revise").status_code == 429
+    assert client.get("/api/v1/planner/proposals/p").status_code == 200  # reading a plan costs no model call

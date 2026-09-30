@@ -223,6 +223,7 @@ class RateLimitMiddleware(BaseHTTPMiddleware):
         self.limiter: RateLimiter = build_rate_limiter()
         self.default_limit = settings.RATE_LIMIT_REQUESTS_PER_MINUTE
         self.auth_limit = settings.RATE_LIMIT_AUTH_REQUESTS_PER_MINUTE
+        self.planner_limit = settings.RATE_LIMIT_PLANNER_REQUESTS_PER_MINUTE
         self.window = 60  # 1 minute window in seconds
 
     async def dispatch(self, request: Request, call_next):
@@ -238,6 +239,9 @@ class RateLimitMiddleware(BaseHTTPMiddleware):
         if self._is_auth_endpoint(request.url.path):
             limit = self.auth_limit
             limit_type = "auth"
+        elif request.method == "POST" and "/planner/proposals" in request.url.path:
+            limit = self.planner_limit
+            limit_type = "planner"
         else:
             limit = self.default_limit
             limit_type = "general"

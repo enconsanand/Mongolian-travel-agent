@@ -89,6 +89,8 @@ INDEXES: list[tuple[str, list[tuple[str, int | str]], dict]] = [
     ("conversations", [("user_id", ASCENDING), ("updated_at", DESCENDING)], {}),
     ("agent_state", [("trip_id", ASCENDING)], {"unique": True}),
     ("user_memory", [("user_id", ASCENDING)], {}),
+    # Trip planner proposals live a day (app.modules.orchestrator.service)
+    ("plan_proposals", [("expires_at", ASCENDING)], {"expireAfterSeconds": 0}),
 ]
 
 

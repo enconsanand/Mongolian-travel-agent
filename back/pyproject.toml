@@ -70,6 +70,8 @@ source_modules = [
     "app.api",
 ]
 forbidden_modules = ["app.llm"]
+# The HTTP layer reaches the models only through the orchestrator (app.api -> orchestrator -> app.llm)
+allow_indirect_imports = true
 
 [[tool.importlinter.contracts]]
 name = "The LLM side never moves money: orchestrator must not use payment or AP2 directly"

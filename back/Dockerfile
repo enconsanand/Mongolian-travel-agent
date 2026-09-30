@@ -35,3 +35,4 @@ FROM base AS prod
 USER appuser
 COPY --chown=appuser:appgroup ./back ./
 COPY --chown=appuser:appgroup ./data/mock /data/mock
+COPY --chown=appuser:appgroup ./data/landmarks /data/landmarks
