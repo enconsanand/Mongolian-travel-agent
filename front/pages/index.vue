@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import HeroShowcase from '~/components/TripPlanner/HeroShowcase.vue'
 import ChatThread from '~/components/TripPlanner/ChatThread.vue'
+import HomePrograms from '~/components/TripPlanner/HomePrograms.vue'
 import PlannerHeader from '~/components/TripPlanner/PlannerHeader.vue'
 import TripRequestComposer from '~/components/TripPlanner/TripRequestComposer.vue'
 import { BRAND } from '~/constants/brand'
@@ -23,7 +24,12 @@ const {
   voiceStatusLabel,
   setLocale,
   toggleVoiceInput,
+  canGenerate,
+  pendingSlot,
+  dateDefaults,
   send,
+  pick,
+  generate,
   retry,
   reset,
 } = useTripPlanner()
@@ -40,6 +46,21 @@ const pauseSlides = ref(false)
 
 function showSlide(step: number) {
   slideIndex.value = (slideIndex.value + step + HERO_SLIDES.length) % HERO_SLIDES.length
+}
+
+const OR_PROGRAM: Record<AppLocale, string> = {
+  mn: 'эсвэл эвентээс эхлэх',
+  en: 'or start from an event',
+}
+
+/** A chosen program is written into the request field. The same line is not added twice. */
+function chooseProgram(line: string) {
+  const current = draft.value.trim()
+  if (!current.includes(line)) draft.value = current ? `${current} ${line}` : line
+  nextTick(() => {
+    document.getElementById('trip-composer')?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+    document.getElementById('trip-request')?.focus()
+  })
 }
 
 // Slides advance on their own unless the visitor is looking at one or prefers reduced motion
@@ -119,11 +140,18 @@ useHead(() => ({
               :locale="locale"
               :messages="messages"
               :typing="isAgentTyping"
+              :can-generate="canGenerate"
+              :pending-slot="pendingSlot"
+              :default-start="dateDefaults.start"
+              :default-end="dateDefaults.end"
               @retry="retry"
+              @generate="generate"
+              @pick="pick"
             />
           </div>
 
           <TripRequestComposer
+            id="trip-composer"
             v-model:trip-request="draft"
             class="rise-in"
             :class="hasStarted ? 'mt-3' : 'mt-8'"
@@ -171,7 +199,17 @@ useHead(() => ({
               class="h-20 w-24 shrink-0 object-cover"
               :style="{ objectPosition: slide.focus }"
             />
-            <p class="min-w-0 flex-1 truncate text-sm font-medium" aria-live="polite">{{ slide.title[locale] }}</p>
+            <div class="min-w-0 flex-1">
+              <p class="truncate text-sm font-medium" aria-live="polite">{{ slide.title[locale] }}</p>
+              <a
+                :href="slide.source"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block truncate text-xs text-ink-muted hover:text-ink"
+              >
+                {{ slide.author }} · {{ slide.license }}
+              </a>
+            </div>
             <button
               type="button"
               class="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-brand text-brand transition-colors hover:bg-brand-soft"
@@ -200,5 +238,14 @@ useHead(() => ({
         </div>
       </div>
     </section>
+
+    <div v-if="!hasStarted" class="mx-auto mt-4 max-w-6xl px-4 pb-16">
+      <div class="mb-8 flex items-center gap-4 text-sm text-ink-muted">
+        <span class="h-px flex-1 bg-line" />
+        {{ OR_PROGRAM[locale] }}
+        <span class="h-px flex-1 bg-line" />
+      </div>
+      <HomePrograms :locale="locale" :draft="draft" @choose="chooseProgram" />
+    </div>
   </div>
 </template>

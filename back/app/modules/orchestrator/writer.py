@@ -70,11 +70,18 @@ def write(
     stays: Mapping[str, str],
     events: Mapping[str, str],
     missing: Sequence[str] = (),
+    unfit: str = "",
 ) -> Writing:
-    """``places``/``stays``/``events``: id → name in the request's language; ``missing``: asked for, not found."""
+    """``places``/``stays``/``events``: id → name in the request's language; ``missing``: asked for, not found.
+
+    ``unfit`` is a fact the code already decided (the dates are too short for the drive). The model only
+    repeats it; it does not judge whether the trip is possible.
+    """
     facts = f"Traveller's request: {request.text}\n\nFacts:\n{_facts(days, places, stays, events)}"
     if missing:
         facts += "\n\nNot in the plan (not found, do not mention them as visited): " + ", ".join(missing)
+    if unfit:
+        facts += "\n\nThe dates do not fit. Say this in the summary, and do not describe the trip as possible: " + unfit
     messages = [Message.system(_SYSTEM[request.lang]), Message.user(facts)]
     try:
         writing = gateway.structured("writer", messages, Writing)

@@ -6,7 +6,7 @@ from datetime import date
 import pytest
 
 from app.llm import Completion, FakeProvider, LLMError, ModelGateway, RolePolicy, Route
-from app.modules.orchestrator.intent import extract_intent, place_chooser
+from app.modules.orchestrator.intent import extract_intent, place_chooser, read_slot
 from app.modules.orchestrator.types import PlanDay, PlanRequest, TripIntent
 from app.modules.orchestrator.writer import write
 
@@ -60,6 +60,19 @@ def test_intent_failure_is_raised_to_the_caller():
     gw, _ = gateway(LLMError("rate_limited", "quota"))
     with pytest.raises(LLMError):
         extract_intent(gw, REQUEST, [], TODAY)
+
+
+def test_a_free_text_reply_is_rewritten_into_a_phrase_the_form_reads():
+    gw, fake = gateway(reply({"understood": True, "normalized": "500 мянга"}))
+    read = read_slot(gw, "budget", "таван зуун мянга", TODAY)
+    assert read.understood is True
+    assert read.normalized == "500 мянга"
+    assert "budget" in fake.requests[0]["messages"][0].content
+
+
+def test_an_unreachable_model_does_not_invent_an_answer():
+    gw, _ = gateway(LLMError("rate_limited", "quota"))
+    assert read_slot(gw, "budget", "таван зуун мянга", TODAY).understood is False
 
 
 def test_the_place_chooser_asks_for_one_of_the_candidates():

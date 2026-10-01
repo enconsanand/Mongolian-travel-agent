@@ -57,6 +57,18 @@ def test_a_place_name_resolves_to_that_place(catalog, name, place_id):
     assert ids(resolve([name], catalog, never)) == [(name, place_id, "included")]
 
 
+def test_galig_uws_is_read_as_the_uvs_aimag(catalog):
+    def choose(query, options):
+        assert "place_uvs_lake" in {c["id"] for c in options}
+        return "place_uvs_lake"
+
+    assert ids(resolve(["uws"], catalog, choose)) == [("uws", "place_uvs_lake", "included")]
+
+
+def test_a_galig_trip_phrase_is_not_a_missing_place(catalog):
+    assert resolve(["7honogiin aylal"], catalog, never) == []
+
+
 def test_an_aimag_name_lets_the_chooser_pick_one_of_its_places(catalog):
     seen = {}
 

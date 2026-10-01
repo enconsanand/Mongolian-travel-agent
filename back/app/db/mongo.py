@@ -37,13 +37,22 @@ INDEXES: list[tuple[str, list[tuple[str, int | str]], dict]] = [
     ("places", [("location", GEOSPHERE)], {}),
     ("stays", [("location", GEOSPHERE)], {}),
     ("events", [("location", GEOSPHERE)], {}),
+    # Overlap is start_date <= day <= end_date; each bound has its own index
     ("events", [("start_date", ASCENDING)], {}),
+    ("events", [("end_date", ASCENDING)], {}),
     ("vehicles", [("current_location", GEOSPHERE)], {}),
     ("routes", [("geometry", GEOSPHERE)], {}),
     *[(c, _region_key, {}) for c in ("places", "events", "routes", "transport_schedules", "shared_rides", "drivers")],
     ("stays", [("region", ASCENDING), ("type", ASCENDING)], {}),
     ("vehicles", [("region", ASCENDING), ("rental.mode", ASCENDING)], {}),
     ("stay_availability", [("stay_id", ASCENDING), ("date", ASCENDING), ("unit_type", ASCENDING)], {"unique": True}),
+    # "Which stays are free on these dates" does not name a stay_id, so the unique index cannot serve it.
+    # The partial filter matches the query (status open), which is what lets Mongo use the index.
+    (
+        "stay_availability",
+        [("date", ASCENDING), ("status", ASCENDING), ("available", ASCENDING), ("stay_id", ASCENDING)],
+        {"partialFilterExpression": {"status": "open"}},
+    ),
     (
         "transport_availability",
         [("schedule_id", ASCENDING), ("date", ASCENDING), ("departure_time", ASCENDING), ("seat_class", ASCENDING)],

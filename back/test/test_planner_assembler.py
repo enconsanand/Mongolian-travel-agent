@@ -134,6 +134,19 @@ def test_no_named_place_still_gives_a_trip(db, catalog):
     assert len(plan.days) == 3 and visited(plan) - {HUB}
 
 
+def test_two_days_is_not_enough_to_reach_uvs_and_come_back(db, catalog):
+    plan = assemble(db, catalog, request(start="2026-09-30", end="2026-10-01"), ["place_uvs_lake"], {})
+    assert plan.fit.feasible is False
+    assert plan.fit.place_id == "place_uvs_lake"
+    assert plan.fit.drive_min > 12 * 60
+    assert plan.fit.min_nights >= 3
+
+
+def test_a_week_at_khatgal_fits(db, catalog):
+    plan = assemble(db, catalog, request(), [KHATGAL], {})
+    assert plan.fit.feasible is True
+
+
 def test_a_day_trip_has_no_nights(db, catalog):
     plan = assemble(db, catalog, request(start="2026-10-03", end="2026-10-03"), ["place_uran_togoo"], {})
     assert len(plan.days) == 1 and plan.days[0].stay is None and plan.warnings == []

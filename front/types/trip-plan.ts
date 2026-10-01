@@ -45,6 +45,13 @@ export interface PlanDay {
   note: string | null
 }
 
+export interface TripFit {
+  feasible: boolean
+  min_nights: number
+  drive_min: number
+  place_id: string | null
+}
+
 export interface PlanTotals {
   stays_mnt: number
   events_mnt: number
@@ -67,12 +74,34 @@ export interface ImageCredit {
   source: string
 }
 
+export interface StayReview {
+  author: string
+  rating: number
+  text: string
+}
+
+export interface StayChoice {
+  id: string
+  name: string
+  type: StayView['type']
+  rating: number
+  reviews_count: number
+  reviews?: StayReview[]
+  cover_image_url: string | null
+  images?: ImageCredit[]
+  meals: boolean
+  total_mnt: number
+  km: number
+  selected: boolean
+}
+
 export interface StayView {
   name: string
   type: 'ger_camp' | 'guesthouse' | 'hotel' | 'house'
   aimag: string
   rating: number
   reviews_count: number
+  reviews?: StayReview[]
   cover_image_url: string
   images: ImageCredit[]
   check_in: string
@@ -81,10 +110,14 @@ export interface StayView {
 
 export interface EventView {
   name: string
+  description?: string
   category: string
   start_date: string
   end_date: string
   ticket_price_mnt: number
+  cover_image_url?: string | null
+  phone?: string | null
+  url?: string | null
 }
 
 export interface Proposal {
@@ -96,6 +129,8 @@ export interface Proposal {
   days: PlanDay[]
   totals: PlanTotals
   warnings: PlanWarning[]
+  /** Missing on plans saved before the drive-time check */
+  fit?: TripFit
   summary: string
   accepted: boolean
   expires_at: string

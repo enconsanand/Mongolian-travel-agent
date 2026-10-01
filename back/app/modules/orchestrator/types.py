@@ -56,6 +56,10 @@ class TripIntent(BaseModel):
     interests: list[str] = Field(
         default=[], max_length=8, description="Activities, e.g. horse riding, stargazing, festival"
     )
+    landscape: Literal["water", "mountain", "desert", ""] = Field(
+        default="",
+        description="When they named no place: water (lake, river), mountain (rock, peak), or desert (sand, gobi)",
+    )
     nights: list[PlaceNights] = Field(
         default=[], max_length=12, description="Only where the traveller asked for a number of nights"
     )
@@ -104,7 +108,17 @@ class Totals(BaseModel):
     within_budget: bool = True
 
 
+class TripFit(BaseModel):
+    """Whether the dates leave time to arrive, sleep, and return. Decided from drive time, not by the model."""
+
+    feasible: bool = True
+    min_nights: int = 0
+    drive_min: int = 0
+    place_id: str | None = None
+
+
 class Assembly(BaseModel):
     days: list[PlanDay]
     totals: Totals
     warnings: list[PlanWarning]
+    fit: TripFit = Field(default_factory=TripFit)

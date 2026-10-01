@@ -1,9 +1,6 @@
 import { BRAND } from '~/constants/brand'
 import type { AppLocale, TripPlannerMessages } from '~/types/trip-planner'
 
-/** When each planning step is shown as started while the request runs (the server does them in this order) */
-export const PLAN_STEP_STARTS_MS = { places: 2500, stays: 5000, writing: 8000 } as const
-
 export const VOICE_METER_DELAYS_MS = [0, 150, 300, 450, 200] as const
 
 export const TRIP_PLANNER_MESSAGES: Record<AppLocale, TripPlannerMessages> = {
@@ -22,11 +19,38 @@ export const TRIP_PLANNER_MESSAGES: Record<AppLocale, TripPlannerMessages> = {
     retry: 'Дахин оролдох',
     chat: {
       ask: {
+        place: 'Хаашаа аялах вэ?',
         guests: 'Сайхан санаа байна. Хэдүүлээ явах вэ?',
-        dates: 'Хэзээ, хэдэн хоног явах вэ? Жишээ нь "10 сарын 5-наас 4 хоног".',
-        budget: 'Нийт төсөв хэр орчим бэ? Хязгааргүй бол "хязгааргүй" гэж бичээрэй.',
+        dates: 'Хэдэн сарын хэднээс хэдний хооронд явах вэ? Жишээ нь «10 сарын 5-наас 12».',
+        budget: 'Нийт төсөв хэр орчим бэ?',
       },
-      planning: 'Ойлголоо. Хөтөлбөр бэлдэж байна, ихэвчлэн 10–30 секунд болно.',
+      choices: {
+        fromDate: 'Эхлэх',
+        toDate: 'Дуусах',
+        useDates: 'Эдгээр өдрөөр',
+        datesInvalid: 'Дуусах өдөр эхлэхээс өмнө, эсвэл 30 хоногоос урт байна.',
+        guestSuffix: 'хүн',
+        guests: [1, 2, 3, 4, 5, 6, 8],
+        budgets: [
+          { label: '1 сая дотор', value: '1 сая дотор' },
+          { label: '2 сая дотор', value: '2 сая дотор' },
+          { label: '3.5 сая дотор', value: '3.5 сая дотор' },
+          { label: '5 сая дотор', value: '5 сая дотор' },
+        ],
+        places: [
+          { label: 'Хөвсгөл нуур', value: 'Хөвсгөл нуур' },
+          { label: 'Горхи-Тэрэлж', value: 'Горхи-Тэрэлж' },
+          { label: 'Увс нуур', value: 'Увс нуур' },
+          { label: 'Хархорин', value: 'Хархорин' },
+        ],
+      },
+      extra: 'Нэмж оруулах мэдээлэл байна уу? Байвал доор бичээрэй.',
+      noExtra: 'Байхгүй',
+      offTopic: 'Уучлаарай, би аяллын хөтөлбөр гаргахад туслана. Энэ асуултаа дуусгая.',
+      offTopicReady: 'Уучлаарай, би аяллын хөтөлбөр гаргахад туслана. Бэлэн бол доорх товчийг дарна уу.',
+      ready: 'За, мэдээлэл бүрдлээ. Хөтөлбөр гаргах уу?',
+      generatePlan: 'Хөтөлбөр гаргах',
+      planning: 'Хөтөлбөр бэлдэж байна.',
       revising: 'За, хөтөлбөрийг шинэчилж байна.',
       planned: 'Танд зориулсан хөтөлбөр бэлэн. Өөрчлөх зүйл байвал доор бичээрэй.',
       revised: 'Шинэчиллээ. Өөр юм өөрчлөх үү?',
@@ -40,28 +64,6 @@ export const TRIP_PLANNER_MESSAGES: Record<AppLocale, TripPlannerMessages> = {
     errors: {
       planner_unavailable: 'Төлөвлөгч түр ажиллахгүй байна. Хэсэг хүлээгээд дахин оролдоно уу.',
       error: 'Хөтөлбөр үүсгэж чадсангүй. Дахин оролдоно уу.',
-    },
-    steps: {
-      intent: {
-        pending: 'Хүсэлтийг ойлгох',
-        active: 'Хүсэлтийг ойлгож байна...',
-        complete: 'Хүсэлтийг ойлголоо',
-      },
-      places: {
-        pending: 'Очих газруудыг тодорхойлох',
-        active: 'Очих газруудыг тодорхойлж, маршрут гаргаж байна...',
-        complete: 'Маршрут бэлэн',
-      },
-      stays: {
-        pending: 'Гэр бааз, буудлын сул өрөө, арга хэмжээ хайх',
-        active: 'Гэр бааз, буудлын сул өрөө, арга хэмжээ хайж байна...',
-        complete: 'Буудал, арга хэмжээ олдлоо',
-      },
-      writing: {
-        pending: 'Хөтөлбөрийн тайлбар бичих',
-        active: 'Хөтөлбөрийн тайлбар бичиж байна...',
-        complete: 'Хөтөлбөр бэлэн',
-      },
     },
   },
   en: {
@@ -79,11 +81,38 @@ export const TRIP_PLANNER_MESSAGES: Record<AppLocale, TripPlannerMessages> = {
     retry: 'Try again',
     chat: {
       ask: {
+        place: 'Where would you like to go?',
         guests: 'Sounds lovely. How many of you are going?',
-        dates: 'When, and for how many days? For example "4 days from Oct 5".',
-        budget: 'Roughly what is your total budget? Say "no limit" if there is none.',
+        dates: 'Which dates, from which day to which day? For example "Oct 5 to 12".',
+        budget: 'Roughly what is your total budget?',
       },
-      planning: 'Got it. Putting your itinerary together, this usually takes 10–30 seconds.',
+      choices: {
+        fromDate: 'From',
+        toDate: 'To',
+        useDates: 'Use these dates',
+        datesInvalid: 'The end date is before the start, or the trip is longer than 30 days.',
+        guestSuffix: 'people',
+        guests: [1, 2, 3, 4, 5, 6, 8],
+        budgets: [
+          { label: 'Within 1 million', value: 'Within 1 million' },
+          { label: 'Within 2 million', value: 'Within 2 million' },
+          { label: 'Within 3.5 million', value: 'Within 3.5 million' },
+          { label: 'Within 5 million', value: 'Within 5 million' },
+        ],
+        places: [
+          { label: 'Lake Khövsgöl', value: 'Lake Khövsgöl' },
+          { label: 'Terelj', value: 'Terelj' },
+          { label: 'Lake Uvs', value: 'Lake Uvs' },
+          { label: 'Kharkhorin', value: 'Kharkhorin' },
+        ],
+      },
+      extra: 'Anything else to add before the itinerary? Write it below if so.',
+      noExtra: 'Nothing else',
+      offTopic: 'I can help you plan the trip. Let us finish this question first.',
+      offTopicReady: 'I can help you plan the trip. When you are ready, press the button below.',
+      ready: 'That is everything I need. Shall I create the itinerary?',
+      generatePlan: 'Create the itinerary',
+      planning: 'Preparing your itinerary.',
       revising: 'Sure, updating the itinerary.',
       planned: 'Here is an itinerary for you. Tell me below if you want anything changed.',
       revised: 'Updated. Anything else to change?',
@@ -97,28 +126,6 @@ export const TRIP_PLANNER_MESSAGES: Record<AppLocale, TripPlannerMessages> = {
     errors: {
       planner_unavailable: 'The planner is unavailable right now. Please try again in a moment.',
       error: 'Could not create the itinerary. Please try again.',
-    },
-    steps: {
-      intent: {
-        pending: 'Understand your request',
-        active: 'Understanding your request...',
-        complete: 'Request understood',
-      },
-      places: {
-        pending: 'Find the places and the route',
-        active: 'Finding the places and the route...',
-        complete: 'Route ready',
-      },
-      stays: {
-        pending: 'Search free ger camps, hotels and events',
-        active: 'Searching free ger camps, hotels and events...',
-        complete: 'Stays and events found',
-      },
-      writing: {
-        pending: 'Write the itinerary',
-        active: 'Writing the itinerary...',
-        complete: 'Itinerary ready',
-      },
     },
   },
 }

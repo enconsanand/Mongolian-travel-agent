@@ -68,6 +68,25 @@ def test_a_proposal_includes_the_places_and_reports_the_unknown_ones(db, gw, fak
     assert service.get(db, proposal["id"], NOW)["days"] == proposal["days"]
 
 
+def test_a_vague_far_request_uses_a_prepared_multi_stop_route(db, gw, fake):
+    request = REQUEST.model_copy(update={"text": "Арай хол газар луу явмаар байна", "end_date": date(2026, 10, 10)})
+    fake.push(intent(must_places=[], landscape=""))
+    proposal = service.propose(db, gw, request, NOW)
+
+    stops = {p["place_id"] for p in proposal["places"] if p["place_id"]}
+    assert len(stops) >= 3
+    # Not the old nearest-only loop around Terelj / Aglag.
+    assert stops - {"place_terelj", "place_ariyabal", "place_aglag"}
+
+
+def test_water_words_pick_a_lake_itinerary(db, gw, fake):
+    request = REQUEST.model_copy(update={"text": "устай газар үзмээр", "end_date": date(2026, 10, 10)})
+    fake.push(intent(must_places=[], landscape="water"))
+    proposal = service.propose(db, gw, request, NOW)
+    stops = {p["place_id"] for p in proposal["places"] if p["place_id"]}
+    assert stops & {"place_khatgal", "place_khuvsgul_lake", "place_ugii_nuur", "place_terkhiin_tsagaan"}
+
+
 def test_a_revision_rereads_the_request_with_every_change(db, gw, fake):
     fake.push(intent(must_places=["Хатгал"]))
     first = service.propose(db, gw, REQUEST, NOW)

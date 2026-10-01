@@ -18,13 +18,15 @@ from pymongo.database import Database
 
 from app.llm import LLMError, ModelGateway, configured_gateway
 from app.models.user import User
-from app.modules.orchestrator.assembler import assemble
+from app.modules.orchestrator.assembler import assemble, assemble_blocks, overnight_blocks, stay_options, trade_nights
 from app.modules.orchestrator.catalog import HUB, Catalog
 from app.modules.orchestrator.intent import extract_intent, place_chooser
 from app.modules.orchestrator.resolver import candidates, resolve
-from app.modules.orchestrator.types import Assembly, PlanDay, PlanRequest
+from app.modules.orchestrator.scenic import choose_itinerary, is_specific, mentioned, named_words, theme_of, wants_far
+from app.modules.orchestrator.types import Assembly, PlanDay, PlanRequest, ResolvedPlace, TripFit, TripIntent
 from app.modules.orchestrator.writer import write
 from app.schemas.travel import ItineraryVersionDoc, TripDoc
+from app.utils.i18n import Lang, localize
 
 PROPOSALS = "plan_proposals"
 TTL = timedelta(hours=24)
@@ -49,6 +51,40 @@ def _name(doc: Json, lang: str) -> str:
     return doc["name"][lang]
 
 
+def _resolve_stops(
+    catalog: Catalog,
+    gateway: ModelGateway,
+    request: PlanRequest,
+    changes: Sequence[str],
+    intent: TripIntent,
+) -> list[ResolvedPlace]:
+    """Named places win; otherwise a prepared scenic route from landscape / distance words."""
+    avoided = {pid for name in intent.avoid_places for pid in candidates(name, catalog)}
+    said = " ".join([request.text, *changes])
+    choose = place_chooser(gateway, request.text)
+
+    asked = [name for name in intent.must_places if is_specific(name)]
+    read = [p for p in resolve(asked, catalog, choose) if p.place_id not in avoided]
+    specific = [p for p in read if p.place_id and mentioned(p.query, said)]
+    if specific:
+        return specific + [p for p in read if p.status == "unresolved"]
+
+    named = [
+        p for p in resolve(named_words(said, catalog), catalog, choose) if p.place_id and p.place_id not in avoided
+    ]
+    if named:
+        return named
+
+    stops = choose_itinerary(
+        catalog,
+        theme=theme_of(said, intent.landscape),
+        far=wants_far(said),
+        nights=request.nights,
+        avoid=avoided,
+    )
+    return [ResolvedPlace(query=catalog.places[pid]["name"]["mn"], place_id=pid, status="included") for pid in stops]
+
+
 def _build(db: Database, gateway: ModelGateway, request: PlanRequest, changes: Sequence[str], now: datetime) -> Json:
     catalog = Catalog.load(db)
     try:
@@ -56,12 +92,7 @@ def _build(db: Database, gateway: ModelGateway, request: PlanRequest, changes: S
     except LLMError as exc:
         raise PlannerUnavailable(f"{exc.code}: {exc}") from exc
 
-    avoided = {pid for name in intent.avoid_places for pid in candidates(name, catalog)}
-    places = [
-        p
-        for p in resolve(intent.must_places, catalog, place_chooser(gateway, request.text))
-        if p.place_id not in avoided
-    ]
+    places = _resolve_stops(catalog, gateway, request, changes, intent)
     by_query = {p.query: p.place_id for p in places if p.place_id}
     hints = {by_query[name]: n for name, n in intent.nights_hint.items() if name in by_query and n > 0}
     place_ids = [p.place_id for p in places if p.place_id]
@@ -71,6 +102,8 @@ def _build(db: Database, gateway: ModelGateway, request: PlanRequest, changes: S
         assembly.warnings.insert(0, "unresolved_place")
     missing = [p.query for p in places if p.status == "unresolved"]
     summary = _write(gateway, request, assembly, catalog, missing)
+    if not assembly.fit.feasible:
+        summary = _unfit_summary(request, assembly.fit, catalog)
     return {
         "request": request.model_dump(mode="json"),
         "changes": list(changes),
@@ -82,6 +115,23 @@ def _build(db: Database, gateway: ModelGateway, request: PlanRequest, changes: S
     }
 
 
+def _unfit_summary(request: PlanRequest, fit: TripFit, catalog: Catalog) -> str:
+    """The dates are too short. This sentence is fixed from the drive time; the model does not write it."""
+    place = _name(catalog.places[fit.place_id or ""], request.lang) if fit.place_id else ""
+    hours = max(1, round(fit.drive_min / 60))
+    if request.lang == "mn":
+        return (
+            f"{place} хүртэл нэг талдаа ойролцоогоор {hours} цаг явна. "
+            f"{request.nights} хоногт очиж, хоноод, буцаж ирэх боломжгүй — замд өнгөрнө. "
+            f"Хамгийн багадаа {fit.min_nights} хоног хэрэгтэй."
+        )
+    return (
+        f"{place} is about {hours} hours' drive one way. "
+        f"{request.nights} nights is not enough to get there, stay, and come back — the days would be spent driving. "
+        f"At least {fit.min_nights} nights are needed."
+    )
+
+
 def _write(
     gateway: ModelGateway, request: PlanRequest, assembly: Assembly, catalog: Catalog, missing: Sequence[str]
 ) -> str:
@@ -90,7 +140,8 @@ def _write(
     stays = {s["_id"]: _name(s, lang) for s in catalog.stays}
     events = {e["_id"]: _name(e, lang) for e in catalog.events}
     places = {pid: _name(p, lang) for pid, p in catalog.places.items()}
-    writing = write(gateway, request, assembly.days, places, stays, events, missing)
+    unfit = "" if assembly.fit.feasible else _unfit_summary(request, assembly.fit, catalog)
+    writing = write(gateway, request, assembly.days, places, stays, events, missing, unfit)
     assembly.days = [d.model_copy(update={"note": note}) for d, note in zip(assembly.days, writing.notes, strict=True)]
     return writing.summary
 
@@ -100,6 +151,7 @@ def _assembly(assembly: Assembly, summary: str) -> Json:
         "days": [d.model_dump() for d in assembly.days],
         "totals": assembly.totals.model_dump(),
         "warnings": list(dict.fromkeys(assembly.warnings)),
+        "fit": assembly.fit.model_dump(),
         "summary": summary,
     }
 
@@ -168,6 +220,150 @@ def restay(db: Database, proposal_id: str, now: datetime) -> Json:
     notes = [d["note"] for d in doc["days"]]
     assembly.days = [d.model_copy(update={"note": n}) for d, n in zip(assembly.days, notes, strict=True)]
     return _out(_replace(db, doc, _assembly(assembly, doc["summary"]), now))
+
+
+class PlanEditRejected(Exception):
+    """The day change does not fit: no such stop, or a stop would be left with no night."""
+
+
+def adjust_nights(db: Database, proposal_id: str, place_id: str, delta: int, now: datetime) -> Json:
+    """Move one night along the route the traveller already has. Does not call a model or reorder stops."""
+    doc = _live(db, proposal_id, now)
+    days = [PlanDay.model_validate(d) for d in doc["days"]]
+    blocks = [pair for _, pair in overnight_blocks(days)]
+    moved = trade_nights(blocks, place_id, delta)
+    if moved is None:
+        raise PlanEditRejected(place_id)
+    request = PlanRequest.model_validate(doc["request"])
+    catalog = Catalog.load(db)
+    prefer = {d.to_place_id: d.stay.stay_id for d in days if d.stay}
+    assembly = assemble_blocks(db, catalog, request, moved, prefer)
+    _keep_notes(assembly.days, days, catalog, request.lang)
+    fields = _assembly(assembly, doc["summary"])
+    fields["nights_hint"] = dict(moved)
+    return _out(_replace(db, doc, fields, now))
+
+
+def _public_images(stay: Json, limit: int = 4) -> list[Json]:
+    slim = []
+    for img in (stay.get("images") or [])[:limit]:
+        slim.append(
+            {
+                "url": img.get("url"),
+                "author": img.get("author") or "",
+                "license": img.get("license") or "",
+                "source": img.get("source") or "",
+            }
+        )
+    return [img for img in slim if img["url"]]
+
+
+def stay_choices(db: Database, proposal_id: str, place_id: str, now: datetime, lang: Lang) -> list[Json]:
+    """Stays the database can actually book for this stop's nights."""
+    doc = _live(db, proposal_id, now)
+    days = [PlanDay.model_validate(d) for d in doc["days"]]
+    block = next((item for item in overnight_blocks(days) if item[1][0] == place_id), None)
+    if block is None:
+        raise PlanEditRejected(place_id)
+    start, (_, n) = block
+    request = PlanRequest.model_validate(doc["request"])
+    catalog = Catalog.load(db)
+    nights = [d.date for d in days[start : start + n]]
+    current_stay = days[start].stay
+    current = current_stay.stay_id if current_stay else None
+    choices = []
+    cheapest: dict[str, tuple[float, Json, Any]] = {}
+    for km, stay, pick in stay_options(db, catalog, place_id, nights, request.guests):
+        prev = cheapest.get(stay["_id"])
+        if prev is None or pick.total_mnt < prev[2].total_mnt:
+            cheapest[stay["_id"]] = (km, stay, pick)
+    media = {
+        s["_id"]: s
+        for s in db["stays"].find(
+            {"_id": {"$in": list(cheapest)}},
+            {"images": 1, "cover_image_url": 1, "reviews": 1},
+        )
+    }
+    for km, stay, pick in cheapest.values():
+        unit = next(u for u in stay["units"] if u["unit_type"] == pick.unit_type)
+        photo = media.get(stay["_id"], stay)
+        choices.append(
+            {
+                "id": stay["_id"],
+                "name": _name(stay, lang),
+                "type": stay["type"],
+                "rating": stay["rating"],
+                "reviews_count": stay["reviews_count"],
+                "reviews": localize(photo.get("reviews") or [], lang)[:2],
+                "cover_image_url": photo.get("cover_image_url") or stay.get("cover_image_url"),
+                "images": _public_images(photo),
+                "meals": bool(unit["meals_included"]),
+                "total_mnt": pick.total_mnt,
+                "km": round(km, 1),
+                "selected": stay["_id"] == current,
+            }
+        )
+    return choices
+
+
+def swap_stay(db: Database, proposal_id: str, place_id: str, stay_id: str, now: datetime) -> Json:
+    """Use another stay from the database for one stop. The route and the other days stay as they are."""
+    doc = _live(db, proposal_id, now)
+    days = [PlanDay.model_validate(d) for d in doc["days"]]
+    block = next((item for item in overnight_blocks(days) if item[1][0] == place_id), None)
+    if block is None:
+        raise PlanEditRejected(place_id)
+    start, (_, n) = block
+    request = PlanRequest.model_validate(doc["request"])
+    catalog = Catalog.load(db)
+    nights = [d.date for d in days[start : start + n]]
+    match = next(
+        (pick for _, _, pick in stay_options(db, catalog, place_id, nights, request.guests) if pick.stay_id == stay_id),
+        None,
+    )
+    if match is None:
+        raise PlanEditRejected(stay_id)
+    previous = days[start].stay
+    old = previous.total_mnt if previous else 0
+    days[start].stay = match
+    for day in days[start : start + n]:
+        day.stay_id = match.stay_id
+    totals = dict(doc["totals"])
+    totals["stays_mnt"] = totals["stays_mnt"] - old + match.total_mnt
+    totals["total_mnt"] = totals["stays_mnt"] + totals["events_mnt"]
+    totals["within_budget"] = totals["budget_mnt"] is None or totals["total_mnt"] <= totals["budget_mnt"]
+    warnings = [w for w in doc["warnings"] if w != "over_budget"]
+    if not totals["within_budget"]:
+        warnings.append("over_budget")
+    fields = {"days": [d.model_dump() for d in days], "totals": totals, "warnings": warnings}
+    return _out(_replace(db, doc, fields, now))
+
+
+def _keep_notes(days: list[PlanDay], previous: Sequence[PlanDay], catalog: Catalog, lang: str) -> None:
+    by_place = {d.to_place_id: d.note for d in previous if d.note and d.from_place_id == d.to_place_id}
+    for day in days:
+        same = next(
+            (
+                old.note
+                for old in previous
+                if old.date == day.date
+                and old.to_place_id == day.to_place_id
+                and old.from_place_id == day.from_place_id
+            ),
+            None,
+        )
+        if same:
+            day.note = same
+            continue
+        if day.from_place_id == day.to_place_id and day.to_place_id in by_place:
+            day.note = by_place[day.to_place_id]
+            continue
+        place = _name(catalog.places[day.to_place_id], lang)
+        if day.from_place_id == day.to_place_id:
+            day.note = f"{place}-д хононо." if lang == "mn" else f"Stay in {place}."
+        else:
+            start = _name(catalog.places[day.from_place_id], lang)
+            day.note = f"{start} → {place}."
 
 
 def stay_requests(proposal: Json) -> list[Json]:

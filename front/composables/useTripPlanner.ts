@@ -1,37 +1,41 @@
-import { PLAN_STEP_STARTS_MS, TRIP_PLANNER_MESSAGES } from '~/constants/tripPlanner'
+import { API_ENDPOINTS } from '~/constants'
+import { TRIP_PLANNER_MESSAGES } from '~/constants/tripPlanner'
 import type { Proposal } from '~/types/trip-plan'
-import { PLAN_SEARCH_STEP_IDS } from '~/types/trip-planner'
-import type {
-  AppLocale,
-  PlanSearchStepId,
-  PlanSearchStepStatus,
-  PlanSearchStepView,
-  TripPlannerMessages,
-} from '~/types/trip-planner'
-import { readTripFacts, toPlanRequestBody, type TripFacts } from '~/utils/tripFacts'
+import type { AppLocale, TripPlannerMessages } from '~/types/trip-planner'
+import { isUnrelatedQuestion, readTripFacts, toPlanRequestBody, type TripFacts } from '~/utils/tripFacts'
 import { requestProposal, requestRevision, type PlanErrorCode } from './useTripPlan'
 
-/** What the agent asks for before it plans, in this order, unless the traveller already said it */
-const SLOTS = ['guests', 'dates', 'budget'] as const
+/** What the agent must ask before it may offer to plan, in this order */
+const SLOTS = ['place', 'guests', 'dates', 'budget'] as const
 type Slot = (typeof SLOTS)[number]
 
 /** A short pause before the agent answers, so a reply does not appear at the same instant as the question */
 const REPLY_DELAY_MS = 450
 
+/** Agent lines are keys, so switching language rewrites the questions already on screen */
 export type ChatMessage =
   | { id: number; role: 'user'; text: string }
-  | { id: number; role: 'agent'; kind: 'text'; text: string }
-  | { id: number; role: 'agent'; kind: 'working'; text: string; steps: PlanSearchStepView[] }
-  | { id: number; role: 'agent'; kind: 'plan'; text: string; proposal: Proposal }
-  | { id: number; role: 'agent'; kind: 'error'; text: string }
+  | { id: number; role: 'agent'; kind: 'ask'; slot: Slot; deflect: boolean }
+  | { id: number; role: 'agent'; kind: 'extra'; deflect: boolean }
+  | { id: number; role: 'agent'; kind: 'ready' }
+  | { id: number; role: 'agent'; kind: 'aside' }
+  | { id: number; role: 'agent'; kind: 'working'; phase: 'planning' | 'revising' }
+  | { id: number; role: 'agent'; kind: 'plan'; revision: boolean; proposal: Proposal }
+  | { id: number; role: 'agent'; kind: 'error'; code: PlanErrorCode | null }
 
 /** A message before it gets its id (Omit over each member of the union, not the union as a whole) */
 type WithoutId<M> = M extends unknown ? Omit<M, 'id'> : never
 type NewChatMessage = WithoutId<ChatMessage>
 
+/** "Nothing else" should not be sent to the planner as a travel note */
+function isNoExtra(text: string): boolean {
+  return /^(байхгүй|үгүй|үгүй ээ|no|nope|nothing|nothing else|none|that's all|thats all)\.?$/i.test(text.trim())
+}
+
 function isStated(facts: TripFacts, slot: Slot): boolean {
+  if (slot === 'place') return facts.stated.place
   if (slot === 'guests') return facts.stated.guests
-  if (slot === 'dates') return facts.stated.dates || facts.stated.days
+  if (slot === 'dates') return facts.stated.dates
   return facts.stated.budget
 }
 
@@ -41,29 +45,16 @@ function withUnit(text: string, slot: Slot | null, locale: AppLocale): string {
   if (!bare || !slot) return text
   const amount = bare[1]!
   if (slot === 'guests') return locale === 'mn' ? `${amount} хүн` : `${amount} people`
-  if (slot === 'dates') return locale === 'mn' ? `${amount} хоног` : `${amount} days`
+  if (slot === 'dates') return text
   // A small number for a budget is millions ("4" = 4 million)
-  return Number(amount.replace(',', '.')) < 1000 ? `${amount} сая` : `${amount}₮`
-}
-
-function stepViews(
-  statuses: Record<PlanSearchStepId, PlanSearchStepStatus>,
-  messages: TripPlannerMessages
-): PlanSearchStepView[] {
-  return PLAN_SEARCH_STEP_IDS.map((id) => ({ id, status: statuses[id], label: messages.steps[id][statuses[id]] }))
-}
-
-/** Steps before ``stepId`` complete, ``stepId`` active, the rest pending */
-function statusesFrom(stepId: PlanSearchStepId): Record<PlanSearchStepId, PlanSearchStepStatus> {
-  const at = PLAN_SEARCH_STEP_IDS.indexOf(stepId)
-  return Object.fromEntries(
-    PLAN_SEARCH_STEP_IDS.map((id, i) => [id, i < at ? 'complete' : i === at ? 'active' : 'pending'])
-  ) as Record<PlanSearchStepId, PlanSearchStepStatus>
+  if (Number(amount.replace(',', '.')) >= 1000) return `${amount}₮`
+  return locale === 'mn' ? `${amount} сая` : `${amount} million`
 }
 
 /**
- * The trip planner as a conversation. The traveller writes what they want; the agent asks for the group size,
- * dates and budget when the text leaves them out, then plans. Every later message revises that same plan.
+ * The trip planner as a conversation. The agent asks where, how many people, the date range and the budget
+ * when the text leaves them out. An unrelated question is turned back to the question in hand. Once every
+ * answer is in, the traveller presses the button to plan. Later messages revise that same plan.
  */
 export function useTripPlanner() {
   const api = useApi()
@@ -75,11 +66,21 @@ export function useTripPlanner() {
   const chat = ref<ChatMessage[]>([])
   const busy = ref(false)
   const proposalId = ref<string | null>(null)
+  /** Every required answer is in, so the chat may show the plan button */
+  const canGenerate = ref(false)
 
-  // What the traveller said before the first plan, and which questions the agent already asked
+  // What the traveller said before the first plan, and which question the agent is waiting on
   const brief: string[] = []
-  const asked = new Set<Slot>()
-  let pendingSlot: Slot | null = null
+  const pendingSlot = ref<Slot | null>(null)
+  /** Start a week out, and keep a length the traveller already named, until they pick real dates */
+  const dateDefaults = computed(() => {
+    void chat.value.length
+    const facts = readTripFacts(brief.join('. '))
+    return { start: facts.startDate, end: facts.endDate }
+  })
+  let placeNamed = false
+  let extraAsked = false
+  let awaitingExtra = false
   let nextId = 0
   const timers: ReturnType<typeof setTimeout>[] = []
   // Bumped on reset, so an answer to a conversation that was cleared is dropped
@@ -108,28 +109,14 @@ export function useTripPlanner() {
     timers.length = 0
   }
 
-  function errorText(code: PlanErrorCode | null): string {
-    return code === 'planner_unavailable' ? messages.value.errors.planner_unavailable : messages.value.errors.error
-  }
-
-  /** Shows the planning steps while ``run`` waits on the planner, then its answer in their place */
-  async function work(intro: string, run: () => Promise<{ proposal: Proposal | null; error: PlanErrorCode | null }>) {
+  /** Shows one waiting line while ``run`` asks the planner, then its answer in that line's place */
+  async function work(
+    phase: 'planning' | 'revising',
+    run: () => Promise<{ proposal: Proposal | null; error: PlanErrorCode | null }>
+  ) {
     const seq = conversation
     busy.value = true
-    const workingId = push({
-      role: 'agent',
-      kind: 'working',
-      text: intro,
-      steps: stepViews(statusesFrom('intent'), messages.value),
-    })
-    for (const [stepId, delay] of Object.entries(PLAN_STEP_STARTS_MS) as [PlanSearchStepId, number][]) {
-      later(() => {
-        const current = chat.value.find((item) => item.id === workingId)
-        if (current?.role === 'agent' && current.kind === 'working') {
-          replace(workingId, { ...current, steps: stepViews(statusesFrom(stepId), messages.value) })
-        }
-      }, delay)
-    }
+    const workingId = push({ role: 'agent', kind: 'working', phase })
 
     const { proposal, error } = await run()
     if (seq !== conversation) return
@@ -137,54 +124,86 @@ export function useTripPlanner() {
     busy.value = false
 
     if (!proposal) {
-      replace(workingId, { role: 'agent', kind: 'error', text: errorText(error) })
+      canGenerate.value = proposalId.value === null
+      replace(workingId, { role: 'agent', kind: 'error', code: error })
       return
     }
     const isRevision = proposalId.value !== null
     proposalId.value = proposal.id
-    replace(workingId, {
-      role: 'agent',
-      kind: 'plan',
-      text: isRevision ? messages.value.chat.revised : messages.value.chat.planned,
-      proposal,
-    })
+    replace(workingId, { role: 'agent', kind: 'plan', revision: isRevision, proposal })
   }
 
   function plan() {
+    canGenerate.value = false
     const text = brief.join('. ')
     const facts = readTripFacts(text)
-    work(messages.value.chat.planning, () => requestProposal(api, toPlanRequestBody(facts, text), locale.value))
+    work('planning', () => requestProposal(api, toPlanRequestBody(facts, text), locale.value))
   }
 
   function revise(change: string) {
     const id = proposalId.value!
-    work(messages.value.chat.revising, () => requestRevision(api, id, change, locale.value))
+    work('revising', () => requestRevision(api, id, change, locale.value))
   }
 
-  /** The agent's next move before the first plan: ask what is still missing, or plan */
-  function answer() {
-    const facts = readTripFacts(brief.join('. '))
-    const missing = SLOTS.find((slot) => !isStated(facts, slot) && !asked.has(slot))
-    if (!missing) {
-      pendingSlot = null
-      plan()
-      return
-    }
-    pendingSlot = missing
-    asked.add(missing)
+  function factsNow(): TripFacts {
+    return readTripFacts(brief.join('. '))
+  }
+
+  function slotDone(facts: TripFacts, slot: Slot): boolean {
+    if (slot === 'place') return facts.stated.place || placeNamed
+    return isStated(facts, slot)
+  }
+
+  function nextSlot(facts: TripFacts): Slot | null {
+    return SLOTS.find((slot) => !slotDone(facts, slot)) ?? null
+  }
+
+  /** The reply fills the question the agent just asked, even as a bare number */
+  function answersSlot(text: string, slot: Slot): boolean {
+    const facts = readTripFacts(withUnit(text, slot, locale.value))
+    if (slot === 'place') return facts.stated.place || (!isUnrelatedQuestion(text) && /\p{L}{2,}/u.test(text))
+    return isStated(facts, slot)
+  }
+
+  function reply(message: NewChatMessage) {
     const seq = conversation
     busy.value = true
     later(() => {
       if (seq !== conversation) return
       busy.value = false
-      push({ role: 'agent', kind: 'text', text: messages.value.chat.ask[missing] })
+      push(message)
     }, REPLY_DELAY_MS)
   }
 
-  function send() {
-    const text = draft.value.trim()
+  function offer() {
+    awaitingExtra = false
+    pendingSlot.value = null
+    canGenerate.value = true
+    if (chat.value.some((item) => item.role === 'agent' && item.kind === 'ready')) return
+    reply({ role: 'agent', kind: 'ready' })
+  }
+
+  /** Ask the next missing question, then whether anything else should be added, then the plan button */
+  function advance() {
+    const missing = nextSlot(factsNow())
+    if (missing) {
+      awaitingExtra = false
+      pendingSlot.value = missing
+      reply({ role: 'agent', kind: 'ask', slot: missing, deflect: false })
+      return
+    }
+    if (!extraAsked) {
+      extraAsked = true
+      awaitingExtra = true
+      pendingSlot.value = null
+      reply({ role: 'agent', kind: 'extra', deflect: false })
+      return
+    }
+    offer()
+  }
+
+  function submit(text: string) {
     if (!text || busy.value) return
-    draft.value = ''
     isListening.value = false
     push({ role: 'user', text })
 
@@ -192,8 +211,77 @@ export function useTripPlanner() {
       revise(text)
       return
     }
-    brief.push(withUnit(text, pendingSlot, locale.value))
-    answer()
+
+    if (awaitingExtra) {
+      if (isNoExtra(text)) {
+        offer()
+        return
+      }
+      if (isUnrelatedQuestion(text)) {
+        reply({ role: 'agent', kind: 'extra', deflect: true })
+        return
+      }
+      brief.push(text)
+      offer()
+      return
+    }
+
+    const slot = pendingSlot.value
+    // A question that does not answer the one in hand is turned back to that question
+    if (isUnrelatedQuestion(text) && !(slot && answersSlot(text, slot))) {
+      if (slot) reply({ role: 'agent', kind: 'ask', slot, deflect: true })
+      else if (!canGenerate.value) {
+        pendingSlot.value = 'place'
+        reply({ role: 'agent', kind: 'ask', slot: 'place', deflect: true })
+      } else reply({ role: 'agent', kind: 'aside' })
+      return
+    }
+
+    if (slot && !answersSlot(text, slot)) {
+      void clarify(slot, text)
+      return
+    }
+
+    brief.push(withUnit(text, slot, locale.value))
+    if (slot === 'place') placeNamed = true
+    advance()
+  }
+
+  /** The form did not read this reply: ask the planner model, then accept it or ask again */
+  async function clarify(slot: Slot, text: string) {
+    const seq = conversation
+    busy.value = true
+    const { data } = await api.post<{ understood: boolean; normalized: string }>(API_ENDPOINTS.PLANNER.READ, {
+      slot,
+      text,
+    })
+    if (seq !== conversation) return
+    busy.value = false
+    const normalized = data?.understood ? data.normalized.trim() : ''
+    if (normalized && answersSlot(normalized, slot)) {
+      brief.push(withUnit(normalized, slot, locale.value))
+      if (slot === 'place') placeNamed = true
+      advance()
+      return
+    }
+    reply({ role: 'agent', kind: 'ask', slot, deflect: false })
+  }
+
+  function send() {
+    const text = draft.value.trim()
+    if (!text || busy.value) return
+    draft.value = ''
+    submit(text)
+  }
+
+  /** A chip or the date picker answers the question in hand */
+  function pick(text: string) {
+    submit(text.trim())
+  }
+
+  function generate() {
+    if (busy.value || !canGenerate.value || proposalId.value) return
+    plan()
   }
 
   /** The last plan request failed: try it again as it was */
@@ -215,9 +303,12 @@ export function useTripPlanner() {
     draft.value = ''
     busy.value = false
     proposalId.value = null
+    canGenerate.value = false
     brief.length = 0
-    asked.clear()
-    pendingSlot = null
+    pendingSlot.value = null
+    placeNamed = false
+    extraAsked = false
+    awaitingExtra = false
   }
 
   function setLocale(nextLocale: AppLocale) {
@@ -241,7 +332,12 @@ export function useTripPlanner() {
     voiceStatusLabel,
     setLocale,
     toggleVoiceInput,
+    canGenerate,
+    pendingSlot,
+    dateDefaults,
     send,
+    pick,
+    generate,
     retry,
     reset,
   }

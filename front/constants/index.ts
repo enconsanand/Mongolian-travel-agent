@@ -18,8 +18,12 @@ export const API_ENDPOINTS = {
   },
   PLANNER: {
     PROPOSALS: '/planner/proposals',
+    READ: '/planner/read',
     PROPOSAL: (id: string) => `/planner/proposals/${id}`,
     REVISE: (id: string) => `/planner/proposals/${id}/revise`,
+    NIGHTS: (id: string) => `/planner/proposals/${id}/nights`,
+    STAY: (id: string) => `/planner/proposals/${id}/stay`,
+    STAYS: (id: string) => `/planner/proposals/${id}/stays`,
     ACCEPT: (id: string) => `/me/planner/proposals/${id}/accept`,
   },
   USERS: {

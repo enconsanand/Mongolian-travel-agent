@@ -27,10 +27,12 @@ function localeButtonClass(option: AppLocale): string {
 <template>
   <header class="sticky top-0 z-30 border-b border-line bg-surface">
     <div class="mx-auto flex h-16 max-w-page items-center justify-between gap-4 px-4">
-      <NuxtLink to="/" class="flex items-center gap-2.5">
-        <BrandMark class="h-9 w-9" />
-        <span class="font-display text-xl font-bold text-ink">{{ BRAND.name }}</span>
-      </NuxtLink>
+      <div class="flex items-center gap-4">
+        <NuxtLink to="/" class="flex items-center gap-2.5">
+          <BrandMark class="h-9 w-9" />
+          <span class="font-display text-xl font-bold text-ink">{{ BRAND.name }}</span>
+        </NuxtLink>
+      </div>
       <div class="flex items-center gap-2">
         <div
           class="flex rounded-control border border-line p-0.5 text-xs font-semibold"

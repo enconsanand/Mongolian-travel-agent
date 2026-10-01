@@ -504,7 +504,6 @@ for e in [
     ("event_sukhbaatar_horse_festival_2027", "Sükhbaatar Horse Festival", "Сүхбаатар аймгийн морин наадам", "place_baruun_urt", "sport", "2027-08-14", "2027-08-15", 5000, 4000, 1.5, "Famous eastern steppe horses, long-distance races."),
     ("event_dadal_chinggis_day_2026", "Chinggis Khaan Day in Dadal", "Их Эзэн Чингис хааны өдөр (Дадал)", "place_dadal", "national_holiday", "2026-11-11", "2026-11-11", 0, 2000, 1.4, "Ceremonies at the birthplace monuments on the lunar-calendar holiday."),
     ("event_playtime_festival_2027", "Playtime Festival", "Playtime наадам", "place_ub", "music_festival", "2027-07-02", "2027-07-04", 250000, 20000, 1.6, "Biggest rock and pop music festival, open-air stage on the outskirts of Ulaanbaatar with camping."),
-    ("event_choibalsan_autumn_fair", "Dornod Autumn Fair", "Дорнодын намрын яармаг", "place_choibalsan", "festival", "2026-10-09", "2026-10-10", 0, 5000, 1.3, "Meat, dairy and crafts before winter."),
 ]:
     events.append({
         "_id": e[0], "name": e[1], "name_mn": e[2], "place_id": e[3], "aimag": PLACE[e[3]]["aimag"],
@@ -825,6 +824,17 @@ with open(os.path.join(LANDMARKS, "catalog.json"), encoding="utf-8") as f:
 with open(os.path.join(LANDMARKS, "aliases.json"), encoding="utf-8") as f:
     for pid, aliases in json.load(f).items():
         PLACE[pid]["aliases"] = aliases
+# OpenStreetMap lodging and sights for Terelj, Khövsgöl and Uvs. Facts and coordinates are ODbL;
+# notes are short originals. Photos, when present, come from Wikimedia Commons via images.json.
+_osm_path = os.path.join(LANDMARKS, "osm_places.json")
+if os.path.exists(_osm_path):
+    with open(_osm_path, encoding="utf-8") as f:
+        for landmark in json.load(f):
+            assert landmark["_id"] not in PLACE, f"Duplicate place: {landmark['_id']}"
+            landmark["region"] = AIMAG_REGION[landmark["aimag"]]
+            landmark["is_mock"] = False
+            places.append(landmark)
+            PLACE[landmark["_id"]] = landmark
 
 # ---------------------------------------------------------------- images
 # Freely licensed photos from Wikimedia Commons, each with author, license and source link.
@@ -836,17 +846,79 @@ with open(os.path.join(OUT, "image_pool.json"), encoding="utf-8") as f:
     IMAGE_POOL = json.load(f)
 _images_path = os.path.join(OUT, "images.json")
 FOUND = json.load(open(_images_path, encoding="utf-8")) if os.path.exists(_images_path) else {}
-_seen = {}
+
+
+def _spread_photos(photos: list[dict]) -> list[dict]:
+    """Take turns by photographer, so one stay is not three shots of the same camp."""
+    buckets: dict[str, list[dict]] = {}
+    order: list[str] = []
+    for photo in photos:
+        author = photo.get("author") or ""
+        if author not in buckets:
+            buckets[author] = []
+            order.append(author)
+        buckets[author].append(photo)
+    spread: list[dict] = []
+    while any(buckets.values()):
+        for author in order:
+            if buckets[author]:
+                spread.append(buckets[author].pop(0))
+    return spread
+
+
+def _pool_photo(img: dict) -> dict:
+    return dict(img, is_illustrative=True, match="type", distance_m=None)
+
+
+def _least_used(photos: list[dict], used: dict[str, int], skip: set[str]):
+    ranked = sorted(
+        (img for img in photos if img["url"] not in skip),
+        key=lambda img: (used.get(img["url"], 0), photos.index(img)),
+    )
+    return ranked[0] if ranked else None
+
+
+_pools = {kind: _spread_photos(photos) for kind, photos in IMAGE_POOL.items()}
+_used: dict[str, int] = {}
+# Covers first, so two stays do not open on the same photo while unused photos remain.
+_near: dict[str, list[dict]] = {}
 for s in stays:
-    pool = IMAGE_POOL[s["type"]]
-    n = _seen.get(s["type"], 0)
-    _seen[s["type"]] = n + 1
     near = [dict(img, is_illustrative=True) for img in FOUND.get(s["_id"], [])][:3]
-    generic = [dict(pool[(n * 2 + k) % len(pool)], is_illustrative=True, match="type", distance_m=None) for k in range(3)]
-    s["images"] = near + generic[: 3 - len(near)]
+    _near[s["_id"]] = near
+    cover = near[0] if near and _used.get(near[0]["url"], 0) == 0 else None
+    if cover is None:
+        picked = _least_used(_pools[s["type"]], _used, set())
+        if picked and _used.get(picked["url"], 0) == 0:
+            cover = _pool_photo(picked)
+        elif near:
+            cover = near[0]
+        elif picked:
+            cover = _pool_photo(picked)
+    assert cover is not None
+    s["images"] = [cover]
+    _used[cover["url"]] = _used.get(cover["url"], 0) + 1
+for s in stays:
+    urls = {img["url"] for img in s["images"]}
+    for img in _near[s["_id"]]:
+        if len(s["images"]) >= 3:
+            break
+        if img["url"] not in urls:
+            s["images"].append(img)
+            urls.add(img["url"])
+            _used[img["url"]] = _used.get(img["url"], 0) + 1
+    while len(s["images"]) < 3:
+        picked = _least_used(_pools[s["type"]], _used, urls)
+        if picked is None:
+            break
+        s["images"].append(_pool_photo(picked))
+        urls.add(picked["url"])
+        _used[picked["url"]] = _used.get(picked["url"], 0) + 1
     s["cover_image_url"] = s["images"][0]["url"]
 for doc in places + events:
-    doc["images"] = [dict(img, is_illustrative=doc in events) for img in FOUND.get(doc["_id"], [])]
+    doc["images"] = [
+        dict(img, is_illustrative=img["is_illustrative"] if "is_illustrative" in img else doc in events)
+        for img in FOUND.get(doc["_id"], [])
+    ]
     doc["cover_image_url"] = doc["images"][0]["url"] if doc["images"] else None
 
 # ---------------------------------------------------------------- app users (login demo accounts)

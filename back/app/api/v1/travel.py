@@ -5,12 +5,15 @@ Every response is in the caller's language (``Accept-Language``, default Mongoli
 Catalog endpoints are public; ``/me/...`` endpoints only return the signed-in user's data.
 """
 
+from datetime import date as date_cls
+from datetime import timedelta
 from typing import Annotated, Any
 
 from fastapi import APIRouter, Depends, HTTPException, Query, status
 from pymongo.collection import Collection
 
 from app.api.v1.deps import ActiveUser, DbSession
+from app.modules.orchestrator.filters import stay_ids_free_every_night, within_km
 from app.schemas import travel as s
 from app.utils.i18n import Lang, get_lang, localize
 
@@ -64,6 +67,16 @@ def _near(lng: float | None, lat: float | None, radius_km: float) -> Json | None
 
 def _clean(query: Json) -> Json:
     return {k: v for k, v in query.items() if v is not None}
+
+
+def _nights(start: str, end: str) -> list[str]:
+    """Inclusive YYYY-MM-DD list. A stay is bookable only when every one of these nights is free."""
+    first, last = date_cls.fromisoformat(start), date_cls.fromisoformat(end)
+    if last < first:
+        first, last = last, first
+    if (last - first).days > 62:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="date range is longer than 62 nights")
+    return [(first + timedelta(days=i)).isoformat() for i in range((last - first).days + 1)]
 
 
 # ----------------------------------------------------------------------------- regions & places
@@ -123,15 +136,21 @@ def list_stays(
     lat: Lat | None = None,
     radius_km: RadiusKm = 30,
     date: DateQ = None,
+    date_from: DateQ = None,
+    date_to: DateQ = None,
     limit: Limit = 100,
 ) -> list[Json]:
-    """Stays, optionally near a point; with ``date`` only stays that have a free unit that night."""
+    """Stays, optionally near a point.
+
+    ``date`` is one night. ``date_from`` and ``date_to`` require a free unit on every night
+    in between (one sold-out night drops the stay). The check is an aggregation on
+    ``stay_availability``, not a scan of the stay documents.
+    """
     query = _clean({"region": region, "type": type, "place_id": place_id, "location": _near(lng, lat, radius_km)})
-    if date:
-        free = db[s.StayAvailabilityDoc.collection].distinct(
-            "stay_id", {"date": date, "status": "open", "available": {"$gt": 0}}
-        )
-        query["_id"] = {"$in": free}
+    start = date_from or date or date_to
+    end = date_to or date or date_from
+    if start and end:
+        query["_id"] = {"$in": stay_ids_free_every_night(db, _nights(start, end))}
     return _find(db[s.StayDoc.collection], query, lang, limit)
 
 
@@ -178,15 +197,19 @@ def list_events(
     category: str | None = None,
     date_from: DateQ = None,
     date_to: DateQ = None,
+    lng: Lng | None = None,
+    lat: Lat | None = None,
+    radius_km: RadiusKm = 50,
     limit: Limit = 100,
 ) -> list[Json]:
-    """Events overlapping [date_from, date_to]."""
+    """Events overlapping [date_from, date_to], optionally inside a circle (``$geoWithin``)."""
     query = _clean(
         {
             "region": region,
             "category": category,
             "end_date": {"$gte": date_from} if date_from else None,
             "start_date": {"$lte": date_to} if date_to else None,
+            "location": within_km(lng, lat, radius_km) if lng is not None and lat is not None else None,
         }
     )
     return _find(db[s.EventDoc.collection], query, lang, limit, sort=[("start_date", 1)])

@@ -1,0 +1,2734 @@
+[
+  {
+    "_id": "place_osm_n_10017427962",
+    "name": {
+      "mn": "\"Сайхан Хархираа\" хүүхдийн зусланд",
+      "en": "\"Saihan Kharhiraa\" children's camp"
+    },
+    "aimag": "Uvs",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [91.792652, 49.921086]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "\"Saihan Kharhiraa\" children's camp",
+      "\"Сайхан Хархираа\" хүүхдийн зусланд"
+    ],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/10017427962",
+      "source_id": "node 10017427962",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Увсын чиглэл. Жуулчны бааз.",
+      "en": "On the Uvs side. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_n_10199824717",
+    "name": {
+      "mn": "Бирга Ресорт",
+      "en": "Birga Resort"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.46032, 47.879286]
+    },
+    "fuel_available": false,
+    "aliases": ["Бирга Ресорт", "Birga Resort"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/10199824717",
+      "source_id": "node 10199824717",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Уулын овоохой. Утас: +97688668866",
+      "en": "Near Gorkhi-Terelj. Mountain hut. Phone: +97688668866"
+    }
+  },
+  {
+    "_id": "place_osm_n_10970070694",
+    "name": {
+      "mn": "Hirvesteg",
+      "en": "Hirvesteg"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.242206, 50.682195]
+    },
+    "fuel_available": false,
+    "aliases": ["Hirvesteg"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/10970070694",
+      "source_id": "node 10970070694",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Жуулчны бааз.",
+      "en": "On the Khövsgöl side. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_n_11108821414",
+    "name": {
+      "mn": "Dayan entrance",
+      "en": "Dayan entrance"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.189993, 50.433187]
+    },
+    "fuel_available": false,
+    "aliases": ["Dayan entrance"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/11108821414",
+      "source_id": "node 11108821414",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Аялалын үзвэр.",
+      "en": "On the Khövsgöl side. Visitor stop."
+    }
+  },
+  {
+    "_id": "place_osm_n_11507429869",
+    "name": {
+      "mn": "Далай ээж ресорт",
+      "en": "Dalai Eej Resort"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.189806, 50.482394]
+    },
+    "fuel_available": false,
+    "aliases": ["Далай ээж ресорт", "Dalai Eej Resort"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/11507429869",
+      "source_id": "node 11507429869",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Зочид буудал. Утас: +97695005595",
+      "en": "On the Khövsgöl side. Hotel. Phone: +97695005595"
+    }
+  },
+  {
+    "_id": "place_osm_n_1268520454",
+    "name": {
+      "mn": "UB2",
+      "en": "UB2"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.463521, 47.987517]
+    },
+    "fuel_available": false,
+    "aliases": ["UB2"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/1268520454",
+      "source_id": "node 1268520454",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Зочид буудал.",
+      "en": "Near Gorkhi-Terelj. Hotel."
+    }
+  },
+  {
+    "_id": "place_osm_n_1448937375",
+    "name": {
+      "mn": "Монростур",
+      "en": "Monrostur"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.777485, 51.428883]
+    },
+    "fuel_available": false,
+    "aliases": ["Монростур", "Monrostur"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/1448937375",
+      "source_id": "node 1448937375",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Жуулчны бааз.",
+      "en": "On the Khövsgöl side. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_n_2078135171",
+    "name": {
+      "mn": "Berts Ger Camp",
+      "en": "Berts Ger Camp"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.487756, 47.982775]
+    },
+    "fuel_available": false,
+    "aliases": ["Berts Ger Camp"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/2078135171",
+      "source_id": "node 2078135171",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Зочны байр.",
+      "en": "Near Gorkhi-Terelj. Guest house."
+    }
+  },
+  {
+    "_id": "place_osm_n_2190671923",
+    "name": {
+      "mn": "buural",
+      "en": "buural"
+    },
+    "aimag": "Uvs",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [91.3944, 49.909767]
+    },
+    "fuel_available": false,
+    "aliases": ["buural"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/2190671923",
+      "source_id": "node 2190671923",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Увсын чиглэл. Эртний дурсгал.",
+      "en": "On the Uvs side. Archaeological site."
+    }
+  },
+  {
+    "_id": "place_osm_n_2343271021",
+    "name": {
+      "mn": "Bayan Davaa",
+      "en": "Bayan Davaa"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.649268, 47.778852]
+    },
+    "fuel_available": false,
+    "aliases": ["Bayan Davaa"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/2343271021",
+      "source_id": "node 2343271021",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Үзэсгэлэнт цэг.",
+      "en": "Near Gorkhi-Terelj. Viewpoint."
+    }
+  },
+  {
+    "_id": "place_osm_n_2347399434",
+    "name": {
+      "mn": "City resort",
+      "en": "City resort"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.335392, 47.814099]
+    },
+    "fuel_available": false,
+    "aliases": ["City resort"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/2347399434",
+      "source_id": "node 2347399434",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Замын буудал.",
+      "en": "Near Gorkhi-Terelj. Motel."
+    }
+  },
+  {
+    "_id": "place_osm_n_2395688693",
+    "name": {
+      "mn": "Khujirtiin davaa",
+      "en": "Khujirtiin davaa"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.064094, 49.787448]
+    },
+    "fuel_available": false,
+    "aliases": ["Khujirtiin davaa"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/2395688693",
+      "source_id": "node 2395688693",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Үзэсгэлэнт цэг.",
+      "en": "On the Khövsgöl side. Viewpoint."
+    }
+  },
+  {
+    "_id": "place_osm_n_2395692034",
+    "name": {
+      "mn": "Burenkhaan uul",
+      "en": "Burenkhaan uul"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.036671, 49.802411]
+    },
+    "fuel_available": false,
+    "aliases": ["Burenkhaan uul"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/2395692034",
+      "source_id": "node 2395692034",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Үзэсгэлэнт цэг.",
+      "en": "On the Khövsgöl side. Viewpoint."
+    }
+  },
+  {
+    "_id": "place_osm_n_2412853556",
+    "name": {
+      "mn": "Торе-Холь",
+      "en": "Torye-Khol"
+    },
+    "aimag": "Uvs",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [95.144329, 50.106554]
+    },
+    "fuel_available": false,
+    "aliases": ["Торе-Холь", "Torye-Khol"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/2412853556",
+      "source_id": "node 2412853556",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Увсын чиглэл. Зочид буудал.",
+      "en": "On the Uvs side. Hotel."
+    }
+  },
+  {
+    "_id": "place_osm_n_2910412828",
+    "name": {
+      "mn": "Tuul Riverside Lodge",
+      "en": "Tuul Riverside Lodge"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.237361, 47.885191]
+    },
+    "fuel_available": false,
+    "aliases": ["Tuul Riverside Lodge"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/2910412828",
+      "source_id": "node 2910412828",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Жуулчны бааз.",
+      "en": "Near Gorkhi-Terelj. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_n_3461488905",
+    "name": {
+      "mn": "Last Frontier",
+      "en": "Last Frontier"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.649017, 51.512896]
+    },
+    "fuel_available": false,
+    "aliases": ["Last Frontier"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/3461488905",
+      "source_id": "node 3461488905",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Амралтын байшин.",
+      "en": "On the Khövsgöl side. Holiday cabin."
+    }
+  },
+  {
+    "_id": "place_osm_n_3564861153",
+    "name": {
+      "mn": "Toilogt Camp",
+      "en": "Toilogt Camp"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.253635, 50.655329]
+    },
+    "fuel_available": false,
+    "aliases": ["Toilogt Camp"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/3564861153",
+      "source_id": "node 3564861153",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Жуулчны бааз.",
+      "en": "On the Khövsgöl side. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_n_3674511327",
+    "name": {
+      "mn": "Барбарис",
+      "en": "Barbaris"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.659118, 51.504334]
+    },
+    "fuel_available": false,
+    "aliases": ["Барбарис", "Barbaris"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/3674511327",
+      "source_id": "node 3674511327",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Амралтын байшин.",
+      "en": "On the Khövsgöl side. Holiday cabin."
+    }
+  },
+  {
+    "_id": "place_osm_n_3676399965",
+    "name": {
+      "mn": "Agartha",
+      "en": "Agartha"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.717398, 51.091758]
+    },
+    "fuel_available": false,
+    "aliases": ["Agartha"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/3676399965",
+      "source_id": "node 3676399965",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Жуулчны бааз.",
+      "en": "On the Khövsgöl side. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_n_3914827061",
+    "name": {
+      "mn": "tawan od",
+      "en": "tawan od"
+    },
+    "aimag": "Uvs",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [92.06459, 49.990783]
+    },
+    "fuel_available": false,
+    "aliases": ["tawan od"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/3914827061",
+      "source_id": "node 3914827061",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Увсын чиглэл. Зочид буудал.",
+      "en": "On the Uvs side. Hotel."
+    }
+  },
+  {
+    "_id": "place_osm_n_4225072595",
+    "name": {
+      "mn": "Gan-oyu Guesthouse",
+      "en": "Gan-oyu Guesthouse"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.158835, 49.637523]
+    },
+    "fuel_available": false,
+    "aliases": ["Gan-oyu Guesthouse"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/4225072595",
+      "source_id": "node 4225072595",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Хямд буудал.",
+      "en": "On the Khövsgöl side. Hostel."
+    }
+  },
+  {
+    "_id": "place_osm_n_4243874189",
+    "name": {
+      "mn": "Sara",
+      "en": "Sara"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.191429, 49.644142]
+    },
+    "fuel_available": false,
+    "aliases": ["Sara"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/4243874189",
+      "source_id": "node 4243874189",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Зочны байр.",
+      "en": "On the Khövsgöl side. Guest house."
+    }
+  },
+  {
+    "_id": "place_osm_n_4262341289",
+    "name": {
+      "mn": "Ачит Нуур HOTEL",
+      "en": "Achit Nuur HOTEL"
+    },
+    "aimag": "Uvs",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [92.060654, 49.983513]
+    },
+    "fuel_available": false,
+    "aliases": ["Ачит Нуур HOTEL", "Achit Nuur HOTEL"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/4262341289",
+      "source_id": "node 4262341289",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Увсын чиглэл. Зочид буудал.",
+      "en": "On the Uvs side. Hotel."
+    }
+  },
+  {
+    "_id": "place_osm_n_4274757290",
+    "name": {
+      "mn": "Saraa's Guest House",
+      "en": "Saraa's Guest House"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.191458, 49.644195]
+    },
+    "fuel_available": false,
+    "aliases": ["Saraa's Guest House"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/4274757290",
+      "source_id": "node 4274757290",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Зочны байр.",
+      "en": "On the Khövsgöl side. Guest house."
+    }
+  },
+  {
+    "_id": "place_osm_n_4290498696",
+    "name": {
+      "mn": "Grand hotel",
+      "en": "Grand hotel"
+    },
+    "aimag": "Uvs",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [92.06493, 49.988587]
+    },
+    "fuel_available": false,
+    "aliases": ["Grand hotel"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/4290498696",
+      "source_id": "node 4290498696",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Увсын чиглэл. Зочид буудал.",
+      "en": "On the Uvs side. Hotel."
+    }
+  },
+  {
+    "_id": "place_osm_n_4290625696",
+    "name": {
+      "mn": "Ачид Нуур Буудал",
+      "en": "Achit Nuur Hotel"
+    },
+    "aimag": "Uvs",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [92.060189, 49.983738]
+    },
+    "fuel_available": false,
+    "aliases": ["Ачид Нуур Буудал", "Achit Nuur Hotel"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/4290625696",
+      "source_id": "node 4290625696",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Увсын чиглэл. Зочид буудал.",
+      "en": "On the Uvs side. Hotel."
+    }
+  },
+  {
+    "_id": "place_osm_n_4325314008",
+    "name": {
+      "mn": "Tenkhelg Hotel",
+      "en": "Tenkhelg Hotel"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.164864, 49.638266]
+    },
+    "fuel_available": false,
+    "aliases": ["Tenkhelg Hotel"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/4325314008",
+      "source_id": "node 4325314008",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Зочид буудал. Утас: +976 70382090",
+      "en": "On the Khövsgöl side. Hotel. Phone: +976 70382090"
+    }
+  },
+  {
+    "_id": "place_osm_n_4335068290",
+    "name": {
+      "mn": "Haruul zangi",
+      "en": "Haruul zangi"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.2494, 50.716587]
+    },
+    "fuel_available": false,
+    "aliases": ["Haruul zangi"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/4335068290",
+      "source_id": "node 4335068290",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Жуулчны бааз.",
+      "en": "On the Khövsgöl side. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_n_4340814391",
+    "name": {
+      "mn": "Uvs tour",
+      "en": "Uvs tour"
+    },
+    "aimag": "Uvs",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [92.353082, 50.104134]
+    },
+    "fuel_available": false,
+    "aliases": ["Uvs tour"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/4340814391",
+      "source_id": "node 4340814391",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Увсын чиглэл. Зочны байр.",
+      "en": "On the Uvs side. Guest house."
+    }
+  },
+  {
+    "_id": "place_osm_n_4342760789",
+    "name": {
+      "mn": "ТОСК",
+      "en": "TOSK"
+    },
+    "aimag": "Uvs",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [92.077661, 49.977414]
+    },
+    "fuel_available": false,
+    "aliases": ["ТОСК", "TOSK"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/4342760789",
+      "source_id": "node 4342760789",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Увсын чиглэл. Зочны байр.",
+      "en": "On the Uvs side. Guest house."
+    }
+  },
+  {
+    "_id": "place_osm_n_4346038144",
+    "name": {
+      "mn": "хүслийн хад",
+      "en": "Whisp rock"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.211283, 50.545842]
+    },
+    "fuel_available": false,
+    "aliases": ["хүслийн хад", "Whisp rock"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/4346038144",
+      "source_id": "node 4346038144",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Хад цохио.",
+      "en": "On the Khövsgöl side. Rock formation."
+    }
+  },
+  {
+    "_id": "place_osm_n_4349423593",
+    "name": {
+      "mn": "Baigal",
+      "en": "Baigal"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.179907, 49.636328]
+    },
+    "fuel_available": false,
+    "aliases": ["Baigal"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/4349423593",
+      "source_id": "node 4349423593",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Зочны байр. Утас: 99388408",
+      "en": "On the Khövsgöl side. Guest house. Phone: 99388408"
+    }
+  },
+  {
+    "_id": "place_osm_n_4391311490",
+    "name": {
+      "mn": "Jingiin gol",
+      "en": "Jingiin gol"
+    },
+    "aimag": "Uvs",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [94.810486, 49.449888]
+    },
+    "fuel_available": false,
+    "aliases": ["Jingiin gol"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/4391311490",
+      "source_id": "node 4391311490",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Увсын чиглэл. Үзэсгэлэнт цэг.",
+      "en": "On the Uvs side. Viewpoint."
+    }
+  },
+  {
+    "_id": "place_osm_n_4406387989",
+    "name": {
+      "mn": "BATA's Guesthouse",
+      "en": "BATA's Guesthouse"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.167141, 49.651024]
+    },
+    "fuel_available": false,
+    "aliases": ["BATA's Guesthouse"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/4406387989",
+      "source_id": "node 4406387989",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Зочны байр. Утас: +97691387080",
+      "en": "On the Khövsgöl side. Guest house. Phone: +97691387080"
+    }
+  },
+  {
+    "_id": "place_osm_n_4427269592",
+    "name": {
+      "mn": "уубулан",
+      "en": "uubulan"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.550574, 47.841722]
+    },
+    "fuel_available": false,
+    "aliases": ["уубулан", "uubulan"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/4427269592",
+      "source_id": "node 4427269592",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Жуулчны бааз. Утас: 89979803",
+      "en": "Near Gorkhi-Terelj. Tourist camp. Phone: 89979803"
+    }
+  },
+  {
+    "_id": "place_osm_n_4535259747",
+    "name": {
+      "mn": "Buuveit Camp",
+      "en": "Buuveit Camp"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.470553, 47.877172]
+    },
+    "fuel_available": false,
+    "aliases": ["Buuveit Camp"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/4535259747",
+      "source_id": "node 4535259747",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Жуулчны бааз.",
+      "en": "Near Gorkhi-Terelj. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_n_4536694191",
+    "name": {
+      "mn": "Tamir Wellness Tourist Camp",
+      "en": "Tamir Wellness Tourist Camp"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.441292, 47.856376]
+    },
+    "fuel_available": false,
+    "aliases": ["Tamir Wellness Tourist Camp"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/4536694191",
+      "source_id": "node 4536694191",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Жуулчны бааз.",
+      "en": "Near Gorkhi-Terelj. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_n_4741204922",
+    "name": {
+      "mn": "Batbayar",
+      "en": "Batbayar"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.158734, 50.450647]
+    },
+    "fuel_available": false,
+    "aliases": ["Batbayar"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/4741204922",
+      "source_id": "node 4741204922",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Зочны байр.",
+      "en": "On the Khövsgöl side. Guest house."
+    }
+  },
+  {
+    "_id": "place_osm_n_4741204923",
+    "name": {
+      "mn": "batbayar",
+      "en": "batbayar"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.191702, 50.621729]
+    },
+    "fuel_available": false,
+    "aliases": ["batbayar"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/4741204923",
+      "source_id": "node 4741204923",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Жуулчны бааз.",
+      "en": "On the Khövsgöl side. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_n_478551696",
+    "name": {
+      "mn": "Guru",
+      "en": "Guru"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.42725, 47.880599]
+    },
+    "fuel_available": false,
+    "aliases": ["Guru"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/478551696",
+      "source_id": "node 478551696",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Жуулчны бааз.",
+      "en": "Near Gorkhi-Terelj. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_n_4858886922",
+    "name": {
+      "mn": "Jigleg",
+      "en": "Jigleg"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.281341, 51.002982]
+    },
+    "fuel_available": false,
+    "aliases": ["Jigleg"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/4858886922",
+      "source_id": "node 4858886922",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Жуулчны бааз.",
+      "en": "On the Khövsgöl side. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_n_4978536027",
+    "name": {
+      "mn": "янгирт",
+      "en": "yangirt"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.428336, 47.920874]
+    },
+    "fuel_available": false,
+    "aliases": ["янгирт", "yangirt"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/4978536027",
+      "source_id": "node 4978536027",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Жуулчны бааз.",
+      "en": "Near Gorkhi-Terelj. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_n_4982081321",
+    "name": {
+      "mn": "Хүслийн хад",
+      "en": "Khüsliin khad"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.203346, 50.526243]
+    },
+    "fuel_available": false,
+    "aliases": ["Хүслийн хад", "Khüsliin khad"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/4982081321",
+      "source_id": "node 4982081321",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Уулын овоохой.",
+      "en": "On the Khövsgöl side. Mountain hut."
+    }
+  },
+  {
+    "_id": "place_osm_n_5036888125",
+    "name": {
+      "mn": "НАС'ЛАГЕР",
+      "en": "NAS'LAGYeR"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.230013, 48.026365]
+    },
+    "fuel_available": false,
+    "aliases": ["НАС'ЛАГЕР", "NAS'LAGYeR"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/5036888125",
+      "source_id": "node 5036888125",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Зочны байр.",
+      "en": "Near Gorkhi-Terelj. Guest house."
+    }
+  },
+  {
+    "_id": "place_osm_n_5047109021",
+    "name": {
+      "mn": "гэр бүлийн амралт",
+      "en": "family house"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.18307, 47.903873]
+    },
+    "fuel_available": false,
+    "aliases": ["гэр бүлийн амралт", "family house"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/5047109021",
+      "source_id": "node 5047109021",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Зочны байр.",
+      "en": "Near Gorkhi-Terelj. Guest house."
+    }
+  },
+  {
+    "_id": "place_osm_n_5054026107",
+    "name": {
+      "mn": "Misheel Ger Camp",
+      "en": "Misheel Ger Camp"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.196778, 50.603761]
+    },
+    "fuel_available": false,
+    "aliases": ["Misheel Ger Camp"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/5054026107",
+      "source_id": "node 5054026107",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Жуулчны бааз.",
+      "en": "On the Khövsgöl side. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_n_5058633824",
+    "name": {
+      "mn": "Өгөөмөр амралт",
+      "en": "Uguumur camp"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.46628, 47.886085]
+    },
+    "fuel_available": false,
+    "aliases": ["Өгөөмөр амралт", "Uguumur camp"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/5058633824",
+      "source_id": "node 5058633824",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Жуулчны бааз.",
+      "en": "Near Gorkhi-Terelj. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_n_5225850223",
+    "name": {
+      "mn": "Хагийн пост",
+      "en": "Khagiin post"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.510365, 48.08464]
+    },
+    "fuel_available": false,
+    "aliases": ["Хагийн пост", "Khagiin post"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/5225850223",
+      "source_id": "node 5225850223",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Жуулчны бааз.",
+      "en": "Near Gorkhi-Terelj. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_n_5227960321",
+    "name": {
+      "mn": "Гацдаг даваа",
+      "en": "Gatsdag davaa"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.464406, 47.86426]
+    },
+    "fuel_available": false,
+    "aliases": ["Гацдаг даваа", "Gatsdag davaa"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/5227960321",
+      "source_id": "node 5227960321",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Уулын овоохой.",
+      "en": "Near Gorkhi-Terelj. Mountain hut."
+    }
+  },
+  {
+    "_id": "place_osm_n_5310289121",
+    "name": {
+      "mn": "Tenger resort",
+      "en": "Tenger resort"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.403899, 47.886524]
+    },
+    "fuel_available": false,
+    "aliases": ["Tenger resort"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/5310289121",
+      "source_id": "node 5310289121",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Аялалын үзвэр.",
+      "en": "Near Gorkhi-Terelj. Visitor stop."
+    }
+  },
+  {
+    "_id": "place_osm_n_5439838427",
+    "name": {
+      "mn": "Ар царам амралт",
+      "en": "Ar tsaram tour camp"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.165428, 50.582976]
+    },
+    "fuel_available": false,
+    "aliases": ["Ар царам амралт", "Ar tsaram tour camp"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/5439838427",
+      "source_id": "node 5439838427",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Жуулчны бааз. Утас: 88025745",
+      "en": "On the Khövsgöl side. Tourist camp. Phone: 88025745"
+    }
+  },
+  {
+    "_id": "place_osm_n_5443849221",
+    "name": {
+      "mn": "Burenkhaan Camp",
+      "en": "Burenkhaan Camp"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.200626, 50.612259]
+    },
+    "fuel_available": false,
+    "aliases": ["Burenkhaan amraltiin gazar", "Burenkhaan Camp"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/5443849221",
+      "source_id": "node 5443849221",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Зочны байр. Утас: +97698004499",
+      "en": "On the Khövsgöl side. Guest house. Phone: +97698004499"
+    }
+  },
+  {
+    "_id": "place_osm_n_5599691421",
+    "name": {
+      "mn": "Гер Хорхог",
+      "en": "Bert's Camp"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.49679, 47.979471]
+    },
+    "fuel_available": false,
+    "aliases": ["Гер Хорхог", "Bert's Camp"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/5599691421",
+      "source_id": "node 5599691421",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Зочны байр.",
+      "en": "Near Gorkhi-Terelj. Guest house."
+    }
+  },
+  {
+    "_id": "place_osm_n_5618969321",
+    "name": {
+      "mn": "Наранзангилаа /Blue cove/",
+      "en": "Naranzangilaa Blue cove"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.195511, 50.632073]
+    },
+    "fuel_available": false,
+    "aliases": ["Наранзангилаа /Blue cove/", "Naranzangilaa Blue cove"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/5618969321",
+      "source_id": "node 5618969321",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Жуулчны бааз.",
+      "en": "On the Khövsgöl side. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_n_5644870921",
+    "name": {
+      "mn": "Ih huraldai",
+      "en": "Ih huraldai"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.351198, 47.814781]
+    },
+    "fuel_available": false,
+    "aliases": ["Ih huraldai"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/5644870921",
+      "source_id": "node 5644870921",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Жуулчны бааз.",
+      "en": "Near Gorkhi-Terelj. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_n_5670652472",
+    "name": {
+      "mn": "Saras Gercamp",
+      "en": "Saras Gercamp"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.584449, 47.863822]
+    },
+    "fuel_available": false,
+    "aliases": ["Saras Gercamp"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/5670652472",
+      "source_id": "node 5670652472",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Зочид буудал.",
+      "en": "Near Gorkhi-Terelj. Hotel."
+    }
+  },
+  {
+    "_id": "place_osm_n_5694253290",
+    "name": {
+      "mn": "Khan-terelj camp",
+      "en": "Khan-terelj camp"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.423673, 47.8897]
+    },
+    "fuel_available": false,
+    "aliases": ["Han-terelj", "Khan-terelj camp"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/5694253290",
+      "source_id": "node 5694253290",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Жуулчны бааз.",
+      "en": "Near Gorkhi-Terelj. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_n_5725971722",
+    "name": {
+      "mn": "Цзнгyyн Хöвöö Camp",
+      "en": "Tszngyyn Khövöö Camp"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.170136, 50.469798]
+    },
+    "fuel_available": false,
+    "aliases": ["Цзнгyyн Хöвöö Camp", "Tszngyyn Khövöö Camp"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/5725971722",
+      "source_id": "node 5725971722",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Жуулчны бааз.",
+      "en": "On the Khövsgöl side. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_n_5726003121",
+    "name": {
+      "mn": "Далайн Тyрлэг",
+      "en": "Dalain Tyrleg"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.170033, 50.470357]
+    },
+    "fuel_available": false,
+    "aliases": ["Далайн Тyрлэг", "Dalain Tyrleg"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/5726003121",
+      "source_id": "node 5726003121",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Жуулчны бааз.",
+      "en": "On the Khövsgöl side. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_n_5726968321",
+    "name": {
+      "mn": "Мöнх тyr",
+      "en": "Mönkh tyr"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.17106, 50.467923]
+    },
+    "fuel_available": false,
+    "aliases": ["Мöнх тyr", "Mönkh tyr"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/5726968321",
+      "source_id": "node 5726968321",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Жуулчны бааз.",
+      "en": "On the Khövsgöl side. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_n_5726968325",
+    "name": {
+      "mn": "Гyн Нуур",
+      "en": "Gyn Nuur"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.170947, 50.453981]
+    },
+    "fuel_available": false,
+    "aliases": ["Гyн Нуур", "Gyn Nuur"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/5726968325",
+      "source_id": "node 5726968325",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Жуулчны бааз.",
+      "en": "On the Khövsgöl side. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_n_5726968422",
+    "name": {
+      "mn": "Хатгал Кэмп",
+      "en": "Khatgal Kemp"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.174121, 50.463097]
+    },
+    "fuel_available": false,
+    "aliases": ["Хатгал Кэмп", "Khatgal Kemp"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/5726968422",
+      "source_id": "node 5726968422",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Жуулчны бааз.",
+      "en": "On the Khövsgöl side. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_n_5726968424",
+    "name": {
+      "mn": "Дöрвöн Улирал",
+      "en": "Dörvön Uliral"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.170814, 50.451794]
+    },
+    "fuel_available": false,
+    "aliases": ["Дöрвöн Улирал", "Dörvön Uliral"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/5726968424",
+      "source_id": "node 5726968424",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Жуулчны бааз.",
+      "en": "On the Khövsgöl side. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_n_5741986025",
+    "name": {
+      "mn": "Aawinh",
+      "en": "Aawinh"
+    },
+    "aimag": "Uvs",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [92.049251, 49.976467]
+    },
+    "fuel_available": false,
+    "aliases": ["Aawinh"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/5741986025",
+      "source_id": "node 5741986025",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Увсын чиглэл. Зочны байр.",
+      "en": "On the Uvs side. Guest house."
+    }
+  },
+  {
+    "_id": "place_osm_n_5748840421",
+    "name": {
+      "mn": "сүүж уул",
+      "en": "suuj uul"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.141079, 50.526627]
+    },
+    "fuel_available": false,
+    "aliases": ["сүүж уул", "suuj uul"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/5748840421",
+      "source_id": "node 5748840421",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Жуулчны бааз.",
+      "en": "On the Khövsgöl side. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_n_5797654755",
+    "name": {
+      "mn": "Baga nuur elsen dundah nuur",
+      "en": "Baga nuur elsen dundah nuur"
+    },
+    "aimag": "Uvs",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [93.82045, 49.921788]
+    },
+    "fuel_available": false,
+    "aliases": ["Baga nuur elsen dundah nuur"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/5797654755",
+      "source_id": "node 5797654755",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Увсын чиглэл. Аялалын үзвэр.",
+      "en": "On the Uvs side. Visitor stop."
+    }
+  },
+  {
+    "_id": "place_osm_n_5797666753",
+    "name": {
+      "mn": "havtsaliin zam",
+      "en": "havtsaliin zam"
+    },
+    "aimag": "Uvs",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [91.93584, 49.327314]
+    },
+    "fuel_available": false,
+    "aliases": ["havtsaliin zam"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/5797666753",
+      "source_id": "node 5797666753",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Увсын чиглэл. Аялалын үзвэр.",
+      "en": "On the Uvs side. Visitor stop."
+    }
+  },
+  {
+    "_id": "place_osm_n_5810166853",
+    "name": {
+      "mn": "Nomadic family ger",
+      "en": "Nomadic family ger"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.416467, 47.925208]
+    },
+    "fuel_available": false,
+    "aliases": ["Nomadic family ger"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/5810166853",
+      "source_id": "node 5810166853",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Уулын овоохой.",
+      "en": "Near Gorkhi-Terelj. Mountain hut."
+    }
+  },
+  {
+    "_id": "place_osm_n_5835930887",
+    "name": {
+      "mn": "Ханх Тур-Т",
+      "en": "Khankh Tur-T"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.661251, 51.502337]
+    },
+    "fuel_available": false,
+    "aliases": ["Ханх Тур-Т", "Khankh Tur-T"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/5835930887",
+      "source_id": "node 5835930887",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Зочид буудал.",
+      "en": "On the Khövsgöl side. Hotel."
+    }
+  },
+  {
+    "_id": "place_osm_n_5840063188",
+    "name": {
+      "mn": "Легенда хубсугула",
+      "en": "Lyegyenda khubsugula"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.660946, 51.502691]
+    },
+    "fuel_available": false,
+    "aliases": [
+      "Легенда хубсугула",
+      "Легенда Хубсугула",
+      "Lyegyenda khubsugula"
+    ],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/5840063188",
+      "source_id": "node 5840063188",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Амралтын байшин.",
+      "en": "On the Khövsgöl side. Holiday cabin."
+    }
+  },
+  {
+    "_id": "place_osm_n_5856724287",
+    "name": {
+      "mn": "Hodoodnii rashaan",
+      "en": "Hodoodnii rashaan"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.647802, 47.780173]
+    },
+    "fuel_available": false,
+    "aliases": ["Hodoodnii rashaan"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/5856724287",
+      "source_id": "node 5856724287",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Аялалын үзвэр.",
+      "en": "Near Gorkhi-Terelj. Visitor stop."
+    }
+  },
+  {
+    "_id": "place_osm_n_5860103586",
+    "name": {
+      "mn": "River Point Lodge",
+      "en": "River Point Lodge"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.161778, 47.926733]
+    },
+    "fuel_available": false,
+    "aliases": ["River Point Lodge"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/5860103586",
+      "source_id": "node 5860103586",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Зочны байр. Утас: 99146601",
+      "en": "Near Gorkhi-Terelj. Guest house. Phone: 99146601"
+    }
+  },
+  {
+    "_id": "place_osm_n_5892749986",
+    "name": {
+      "mn": "nuhg",
+      "en": "nuhg"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.545733, 47.963636]
+    },
+    "fuel_available": false,
+    "aliases": ["nuhg"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/5892749986",
+      "source_id": "node 5892749986",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Жуулчны бааз.",
+      "en": "Near Gorkhi-Terelj. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_n_5923887485",
+    "name": {
+      "mn": "Khubilaic Khan Resort Camp",
+      "en": "Khubilaic Khan Resort Camp"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.408766, 47.846868]
+    },
+    "fuel_available": false,
+    "aliases": ["Khubilaic Khan Resort Camp"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/5923887485",
+      "source_id": "node 5923887485",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Жуулчны бааз.",
+      "en": "Near Gorkhi-Terelj. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_n_5978492686",
+    "name": {
+      "mn": "Сүмбэр баг",
+      "en": "Sumber bag"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [99.531888, 50.158875]
+    },
+    "fuel_available": false,
+    "aliases": ["Сүмбэр баг", "Sumber bag"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/5978492686",
+      "source_id": "node 5978492686",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Аялалын үзвэр.",
+      "en": "On the Khövsgöl side. Visitor stop."
+    }
+  },
+  {
+    "_id": "place_osm_n_6035835588",
+    "name": {
+      "mn": "Resort World Terelj",
+      "en": "Resort World Terelj"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.405397, 47.909996]
+    },
+    "fuel_available": false,
+    "aliases": ["Resort World Terelj"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/6035835588",
+      "source_id": "node 6035835588",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Зочид буудал.",
+      "en": "Near Gorkhi-Terelj. Hotel."
+    }
+  },
+  {
+    "_id": "place_osm_n_6047221306",
+    "name": {
+      "mn": "Wild Camping",
+      "en": "Wild Camping"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.237201, 50.655195]
+    },
+    "fuel_available": false,
+    "aliases": ["Wild Camping"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/6047221306",
+      "source_id": "node 6047221306",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Жуулчны бааз.",
+      "en": "On the Khövsgöl side. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_n_6141763585",
+    "name": {
+      "mn": "Харз",
+      "en": "Kharz"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.588905, 47.877898]
+    },
+    "fuel_available": false,
+    "aliases": ["Харз", "Kharz"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/6141763585",
+      "source_id": "node 6141763585",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Аялалын үзвэр.",
+      "en": "Near Gorkhi-Terelj. Visitor stop."
+    }
+  },
+  {
+    "_id": "place_osm_n_6177929886",
+    "name": {
+      "mn": "Тэрэлж саран",
+      "en": "Terelj saran"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.472534, 47.975419]
+    },
+    "fuel_available": false,
+    "aliases": ["Тэрэлж саран", "Terelj saran"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/6177929886",
+      "source_id": "node 6177929886",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Уулын овоохой.",
+      "en": "Near Gorkhi-Terelj. Mountain hut."
+    }
+  },
+  {
+    "_id": "place_osm_n_6515790785",
+    "name": {
+      "mn": "\"BL\" Guest house",
+      "en": "\"BL\" Guest house"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.161886, 50.455792]
+    },
+    "fuel_available": false,
+    "aliases": ["\"BL\" Guest house"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/6515790785",
+      "source_id": "node 6515790785",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Зочны байр. Утас: 99963994",
+      "en": "On the Khövsgöl side. Guest house. Phone: 99963994"
+    }
+  },
+  {
+    "_id": "place_osm_n_6586069685",
+    "name": {
+      "mn": "гүн-тэс тур",
+      "en": "Gon-tes tour ger camp"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.15492, 50.431437]
+    },
+    "fuel_available": false,
+    "aliases": ["гүн", "Gon-tes tour ger camp", "гүн-тэс тур"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/6586069685",
+      "source_id": "node 6586069685",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Зочны байр.",
+      "en": "On the Khövsgöl side. Guest house."
+    }
+  },
+  {
+    "_id": "place_osm_n_6687249685",
+    "name": {
+      "mn": "арт88 ресорт",
+      "en": "ART 88 Resort"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.237688, 50.679618]
+    },
+    "fuel_available": false,
+    "aliases": ["арт88 ресорт", "ART 88 Resort"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/6687249685",
+      "source_id": "node 6687249685",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Жуулчны бааз. Утас: 88598888",
+      "en": "On the Khövsgöl side. Tourist camp. Phone: 88598888"
+    }
+  },
+  {
+    "_id": "place_osm_n_6851609386",
+    "name": {
+      "mn": "Союз тур",
+      "en": "Soyuz tur"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.670895, 51.49459]
+    },
+    "fuel_available": false,
+    "aliases": ["Союз тур", "Soyuz tur"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/6851609386",
+      "source_id": "node 6851609386",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Амралтын байшин. Утас: +97689292616",
+      "en": "On the Khövsgöl side. Holiday cabin. Phone: +97689292616"
+    }
+  },
+  {
+    "_id": "place_osm_n_6992736286",
+    "name": {
+      "mn": "TAKHI RESORT",
+      "en": "TAKHI RESORT"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.418432, 47.856628]
+    },
+    "fuel_available": false,
+    "aliases": ["TAKHI RESORT"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/6992736286",
+      "source_id": "node 6992736286",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Зочид буудал. Утас: +976 8987-6787",
+      "en": "Near Gorkhi-Terelj. Hotel. Phone: +976 8987-6787"
+    }
+  },
+  {
+    "_id": "place_osm_n_6998130285",
+    "name": {
+      "mn": "Deed ail",
+      "en": "Deed ail"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [101.524198, 50.453996]
+    },
+    "fuel_available": false,
+    "aliases": ["Deed ail"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/6998130285",
+      "source_id": "node 6998130285",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Зочны байр.",
+      "en": "On the Khövsgöl side. Guest house."
+    }
+  },
+  {
+    "_id": "place_osm_n_7293536664",
+    "name": {
+      "mn": "13 обо",
+      "en": "13 obo"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.496765, 51.56757]
+    },
+    "fuel_available": false,
+    "aliases": ["13 обо", "13 obo"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/7293536664",
+      "source_id": "node 7293536664",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Хад цохио.",
+      "en": "On the Khövsgöl side. Rock formation."
+    }
+  },
+  {
+    "_id": "place_osm_n_7412928985",
+    "name": {
+      "mn": "Бугат Амралт",
+      "en": "Bugat Amralt"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.408965, 48.055139]
+    },
+    "fuel_available": false,
+    "aliases": ["Бугат Амралт", "Bugat Amralt"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/7412928985",
+      "source_id": "node 7412928985",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Жуулчны бааз.",
+      "en": "Near Gorkhi-Terelj. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_n_7728032887",
+    "name": {
+      "mn": "Хар тэрмэс",
+      "en": "Khar termes"
+    },
+    "aimag": "Uvs",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [93.155362, 49.33242]
+    },
+    "fuel_available": false,
+    "aliases": ["Хар тэрмэс", "Khar termes"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/7728032887",
+      "source_id": "node 7728032887",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Увсын чиглэл. Жуулчны бааз.",
+      "en": "On the Uvs side. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_n_7735296138",
+    "name": {
+      "mn": "Долоон Уул",
+      "en": "Doloon Uul"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.67557, 51.499477]
+    },
+    "fuel_available": false,
+    "aliases": ["Долоон Уул", "Doloon Uul"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/7735296138",
+      "source_id": "node 7735296138",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Зочид буудал. Утас: +97698891678;+97688539618",
+      "en": "On the Khövsgöl side. Hotel. Phone: +97698891678;+97688539618"
+    }
+  },
+  {
+    "_id": "place_osm_n_7796500686",
+    "name": {
+      "mn": "тэрэлж чингис хөшөө",
+      "en": "terelj chinggis statue"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.599251, 47.929429]
+    },
+    "fuel_available": false,
+    "aliases": ["terelj chinggis statue", "тэрэлж чингис хөшөө"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/7796500686",
+      "source_id": "node 7796500686",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Жуулчны бааз.",
+      "en": "Near Gorkhi-Terelj. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_n_7819475985",
+    "name": {
+      "mn": "Модон Хүй Арал",
+      "en": "Modon Khui Island"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.505046, 50.976655]
+    },
+    "fuel_available": false,
+    "aliases": ["Модон Хүй Арал", "Modon Khui Island"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/7819475985",
+      "source_id": "node 7819475985",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Аялалын үзвэр.",
+      "en": "On the Khövsgöl side. Visitor stop."
+    }
+  },
+  {
+    "_id": "place_osm_n_8237165512",
+    "name": {
+      "mn": "Бишрэлт",
+      "en": "Bishrelt"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.159326, 49.636848]
+    },
+    "fuel_available": false,
+    "aliases": ["Бишрэлт", "Bishrelt"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/8237165512",
+      "source_id": "node 8237165512",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Зочид буудал.",
+      "en": "On the Khövsgöl side. Hotel."
+    }
+  },
+  {
+    "_id": "place_osm_n_8661997367",
+    "name": {
+      "mn": "тусгалт нуур",
+      "en": "tusgalt nuur"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.725541, 51.140937]
+    },
+    "fuel_available": false,
+    "aliases": ["тусгалт нуур", "tusgalt nuur"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/8661997367",
+      "source_id": "node 8661997367",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Дурсгалын газар.",
+      "en": "On the Khövsgöl side. Memorial."
+    }
+  },
+  {
+    "_id": "place_osm_n_884302826",
+    "name": {
+      "mn": "Princess Camp",
+      "en": "Princess Camp"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.595997, 48.123936]
+    },
+    "fuel_available": false,
+    "aliases": ["Princess Camp"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/884302826",
+      "source_id": "node 884302826",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Жуулчны бааз.",
+      "en": "Near Gorkhi-Terelj. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_n_959772129",
+    "name": {
+      "mn": "Bata's GH",
+      "en": "Bata's GH"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.16789, 49.652155]
+    },
+    "fuel_available": false,
+    "aliases": ["Bata's GH"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/959772129",
+      "source_id": "node 959772129",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Зочны байр.",
+      "en": "On the Khövsgöl side. Guest house."
+    }
+  },
+  {
+    "_id": "place_osm_n_9792385518",
+    "name": {
+      "mn": "Зов (чулуу)",
+      "en": "Zov (rock)"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.474107, 47.873271]
+    },
+    "fuel_available": false,
+    "aliases": ["Зов (чулуу)", "Zov (rock)"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/9792385518",
+      "source_id": "node 9792385518",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Аялалын үзвэр.",
+      "en": "Near Gorkhi-Terelj. Visitor stop."
+    }
+  },
+  {
+    "_id": "place_osm_n_9792406917",
+    "name": {
+      "mn": "Шар (чулуу)",
+      "en": "Shar (rock)"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.416382, 47.896331]
+    },
+    "fuel_available": false,
+    "aliases": ["Шар", "Shar (rock)", "Шар (чулуу)"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/9792406917",
+      "source_id": "node 9792406917",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Аялалын үзвэр.",
+      "en": "Near Gorkhi-Terelj. Visitor stop."
+    }
+  },
+  {
+    "_id": "place_osm_n_9835287417",
+    "name": {
+      "mn": "Чөчүү Уул Хараац",
+      "en": "Chuchuu Mountain Viewpoint"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.201097, 50.772576]
+    },
+    "fuel_available": false,
+    "aliases": ["Чөчүү Уул Хараац", "Chuchuu Mountain Viewpoint"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/9835287417",
+      "source_id": "node 9835287417",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Үзэсгэлэнт цэг.",
+      "en": "On the Khövsgöl side. Viewpoint."
+    }
+  },
+  {
+    "_id": "place_osm_n_9956557517",
+    "name": {
+      "mn": "Сувд(Жемчук) тур база",
+      "en": "Pearl guest house"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.671915, 51.488276]
+    },
+    "fuel_available": false,
+    "aliases": ["Сувд(Жемчук) тур база", "Pearl guest house"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/node/9956557517",
+      "source_id": "node 9956557517",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Зочны байр. Утас: +97699881551",
+      "en": "On the Khövsgöl side. Guest house. Phone: +97699881551"
+    }
+  },
+  {
+    "_id": "place_osm_w_1553780424",
+    "name": {
+      "mn": "Khadg Tour Camp",
+      "en": "Khadg Tour Camp"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.72038, 48.028182]
+    },
+    "fuel_available": false,
+    "aliases": ["Khadg Tour Camp"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/way/1553780424",
+      "source_id": "way 1553780424",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Жуулчны бааз.",
+      "en": "Near Gorkhi-Terelj. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_w_168833874",
+    "name": {
+      "mn": "Terelj Hotel",
+      "en": "Terelj Hotel"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.462027, 47.988617]
+    },
+    "fuel_available": false,
+    "aliases": ["Terelj Hotel"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/way/168833874",
+      "source_id": "way 168833874",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Зочид буудал.",
+      "en": "Near Gorkhi-Terelj. Hotel."
+    }
+  },
+  {
+    "_id": "place_osm_w_222614562",
+    "name": {
+      "mn": "Аймгийн төв музей",
+      "en": "Aimgiin töv muzyei"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.162282, 49.637418]
+    },
+    "fuel_available": false,
+    "aliases": ["Аймгийн төв музей", "Aimgiin töv muzyei"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/way/222614562",
+      "source_id": "way 222614562",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Музей.",
+      "en": "On the Khövsgöl side. Museum."
+    }
+  },
+  {
+    "_id": "place_osm_w_223365654",
+    "name": {
+      "mn": "Баялаг од буудал",
+      "en": "Bayalag od buudal"
+    },
+    "aimag": "Uvs",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [92.067958, 49.977743]
+    },
+    "fuel_available": false,
+    "aliases": ["Баялаг од буудал", "Bayalag od buudal"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/way/223365654",
+      "source_id": "way 223365654",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Увсын чиглэл. Зочид буудал.",
+      "en": "On the Uvs side. Hotel."
+    }
+  },
+  {
+    "_id": "place_osm_w_227478417",
+    "name": {
+      "mn": "adel bise hotel",
+      "en": "adel bise hotel"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.156712, 49.632982]
+    },
+    "fuel_available": false,
+    "aliases": ["adel bise hotel"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/way/227478417",
+      "source_id": "way 227478417",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Зочид буудал.",
+      "en": "On the Khövsgöl side. Hotel."
+    }
+  },
+  {
+    "_id": "place_osm_w_268551709",
+    "name": {
+      "mn": "2-р эмнэлэгийн сувилал",
+      "en": "2-r emnelegiin suvilal"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.162227, 47.973411]
+    },
+    "fuel_available": false,
+    "aliases": ["2-р эмнэлэгийн сувилал", "2-r emnelegiin suvilal"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/way/268551709",
+      "source_id": "way 268551709",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Жуулчны бааз.",
+      "en": "Near Gorkhi-Terelj. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_w_268552048",
+    "name": {
+      "mn": "гурван булаг амралт",
+      "en": "gurvan bulag amralt"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.175697, 47.976391]
+    },
+    "fuel_available": false,
+    "aliases": ["гурван булаг амралт", "gurvan bulag amralt"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/way/268552048",
+      "source_id": "way 268552048",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Жуулчны бааз.",
+      "en": "Near Gorkhi-Terelj. Tourist camp."
+    }
+  },
+  {
+    "_id": "place_osm_w_287439974",
+    "name": {
+      "mn": "Reab",
+      "en": "Reab"
+    },
+    "aimag": "Töv",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.234576, 48.095017]
+    },
+    "fuel_available": false,
+    "aliases": ["Reab"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/way/287439974",
+      "source_id": "way 287439974",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Горхи-Тэрэлжийн орчим. Зочид буудал.",
+      "en": "Near Gorkhi-Terelj. Hotel."
+    }
+  },
+  {
+    "_id": "place_osm_w_346493058",
+    "name": {
+      "mn": "Гранд hotel",
+      "en": "Grand hotel"
+    },
+    "aimag": "Khövsgöl",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.154071, 49.639742]
+    },
+    "fuel_available": false,
+    "aliases": ["Гранд hotel", "Grand hotel"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/way/346493058",
+      "source_id": "way 346493058",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Хөвсгөлийн чиглэл. Зочид буудал.",
+      "en": "On the Khövsgöl side. Hotel."
+    }
+  },
+  {
+    "_id": "place_osm_w_550312412",
+    "name": {
+      "mn": "tugsbuyant hiidiin tuuri",
+      "en": "tugsbuyant hiidiin tuuri"
+    },
+    "aimag": "Uvs",
+    "kind": "attraction",
+    "location": {
+      "type": "Point",
+      "coordinates": [91.400446, 49.909492]
+    },
+    "fuel_available": false,
+    "aliases": ["tugsbuyant hiidiin tuuri"],
+    "coordinate_source": {
+      "url": "https://www.openstreetmap.org/way/550312412",
+      "source_id": "way 550312412",
+      "retrieved_on": "2026-10-01",
+      "coordinate_role": "landmark"
+    },
+    "note": {
+      "mn": "Увсын чиглэл. Түүхэн туурь.",
+      "en": "On the Uvs side. Historic ruins."
+    }
+  }
+]
