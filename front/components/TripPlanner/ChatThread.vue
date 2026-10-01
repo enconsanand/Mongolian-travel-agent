@@ -1,19 +1,54 @@
 <script setup lang="ts">
 import BrandMark from '~/components/Common/BrandMark.vue'
 import ChatPlanCard from '~/components/TripPlanner/ChatPlanCard.vue'
+import ChatSlotChoices from '~/components/TripPlanner/ChatSlotChoices.vue'
 import type { AppLocale, TripPlannerMessages } from '~/types/trip-planner'
 import type { ChatMessage } from '~/composables/useTripPlanner'
 
 /** The conversation with the agent, in a box of fixed height that keeps its newest message in view */
-const { chat, locale, messages, typing } = defineProps<{
+const { chat, locale, messages, typing, canGenerate, pendingSlot, defaultStart, defaultEnd } = defineProps<{
   chat: ChatMessage[]
   locale: AppLocale
   messages: TripPlannerMessages
   /** The agent is about to answer: show its typing dots */
   typing: boolean
+  /** Every required answer is in, so the plan button may be pressed */
+  canGenerate: boolean
+  /** The question the choices under the latest ask belong to */
+  pendingSlot: 'place' | 'guests' | 'dates' | 'budget' | null
+  defaultStart: string
+  defaultEnd: string
 }>()
 
-const emit = defineEmits<{ retry: [] }>()
+const emit = defineEmits<{ retry: []; generate: []; pick: [text: string] }>()
+
+function showsNoExtra(message: ChatMessage): boolean {
+  if (canGenerate || message.role !== 'agent' || message.kind !== 'extra') return false
+  const last = [...chat].reverse().find((item) => item.role === 'agent' && item.kind === 'extra')
+  return last?.id === message.id
+}
+
+function choiceSlot(message: ChatMessage): 'place' | 'guests' | 'dates' | 'budget' | null {
+  if (typing || message.role !== 'agent' || message.kind !== 'ask' || message.slot !== pendingSlot) return null
+  const lastAsk = [...chat].reverse().find((item) => item.role === 'agent' && item.kind === 'ask')
+  return lastAsk?.id === message.id ? message.slot : null
+}
+
+/** The agent's line in the language selected now, including questions asked before the switch */
+function agentText(message: ChatMessage): string {
+  if (message.role === 'user') return message.text
+  const chat = messages.chat
+  if (message.kind === 'ask') {
+    const question = chat.ask[message.slot]
+    return message.deflect ? `${chat.offTopic} ${question}` : question
+  }
+  if (message.kind === 'extra') return message.deflect ? `${chat.offTopic} ${chat.extra}` : chat.extra
+  if (message.kind === 'ready') return chat.ready
+  if (message.kind === 'aside') return chat.offTopicReady
+  if (message.kind === 'working') return message.phase === 'revising' ? chat.revising : chat.planning
+  if (message.kind === 'plan') return message.revision ? chat.revised : chat.planned
+  return message.code === 'planner_unavailable' ? messages.errors.planner_unavailable : messages.errors.error
+}
 
 const scroller = ref<HTMLElement | null>(null)
 
@@ -39,41 +74,39 @@ watch(
           <BrandMark class="mt-0.5 h-8 w-8 shrink-0" />
           <div class="flex min-w-0 flex-1 flex-col gap-3">
             <p
-              class="w-fit rounded-[6px_20px_20px_20px] px-4 py-2.5 text-[0.95rem]"
+              class="flex w-fit items-center gap-3 rounded-[6px_20px_20px_20px] px-4 py-2.5 text-[0.95rem]"
               :class="message.kind === 'error' ? 'bg-danger-soft text-danger' : 'border border-line bg-surface'"
+              :aria-busy="message.kind === 'working'"
             >
-              {{ message.text }}
+              {{ agentText(message) }}
+              <span v-if="message.kind === 'working'" class="typing-dots flex gap-1" aria-hidden="true">
+                <span />
+                <span />
+                <span />
+              </span>
             </p>
 
-            <ul v-if="message.kind === 'working'" class="space-y-2 pl-1 text-sm">
-              <li
-                v-for="step in message.steps"
-                :key="step.id"
-                class="flex items-center gap-2.5"
-                :class="
-                  step.status === 'complete'
-                    ? 'text-success'
-                    : step.status === 'active'
-                      ? 'font-medium text-ink'
-                      : 'text-ink-subtle'
-                "
-              >
-                <i
-                  :class="
-                    step.status === 'complete'
-                      ? 'pi pi-check-circle'
-                      : step.status === 'active'
-                        ? 'pi pi-spinner pi-spin'
-                        : 'pi pi-circle'
-                  "
-                  aria-hidden="true"
-                />
-                {{ step.label }}
-              </li>
-            </ul>
+            <ChatSlotChoices
+              v-if="choiceSlot(message)"
+              :ask="choiceSlot(message)!"
+              :locale="locale"
+              :messages="messages"
+              :default-start="defaultStart"
+              :default-end="defaultEnd"
+              @pick="emit('pick', $event)"
+            />
+
+            <button
+              v-if="showsNoExtra(message)"
+              type="button"
+              class="prompt-chip w-fit"
+              @click="emit('pick', messages.chat.noExtra)"
+            >
+              {{ messages.chat.noExtra }}
+            </button>
 
             <ChatPlanCard
-              v-else-if="message.kind === 'plan'"
+              v-if="message.kind === 'plan'"
               :proposal="message.proposal"
               :locale="locale"
               :labels="messages.chat"
@@ -81,7 +114,16 @@ watch(
             />
 
             <button
-              v-else-if="message.kind === 'error'"
+              v-if="message.kind === 'ready' && canGenerate"
+              type="button"
+              class="btn-primary w-fit px-5 py-2.5 text-sm"
+              @click="emit('generate')"
+            >
+              {{ messages.chat.generatePlan }}
+            </button>
+
+            <button
+              v-if="message.kind === 'error'"
               type="button"
               class="btn-secondary w-fit px-4 py-2 text-sm"
               @click="emit('retry')"

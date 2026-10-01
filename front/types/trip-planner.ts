@@ -1,16 +1,5 @@
 export type AppLocale = 'mn' | 'en'
 
-export const PLAN_SEARCH_STEP_IDS = ['intent', 'places', 'stays', 'writing'] as const
-export type PlanSearchStepId = (typeof PLAN_SEARCH_STEP_IDS)[number]
-
-export type PlanSearchStepStatus = 'pending' | 'active' | 'complete'
-
-export interface PlanSearchStepView {
-  id: PlanSearchStepId
-  status: PlanSearchStepStatus
-  label: string
-}
-
 export interface TripPlannerMessages {
   documentTitle: string
   languageGroupLabel: string
@@ -24,7 +13,23 @@ export interface TripPlannerMessages {
   generate: string
   retry: string
   chat: {
-    ask: Record<'guests' | 'dates' | 'budget', string>
+    ask: Record<'place' | 'guests' | 'dates' | 'budget', string>
+    choices: {
+      fromDate: string
+      toDate: string
+      useDates: string
+      datesInvalid: string
+      guestSuffix: string
+      guests: number[]
+      budgets: { label: string; value: string }[]
+      places: { label: string; value: string }[]
+    }
+    extra: string
+    noExtra: string
+    offTopic: string
+    offTopicReady: string
+    ready: string
+    generatePlan: string
     planning: string
     revising: string
     planned: string
@@ -37,5 +42,4 @@ export interface TripPlannerMessages {
     total: string
   }
   errors: Record<'planner_unavailable' | 'error', string>
-  steps: Record<PlanSearchStepId, Record<PlanSearchStepStatus, string>>
 }

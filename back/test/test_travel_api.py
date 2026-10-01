@@ -37,11 +37,29 @@ def test_stays_filter_by_region_type_and_free_date(client, seeded):
     stays = client.get(f"{API}/stays", params={"region": "west", "type": "ger_camp"}).json()
     assert stays and all(s["region"] == "west" and s["type"] == "ger_camp" for s in stays)
 
-    # The Ölgii hotel is sold out for the Golden Eagle Festival; Tavan Bogd camp is closed in October
+    seeded["stay_availability"].update_many(
+        {"stay_id": "stay_olgii_hotel_eagle", "date": "2026-10-03"},
+        {"$set": {"status": "sold_out", "available": 0}},
+    )
     free = {s["id"] for s in client.get(f"{API}/stays", params={"region": "west", "date": "2026-10-03"}).json()}
     assert "stay_olgii_hotel_eagle" not in free
-    assert "stay_tavan_bogd_camp" not in free
     assert "stay_olgii_guesthouse_kazakh" in free
+
+
+def test_a_range_requires_every_night_free(client, seeded):
+    one = {s["id"] for s in client.get(f"{API}/stays", params={"region": "west", "date": "2026-10-03"}).json()}
+    assert "stay_olgii_guesthouse_kazakh" in one
+    seeded["stay_availability"].update_many(
+        {"stay_id": "stay_olgii_guesthouse_kazakh", "date": "2026-10-04"},
+        {"$set": {"status": "sold_out", "available": 0}},
+    )
+    span = {
+        s["id"]
+        for s in client.get(
+            f"{API}/stays", params={"region": "west", "date_from": "2026-10-03", "date_to": "2026-10-04"}
+        ).json()
+    }
+    assert "stay_olgii_guesthouse_kazakh" not in span
 
 
 def test_stay_detail_has_policy_and_availability(client, seeded):

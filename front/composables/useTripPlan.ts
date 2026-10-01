@@ -1,5 +1,5 @@
 import { API_ENDPOINTS, ROUTES } from '~/constants'
-import type { AcceptResult, PlanRequestBody, Proposal } from '~/types/trip-plan'
+import type { AcceptResult, PlanRequestBody, Proposal, StayChoice } from '~/types/trip-plan'
 import type { AppLocale } from '~/types/trip-planner'
 
 export type PlanErrorCode = 'planner_unavailable' | 'proposal_not_found' | 'no_stays' | 'unavailable' | 'error'
@@ -50,11 +50,18 @@ export function useTripPlan(proposalId: string) {
 
   const proposal = ref<Proposal | null>(null)
   const loading = ref(true)
-  const busy = ref<'revise' | 'accept' | null>(null)
+  const busy = ref<'revise' | 'accept' | 'edit' | null>(null)
   const error = ref<PlanErrorCode | null>(null)
   const staysChanged = ref(false)
 
-  const canBook = computed(() => Boolean(proposal.value?.days.some((day) => day.stay)))
+  const tripFits = computed(() => {
+    const plan = proposal.value
+    if (!plan) return true
+    if (plan.fit) return plan.fit.feasible
+    return !plan.days.some((day) => day.drive_time_min > 12 * 60)
+  })
+
+  const canBook = computed(() => tripFits.value && Boolean(proposal.value?.days.some((day) => day.stay)))
 
   async function load() {
     loading.value = true
@@ -79,6 +86,59 @@ export function useTripPlan(proposalId: string) {
     }
     proposal.value = result.proposal
     return true
+  }
+
+  async function editNights(placeId: string, delta: 1 | -1): Promise<boolean> {
+    if (busy.value) return false
+    busy.value = 'edit'
+    error.value = null
+    try {
+      const { data, error: apiError } = await api.post<Proposal>(
+        API_ENDPOINTS.PLANNER.NIGHTS(proposalId),
+        { place_id: placeId, delta },
+        { headers: languageHeader(locale.value) }
+      )
+      if (!data) {
+        error.value = errorCode(apiError)
+        return false
+      }
+      proposal.value = data
+      return true
+    } finally {
+      busy.value = null
+    }
+  }
+
+  async function loadStayChoices(placeId: string): Promise<StayChoice[]> {
+    const { data } = await api.get<StayChoice[]>(
+      `${API_ENDPOINTS.PLANNER.STAYS(proposalId)}?place_id=${encodeURIComponent(placeId)}`,
+      { headers: languageHeader(locale.value) }
+    )
+    return data ?? []
+  }
+
+  let stayPick = 0
+
+  async function chooseStay(placeId: string, stayId: string): Promise<boolean> {
+    const ticket = ++stayPick
+    busy.value = 'edit'
+    error.value = null
+    try {
+      const { data, error: apiError } = await api.post<Proposal>(
+        API_ENDPOINTS.PLANNER.STAY(proposalId),
+        { place_id: placeId, stay_id: stayId },
+        { headers: languageHeader(locale.value) }
+      )
+      if (ticket !== stayPick) return true
+      if (!data) {
+        error.value = errorCode(apiError)
+        return false
+      }
+      proposal.value = data
+      return true
+    } finally {
+      if (ticket === stayPick) busy.value = null
+    }
   }
 
   async function accept() {
@@ -117,5 +177,20 @@ export function useTripPlan(proposalId: string) {
     if (proposal.value) load()
   })
 
-  return { locale, proposal, loading, busy, error, staysChanged, canBook, load, revise, accept }
+  return {
+    locale,
+    proposal,
+    loading,
+    busy,
+    error,
+    staysChanged,
+    tripFits,
+    canBook,
+    load,
+    revise,
+    editNights,
+    loadStayChoices,
+    chooseStay,
+    accept,
+  }
 }

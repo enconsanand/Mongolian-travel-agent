@@ -31,12 +31,18 @@ class Catalog:
 
     @classmethod
     def load(cls, db: Database) -> "Catalog":
+        """Load the reference collections once per request.
+
+        Heavy fields the planner does not need (photo galleries, road geometry, region
+        polygons, owner phones) are left in Mongo; stay and place pickers that need photos
+        read them through ``filters.stays_within`` / a direct find.
+        """
         return cls(
-            places={p["_id"]: p for p in db[PlaceDoc.collection].find()},
+            places={p["_id"]: p for p in db[PlaceDoc.collection].find({}, {"images": 0})},
             regions=list(db[RegionDoc.collection].find({}, {"boundary": 0})),
-            stays=list(db[StayDoc.collection].find({}, {"owner.phone": 0})),
+            stays=list(db[StayDoc.collection].find({}, {"owner.phone": 0, "images": 0, "reviews": 0})),
             routes=list(db[RouteDoc.collection].find({}, {"geometry": 0, "segments": 0})),
-            events=list(db[EventDoc.collection].find()),
+            events=list(db[EventDoc.collection].find({}, {"images": 0})),
         )
 
     def stays_at(self, place_id: str) -> list[Json]:

@@ -14,6 +14,7 @@ from collections.abc import Callable, Sequence
 
 from app.modules.orchestrator.catalog import Catalog, Json
 from app.modules.orchestrator.types import ResolvedPlace
+from app.utils.galig import latin_to_cyrillic
 
 log = logging.getLogger(__name__)
 
@@ -21,7 +22,7 @@ log = logging.getLogger(__name__)
 Chooser = Callable[[str, list[Json]], str | None]
 
 _CYRILLIC_FOLD = str.maketrans({"ө": "о", "ү": "у", "ё": "е", "-": " "})
-_GENERIC = {"нуур", "lake", "уул", "mountain", "volcano", "хот", "city", "сум", "soum", "аймаг", "aimag"}
+GENERIC = {"нуур", "lake", "уул", "mountain", "volcano", "хот", "city", "сум", "soum", "аймаг", "aimag"}
 _REGION_WORDS = {
     "south": {"говь", "gobi", "govi", "омнод", "south"},
     "west": {"баруун", "west", "western"},
@@ -29,9 +30,24 @@ _REGION_WORDS = {
     "north": {"хойд", "north", "northern"},
 }
 _MIN_PARTIAL = 4  # a query shorter than this must match a whole name
+# Trip words the model sometimes lists as places when the request was typed in galig
+_NOT_A_PLACE = {
+    "аялал",
+    "аяллын",
+    "аялалийн",
+    "аялах",
+    "аялмаар",
+    "хоног",
+    "хоногийн",
+    "хоногт",
+    "хоногоор",
+    "хоногийг",
+    "рүү",
+    "руу",
+}
 
 
-def _norm(text: str) -> str:
+def norm(text: str) -> str:
     text = unicodedata.normalize("NFKD", text.lower())
     # й is a distinct Cyrillic letter, not an optional Latin accent.
     text = text.replace("и\u0306", "й")
@@ -40,10 +56,10 @@ def _norm(text: str) -> str:
 
 
 def _significant(text: str) -> str:
-    return " ".join(w for w in _norm(text).split() if w not in _GENERIC)
+    return " ".join(w for w in norm(text).split() if w not in GENERIC)
 
 
-def _starts_word(needle: str, haystack: str) -> bool:
+def starts_word(needle: str, haystack: str) -> bool:
     return bool(needle) and re.search(rf"(^| ){re.escape(needle)}", haystack) is not None
 
 
@@ -56,9 +72,9 @@ def _match_len(query: str, names: Sequence[str]) -> int:
             continue
         if query == name:
             best = max(best, 3000 + len(name))
-        elif _starts_word(name, query):
+        elif starts_word(name, query):
             best = max(best, 2000 + len(name))
-        elif len(query) >= _MIN_PARTIAL and _starts_word(query, name):
+        elif len(query) >= _MIN_PARTIAL and starts_word(query, name):
             best = max(best, 1000 + len(query))
     return best
 
@@ -104,19 +120,27 @@ def _pick(query: str, candidates: list[str], catalog: Catalog, choose: Chooser) 
     return max(candidates, key=lambda pid: _rank(catalog, pid))
 
 
-def candidates(name: str, catalog: Catalog) -> list[str]:
-    """Every place the name could mean (empty: none)."""
-    query = _significant(name) or _norm(name)
+def is_trip_phrase(name: str) -> bool:
+    words = []
+    for word in norm(latin_to_cyrillic(name)).split():
+        word = re.sub(r"^\d+", "", word)
+        if word and not word.isdigit():
+            words.append(word)
+    return bool(words) and all(w in _NOT_A_PLACE for w in words)
+
+
+def _lookup(name: str, catalog: Catalog) -> list[str]:
+    query = _significant(name) or norm(name)
     if not query:
         return []
-    if set(_norm(name).split()) & {"аймаг", "aimag"}:
+    if set(norm(name).split()) & {"аймаг", "aimag"}:
         return _by_aimag(query, catalog)
     # Keep broad requests broad even when a landmark contains the same word
     # ("Говь" vs "Говь Гурвансайхан", "Хөвсгөл" vs "Хөвсгөл нуур").
-    if any(_norm(name) in aliases for aliases in _REGION_WORDS.values()):
+    if any(norm(name) in aliases for aliases in _REGION_WORDS.values()):
         return _by_region(query, catalog)
     if any(
-        _norm(name) in {_norm(a["name"]), _norm(a["name_mn"])}
+        norm(name) in {norm(a["name"]), norm(a["name_mn"])}
         for region in catalog.regions
         for a in region.get("aimags", [])
     ):
@@ -124,15 +148,24 @@ def candidates(name: str, catalog: Catalog) -> list[str]:
     return _by_name(query, catalog) or _by_region(query, catalog) or _by_aimag(query, catalog)
 
 
+def candidates(name: str, catalog: Catalog) -> list[str]:
+    """Every place the name could mean (empty: none). Galig is tried as Cyrillic when the original misses."""
+    found = _lookup(name, catalog)
+    cyrillic = latin_to_cyrillic(name)
+    if found or norm(cyrillic) == norm(name):
+        return found
+    return _lookup(cyrillic, catalog)
+
+
 def resolve(names: Sequence[str], catalog: Catalog, choose: Chooser) -> list[ResolvedPlace]:
     resolved: list[ResolvedPlace] = []
     for name in names:
-        if not _norm(name):
+        if not norm(name) or is_trip_phrase(name):
             continue
         options = candidates(name, catalog)
         if not options:
             resolved.append(ResolvedPlace(query=name, place_id=None, status="unresolved"))
             continue
-        chosen = _pick(_significant(name) or _norm(name), options, catalog, choose)
+        chosen = _pick(_significant(name) or norm(name), options, catalog, choose)
         resolved.append(ResolvedPlace(query=name, place_id=chosen, status="included"))
     return resolved

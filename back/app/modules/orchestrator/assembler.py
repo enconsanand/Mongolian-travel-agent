@@ -16,12 +16,14 @@ from typing import Any
 from pymongo.database import Database
 
 from app.modules.orchestrator.catalog import HUB, Catalog, Json, km_between
-from app.modules.orchestrator.types import Assembly, PlanDay, PlanRequest, PlanWarning, StayPick, Totals
-from app.schemas.travel import StayAvailabilityDoc
+from app.modules.orchestrator.filters import events_on_date, open_unit_nights, stays_within
+from app.modules.orchestrator.types import Assembly, PlanDay, PlanRequest, PlanWarning, StayPick, Totals, TripFit
+from app.schemas.travel import EventDoc
 
 STAY_RADIUS_KM = 60
 EVENT_RADIUS_KM = 50
 LONG_LEG_MIN = 9 * 60
+MAX_DRIVE_DAY_MIN = 12 * 60  # longer than this, one way, cannot be a single driving day
 ROAD_FACTOR = 1.3  # straight line → road distance where no stored route joins two places
 SPEED_KMH = 60
 TRANSIT_DETOUR = 1.25  # an overnight stop may lengthen the leg by at most this factor
@@ -31,7 +33,7 @@ DEFAULT_PLACES = 3  # a request that names no place gets up to this many
 # ----------------------------------------------------------------------------- legs
 
 
-def _leg(catalog: Catalog, a: str, b: str) -> tuple[int, int, str | None]:
+def leg(catalog: Catalog, a: str, b: str) -> tuple[int, int, str | None]:
     """(km, minutes, route id) from a to b: the shortest stored route either way, else an estimate."""
     if a == b:
         return 0, 0, None
@@ -44,7 +46,7 @@ def _leg(catalog: Catalog, a: str, b: str) -> tuple[int, int, str | None]:
 
 
 def _path(catalog: Catalog, stops: Sequence[str]) -> tuple[int, int, str | None]:
-    legs = [_leg(catalog, a, b) for a, b in zip(stops, stops[1:], strict=False)]
+    legs = [leg(catalog, a, b) for a, b in zip(stops, stops[1:], strict=False)]
     route_id = legs[0][2] if len(legs) == 1 else None
     return sum(km for km, _, _ in legs), sum(minutes for _, minutes, _ in legs), route_id
 
@@ -79,11 +81,11 @@ def _transit_place(catalog: Catalog, a: str, b: str) -> str | None:
     for pid, p in catalog.places.items():
         if pid in (a, b, HUB):
             continue
-        da, db = km_between(pa, p), km_between(p, pb)
-        if da + db > direct * TRANSIT_DETOUR or not catalog.stays_near(pid, STAY_RADIUS_KM):
+        km_a, km_b = km_between(pa, p), km_between(p, pb)
+        if km_a + km_b > direct * TRANSIT_DETOUR or not catalog.stays_near(pid, STAY_RADIUS_KM):
             continue
-        if best is None or max(da, db) < best[0]:
-            best = (max(da, db), pid)
+        if best is None or max(km_a, km_b) < best[0]:
+            best = (max(km_a, km_b), pid)
     return best[1] if best else None
 
 
@@ -106,7 +108,7 @@ def _allot_nights(
 
     plan = [(pid, nights[pid]) for pid in stops]
     while left > 0:
-        split = _split_longest_leg(catalog, plan)
+        split = _split_longestleg(catalog, plan)
         if split is None:
             break
         plan = split
@@ -123,13 +125,13 @@ def _allot_nights(
     return plan, short
 
 
-def _split_longest_leg(catalog: Catalog, plan: list[tuple[str, int]]) -> list[tuple[str, int]] | None:
+def _split_longestleg(catalog: Catalog, plan: list[tuple[str, int]]) -> list[tuple[str, int]] | None:
     """Insert a one-night stop into the longest leg between nights over the limit, if one can be found."""
     sleeps = [(i, pid) for i, (pid, n) in enumerate(plan) if n]
     points = [(-1, HUB), *sleeps, (len(plan), HUB)]
     legs = []
     for (ia, a), (ib, b) in zip(points, points[1:], strict=False):
-        minutes = _leg(catalog, a, b)[1]
+        minutes = leg(catalog, a, b)[1]
         if minutes > LONG_LEG_MIN:
             legs.append((minutes, ib, a, b))
     for _, insert_at, a, b in sorted(legs, reverse=True):
@@ -149,32 +151,23 @@ def _open_in_season(stay: Json, days: Sequence[str]) -> bool:
     return all(season["open_from"] <= d[5:] <= season["open_to"] for d in days)
 
 
-def _nightly_prices(db: Database, stay_id: str, unit_type: str, days: Sequence[str], units: int) -> list[int] | None:
-    rows = {
-        r["date"]: r
-        for r in db[StayAvailabilityDoc.collection].find(
-            {"stay_id": stay_id, "unit_type": unit_type, "date": {"$in": list(days)}}
-        )
-    }
-    if any(d not in rows or rows[d]["status"] != "open" or rows[d]["available"] < units for d in days):
-        return None
-    return [rows[d]["price_mnt"] for d in days]
-
-
-def _stay_options(
+def stay_options(
     db: Database, catalog: Catalog, place_id: str, days: Sequence[str], guests: int
 ) -> list[tuple[float, Json, StayPick]]:
+    near = [
+        (km, stay) for km, stay in stays_within(db, catalog, place_id, STAY_RADIUS_KM) if _open_in_season(stay, days)
+    ]
+    inventory = open_unit_nights(db, [stay["_id"] for _, stay in near], days)
     options = []
-    for km, stay in catalog.stays_near(place_id, STAY_RADIUS_KM):
-        if not _open_in_season(stay, days):
-            continue
+    for km, stay in near:
         for unit in stay["units"]:
             units = ceil(guests / unit["beds_per_unit"])
             if units > unit["count"]:
                 continue
-            prices = _nightly_prices(db, stay["_id"], unit["unit_type"], days, units)
-            if prices is None:
+            nights = inventory.get((stay["_id"], unit["unit_type"]))
+            if nights is None or any(nights[day]["available"] < units for day in days):
                 continue
+            prices = [nights[day]["price_mnt"] for day in days]
             qty = guests if unit["price_basis"] == "per_person" else units
             pick = StayPick(
                 stay_id=stay["_id"],
@@ -187,23 +180,25 @@ def _stay_options(
     return options
 
 
-def _event_km(catalog: Catalog, stay: Json, days: Sequence[str]) -> float:
-    near = [km_between(stay, e) for e in catalog.events if e["start_date"] <= days[-1] and e["end_date"] >= days[0]]
-    return min(near, default=float("inf"))
+def _events_covering(db: Database, days: Sequence[str]) -> list[Json]:
+    """Events overlapping the stay's nights. Same date predicate as ``events_on_date``, for a range."""
+    return list(db[EventDoc.collection].find({"start_date": {"$lte": days[-1]}, "end_date": {"$gte": days[0]}}))
 
 
 def _choose_stay(
-    catalog: Catalog, options: list[tuple[float, Json, StayPick]], style: str, days: Sequence[str]
+    db: Database, options: list[tuple[float, Json, StayPick]], style: str, days: Sequence[str]
 ) -> StayPick | None:
     if not options:
         return None
+    covering = _events_covering(db, days) if style == "culture" else []
 
     def rank(option: tuple[float, Json, StayPick]) -> tuple[Any, ...]:
         km, stay, pick = option
         if style == "value":
             return (pick.total_mnt, km)
         if style == "culture":
-            return (_event_km(catalog, stay, days), -stay["rating"], pick.total_mnt)
+            nearest = min((km_between(stay, event) for event in covering), default=float("inf"))
+            return (nearest, -stay["rating"], pick.total_mnt)
         return (stay["type"] not in ("hotel", "ger_camp"), -stay["rating"], -pick.total_mnt)
 
     return min(options, key=rank)[2]
@@ -212,13 +207,26 @@ def _choose_stay(
 # ----------------------------------------------------------------------------- assemble
 
 
-def _events_on(catalog: Catalog, day: str, place_ids: Sequence[str]) -> list[str]:
+def events_on(db: Database, catalog: Catalog, day: str, place_ids: Sequence[str]) -> list[str]:
+    """Events that day within ``EVENT_RADIUS_KM`` of one of the places. The date filter is the index."""
     places = [catalog.places[p] for p in place_ids]
-    return [
-        e["_id"]
-        for e in sorted(catalog.events, key=lambda e: e["start_date"])
-        if e["start_date"] <= day <= e["end_date"] and any(km_between(p, e) <= EVENT_RADIUS_KM for p in places)
-    ]
+    return [e["_id"] for e in events_on_date(db, day) if any(km_between(p, e) <= EVENT_RADIUS_KM for p in places)]
+
+
+def trip_fit(catalog: Catalog, stops: Sequence[str], nights: int) -> TripFit:
+    """A place fits when you can drive there, sleep at least one night, and drive back.
+
+    Each way is split into days of at most ``MAX_DRIVE_DAY_MIN``. A same-day trip fits only when the
+    round trip itself fits in one driving day. The farthest place decides.
+    """
+    if not stops:
+        return TripFit()
+    farthest = max(stops, key=lambda pid: leg(catalog, HUB, pid)[1])
+    drive_min = leg(catalog, HUB, farthest)[1]
+    drive_days = max(1, ceil(drive_min / MAX_DRIVE_DAY_MIN))
+    min_nights = 2 * (drive_days - 1) + 1
+    feasible = drive_min * 2 <= MAX_DRIVE_DAY_MIN if nights == 0 else nights >= min_nights
+    return TripFit(feasible=feasible, min_nights=min_nights, drive_min=drive_min, place_id=farthest)
 
 
 def assemble(
@@ -251,16 +259,16 @@ def assemble(
                     route_id=route_id,
                     distance_km=km,
                     drive_time_min=minutes,
-                    event_ids=_events_on(catalog, dates[len(days)], day_places),
+                    event_ids=events_on(db, catalog, dates[len(days)], day_places),
                 )
             )
             via = []
         here = pid
 
     stays_mnt = 0
-    for start, (pid, n) in _blocks(days):
+    for start, (pid, n) in overnight_blocks(days):
         nights = [d.date for d in days[start : start + n]]
-        pick = _choose_stay(catalog, _stay_options(db, catalog, pid, nights, request.guests), request.style, nights)
+        pick = _choose_stay(db, stay_options(db, catalog, pid, nights, request.guests), request.style, nights)
         if pick is None:
             if "no_availability" not in warnings:
                 warnings.append("no_availability")
@@ -279,10 +287,94 @@ def assemble(
     totals = Totals(
         stays_mnt=stays_mnt, events_mnt=events_mnt, total_mnt=total, budget_mnt=request.budget_mnt, within_budget=within
     )
-    return Assembly(days=days, totals=totals, warnings=warnings)
+    return Assembly(days=days, totals=totals, warnings=warnings, fit=trip_fit(catalog, stops, request.nights))
 
 
-def _blocks(days: Sequence[PlanDay]) -> list[tuple[int, tuple[str, int]]]:
+def assemble_blocks(
+    db: Database,
+    catalog: Catalog,
+    request: PlanRequest,
+    blocks: Sequence[tuple[str, int]],
+    prefer: Mapping[str, str] | None = None,
+) -> Assembly:
+    """Rebuild days from overnight stops in the order given, without asking a model or reordering the route."""
+    prefer = prefer or {}
+    plan = [(pid, n) for pid, n in blocks if n > 0]
+    dates = [(request.start_date + timedelta(days=i)).isoformat() for i in range(request.nights + 1)]
+    days: list[PlanDay] = []
+    here, via = HUB, []
+    for pid, n in [*plan, (HUB, 0)]:
+        if n == 0 and pid != HUB:
+            via.append(pid)
+            continue
+        legs = [(here, pid)] + [(pid, pid)] * (max(n, 1) - 1) if pid != HUB else [(here, HUB)]
+        for a, b in legs:
+            km, minutes, route_id = _path(catalog, [a, *via, b])
+            day_places = [*via, b]
+            days.append(
+                PlanDay(
+                    day=len(days) + 1,
+                    date=dates[len(days)],
+                    from_place_id=a,
+                    to_place_id=b,
+                    via_place_ids=via,
+                    route_id=route_id,
+                    distance_km=km,
+                    drive_time_min=minutes,
+                    event_ids=events_on(db, catalog, dates[len(days)], day_places),
+                )
+            )
+            via = []
+        here = pid
+
+    warnings: list[PlanWarning] = []
+    stays_mnt = 0
+    for start, (pid, n) in overnight_blocks(days):
+        nights = [d.date for d in days[start : start + n]]
+        options = stay_options(db, catalog, pid, nights, request.guests)
+        wanted = prefer.get(pid)
+        picked = next((pick for _, _, pick in options if pick.stay_id == wanted), None)
+        pick = picked or _choose_stay(db, options, request.style, nights)
+        if pick is None:
+            if "no_availability" not in warnings:
+                warnings.append("no_availability")
+            continue
+        days[start].stay = pick
+        for d in days[start : start + n]:
+            d.stay_id = pick.stay_id
+        stays_mnt += pick.total_mnt
+
+    events = {e["_id"]: e for e in catalog.events}
+    events_mnt = sum(events[eid]["ticket_price_mnt"] * request.guests for eid in {e for d in days for e in d.event_ids})
+    total = stays_mnt + events_mnt
+    within = request.budget_mnt is None or total <= request.budget_mnt
+    if not within:
+        warnings.append("over_budget")
+    totals = Totals(
+        stays_mnt=stays_mnt, events_mnt=events_mnt, total_mnt=total, budget_mnt=request.budget_mnt, within_budget=within
+    )
+    stops = list(dict.fromkeys(pid for pid, n in plan))
+    return Assembly(days=days, totals=totals, warnings=warnings, fit=trip_fit(catalog, stops, request.nights))
+
+
+def trade_nights(blocks: Sequence[tuple[str, int]], place_id: str, delta: int) -> list[tuple[str, int]] | None:
+    """Move one night between this stop and the other end of the route. Each stop keeps at least one."""
+    if delta not in (1, -1) or len(blocks) < 2:
+        return None
+    index = next((i for i, (pid, _) in enumerate(blocks) if pid == place_id), None)
+    if index is None:
+        return None
+    other = len(blocks) - 1 if index != len(blocks) - 1 else index - 1
+    place_ids = [pid for pid, _ in blocks]
+    nights = [n for _, n in blocks]
+    if nights[index] + delta < 1 or nights[other] - delta < 1:
+        return None
+    nights[index] += delta
+    nights[other] -= delta
+    return list(zip(place_ids, nights, strict=True))
+
+
+def overnight_blocks(days: Sequence[PlanDay]) -> list[tuple[int, tuple[str, int]]]:
     """(first day index, (place, nights)) for each run of nights at one place; the last day has no night."""
     blocks: list[tuple[int, tuple[str, int]]] = []
     for i, day in enumerate(days[:-1]):

@@ -9,10 +9,7 @@
     "aimag": "Darkhan-Uul",
     "location": {
       "type": "Point",
-      "coordinates": [
-        105.9228,
-        49.4867
-      ]
+      "coordinates": [105.9228, 49.4867]
     },
     "category": "festival",
     "start_date": "2026-10-03",
@@ -65,10 +62,7 @@
     "aimag": "Khövsgöl",
     "location": {
       "type": "Point",
-      "coordinates": [
-        100.16,
-        50.4425
-      ]
+      "coordinates": [100.16, 50.4425]
     },
     "category": "sport",
     "start_date": "2026-10-03",
@@ -145,10 +139,7 @@
     "aimag": "Bulgan",
     "location": {
       "type": "Point",
-      "coordinates": [
-        102.7406,
-        48.9981
-      ]
+      "coordinates": [102.7406, 48.9981]
     },
     "category": "outdoor",
     "start_date": "2026-10-04",
@@ -213,10 +204,7 @@
     "aimag": "Ömnögovi",
     "location": {
       "type": "Point",
-      "coordinates": [
-        104.425,
-        43.5708
-      ]
+      "coordinates": [104.425, 43.5708]
     },
     "category": "sport",
     "start_date": "2026-10-10",
@@ -293,10 +281,7 @@
     "aimag": "Ulaanbaatar",
     "location": {
       "type": "Point",
-      "coordinates": [
-        106.9177,
-        47.9186
-      ]
+      "coordinates": [106.9177, 47.9186]
     },
     "category": "national_holiday",
     "start_date": "2027-02-07",
@@ -324,10 +309,7 @@
     "aimag": "Khövsgöl",
     "location": {
       "type": "Point",
-      "coordinates": [
-        100.16,
-        50.4425
-      ]
+      "coordinates": [100.16, 50.4425]
     },
     "category": "festival",
     "start_date": "2027-03-02",
@@ -368,10 +350,7 @@
     "aimag": "Ömnögovi",
     "location": {
       "type": "Point",
-      "coordinates": [
-        103.54,
-        44.093
-      ]
+      "coordinates": [103.54, 44.093]
     },
     "category": "festival",
     "start_date": "2027-03-06",
@@ -399,10 +378,7 @@
     "aimag": "Dundgovi",
     "location": {
       "type": "Point",
-      "coordinates": [
-        106.2708,
-        45.7625
-      ]
+      "coordinates": [106.2708, 45.7625]
     },
     "category": "naadam",
     "start_date": "2027-07-05",
@@ -479,10 +455,7 @@
     "aimag": "Bulgan",
     "location": {
       "type": "Point",
-      "coordinates": [
-        103.5347,
-        48.8125
-      ]
+      "coordinates": [103.5347, 48.8125]
     },
     "category": "naadam",
     "start_date": "2027-07-06",
@@ -559,10 +532,7 @@
     "aimag": "Ömnögovi",
     "location": {
       "type": "Point",
-      "coordinates": [
-        104.425,
-        43.5708
-      ]
+      "coordinates": [104.425, 43.5708]
     },
     "category": "naadam",
     "start_date": "2027-07-07",
@@ -639,10 +609,7 @@
     "aimag": "Darkhan-Uul",
     "location": {
       "type": "Point",
-      "coordinates": [
-        105.9228,
-        49.4867
-      ]
+      "coordinates": [105.9228, 49.4867]
     },
     "category": "naadam",
     "start_date": "2027-07-08",
@@ -719,10 +686,7 @@
     "aimag": "Khövsgöl",
     "location": {
       "type": "Point",
-      "coordinates": [
-        100.1625,
-        49.6342
-      ]
+      "coordinates": [100.1625, 49.6342]
     },
     "category": "naadam",
     "start_date": "2027-07-08",
@@ -799,10 +763,7 @@
     "aimag": "Ulaanbaatar",
     "location": {
       "type": "Point",
-      "coordinates": [
-        106.9177,
-        47.9186
-      ]
+      "coordinates": [106.9177, 47.9186]
     },
     "category": "naadam",
     "start_date": "2027-07-11",
@@ -879,10 +840,7 @@
     "aimag": "Khövsgöl",
     "location": {
       "type": "Point",
-      "coordinates": [
-        100.16,
-        50.4425
-      ]
+      "coordinates": [100.16, 50.4425]
     },
     "category": "naadam",
     "start_date": "2027-07-18",
@@ -959,10 +917,7 @@
     "aimag": "Arkhangai",
     "location": {
       "type": "Point",
-      "coordinates": [
-        99.8828,
-        48.1567
-      ]
+      "coordinates": [99.8828, 48.1567]
     },
     "category": "naadam",
     "start_date": "2027-07-20",
@@ -1039,10 +994,7 @@
     "aimag": "Selenge",
     "location": {
       "type": "Point",
-      "coordinates": [
-        105.0853,
-        49.4781
-      ]
+      "coordinates": [105.0853, 49.4781]
     },
     "category": "religious",
     "start_date": "2027-08-21",
@@ -1119,10 +1071,7 @@
     "aimag": "Övörkhangai",
     "location": {
       "type": "Point",
-      "coordinates": [
-        102.8436,
-        47.1972
-      ]
+      "coordinates": [102.8436, 47.1972]
     },
     "category": "naadam",
     "start_date": "2027-08-06",
@@ -1199,10 +1148,7 @@
     "aimag": "Bayan-Ölgii",
     "location": {
       "type": "Point",
-      "coordinates": [
-        89.965,
-        48.9683
-      ]
+      "coordinates": [89.965, 48.9683]
     },
     "category": "festival",
     "start_date": "2026-10-03",
@@ -1279,10 +1225,7 @@
     "aimag": "Bayan-Ölgii",
     "location": {
       "type": "Point",
-      "coordinates": [
-        89.965,
-        48.9683
-      ]
+      "coordinates": [89.965, 48.9683]
     },
     "category": "festival",
     "start_date": "2027-03-22",
@@ -1347,10 +1290,7 @@
     "aimag": "Khovd",
     "location": {
       "type": "Point",
-      "coordinates": [
-        91.6419,
-        48.0056
-      ]
+      "coordinates": [91.6419, 48.0056]
     },
     "category": "naadam",
     "start_date": "2027-07-07",
@@ -1427,10 +1367,7 @@
     "aimag": "Uvs",
     "location": {
       "type": "Point",
-      "coordinates": [
-        92.0667,
-        49.9811
-      ]
+      "coordinates": [92.0667, 49.9811]
     },
     "category": "naadam",
     "start_date": "2027-07-08",
@@ -1507,10 +1444,7 @@
     "aimag": "Zavkhan",
     "location": {
       "type": "Point",
-      "coordinates": [
-        96.8444,
-        47.7417
-      ]
+      "coordinates": [96.8444, 47.7417]
     },
     "category": "naadam",
     "start_date": "2027-07-06",
@@ -1587,10 +1521,7 @@
     "aimag": "Khentii",
     "location": {
       "type": "Point",
-      "coordinates": [
-        110.6556,
-        47.3194
-      ]
+      "coordinates": [110.6556, 47.3194]
     },
     "category": "naadam",
     "start_date": "2027-07-07",
@@ -1667,10 +1598,7 @@
     "aimag": "Dornod",
     "location": {
       "type": "Point",
-      "coordinates": [
-        114.5228,
-        48.0706
-      ]
+      "coordinates": [114.5228, 48.0706]
     },
     "category": "naadam",
     "start_date": "2027-07-08",
@@ -1747,10 +1675,7 @@
     "aimag": "Sükhbaatar",
     "location": {
       "type": "Point",
-      "coordinates": [
-        113.2792,
-        46.6806
-      ]
+      "coordinates": [113.2792, 46.6806]
     },
     "category": "sport",
     "start_date": "2027-08-14",
@@ -1827,10 +1752,7 @@
     "aimag": "Khentii",
     "location": {
       "type": "Point",
-      "coordinates": [
-        111.6264,
-        49.0236
-      ]
+      "coordinates": [111.6264, 49.0236]
     },
     "category": "national_holiday",
     "start_date": "2026-11-11",
@@ -1871,10 +1793,7 @@
     "aimag": "Ulaanbaatar",
     "location": {
       "type": "Point",
-      "coordinates": [
-        106.9177,
-        47.9186
-      ]
+      "coordinates": [106.9177, 47.9186]
     },
     "category": "music_festival",
     "start_date": "2027-07-02",
@@ -1893,34 +1812,386 @@
     "cover_image_url": null
   },
   {
-    "_id": "event_choibalsan_autumn_fair",
+    "_id": "event_terelj_autumn_walk",
+    "phone": "+976 7000 1101",
+    "url": "https://en.wikipedia.org/wiki/Gorkhi-Terelj_National_Park",
     "name": {
-      "mn": "Дорнодын намрын яармаг",
-      "en": "Dornod Autumn Fair"
+      "mn": "Тэрэлжийн намрын алхалт",
+      "en": "Terelj autumn walk"
     },
-    "place_id": "place_choibalsan",
-    "aimag": "Dornod",
+    "place_id": "place_terelj",
+    "aimag": "Töv",
     "location": {
       "type": "Point",
-      "coordinates": [
-        114.5228,
-        48.0706
-      ]
+      "coordinates": [107.576006, 48.150204]
     },
-    "category": "festival",
-    "start_date": "2026-10-09",
-    "end_date": "2026-10-10",
-    "ticket_price_mnt": 0,
-    "expected_attendance": 5000,
-    "stay_demand_multiplier": 1.3,
+    "category": "outdoor",
+    "start_date": "2026-10-01",
+    "end_date": "2026-10-31",
+    "ticket_price_mnt": 15000,
+    "expected_attendance": 40,
+    "stay_demand_multiplier": 1.1,
     "description": {
-      "mn": "Өвлийн өмнөх мах, цагаан идээ, гар урлал.",
-      "en": "Meat, dairy and crafts before winter."
+      "mn": "Мэлхий хад, Арьяабал хийд хүртэлх өдрийн алхалт. Хөтөчтэй, буудлын захиалгад орохгүй.",
+      "en": "A guided day walk to Turtle Rock and Aryabal. Not included with the stay."
     },
     "date_confidence": "approximate",
     "is_mock": true,
-    "region": "east",
-    "images": [],
-    "cover_image_url": null
+    "region": "north",
+    "images": [
+      {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Gorkhi-Terelj_National_Park.jpg/1920px-Gorkhi-Terelj_National_Park.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Gorkhi-Terelj_National_Park.jpg",
+        "title": "Gorkhi-Terelj National Park.jpg",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Chongkian",
+        "source": "https://commons.wikimedia.org/wiki/File:Gorkhi-Terelj_National_Park.jpg",
+        "match": "location",
+        "distance_m": null,
+        "is_illustrative": true
+      }
+    ],
+    "cover_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Gorkhi-Terelj_National_Park.jpg/1920px-Gorkhi-Terelj_National_Park.jpg"
+  },
+  {
+    "_id": "event_terelj_horse_evening",
+    "phone": "+976 7000 1102",
+    "url": "https://en.wikipedia.org/wiki/Gorkhi-Terelj_National_Park",
+    "name": {
+      "mn": "Тэрэлжийн морины үдэш",
+      "en": "Terelj evening horse ride"
+    },
+    "place_id": "place_terelj",
+    "aimag": "Töv",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.576006, 48.150204]
+    },
+    "category": "sport",
+    "start_date": "2026-10-08",
+    "end_date": "2026-10-11",
+    "ticket_price_mnt": 25000,
+    "expected_attendance": 24,
+    "stay_demand_multiplier": 1.2,
+    "description": {
+      "mn": "Оройн богино морин аялал, хөтөчтэй. Тасалбарыг буудлаас тусад нь авна.",
+      "en": "A short guided horse ride in the evening. Tickets are separate from the stay."
+    },
+    "date_confidence": "approximate",
+    "is_mock": true,
+    "region": "north",
+    "images": [
+      {
+        "url": "/images/events/terelj-horse.jpg",
+        "original_url": "https://cielvoyage-mongolia.com/mn/wp-content/uploads/2023/05/IMG_3310-scaled.jpeg",
+        "title": "Terelj evening horse ride",
+        "license": "© cielvoyage-mongolia.com",
+        "license_url": "https://cielvoyage-mongolia.com/",
+        "author": "cielvoyage-mongolia.com",
+        "source": "https://cielvoyage-mongolia.com/mn/wp-content/uploads/2023/05/IMG_3310-scaled.jpeg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": false
+      }
+    ],
+    "cover_image_url": "/images/events/terelj-horse.jpg"
+  },
+  {
+    "_id": "event_khuvsgul_october_boat",
+    "phone": "+976 7000 1201",
+    "url": "https://en.wikipedia.org/wiki/Lake_Kh%C3%B6vsg%C3%B6l",
+    "name": {
+      "mn": "Хөвсгөлийн намрын завь",
+      "en": "Khövsgöl autumn boat trip"
+    },
+    "place_id": "place_khuvsgul_lake",
+    "aimag": "Khövsgöl",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.5, 51.1]
+    },
+    "category": "outdoor",
+    "start_date": "2026-10-01",
+    "end_date": "2026-10-20",
+    "ticket_price_mnt": 20000,
+    "expected_attendance": 30,
+    "stay_demand_multiplier": 1.1,
+    "description": {
+      "mn": "Нуурын эрэг дагуух богино завины аялал. Цаг агаар таатай үед. Захиалга тусдаа.",
+      "en": "A short boat trip along the shore, weather permitting. Booked separately."
+    },
+    "date_confidence": "approximate",
+    "is_mock": true,
+    "region": "north",
+    "images": [
+      {
+        "url": "/images/events/khuvsgul-boat.jpg",
+        "original_url": "https://eguur.mn/wp-content/uploads/2023/06/D3cH-VGUIAAqcd8.jpg",
+        "title": "Khövsgöl boat",
+        "license": "© eguur.mn",
+        "license_url": "https://eguur.mn/",
+        "author": "eguur.mn",
+        "source": "https://eguur.mn/wp-content/uploads/2023/06/D3cH-VGUIAAqcd8.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": false
+      }
+    ],
+    "cover_image_url": "/images/events/khuvsgul-boat.jpg"
+  },
+  {
+    "_id": "event_uvs_bird_watch",
+    "phone": "+976 7000 1301",
+    "url": "https://en.wikipedia.org/wiki/Uvs_Lake",
+    "name": {
+      "mn": "Увс нуурын шувуу ажиглалт",
+      "en": "Uvs Lake bird watch"
+    },
+    "place_id": "place_uvs_lake",
+    "aimag": "Uvs",
+    "location": {
+      "type": "Point",
+      "coordinates": [92.7, 50.3]
+    },
+    "category": "outdoor",
+    "start_date": "2026-10-04",
+    "end_date": "2026-10-18",
+    "ticket_price_mnt": 10000,
+    "expected_attendance": 20,
+    "stay_demand_multiplier": 1.0,
+    "description": {
+      "mn": "Нүүдлийн шувуу харах өглөөний аялал. Буудлын үнэд орохгүй.",
+      "en": "A morning walk to watch migrating birds. Not part of the stay price."
+    },
+    "date_confidence": "approximate",
+    "is_mock": true,
+    "region": "west",
+    "images": [
+      {
+        "url": "https://news.mn/wp-content/uploads/2021/12/263309728_959091728318840_7181239694241348033_n.jpg",
+        "original_url": "https://news.mn/wp-content/uploads/2021/12/263309728_959091728318840_7181239694241348033_n.jpg",
+        "title": "Увс нуурын шувуу",
+        "license": "© news.mn",
+        "license_url": "https://news.mn/",
+        "author": "news.mn",
+        "source": "https://news.mn/wp-content/uploads/2021/12/263309728_959091728318840_7181239694241348033_n.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": false
+      }
+    ],
+    "cover_image_url": "https://news.mn/wp-content/uploads/2021/12/263309728_959091728318840_7181239694241348033_n.jpg"
+  },
+  {
+    "_id": "event_kharkhorin_museum_hour",
+    "phone": "+976 7000 1401",
+    "url": "https://en.wikipedia.org/wiki/Erdene_Zuu_Monastery",
+    "name": {
+      "mn": "Эрдэнэ зуугийн тайлбар",
+      "en": "Erdene Zuu guided hour"
+    },
+    "place_id": "place_kharkhorin",
+    "aimag": "Övörkhangai",
+    "location": {
+      "type": "Point",
+      "coordinates": [102.8436, 47.1972]
+    },
+    "category": "religious",
+    "start_date": "2026-10-01",
+    "end_date": "2026-10-31",
+    "ticket_price_mnt": 8000,
+    "expected_attendance": 40,
+    "stay_demand_multiplier": 1.0,
+    "description": {
+      "mn": "Хийдийн түүхийн нэг цагийн тайлбар. Тасалбарыг хийд дээр тусад нь авна.",
+      "en": "A one-hour talk on the monastery's history. Tickets are bought at the monastery."
+    },
+    "date_confidence": "approximate",
+    "is_mock": true,
+    "region": "north",
+    "images": [
+      {
+        "url": "https://www.orkhonvalley.gov.mn/Files/Museum/1.jpg",
+        "original_url": "https://www.orkhonvalley.gov.mn/Files/Museum/1.jpg",
+        "title": "Эрдэнэ Зуу хийд",
+        "license": "© orkhonvalley.gov.mn",
+        "license_url": "https://www.orkhonvalley.gov.mn/",
+        "author": "orkhonvalley.gov.mn",
+        "source": "https://www.orkhonvalley.gov.mn/Files/Museum/1.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": false
+      }
+    ],
+    "cover_image_url": "https://www.orkhonvalley.gov.mn/Files/Museum/1.jpg"
+  },
+  {
+    "_id": "event_playtime_festival_2026",
+    "name": {
+      "mn": "Playtime наадам",
+      "en": "Playtime Festival"
+    },
+    "description": {
+      "mn": "Налайхын Playtime Field дээр 7 сарын 2–4-нд болох рок, поп, инди хөгжмийн наадам. Тасалбарыг албан ёсны хуудсаас авна.",
+      "en": "Rock, pop and indie festival at Playtime Field in Nalaikh, 2–4 July. Tickets are on the official site."
+    },
+    "place_id": "place_nalaikh",
+    "aimag": "Ulaanbaatar",
+    "region": "hub",
+    "location": {
+      "type": "Point",
+      "coordinates": [107.417361, 47.704028]
+    },
+    "category": "music_festival",
+    "start_date": "2026-07-02",
+    "end_date": "2026-07-04",
+    "ticket_price_mnt": 0,
+    "expected_attendance": 30000,
+    "stay_demand_multiplier": 1.6,
+    "date_confidence": "exact",
+    "is_mock": false,
+    "images": [
+      {
+        "url": "https://assets.yld.mn/organizations/6/media/wp6r28lo781o6oosyh6l7qjmby/original/wp6r28lo781o6oosyh6l7qjmby.png",
+        "original_url": "https://assets.yld.mn/organizations/6/media/wp6r28lo781o6oosyh6l7qjmby/original/wp6r28lo781o6oosyh6l7qjmby.png",
+        "title": "Playtime Festival",
+        "license": "© yld.mn",
+        "license_url": "https://yld.mn/",
+        "author": "yld.mn",
+        "source": "https://assets.yld.mn/organizations/6/media/wp6r28lo781o6oosyh6l7qjmby/original/wp6r28lo781o6oosyh6l7qjmby.png",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": false
+      }
+    ],
+    "cover_image_url": "https://assets.yld.mn/organizations/6/media/wp6r28lo781o6oosyh6l7qjmby/original/wp6r28lo781o6oosyh6l7qjmby.png",
+    "url": "https://playtimefestival.com/"
+  },
+  {
+    "_id": "event_taiga_festival_2026",
+    "name": {
+      "mn": "Тайга фестиваль",
+      "en": "Taiga Festival"
+    },
+    "description": {
+      "mn": "Булган аймгийн Бугат сум, Түлүүгийн даваанд 7 сарын 14–17-нд болох хөгжим, байгалийн аяллын наадам.",
+      "en": "Music and nature festival at Tülüügiin Davaa, Bugat soum, Bulgan, 14–17 July."
+    },
+    "place_id": "place_bulgan",
+    "aimag": "Bulgan",
+    "region": "north",
+    "location": {
+      "type": "Point",
+      "coordinates": [103.681246, 49.061727]
+    },
+    "category": "music_festival",
+    "start_date": "2026-07-14",
+    "end_date": "2026-07-17",
+    "ticket_price_mnt": 0,
+    "expected_attendance": 0,
+    "stay_demand_multiplier": 1.5,
+    "date_confidence": "exact",
+    "is_mock": false,
+    "images": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Bulgan_aimag_Mongolia.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Bulgan_aimag_Mongolia.jpg",
+        "title": "Bulgan aimag Mongolia.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Yumjirdulam0501",
+        "source": "https://commons.wikimedia.org/wiki/File:Bulgan_aimag_Mongolia.jpg",
+        "match": "location",
+        "distance_m": null,
+        "is_illustrative": true
+      }
+    ],
+    "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Bulgan_aimag_Mongolia.jpg",
+    "url": "https://urlag.mn/post/152040"
+  },
+  {
+    "_id": "event_khukh_baavgai_2026",
+    "name": {
+      "mn": "Хөх баавгай фестиваль",
+      "en": "Khukh Baavgai Festival"
+    },
+    "description": {
+      "mn": "Хөвсгөл аймгийн Мөрөн хотын төв стадионд 7 сарын 14–16-нд болох амьд хөгжмийн наадам.",
+      "en": "Live music festival at the central stadium in Mörön, Khövsgöl, 14–16 July."
+    },
+    "place_id": "place_murun",
+    "aimag": "Khövsgöl",
+    "region": "north",
+    "location": {
+      "type": "Point",
+      "coordinates": [100.1625, 49.6342]
+    },
+    "category": "music_festival",
+    "start_date": "2026-07-14",
+    "end_date": "2026-07-16",
+    "ticket_price_mnt": 0,
+    "expected_attendance": 0,
+    "stay_demand_multiplier": 1.5,
+    "date_confidence": "exact",
+    "is_mock": false,
+    "images": [
+      {
+        "url": "https://content.ikon.mn/news/2024/5/13/gk64ht_DSC_5575_x974.jpg",
+        "original_url": "https://content.ikon.mn/news/2024/5/13/gk64ht_DSC_5575_x974.jpg",
+        "title": "Khukh Baavgai Festival",
+        "license": "© ikon.mn",
+        "license_url": "https://ikon.mn/",
+        "author": "ikon.mn",
+        "source": "https://content.ikon.mn/news/2024/5/13/gk64ht_DSC_5575_x974.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": false
+      }
+    ],
+    "cover_image_url": "https://content.ikon.mn/news/2024/5/13/gk64ht_DSC_5575_x974.jpg",
+    "url": "https://www.khumuun.mn/a/660"
+  },
+  {
+    "_id": "event_ara_festival_2026",
+    "name": {
+      "mn": "АРА фестиваль",
+      "en": "ARA Festival"
+    },
+    "description": {
+      "mn": "Архангай аймгийн Цэцэрлэг дэх ARA цогцолборт 7 сарын 1-нээс 8 сарын 1-нийг хүртэл үргэлжлэх хөгжим, спорт, аяллын хөтөлбөр.",
+      "en": "A month of music, sport and travel at the ARA complex in Tsetserleg, Arkhangai, 1 July–1 August."
+    },
+    "place_id": "place_tsetserleg",
+    "aimag": "Arkhangai",
+    "region": "north",
+    "location": {
+      "type": "Point",
+      "coordinates": [101.4542, 47.4747]
+    },
+    "category": "festival",
+    "start_date": "2026-07-01",
+    "end_date": "2026-08-01",
+    "ticket_price_mnt": 0,
+    "expected_attendance": 0,
+    "stay_demand_multiplier": 1.4,
+    "date_confidence": "exact",
+    "is_mock": false,
+    "images": [
+      {
+        "url": "https://mto.mn/storage/2026/01/06/f6c9ed5b054085e3a287ece67e8f83b7613f7a82.jpg",
+        "original_url": "https://mto.mn/storage/2026/01/06/f6c9ed5b054085e3a287ece67e8f83b7613f7a82.jpg",
+        "title": "ARA Festival",
+        "license": "© MTO",
+        "license_url": "https://mto.mn/",
+        "author": "MTO",
+        "source": "https://mto.mn/storage/2026/01/06/f6c9ed5b054085e3a287ece67e8f83b7613f7a82.jpg",
+        "match": "event_topic",
+        "distance_m": null,
+        "is_illustrative": false
+      }
+    ],
+    "cover_image_url": "https://mto.mn/storage/2026/01/06/f6c9ed5b054085e3a287ece67e8f83b7613f7a82.jpg",
+    "url": "https://news.mn/r/2872971/"
   }
 ]

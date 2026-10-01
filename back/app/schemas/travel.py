@@ -182,6 +182,8 @@ class EventDoc(Doc):
     date_confidence: Literal["exact", "approximate"]
     images: list[Image] = []
     cover_image_url: str | None = None
+    phone: str | None = None
+    url: str | None = None
 
 
 # ----------------------------------------------------------------------------- stays
@@ -211,6 +213,14 @@ class StaySeason(Sub):
     open_to: str | None = None
 
 
+class StayReview(Sub):
+    """A short sample guest note stored with the stay. Not copied from another site."""
+
+    author: str
+    rating: float = Field(ge=0, le=5)
+    text: Text
+
+
 class StayDoc(Doc):
     collection: ClassVar[str] = "stays"
 
@@ -231,6 +241,7 @@ class StayDoc(Doc):
     payment_methods: list[Literal["qpay", "cash", "card"]]
     rating: float = Field(ge=0, le=5)
     reviews_count: int = Field(ge=0)
+    reviews: list[StayReview] = Field(default_factory=list)
     images: list[Image]
     cover_image_url: str
 

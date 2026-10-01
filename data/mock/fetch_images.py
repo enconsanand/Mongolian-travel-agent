@@ -47,7 +47,6 @@ EVENT_QUERIES = {
     "event_kharkhorin_danshig_2027": ["Danshig Naadam", "Erdene Zuu monastery"],
     "event_olgii_nauryz_2027": ["Nauryz Mongolia", "Kazakh Bayan-Ölgii"],
     "event_darkhan_autumn_fair": ["Mongolian market dairy", "Darkhan Mongolia"],
-    "event_choibalsan_autumn_fair": ["Mongolian market meat", "Choibalsan"],
     "event_khatgal_season_close_race": ["horse race Khövsgöl", "Mongolian horse race"],
     "event_uran_togoo_hike_day": ["Uran Togoo"],
     "event_dadal_chinggis_day_2026": ["Dadal Chinggis Khaan", "Dadal Khentii"],
