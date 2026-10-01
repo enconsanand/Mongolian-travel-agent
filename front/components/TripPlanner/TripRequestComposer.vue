@@ -4,8 +4,18 @@ import { VOICE_METER_DELAYS_MS } from '~/constants/tripPlanner'
 /** One long chat-style bar: type or speak the trip, Enter (or the arrow) sends it to the planner */
 const tripRequest = defineModel<string>('tripRequest', { required: true })
 
-const { isListening, voiceStatusLabel, requestLabel, requestPlaceholder, voiceButtonLabel, sendLabel } = defineProps<{
+const {
+  isListening,
+  isTranscribing = false,
+  voiceStatusLabel,
+  requestLabel,
+  requestPlaceholder,
+  voiceButtonLabel,
+  sendLabel,
+} = defineProps<{
   isListening: boolean
+  /** The recording is being turned into text */
+  isTranscribing?: boolean
   voiceStatusLabel: string
   requestLabel: string
   requestPlaceholder: string
@@ -52,7 +62,7 @@ onMounted(fitHeight)
       v-model="tripRequest"
       rows="1"
       class="min-h-12 flex-1 resize-none self-center border-0! bg-transparent! py-3 text-base leading-6 text-ink sm:text-lg shadow-none! outline-none! placeholder:text-ink-subtle"
-      :placeholder="isListening ? voiceStatusLabel : requestPlaceholder"
+      :placeholder="isListening || isTranscribing ? voiceStatusLabel : requestPlaceholder"
       @keydown="onKeydown"
     />
 
@@ -71,11 +81,17 @@ onMounted(fitHeight)
         type="button"
         class="relative grid h-12 w-12 place-items-center rounded-full text-ink-muted transition-colors hover:bg-surface-muted hover:text-ink aria-pressed:bg-danger aria-pressed:text-white"
         :aria-pressed="isListening"
-        :aria-label="voiceButtonLabel"
-        :title="voiceButtonLabel"
+        :aria-busy="isTranscribing"
+        :aria-label="isTranscribing ? voiceStatusLabel : voiceButtonLabel"
+        :title="isTranscribing ? voiceStatusLabel : voiceButtonLabel"
+        :disabled="isTranscribing"
         @click="emit('toggle-voice')"
       >
-        <i :class="isListening ? 'pi pi-stop' : 'pi pi-microphone'" class="text-lg" aria-hidden="true" />
+        <i
+          :class="isTranscribing ? 'pi pi-spinner pi-spin' : isListening ? 'pi pi-stop' : 'pi pi-microphone'"
+          class="text-lg"
+          aria-hidden="true"
+        />
       </button>
     </div>
 

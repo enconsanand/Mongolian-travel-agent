@@ -47,6 +47,9 @@ class Settings(BaseSettings):
     # NoDecode: pydantic-settings would otherwise JSON-decode this list before the validator runs.
     BACKEND_CORS_ORIGINS: Annotated[list[AnyHttpUrl], NoDecode] = Field(default=[], description="Allowed CORS origins")
 
+    # Demo contact verification is only available in local/dev environments.
+    DEMO_AUTH_ENABLED: bool = True
+
     # --- JWT Configuration ---
     JWT_SECRET: str = Field(..., min_length=32, description="Secret key for JWT generation")
     ALGORITHM: str = Field(default="HS256", description="JWT algorithm")
@@ -68,6 +71,9 @@ class Settings(BaseSettings):
     RATE_LIMIT_AUTH_REQUESTS_PER_MINUTE: int = Field(default=5, description="Auth-specific rate limit")
     RATE_LIMIT_PLANNER_REQUESTS_PER_MINUTE: int = Field(
         default=6, description="Trip planner proposals and revisions (each costs several model calls)"
+    )
+    RATE_LIMIT_OYU_REQUESTS_PER_MINUTE: int = Field(
+        default=30, description="Speech and translation calls (each spends oyu credit)"
     )
     LOGIN_MAX_FAILED_ATTEMPTS: int = Field(
         default=10, description="Failed logins per account before a temporary lockout"
@@ -127,6 +133,14 @@ class Settings(BaseSettings):
     CLOUDFLARE_ACCOUNT_ID: str | None = Field(default=None, description="Cloudflare account id for Workers AI")
     CLOUDFLARE_API_TOKEN: str | None = Field(default=None, description="API token with Workers AI read access")
     CLOUDFLARE_AI_GATEWAY: str | None = Field(default=None, description="AI Gateway id (optional: cache, logs)")
+
+    # --- oyu speech and translation (https://dev.oyu.so): Anir STT, tsuurAI TTS, Orchu MT ---
+    # Without a key the voice and translation endpoints answer 503 and the rest of the app works as before.
+    OYU_API_KEY: str | None = Field(default=None, description="oyu API key (one key for every oyu endpoint)")
+    OYU_BASE_URL: str = Field(default="https://api.oyu.so", description="oyu API base URL")
+    OYU_TTS_VOICE: str = Field(default="mbspeech", description="tsuurAI voice: mbspeech (Khalkha), baseline, mn1h")
+    OYU_STT_MODEL: str | None = Field(default=None, description="Anir model id; the API default when unset")
+    OYU_TIMEOUT_SECONDS: float = Field(default=60.0, gt=0, description="HTTP timeout per oyu call")
 
     BACKGROUND_WORKERS: bool = Field(
         default=True, description="Run the outbox delivery and checkout-expiry loop inside the API process"

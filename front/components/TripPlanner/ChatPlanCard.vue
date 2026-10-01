@@ -19,6 +19,8 @@ const {
 }>()
 
 const planLabels = computed(() => PLAN_MESSAGES[locale])
+const { speaking, loading: speechLoading, error: speechError, toggle: toggleSpeech } = useSpeech()
+const listenTexts = computed(() => [proposal.summary, ...proposal.days.map((day) => day.note ?? '')])
 const placeName = (id: string) => proposal.catalog.places[id]?.name ?? id
 
 const days = computed(() =>
@@ -46,6 +48,24 @@ const cover = computed(() => {
         <span class="text-xs text-ink-subtle">{{ planLabels.version }} {{ proposal.version }}</span>
       </div>
       <p class="mt-1 text-sm leading-relaxed text-ink-muted">{{ proposal.summary }}</p>
+      <!-- tsuurAI speaks Mongolian, so read-aloud is offered for a plan written in Mongolian -->
+      <button
+        v-if="proposal.request.lang === 'mn' && locale === 'mn'"
+        type="button"
+        class="mt-2 inline-flex items-center gap-1.5 text-xs font-semibold text-brand hover:underline"
+        :aria-pressed="speaking"
+        :aria-label="planLabels.listenLabel"
+        @click="toggleSpeech(listenTexts)"
+      >
+        <i
+          :class="speechLoading ? 'pi pi-spinner pi-spin' : speaking ? 'pi pi-stop' : 'pi pi-volume-up'"
+          aria-hidden="true"
+        />
+        {{ speaking ? planLabels.stopListening : planLabels.listen }}
+      </button>
+      <p v-if="speechError" class="mt-1 text-xs text-danger" role="alert">
+        {{ speechError === 'unavailable' ? planLabels.speechUnavailable : planLabels.speechFailed }}
+      </p>
 
       <ol class="mt-4 space-y-2.5 border-l-2 border-line pl-4">
         <li v-for="item in days" :key="item.day" class="relative text-sm">

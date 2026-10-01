@@ -9,7 +9,10 @@ A proposal lives 24 hours (TTL index on ``expires_at``). Once accepted it belong
 """
 
 from collections.abc import Sequence
+from copy import deepcopy
 from datetime import datetime, timedelta
+from hashlib import sha256
+from secrets import compare_digest, token_urlsafe
 from typing import Any
 from uuid import uuid4
 
@@ -158,7 +161,11 @@ def _assembly(assembly: Assembly, summary: str) -> Json:
 
 def _out(doc: Json) -> Json:
     """The public shape: anyone with the id may read a proposal, so who accepted it stays private."""
-    out = {k: v for k, v in doc.items() if k not in ("_id", "accepted", "created_at", "expires_at")}
+    out = {
+        k: v
+        for k, v in doc.items()
+        if k not in ("_id", "accepted", "saved", "owner_id", "claim_hash", "created_at", "expires_at")
+    }
     return {
         "id": doc["_id"],
         **out,
@@ -184,8 +191,10 @@ def propose(db: Database, gateway: ModelGateway, request: PlanRequest, now: date
         "created_at": now,
         "expires_at": now + TTL,
     }
+    claim = token_urlsafe(32)
+    doc["claim_hash"] = sha256(claim.encode()).hexdigest()
     db[PROPOSALS].insert_one(doc)
-    return _out(doc)
+    return {**_out(doc), "claim_token": claim}
 
 
 def get(db: Database, proposal_id: str, now: datetime) -> Json:
@@ -431,11 +440,18 @@ def _itinerary(trip_id: str, version: int, doc: Json, now: datetime) -> Json:
     return itinerary.model_dump(by_alias=True, exclude={"is_mock"})
 
 
-def save_trip(db: Database, proposal_id: str, user: User, now: datetime) -> str:
+def save_trip(db: Database, proposal_id: str, user: User, now: datetime, *, accept: bool = True) -> str:
     """The proposal as the user's trip; accepting again reuses the trip, adding a version if it was revised."""
     doc = _live(db, proposal_id, now)
-    accepted = doc.get("accepted")
+    accepted = doc.get("saved") or doc.get("accepted")
     if accepted and accepted["user_id"] != user.id:
+        raise ProposalNotFound(proposal_id)
+
+    claimed = db[PROPOSALS].update_one(
+        {"_id": proposal_id, "$or": [{"owner_id": {"$exists": False}}, {"owner_id": user.id}]},
+        {"$set": {"owner_id": user.id}},
+    )
+    if not claimed.matched_count:
         raise ProposalNotFound(proposal_id)
 
     request = PlanRequest.model_validate(doc["request"])
@@ -452,14 +468,16 @@ def save_trip(db: Database, proposal_id: str, user: User, now: datetime) -> str:
 
     if accepted:
         trip_id = accepted["trip_id"]
-        if accepted["version"] == doc["version"]:
-            return trip_id
         trip = db[TripDoc.collection].find_one({"_id": trip_id})
-        version = trip["current_version"] + 1 if trip else 1
-        db["itinerary_versions"].insert_one(_itinerary(trip_id, version, doc, now))
+        if trip and trip["status"] != "planned":
+            # A held/paid booking is an immutable purchase, not the next draft revision.
+            return trip_id
+        version = doc["version"]
+        itinerary = _itinerary(trip_id, version, doc, now)
+        db["itinerary_versions"].update_one({"_id": itinerary["_id"]}, {"$setOnInsert": itinerary}, upsert=True)
         db[TripDoc.collection].update_one({"_id": trip_id}, {"$set": {**trip_fields, "current_version": version}})
     else:
-        trip_id = f"trip_{uuid4().hex[:16]}"
+        trip_id = f"trip_{proposal_id.removeprefix('plan_')}"
         trip = TripDoc.model_validate(
             {
                 "_id": trip_id,
@@ -469,17 +487,59 @@ def save_trip(db: Database, proposal_id: str, user: User, now: datetime) -> str:
                     "lang": request.lang,
                     "phone": getattr(user, "phone", None) or "",
                 },
-                "current_version": 1,
+                "current_version": doc["version"],
                 "status": "planned",
                 "created_at": now.isoformat(),
                 **trip_fields,
             }
         )
-        db[TripDoc.collection].insert_one(trip.model_dump(by_alias=True, exclude={"is_mock"}))
-        db["itinerary_versions"].insert_one(_itinerary(trip_id, 1, doc, now))
+        stored_trip = trip.model_dump(by_alias=True, exclude={"is_mock"})
+        db[TripDoc.collection].update_one({"_id": trip_id}, {"$setOnInsert": stored_trip}, upsert=True)
+        itinerary = _itinerary(trip_id, doc["version"], doc, now)
+        db["itinerary_versions"].update_one({"_id": itinerary["_id"]}, {"$setOnInsert": itinerary}, upsert=True)
 
-    db[PROPOSALS].update_one(
-        {"_id": proposal_id},
-        {"$set": {"accepted": {"user_id": user.id, "trip_id": trip_id, "version": doc["version"], "at": now}}},
+    marker = {"user_id": user.id, "trip_id": trip_id, "version": doc["version"], "at": now}
+    fields = {"saved": marker, **({"accepted": marker} if accept else {})}
+    db[PROPOSALS].update_one({"_id": proposal_id}, {"$set": fields})
+    snapshot = {k: v for k, v in doc.items() if k not in ("claim_hash", "saved", "accepted")}
+    db["saved_plans"].update_one(
+        {"_id": trip_id},
+        {"$set": {"user_id": user.id, "proposal_id": proposal_id, "snapshot": snapshot}},
+        upsert=True,
     )
     return trip_id
+
+
+def authorize_edit(db: Database, proposal_id: str, user: User | None, claim: str | None, now: datetime) -> None:
+    doc = _live(db, proposal_id, now)
+    if doc.get("owner_id") and (not user or user.id != doc["owner_id"]):
+        raise ProposalNotFound(proposal_id)
+    owner = doc.get("saved") or doc.get("accepted")
+    if owner:
+        if not user or owner["user_id"] != user.id:
+            raise ProposalNotFound(proposal_id)
+        trip = db["trips"].find_one({"_id": owner["trip_id"]})
+        if trip and trip["status"] != "planned":
+            raise PlanEditRejected("This trip already has a checkout")
+    elif doc.get("claim_hash") and not compare_digest(doc["claim_hash"], sha256((claim or "").encode()).hexdigest()):
+        raise ProposalNotFound(proposal_id)
+
+
+def resume_trip(db: Database, trip_id: str, user: User, now: datetime) -> str:
+    saved = db["saved_plans"].find_one({"_id": trip_id, "user_id": user.id})
+    trip = db["trips"].find_one({"_id": trip_id, "user_id": user.id})
+    if not saved or not trip:
+        raise ProposalNotFound(trip_id)
+    if trip["status"] != "planned":
+        raise PlanEditRejected("This trip already has a checkout")
+    doc = deepcopy(saved["snapshot"])
+    existing = db[PROPOSALS].find_one({"_id": doc["_id"]})
+    if existing and existing["expires_at"] > now:
+        return doc["_id"]
+    marker = {"user_id": user.id, "trip_id": trip_id, "version": doc["version"], "at": now}
+    doc.update(saved=marker, accepted=None, expires_at=now + TTL)
+    db[PROPOSALS].replace_one({"_id": doc["_id"]}, doc, upsert=True)
+    # Price and availability are refreshed before the traveller approves a checkout.
+    restay(db, doc["_id"], now)
+    save_trip(db, doc["_id"], user, now, accept=False)
+    return doc["_id"]

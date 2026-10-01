@@ -25,7 +25,7 @@ def authenticate_user(db: Database, email: str, password: str) -> User | None:
     account state.
     """
     user = crud.user.get_by_email(db=db, email=email)
-    if not user:
+    if not user or not user.hashed_password:
         verify_password(password, _DUMMY_HASH)
         return None
     if not verify_password(password, user.hashed_password):
@@ -35,7 +35,7 @@ def authenticate_user(db: Database, email: str, password: str) -> User | None:
     return user
 
 
-def create_access_token(sub: str, expires_delta: timedelta | None = None) -> str:
+def create_access_token(sub: str, expires_delta: timedelta | None = None, *, subject_kind: str = "email") -> str:
     """
     Create a JWT access token.
 
@@ -44,10 +44,10 @@ def create_access_token(sub: str, expires_delta: timedelta | None = None) -> str
         expires_delta: Optional custom expiration time
     """
     lifetime = expires_delta or timedelta(minutes=settings.ACCESS_TOKEN_EXPIRE_MINUTES)
-    return _create_token(token_type="access_token", lifetime=lifetime, sub=sub)
+    return _create_token(token_type="access_token", lifetime=lifetime, sub=sub, subject_kind=subject_kind)
 
 
-def _create_token(*, token_type: str, lifetime: timedelta, sub: str) -> str:
+def _create_token(*, token_type: str, lifetime: timedelta, sub: str, subject_kind: str = "email") -> str:
     """
     Create a JWT token with the given parameters.
 
@@ -63,6 +63,7 @@ def _create_token(*, token_type: str, lifetime: timedelta, sub: str) -> str:
         # Unique token id enabling server-side revocation on logout
         "jti": uuid4().hex,
         "sub": sub,
+        "subject_kind": subject_kind,
     }
 
     return jwt.encode(payload, settings.JWT_SECRET, algorithm=settings.ALGORITHM)

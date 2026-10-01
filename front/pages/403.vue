@@ -1,22 +1,12 @@
 <script setup lang="ts">
-definePageMeta({
-  layout: 'default',
-  middleware: 'guest',
-})
+definePageMeta({ layout: 'planner' })
 </script>
 
 <template>
-  <div class="p-5">
-    <div class="w-full">
-      <Card class="bg-white rounded-lg shadow-none">
-        <template #content>
-          <InfoPanel
-            alt-text="Forbidden"
-            title="403 - Forbidden"
-            message="You do not have permission to access this page."
-          />
-        </template>
-      </Card>
-    </div>
-  </div>
+  <section class="mx-auto max-w-md px-6 py-24 text-center">
+    <i class="pi pi-lock text-4xl text-ink-subtle" aria-hidden="true" />
+    <h1 class="mt-4 text-2xl font-bold">403 - Forbidden</h1>
+    <p class="mt-2 text-ink-muted">You do not have permission to access this page.</p>
+    <NuxtLink to="/" class="mt-6 inline-block text-brand underline">Home</NuxtLink>
+  </section>
 </template>

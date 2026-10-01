@@ -2,19 +2,13 @@
 import type { PlanMessages } from '~/constants/tripPlan'
 import type { EventView } from '~/types/trip-plan'
 import type { AppLocale } from '~/types/trip-planner'
-import { formatMnt } from '~/utils/tripPlan'
+import { formatMnt, formatMonthDay } from '~/utils/tripPlan'
 
 const { events, locale, messages } = defineProps<{
   events: (EventView & { id: string })[]
   locale: AppLocale
   messages: PlanMessages
 }>()
-
-function dayLabel(iso: string) {
-  const date = new Date(`${iso}T00:00:00`)
-  if (locale === 'mn') return `${date.getMonth() + 1} сарын ${date.getDate()}`
-  return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
-}
 </script>
 
 <template>
@@ -27,13 +21,13 @@ function dayLabel(iso: string) {
             v-if="event.cover_image_url"
             :src="event.cover_image_url"
             :alt="event.name"
-            class="h-16 w-24 shrink-0 rounded-[calc(var(--radius-control)-2px)] object-cover"
+            class="h-16 w-24 shrink-0 rounded-inner object-cover"
             loading="lazy"
           />
           <div class="min-w-0 text-sm">
             <p class="font-semibold">{{ event.name }}</p>
             <p class="mt-1 text-xs text-accent-ink">
-              {{ dayLabel(event.start_date) }} – {{ dayLabel(event.end_date) }}
+              {{ formatMonthDay(event.start_date, locale) }} – {{ formatMonthDay(event.end_date, locale) }}
             </p>
             <p v-if="event.description" class="mt-1 text-xs leading-relaxed text-ink-muted">{{ event.description }}</p>
             <p class="mt-2 text-xs text-ink-muted">

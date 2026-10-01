@@ -1,10 +1,8 @@
 // @ts-check
-import pluginQuery from '@tanstack/eslint-plugin-query'
 import withNuxt from './.nuxt/eslint.config.mjs'
 
 export default withNuxt(
   // Your custom configs here
-  ...pluginQuery.configs['flat/recommended'],
   {
     rules: {
       // TS
@@ -15,7 +13,7 @@ export default withNuxt(
           allow: ['warn', 'error'],
         },
       ],
-      '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/no-explicit-any': 'error',
       '@typescript-eslint/explicit-module-boundary-types': 'off',
       '@typescript-eslint/ban-types': 'off',
       '@typescript-eslint/ban-ts-comment': 'off',

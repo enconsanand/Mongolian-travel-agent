@@ -24,9 +24,20 @@ const {
   loadStayChoices,
   chooseStay,
   accept,
+  save,
 } = useTripPlan(String(route.params.id))
 const auth = useCookieAuth()
+const { messages: accountMessages } = useAccountMessages()
 const messages = computed(() => PLAN_MESSAGES[locale.value])
+/** Summary and day notes in the page language (Orchu translates a plan written in the other one) */
+const { shown, translating, failed: translationFailed, isTranslated } = usePlanTranslation(proposal, locale)
+/** tsuurAI reads the plan aloud; it speaks Mongolian only */
+const { speaking, loading: speechLoading, error: speechError, toggle: toggleSpeech, stop: stopSpeech } = useSpeech()
+const listenTexts = computed(() => {
+  const plan = shown.value
+  return plan ? [plan.summary, ...plan.days.map((day) => day.note ?? '')] : []
+})
+watch(locale, stopSpeech)
 const change = ref('')
 /** The day whose stay list is open. Keyed by day, so one click does not open the list under every night at that place. */
 const openDay = ref<number | null>(null)
@@ -165,6 +176,7 @@ async function pickStay(placeId: string, stayId: string) {
 
 const errorMessage = computed(() => {
   if (!error.value || error.value === 'proposal_not_found') return null
+  if (error.value === 'trip_locked') return accountMessages.value.trip_locked
   if (error.value === 'planner_unavailable') return messages.value.plannerDown
   if (error.value === 'no_stays') return messages.value.nothingToBook
   return messages.value.genericError
@@ -174,7 +186,10 @@ async function submitChange() {
   if (await revise(change.value)) change.value = ''
 }
 
-onMounted(load)
+onMounted(async () => {
+  await load()
+  if (proposal.value && route.query.save === '1') await save()
+})
 useHead(() => ({ title: messages.value.title, htmlAttrs: { lang: locale.value } }))
 </script>
 
@@ -199,13 +214,50 @@ useHead(() => ({ title: messages.value.title, htmlAttrs: { lang: locale.value } 
       <template v-else>
         <div class="flex items-baseline justify-between gap-3">
           <h1 class="text-2xl font-semibold sm:text-3xl">{{ messages.title }}</h1>
-          <span class="shrink-0 text-xs text-ink-subtle">{{ messages.version }} {{ proposal.version }}</span>
+          <div class="flex shrink-0 flex-col items-end gap-2">
+            <span class="text-xs text-ink-subtle">{{ messages.version }} {{ proposal.version }}</span>
+            <button class="btn-secondary px-3 py-2 text-xs disabled:opacity-60" :disabled="!!busy" @click="save">
+              <i :class="busy === 'save' ? 'pi pi-spinner pi-spin' : 'pi pi-bookmark'" aria-hidden="true" />
+              {{ accountMessages.save }}
+            </button>
+          </div>
         </div>
 
         <p class="mt-3 text-sm leading-relaxed text-slate-400">{{ messages.draft }}</p>
 
-        <div class="mt-5">
-          <PlanOverview :proposal="proposal" :locale="locale" :messages="messages" />
+        <div class="mt-5 flex flex-wrap items-center justify-end gap-3 text-xs text-ink-muted">
+          <span v-if="translating">
+            <i class="pi pi-spinner pi-spin mr-1" aria-hidden="true" />
+            {{ messages.translating }}
+          </span>
+          <span v-else-if="translationFailed" class="text-warning">{{ messages.translationFailed }}</span>
+          <span v-else-if="isTranslated">
+            <i class="pi pi-language mr-1" aria-hidden="true" />
+            {{ messages.translated }}
+          </span>
+          <button
+            v-if="locale === 'mn'"
+            type="button"
+            class="btn-secondary px-3 py-2 text-xs"
+            :aria-pressed="speaking"
+            :aria-label="messages.listenLabel"
+            :title="messages.listenLabel"
+            :disabled="translating"
+            @click="toggleSpeech(listenTexts)"
+          >
+            <i
+              :class="speechLoading ? 'pi pi-spinner pi-spin' : speaking ? 'pi pi-stop' : 'pi pi-volume-up'"
+              aria-hidden="true"
+            />
+            {{ speaking ? messages.stopListening : messages.listen }}
+          </button>
+        </div>
+        <p v-if="speechError" class="mt-2 text-right text-xs text-danger" role="alert">
+          {{ speechError === 'unavailable' ? messages.speechUnavailable : messages.speechFailed }}
+        </p>
+
+        <div class="mt-3">
+          <PlanOverview :proposal="shown ?? proposal" :locale="locale" :messages="messages" />
         </div>
 
         <p
@@ -219,7 +271,7 @@ useHead(() => ({ title: messages.value.title, htmlAttrs: { lang: locale.value } 
         <div class="mt-6 lg:grid lg:grid-cols-[minmax(0,1fr)_20rem] lg:items-start lg:gap-6">
           <ol class="relative ml-3 space-y-4 border-l border-emerald-400/40 pl-6 lg:col-start-1">
             <PlanDayCard
-              v-for="(day, index) in proposal.days"
+              v-for="(day, index) in (shown ?? proposal).days"
               :key="day.day"
               :day="day"
               :catalog="proposal.catalog"

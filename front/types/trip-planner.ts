@@ -9,6 +9,8 @@ export interface TripPlannerMessages {
   requestPlaceholder: string
   tapToSpeak: string
   listening: string
+  transcribing: string
+  voiceErrors: Record<'unsupported' | 'denied' | 'empty' | 'unavailable' | 'failed', string>
   voiceButtonLabel: string
   generate: string
   retry: string

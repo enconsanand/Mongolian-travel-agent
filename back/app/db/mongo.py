@@ -32,7 +32,11 @@ def _only_strings(field: str) -> dict:
 # (collection, keys, options). The only list of indexes: the app creates them at startup and the seeder
 # creates them on every collection it loads.
 INDEXES: list[tuple[str, list[tuple[str, int | str]], dict]] = [
-    ("users", [("email", ASCENDING)], {"unique": True}),
+    ("users", [("email", ASCENDING)], {"unique": True, "name": "email_contact_unique", **_only_strings("email")}),
+    ("users", [("phone", ASCENDING)], {"unique": True, **_only_strings("phone")}),
+    ("auth_challenges", [("expires_at", ASCENDING)], {"expireAfterSeconds": 0}),
+    ("saved_plans", [("proposal_id", ASCENDING)], {"unique": True}),
+    ("saved_plans", [("user_id", ASCENDING)], {}),
     ("regions", [("boundary", GEOSPHERE)], {}),
     ("places", [("location", GEOSPHERE)], {}),
     ("stays", [("location", GEOSPHERE)], {}),
@@ -108,6 +112,11 @@ def create_indexes_for(collection: Collection, name: str) -> None:
     models = [IndexModel(keys, **options) for col, keys, options in INDEXES if col == name]
     if models:
         collection.create_indexes(models)
+        if name == "users":
+            # Build the replacement first: preserve email uniqueness throughout the upgrade.
+            old = collection.index_information().get("email_1")
+            if old and old.get("unique") and not old.get("partialFilterExpression"):
+                collection.drop_index("email_1")
 
 
 def ensure_indexes(db: Database) -> list[str]:

@@ -4,7 +4,7 @@ import { STAY_TYPE_LABELS, type PlanMessages } from '~/constants/tripPlan'
 import { UNIT_LABELS } from '~/constants/checkout'
 import type { PlanDay, Proposal, StayChoice, ImageCredit } from '~/types/trip-plan'
 import type { AppLocale } from '~/types/trip-planner'
-import { formatDriveTime, formatMnt } from '~/utils/tripPlan'
+import { formatDayDate, formatDriveTime, formatMnt } from '~/utils/tripPlan'
 
 const {
   day,
@@ -40,13 +40,7 @@ const stay = computed(() => (stayId.value ? catalog.stays[stayId.value] : undefi
 const photos = computed(() => (stay.value?.images?.length ? stay.value.images : []))
 const credit = computed(() => photos.value[0])
 const reviews = computed(() => stay.value?.reviews ?? [])
-const dateLabel = computed(() =>
-  new Date(`${day.date}T00:00:00`).toLocaleDateString(locale === 'mn' ? 'mn-MN' : 'en-US', {
-    month: 'short',
-    day: 'numeric',
-    weekday: 'short',
-  })
-)
+const dateLabel = computed(() => formatDayDate(day.date, locale))
 const gallery = ref<ImageCredit[]>([])
 const photoIndex = ref(0)
 const openPhoto = computed(() => gallery.value[photoIndex.value] ?? null)
@@ -117,7 +111,7 @@ onUnmounted(() => window.removeEventListener('keydown', onKey))
             <img
               :src="photos[0].url"
               :alt="stay.name"
-              class="aspect-4/3 w-full rounded-[calc(var(--radius-control)-2px)] object-cover"
+              class="aspect-4/3 w-full rounded-inner object-cover"
               loading="lazy"
             />
           </button>
@@ -125,7 +119,7 @@ onUnmounted(() => window.removeEventListener('keydown', onKey))
             v-else
             :src="stay.cover_image_url"
             :alt="stay.name"
-            class="aspect-4/3 w-full rounded-[calc(var(--radius-control)-2px)] object-cover"
+            class="aspect-4/3 w-full rounded-inner object-cover"
             loading="lazy"
           />
           <figcaption v-if="credit" class="mt-1 truncate text-[10px] text-ink-subtle">
@@ -223,7 +217,7 @@ onUnmounted(() => window.removeEventListener('keydown', onKey))
             <img
               :src="choice.images[0].url"
               :alt="choice.name"
-              class="h-full w-full rounded-[calc(var(--radius-control)-2px)] object-cover"
+              class="h-full w-full rounded-inner object-cover"
               loading="lazy"
             />
           </button>
@@ -231,7 +225,7 @@ onUnmounted(() => window.removeEventListener('keydown', onKey))
             v-else-if="choice.cover_image_url"
             :src="choice.cover_image_url"
             :alt="choice.name"
-            class="h-20 w-28 shrink-0 rounded-[calc(var(--radius-control)-2px)] object-cover"
+            class="h-20 w-28 shrink-0 rounded-inner object-cover"
           />
           <button
             type="button"

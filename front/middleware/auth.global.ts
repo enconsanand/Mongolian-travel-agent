@@ -1,5 +1,5 @@
-export default defineNuxtRouteMiddleware((to: any) => {
-  const publicRoutes = ['/login']
+export default defineNuxtRouteMiddleware((to) => {
+  const publicRoutes = ['/login', '/register']
 
   if (publicRoutes.includes(to.path)) return
 
@@ -13,9 +13,7 @@ export default defineNuxtRouteMiddleware((to: any) => {
     return
   }
 
-  const auth = useAuth()
-
-  if (!auth.checkAuthStatus()) {
+  if (!useAuth().isLoggedIn.value) {
     return navigateTo({ path: '/login', query: { redirect: to.fullPath } })
   }
 })

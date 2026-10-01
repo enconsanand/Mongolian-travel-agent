@@ -5,7 +5,7 @@
 import { API_ENDPOINTS } from '~/constants'
 import PlannerHeader from '~/components/TripPlanner/PlannerHeader.vue'
 import { CHECKOUT_MESSAGES, UNIT_LABELS } from '~/constants/checkout'
-import type { AppLocale } from '~/types/trip-planner'
+import { formatMnt } from '~/utils/tripPlan'
 
 definePageMeta({ layout: 'planner' })
 
@@ -28,7 +28,7 @@ interface StayItem {
 }
 
 const api = useApi()
-const locale = useState<AppLocale>('app-locale', () => 'mn')
+const locale = useAppLocale()
 const messages = computed(() => CHECKOUT_MESSAGES[locale.value])
 const labels = computed(() =>
   locale.value === 'mn'
@@ -147,8 +147,8 @@ watch([checkIn, locale], loadStays)
                 class="pi pi-spinner pi-spin mr-1"
                 aria-hidden="true"
               />
-              {{ UNIT_LABELS[unit.unit_type]?.[locale] ?? unit.unit_type }} ·
-              {{ new Intl.NumberFormat('mn-MN').format(unit.price_mnt) }} ₮ · {{ labels.hold }}
+              {{ UNIT_LABELS[unit.unit_type]?.[locale] ?? unit.unit_type }} · {{ formatMnt(unit.price_mnt, locale) }} ·
+              {{ labels.hold }}
             </button>
           </div>
         </li>

@@ -1,7 +1,5 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
-// @ts-nocheck
 import tailwindcss from '@tailwindcss/vite'
-import ThemeConfig from './assets/themes/config.js'
 
 export default defineNuxtConfig({
   devtools: { enabled: process.env.NODE_ENV !== 'production' },
@@ -75,48 +73,15 @@ export default defineNuxtConfig({
       qpaySimBase: process.env.NUXT_PUBLIC_QPAY_SIM_BASE || '',
     },
   },
-  modules: ['@pinia/nuxt', '@nuxt/image', '@nuxtjs/robots', '@primevue/nuxt-module', '@nuxt/eslint'],
-  primevue: {
-    options: {
-      theme: {
-        preset: ThemeConfig.preset,
-        options: {
-          ...ThemeConfig.options,
-        },
-      },
-    },
-  },
-  image: {
-    format: ['webp'],
-    provider: 'ipx',
-  },
-  pinia: {
-    storesDirs: ['./stores/**'],
-    autoImports: ['defineStore', ['defineStore', 'definePiniaStore']],
-  },
-  robots: {
-    UserAgent: '*',
-    Disallow: ['/api/', '/.nuxt/', '/admin/'],
-    Allow: '/',
-  },
+  modules: ['@nuxtjs/robots', '@nuxt/eslint'],
   css: ['~/assets/css/main.css', '~/assets/css/trip-planner.css'],
   features: {
     inlineStyles: true,
-  },
-  build: {
-    transpile: ['primevue', '@primeuix/themes'],
   },
   vite: {
     plugins: [tailwindcss()],
     define: {
       'process.env.DEBUG': false,
-    },
-    optimizeDeps: {
-      include: ['@tanstack/vue-query', 'zod', 'vue3-toastify'],
-    },
-    ssr: {
-      noExternal: ['primevue', '@primeuix/themes'],
-      external: ['vue3-toastify'],
     },
   },
   eslint: {

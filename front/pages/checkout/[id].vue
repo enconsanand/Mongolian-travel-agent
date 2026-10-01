@@ -3,16 +3,15 @@ import MandateApproval from '~/components/Checkout/MandateApproval.vue'
 import QPayInvoice from '~/components/Checkout/QPayInvoice.vue'
 import PlannerHeader from '~/components/TripPlanner/PlannerHeader.vue'
 import { CHECKOUT_MESSAGES } from '~/constants/checkout'
-import type { AppLocale } from '~/types/trip-planner'
 
 definePageMeta({ layout: 'planner' })
 
 const route = useRoute()
-const locale = useState<AppLocale>('app-locale', () => 'mn')
+const { messages: accountMessages } = useAccountMessages()
+const locale = useAppLocale()
 const messages = computed(() => CHECKOUT_MESSAGES[locale.value])
-const { stage, verified, payment, errorMessage, canSimulate, load, approve, simulatePayment } = useCheckoutPayment(
-  String(route.params.id)
-)
+const { stage, checkout, verified, payment, errorMessage, canSimulate, load, approve, simulatePayment } =
+  useCheckoutPayment(String(route.params.id))
 
 onMounted(load)
 useHead(() => ({ title: messages.value.title, htmlAttrs: { lang: locale.value } }))
@@ -62,6 +61,17 @@ useHead(() => ({ title: messages.value.title, htmlAttrs: { lang: locale.value } 
             {{ messages[`${stage}Hint` as 'bookedHint' | 'expiredHint' | 'failedHint'] }}
           </p>
         </section>
+
+        <!-- Once the checkout has settled, the trip page is where the booking and invoice live -->
+        <NuxtLink
+          v-if="checkout && ['booked', 'expired', 'failed'].includes(stage)"
+          :to="`/trips/${checkout.trip_id}`"
+          class="mt-5 w-full px-5 py-3"
+          :class="stage === 'booked' ? 'btn-primary' : 'btn-secondary'"
+        >
+          {{ accountMessages.viewTrip }}
+          <i class="pi pi-arrow-right" aria-hidden="true" />
+        </NuxtLink>
 
         <p v-if="errorMessage && stage !== 'untrusted'" class="mt-4 text-center text-sm text-danger" role="alert">
           {{ messages.error }}: {{ errorMessage }}

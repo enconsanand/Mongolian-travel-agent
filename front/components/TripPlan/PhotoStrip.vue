@@ -29,7 +29,7 @@ const emit = defineEmits<{ open: [photo: ImageCredit] }>()
           :src="photo.url"
           :alt="alt"
           :class="thumbClass || 'h-24 w-36'"
-          class="rounded-[calc(var(--radius-control)-2px)] object-cover"
+          class="rounded-inner object-cover"
           loading="lazy"
         />
       </button>

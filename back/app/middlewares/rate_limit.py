@@ -53,12 +53,10 @@ class InMemoryRateLimiter:
         self._maybe_prune(now, window)
         self._prune_key(key, now, window)
 
-        # Check if limit is exceeded
         timestamps = self.requests[key]
         if len(timestamps) >= limit:
             return False
 
-        # Add current request timestamp
         timestamps.append(now)
         return True
 
@@ -208,7 +206,6 @@ def get_client_ip(request: Request) -> str:
         if real_ip:
             return real_ip
 
-    # Fall back to direct client IP
     return request.client.host if request.client else "unknown"
 
 
@@ -224,32 +221,34 @@ class RateLimitMiddleware(BaseHTTPMiddleware):
         self.default_limit = settings.RATE_LIMIT_REQUESTS_PER_MINUTE
         self.auth_limit = settings.RATE_LIMIT_AUTH_REQUESTS_PER_MINUTE
         self.planner_limit = settings.RATE_LIMIT_PLANNER_REQUESTS_PER_MINUTE
+        self.oyu_limit = settings.RATE_LIMIT_OYU_REQUESTS_PER_MINUTE
         self.window = 60  # 1 minute window in seconds
 
     async def dispatch(self, request: Request, call_next):
         """Process request with rate limiting"""
 
-        # Skip rate limiting for health checks and static files
-        if self._should_skip_rate_limiting(request.url.path):
+        # Skip rate limiting for health checks and static files. CORS preflights do no work; counting them
+        # would halve the auth budget (every code request/verify from the web app sends one first)
+        if request.method == "OPTIONS" or self._should_skip_rate_limiting(request.url.path):
             return await call_next(request)
 
         client_ip = get_client_ip(request)
 
-        # Determine rate limit based on endpoint
         if self._is_auth_endpoint(request.url.path):
             limit = self.auth_limit
             limit_type = "auth"
         elif request.method == "POST" and "/planner/proposals" in request.url.path:
             limit = self.planner_limit
             limit_type = "planner"
+        elif request.method == "POST" and self._is_oyu_endpoint(request.url.path):
+            limit = self.oyu_limit
+            limit_type = "oyu"
         else:
             limit = self.default_limit
             limit_type = "general"
 
-        # Create unique key for this IP and endpoint type
         rate_limit_key = f"{client_ip}:{limit_type}"
 
-        # Check rate limit
         if not await self.limiter.is_allowed(rate_limit_key, limit, self.window):
             logger.warning(f"Rate limit exceeded for {client_ip} on {limit_type} endpoints")
             return Response(
@@ -263,10 +262,8 @@ class RateLimitMiddleware(BaseHTTPMiddleware):
                 },
             )
 
-        # Continue with request processing
         response = await call_next(request)
 
-        # Add rate limit headers to response
         remaining = await self.limiter.get_remaining_requests(rate_limit_key, limit)
         response.headers["X-RateLimit-Limit"] = str(limit)
         response.headers["X-RateLimit-Remaining"] = str(remaining)
@@ -279,6 +276,7 @@ class RateLimitMiddleware(BaseHTTPMiddleware):
         """Check if the endpoint is authentication related"""
         auth_patterns = [
             "/auth/login",
+            "/auth/code",
             "/auth/register",
             "/auth/refresh",
             "/auth/reset-password",
@@ -286,6 +284,11 @@ class RateLimitMiddleware(BaseHTTPMiddleware):
             "/auth/token",
         ]
         return any(pattern in path for pattern in auth_patterns)
+
+    def _is_oyu_endpoint(self, path: str) -> bool:
+        """Speech and translation calls, each spending oyu credit"""
+        prefix = settings.API_V1_STR
+        return path.startswith(f"{prefix}/voice/") or path == f"{prefix}/translate"
 
     def _should_skip_rate_limiting(self, path: str) -> bool:
         """Check if rate limiting should be skipped for this path"""

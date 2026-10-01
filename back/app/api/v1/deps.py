@@ -83,7 +83,11 @@ def get_current_user(
     if not token_data.sub:
         raise _credentials_exception()
 
-    user = crud.user.get_by_email(db=db, email=token_data.sub)
+    user = (
+        crud.user.get(db=db, id=token_data.sub)
+        if payload.get("subject_kind") == "user_id"
+        else crud.user.get_by_email(db=db, email=token_data.sub)
+    )
 
     if user is None:
         raise _credentials_exception()
@@ -112,3 +116,18 @@ def get_current_active_user(
 DbSession = Annotated[Database, Depends(get_db)]
 CurrentUser = Annotated[User, Depends(get_current_user)]
 ActiveUser = Annotated[User, Depends(get_current_active_user)]
+
+
+_optional_bearer = OAuth2PasswordBearer(tokenUrl="/api/v1/auth/login", auto_error=False)
+
+
+def get_optional_user(
+    db: DbSession,
+    token: Annotated[str | None, Depends(_optional_bearer)],
+) -> User | None:
+    if not token:
+        return None
+    return get_current_active_user(get_current_user(db, token))
+
+
+OptionalUser = Annotated[User | None, Depends(get_optional_user)]
