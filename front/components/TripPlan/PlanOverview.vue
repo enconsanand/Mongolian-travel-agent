@@ -12,7 +12,7 @@ const { proposal, locale, messages } = defineProps<{
 
 const MAX_DRIVE_DAY_MIN = 12 * 60
 
-const placeName = (id: string | null) => (id ? proposal.catalog.places[id]?.name ?? id : '')
+const placeName = (id: string | null) => (id ? (proposal.catalog.places[id]?.name ?? id) : '')
 
 function nightsBetween(): number {
   const start = Date.parse(`${proposal.request.start_date}T00:00:00Z`)

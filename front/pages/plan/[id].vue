@@ -289,10 +289,10 @@ useHead(() => ({ title: messages.value.title, htmlAttrs: { lang: locale.value } 
             !tripFits
               ? messages.tooShortToBook
               : !canBook
-              ? messages.nothingToBook
-              : auth.isAuthenticated.value
-              ? messages.bookHint
-              : messages.signInToBook
+                ? messages.nothingToBook
+                : auth.isAuthenticated.value
+                  ? messages.bookHint
+                  : messages.signInToBook
           }}
         </p>
       </div>
