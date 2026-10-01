@@ -1,203 +1,233 @@
+/* Shared pieces of the traveller-facing pages. Colours, radius and type come from tokens.css only. */
+
 .trip-planner {
-  font-family: 'Noto Sans', 'Noto Sans Mongolian', system-ui, sans-serif;
-  background: #0f172a;
-  color: #f1f5f9;
+  font-family: var(--font-sans);
+  background: var(--nd-canvas);
+  color: var(--nd-ink);
 }
 
-.trip-planner .glass-panel {
-  background: rgba(15, 23, 42, 0.8);
-  border: 1px solid #1e293b;
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+.trip-planner .panel {
+  background: var(--nd-surface);
+  border: 1px solid light-dark(transparent, var(--nd-line));
+  border-radius: var(--radius-card);
+  box-shadow: var(--nd-shadow-card);
 }
 
-.trip-planner .glass-panel[data-missing='true'] {
-  border-color: #fb7185;
+/* Buttons */
+
+.trip-planner .btn-primary,
+.trip-planner .btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: var(--radius-control);
+  transition:
+    background-color 0.15s,
+    border-color 0.15s,
+    transform 0.1s;
 }
+
+.trip-planner .btn-primary {
+  background: var(--nd-brand);
+  color: var(--nd-brand-contrast);
+  font-weight: 600;
+}
+
+.trip-planner .btn-primary:hover:not(:disabled) {
+  background: var(--nd-brand-hover);
+}
+
+.trip-planner .btn-primary:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+.trip-planner .btn-primary .pi-arrow-right {
+  transition: transform 0.2s ease;
+}
+
+.trip-planner .btn-primary:hover:not(:disabled) .pi-arrow-right {
+  transform: translateX(4px);
+}
+
+.trip-planner .btn-secondary {
+  border: 1px solid var(--nd-line-strong);
+  background: var(--nd-surface);
+  color: var(--nd-ink);
+  font-weight: 500;
+}
+
+.trip-planner .btn-secondary:hover:not(:disabled) {
+  background: var(--nd-surface-muted);
+}
+
+/* Pill choices (checkout units and payment method) and suggestion chips under the chat bar */
 
 .trip-planner .choice-chip {
   cursor: pointer;
   min-height: 44px;
-  padding: 0.6rem 1.1rem;
-  border-radius: 0.9rem;
-  border: 1px solid #334155;
-  background: rgba(30, 41, 59, 0.6);
-  color: #e2e8f0;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid var(--nd-line-strong);
+  background: var(--nd-surface);
+  color: var(--nd-ink);
   font-size: 0.9rem;
   font-weight: 500;
   transition:
-    transform 0.15s,
-    background-color 0.2s,
-    border-color 0.2s,
-    box-shadow 0.2s,
-    color 0.2s;
+    background-color 0.15s,
+    border-color 0.15s,
+    color 0.15s,
+    transform 0.1s;
 }
 
 .trip-planner .choice-chip:hover {
-  border-color: #64748b;
-  background: rgba(51, 65, 85, 0.8);
-  color: #fff;
-  transform: translateY(-1px);
+  border-color: var(--nd-brand);
 }
 
 .trip-planner .choice-chip:active {
+  transform: scale(0.97);
+}
+
+.trip-planner .choice-chip[aria-pressed='true'],
+.trip-planner .choice-chip[data-active='true'] {
+  background: var(--nd-brand);
+  border-color: var(--nd-brand);
+  color: var(--nd-brand-contrast);
+}
+
+.trip-planner .prompt-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  background: var(--nd-surface-muted);
+  color: var(--nd-ink-muted);
+  font-size: 0.8rem;
+  transition:
+    background-color 0.15s,
+    color 0.15s,
+    transform 0.1s;
+}
+
+.trip-planner .prompt-chip:hover {
+  background: var(--nd-brand-soft);
+  color: var(--nd-ink);
+}
+
+.trip-planner .prompt-chip:active {
   transform: scale(0.96);
 }
 
-.trip-planner .choice-chip[aria-pressed='true'] {
-  background: rgba(16, 185, 129, 0.2);
-  border-color: #10b981;
-  color: #6ee7b7;
-  box-shadow:
-    0 0 0 1px rgba(16, 185, 129, 0.5),
-    0 0 20px rgba(16, 185, 129, 0.35);
+/* Form fields: the change box on the itinerary page and the demo checkout's inputs */
+
+.trip-planner .planner-field,
+.trip-planner .planner-date {
+  border: 1px solid var(--nd-line-strong);
+  background: var(--nd-surface);
+  color: var(--nd-ink);
 }
 
-.trip-planner .custom-choice {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  min-height: 44px;
-  padding: 0.35rem 0.5rem 0.35rem 0.9rem;
-  border-radius: 0.9rem;
-  border: 1px dashed #475569;
-  background: rgba(2, 6, 23, 0.55);
-  color: #94a3b8;
-  font-size: 0.85rem;
-  transition: all 0.2s;
+.trip-planner .planner-field::placeholder {
+  color: var(--nd-ink-subtle);
 }
 
-.trip-planner .custom-choice:hover {
-  border-color: #64748b;
-}
-
-.trip-planner .custom-choice:focus-within {
-  border-style: solid;
-  border-color: #22d3ee;
-  box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.18);
-}
-
-.trip-planner .custom-choice[data-active='true'] {
-  border-style: solid;
-  background: rgba(16, 185, 129, 0.2);
-  border-color: #10b981;
-  color: #6ee7b7;
-  box-shadow:
-    0 0 0 1px rgba(16, 185, 129, 0.5),
-    0 0 20px rgba(16, 185, 129, 0.35);
-}
-
-.trip-planner textarea.planner-field,
-.trip-planner input.planner-field {
-  background-color: rgba(2, 6, 23, 0.6) !important;
-  background: rgba(2, 6, 23, 0.6) !important;
-  border: 1px solid #1e293b !important;
-  color: #f8fafc !important;
-  box-shadow: none !important;
+.trip-planner .planner-field:focus,
+.trip-planner .planner-date:focus {
+  outline: none;
+  border-color: var(--nd-brand);
+  box-shadow: 0 0 0 3px var(--nd-brand-soft);
 }
 
 .trip-planner textarea.planner-field {
   width: 100%;
   resize: none;
-  border-radius: 0.75rem;
+  border-radius: var(--radius-control);
   padding: 1rem;
 }
 
-.trip-planner textarea.planner-field::placeholder,
-.trip-planner input.planner-field::placeholder {
-  color: #64748b !important;
-}
-
-.trip-planner textarea.planner-field:focus,
-.trip-planner input.planner-field:focus {
-  outline: none !important;
-  border-color: #34d399 !important;
-  background-color: rgba(2, 6, 23, 0.6) !important;
-  background: rgba(2, 6, 23, 0.6) !important;
-  color: #f8fafc !important;
-  box-shadow: none !important;
-}
-
-.trip-planner input.planner-field {
-  width: 4.6rem;
-  padding: 0.4rem 0.5rem;
-  border-radius: 0.6rem;
-  border-color: #334155 !important;
-  background-color: #0f172a !important;
-  background: #0f172a !important;
-  font-size: 1rem;
-  text-align: right;
-  -moz-appearance: textfield;
-}
-
-.trip-planner .custom-choice[data-active='true'] input.planner-field {
-  border-color: #10b981 !important;
-}
-
-.trip-planner input.planner-date {
+.trip-planner .planner-date {
   display: block;
   width: 100%;
   min-height: 44px;
   padding: 0.55rem 0.75rem;
-  border-radius: 0.75rem;
-  border: 1px solid #334155 !important;
-  background-color: #0f172a !important;
-  background: #0f172a !important;
-  color: #f8fafc !important;
-  color-scheme: dark;
+  border-radius: var(--radius-control);
   font-size: 0.95rem;
 }
 
-.trip-planner input.planner-date:focus {
-  outline: none !important;
-  border-color: #34d399 !important;
-}
-
-.trip-planner input.planner-field::-webkit-inner-spin-button,
-.trip-planner input.planner-field::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.trip-planner .mic-ring {
-  animation: trip-planner-ring 1.8s ease-out infinite;
-}
+/* Voice input */
 
 .trip-planner .is-listening .mic-ring {
-  animation-duration: 1s;
-  background: rgba(244, 63, 94, 0.35);
+  animation: trip-planner-ring 1.2s ease-out infinite;
 }
 
 .trip-planner .eq-bar {
   width: 3px;
   border-radius: 2px;
-  background: #34d399;
+  background: var(--nd-brand);
   animation: trip-planner-eq 0.9s ease-in-out infinite;
 }
 
-.trip-planner .generate-button {
-  background-image: linear-gradient(to right, #34d399, #5eead4, #22d3ee);
-  box-shadow: 0 0 36px rgba(45, 212, 191, 0.45);
+/* Motion: content rises in on load, chat messages slide up, the agent's typing dots pulse in turn */
+
+.trip-planner .rise-in {
+  opacity: 0;
+  animation: trip-planner-rise 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+  animation-delay: var(--delay, 0ms);
 }
 
-.trip-planner .generate-button:hover {
-  box-shadow: 0 0 48px rgba(45, 212, 191, 0.7);
+.trip-planner .chat-in {
+  animation: trip-planner-rise 0.35s cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
 
-.trip-planner button:focus-visible,
-.trip-planner textarea:focus-visible,
-.trip-planner input.planner-date:focus-visible {
-  outline: 2px solid #22d3ee;
-  outline-offset: 2px;
+.trip-planner .typing-dots span {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--nd-ink-subtle);
+  animation: trip-planner-typing 1.2s ease-in-out infinite;
+}
+
+.trip-planner .typing-dots span:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.trip-planner .typing-dots span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes trip-planner-rise {
+  /* `translate`, not `transform`, so the filled end state does not block hover transforms */
+  from {
+    opacity: 0;
+    translate: 0 14px;
+  }
+  to {
+    opacity: 1;
+    translate: none;
+  }
+}
+
+@keyframes trip-planner-typing {
+  0%,
+  60%,
+  100% {
+    opacity: 0.3;
+    translate: 0 0;
+  }
+  30% {
+    opacity: 1;
+    translate: 0 -3px;
+  }
 }
 
 @keyframes trip-planner-ring {
   0% {
-    transform: scale(0.9);
-    opacity: 0.7;
+    transform: scale(1);
+    opacity: 0.6;
   }
   100% {
-    transform: scale(1.7);
+    transform: scale(1.5);
     opacity: 0;
   }
 }
@@ -214,7 +244,11 @@
 
 @media (prefers-reduced-motion: reduce) {
   .trip-planner .mic-ring,
-  .trip-planner .eq-bar {
+  .trip-planner .eq-bar,
+  .trip-planner .rise-in,
+  .trip-planner .chat-in,
+  .trip-planner .typing-dots span {
     animation: none !important;
+    opacity: 1;
   }
 }

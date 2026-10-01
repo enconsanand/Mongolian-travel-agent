@@ -1,6 +1,7 @@
+import { BRAND } from '~/constants/brand'
 import type { AppLocale } from '~/types/trip-planner'
 
-export const MERCHANT_NAME = 'Mongolian Travel Agent'
+export const MERCHANT_NAME = BRAND.name
 export const CHECKOUT_POLL_MS = 2500
 
 export const UNIT_LABELS: Record<string, Record<AppLocale, string>> = {

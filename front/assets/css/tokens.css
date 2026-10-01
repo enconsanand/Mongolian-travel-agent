@@ -1,0 +1,90 @@
+/*
+ * Brand design tokens: the single source for colour, type, radius and spacing.
+ * Each colour is `light-dark(<light>, <dark>)`, so a token is defined once for both themes and the
+ * theme follows `color-scheme` on <html> (system by default, or forced by data-theme from the toggle).
+ * Palette: deep sky blue, steppe green and sand on an off-white ground.
+ */
+:root {
+  color-scheme: light dark;
+
+  /* Surfaces */
+  --nd-canvas: light-dark(#f7f5f0, #10161f);
+  --nd-surface: light-dark(#ffffff, #17202b);
+  --nd-surface-muted: light-dark(#efece4, #1e2935);
+  --nd-line: light-dark(#ddd8cc, #2b3747);
+  --nd-line-strong: light-dark(#c4bdae, #3b495c);
+
+  /* Text */
+  --nd-ink: light-dark(#1c2430, #ebe7df);
+  --nd-ink-muted: light-dark(#5b6472, #a3abb7);
+  --nd-ink-subtle: light-dark(#7d8592, #7f8896);
+
+  /* Brand: deep sky blue */
+  --nd-brand: light-dark(#1f3a5f, #8fb4e3);
+  --nd-brand-hover: light-dark(#172d4a, #a9c6ec);
+  --nd-brand-contrast: light-dark(#ffffff, #0f1a2a);
+  --nd-brand-soft: light-dark(#e4eaf2, #1c2b40);
+
+  /* Accent: sand */
+  --nd-accent: light-dark(#d9a441, #e2b65c);
+  --nd-accent-ink: light-dark(#8a6216, #e7c47e);
+  --nd-accent-soft: light-dark(#f8eedb, #2d2617);
+
+  /* Status: steppe green, ochre, clay red */
+  --nd-success: light-dark(#3f6b3a, #9ac78c);
+  --nd-success-soft: light-dark(#e6eee0, #1d2b1d);
+  --nd-warning: light-dark(#8a6216, #e7c47e);
+  --nd-warning-soft: light-dark(#f8eedb, #2d2617);
+  --nd-danger: light-dark(#b3261e, #f2a49d);
+  --nd-danger-soft: light-dark(#fbe9e7, #3a1e1c);
+
+  --nd-shadow-card:
+    0 1px 2px light-dark(rgb(28 36 48 / 0.05), rgb(0 0 0 / 0.3)),
+    0 8px 24px -12px light-dark(rgb(31 58 95 / 0.18), rgb(0 0 0 / 0.5));
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+}
+
+/* Exposes the tokens to Tailwind as utilities: bg-canvas, text-ink, border-line, bg-brand, rounded-card, font-display… */
+@theme inline {
+  --color-canvas: var(--nd-canvas);
+  --color-surface: var(--nd-surface);
+  --color-surface-muted: var(--nd-surface-muted);
+  --color-line: var(--nd-line);
+  --color-line-strong: var(--nd-line-strong);
+  --color-ink: var(--nd-ink);
+  --color-ink-muted: var(--nd-ink-muted);
+  --color-ink-subtle: var(--nd-ink-subtle);
+  --color-brand: var(--nd-brand);
+  --color-brand-hover: var(--nd-brand-hover);
+  --color-brand-contrast: var(--nd-brand-contrast);
+  --color-brand-soft: var(--nd-brand-soft);
+  --color-accent: var(--nd-accent);
+  --color-accent-ink: var(--nd-accent-ink);
+  --color-accent-soft: var(--nd-accent-soft);
+  --color-success: var(--nd-success);
+  --color-success-soft: var(--nd-success-soft);
+  --color-warning: var(--nd-warning);
+  --color-warning-soft: var(--nd-warning-soft);
+  --color-danger: var(--nd-danger);
+  --color-danger-soft: var(--nd-danger-soft);
+
+  --font-sans: 'Noto Sans', system-ui, sans-serif;
+  --font-display: 'Noto Serif', Georgia, serif;
+
+  /* Radius: controls (inputs, buttons, chips) and cards */
+  --radius-control: 0.625rem;
+  --radius-card: 1rem;
+
+  /* Spacing: Tailwind's 4px step, plus the page width */
+  --spacing: 0.25rem;
+  --container-page: 56rem;
+
+  --shadow-card: var(--nd-shadow-card);
+}

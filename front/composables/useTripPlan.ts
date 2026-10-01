@@ -27,6 +27,21 @@ export async function requestProposal(
   return data ? { proposal: data, error: null } : { proposal: null, error: errorCode(error) }
 }
 
+/** Ask the planner to change an itinerary it made; resolves to the new version or an error code */
+export async function requestRevision(
+  api: ReturnType<typeof useApi>,
+  proposalId: string,
+  change: string,
+  locale: AppLocale
+): Promise<{ proposal: Proposal | null; error: PlanErrorCode | null }> {
+  const { data, error } = await api.post<Proposal>(
+    API_ENDPOINTS.PLANNER.REVISE(proposalId),
+    { change: change.trim() },
+    { headers: languageHeader(locale) }
+  )
+  return data ? { proposal: data, error: null } : { proposal: null, error: errorCode(error) }
+}
+
 /** One itinerary on its page: read, revise, and accept it into a held checkout */
 export function useTripPlan(proposalId: string) {
   const api = useApi()
@@ -56,17 +71,13 @@ export function useTripPlan(proposalId: string) {
     busy.value = 'revise'
     error.value = null
     staysChanged.value = false
-    const { data, error: apiError } = await api.post<Proposal>(
-      API_ENDPOINTS.PLANNER.REVISE(proposalId),
-      { change: change.trim() },
-      { headers: languageHeader(locale.value) }
-    )
+    const result = await requestRevision(api, proposalId, change, locale.value)
     busy.value = null
-    if (!data) {
-      error.value = errorCode(apiError)
+    if (!result.proposal) {
+      error.value = result.error
       return false
     }
-    proposal.value = data
+    proposal.value = result.proposal
     return true
   }
 

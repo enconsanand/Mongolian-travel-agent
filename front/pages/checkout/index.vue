@@ -2,7 +2,6 @@
 /**
  * Demo entry until the agent creates checkouts itself: pick one of your trips, a stay with free units, hold it.
  */
-import MongoliaMapBackdrop from '~/components/TripPlanner/MongoliaMapBackdrop.vue'
 import { API_ENDPOINTS } from '~/constants'
 import PlannerHeader from '~/components/TripPlanner/PlannerHeader.vue'
 import { CHECKOUT_MESSAGES, UNIT_LABELS } from '~/constants/checkout'
@@ -99,60 +98,47 @@ watch([checkIn, locale], loadStays)
 
 <template>
   <div>
-    <MongoliaMapBackdrop />
     <PlannerHeader :locale="locale" :language-group-label="messages.languageGroupLabel" @set-locale="locale = $event" />
     <main class="mx-auto max-w-3xl px-4 pt-10 pb-20">
-      <h1 class="text-2xl font-bold tracking-tight">{{ labels.heading }}</h1>
+      <h1 class="text-2xl font-semibold">{{ labels.heading }}</h1>
 
-      <div class="glass-panel mt-6 grid gap-3 rounded-2xl p-4 sm:grid-cols-4">
+      <div class="panel mt-6 grid gap-3 p-4 sm:grid-cols-4">
         <label class="text-sm sm:col-span-2">
-          <span class="text-slate-400">{{ labels.trip }}</span>
-          <select v-model="tripId" class="planner-date mt-1 w-full rounded-lg bg-slate-900 p-2">
+          <span class="text-ink-muted">{{ labels.trip }}</span>
+          <select v-model="tripId" class="planner-date mt-1">
             <option v-for="trip in trips" :key="trip.id" :value="trip.id">{{ trip.title }}</option>
           </select>
         </label>
         <label class="text-sm">
-          <span class="text-slate-400">{{ labels.date }}</span>
-          <input v-model="checkIn" type="date" class="planner-date mt-1 w-full rounded-lg bg-slate-900 p-2" />
+          <span class="text-ink-muted">{{ labels.date }}</span>
+          <input v-model="checkIn" type="date" class="planner-date mt-1" />
         </label>
         <div class="grid grid-cols-2 gap-2 text-sm">
           <label>
-            <span class="text-slate-400">{{ labels.nights }}</span>
-            <input
-              v-model.number="nights"
-              type="number"
-              min="1"
-              max="7"
-              class="planner-date mt-1 w-full rounded-lg bg-slate-900 p-2"
-            />
+            <span class="text-ink-muted">{{ labels.nights }}</span>
+            <input v-model.number="nights" type="number" min="1" max="7" class="planner-date mt-1" />
           </label>
           <label>
-            <span class="text-slate-400">{{ labels.guests }}</span>
-            <input
-              v-model.number="guests"
-              type="number"
-              min="1"
-              max="10"
-              class="planner-date mt-1 w-full rounded-lg bg-slate-900 p-2"
-            />
+            <span class="text-ink-muted">{{ labels.guests }}</span>
+            <input v-model.number="guests" type="number" min="1" max="10" class="planner-date mt-1" />
           </label>
         </div>
       </div>
 
-      <p v-if="errorMessage" class="mt-4 text-sm text-rose-300" role="alert">{{ errorMessage }}</p>
+      <p v-if="errorMessage" class="mt-4 text-sm text-danger" role="alert">{{ errorMessage }}</p>
 
       <ul class="mt-6 space-y-3">
-        <li v-for="stay in stays" :key="stay.id" class="glass-panel rounded-2xl p-4">
+        <li v-for="stay in stays" :key="stay.id" class="panel p-4">
           <p class="font-semibold">
             {{ stay.name }}
-            <span class="text-sm font-normal text-slate-400">· {{ stay.aimag }}</span>
+            <span class="text-sm font-normal text-ink-muted">· {{ stay.aimag }}</span>
           </p>
           <div class="mt-3 flex flex-wrap gap-2">
             <button
               v-for="unit in stay.units"
               :key="unit.unit_type"
               type="button"
-              class="choice-chip rounded-full border border-slate-700 px-4 text-sm hover:border-emerald-400 disabled:opacity-50"
+              class="choice-chip text-sm disabled:opacity-50"
               :disabled="!tripId || busyKey !== null"
               @click="hold(stay, unit)"
             >

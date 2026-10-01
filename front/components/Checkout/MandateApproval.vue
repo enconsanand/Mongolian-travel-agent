@@ -62,18 +62,18 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <section class="glass-panel rounded-2xl p-6" aria-labelledby="mandate-title">
-    <p class="flex items-center gap-2 text-xs font-medium text-emerald-300">
+  <section class="panel p-6" aria-labelledby="mandate-title">
+    <p class="flex items-center gap-2 text-xs font-medium text-success">
       <i class="pi pi-verified" aria-hidden="true" />
       {{ messages.verified }}
     </p>
 
-    <ul class="mt-4 divide-y divide-slate-800">
+    <ul class="mt-4 divide-y divide-line">
       <li v-for="stay in stays" :key="stay.name + stay.unit" class="py-3">
         <div class="flex items-start justify-between gap-4">
           <div>
             <p class="font-semibold">{{ stay.name }}</p>
-            <p class="text-sm text-slate-400">
+            <p class="text-sm text-ink-muted">
               {{ stay.unit }} · {{ stay.nights.length }} {{ messages.nights }} · {{ stay.nights.join(', ') }}
             </p>
           </div>
@@ -82,14 +82,14 @@ onUnmounted(() => {
       </li>
     </ul>
 
-    <dl class="mt-4 space-y-2 border-t border-slate-800 pt-4 text-sm">
+    <dl class="mt-4 space-y-2 border-t border-line pt-4 text-sm">
       <div class="flex justify-between">
-        <dt class="text-slate-400">{{ messages.payee }}</dt>
+        <dt class="text-ink-muted">{{ messages.payee }}</dt>
         <dd>{{ MERCHANT_NAME }}</dd>
       </div>
       <div class="flex justify-between">
-        <dt class="text-slate-400">{{ messages.expiresIn }}</dt>
-        <dd class="tabular-nums" :class="secondsLeft < 120 ? 'text-rose-300' : ''">{{ countdown }}</dd>
+        <dt class="text-ink-muted">{{ messages.expiresIn }}</dt>
+        <dd class="tabular-nums" :class="secondsLeft < 120 ? 'text-danger' : ''">{{ countdown }}</dd>
       </div>
       <div class="flex items-baseline justify-between pt-2 text-lg">
         <dt id="mandate-title" class="font-semibold">{{ messages.total }}</dt>
@@ -98,13 +98,13 @@ onUnmounted(() => {
     </dl>
 
     <fieldset class="mt-6">
-      <legend class="mb-2 text-sm text-slate-400">{{ messages.instrument }}</legend>
+      <legend class="mb-2 text-sm text-ink-muted">{{ messages.instrument }}</legend>
       <div class="grid grid-cols-2 gap-2">
         <label
           v-for="option in ['qpay_qr', 'card'] as const"
           :key="option"
-          class="choice-chip flex items-center justify-center gap-2 rounded-xl border px-3 text-sm"
-          :class="instrument === option ? 'border-emerald-400 text-emerald-200' : 'border-slate-700 text-slate-300'"
+          class="choice-chip flex items-center justify-center gap-2 px-3 text-sm"
+          :data-active="instrument === option"
         >
           <input v-model="instrument" type="radio" name="instrument" :value="option" class="sr-only" />
           <i :class="option === 'qpay_qr' ? 'pi pi-qrcode' : 'pi pi-credit-card'" aria-hidden="true" />
@@ -115,13 +115,13 @@ onUnmounted(() => {
 
     <button
       type="button"
-      class="generate-button mt-6 flex w-full items-center justify-center gap-2 rounded-xl py-4 font-semibold text-slate-900 disabled:opacity-60"
+      class="btn-primary mt-6 w-full py-3.5 disabled:opacity-60"
       :disabled="busy || secondsLeft <= 0"
       @click="emit('approve', instrument)"
     >
       <i :class="busy ? 'pi pi-spinner pi-spin' : 'pi pi-lock'" aria-hidden="true" />
       {{ busy ? messages.signing : messages.approve }}
     </button>
-    <p class="mt-3 text-center text-xs text-slate-400">{{ messages.approveNote }}</p>
+    <p class="mt-3 text-center text-xs text-ink-muted">{{ messages.approveNote }}</p>
   </section>
 </template>

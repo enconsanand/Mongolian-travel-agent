@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import MongoliaMapBackdrop from '~/components/TripPlanner/MongoliaMapBackdrop.vue'
 import PlanDayCard from '~/components/TripPlan/PlanDayCard.vue'
 import PlanOverview from '~/components/TripPlan/PlanOverview.vue'
 import PlannerHeader from '~/components/TripPlanner/PlannerHeader.vue'
@@ -32,27 +31,26 @@ useHead(() => ({ title: messages.value.title, htmlAttrs: { lang: locale.value } 
 
 <template>
   <div>
-    <MongoliaMapBackdrop />
     <PlannerHeader
       :locale="locale"
       :language-group-label="locale === 'mn' ? 'Хэл' : 'Language'"
       @set-locale="locale = $event"
     />
 
-    <main class="mx-auto max-w-3xl px-4 pt-8 pb-40">
-      <p v-if="loading && !proposal" class="text-slate-400">{{ messages.loading }}</p>
+    <main class="mx-auto max-w-3xl px-4 pt-8 pb-10">
+      <p v-if="loading && !proposal" class="text-ink-muted">{{ messages.loading }}</p>
 
-      <section v-else-if="!proposal" class="glass-panel rounded-2xl p-6 text-center">
-        <p class="text-slate-300">{{ messages.notFound }}</p>
-        <NuxtLink to="/" class="generate-button mt-4 inline-block rounded-lg px-5 py-2.5 font-semibold text-slate-900">
+      <section v-else-if="!proposal" class="panel p-6 text-center">
+        <p class="text-ink-muted">{{ messages.notFound }}</p>
+        <NuxtLink to="/" class="btn-primary mt-4 px-5 py-2.5">
           {{ messages.backToPlanner }}
         </NuxtLink>
       </section>
 
       <template v-else>
         <div class="flex items-baseline justify-between gap-3">
-          <h1 class="text-2xl font-bold tracking-tight sm:text-3xl">{{ messages.title }}</h1>
-          <span class="shrink-0 text-xs text-slate-400">{{ messages.version }} {{ proposal.version }}</span>
+          <h1 class="text-2xl font-semibold sm:text-3xl">{{ messages.title }}</h1>
+          <span class="shrink-0 text-xs text-ink-subtle">{{ messages.version }} {{ proposal.version }}</span>
         </div>
 
         <div class="mt-5">
@@ -61,7 +59,7 @@ useHead(() => ({ title: messages.value.title, htmlAttrs: { lang: locale.value } 
 
         <p
           v-if="staysChanged"
-          class="mt-4 rounded-xl border border-amber-400/40 bg-amber-400/10 p-3 text-sm text-amber-200"
+          class="mt-4 rounded-control border border-accent/50 bg-warning-soft p-3 text-sm text-warning"
           role="alert"
         >
           {{ messages.staysChanged }}
@@ -79,9 +77,9 @@ useHead(() => ({ title: messages.value.title, htmlAttrs: { lang: locale.value } 
           />
         </ol>
 
-        <form class="glass-panel mt-6 rounded-2xl p-5" @submit.prevent="submitChange">
+        <form class="panel mt-6 p-5" @submit.prevent="submitChange">
           <label for="plan-change" class="text-sm font-semibold">{{ messages.reviseLabel }}</label>
-          <p v-if="proposal.changes.length" class="mt-1 text-xs text-slate-400">
+          <p v-if="proposal.changes.length" class="mt-1 text-xs text-ink-muted">
             {{ messages.changesSoFar }}: {{ proposal.changes.join(' · ') }}
           </p>
           <textarea
@@ -89,12 +87,12 @@ useHead(() => ({ title: messages.value.title, htmlAttrs: { lang: locale.value } 
             v-model="change"
             rows="2"
             maxlength="500"
-            class="mt-3 w-full resize-none rounded-xl border border-slate-700 bg-slate-900/70 p-3 text-sm text-slate-100 placeholder:text-slate-500"
+            class="planner-field mt-3 text-sm"
             :placeholder="messages.revisePlaceholder"
           />
           <button
             type="submit"
-            class="mt-3 flex w-full items-center justify-center gap-2 rounded-lg border border-emerald-400/60 py-2.5 text-sm font-semibold text-emerald-200 hover:bg-emerald-400/10 disabled:opacity-50"
+            class="btn-secondary mt-3 w-full py-2.5 text-sm disabled:opacity-50"
             :disabled="!change.trim() || busy !== null"
           >
             <i :class="busy === 'revise' ? 'pi pi-spinner pi-spin' : 'pi pi-refresh'" aria-hidden="true" />
@@ -104,19 +102,19 @@ useHead(() => ({ title: messages.value.title, htmlAttrs: { lang: locale.value } 
       </template>
     </main>
 
-    <div v-if="proposal" class="fixed inset-x-0 bottom-0 z-30 border-t border-slate-800 bg-slate-950/90 backdrop-blur">
+    <div v-if="proposal" class="sticky bottom-0 z-30 border-t border-line bg-surface">
       <div class="mx-auto max-w-3xl px-4 py-3">
-        <p v-if="errorMessage" class="mb-2 text-center text-sm text-rose-300" role="alert">{{ errorMessage }}</p>
+        <p v-if="errorMessage" class="mb-2 text-center text-sm text-danger" role="alert">{{ errorMessage }}</p>
         <button
           type="button"
-          class="generate-button flex w-full items-center justify-center gap-2 rounded-xl py-3.5 text-sm font-semibold text-slate-900 disabled:opacity-50 sm:text-base"
+          class="btn-primary w-full py-3.5 text-sm disabled:opacity-50 sm:text-base"
           :disabled="!canBook || busy !== null"
           @click="accept"
         >
-          <i :class="busy === 'accept' ? 'pi pi-spinner pi-spin' : 'pi pi-heart-fill'" aria-hidden="true" />
+          <i :class="busy === 'accept' ? 'pi pi-spinner pi-spin' : 'pi pi-check'" aria-hidden="true" />
           {{ busy === 'accept' ? messages.booking : messages.book }}
         </button>
-        <p class="mt-1.5 text-center text-xs text-slate-400">
+        <p class="mt-1.5 text-center text-xs text-ink-muted">
           {{
             !canBook ? messages.nothingToBook : auth.isAuthenticated.value ? messages.bookHint : messages.signInToBook
           }}
