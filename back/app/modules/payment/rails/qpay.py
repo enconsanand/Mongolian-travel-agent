@@ -4,7 +4,8 @@ Paths and field names follow the Merchant V2 API as used by public client librar
 paths differ between sources, so they are constructor arguments: confirm them once QPay grants sandbox access
 and change only the defaults below.
 
-QPay forbids polling ``payment/check``; call ``verify`` when a callback arrives, not on a timer.
+``verify`` runs when a callback arrives and, because QPay callbacks can be lost, from a slow reconciliation sweep
+(once a minute per unpaid invoice, like Toktok's payment cron), never in a tight loop.
 """
 
 import json
@@ -31,6 +32,7 @@ CHECK_PATH = "/v2/payment/check"
 DEFAULT_REFUND = ("DELETE", "/v2/payment/refund/{payment_id}")
 DEFAULT_RECEIPT = ("POST", "/v2/ebarimt_v3/create")
 TOKEN_MARGIN_SECONDS = 60
+EPOCH_THRESHOLD = 1_000_000_000  # a larger expires_in is a timestamp (2001+), not a lifetime
 
 
 class QPayRail:
@@ -63,12 +65,18 @@ class QPayRail:
 
     # ------------------------------------------------------------------------- auth
 
+    @staticmethod
+    def _lifetime(value: Any) -> float:
+        """QPay sends ``expires_in`` as a Unix timestamp; accept a lifetime in seconds too."""
+        seconds = float(value or 0)
+        return seconds - time.time() if seconds > EPOCH_THRESHOLD else seconds
+
     def _store(self, data: dict[str, Any]) -> str:
         now = self._clock()
         self._access = data["access_token"]
-        self._access_until = now + int(data.get("expires_in", 0)) - TOKEN_MARGIN_SECONDS
+        self._access_until = now + self._lifetime(data.get("expires_in")) - TOKEN_MARGIN_SECONDS
         self._refresh = data.get("refresh_token")
-        self._refresh_until = now + int(data.get("refresh_expires_in", 0)) - TOKEN_MARGIN_SECONDS
+        self._refresh_until = now + self._lifetime(data.get("refresh_expires_in")) - TOKEN_MARGIN_SECONDS
         return data["access_token"]
 
     def _token(self, *, force: bool = False) -> str:

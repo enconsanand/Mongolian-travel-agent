@@ -1,5 +1,6 @@
 """Payment service against the QPay simulator: start, idempotency, rejections, callbacks, settlement."""
 
+from datetime import timedelta
 from urllib.parse import urlsplit
 
 import pytest
@@ -15,7 +16,7 @@ from test.payment_helpers import NOW, USER, insert_checkout, payment_mandate
 @pytest.fixture
 def sim(monkeypatch):
     sent: list[str] = []
-    monkeypatch.setattr(qpay_sim.httpx, "post", lambda url, **_: sent.append(str(url)))
+    monkeypatch.setattr(qpay_sim.httpx, "get", lambda url, **_: sent.append(str(url)))
     with TestClient(qpay_sim.app) as client:
         client.post("/_sim/reset")
         client.sent = sent  # type: ignore[attr-defined]
@@ -214,3 +215,56 @@ def test_callback_url_carries_the_token():
     url = payment.callback_url("sim", "pay_chk_1")
     assert url.endswith(f"/webhooks/sim/pay_chk_1/{payment.webhook_token('pay_chk_1')}")
     assert payment.webhook_token("pay_chk_1") != payment.webhook_token("pay_chk_2")
+
+
+# ----------------------------------------------------------------------------- reconcile (lost callbacks)
+
+
+def _awaiting(db, rail, user_key, kid, sim, *, callbacks=False):
+    sim.post("/_sim/config", json={"send_callbacks": callbacks})
+    checkout_jwt = insert_checkout(db)
+    return _start(db, rail, payment_mandate(user_key, checkout_jwt), kid).payment
+
+
+def test_reconcile_settles_a_payment_whose_callback_was_lost(db, rail, user_key, kid, sim):
+    p = _awaiting(db, rail, user_key, kid, sim)
+    sim.post(f"/_sim/invoices/{p['provider_ref']}/pay")
+    assert sim.sent == []  # QPay dropped the callback
+
+    assert payment.reconcile_unpaid(db, rail, now=NOW + timedelta(seconds=5)) == 0  # still waiting for it
+    assert payment.reconcile_unpaid(db, rail, now=NOW + timedelta(seconds=31)) == 1
+    assert db["payments"].find_one({"_id": p["_id"]})["status"] == "paid"
+    assert db["outbox"].count_documents({"type": "payment.paid"}) == 1
+
+
+def test_reconcile_checks_each_unpaid_charge_at_most_once_a_minute(db, rail, user_key, kid, sim):
+    p = _awaiting(db, rail, user_key, kid, sim)
+    later = NOW + timedelta(minutes=1)
+    assert payment.reconcile_unpaid(db, rail, now=later) == 0  # unpaid: checked once
+    sim.post(f"/_sim/invoices/{p['provider_ref']}/pay")
+    assert payment.reconcile_unpaid(db, rail, now=later + timedelta(seconds=30)) == 0  # too soon to ask again
+    assert payment.reconcile_unpaid(db, rail, now=later + timedelta(seconds=61)) == 1
+
+
+def test_reconcile_audits_an_underpayment_once(db, rail, user_key, kid, sim):
+    p = _awaiting(db, rail, user_key, kid, sim)
+    sim.post(f"/_sim/invoices/{p['provider_ref']}/pay", params={"amount": 1000})
+    for minute in range(1, 4):
+        payment.reconcile_unpaid(db, rail, now=NOW + timedelta(minutes=minute))
+    assert db["payments"].find_one({"_id": p["_id"]})["status"] == "awaiting_payment"
+    assert db["audit_log"].count_documents({"action": "payment_underpaid"}) == 1
+
+
+def test_reconcile_survives_a_rail_outage(db, rail, user_key, kid, sim):
+    p = _awaiting(db, rail, user_key, kid, sim)
+    sim.post(f"/_sim/invoices/{p['provider_ref']}/pay")
+    sim.post("/_sim/config", json={"fail_next": 1})
+    assert payment.reconcile_unpaid(db, rail, now=NOW + timedelta(minutes=1)) == 0
+    assert payment.reconcile_unpaid(db, rail, now=NOW + timedelta(minutes=2)) == 1
+
+
+def test_reconcile_after_the_callback_settled_does_nothing(db, rail, user_key, kid, sim):
+    p = _awaiting(db, rail, user_key, kid, sim, callbacks=True)
+    sim.post(f"/_sim/invoices/{p['provider_ref']}/pay")
+    assert _callback(db, rail, sim.sent[0]) == "paid"
+    assert payment.reconcile_unpaid(db, rail, now=NOW + timedelta(minutes=5)) == 0

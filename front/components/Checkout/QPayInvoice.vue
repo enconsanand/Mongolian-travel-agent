@@ -25,7 +25,13 @@ const qrSvg = computed(() => (payment.qr_text ? renderSVG(payment.qr_text, { bor
 
     <ul v-if="payment.deeplinks.length" class="mt-5 flex flex-wrap justify-center gap-2">
       <li v-for="link in payment.deeplinks" :key="link.link">
-        <a :href="link.link" class="choice-chip inline-flex items-center text-sm">
+        <!-- Bank apps open by their own scheme; the simulator's are web pages, so keep the checkout open -->
+        <a
+          :href="link.link"
+          :target="link.link.startsWith('http') ? '_blank' : undefined"
+          rel="noopener"
+          class="choice-chip inline-flex items-center text-sm"
+        >
           {{ link.name }}
         </a>
       </li>

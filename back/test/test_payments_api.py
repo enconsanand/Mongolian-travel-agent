@@ -18,7 +18,7 @@ from test.payment_helpers import NOW, USER, insert_checkout, payment_mandate
 @pytest.fixture
 def api(client, db, monkeypatch):
     sent: list[str] = []
-    monkeypatch.setattr(qpay_sim.httpx, "post", lambda url, **_: sent.append(str(url)))
+    monkeypatch.setattr(qpay_sim.httpx, "get", lambda url, **_: sent.append(str(url)))
     sim = TestClient(qpay_sim.app)
     sim.post("/_sim/reset")
     rail = QPayRail(

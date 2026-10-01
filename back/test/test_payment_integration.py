@@ -37,7 +37,7 @@ def real_db():
 @pytest.fixture
 def rail(monkeypatch):
     sent: list[str] = []
-    monkeypatch.setattr(qpay_sim.httpx, "post", lambda url, **_: sent.append(str(url)))
+    monkeypatch.setattr(qpay_sim.httpx, "get", lambda url, **_: sent.append(str(url)))
     sim = TestClient(qpay_sim.app)
     sim.post("/_sim/reset")
     r = QPayRail(
