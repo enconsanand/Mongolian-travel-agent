@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import MandateApproval from '~/components/Checkout/MandateApproval.vue'
 import QPayInvoice from '~/components/Checkout/QPayInvoice.vue'
-import MongoliaMapBackdrop from '~/components/TripPlanner/MongoliaMapBackdrop.vue'
 import PlannerHeader from '~/components/TripPlanner/PlannerHeader.vue'
 import { CHECKOUT_MESSAGES } from '~/constants/checkout'
 import type { AppLocale } from '~/types/trip-planner'
@@ -21,17 +20,16 @@ useHead(() => ({ title: messages.value.title, htmlAttrs: { lang: locale.value } 
 
 <template>
   <div>
-    <MongoliaMapBackdrop />
     <PlannerHeader :locale="locale" :language-group-label="messages.languageGroupLabel" @set-locale="locale = $event" />
 
     <main class="mx-auto max-w-lg px-4 pt-10 pb-20">
-      <h1 class="text-2xl font-bold tracking-tight sm:text-3xl">{{ messages.title }}</h1>
-      <p class="mt-2 text-sm text-slate-400">{{ messages.subtitle }}</p>
+      <h1 class="text-2xl font-semibold sm:text-3xl">{{ messages.title }}</h1>
+      <p class="mt-2 text-sm text-ink-muted">{{ messages.subtitle }}</p>
 
       <div class="mt-6">
-        <p v-if="stage === 'loading'" class="text-slate-400">{{ messages.loading }}</p>
+        <p v-if="stage === 'loading'" class="text-ink-muted">{{ messages.loading }}</p>
 
-        <p v-else-if="stage === 'untrusted'" class="glass-panel rounded-2xl p-6 text-rose-300" role="alert">
+        <p v-else-if="stage === 'untrusted'" class="panel p-6 text-danger" role="alert">
           <i class="pi pi-exclamation-triangle mr-2" aria-hidden="true" />
           {{ messages.untrusted }}
         </p>
@@ -53,19 +51,19 @@ useHead(() => ({ title: messages.value.title, htmlAttrs: { lang: locale.value } 
           @simulate="simulatePayment"
         />
 
-        <section v-else class="glass-panel rounded-2xl p-6 text-center" aria-live="polite">
+        <section v-else class="panel p-6 text-center" aria-live="polite">
           <i
             class="text-4xl"
-            :class="stage === 'booked' ? 'pi pi-check-circle text-emerald-300' : 'pi pi-clock text-slate-400'"
+            :class="stage === 'booked' ? 'pi pi-check-circle text-success' : 'pi pi-clock text-ink-muted'"
             aria-hidden="true"
           />
           <h2 class="mt-3 text-lg font-semibold">{{ messages[stage as 'booked' | 'expired' | 'failed'] }}</h2>
-          <p class="mt-1 text-sm text-slate-400">
+          <p class="mt-1 text-sm text-ink-muted">
             {{ messages[`${stage}Hint` as 'bookedHint' | 'expiredHint' | 'failedHint'] }}
           </p>
         </section>
 
-        <p v-if="errorMessage && stage !== 'untrusted'" class="mt-4 text-center text-sm text-rose-300" role="alert">
+        <p v-if="errorMessage && stage !== 'untrusted'" class="mt-4 text-center text-sm text-danger" role="alert">
           {{ messages.error }}: {{ errorMessage }}
         </p>
       </div>

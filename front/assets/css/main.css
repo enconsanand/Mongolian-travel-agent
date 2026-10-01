@@ -1,100 +1,52 @@
 @import 'tailwindcss';
 @import 'primeicons/primeicons.css';
 
-body,
-button,
-input,
-select,
-textarea {
-  font-family: 'PT Sans Caption', sans-serif;
+@import './tokens.css';
+
+@layer base {
+  html,
+  body {
+    @apply bg-canvas font-sans text-ink;
+  }
+
+  body {
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2 {
+    font-family: var(--font-display);
+  }
+
+  input,
+  select,
+  textarea {
+    @apply border-line bg-surface text-ink;
+  }
+
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible,
+  button:focus-visible,
+  a:focus-visible {
+    outline: 2px solid var(--nd-brand);
+    outline-offset: 2px;
+  }
 }
 
 .font-technical {
   @apply font-mono font-medium tracking-wide;
 }
 
-body {
-  @apply bg-slate-50 text-slate-800;
-  line-height: 1.6;
-}
-
-.p-button.p-button-outlined {
-  @apply !border-slate-300 !text-slate-700 !bg-white;
-}
-
-.p-button.p-button-outlined:hover {
-  @apply !bg-slate-50 !border-slate-400;
-}
-
-/* Force input text styling with multiple selectors */
-.p-inputtext,
-input.p-inputtext,
-.p-component input,
-.p-inputtext.p-component,
-input[type='text'],
-input[type='date'],
-.p-inputgroup input,
-.p-fluid input,
-input {
-  background-color: #ffffff !important;
-  border-color: #cbd5e1 !important;
-  color: #1e293b !important;
-  background: #ffffff !important;
-}
-
-.p-inputtext:focus,
-input.p-inputtext:focus,
-.p-component input:focus,
-input[type='text']:focus,
-input[type='date']:focus,
-input:focus {
-  border-color: #3b82f6 !important;
-  background-color: #ffffff !important;
-  background: #ffffff !important;
-  color: #1e293b !important;
-  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2) !important;
-}
-
-/* Additional specific overrides for dark theme issues */
-* {
-  color-scheme: light !important;
-}
-
-:root {
-  color-scheme: light !important;
-  --surface-0: #ffffff !important;
-  --surface-50: #f8fafc !important;
-  --surface-100: #f1f5f9 !important;
-  --surface-200: #e2e8f0 !important;
-  --text-color: #1e293b !important;
-  --text-color-secondary: #475569 !important;
-}
-
-html {
-  color-scheme: light !important;
-}
-
-/* Force browser to never use dark mode */
-@media (prefers-color-scheme: dark) {
-  * {
-    color-scheme: light !important;
-  }
-
-  input,
-  textarea,
-  select {
-    background-color: #ffffff !important;
-    color: #1e293b !important;
-  }
-}
-
-/* Force refresh button styling */
+.p-button.p-button-outlined,
 .p-button.p-button-secondary.p-button-outlined {
-  @apply !bg-white !border-slate-300 !text-slate-700;
+  @apply border-line-strong! bg-surface! text-ink!;
 }
 
+.p-button.p-button-outlined:hover,
 .p-button.p-button-secondary.p-button-outlined:hover {
-  @apply !bg-slate-50 !border-slate-400;
+  @apply border-ink-subtle! bg-surface-muted!;
 }
 
 .thermal-indicator {

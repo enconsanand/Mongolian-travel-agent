@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import MongoliaMapBackdrop from '~/components/TripPlanner/MongoliaMapBackdrop.vue'
-import PlanGenerationDialog from '~/components/TripPlanner/PlanGenerationDialog.vue'
+import HeroShowcase from '~/components/TripPlanner/HeroShowcase.vue'
+import ChatThread from '~/components/TripPlanner/ChatThread.vue'
 import PlannerHeader from '~/components/TripPlanner/PlannerHeader.vue'
-import PreferenceChipGroup from '~/components/TripPlanner/PreferenceChipGroup.vue'
-import TravelPeriodCard from '~/components/TripPlanner/TravelPeriodCard.vue'
 import TripRequestComposer from '~/components/TripPlanner/TripRequestComposer.vue'
+import { BRAND } from '~/constants/brand'
+import { HERO_SLIDES } from '~/constants/heroSlides'
+import type { AppLocale } from '~/types/trip-planner'
 
 definePageMeta({
   layout: 'planner',
@@ -14,22 +15,60 @@ definePageMeta({
 const {
   locale,
   messages,
-  tripRequest,
+  draft,
+  chat,
+  busy,
+  hasStarted,
   isListening,
-  isPlanDialogOpen,
-  preferenceErrorMessage,
-  preferenceCards,
   voiceStatusLabel,
-  planSearchSteps,
-  planError,
   setLocale,
-  selectPresetOption,
-  setCustomPreference,
-  setTravelPeriod,
   toggleVoiceInput,
-  openPlanDialog,
-  closePlanDialog,
+  send,
+  retry,
+  reset,
 } = useTripPlanner()
+
+const SLIDE_LABELS: Record<AppLocale, { group: string; previous: string; next: string }> = {
+  mn: { group: 'Зургийн цомог', previous: 'Өмнөх зураг', next: 'Дараах зураг' },
+  en: { group: 'Photo gallery', previous: 'Previous photo', next: 'Next photo' },
+}
+const SLIDE_INTERVAL_MS = 7000
+
+const slideIndex = ref(0)
+const slide = computed(() => HERO_SLIDES[slideIndex.value]!)
+const pauseSlides = ref(false)
+
+function showSlide(step: number) {
+  slideIndex.value = (slideIndex.value + step + HERO_SLIDES.length) % HERO_SLIDES.length
+}
+
+// Slides advance on their own unless the visitor is looking at one or prefers reduced motion
+let slideTimer: ReturnType<typeof setInterval> | null = null
+onMounted(() => {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+  slideTimer = setInterval(() => {
+    if (!pauseSlides.value) showSlide(1)
+  }, SLIDE_INTERVAL_MS)
+})
+onUnmounted(() => {
+  if (slideTimer) clearInterval(slideTimer)
+})
+
+/** The agent is about to ask its next question: show it typing */
+const isAgentTyping = computed(() => busy.value && chat.value.at(-1)?.role === 'user')
+
+const REQUEST_EXAMPLES: Record<AppLocale, string[]> = {
+  mn: [
+    '2 хүн 5 хоног Хөвсгөл нуур, морь унах',
+    'Гэр бүлээрээ 3 хоног Тэрэлж, хэмнэлттэй',
+    'Наадам үзэх 4 хоног, Хархорин',
+  ],
+  en: [
+    '2 people, 5 days at Lake Khövsgöl, horse riding',
+    'Family of 4, 3 days in Terelj, on a budget',
+    '4 days for the Naadam and Kharkhorin',
+  ],
+}
 
 useHead(() => ({
   title: messages.value.documentTitle,
@@ -39,85 +78,127 @@ useHead(() => ({
 
 <template>
   <div>
-    <MongoliaMapBackdrop />
     <PlannerHeader :locale="locale" :language-group-label="messages.languageGroupLabel" @set-locale="setLocale" />
 
-    <main class="mx-auto max-w-4xl px-4 pb-20">
-      <section class="pt-12 pb-8 text-center sm:pt-20">
-        <h1 class="text-3xl leading-tight font-bold tracking-tight sm:text-5xl">
-          {{ messages.heroTitle }}
-        </h1>
-        <p class="mt-4 text-sm text-slate-400 sm:text-base">
-          {{ messages.heroSubtitle }}
-        </p>
-      </section>
-
-      <TripRequestComposer
-        v-model:trip-request="tripRequest"
-        :is-listening="isListening"
-        :voice-status-label="voiceStatusLabel"
-        :request-label="messages.requestLabel"
-        :request-placeholder="messages.requestPlaceholder"
-        :voice-button-label="messages.voiceButtonLabel"
-        :voice-support="messages.voiceSupport"
-        @toggle-voice="toggleVoiceInput"
-      />
-
-      <section class="mt-6 grid gap-4 lg:grid-cols-2" :aria-label="messages.requiredSectionLabel">
-        <template v-for="card in preferenceCards" :key="card.id">
-          <TravelPeriodCard
-            v-if="card.kind === 'period'"
-            :card="card"
-            :required-label="messages.required"
-            :start-label="messages.periodStartLabel"
-            :end-label="messages.periodEndLabel"
-            :invalid-label="messages.periodInvalid"
-            :too-long-label="messages.periodTooLong"
-            @set-start="setTravelPeriod('startDate', $event)"
-            @set-end="setTravelPeriod('endDate', $event)"
-          />
-          <PreferenceChipGroup
-            v-else
-            :card="card"
-            :required-label="messages.required"
-            :custom-value-label="messages.customValue"
-            @select-preset="selectPresetOption(card.id, $event)"
-            @set-custom="setCustomPreference(card.id, $event)"
-          />
-        </template>
-      </section>
-
-      <button
-        type="button"
-        class="generate-button mt-8 flex w-full items-center justify-center gap-2 rounded-xl py-4 text-base font-semibold text-slate-900 transition-shadow sm:text-lg"
-        :aria-describedby="preferenceErrorMessage ? 'preference-error' : undefined"
-        @click="openPlanDialog"
+    <section class="relative overflow-hidden">
+      <div
+        class="mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-4 pt-10 pb-20 sm:pt-14 lg:grid-cols-[1.3fr_1fr] lg:gap-12"
       >
-        <i class="pi pi-sparkles text-lg" aria-hidden="true" />
-        {{ messages.generate }}
-      </button>
-      <p
-        v-if="preferenceErrorMessage"
-        id="preference-error"
-        class="mt-3 text-center text-sm text-rose-300"
-        role="alert"
-      >
-        {{ preferenceErrorMessage }}
-      </p>
-    </main>
+        <div class="min-w-0">
+          <p class="rise-in text-xs font-semibold tracking-[0.35em] text-accent-ink uppercase sm:text-sm">
+            {{ BRAND.tagline[locale] }}
+          </p>
+          <template v-if="!hasStarted">
+            <h1 class="rise-in mt-4 text-4xl leading-[1.05] font-semibold text-ink sm:text-5xl" style="--delay: 80ms">
+              {{ messages.heroTitle }}
+            </h1>
+            <p class="rise-in mt-5 max-w-lg text-base text-ink-muted sm:text-lg" style="--delay: 160ms">
+              {{ messages.heroSubtitle }}
+            </p>
+          </template>
 
-    <PlanGenerationDialog
-      :open="isPlanDialogOpen"
-      :title="messages.buildingTitle"
-      :hint="messages.buildingHint"
-      :close-label="messages.close"
-      :cancel-label="messages.cancel"
-      :dialog-label="messages.dialogLabel"
-      :steps="planSearchSteps"
-      :error-message="planError ? messages.errors[planError] : null"
-      :retry-label="messages.retry"
-      @close="closePlanDialog"
-      @retry="openPlanDialog"
-    />
+          <!-- Once the conversation starts it takes the title's place, in a clear box above the bar -->
+          <div v-else class="chat-in mt-4 flex h-[min(30rem,62vh)] flex-col rounded-card border border-line">
+            <div class="flex items-center justify-between border-b border-line px-4 py-2.5">
+              <span class="flex items-center gap-2 text-sm font-semibold">
+                <span class="h-2 w-2 rounded-full bg-success" aria-hidden="true" />
+                {{ messages.chat.agentName }}
+              </span>
+              <button
+                type="button"
+                class="flex items-center gap-1.5 rounded-full px-3 py-1 text-sm text-ink-muted transition-colors hover:bg-surface-muted hover:text-ink"
+                @click="reset"
+              >
+                <i class="pi pi-plus text-xs" aria-hidden="true" />
+                {{ messages.chat.newTrip }}
+              </button>
+            </div>
+            <ChatThread
+              class="min-h-0 flex-1"
+              :chat="chat"
+              :locale="locale"
+              :messages="messages"
+              :typing="isAgentTyping"
+              @retry="retry"
+            />
+          </div>
+
+          <TripRequestComposer
+            v-model:trip-request="draft"
+            class="rise-in"
+            :class="hasStarted ? 'mt-3' : 'mt-8'"
+            style="--delay: 240ms"
+            :is-listening="isListening"
+            :voice-status-label="voiceStatusLabel"
+            :request-label="messages.requestLabel"
+            :request-placeholder="hasStarted ? messages.chat.replyPlaceholder : messages.requestPlaceholder"
+            :voice-button-label="messages.voiceButtonLabel"
+            :send-label="messages.generate"
+            @toggle-voice="toggleVoiceInput"
+            @submit="send"
+          />
+          <div v-if="!hasStarted" class="rise-in mt-4 flex flex-wrap gap-2" style="--delay: 320ms">
+            <button
+              v-for="example in REQUEST_EXAMPLES[locale]"
+              :key="example"
+              type="button"
+              class="prompt-chip"
+              @click="draft = example"
+            >
+              {{ example }}
+            </button>
+          </div>
+        </div>
+
+        <div class="min-w-0">
+          <HeroShowcase
+            class="rise-in"
+            style="--delay: 120ms"
+            :slide="slide"
+            :alt="slide.title[locale]"
+            @mouseenter="pauseSlides = true"
+            @mouseleave="pauseSlides = false"
+          />
+          <div
+            class="rise-in panel mx-auto mt-4 flex max-w-md items-center gap-4 overflow-hidden p-0 pr-4"
+            style="--delay: 320ms"
+            role="group"
+            :aria-label="SLIDE_LABELS[locale].group"
+          >
+            <img
+              :src="slide.image"
+              alt=""
+              class="h-20 w-24 shrink-0 object-cover"
+              :style="{ objectPosition: slide.focus }"
+            />
+            <p class="min-w-0 flex-1 truncate text-sm font-medium" aria-live="polite">{{ slide.title[locale] }}</p>
+            <button
+              type="button"
+              class="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-brand text-brand transition-colors hover:bg-brand-soft"
+              :aria-label="SLIDE_LABELS[locale].previous"
+              @click="showSlide(-1)"
+            >
+              <i class="pi pi-arrow-left text-sm" aria-hidden="true" />
+            </button>
+            <button
+              type="button"
+              class="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-brand text-brand-contrast transition-colors hover:bg-brand-hover"
+              :aria-label="SLIDE_LABELS[locale].next"
+              @click="showSlide(1)"
+            >
+              <i class="pi pi-arrow-right text-sm" aria-hidden="true" />
+            </button>
+          </div>
+          <div class="mt-3 flex justify-center gap-1.5" aria-hidden="true">
+            <span
+              v-for="(item, index) in HERO_SLIDES"
+              :key="item.id"
+              class="h-1 rounded-full transition-all duration-300"
+              :class="index === slideIndex ? 'w-6 bg-brand' : 'w-2 bg-line-strong'"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>

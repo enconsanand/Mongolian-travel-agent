@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
-      title: 'App',
+      title: 'NomadRoute',
       htmlAttrs: {
         lang: 'en',
       },
@@ -20,10 +20,11 @@ export default defineNuxtConfig({
         },
         {
           name: 'color-scheme',
-          content: 'light',
+          content: 'light dark',
         },
       ],
       link: [
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
         { rel: 'icon', type: 'image/x-icon', href: '/favicon/favicon.ico' },
         {
           rel: 'apple-touch-icon',
@@ -61,7 +62,7 @@ export default defineNuxtConfig({
         },
         {
           rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap',
+          href: 'https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Serif:wght@600;700&display=swap',
         },
       ],
     },

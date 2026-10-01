@@ -38,7 +38,7 @@ export const PLAN_MESSAGES = {
     signInToBook: 'Захиалахын тулд нэвтэрнэ үү',
     nothingToBook: 'Энэ хөтөлбөрт захиалах буудал алга.',
     staysChanged: 'Зарим буудал дүүрчихсэн тул ойролцоох өөр буудлаар сольлоо. Шалгаад дахин захиална уу.',
-    plannerDown: 'AI төлөвлөгч түр ажиллахгүй байна. Хэсэг хүлээгээд дахин оролдоно уу.',
+    plannerDown: 'Төлөвлөгч түр ажиллахгүй байна. Хэсэг хүлээгээд дахин оролдоно уу.',
     genericError: 'Алдаа гарлаа. Дахин оролдоно уу.',
     warnings: {
       unresolved_place: 'Зарим газрыг танисангүй. Өөр нэрээр эсвэл ойролцоох газраар нь бичээд үзээрэй.',
@@ -83,7 +83,7 @@ export const PLAN_MESSAGES = {
     signInToBook: 'Sign in to book',
     nothingToBook: 'This itinerary has no stays to book.',
     staysChanged: 'Some stays filled up, so nearby ones were picked instead. Please check and book again.',
-    plannerDown: 'The AI planner is unavailable right now. Please try again in a moment.',
+    plannerDown: 'The planner is unavailable right now. Please try again in a moment.',
     genericError: 'Something went wrong. Please try again.',
     warnings: {
       unresolved_place: 'Some places were not recognised. Try another name or a place nearby.',

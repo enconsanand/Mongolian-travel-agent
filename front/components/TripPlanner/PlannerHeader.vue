@@ -1,7 +1,14 @@
 <script setup lang="ts">
+import BrandMark from '~/components/Common/BrandMark.vue'
+import ThemeToggle from '~/components/Common/ThemeToggle.vue'
+import { BRAND } from '~/constants/brand'
 import type { AppLocale } from '~/types/trip-planner'
 
 const LOCALES: AppLocale[] = ['mn', 'en']
+const THEME_LABELS: Record<AppLocale, { light: string; dark: string }> = {
+  mn: { light: 'Цайвар горим', dark: 'Бараан горим' },
+  en: { light: 'Light mode', dark: 'Dark mode' },
+}
 
 const { locale, languageGroupLabel } = defineProps<{
   locale: AppLocale
@@ -13,33 +20,36 @@ const emit = defineEmits<{
 }>()
 
 function localeButtonClass(option: AppLocale): string {
-  const isActive = option === locale
-  return isActive ? 'rounded-full bg-emerald-500 px-3 py-1 text-slate-900' : 'rounded-full px-3 py-1 text-slate-300'
+  return option === locale ? 'bg-brand text-brand-contrast' : 'text-ink-muted hover:text-ink'
 }
 </script>
 
 <template>
-  <header class="glass-panel sticky top-0 z-30 border-x-0 border-t-0">
-    <div class="mx-auto flex h-14 max-w-4xl items-center justify-between px-4">
+  <header class="sticky top-0 z-30 border-b border-line bg-surface">
+    <div class="mx-auto flex h-16 max-w-page items-center justify-between gap-4 px-4">
+      <NuxtLink to="/" class="flex items-center gap-2.5">
+        <BrandMark class="h-9 w-9" />
+        <span class="font-display text-xl font-bold text-ink">{{ BRAND.name }}</span>
+      </NuxtLink>
       <div class="flex items-center gap-2">
-        <i class="pi pi-compass text-xl text-emerald-400" aria-hidden="true" />
-        <span class="text-sm font-semibold tracking-tight sm:text-base">Mongolian Travel AI Agent</span>
-      </div>
-      <div
-        class="flex rounded-full bg-slate-800 p-0.5 text-xs font-medium"
-        role="group"
-        :aria-label="languageGroupLabel"
-      >
-        <button
-          v-for="option in LOCALES"
-          :key="option"
-          type="button"
-          :class="localeButtonClass(option)"
-          :aria-pressed="option === locale"
-          @click="emit('set-locale', option)"
+        <div
+          class="flex rounded-control border border-line p-0.5 text-xs font-semibold"
+          role="group"
+          :aria-label="languageGroupLabel"
         >
-          {{ option.toUpperCase() }}
-        </button>
+          <button
+            v-for="option in LOCALES"
+            :key="option"
+            type="button"
+            class="rounded-[calc(var(--radius-control)-2px)] px-2.5 py-1.5 transition-colors"
+            :class="localeButtonClass(option)"
+            :aria-pressed="option === locale"
+            @click="emit('set-locale', option)"
+          >
+            {{ option.toUpperCase() }}
+          </button>
+        </div>
+        <ThemeToggle :light-label="THEME_LABELS[locale].light" :dark-label="THEME_LABELS[locale].dark" />
       </div>
     </div>
   </header>
