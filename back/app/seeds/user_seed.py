@@ -1,13 +1,16 @@
+import json
 import logging
 import os
 import secrets
+from pathlib import Path
 
 from pymongo.database import Database
 
 from app import crud, schemas
-from app.utils.functions import load_data
 
 logger = logging.getLogger(__name__)
+
+USERS_FILE = Path(__file__).parent / "datas" / "users.json"
 
 
 def seed_password() -> str:
@@ -21,7 +24,7 @@ def seed_password() -> str:
 
 
 def create_users(db: Database, password: str):
-    for row in load_data("users.json"):
+    for row in json.loads(USERS_FILE.read_text()):
         email = row.get("email")
         if crud.user.get_by_email(db=db, email=email):
             logger.info("User with email `%s` already exists.", email)

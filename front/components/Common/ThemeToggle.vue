@@ -4,8 +4,14 @@ const { lightLabel, darkLabel } = defineProps<{
   darkLabel: string
 }>()
 
-const { theme, toggle } = useTheme()
-const isDark = computed(() => theme.value === 'dark')
+const { chosen, theme, toggle } = useTheme()
+// The server only knows the cookie, not the system preference: render from the cookie until mounted so the
+// label hydrates without a mismatch, then follow the real theme
+const mounted = ref(false)
+onMounted(() => {
+  mounted.value = true
+})
+const isDark = computed(() => (mounted.value ? theme.value : chosen.value) === 'dark')
 </script>
 
 <template>

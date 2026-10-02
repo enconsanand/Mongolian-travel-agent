@@ -3,11 +3,11 @@ import logging
 import time
 from contextlib import asynccontextmanager
 
-from fastapi import FastAPI, Request, Response
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app import workers
-from app.api.v1 import bookings, payments, planner, speech, travel
+from app.api.v1 import bookings, payments, planner, travel, voice
 from app.api.v1.api_user import user_router
 from app.core.config import settings
 from app.db.mongo import ensure_indexes, get_database
@@ -17,9 +17,6 @@ from app.middlewares.rate_limit import RateLimitMiddleware
 from app.middlewares.request_logging import RequestLoggingMiddleware
 from app.middlewares.security_headers import SecurityHeadersMiddleware
 
-# ============================================================================
-# Logging Configuration
-# ============================================================================
 logging.basicConfig(
     format="%(levelname)s %(pathname)s:%(funcName)s(%(lineno)d) %(message)s",
     level=logging.DEBUG if settings.ENV.is_development else logging.INFO,
@@ -27,9 +24,6 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-# ============================================================================
-# Application Lifespan
-# ============================================================================
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Application startup and shutdown events."""
@@ -47,9 +41,6 @@ async def lifespan(app: FastAPI):
     logger.info("Shutting down %s", settings.PROJECT_NAME)
 
 
-# ============================================================================
-# Application Factory
-# ============================================================================
 def create_app() -> FastAPI:
     """Create and configure FastAPI application."""
     app = FastAPI(
@@ -59,8 +50,10 @@ def create_app() -> FastAPI:
         lifespan=lifespan,
     )
 
-    _configure_cors(app)
     _configure_middlewares(app)
+    # Added last so it runs first: early rejections (429, body size, validation) still carry CORS headers,
+    # otherwise the browser hides their status and the web app can only show a generic error
+    _configure_cors(app)
     _configure_routes(app)
 
     return app
@@ -74,6 +67,7 @@ def _configure_cors(app: FastAPI) -> None:
         allow_credentials=True,
         allow_methods=["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
         allow_headers=[
+            "X-Plan-Token",
             "Accept",
             "Accept-Language",
             "Content-Language",
@@ -87,35 +81,13 @@ def _configure_cors(app: FastAPI) -> None:
 
 
 def _configure_middlewares(app: FastAPI) -> None:
-    """
-    Configure application middlewares.
-
-    Order matters: last added = first executed.
-    """
-    # Body size cap (innermost - counts bytes as endpoints read the stream,
-    # so chunked bodies without Content-Length cannot bypass the limit)
+    """Last added runs first, so security headers wrap every response, including early rejections."""
+    # Innermost: counts bytes as endpoints read the stream, so chunked bodies without Content-Length cannot bypass it
     app.add_middleware(BodySizeLimitMiddleware)
-
-    # Rate limiting (first to execute - reject early)
     app.add_middleware(RateLimitMiddleware)
-
-    # Input validation
     app.add_middleware(InputValidationMiddleware)
-
-    # Request logging
     app.add_middleware(RequestLoggingMiddleware)
-
-    # Security headers (last to execute - always add headers)
     app.add_middleware(SecurityHeadersMiddleware)
-
-    # Process time header
-    @app.middleware("http")
-    async def add_process_time_header(request: Request, call_next) -> Response:
-        start_time = time.perf_counter()
-        response = await call_next(request)
-        process_time = time.perf_counter() - start_time
-        response.headers["X-Process-Time"] = f"{process_time:.4f}"
-        return response
 
 
 def _configure_routes(app: FastAPI) -> None:
@@ -125,7 +97,7 @@ def _configure_routes(app: FastAPI) -> None:
     app.include_router(payments.router, prefix=settings.API_V1_STR)
     app.include_router(bookings.router, prefix=settings.API_V1_STR)
     app.include_router(planner.router, prefix=settings.API_V1_STR)
-    app.include_router(speech.router, prefix=settings.API_V1_STR)
+    app.include_router(voice.router, prefix=settings.API_V1_STR)
 
     @app.get("/", tags=["Root"])
     async def root() -> dict:

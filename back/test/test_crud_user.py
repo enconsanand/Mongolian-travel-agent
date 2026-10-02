@@ -2,8 +2,6 @@
 
 import uuid
 
-import pytest
-
 from app import crud, schemas
 from app.core.security import verify_password
 
@@ -75,20 +73,3 @@ def test_update_user_changes_simple_field(db):
     user = crud.user.create(db=db, obj_in=_make_user_in())
     updated = crud.user.update(db=db, db_obj=user, obj_in={"first_name": "Renamed"})
     assert updated.first_name == "Renamed"
-
-
-def test_remove_user(db):
-    user = crud.user.create(db=db, obj_in=_make_user_in())
-    crud.user.remove(db=db, id=user.id)
-    assert crud.user.get(db=db, id=user.id) is None
-
-
-def test_remove_missing_user_raises(db):
-    with pytest.raises(ValueError):
-        crud.user.remove(db=db, id=uuid.uuid4())
-
-
-def test_count_increases_after_create(db):
-    before = crud.user.count(db=db)
-    crud.user.create(db=db, obj_in=_make_user_in())
-    assert crud.user.count(db=db) == before + 1

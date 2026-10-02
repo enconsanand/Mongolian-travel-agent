@@ -3,7 +3,6 @@ from typing import Any, Generic, TypeVar
 from uuid import UUID
 
 from pydantic import BaseModel
-from pymongo import DESCENDING
 from pymongo.collection import Collection
 from pymongo.database import Database
 
@@ -37,19 +36,6 @@ class CRUDBase(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
         """Retrieve a single record by ID."""
         return self._to_model(self._col(db).find_one({"_id": self._key(id)}))
 
-    def get_multi(self, db: Database, skip: int = 0, limit: int = 100) -> list[ModelType]:
-        """Retrieve multiple records with pagination, newest first."""
-        cursor = self._col(db).find().sort("created_at", DESCENDING).skip(skip).limit(limit)
-        return [self.model.model_validate(doc) for doc in cursor]
-
-    def get_multi_with_count(self, db: Database, skip: int = 0, limit: int = 100) -> tuple[int, list[ModelType]]:
-        """Retrieve multiple records with total count for pagination."""
-        return self.count(db), self.get_multi(db, skip=skip, limit=limit)
-
-    def count(self, db: Database) -> int:
-        """Return total count of records."""
-        return self._col(db).count_documents({})
-
     def create(self, db: Database, obj_in: CreateSchemaType) -> ModelType:
         """Create a new record."""
         db_obj = self.model(**obj_in.model_dump())
@@ -68,10 +54,3 @@ class CRUDBase(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
         db_obj = self.model.model_validate(db_obj.model_dump(by_alias=True))
         self._col(db).update_one({"_id": getattr(db_obj, "id")}, {"$set": db_obj.model_dump(include=set(fields))})
         return db_obj
-
-    def remove(self, db: Database, id: str | UUID) -> ModelType:
-        """Delete a record by ID."""
-        doc = self._col(db).find_one_and_delete({"_id": self._key(id)})
-        if doc is None:
-            raise ValueError(f"{self.model.__name__}({id}) not found")
-        return self.model.model_validate(doc)

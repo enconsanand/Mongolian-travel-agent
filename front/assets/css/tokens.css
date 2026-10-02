@@ -78,9 +78,11 @@
   --font-sans: 'Noto Sans', system-ui, sans-serif;
   --font-display: 'Noto Serif', Georgia, serif;
 
-  /* Radius: controls (inputs, buttons, chips) and cards */
+  /* Radius: controls (inputs, buttons, chips), cards, and what sits inside a control */
   --radius-control: 0.625rem;
   --radius-card: 1rem;
+  /* Photos and pills nested inside a control-rounded box */
+  --radius-inner: calc(var(--radius-control) - 2px);
 
   /* Spacing: Tailwind's 4px step, plus the page width */
   --spacing: 0.25rem;

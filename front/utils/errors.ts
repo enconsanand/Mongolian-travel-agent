@@ -2,7 +2,7 @@ export class ApiError extends Error {
   constructor(
     message: string,
     public statusCode?: number,
-    public data?: any
+    public data?: unknown
   ) {
     super(message)
     this.name = 'ApiError'
@@ -16,17 +16,7 @@ export class AuthError extends ApiError {
   }
 }
 
-export class ValidationError extends ApiError {
-  constructor(
-    message: string = 'Validation failed',
-    public errors?: Record<string, string[]>
-  ) {
-    super(message, 400)
-    this.name = 'ValidationError'
-  }
-}
-
-export class NetworkError extends Error {
+export class NetworkError extends ApiError {
   constructor(message: string = 'Network error occurred') {
     super(message)
     this.name = 'NetworkError'

@@ -7,6 +7,7 @@ import { MERCHANT_NAME, UNIT_LABELS, type CheckoutMessages } from '~/constants/c
 import type { InstrumentType } from '~/types/checkout'
 import type { AppLocale } from '~/types/trip-planner'
 import type { CheckoutClaims } from '~/utils/ap2'
+import { formatMnt } from '~/utils/tripPlan'
 
 const { claims, locale, messages, busy } = defineProps<{
   claims: CheckoutClaims
@@ -21,7 +22,7 @@ const instrument = ref<InstrumentType>('qpay_qr')
 const secondsLeft = ref(0)
 let timer: ReturnType<typeof setInterval> | null = null
 
-const money = (mnt: number) => `${new Intl.NumberFormat(locale === 'mn' ? 'mn-MN' : 'en-US').format(mnt)} ₮`
+const money = (mnt: number) => formatMnt(mnt, locale)
 
 /** One row per stay and unit type, with its nights listed. */
 const stays = computed(() => {

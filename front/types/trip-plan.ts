@@ -132,6 +132,8 @@ export interface EventView {
 }
 
 export interface Proposal {
+  /** Returned only to the creator, never by a public read. */
+  claim_token?: string
   id: string
   version: number
   request: PlanRequestBody & { lang: AppLocale }

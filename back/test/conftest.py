@@ -27,7 +27,8 @@ def db():
     """Function-scoped in-memory database with the app's indexes."""
     database = mongomock.MongoClient(tz_aware=True)["test_travel_mn"]
     # mongomock can't build 2dsphere indexes; only the ones tests rely on matter here
-    database["users"].create_index("email", unique=True)
+    database["users"].create_index("email", unique=True, partialFilterExpression={"email": {"$type": "string"}})
+    database["users"].create_index("phone", unique=True, partialFilterExpression={"phone": {"$type": "string"}})
     yield database
 
 

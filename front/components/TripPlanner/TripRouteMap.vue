@@ -114,9 +114,9 @@ const apiKey = useRuntimeConfig().public.googleMapsApiKey as string
 const api = useApi()
 
 let maps: GoogleMaps | null = null
-let map: any = null
-let overlays: any[] = []
-let infoWindow: any = null
+let map: GoogleMaps = null
+let overlays: GoogleMaps[] = []
+let infoWindow: GoogleMaps = null
 let drawSeq = 0
 // A card opened by a click stays open until it is closed, unlike one shown on hover
 let cardPinned = false

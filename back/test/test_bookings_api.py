@@ -22,7 +22,7 @@ def api(client, db, monkeypatch):
     load_mock_collections(db, real_server=False)
     db["trips"].update_one({"_id": TRIP}, {"$set": {"user_id": USER, "status": "planned"}})
     sent: list[str] = []
-    monkeypatch.setattr(qpay_sim.httpx, "post", lambda url, **_: sent.append(str(url)))
+    monkeypatch.setattr(qpay_sim.httpx, "get", lambda url, **_: sent.append(str(url)))
     sim = TestClient(qpay_sim.app)
     sim.post("/_sim/reset")
     rail = QPayRail(

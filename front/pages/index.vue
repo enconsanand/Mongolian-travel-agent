@@ -24,7 +24,9 @@ const {
   hasStarted,
   currentPlan,
   isListening,
+  isTranscribing,
   voiceStatusLabel,
+  voiceError,
   setLocale,
   toggleVoiceInput,
   canGenerate,
@@ -173,6 +175,7 @@ useHead(() => ({
             :class="hasStarted ? 'mt-3' : 'mt-8'"
             style="--delay: 240ms"
             :is-listening="isListening"
+            :is-transcribing="isTranscribing"
             :voice-status-label="voiceStatusLabel"
             :request-label="messages.requestLabel"
             :request-placeholder="hasStarted ? messages.chat.replyPlaceholder : messages.requestPlaceholder"
@@ -181,6 +184,7 @@ useHead(() => ({
             @toggle-voice="toggleVoiceInput"
             @submit="send"
           />
+          <p v-if="voiceError" class="mt-2 px-7 text-sm text-danger" role="alert">{{ voiceError }}</p>
           <div v-if="!hasStarted" class="rise-in mt-4 flex flex-wrap gap-2" style="--delay: 320ms">
             <button
               v-for="example in REQUEST_EXAMPLES[locale]"
@@ -257,7 +261,7 @@ useHead(() => ({
             <span
               v-for="(item, index) in HERO_SLIDES"
               :key="item.id"
-              class="h-1 rounded-full transition-all duration-300"
+              class="h-1 rounded-full transition-[width,background-color] duration-300"
               :class="index === slideIndex ? 'w-6 bg-brand' : 'w-2 bg-line-strong'"
             />
           </div>

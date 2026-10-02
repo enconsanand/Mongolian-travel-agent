@@ -1,7 +1,5 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
-// @ts-nocheck
 import tailwindcss from '@tailwindcss/vite'
-import ThemeConfig from './assets/themes/config.js'
 
 export default defineNuxtConfig({
   devtools: { enabled: process.env.NODE_ENV !== 'production' },
@@ -77,48 +75,15 @@ export default defineNuxtConfig({
       googleMapsApiKey: process.env.NUXT_PUBLIC_GOOGLE_MAPS_API_KEY || '',
     },
   },
-  modules: ['@pinia/nuxt', '@nuxt/image', '@nuxtjs/robots', '@primevue/nuxt-module', '@nuxt/eslint'],
-  primevue: {
-    options: {
-      theme: {
-        preset: ThemeConfig.preset,
-        options: {
-          ...ThemeConfig.options,
-        },
-      },
-    },
-  },
-  image: {
-    format: ['webp'],
-    provider: 'ipx',
-  },
-  pinia: {
-    storesDirs: ['./stores/**'],
-    autoImports: ['defineStore', ['defineStore', 'definePiniaStore']],
-  },
-  robots: {
-    UserAgent: '*',
-    Disallow: ['/api/', '/.nuxt/', '/admin/'],
-    Allow: '/',
-  },
+  modules: ['@nuxtjs/robots', '@nuxt/eslint'],
   css: ['~/assets/css/main.css', '~/assets/css/trip-planner.css'],
   features: {
     inlineStyles: true,
-  },
-  build: {
-    transpile: ['primevue', '@primeuix/themes'],
   },
   vite: {
     plugins: [tailwindcss()],
     define: {
       'process.env.DEBUG': false,
-    },
-    optimizeDeps: {
-      include: ['@tanstack/vue-query', 'zod', 'vue3-toastify'],
-    },
-    ssr: {
-      noExternal: ['primevue', '@primeuix/themes'],
-      external: ['vue3-toastify'],
     },
   },
   eslint: {
@@ -146,6 +111,10 @@ export default defineNuxtConfig({
               "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net",
               "font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net",
               "img-src 'self' data: https:",
+              // The plan read aloud (tsuurAI) plays from blob: URLs
+              "media-src 'self' blob:",
+              // Google Maps draws in web workers it starts from blob: URLs
+              "worker-src 'self' blob:",
               "connect-src 'self' https://maps.googleapis.com https://routes.googleapis.com https://router.project-osrm.org " +
                 apiOrigin +
                 simOrigin +

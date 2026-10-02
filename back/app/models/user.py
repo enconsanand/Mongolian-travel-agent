@@ -20,8 +20,9 @@ class User(BaseModel):
     model_config = ConfigDict(populate_by_name=True, validate_assignment=True, extra="allow")
 
     id: str = Field(default_factory=lambda: uuid4().hex, alias="_id")
-    email: str
-    hashed_password: str
+    email: str | None = None
+    phone: str | None = None
+    hashed_password: str | None = None
     first_name: str
     last_name: str
     is_active: bool = True
@@ -30,9 +31,9 @@ class User(BaseModel):
 
     @field_validator("email")
     @classmethod
-    def convert_lower(cls, value: str) -> str:
+    def convert_lower(cls, value: str | None) -> str | None:
         """Normalize email to lowercase and strip whitespace."""
-        return value.strip().lower()
+        return value.strip().lower() if value else None
 
     @property
     def full_name(self) -> str:

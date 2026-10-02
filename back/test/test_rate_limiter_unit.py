@@ -7,7 +7,13 @@ import redis.asyncio as aioredis
 from starlette.requests import Request
 
 from app.core.config import settings
-from app.middlewares.rate_limit import InMemoryRateLimiter, RedisRateLimiter, build_rate_limiter, get_client_ip
+from app.middlewares.rate_limit import (
+    InMemoryRateLimiter,
+    RateLimitMiddleware,
+    RedisRateLimiter,
+    build_rate_limiter,
+    get_client_ip,
+)
 
 
 def test_allows_up_to_limit_then_blocks():
@@ -204,3 +210,19 @@ def test_planner_requests_have_their_own_tight_limit(monkeypatch):
     assert codes == [200] * limit
     assert client.post("/api/v1/planner/proposals/p/revise").status_code == 429
     assert client.get("/api/v1/planner/proposals/p").status_code == 200  # reading a plan costs no model call
+
+
+def test_cors_preflight_does_not_spend_the_auth_budget(monkeypatch):
+    from fastapi import FastAPI
+    from fastapi.testclient import TestClient
+
+    monkeypatch.setattr(settings, "REDIS_URL", None)
+    monkeypatch.setattr(settings, "RATE_LIMIT_AUTH_REQUESTS_PER_MINUTE", 2)
+    app = FastAPI()
+    app.post("/api/v1/auth/code/request")(lambda: {"ok": True})
+    app.options("/api/v1/auth/code/request")(lambda: {})
+    app.add_middleware(RateLimitMiddleware)
+    client = TestClient(app)
+
+    assert all(client.options("/api/v1/auth/code/request").status_code == 200 for _ in range(5))
+    assert [client.post("/api/v1/auth/code/request").status_code for _ in range(3)] == [200, 200, 429]

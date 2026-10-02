@@ -35,7 +35,12 @@ class UserUpdate(BaseModel):
     is_active: bool | None = None
 
 
-class UserResponse(UserBase):
+class UserResponse(BaseModel):
     id: str
+    email: EmailStr | None = None
+    phone: str | None = None
+    first_name: str
+    last_name: str
+    is_active: bool
 
     model_config = ConfigDict(from_attributes=True)

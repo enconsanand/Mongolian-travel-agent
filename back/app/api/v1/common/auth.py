@@ -80,7 +80,7 @@ async def login(
             headers={"WWW-Authenticate": "Bearer"},
         )
 
-    return Token(access_token=create_access_token(sub=user.email))
+    return Token(access_token=create_access_token(sub=user.id, subject_kind="user_id"))
 
 
 @router.post("/logout", status_code=status.HTTP_204_NO_CONTENT)

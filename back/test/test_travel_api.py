@@ -163,3 +163,22 @@ def test_bad_coordinates_are_rejected(client, seeded):
     assert client.get(f"{API}/places", params={"lng": 100, "lat": 200}).status_code == 422
     assert client.get(f"{API}/stays", params={"lng": 100, "lat": 47, "radius_km": -5}).status_code == 422
     assert client.get(f"{API}/regions/locate", params={"lng": 500, "lat": 0}).status_code == 422
+
+
+def test_invoices_are_owned_localized_and_do_not_expose_payment_internals(client, seeded):
+    headers = _auth(client, "jambaa@nashatech.com")
+    rows = client.get(f"{API}/me/invoices", headers={**headers, "Accept-Language": "en"})
+    assert rows.status_code == 200, rows.text
+    invoices = rows.json()
+    assert invoices
+    own_ids = {p["_id"] for p in seeded["payments"].find({"user_id": "user_jamba"})}
+    assert {i["id"] for i in invoices} == own_ids
+    for invoice in invoices:
+        payment = seeded["payments"].find_one({"_id": invoice["id"]})
+        assert invoice["amount_mnt"] == payment["amount_mnt"]
+        assert invoice["status"] == payment["status"]
+        assert not {"consent", "charge", "idempotency_key", "payment_mandate_id"}.intersection(invoice)
+        assert isinstance(invoice["trip_title"], str)
+        expected_paid = [s["at"] for s in payment["status_history"] if s["status"] == "paid"]
+        assert invoice["paid_at"] == (expected_paid[-1] if expected_paid else None)
+        assert invoice["checkout_id"] is None  # legacy seeded payments have no AP2 checkout

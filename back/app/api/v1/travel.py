@@ -15,6 +15,7 @@ from pymongo.collection import Collection
 from app.api.v1.deps import ActiveUser, DbSession
 from app.modules.orchestrator.filters import stay_ids_free_every_night, within_km
 from app.schemas import travel as s
+from app.schemas.account import InvoiceView
 from app.utils.i18n import Lang, get_lang, localize
 
 router = APIRouter()
@@ -318,7 +319,26 @@ def get_fuel_prices(db: DbSession, lang: LangDep) -> Json:
 
 @router.get("/me/trips", tags=["Travel - My trips"])
 def list_my_trips(db: DbSession, lang: LangDep, user: ActiveUser) -> list[Json]:
-    return _find(db[s.TripDoc.collection], {"user_id": user.id}, lang, sort=[("start_date", 1)])
+    trips = _find(db[s.TripDoc.collection], {"user_id": user.id}, lang, sort=[("created_at", -1)])
+    snapshots = {row["_id"]: row["snapshot"] for row in db["saved_plans"].find({"user_id": user.id})}
+    stay_ids = {d["stay_id"] for plan in snapshots.values() for d in plan["days"] if d.get("stay_id")}
+    images = {row["_id"]: row.get("cover_image_url") for row in db["stays"].find({"_id": {"$in": list(stay_ids)}})}
+    stops = {
+        trip_id: list(dict.fromkeys(p for d in plan["days"] for p in (d["from_place_id"], d["to_place_id"])))
+        for trip_id, plan in snapshots.items()
+    }
+    place_ids = list({p for route in stops.values() for p in route})
+    places = _find(db["places"], {"_id": {"$in": place_ids}}, lang, limit=0)
+    names = {row["id"]: row["name"] for row in places if row.get("name")}
+    for trip in trips:
+        plan = snapshots.get(trip["id"])
+        if plan:
+            trip["cover_image_url"] = next(
+                (images.get(d["stay_id"]) for d in plan["days"] if images.get(d.get("stay_id"))), None
+            )
+            trip["total_mnt"] = plan["totals"]["total_mnt"]
+            trip["route"] = [names[p] for p in stops[trip["id"]] if p in names]
+    return trips
 
 
 @router.get("/me/trips/{trip_id}", tags=["Travel - My trips"])
@@ -332,9 +352,29 @@ def get_my_trip(db: DbSession, lang: LangDep, user: ActiveUser, trip_id: str) ->
     itinerary = db[s.ItineraryVersionDoc.collection].find_one({**by_trip, "version": trip["current_version"]})
     trip["itinerary"] = _out(itinerary, lang) if itinerary else None
     trip["bookings"] = _find(db[s.BookingDoc.collection], by_trip, lang)
+    holds = {(h["checkout_id"], h["stay_id"], h["unit_type"], h["date"]): h["qty"] for h in db["holds"].find(by_trip)}
+    for booking in trip["bookings"]:
+        booking["units"] = holds.get(
+            (booking.get("checkout_id"), booking.get("stay_id"), booking.get("unit_type"), booking.get("check_in"))
+        )
     trip["quotes"] = _find(db[s.QuoteDoc.collection], by_trip, lang)
     trip["payments"] = _find(db[s.PaymentDoc.collection], by_trip, lang)
     trip["refunds"] = _find(db[s.RefundDoc.collection], by_trip, lang)
+    saved = db["saved_plans"].find_one({"_id": trip_id, "user_id": user.id})
+    plan = saved["snapshot"] if saved else None
+    trip["plan"] = {k: plan[k] for k in ("days", "totals", "summary", "request")} if plan else None
+    trip["can_resume"] = bool(saved and trip["status"] == "planned")
+    days = plan["days"] if plan else (trip["itinerary"] or {}).get("days", [])
+    stay_ids = {d["stay_id"] for d in days if d.get("stay_id")}
+    stay_ids |= {b["stay_id"] for b in trip["bookings"] if b.get("stay_id")}
+    place_ids = {p for d in days for p in (d["from_place_id"], d["to_place_id"])}
+    trip["stays"] = {row["id"]: row for row in _find(db["stays"], {"_id": {"$in": list(stay_ids)}}, lang)}
+    trip["places"] = {row["id"]: row for row in _find(db["places"], {"_id": {"$in": list(place_ids)}}, lang)}
+    trip["checkouts"] = [
+        {"id": c["_id"], "status": c["status"], "total_mnt": c["total_mnt"], "expires_at": c["expires_at"]}
+        for c in db["checkouts"].find({"trip_id": trip_id, "user_id": user.id}).sort("created_at", -1)
+    ]
+    trip["invoices"] = [invoice.model_dump() for invoice in _invoices(db, user.id, lang, trip_id)]
     return trip
 
 
@@ -347,3 +387,43 @@ def list_my_payments(
 ) -> list[Json]:
     query = _clean({"user_id": user.id, "status": payment_status})
     return _find(db[s.PaymentDoc.collection], query, lang)
+
+
+def _invoices(db: DbSession, user_id: str, lang: Lang, trip_id: str | None = None) -> list[InvoiceView]:
+    query = {"user_id": user_id, **({"trip_id": trip_id} if trip_id else {})}
+    payments = list(db["payments"].find(query).limit(100))
+    trip_ids = list({p["trip_id"] for p in payments})
+    trips = {t["_id"]: localize(t, lang) for t in db["trips"].find({"_id": {"$in": trip_ids}, "user_id": user_id})}
+    checkout_ids = [p["checkout_id"] for p in payments if p.get("checkout_id")]
+    checkouts = {
+        c["_id"]: localize(c, lang) for c in db["checkouts"].find({"_id": {"$in": checkout_ids}, "user_id": user_id})
+    }
+    result = []
+    for payment in payments:
+        checkout = checkouts.get(payment.get("checkout_id"))
+        paid = next((s["at"] for s in reversed(payment.get("status_history", [])) if s["status"] == "paid"), None)
+        result.append(
+            InvoiceView(
+                id=payment["_id"],
+                trip_id=payment["trip_id"],
+                trip_title=trips.get(payment["trip_id"], {}).get("title", payment["trip_id"]),
+                checkout_id=checkout["_id"] if checkout else None,
+                reference=payment.get("provider_ref") or payment["_id"],
+                amount_mnt=payment["amount_mnt"],
+                status=payment["status"],
+                provider=payment["provider"],
+                paid_at=paid,
+                lines=[
+                    {"label": line["label"], "qty": line["qty"], "total_mnt": line["total_mnt"]}
+                    for line in checkout["lines"]
+                ]
+                if checkout
+                else [],
+            )
+        )
+    return sorted(result, key=lambda invoice: invoice.paid_at or "", reverse=True)
+
+
+@router.get("/me/invoices", tags=["Travel - My trips"], response_model=list[InvoiceView])
+def list_my_invoices(db: DbSession, lang: LangDep, user: ActiveUser) -> list[InvoiceView]:
+    return _invoices(db, user.id, lang)

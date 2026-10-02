@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { formatTripRange } from '~/utils/tripFacts'
 import { addDays } from '~/utils/dates'
+import { formatMonthDay } from '~/utils/tripPlan'
 import type { AppLocale } from '~/types/trip-planner'
 
 interface Photo {
@@ -70,12 +71,6 @@ function stayEnd(start: string, end: string) {
   return capped < end ? capped : end
 }
 
-function dayLabel(isoDate: string) {
-  const value = new Date(`${isoDate}T00:00:00`)
-  if (locale === 'mn') return `${value.getMonth() + 1} сарын ${value.getDate()}`
-  return value.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
-}
-
 function placeName(program: Program) {
   return places.value[program.place_id] || program.aimag
 }
@@ -134,7 +129,7 @@ onMounted(load)
         />
         <div class="flex flex-1 flex-col p-4">
           <p class="text-xs font-semibold tracking-wide text-accent-ink uppercase">
-            {{ dayLabel(program.start_date) }} – {{ dayLabel(program.end_date) }}
+            {{ formatMonthDay(program.start_date, locale) }} – {{ formatMonthDay(program.end_date, locale) }}
           </p>
           <h3 class="mt-1 font-display text-lg font-bold">{{ program.name }}</h3>
           <p class="mt-0.5 text-sm text-ink-muted">{{ placeName(program) }}</p>

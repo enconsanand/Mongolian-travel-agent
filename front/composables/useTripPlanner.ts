@@ -4,7 +4,7 @@ import type { Proposal } from '~/types/trip-plan'
 import type { AppLocale, TripPlannerMessages } from '~/types/trip-planner'
 import { isUnrelatedQuestion, readTripFacts, toPlanRequestBody, type TripFacts } from '~/utils/tripFacts'
 import { requestProposal, requestRevision, type PlanErrorCode } from './useTripPlan'
-import { voiceStatusText } from './useVoiceInput'
+import { useVoiceInput } from './useVoiceInput'
 
 /** What the agent must ask before it may offer to plan, in this order */
 const SLOTS = ['place', 'guests', 'dates', 'budget'] as const
@@ -59,15 +59,15 @@ function withUnit(text: string, slot: Slot | null, locale: AppLocale): string {
  */
 export function useTripPlanner() {
   const api = useApi()
-  const locale = useState<AppLocale>('app-locale', () => 'mn')
+  const locale = useAppLocale()
   const messages = computed<TripPlannerMessages>(() => TRIP_PLANNER_MESSAGES[locale.value])
 
   const draft = ref('')
-  // The microphone: Anir's transcript is added to whatever is already typed
+  // Speech lands in the field, so the traveller can check or fix it before sending
   const voice = useVoiceInput((text) => {
     draft.value = draft.value.trim() ? `${draft.value.trim()} ${text}` : text
   })
-  const isListening = computed(() => voice.state.value === 'recording')
+  const { isListening, isTranscribing } = voice
   const chat = ref<ChatMessage[]>([])
   const busy = ref(false)
   const proposalId = ref<string | null>(null)
@@ -91,7 +91,12 @@ export function useTripPlanner() {
   // Bumped on reset, so an answer to a conversation that was cleared is dropped
   let conversation = 0
 
-  const voiceStatusLabel = computed(() => voiceStatusText(voice.state.value, messages.value, messages.value.tapToSpeak))
+  const voiceStatusLabel = computed(() => {
+    if (isListening.value) return messages.value.listening
+    if (isTranscribing.value) return messages.value.transcribing
+    return messages.value.tapToSpeak
+  })
+  const voiceError = computed(() => (voice.error.value ? messages.value.voiceErrors[voice.error.value] : ''))
   const hasStarted = computed(() => chat.value.length > 0)
   /** The newest version of the plan in the conversation, for the map */
   const currentPlan = computed(() => {
@@ -214,6 +219,7 @@ export function useTripPlanner() {
 
   function submit(text: string) {
     if (!text || busy.value) return
+    voice.cancel()
     push({ role: 'user', text })
 
     if (proposalId.value) {
@@ -339,7 +345,9 @@ export function useTripPlanner() {
     hasStarted,
     currentPlan,
     isListening,
+    isTranscribing,
     voiceStatusLabel,
+    voiceError,
     setLocale,
     toggleVoiceInput,
     canGenerate,

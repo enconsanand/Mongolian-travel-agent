@@ -1,93 +1,62 @@
 import { navigateTo } from 'nuxt/app'
-import type { FetchOptions } from 'ofetch'
+import type { FetchError, FetchOptions } from 'ofetch'
 import { getAuthCookie } from '~/utils/cookieConfig'
 import { COOKIE_NAMES, HTTP_STATUS, ROUTES } from '~/constants'
 import { ApiError, AuthError, NetworkError } from '~/utils/errors'
 
 interface ApiResponse<T> {
   data: T | null
-  error: Error | null
+  error: ApiError | null
 }
+
+type RequestOptions = FetchOptions<'json'> | FetchOptions<'blob'>
 
 export const useApi = () => {
   const config = useRuntimeConfig()
   const router = useRouter()
   const baseURL = config.public.apiBase
 
-  const apiFetch = async <T>(path: string, options: FetchOptions<'json'> = {}): Promise<ApiResponse<T>> => {
-    const authCookie = getAuthCookie(COOKIE_NAMES.AUTH_TOKEN)
-    const headers: Record<string, string> = {}
-
-    if (authCookie.value) {
-      headers.Authorization = `Bearer ${authCookie.value}`
-    }
-
-    if (options.body && !(options.body instanceof FormData)) {
-      headers['Content-Type'] = 'application/json'
+  const apiFetch = async <T>(path: string, options: RequestOptions): Promise<ApiResponse<T>> => {
+    const headers = new Headers(options.headers)
+    const token = getAuthCookie(COOKIE_NAMES.AUTH_TOKEN).value
+    if (token && !headers.has('Authorization')) {
+      headers.set('Authorization', `Bearer ${token}`)
     }
 
     try {
-      const data = await $fetch<T>(`${baseURL}${path}`, {
-        ...options,
-        headers: {
-          ...headers,
-          ...(options.headers || {}),
-        },
-      } as any)
-
-      return { data: data as T, error: null }
-    } catch (error: any) {
-      return handleApiError(error)
+      const data = (await $fetch(`${baseURL}${path}`, { ...options, headers } as Parameters<typeof $fetch>[1])) as T
+      return { data, error: null }
+    } catch (error) {
+      return { data: null, error: toApiError(error as FetchError) }
     }
   }
 
-  const handleApiError = <T>(error: any): ApiResponse<T> => {
-    const statusCode = error?.status || error?.statusCode
+  const toApiError = (error: FetchError): ApiError => {
+    const statusCode = error.statusCode
 
     if (statusCode === HTTP_STATUS.UNAUTHORIZED) {
-      const auth = getAuthCookie(COOKIE_NAMES.AUTH_TOKEN)
-      auth.value = null
+      getAuthCookie(COOKIE_NAMES.AUTH_TOKEN).value = null
       navigateTo({ path: ROUTES.LOGIN, query: { redirect: router.currentRoute.value.fullPath } })
-      return {
-        data: null,
-        error: new AuthError('Session expired. Please login again.'),
-      }
+      return new AuthError('Session expired. Please login again.')
     }
 
     if (statusCode === HTTP_STATUS.FORBIDDEN) {
       navigateTo(ROUTES.FORBIDDEN)
-      return {
-        data: null,
-        error: new ApiError('Access denied', HTTP_STATUS.FORBIDDEN),
-      }
+      return new ApiError('Access denied', HTTP_STATUS.FORBIDDEN)
     }
 
-    if (!navigator.onLine) {
-      return {
-        data: null,
-        error: new NetworkError('No internet connection'),
-      }
+    if (import.meta.client && !navigator.onLine) {
+      return new NetworkError('No internet connection')
     }
 
-    const message = error?.data?.detail || error?.message || 'An error occurred'
-    return {
-      data: null,
-      error: new ApiError(message, statusCode, error?.data),
-    }
+    const detail = error.data?.detail
+    return new ApiError(typeof detail === 'string' ? detail : error.message, statusCode, error.data)
   }
 
   return {
-    get: <T>(path: string, options?: FetchOptions<'json'>) => apiFetch<T>(path, { ...options, method: 'GET' }),
+    get: <T>(path: string, options?: RequestOptions) => apiFetch<T>(path, { ...options, method: 'GET' }),
 
-    post: <T>(path: string, body?: any, options?: FetchOptions<'json'>) =>
+    post: <T>(path: string, body?: FetchOptions['body'], options?: RequestOptions) =>
       apiFetch<T>(path, { ...options, method: 'POST', body }),
-
-    put: <T>(path: string, body?: any, options?: FetchOptions<'json'>) =>
-      apiFetch<T>(path, { ...options, method: 'PUT', body }),
-
-    delete: <T>(path: string, options?: FetchOptions<'json'>) => apiFetch<T>(path, { ...options, method: 'DELETE' }),
-
-    patch: <T>(path: string, body?: any, options?: FetchOptions<'json'>) =>
-      apiFetch<T>(path, { ...options, method: 'PATCH', body }),
   }
 }

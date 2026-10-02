@@ -5,6 +5,7 @@ Nothing here trusts the caller or the rail's callback:
   call, and is idempotent per checkout (one payment per checkout, retries reuse it).
 - ``handle_callback`` authenticates the callback URL with an HMAC token, then asks the rail itself (``verify``);
   it moves ``awaiting_payment -> paid`` with a compare-and-set, so three copies of a callback settle once.
+- ``reconcile_unpaid`` asks the rail about charges whose callback never came (QPay drops failed callbacks).
 Settling writes the payment, the checkout and a ``payment.paid`` outbox event in one transaction.
 """
 
@@ -14,7 +15,7 @@ import hmac
 import logging
 from collections.abc import Mapping
 from dataclasses import dataclass
-from datetime import datetime
+from datetime import UTC, datetime, timedelta
 from typing import Any, Literal
 from uuid import uuid4
 
@@ -44,6 +45,9 @@ PaymentErrorCode = Literal[
     "rail_refused",
 ]
 CallbackOutcome = Literal["paid", "already_settled", "pending", "underpaid", "failed"]
+# QPay callbacks can be lost: an unpaid charge is re-checked after this wait, then once per RECONCILE_EVERY
+RECONCILE_MIN_AGE = timedelta(seconds=30)
+RECONCILE_EVERY = timedelta(seconds=60)
 
 
 class PaymentError(Exception):
@@ -428,8 +432,56 @@ def handle_callback(
     )
     if payment["status"] != "awaiting_payment":
         return "already_settled"
+    return _check(db, rail, payment, now)  # RailError propagates: the API answers 503 so QPay may retry
 
-    status = rail.verify(payment["provider_ref"])  # RailError propagates: the API answers 503 so QPay may retry
+
+def reconcile_unpaid(
+    db: Database,
+    rail: PaymentRail,
+    *,
+    now: datetime,
+    min_age: timedelta = RECONCILE_MIN_AGE,
+    every: timedelta = RECONCILE_EVERY,
+    limit: int = 50,
+) -> int:
+    """Ask the rail about unpaid charges whose callback may have been lost; returns how many settled.
+
+    A charge is checked once it has waited ``min_age`` for its callback, then at most once per ``every`` (its last
+    check is the ``check`` payment event). The checkout expiry closes the invoice, which bounds how long this runs.
+    """
+    settled = 0
+    for payment in db[PaymentDoc.collection].find({"status": "awaiting_payment", "provider": rail.id}).limit(limit):
+        if not payment.get("provider_ref") or now - _awaiting_since(payment) < min_age:
+            continue
+        last = db[PaymentEventDoc.collection].find_one({"_id": f"pe_{rail.id}_check_{payment['provider_ref']}"})
+        if last and now - _parse_iso(last["received_at"]) < every:
+            continue
+        try:
+            outcome = _check(db, rail, payment, now)
+        except RailError as exc:
+            logger.warning("Reconcile %s: rail %s unavailable: %s", payment["_id"], rail.id, exc)
+            break  # the rail is down; the next sweep retries every charge
+        if outcome in ("paid", "failed"):
+            settled += 1
+            logger.info("Reconciled %s as %s without a callback", payment["_id"], outcome)
+    return settled
+
+
+def _parse_iso(value: str) -> datetime:
+    return datetime.fromisoformat(value)  # Python 3.11+ reads the trailing Z
+
+
+def _awaiting_since(payment: dict) -> datetime:
+    at = next((h["at"] for h in reversed(payment.get("status_history", [])) if h["status"] == "awaiting_payment"), None)
+    return _parse_iso(at) if at else datetime.min.replace(tzinfo=UTC)
+
+
+def _check(db: Database, rail: PaymentRail, payment: dict, now: datetime) -> CallbackOutcome:
+    """Ask the rail for the charge's state and settle it; the callback and the reconcile sweep share this."""
+    payment_id = payment["_id"]
+    status = rail.verify(payment["provider_ref"])
+    raw = {"state": status.state, "paid_amount_mnt": status.paid_amount_mnt}
+    previous = db[PaymentEventDoc.collection].find_one({"_id": f"pe_{rail.id}_check_{payment['provider_ref']}"})
     _record_event(
         db,
         provider=rail.id,
@@ -437,13 +489,15 @@ def handle_callback(
         kind="check",
         payment_id=payment_id,
         verified=True,
-        raw={"state": status.state, "paid_amount_mnt": status.paid_amount_mnt},
+        raw=raw,
         now=now,
     )
 
     if status.state == "paid" and status.paid_amount_mnt >= payment["amount_mnt"]:
         return _settle(db, payment, status.provider_payment_id, "paid", now)
     if status.state == "paid":
+        if previous and previous.get("raw") == raw:
+            return "underpaid"  # already audited at this amount; repeated checks must not flood the log
         _audit(
             db,
             now=now,

@@ -6,6 +6,7 @@ const tripRequest = defineModel<string>('tripRequest', { required: true })
 
 const {
   isListening,
+  isTranscribing = false,
   voiceStatusLabel,
   requestLabel,
   requestPlaceholder,
@@ -16,6 +17,8 @@ const {
   disabled = false,
 } = defineProps<{
   isListening: boolean
+  /** The recording is being turned into text */
+  isTranscribing?: boolean
   voiceStatusLabel: string
   requestLabel: string
   requestPlaceholder: string
@@ -71,7 +74,7 @@ onMounted(fitHeight)
       rows="1"
       class="flex-1 resize-none self-center border-0! bg-transparent! leading-6 text-ink shadow-none! outline-none! placeholder:text-ink-subtle"
       :class="compact ? 'min-h-9 py-1.5 text-[0.95rem]' : 'min-h-12 py-3 text-base sm:text-lg'"
-      :placeholder="isListening ? voiceStatusLabel : requestPlaceholder"
+      :placeholder="isListening || isTranscribing ? voiceStatusLabel : requestPlaceholder"
       @keydown="onKeydown"
     />
 
@@ -91,11 +94,17 @@ onMounted(fitHeight)
         class="relative grid place-items-center rounded-full text-ink-muted transition-colors hover:bg-surface-muted hover:text-ink aria-pressed:bg-danger aria-pressed:text-white"
         :class="compact ? 'h-9 w-9' : 'h-12 w-12'"
         :aria-pressed="isListening"
-        :aria-label="voiceButtonLabel"
-        :title="voiceButtonLabel"
+        :aria-busy="isTranscribing"
+        :aria-label="isTranscribing ? voiceStatusLabel : voiceButtonLabel"
+        :title="isTranscribing ? voiceStatusLabel : voiceButtonLabel"
+        :disabled="isTranscribing"
         @click="emit('toggle-voice')"
       >
-        <i :class="isListening ? 'pi pi-stop' : 'pi pi-microphone'" class="text-lg" aria-hidden="true" />
+        <i
+          :class="isTranscribing ? 'pi pi-spinner pi-spin' : isListening ? 'pi pi-stop' : 'pi pi-microphone'"
+          class="text-lg"
+          aria-hidden="true"
+        />
       </button>
     </div>
 

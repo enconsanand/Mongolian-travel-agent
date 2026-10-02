@@ -71,6 +71,9 @@ services:
       dockerfile: back/Dockerfile
       target: dev
     command: uvicorn app.services.qpay_sim:app --host 0.0.0.0 --port 8010 --reload
+    environment:
+      # The QR and bank deeplinks open the Sim Bank page here; use your LAN IP to pay by scanning with a phone
+      QPAY_SIM_PUBLIC_URL: ${QPAY_SIM_PUBLIC_URL:-http://localhost:8010}
     volumes:
       - ./back/:/app/
       - uv_cache:/root/.cache/uv

@@ -1,4 +1,5 @@
-/** The parts of the Maps JavaScript API the trip map uses (the API ships no types without @types/google.maps) */
+/** The Maps JavaScript API namespace and the objects it makes (the API ships no types without @types/google.maps) */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any -- untyped third-party global, kept to this one alias
 export type GoogleMaps = any
 
 let loading: Promise<GoogleMaps> | null = null

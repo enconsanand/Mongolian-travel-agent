@@ -1,6 +1,5 @@
 export const API_ENDPOINTS = {
   AUTH: {
-    LOGIN: '/auth/login',
     LOGOUT: '/auth/logout',
   },
   PAYMENTS: {
@@ -19,9 +18,6 @@ export const API_ENDPOINTS = {
     PLACES: '/places',
     SCHEDULES: '/transport/schedules',
   },
-  SPEECH: {
-    TRANSCRIBE: '/speech/transcriptions',
-  },
   PLANNER: {
     PROPOSALS: '/planner/proposals',
     READ: '/planner/read',
@@ -31,6 +27,11 @@ export const API_ENDPOINTS = {
     STAY: (id: string) => `/planner/proposals/${id}/stay`,
     STAYS: (id: string) => `/planner/proposals/${id}/stays`,
     ACCEPT: (id: string) => `/me/planner/proposals/${id}/accept`,
+  },
+  VOICE: {
+    TRANSCRIBE: '/voice/transcribe',
+    SPEAK: '/voice/speak',
+    TRANSLATE: '/translate',
   },
   USERS: {
     LIST: '/users',

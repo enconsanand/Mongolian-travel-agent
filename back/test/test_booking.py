@@ -30,7 +30,7 @@ def seeded(db):
 @pytest.fixture
 def sim(monkeypatch):
     sent: list[str] = []
-    monkeypatch.setattr(qpay_sim.httpx, "post", lambda url, **_: sent.append(str(url)))
+    monkeypatch.setattr(qpay_sim.httpx, "get", lambda url, **_: sent.append(str(url)))
     with TestClient(qpay_sim.app) as client:
         client.post("/_sim/reset")
         client.sent = sent  # type: ignore[attr-defined]

@@ -8,12 +8,13 @@ language (``Accept-Language``), so the page needs no other calls.
 from datetime import date
 from typing import Annotated, Any, Literal
 
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, Depends, Header, HTTPException, status
 from pydantic import BaseModel, Field, ValidationError
 
-from app.api.v1.deps import ActiveUser, DbSession
+from app.api.v1.deps import ActiveUser, DbSession, OptionalUser
 from app.api.v1.payments import Now
 from app.api.v1.travel import LangDep
+from app.models.user import User
 from app.modules import booking
 from app.modules.orchestrator import options, service
 from app.modules.orchestrator.assembler import events_on
@@ -61,6 +62,31 @@ def _error(code: int, name: str, **extra: Any) -> HTTPException:
 
 def _not_found() -> HTTPException:
     return _error(status.HTTP_404_NOT_FOUND, "proposal_not_found")
+
+
+def _edit_access(
+    proposal_id: str,
+    db: DbSession,
+    user: OptionalUser,
+    now: Now,
+    claim: Annotated[str | None, Header(alias="X-Plan-Token")] = None,
+) -> User | None:
+    try:
+        service.authorize_edit(db, proposal_id, user, claim, now)
+    except service.ProposalNotFound as exc:
+        raise _not_found() from exc
+    except service.PlanEditRejected as exc:
+        raise _error(409, "trip_locked") from exc
+    return user
+
+
+Editor = Annotated[User | None, Depends(_edit_access)]
+
+
+def _saved_view(db: DbSession, proposal: Json, lang: Lang, user: User | None, now: Now) -> Json:
+    if user:
+        service.save_trip(db, proposal["id"], user, now, accept=False)
+    return _view(db, proposal, lang)
 
 
 def _with_nearby_events(db: DbSession, proposal: Json) -> Json:
@@ -175,13 +201,15 @@ def read_reply(body: ReadIn, gateway: Gateway, now: Now) -> SlotRead:
 
 
 @router.post("/planner/proposals", tags=["Planner"], status_code=status.HTTP_201_CREATED)
-def create_proposal(body: PlanRequest, db: DbSession, gateway: Gateway, lang: LangDep, now: Now) -> Json:
+def create_proposal(
+    body: PlanRequest, db: DbSession, gateway: Gateway, lang: LangDep, now: Now, user: OptionalUser
+) -> Json:
     request = body.model_copy(update={"lang": lang})
     try:
         proposal = service.propose(db, gateway, request, now)
     except service.PlannerUnavailable as exc:
         raise _error(status.HTTP_503_SERVICE_UNAVAILABLE, "planner_unavailable") from exc
-    return _view(db, proposal, lang)
+    return _saved_view(db, proposal, lang, user, now)
 
 
 @router.get("/planner/proposals/{proposal_id}", tags=["Planner"])
@@ -203,40 +231,42 @@ def proposal_stays(proposal_id: str, place_id: str, db: DbSession, lang: LangDep
 
 
 @router.post("/planner/proposals/{proposal_id}/nights", tags=["Planner"])
-def proposal_nights(proposal_id: str, body: NightIn, db: DbSession, lang: LangDep, now: Now) -> Json:
+def proposal_nights(proposal_id: str, body: NightIn, db: DbSession, lang: LangDep, now: Now, editor: Editor) -> Json:
     try:
         proposal = service.adjust_nights(db, proposal_id, body.place_id, body.delta, now)
     except service.ProposalNotFound as exc:
         raise _not_found() from exc
     except service.PlanEditRejected as exc:
         raise _error(status.HTTP_422_UNPROCESSABLE_CONTENT, "cannot_edit") from exc
-    return _view(db, proposal, lang)
+    return _saved_view(db, proposal, lang, editor, now)
 
 
 @router.post("/planner/proposals/{proposal_id}/stay", tags=["Planner"])
-def proposal_stay(proposal_id: str, body: StayPickIn, db: DbSession, lang: LangDep, now: Now) -> Json:
+def proposal_stay(proposal_id: str, body: StayPickIn, db: DbSession, lang: LangDep, now: Now, editor: Editor) -> Json:
     try:
         proposal = service.swap_stay(db, proposal_id, body.place_id, body.stay_id, now)
     except service.ProposalNotFound as exc:
         raise _not_found() from exc
     except service.PlanEditRejected as exc:
         raise _error(status.HTTP_422_UNPROCESSABLE_CONTENT, "cannot_edit") from exc
-    return _view(db, proposal, lang)
+    return _saved_view(db, proposal, lang, editor, now)
 
 
 @router.post("/planner/proposals/{proposal_id}/revise", tags=["Planner"])
-def revise_proposal(proposal_id: str, body: ChangeIn, db: DbSession, gateway: Gateway, lang: LangDep, now: Now) -> Json:
+def revise_proposal(
+    proposal_id: str, body: ChangeIn, db: DbSession, gateway: Gateway, lang: LangDep, now: Now, editor: Editor
+) -> Json:
     try:
         proposal = service.revise(db, gateway, proposal_id, body.change.strip(), now)
     except service.ProposalNotFound as exc:
         raise _not_found() from exc
     except service.PlannerUnavailable as exc:
         raise _error(status.HTTP_503_SERVICE_UNAVAILABLE, "planner_unavailable") from exc
-    return _view(db, proposal, lang)
+    return _saved_view(db, proposal, lang, editor, now)
 
 
 @router.post("/me/planner/proposals/{proposal_id}/accept", tags=["Planner"], status_code=status.HTTP_201_CREATED)
-def accept_proposal(proposal_id: str, db: DbSession, user: ActiveUser, lang: LangDep, now: Now) -> Json:
+def accept_proposal(proposal_id: str, db: DbSession, user: ActiveUser, lang: LangDep, now: Now, editor: Editor) -> Json:
     """Save the plan as the user's trip and hold all its stays in one checkout (all or none)."""
     try:
         proposal = service.get(db, proposal_id, now)
@@ -254,7 +284,26 @@ def accept_proposal(proposal_id: str, db: DbSession, user: ActiveUser, lang: Lan
             raise _error(_BOOKING_STATUS[exc.code], exc.code, detail=exc.detail) from exc
         # A stay filled up since the plan was made: pick again and let the traveller look before booking
         replanned = service.restay(db, proposal_id, now)
+        service.save_trip(db, proposal_id, user, now, accept=False)
         raise _error(status.HTTP_409_CONFLICT, "unavailable", proposal=_view(db, replanned, lang)) from exc
     except ValidationError as exc:  # a stored line no longer fits the booking request
         raise _error(status.HTTP_409_CONFLICT, "unavailable") from exc
     return {"trip_id": trip_id, "checkout_id": checkout["_id"]}
+
+
+@router.post("/me/planner/proposals/{proposal_id}/save", tags=["Planner"])
+def save_proposal(proposal_id: str, db: DbSession, user: ActiveUser, now: Now, editor: Editor) -> Json:
+    try:
+        return {"trip_id": service.save_trip(db, proposal_id, user, now, accept=False)}
+    except service.ProposalNotFound as exc:
+        raise _not_found() from exc
+
+
+@router.post("/me/trips/{trip_id}/resume", tags=["Planner"])
+def resume_proposal(trip_id: str, db: DbSession, user: ActiveUser, now: Now) -> Json:
+    try:
+        return {"proposal_id": service.resume_trip(db, trip_id, user, now)}
+    except service.ProposalNotFound as exc:
+        raise _not_found() from exc
+    except service.PlanEditRejected as exc:
+        raise _error(409, "trip_locked") from exc

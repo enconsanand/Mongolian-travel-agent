@@ -4,7 +4,6 @@ import TripRequestComposer from '~/components/TripPlanner/TripRequestComposer.vu
 import { PLAN_MESSAGES } from '~/constants/tripPlan'
 import { TRIP_PLANNER_MESSAGES } from '~/constants/tripPlanner'
 import type { AppLocale } from '~/types/trip-planner'
-import { voiceStatusText } from '~/composables/useVoiceInput'
 
 export interface PlanChatEntry {
   id: number
@@ -39,10 +38,13 @@ const scroller = ref<HTMLElement | null>(null)
 const voice = useVoiceInput((text) => {
   draft.value = draft.value.trim() ? `${draft.value.trim()} ${text}` : text
 })
-const isListening = computed(() => voice.state.value === 'recording')
-const voiceStatusLabel = computed(() =>
-  voiceStatusText(voice.state.value, voiceMessages.value, messages.value.chatPlaceholder)
-)
+const { isListening, isTranscribing } = voice
+const voiceStatusLabel = computed(() => {
+  if (isListening.value) return voiceMessages.value.listening
+  if (isTranscribing.value) return voiceMessages.value.transcribing
+  return voiceMessages.value.tapToSpeak
+})
+const voiceError = computed(() => (voice.error.value ? voiceMessages.value.voiceErrors[voice.error.value] : ''))
 
 function send() {
   const text = draft.value.trim()
@@ -119,13 +121,15 @@ const hasLog = computed(() => entries.length > 0 || working || earlierChanges.le
       compact
       :disabled="working"
       :is-listening="isListening"
+      :is-transcribing="isTranscribing"
       :voice-status-label="voiceStatusLabel"
       :request-label="messages.reviseLabel"
-      :request-placeholder="voiceStatusLabel"
+      :request-placeholder="messages.chatPlaceholder"
       :voice-button-label="voiceMessages.voiceButtonLabel"
       :send-label="messages.chatSend"
       @toggle-voice="voice.toggle()"
       @submit="send"
     />
+    <p v-if="voiceError" class="mt-2 px-5 text-xs text-danger" role="alert">{{ voiceError }}</p>
   </div>
 </template>

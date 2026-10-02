@@ -5,7 +5,7 @@ import json
 import pytest
 
 from app.api.v1 import payments as payments_api
-from app.api.v1.deps import get_current_active_user
+from app.api.v1.deps import get_current_active_user, get_optional_user
 from app.llm import Completion, FakeProvider, LLMError, ModelGateway, RolePolicy, Route
 from app.main import app
 from app.models.user import User
@@ -40,18 +40,20 @@ def api(client, db, fake):
     gw = ModelGateway(providers={"fake": fake}, policies={"planner": RolePolicy(route), "writer": RolePolicy(route)})
     app.dependency_overrides.update({service.gateway: lambda: gw, payments_api.get_now: lambda: NOW})
     yield client
-    for dep in (service.gateway, payments_api.get_now, get_current_active_user):
+    for dep in (service.gateway, payments_api.get_now, get_current_active_user, get_optional_user):
         app.dependency_overrides.pop(dep, None)
 
 
 def sign_in():
     app.dependency_overrides[get_current_active_user] = lambda: USER
+    app.dependency_overrides[get_optional_user] = lambda: USER
 
 
 def propose(api, fake, *, must=("Хатгал", "Тэрэлж"), body=BODY, **hints):
     fake.push(intent(must_places=list(must), **hints))
     response = api.post("/api/v1/planner/proposals", json=body)
     assert response.status_code == 201, response.text
+    api.headers["X-Plan-Token"] = response.json()["claim_token"]
     return response.json()
 
 
@@ -145,3 +147,56 @@ def test_a_proposal_does_not_say_who_accepted_it(api, fake):
     app.dependency_overrides.pop(get_current_active_user)
     public = api.get(f"/api/v1/planner/proposals/{plan['id']}").json()
     assert public["accepted"] is True and "user_jamba" not in json.dumps(public)
+
+
+def test_guest_claim_and_durable_draft(api, fake, db):
+    plan = propose(api, fake)
+    sign_in()
+    url = f"/api/v1/me/planner/proposals/{plan['id']}/save"
+    assert api.post(url, headers={"X-Plan-Token": "wrong"}).status_code == 404
+    first = api.post(url)
+    assert first.status_code == 200, first.text
+    trip_id = first.json()["trip_id"]
+    assert api.post(url).json()["trip_id"] == trip_id
+    assert not db["checkouts"].count_documents({"trip_id": trip_id})
+    assert not db["bookings"].count_documents({"trip_id": trip_id})
+    public = api.get(f"/api/v1/planner/proposals/{plan['id']}").json()
+    assert public["accepted"] is False
+    assert "claim_token" not in public and "claim_hash" not in public and "user_jamba" not in json.dumps(public)
+    db["plan_proposals"].delete_one({"_id": plan["id"]})
+    detail = api.get(f"/api/v1/me/trips/{trip_id}").json()
+    assert detail["plan"]["days"] == plan["days"] and detail["can_resume"]
+    listed = next(t for t in api.get("/api/v1/me/trips").json() if t["id"] == trip_id)
+    first_stop = detail["places"][plan["days"][0]["from_place_id"]]["name"]
+    assert listed["route"][0] == first_stop and len(listed["route"]) == len(set(listed["route"]))
+    resumed = api.post(f"/api/v1/me/trips/{trip_id}/resume")
+    assert resumed.status_code == 200, resumed.text
+    assert resumed.json()["proposal_id"] == plan["id"]
+
+
+def test_signed_in_generation_saved_and_other_user_cannot_read_or_edit(api, fake, db):
+    sign_in()
+    plan = propose(api, fake)
+    saved = db["saved_plans"].find_one({"proposal_id": plan["id"]})
+    assert saved and saved["user_id"] == USER.id
+    other = USER.model_copy(update={"id": "user_other"})
+    app.dependency_overrides[get_current_active_user] = lambda: other
+    app.dependency_overrides[get_optional_user] = lambda: other
+    assert api.get(f"/api/v1/me/trips/{saved['_id']}").status_code == 404
+    assert api.post(f"/api/v1/me/trips/{saved['_id']}/resume").status_code == 404
+    assert api.post(f"/api/v1/me/planner/proposals/{plan['id']}/save").status_code == 404
+    assert api.post(f"/api/v1/planner/proposals/{plan['id']}/revise", json={"change": "Хатгал"}).status_code == 404
+
+
+def test_saved_trip_is_reused_by_checkout_and_locked(api, fake, db):
+    sign_in()
+    plan = propose(api, fake, must=("Хатгал",), nights=[{"place": "Хатгал", "nights": 3}])
+    saved = db["saved_plans"].find_one({"proposal_id": plan["id"]})
+    accepted = api.post(f"/api/v1/me/planner/proposals/{plan['id']}/accept")
+    assert accepted.status_code == 201, accepted.text
+    assert accepted.json()["trip_id"] == saved["_id"]
+    assert api.post(f"/api/v1/planner/proposals/{plan['id']}/revise", json={"change": "Хатгал"}).status_code == 409
+    detail = api.get(f"/api/v1/me/trips/{saved['_id']}").json()
+    assert detail["bookings"][0]["units"] >= 1
+    assert detail["stays"] and detail["checkouts"]
+    assert detail["can_resume"] is False
