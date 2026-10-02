@@ -14,6 +14,9 @@ export const API_ENDPOINTS = {
   TRAVEL: {
     MY_TRIPS: '/me/trips',
     STAYS: '/stays',
+    EVENTS: '/events',
+    PLACES: '/places',
+    SCHEDULES: '/transport/schedules',
   },
   PLANNER: {
     PROPOSALS: '/planner/proposals',

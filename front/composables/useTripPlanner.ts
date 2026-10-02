@@ -98,6 +98,11 @@ export function useTripPlanner() {
   })
   const voiceError = computed(() => (voice.error.value ? messages.value.voiceErrors[voice.error.value] : ''))
   const hasStarted = computed(() => chat.value.length > 0)
+  /** The newest version of the plan in the conversation, for the map */
+  const currentPlan = computed(() => {
+    const last = chat.value.findLast((item) => item.role === 'agent' && item.kind === 'plan')
+    return last?.role === 'agent' && last.kind === 'plan' ? last.proposal : null
+  })
 
   function push(message: NewChatMessage): number {
     const id = nextId++
@@ -338,6 +343,7 @@ export function useTripPlanner() {
     chat,
     busy,
     hasStarted,
+    currentPlan,
     isListening,
     isTranscribing,
     voiceStatusLabel,

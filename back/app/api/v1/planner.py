@@ -119,7 +119,7 @@ def _view(db: DbSession, proposal: Json, lang: Lang) -> Json:
         }
 
     catalog = {
-        "places": by_id("places", place_ids, ["name", "aimag", "region", "kind"]),
+        "places": by_id("places", place_ids, ["name", "aimag", "region", "kind", "location"]),
         "stays": by_id(
             "stays",
             stay_ids,
@@ -127,6 +127,7 @@ def _view(db: DbSession, proposal: Json, lang: Lang) -> Json:
                 "name",
                 "type",
                 "aimag",
+                "location",
                 "rating",
                 "reviews_count",
                 "reviews",
@@ -143,6 +144,7 @@ def _view(db: DbSession, proposal: Json, lang: Lang) -> Json:
                 "name",
                 "description",
                 "category",
+                "location",
                 "start_date",
                 "end_date",
                 "ticket_price_mnt",

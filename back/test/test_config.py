@@ -107,3 +107,9 @@ def test_unknown_llm_provider_is_refused():
         Settings(ENV="local", LLM_WRITER="openai:gpt")
     with pytest.raises(ValidationError, match="at least one provider"):
         Settings(ENV="local", LLM_PLANNER=" , ")
+
+
+def test_oyu_needs_its_api_key():
+    with pytest.raises(ValidationError, match="OYU_API_KEY"):
+        Settings(ENV="local", LLM_PLANNER="oyu:oyuLLM")
+    assert Settings(ENV="local", LLM_PLANNER="oyu:oyuLLM", OYU_API_KEY="k").LLM_PLANNER == "oyu:oyuLLM"

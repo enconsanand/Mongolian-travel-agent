@@ -71,6 +71,8 @@ export default defineNuxtConfig({
       apiBase: process.env.NUXT_PUBLIC_API_BASE || 'http://localhost:8000/api/v1',
       // Demo only: base URL of the QPay simulator, for the "Pay with Sim Bank" button. Leave empty for real QPay.
       qpaySimBase: process.env.NUXT_PUBLIC_QPAY_SIM_BASE || '',
+      // Browser key for the Maps JavaScript API (trip map). Restrict it to your site's referrers in Google Cloud.
+      googleMapsApiKey: process.env.NUXT_PUBLIC_GOOGLE_MAPS_API_KEY || '',
     },
   },
   modules: ['@nuxtjs/robots', '@nuxt/eslint'],
@@ -104,11 +106,19 @@ export default defineNuxtConfig({
 
             return [
               "default-src 'self'",
-              "script-src 'self' " + (process.env.NODE_ENV === 'development' ? "'unsafe-inline' 'unsafe-eval'" : ''),
+              "script-src 'self' https://maps.googleapis.com " +
+                (process.env.NODE_ENV === 'development' ? "'unsafe-inline' 'unsafe-eval'" : ''),
               "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net",
               "font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net",
               "img-src 'self' data: https:",
-              "connect-src 'self' " + apiOrigin + simOrigin + ' ws: wss:',
+              // The plan read aloud (tsuurAI) plays from blob: URLs
+              "media-src 'self' blob:",
+              // Google Maps draws in web workers it starts from blob: URLs
+              "worker-src 'self' blob:",
+              "connect-src 'self' https://maps.googleapis.com https://routes.googleapis.com https://router.project-osrm.org " +
+                apiOrigin +
+                simOrigin +
+                ' ws: wss:',
               "frame-ancestors 'none'",
               "base-uri 'self'",
               "form-action 'self'",
@@ -117,7 +127,8 @@ export default defineNuxtConfig({
           'X-Frame-Options': 'DENY',
           'X-Content-Type-Options': 'nosniff',
           'Referrer-Policy': 'strict-origin-when-cross-origin',
-          'Permissions-Policy': 'camera=(), microphone=(), geolocation=()',
+          // The microphone is ours only (voice input in the trip chat)
+          'Permissions-Policy': 'camera=(), microphone=(self), geolocation=()',
           'X-XSS-Protection': '1; mode=block',
           // Omitted in dev so HTTP-only local setups are not locked out
           ...(process.env.NODE_ENV === 'production'

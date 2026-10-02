@@ -25,7 +25,7 @@ class AppENV(str, Enum):
         return self in (AppENV.LOCAL, AppENV.DEV)
 
 
-LLM_PROVIDERS = {"workers_ai", "fake"}
+LLM_PROVIDERS = {"workers_ai", "oyu", "fake"}
 
 
 class Settings(BaseSettings):
@@ -122,7 +122,8 @@ class Settings(BaseSettings):
 
     # --- LLM (model gateway) ---
     # Routes per role: "provider:model", comma-separated fallbacks tried in order.
-    # Providers: workers_ai (Cloudflare Workers AI), fake (scripted/echo, needs no key; not allowed in stg/prod).
+    # Providers: workers_ai (Cloudflare Workers AI), oyu (oyu.so, Mongolian: oyu:oyuLLM),
+    # fake (scripted/echo, needs no key; not allowed in stg/prod).
     LLM_PLANNER: str = Field(default="fake", description="Planner role: tool calling and structured output")
     LLM_WRITER: str = Field(default="fake", description="Writer role: the reply the user reads, in Mongolian")
     LLM_MAX_TOKENS: int = Field(default=1024, ge=1, le=8192, description="Default completion size per call")
@@ -133,6 +134,9 @@ class Settings(BaseSettings):
     CLOUDFLARE_ACCOUNT_ID: str | None = Field(default=None, description="Cloudflare account id for Workers AI")
     CLOUDFLARE_API_TOKEN: str | None = Field(default=None, description="API token with Workers AI read access")
     CLOUDFLARE_AI_GATEWAY: str | None = Field(default=None, description="AI Gateway id (optional: cache, logs)")
+    OYU_JSON_MODE: Literal["json_schema", "json_object", "prompt"] = Field(
+        default="prompt", description="How structured output is requested from oyu (its docs omit response_format)"
+    )
 
     # --- oyu speech and translation (https://dev.oyu.so): Anir STT, tsuurAI TTS, Orchu MT ---
     # Without a key the voice and translation endpoints answer 503 and the rest of the app works as before.
@@ -200,6 +204,8 @@ class Settings(BaseSettings):
                 raise ValueError(f"{field}: unknown providers {sorted(unknown)}; use {sorted(LLM_PROVIDERS)}")
             if "workers_ai" in providers and not (self.CLOUDFLARE_ACCOUNT_ID and self.CLOUDFLARE_API_TOKEN):
                 raise ValueError(f"{field} uses workers_ai: set CLOUDFLARE_ACCOUNT_ID and CLOUDFLARE_API_TOKEN")
+            if "oyu" in providers and not self.OYU_API_KEY:
+                raise ValueError(f"{field} uses oyu: set OYU_API_KEY")
             if self.ENV.is_production and "fake" in providers:
                 raise ValueError(f"{field}: the fake provider is not allowed when ENV is 'stg' or 'prod'")
         return self

@@ -3,9 +3,11 @@ import HeroShowcase from '~/components/TripPlanner/HeroShowcase.vue'
 import ChatThread from '~/components/TripPlanner/ChatThread.vue'
 import HomePrograms from '~/components/TripPlanner/HomePrograms.vue'
 import PlannerHeader from '~/components/TripPlanner/PlannerHeader.vue'
+import TripRouteMap from '~/components/TripPlanner/TripRouteMap.vue'
 import TripRequestComposer from '~/components/TripPlanner/TripRequestComposer.vue'
 import { BRAND } from '~/constants/brand'
 import { HERO_SLIDES } from '~/constants/heroSlides'
+import type { ExtraStop } from '~/types/trip-plan'
 import type { AppLocale } from '~/types/trip-planner'
 
 definePageMeta({
@@ -20,6 +22,7 @@ const {
   chat,
   busy,
   hasStarted,
+  currentPlan,
   isListening,
   isTranscribing,
   voiceStatusLabel,
@@ -77,6 +80,18 @@ onUnmounted(() => {
   if (slideTimer) clearInterval(slideTimer)
 })
 
+// Stops added on the map: the route goes through them at once, and the chat asks the agent to replan around them
+const extraStops = ref<ExtraStop[]>([])
+function addStop(stop: ExtraStop) {
+  if (extraStops.value.some((extra) => extra.id === stop.id)) return
+  extraStops.value.push(stop)
+  draft.value = locale.value === 'mn' ? `${stop.name}-г маршрутад нэмээрэй` : `Add ${stop.name} to the route`
+  send()
+}
+watch(hasStarted, (started) => {
+  if (!started) extraStops.value = []
+})
+
 /** The agent is about to ask its next question: show it typing */
 const isAgentTyping = computed(() => busy.value && chat.value.at(-1)?.role === 'user')
 
@@ -105,7 +120,8 @@ useHead(() => ({
 
     <section class="relative overflow-hidden">
       <div
-        class="mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-4 pt-10 pb-20 sm:pt-14 lg:grid-cols-[1.3fr_1fr] lg:gap-12"
+        :class="currentPlan ? 'lg:grid-cols-[1fr_1.15fr]' : 'lg:grid-cols-[1.3fr_1fr]'"
+        class="mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-4 pt-10 pb-20 sm:pt-14 lg:gap-12"
       >
         <div class="min-w-0">
           <p class="rise-in text-xs font-semibold tracking-[0.35em] text-accent-ink uppercase sm:text-sm">
@@ -182,7 +198,17 @@ useHead(() => ({
           </div>
         </div>
 
-        <div class="min-w-0">
+        <!-- Once there is a plan, its map takes the photo's place and follows every revision from the chat -->
+        <TripRouteMap
+          v-if="currentPlan"
+          class="chat-in h-[min(36rem,72vh)]"
+          :proposal="currentPlan"
+          :locale="locale"
+          :extra-stops="extraStops"
+          @add-stop="addStop"
+        />
+
+        <div v-else class="min-w-0">
           <HeroShowcase
             class="rise-in"
             style="--delay: 120ms"

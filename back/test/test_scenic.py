@@ -84,3 +84,10 @@ def test_a_named_place_in_the_text_is_found(catalog):
     found = named_words("Хатгалд 4 хоног", catalog)
     assert found
     assert candidates(found[0], catalog) == ["place_khatgal"]
+
+
+def test_a_name_shared_with_other_places_picks_the_one_it_starts(catalog):
+    # "Хөвсгөл" is also in "Tsagaannuur, Khövsgöl"; the lake is the place whose name starts with it
+    found = named_words("Хөвсгөл явмаар байна", catalog)
+    assert found == ["Хөвсгөл нуур"]
+    assert candidates(found[0], catalog) == ["place_khuvsgul_lake"]

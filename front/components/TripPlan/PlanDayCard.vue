@@ -14,6 +14,7 @@ const {
   nightBounds = null,
   stayChoices = null,
   choicesOpen = false,
+  drive = null,
 } = defineProps<{
   day: PlanDay
   catalog: Proposal['catalog']
@@ -25,6 +26,8 @@ const {
   nightBounds?: { down: boolean; up: boolean } | null
   stayChoices?: StayChoice[] | null
   choicesOpen?: boolean
+  /** Google's driving distance and time for the day, when the map has the real route */
+  drive?: { km: number; min: number } | null
 }>()
 
 const emit = defineEmits<{
@@ -79,10 +82,10 @@ onUnmounted(() => window.removeEventListener('keydown', onKey))
       <p class="text-xs font-semibold tracking-wide text-accent-ink uppercase">
         {{ locale === 'mn' ? `${day.day}-р ${messages.day}` : `${messages.day} ${day.day}` }} · {{ dateLabel }}
       </p>
-      <p v-if="day.distance_km" class="shrink-0 text-xs text-ink-muted">
+      <p v-if="drive || day.distance_km" class="shrink-0 text-xs text-ink-muted">
         <i class="pi pi-car mr-1" aria-hidden="true" />
-        {{ day.distance_km }} {{ locale === 'mn' ? 'км' : 'km' }} ·
-        {{ formatDriveTime(day.drive_time_min, locale) }}
+        {{ drive?.km ?? day.distance_km }} {{ locale === 'mn' ? 'км' : 'km' }} ·
+        {{ formatDriveTime(drive?.min ?? day.drive_time_min, locale) }}
       </p>
     </div>
 

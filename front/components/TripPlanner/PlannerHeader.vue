@@ -51,7 +51,7 @@ function localeButtonClass(option: AppLocale): string {
 
 <template>
   <header class="sticky top-0 z-30 border-b border-line bg-surface">
-    <div class="mx-auto flex h-16 max-w-page items-center justify-between gap-2 px-4">
+    <div class="flex h-16 items-center justify-between gap-2 px-4 sm:px-6 lg:px-8">
       <div class="flex items-center gap-4">
         <NuxtLink to="/" class="flex items-center gap-2.5">
           <BrandMark class="h-9 w-9" />

@@ -60,8 +60,15 @@ export interface PlanTotals {
   within_budget: boolean
 }
 
+/** A GeoJSON point: coordinates are [longitude, latitude] */
+export interface GeoPoint {
+  type: 'Point'
+  coordinates: [number, number]
+}
+
 export interface PlaceView {
   name: string
+  location?: GeoPoint
   aimag: string
   region: string
   kind: string
@@ -97,6 +104,7 @@ export interface StayChoice {
 
 export interface StayView {
   name: string
+  location?: GeoPoint
   type: 'ger_camp' | 'guesthouse' | 'hotel' | 'house'
   aimag: string
   rating: number
@@ -112,6 +120,9 @@ export interface EventView {
   name: string
   description?: string
   category: string
+  location?: GeoPoint
+  /** `exact` when the date was checked against a published calendar */
+  date_confidence?: 'exact' | 'approximate'
   start_date: string
   end_date: string
   ticket_price_mnt: number
@@ -146,4 +157,23 @@ export interface Proposal {
 export interface AcceptResult {
   trip_id: string
   checkout_id: string
+}
+
+/** A place the traveller added to the route from the map (an event, a transport stop), before the agent replans */
+export interface ExtraStop {
+  id: string
+  name: string
+  location: GeoPoint
+}
+
+/** A scheduled bus, train, plane or shared van between two towns (GET /transport/schedules) */
+export interface TransportSchedule {
+  mode: string
+  operator: string
+  from_place_id: string
+  to_place_id: string
+  departure_point: string
+  departure_times: string[]
+  duration_min: number
+  price_mnt: number
 }
