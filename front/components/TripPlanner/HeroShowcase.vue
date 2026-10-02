@@ -3,10 +3,12 @@ import type { HeroSlide } from '~/constants/heroSlides'
 
 /**
  * The hero picture: a photo in a frame, with brand-coloured shapes behind it. Each slide has its own composition.
+ * The licence credit sits behind a small info mark: CC BY needs it reachable, not shouting.
  */
-const { slide, alt } = defineProps<{
+const { slide, alt, credit } = defineProps<{
   slide: HeroSlide
   alt: string
+  credit: string
 }>()
 </script>
 
@@ -42,6 +44,16 @@ const { slide, alt } = defineProps<{
         />
       </div>
     </Transition>
+    <a
+      :href="slide.source"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="absolute right-0 bottom-0 grid h-7 w-7 place-items-center rounded-full bg-surface/80 text-ink-subtle backdrop-blur transition-colors hover:text-ink"
+      :title="credit"
+      :aria-label="credit"
+    >
+      <i class="pi pi-info-circle text-xs" aria-hidden="true" />
+    </a>
   </div>
 </template>
 

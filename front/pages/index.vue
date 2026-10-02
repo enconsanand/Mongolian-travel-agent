@@ -39,9 +39,9 @@ const {
   reset,
 } = useTripPlanner()
 
-const SLIDE_LABELS: Record<AppLocale, { group: string; previous: string; next: string }> = {
-  mn: { group: 'Зургийн цомог', previous: 'Өмнөх зураг', next: 'Дараах зураг' },
-  en: { group: 'Photo gallery', previous: 'Previous photo', next: 'Next photo' },
+const SLIDE_LABELS: Record<AppLocale, { group: string; previous: string; next: string; photo: string }> = {
+  mn: { group: 'Зургийн цомог', previous: 'Өмнөх зураг', next: 'Дараах зураг', photo: 'Зураг' },
+  en: { group: 'Photo gallery', previous: 'Previous photo', next: 'Next photo', photo: 'Photo' },
 }
 const SLIDE_INTERVAL_MS = 7000
 
@@ -54,7 +54,7 @@ function showSlide(step: number) {
 }
 
 const OR_PROGRAM: Record<AppLocale, string> = {
-  mn: 'эсвэл эвентээс эхлэх',
+  mn: 'эвентүүд',
   en: 'or start from an event',
 }
 
@@ -214,6 +214,7 @@ useHead(() => ({
             style="--delay: 120ms"
             :slide="slide"
             :alt="slide.title[locale]"
+            :credit="`${SLIDE_LABELS[locale].photo}: ${slide.author} · ${slide.license}`"
             @mouseenter="pauseSlides = true"
             @mouseleave="pauseSlides = false"
           />
@@ -229,17 +230,7 @@ useHead(() => ({
               class="h-20 w-24 shrink-0 object-cover"
               :style="{ objectPosition: slide.focus }"
             />
-            <div class="min-w-0 flex-1">
-              <p class="truncate text-sm font-medium" aria-live="polite">{{ slide.title[locale] }}</p>
-              <a
-                :href="slide.source"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="block truncate text-xs text-ink-muted hover:text-ink"
-              >
-                {{ slide.author }} · {{ slide.license }}
-              </a>
-            </div>
+            <p class="min-w-0 flex-1 truncate text-sm font-medium" aria-live="polite">{{ slide.title[locale] }}</p>
             <button
               type="button"
               class="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-brand text-brand transition-colors hover:bg-brand-soft"

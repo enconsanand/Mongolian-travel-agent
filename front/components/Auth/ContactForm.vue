@@ -9,8 +9,7 @@ const { locale, messages: m } = useAccountMessages()
 const route = useRoute()
 const api = useApi()
 const auth = useAuth()
-const draft = useState('auth-contact-draft', () => ({ contact: '', name: '', kind: 'email' as 'email' | 'phone' }))
-/** Carries why the visitor was moved between login and register, so the next form can explain it. */
+const draft = useState('auth-contact-draft', () => ({ contact: '', name: '' }))
 const notice = useState<'' | 'registration_required' | 'account_exists'>('auth-contact-notice', () => '')
 const code = ref('')
 const challenge = ref<{ challenge_id: string; contact: string } | null>(null)
@@ -29,27 +28,25 @@ function messageFor(key: string) {
   return typeof text === 'string' ? text : m.value.genericError
 }
 const errorText = computed(() => messageFor(error.value))
-/** Shown only on the form the visitor was moved to, not on the one they are leaving. */
 const noticeText = computed(() => {
   if (notice.value === 'registration_required' && mode === 'register') return m.value.movedToRegister
   if (notice.value === 'account_exists' && mode === 'login') return m.value.movedToLogin
   return ''
 })
-/** Which field an error belongs to, so it renders next to that input; anything else stays in the form-level alert. */
 const errorField = computed(() => {
   if (['invalidName', 'name_required'].includes(error.value)) return 'name'
   if (['invalidCode', 'code_expired'].includes(error.value)) return 'code'
   if (['invalidContact', 'account_unavailable'].includes(error.value)) return 'contact'
   return error.value ? 'form' : null
 })
-/** A wrong-door contact goes straight to the other form with the typed contact and redirect kept. */
 async function switchForm(reason: 'registration_required' | 'account_exists') {
   notice.value = reason
   await navigateTo(alternate.value)
 }
 function readError(error: ApiError | null) {
-  if (error?.statusCode === 429) return 'rateLimited'
-  return (error?.data as { detail?: { code?: string } } | undefined)?.detail?.code || 'genericError'
+  const code = (error?.data as { detail?: { code?: string } } | undefined)?.detail?.code
+  if (code) return code
+  return error?.statusCode === 429 ? 'rateLimited' : 'genericError'
 }
 function startCooldown() {
   clearInterval(timer)
@@ -64,7 +61,7 @@ async function send() {
   error.value = ''
   const contact = draft.value.contact.trim()
   const phone = contact.replace(/[\s()-]/g, '')
-  if (draft.value.kind === 'email' ? !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contact) : !/^(\+976)?[0-9]{8}$/.test(phone)) {
+  if (contact.includes('@') ? !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contact) : !/^(\+976)?[0-9]{8}$/.test(phone)) {
     error.value = 'invalidContact'
     return
   }
@@ -113,11 +110,10 @@ async function verify() {
     return
   }
   const contact = challenge.value.contact
-  draft.value = { contact: '', name: '', kind: 'email' }
+  draft.value = { contact: '', name: '' }
   await auth.completeLogin(result.data.access_token, contact, redirect.value)
   busy.value = false
 }
-/** Keep only digits, so a pasted "123 456" or "123-456" still becomes a full code; a complete code submits itself. */
 function onCodeInput(event: Event) {
   const target = event.target as HTMLInputElement
   const digits = target.value.replace(/\D/g, '').slice(0, 6)
@@ -126,12 +122,6 @@ function onCodeInput(event: Event) {
   code.value = digits
   if (error.value === 'invalidCode') error.value = ''
   if (completed) verify()
-}
-function setKind(kind: 'email' | 'phone') {
-  notice.value = ''
-  draft.value.kind = kind
-  draft.value.contact = ''
-  error.value = ''
 }
 function edit() {
   challenge.value = null
@@ -164,9 +154,6 @@ useHead(() => ({
       </div>
       <section class="panel mx-auto w-full max-w-md p-6 sm:p-8">
         <BrandMark class="mb-6 h-11 w-11" />
-        <p class="mb-2 text-xs font-semibold tracking-widest text-ink-subtle uppercase">
-          {{ challenge ? '02 / 02' : '01 / 02' }}
-        </p>
         <h2 class="font-display text-2xl font-bold">
           {{ challenge ? m.codeTitle : mode === 'login' ? m.login : m.register }}
         </h2>
@@ -202,27 +189,17 @@ useHead(() => ({
                 {{ errorText }}
               </span>
             </label>
-            <div class="grid grid-cols-2 gap-2" role="group" :aria-label="m.contact">
-              <button
-                v-for="kind in ['email', 'phone'] as const"
-                :key="kind"
-                class="choice-chip"
-                type="button"
-                :aria-pressed="draft.kind === kind"
-                :disabled="busy"
-                @click="setKind(kind)"
-              >
-                {{ m[kind] }}
-              </button>
-            </div>
             <label class="block space-y-2 text-sm font-medium">
-              <span>{{ m[draft.kind] }}</span>
+              <span>{{ m.contactLabel }}</span>
               <input
                 v-model="draft.contact"
                 class="planner-date"
-                :type="draft.kind === 'email' ? 'email' : 'tel'"
-                :autocomplete="draft.kind === 'email' ? 'email' : 'tel'"
-                :placeholder="draft.kind === 'email' ? 'you@example.com' : '9911 2233'"
+                type="text"
+                inputmode="email"
+                autocomplete="username"
+                autocapitalize="off"
+                spellcheck="false"
+                :placeholder="m.contactPlaceholder"
                 maxlength="254"
                 :disabled="busy"
                 :aria-invalid="errorField === 'contact'"
@@ -275,7 +252,6 @@ useHead(() => ({
             <button type="button" class="text-ink-muted" :disabled="busy" @click="edit">{{ m.editContact }}</button>
           </div>
         </form>
-        <p class="mt-5 rounded-control bg-accent-soft p-3 text-xs leading-relaxed text-accent-ink">{{ m.demo }}</p>
         <p class="mt-6 text-center text-sm text-ink-muted">
           {{ mode === 'login' ? m.noAccount : m.hasAccount }}
           <NuxtLink :to="alternate" class="ml-1 font-semibold text-brand" @click="notice = ''">

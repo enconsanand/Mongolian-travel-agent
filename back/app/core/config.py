@@ -68,7 +68,10 @@ class Settings(BaseSettings):
 
     # --- Rate Limiting ---
     RATE_LIMIT_REQUESTS_PER_MINUTE: int = Field(default=60, description="Global rate limit")
-    RATE_LIMIT_AUTH_REQUESTS_PER_MINUTE: int = Field(default=5, description="Auth-specific rate limit")
+    RATE_LIMIT_AUTH_REQUESTS_PER_MINUTE: int = Field(
+        default=30,
+        description="Auth calls per IP; one sign-in is two calls and a venue shares one IP, so keep headroom",
+    )
     RATE_LIMIT_PLANNER_REQUESTS_PER_MINUTE: int = Field(
         default=6, description="Trip planner proposals and revisions (each costs several model calls)"
     )
