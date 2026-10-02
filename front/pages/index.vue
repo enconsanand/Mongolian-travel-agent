@@ -83,10 +83,10 @@ onUnmounted(() => {
 // Stops added on the map: the route goes through them at once, and the chat asks the agent to replan around them
 const extraStops = ref<ExtraStop[]>([])
 function addStop(stop: ExtraStop) {
-  if (extraStops.value.some((extra) => extra.id === stop.id)) return
+  if (busy.value || extraStops.value.some((extra) => extra.id === stop.id)) return
   extraStops.value.push(stop)
-  draft.value = locale.value === 'mn' ? `${stop.name}-г маршрутад нэмээрэй` : `Add ${stop.name} to the route`
-  send()
+  // Sent as its own message, so whatever the traveller is typing stays in the field
+  pick(locale.value === 'mn' ? `${stop.name}-г маршрутад нэмээрэй` : `Add ${stop.name} to the route`)
 }
 watch(hasStarted, (started) => {
   if (!started) extraStops.value = []

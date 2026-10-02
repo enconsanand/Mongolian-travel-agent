@@ -829,5 +829,1166 @@
     },
     "is_mock": true,
     "region": "south"
+  },
+  {
+    "_id": "sched_bus_ub_darkhan_return",
+    "mode": "bus",
+    "operator": "Tsetsens Transport",
+    "route_id": "route_ub_darkhan",
+    "from_place_id": "place_darkhan",
+    "to_place_id": "place_ub",
+    "departure_point": {
+      "mn": "Дархан автобусны буудал",
+      "en": "Darkhan bus station"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "08:00",
+      "10:00",
+      "12:00",
+      "14:00",
+      "16:00",
+      "18:00"
+    ],
+    "duration_min": 210,
+    "price_mnt": 17000,
+    "seats": 45,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "тасалбарын касс эсвэл цахим тасалбарын апп",
+      "en": "ticket office or eticket app"
+    },
+    "is_mock": true,
+    "region": "north"
+  },
+  {
+    "_id": "sched_bus_ub_erdenet_return",
+    "mode": "bus",
+    "operator": "Tsetsens Transport",
+    "route_id": "route_ub_bulgan_via_erdenet",
+    "from_place_id": "place_erdenet",
+    "to_place_id": "place_ub",
+    "departure_point": {
+      "mn": "Эрдэнэт автобусны буудал",
+      "en": "Erdenet bus station"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "09:00",
+      "13:00",
+      "17:00"
+    ],
+    "duration_min": 360,
+    "price_mnt": 26000,
+    "seats": 45,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "тасалбарын касс эсвэл цахим тасалбарын апп",
+      "en": "ticket office or eticket app"
+    },
+    "is_mock": true,
+    "region": "north"
+  },
+  {
+    "_id": "sched_bus_ub_bulgan_return",
+    "mode": "bus",
+    "operator": "Khangai Line",
+    "route_id": "route_ub_bulgan_via_lun",
+    "from_place_id": "place_bulgan",
+    "to_place_id": "place_ub",
+    "departure_point": {
+      "mn": "Булган автобусны буудал",
+      "en": "Bulgan bus station"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "08:00",
+      "14:00"
+    ],
+    "duration_min": 330,
+    "price_mnt": 32000,
+    "seats": 25,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "тасалбарын касс эсвэл цахим тасалбарын апп",
+      "en": "ticket office or eticket app"
+    },
+    "is_mock": true,
+    "region": "north"
+  },
+  {
+    "_id": "sched_bus_ub_murun_return",
+    "mode": "bus",
+    "operator": "Khangai Line",
+    "route_id": "route_ub_khatgal_via_lun",
+    "from_place_id": "place_murun",
+    "to_place_id": "place_ub",
+    "departure_point": {
+      "mn": "Мөрөн автобусны буудал",
+      "en": "Mörön bus station"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "08:00",
+      "17:00"
+    ],
+    "duration_min": 720,
+    "price_mnt": 58000,
+    "seats": 45,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "тасалбарын касс эсвэл цахим тасалбарын апп",
+      "en": "ticket office or eticket app"
+    },
+    "is_mock": true,
+    "region": "north"
+  },
+  {
+    "_id": "sched_van_murun_khatgal_return",
+    "mode": "shared_van",
+    "operator": "Mörön market van stand",
+    "route_id": "route_ub_khatgal_via_lun",
+    "from_place_id": "place_khatgal",
+    "to_place_id": "place_murun",
+    "departure_point": {
+      "mn": "Хатгал захын талбай",
+      "en": "Khatgal market square"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "10:00",
+      "15:00"
+    ],
+    "duration_min": 100,
+    "price_mnt": 20000,
+    "seats": 8,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "жолоочид төлнө, дүүрмэгц хөдөлнө",
+      "en": "pay the driver, leaves when full"
+    },
+    "is_mock": true,
+    "region": "north"
+  },
+  {
+    "_id": "sched_bus_ub_tsetserleg_return",
+    "mode": "bus",
+    "operator": "Khangai Line",
+    "route_id": "route_ub_murun_central",
+    "from_place_id": "place_tsetserleg",
+    "to_place_id": "place_ub",
+    "departure_point": {
+      "mn": "Цэцэрлэг автобусны буудал",
+      "en": "Tsetserleg bus station"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "08:00",
+      "14:00"
+    ],
+    "duration_min": 480,
+    "price_mnt": 38000,
+    "seats": 25,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "тасалбарын касс эсвэл цахим тасалбарын апп",
+      "en": "ticket office or eticket app"
+    },
+    "is_mock": true,
+    "region": "north"
+  },
+  {
+    "_id": "sched_bus_ub_kharkhorin_return",
+    "mode": "bus",
+    "operator": "Khangai Line",
+    "route_id": "route_ub_murun_central",
+    "from_place_id": "place_kharkhorin",
+    "to_place_id": "place_ub",
+    "departure_point": {
+      "mn": "Хархорин автобусны буудал",
+      "en": "Kharkhorin bus station"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "11:00"
+    ],
+    "duration_min": 330,
+    "price_mnt": 30000,
+    "seats": 25,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "тасалбарын касс эсвэл цахим тасалбарын апп",
+      "en": "ticket office or eticket app"
+    },
+    "is_mock": true,
+    "region": "north"
+  },
+  {
+    "_id": "sched_bus_ub_mandalgovi_return",
+    "mode": "bus",
+    "operator": "Govi Express",
+    "route_id": "route_ub_dalanzadgad",
+    "from_place_id": "place_mandalgovi",
+    "to_place_id": "place_ub",
+    "departure_point": {
+      "mn": "Мандалговь автобусны буудал",
+      "en": "Mandalgovi bus station"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "09:00",
+      "15:00"
+    ],
+    "duration_min": 240,
+    "price_mnt": 25000,
+    "seats": 49,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "тасалбарын касс эсвэл цахим тасалбарын апп",
+      "en": "ticket office or eticket app"
+    },
+    "is_mock": true,
+    "region": "south"
+  },
+  {
+    "_id": "sched_bus_ub_dalanzadgad_return",
+    "mode": "bus",
+    "operator": "Govi Express",
+    "route_id": "route_ub_dalanzadgad",
+    "from_place_id": "place_dalanzadgad",
+    "to_place_id": "place_ub",
+    "departure_point": {
+      "mn": "Даланзадгад автобусны буудал",
+      "en": "Dalanzadgad bus station"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "08:00",
+      "16:00"
+    ],
+    "duration_min": 540,
+    "price_mnt": 45000,
+    "seats": 49,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "тасалбарын касс эсвэл цахим тасалбарын апп",
+      "en": "ticket office or eticket app"
+    },
+    "is_mock": true,
+    "region": "south"
+  },
+  {
+    "_id": "sched_flight_ub_murun_return",
+    "mode": "flight",
+    "operator": "Hunnu Air (mock)",
+    "route_id": null,
+    "from_place_id": "place_murun",
+    "to_place_id": "place_ub",
+    "departure_point": {
+      "mn": "Мөрөн нисэх онгоцны буудал",
+      "en": "Mörön airport"
+    },
+    "days_of_week": [
+      "tue",
+      "fri",
+      "sun"
+    ],
+    "departure_times": [
+      "09:30"
+    ],
+    "duration_min": 90,
+    "price_mnt": 360000,
+    "seats": 70,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "агаарын тээврийн компанийн вэбсайт",
+      "en": "airline website"
+    },
+    "is_mock": true,
+    "region": "north"
+  },
+  {
+    "_id": "sched_flight_ub_dalanzadgad_return",
+    "mode": "flight",
+    "operator": "Aero Mongolia (mock)",
+    "route_id": null,
+    "from_place_id": "place_dalanzadgad",
+    "to_place_id": "place_ub",
+    "departure_point": {
+      "mn": "Даланзадгад нисэх онгоцны буудал",
+      "en": "Dalanzadgad airport"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "07:40",
+      "15:20"
+    ],
+    "duration_min": 80,
+    "price_mnt": 295000,
+    "seats": 70,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "агаарын тээврийн компанийн вэбсайт",
+      "en": "airline website"
+    },
+    "is_mock": true,
+    "region": "south"
+  },
+  {
+    "_id": "sched_bus_ub_khovd_return",
+    "mode": "bus",
+    "operator": "Baruun Zam Transport",
+    "route_id": "route_ub_khovd_central",
+    "from_place_id": "place_khovd",
+    "to_place_id": "place_ub",
+    "departure_point": {
+      "mn": "Ховд автобусны буудал",
+      "en": "Khovd bus station"
+    },
+    "days_of_week": [
+      "mon",
+      "wed",
+      "fri"
+    ],
+    "departure_times": [
+      "16:00"
+    ],
+    "duration_min": 1680,
+    "price_mnt": 110000,
+    "seats": 49,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "тасалбарын касс эсвэл цахим тасалбарын апп",
+      "en": "ticket office or eticket app"
+    },
+    "is_mock": true,
+    "region": "west"
+  },
+  {
+    "_id": "sched_bus_ub_chinggis_return",
+    "mode": "bus",
+    "operator": "Zuun Zam Transport",
+    "route_id": "route_ub_chinggis",
+    "from_place_id": "place_chinggis_city",
+    "to_place_id": "place_ub",
+    "departure_point": {
+      "mn": "Чингис хот автобусны буудал",
+      "en": "Chinggis city (Öndörkhaan) bus station"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "09:00",
+      "15:00"
+    ],
+    "duration_min": 330,
+    "price_mnt": 28000,
+    "seats": 45,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "тасалбарын касс эсвэл цахим тасалбарын апп",
+      "en": "ticket office or eticket app"
+    },
+    "is_mock": true,
+    "region": "east"
+  },
+  {
+    "_id": "sched_bus_ub_choibalsan_return",
+    "mode": "bus",
+    "operator": "Zuun Zam Transport",
+    "route_id": "route_ub_choibalsan",
+    "from_place_id": "place_choibalsan",
+    "to_place_id": "place_ub",
+    "departure_point": {
+      "mn": "Чойбалсан автобусны буудал",
+      "en": "Choibalsan bus station"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "08:00"
+    ],
+    "duration_min": 720,
+    "price_mnt": 55000,
+    "seats": 45,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "тасалбарын касс эсвэл цахим тасалбарын апп",
+      "en": "ticket office or eticket app"
+    },
+    "is_mock": true,
+    "region": "east"
+  },
+  {
+    "_id": "sched_flight_ub_olgii_return",
+    "mode": "flight",
+    "operator": "Aero Mongolia (mock)",
+    "route_id": null,
+    "from_place_id": "place_olgii",
+    "to_place_id": "place_ub",
+    "departure_point": {
+      "mn": "Өлгий нисэх онгоцны буудал",
+      "en": "Ölgii airport"
+    },
+    "days_of_week": [
+      "mon",
+      "thu",
+      "sat"
+    ],
+    "departure_times": [
+      "08:30"
+    ],
+    "duration_min": 210,
+    "price_mnt": 520000,
+    "seats": 70,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "агаарын тээврийн компанийн вэбсайт",
+      "en": "airline website"
+    },
+    "is_mock": true,
+    "region": "west"
+  },
+  {
+    "_id": "sched_flight_ub_khovd_return",
+    "mode": "flight",
+    "operator": "Hunnu Air (mock)",
+    "route_id": null,
+    "from_place_id": "place_khovd",
+    "to_place_id": "place_ub",
+    "departure_point": {
+      "mn": "Ховд нисэх онгоцны буудал",
+      "en": "Khovd airport"
+    },
+    "days_of_week": [
+      "tue",
+      "fri"
+    ],
+    "departure_times": [
+      "10:00"
+    ],
+    "duration_min": 180,
+    "price_mnt": 480000,
+    "seats": 70,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "агаарын тээврийн компанийн вэбсайт",
+      "en": "airline website"
+    },
+    "is_mock": true,
+    "region": "west"
+  },
+  {
+    "_id": "sched_flight_ub_choibalsan_return",
+    "mode": "flight",
+    "operator": "Hunnu Air (mock)",
+    "route_id": null,
+    "from_place_id": "place_choibalsan",
+    "to_place_id": "place_ub",
+    "departure_point": {
+      "mn": "Чойбалсан нисэх онгоцны буудал",
+      "en": "Choibalsan airport"
+    },
+    "days_of_week": [
+      "wed",
+      "sun"
+    ],
+    "departure_times": [
+      "11:20"
+    ],
+    "duration_min": 100,
+    "price_mnt": 330000,
+    "seats": 70,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "агаарын тээврийн компанийн вэбсайт",
+      "en": "airline website"
+    },
+    "is_mock": true,
+    "region": "east"
+  },
+  {
+    "_id": "sched_bus_bulgan_murun",
+    "mode": "bus",
+    "operator": "Khövsgöl Tour Bus (mock)",
+    "route_id": null,
+    "from_place_id": "place_bulgan",
+    "to_place_id": "place_murun",
+    "departure_point": {
+      "mn": "Булган автобусны буудал",
+      "en": "Bulgan bus station"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "09:00"
+    ],
+    "duration_min": 420,
+    "price_mnt": 35000,
+    "seats": 45,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "тасалбарын касс эсвэл цахим тасалбарын апп",
+      "en": "ticket office or eticket app"
+    },
+    "is_mock": true,
+    "region": "north"
+  },
+  {
+    "_id": "sched_bus_murun_bulgan",
+    "mode": "bus",
+    "operator": "Khövsgöl Tour Bus (mock)",
+    "route_id": null,
+    "from_place_id": "place_murun",
+    "to_place_id": "place_bulgan",
+    "departure_point": {
+      "mn": "Мөрөн автобусны буудал",
+      "en": "Mörön bus station"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "09:00"
+    ],
+    "duration_min": 420,
+    "price_mnt": 35000,
+    "seats": 45,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "тасалбарын касс эсвэл цахим тасалбарын апп",
+      "en": "ticket office or eticket app"
+    },
+    "is_mock": true,
+    "region": "north"
+  },
+  {
+    "_id": "sched_van_bulgan_uran_togoo",
+    "mode": "shared_van",
+    "operator": "Bulgan Local (mock)",
+    "route_id": null,
+    "from_place_id": "place_bulgan",
+    "to_place_id": "place_uran_togoo",
+    "departure_point": {
+      "mn": "Булган захын талбай",
+      "en": "Bulgan market square"
+    },
+    "days_of_week": [
+      "tue",
+      "thu",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "10:00"
+    ],
+    "duration_min": 120,
+    "price_mnt": 20000,
+    "seats": 9,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "жолоочид төлнө, дүүрмэгц хөдөлнө",
+      "en": "pay the driver, leaves when full"
+    },
+    "is_mock": true,
+    "region": "north"
+  },
+  {
+    "_id": "sched_van_uran_togoo_bulgan",
+    "mode": "shared_van",
+    "operator": "Bulgan Local (mock)",
+    "route_id": null,
+    "from_place_id": "place_uran_togoo",
+    "to_place_id": "place_bulgan",
+    "departure_point": {
+      "mn": "Уран Тогоо захын талбай",
+      "en": "Uran Togoo Volcano market square"
+    },
+    "days_of_week": [
+      "tue",
+      "thu",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "16:00"
+    ],
+    "duration_min": 120,
+    "price_mnt": 20000,
+    "seats": 9,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "жолоочид төлнө, дүүрмэгц хөдөлнө",
+      "en": "pay the driver, leaves when full"
+    },
+    "is_mock": true,
+    "region": "north"
+  },
+  {
+    "_id": "sched_bus_erdenet_bulgan",
+    "mode": "bus",
+    "operator": "Orkhon Line (mock)",
+    "route_id": null,
+    "from_place_id": "place_erdenet",
+    "to_place_id": "place_bulgan",
+    "departure_point": {
+      "mn": "Эрдэнэт автобусны буудал",
+      "en": "Erdenet bus station"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "11:00"
+    ],
+    "duration_min": 120,
+    "price_mnt": 12000,
+    "seats": 45,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "тасалбарын касс эсвэл цахим тасалбарын апп",
+      "en": "ticket office or eticket app"
+    },
+    "is_mock": true,
+    "region": "north"
+  },
+  {
+    "_id": "sched_bus_bulgan_erdenet",
+    "mode": "bus",
+    "operator": "Orkhon Line (mock)",
+    "route_id": null,
+    "from_place_id": "place_bulgan",
+    "to_place_id": "place_erdenet",
+    "departure_point": {
+      "mn": "Булган автобусны буудал",
+      "en": "Bulgan bus station"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "08:00"
+    ],
+    "duration_min": 120,
+    "price_mnt": 12000,
+    "seats": 45,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "тасалбарын касс эсвэл цахим тасалбарын апп",
+      "en": "ticket office or eticket app"
+    },
+    "is_mock": true,
+    "region": "north"
+  },
+  {
+    "_id": "sched_bus_kharkhorin_tsetserleg",
+    "mode": "bus",
+    "operator": "Khangai Line (mock)",
+    "route_id": null,
+    "from_place_id": "place_kharkhorin",
+    "to_place_id": "place_tsetserleg",
+    "departure_point": {
+      "mn": "Хархорин автобусны буудал",
+      "en": "Kharkhorin bus station"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "10:00"
+    ],
+    "duration_min": 150,
+    "price_mnt": 15000,
+    "seats": 45,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "тасалбарын касс эсвэл цахим тасалбарын апп",
+      "en": "ticket office or eticket app"
+    },
+    "is_mock": true,
+    "region": "north"
+  },
+  {
+    "_id": "sched_bus_tsetserleg_kharkhorin",
+    "mode": "bus",
+    "operator": "Khangai Line (mock)",
+    "route_id": null,
+    "from_place_id": "place_tsetserleg",
+    "to_place_id": "place_kharkhorin",
+    "departure_point": {
+      "mn": "Цэцэрлэг автобусны буудал",
+      "en": "Tsetserleg bus station"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "14:00"
+    ],
+    "duration_min": 150,
+    "price_mnt": 15000,
+    "seats": 45,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "тасалбарын касс эсвэл цахим тасалбарын апп",
+      "en": "ticket office or eticket app"
+    },
+    "is_mock": true,
+    "region": "north"
+  },
+  {
+    "_id": "sched_van_tsetserleg_terkhiin_tsagaan",
+    "mode": "shared_van",
+    "operator": "Khangai Line (mock)",
+    "route_id": null,
+    "from_place_id": "place_tsetserleg",
+    "to_place_id": "place_terkhiin_tsagaan",
+    "departure_point": {
+      "mn": "Цэцэрлэг захын талбай",
+      "en": "Tsetserleg market square"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "09:00"
+    ],
+    "duration_min": 240,
+    "price_mnt": 30000,
+    "seats": 11,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "жолоочид төлнө, дүүрмэгц хөдөлнө",
+      "en": "pay the driver, leaves when full"
+    },
+    "is_mock": true,
+    "region": "north"
+  },
+  {
+    "_id": "sched_van_terkhiin_tsagaan_tsetserleg",
+    "mode": "shared_van",
+    "operator": "Khangai Line (mock)",
+    "route_id": null,
+    "from_place_id": "place_terkhiin_tsagaan",
+    "to_place_id": "place_tsetserleg",
+    "departure_point": {
+      "mn": "Тэрхийн Цагаан нуур захын талбай",
+      "en": "Terkhiin Tsagaan Lake market square"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "15:00"
+    ],
+    "duration_min": 240,
+    "price_mnt": 30000,
+    "seats": 11,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "жолоочид төлнө, дүүрмэгц хөдөлнө",
+      "en": "pay the driver, leaves when full"
+    },
+    "is_mock": true,
+    "region": "north"
+  },
+  {
+    "_id": "sched_bus_mandalgovi_dalanzadgad",
+    "mode": "bus",
+    "operator": "Govi Express (mock)",
+    "route_id": null,
+    "from_place_id": "place_mandalgovi",
+    "to_place_id": "place_dalanzadgad",
+    "departure_point": {
+      "mn": "Мандалговь автобусны буудал",
+      "en": "Mandalgovi bus station"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "12:00"
+    ],
+    "duration_min": 300,
+    "price_mnt": 25000,
+    "seats": 45,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "тасалбарын касс эсвэл цахим тасалбарын апп",
+      "en": "ticket office or eticket app"
+    },
+    "is_mock": true,
+    "region": "south"
+  },
+  {
+    "_id": "sched_bus_dalanzadgad_mandalgovi",
+    "mode": "bus",
+    "operator": "Govi Express (mock)",
+    "route_id": null,
+    "from_place_id": "place_dalanzadgad",
+    "to_place_id": "place_mandalgovi",
+    "departure_point": {
+      "mn": "Даланзадгад автобусны буудал",
+      "en": "Dalanzadgad bus station"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "08:00"
+    ],
+    "duration_min": 300,
+    "price_mnt": 25000,
+    "seats": 45,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "тасалбарын касс эсвэл цахим тасалбарын апп",
+      "en": "ticket office or eticket app"
+    },
+    "is_mock": true,
+    "region": "south"
+  },
+  {
+    "_id": "sched_van_dalanzadgad_khongoryn_els",
+    "mode": "shared_van",
+    "operator": "Gobi Dunes Shuttle (mock)",
+    "route_id": null,
+    "from_place_id": "place_dalanzadgad",
+    "to_place_id": "place_khongoryn_els",
+    "departure_point": {
+      "mn": "Даланзадгад захын талбай",
+      "en": "Dalanzadgad market square"
+    },
+    "days_of_week": [
+      "mon",
+      "wed",
+      "fri",
+      "sat"
+    ],
+    "departure_times": [
+      "09:00"
+    ],
+    "duration_min": 240,
+    "price_mnt": 45000,
+    "seats": 11,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "жолоочид төлнө, дүүрмэгц хөдөлнө",
+      "en": "pay the driver, leaves when full"
+    },
+    "is_mock": true,
+    "region": "south"
+  },
+  {
+    "_id": "sched_van_khongoryn_els_dalanzadgad",
+    "mode": "shared_van",
+    "operator": "Gobi Dunes Shuttle (mock)",
+    "route_id": null,
+    "from_place_id": "place_khongoryn_els",
+    "to_place_id": "place_dalanzadgad",
+    "departure_point": {
+      "mn": "Хонгорын Элс захын талбай",
+      "en": "Khongoryn Els market square"
+    },
+    "days_of_week": [
+      "tue",
+      "thu",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "09:00"
+    ],
+    "duration_min": 240,
+    "price_mnt": 45000,
+    "seats": 11,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "жолоочид төлнө, дүүрмэгц хөдөлнө",
+      "en": "pay the driver, leaves when full"
+    },
+    "is_mock": true,
+    "region": "south"
+  },
+  {
+    "_id": "sched_bus_khovd_olgii",
+    "mode": "bus",
+    "operator": "Altai Line (mock)",
+    "route_id": null,
+    "from_place_id": "place_khovd",
+    "to_place_id": "place_olgii",
+    "departure_point": {
+      "mn": "Ховд автобусны буудал",
+      "en": "Khovd bus station"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "09:00"
+    ],
+    "duration_min": 300,
+    "price_mnt": 30000,
+    "seats": 45,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "тасалбарын касс эсвэл цахим тасалбарын апп",
+      "en": "ticket office or eticket app"
+    },
+    "is_mock": true,
+    "region": "west"
+  },
+  {
+    "_id": "sched_bus_olgii_khovd",
+    "mode": "bus",
+    "operator": "Altai Line (mock)",
+    "route_id": null,
+    "from_place_id": "place_olgii",
+    "to_place_id": "place_khovd",
+    "departure_point": {
+      "mn": "Өлгий автобусны буудал",
+      "en": "Ölgii bus station"
+    },
+    "days_of_week": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "departure_times": [
+      "09:00"
+    ],
+    "duration_min": 300,
+    "price_mnt": 30000,
+    "seats": 45,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "тасалбарын касс эсвэл цахим тасалбарын апп",
+      "en": "ticket office or eticket app"
+    },
+    "is_mock": true,
+    "region": "west"
+  },
+  {
+    "_id": "sched_flight_ub_ulaangom",
+    "mode": "flight",
+    "operator": "Aero Mongolia (mock)",
+    "route_id": null,
+    "from_place_id": "place_ub",
+    "to_place_id": "place_ulaangom",
+    "departure_point": {
+      "mn": "Улаанбаатар нисэх онгоцны буудал",
+      "en": "Ulaanbaatar airport"
+    },
+    "days_of_week": [
+      "tue",
+      "sat"
+    ],
+    "departure_times": [
+      "09:00"
+    ],
+    "duration_min": 180,
+    "price_mnt": 450000,
+    "seats": 70,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "агаарын тээврийн компанийн вэбсайт",
+      "en": "airline website"
+    },
+    "is_mock": true,
+    "region": "west"
+  },
+  {
+    "_id": "sched_flight_ulaangom_ub",
+    "mode": "flight",
+    "operator": "Aero Mongolia (mock)",
+    "route_id": null,
+    "from_place_id": "place_ulaangom",
+    "to_place_id": "place_ub",
+    "departure_point": {
+      "mn": "Улаангом нисэх онгоцны буудал",
+      "en": "Ulaangom airport"
+    },
+    "days_of_week": [
+      "tue",
+      "sat"
+    ],
+    "departure_times": [
+      "13:00"
+    ],
+    "duration_min": 180,
+    "price_mnt": 450000,
+    "seats": 70,
+    "vehicle_id": null,
+    "booking_channel": {
+      "mn": "агаарын тээврийн компанийн вэбсайт",
+      "en": "airline website"
+    },
+    "is_mock": true,
+    "region": "west"
   }
 ]

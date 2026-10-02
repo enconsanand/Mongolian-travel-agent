@@ -24,7 +24,7 @@ from app.models.user import User
 from app.modules.orchestrator.assembler import assemble, assemble_blocks, overnight_blocks, stay_options, trade_nights
 from app.modules.orchestrator.catalog import HUB, Catalog
 from app.modules.orchestrator.intent import extract_intent, place_chooser
-from app.modules.orchestrator.resolver import candidates, resolve
+from app.modules.orchestrator.resolver import candidates, norm, resolve
 from app.modules.orchestrator.scenic import choose_itinerary, is_specific, mentioned, named_words, theme_of, wants_far
 from app.modules.orchestrator.types import Assembly, PlanDay, PlanRequest, ResolvedPlace, TripFit, TripIntent
 from app.modules.orchestrator.writer import write
@@ -89,7 +89,7 @@ def _resolve_stops(
     return [ResolvedPlace(query=catalog.places[pid]["name"]["mn"], place_id=pid, status="included") for pid in stops]
 
 
-Translate = Callable[[str, str, str], str]
+Translate = Callable[[str, Lang, Lang], str]
 
 
 def _english_bridge(request: PlanRequest) -> Translate | None:
@@ -105,13 +105,21 @@ def _english_bridge(request: PlanRequest) -> Translate | None:
     if request.lang != "en" or client is None or not settings.LLM_WRITER.strip().startswith("oyu"):
         return None
 
-    def translate(text: str, source: str, target: str) -> str:
+    def translate(text: str, source: Lang, target: Lang) -> str:
         try:
             return client.translate(text, source=source, target=target)
         except OyuError:
             return text
 
     return translate
+
+
+def event_off_dates(catalog: Catalog, request: PlanRequest, changes: Sequence[str]) -> bool:
+    """The traveller named an event (by its full name) that does not take place on the trip's dates."""
+    said = norm(" ".join([request.text, *changes]))
+    first, last = request.start_date.isoformat(), request.end_date.isoformat()
+    named = [e for e in catalog.events if any(len(n) >= 4 and norm(n) in said for n in e["name"].values() if n)]
+    return bool(named) and not any(e["start_date"] <= last and e["end_date"] >= first for e in named)
 
 
 def _build(db: Database, gateway: ModelGateway, request: PlanRequest, changes: Sequence[str], now: datetime) -> Json:
@@ -131,9 +139,11 @@ def _build(db: Database, gateway: ModelGateway, request: PlanRequest, changes: S
     hints = {by_query[name]: n for name, n in intent.nights_hint.items() if name in by_query and n > 0}
     place_ids = [p.place_id for p in places if p.place_id]
 
-    assembly = assemble(db, catalog, request, place_ids, hints)
+    assembly = assemble(db, catalog, request, place_ids, hints, intent.transport)
     if any(p.status == "unresolved" for p in places):
         assembly.warnings.insert(0, "unresolved_place")
+    if event_off_dates(catalog, reading, changes):
+        assembly.warnings.insert(0, "event_off_dates")
     missing = [p.query for p in places if p.status == "unresolved"]
     summary = _write(gateway, request, assembly, catalog, missing, bridge)
     if not assembly.fit.feasible:
@@ -196,6 +206,7 @@ def _assembly(assembly: Assembly, summary: str) -> Json:
         "totals": assembly.totals.model_dump(),
         "warnings": list(dict.fromkeys(assembly.warnings)),
         "fit": assembly.fit.model_dump(),
+        "transport": assembly.transport.model_dump() if assembly.transport else None,
         "summary": summary,
     }
 
@@ -260,13 +271,19 @@ def revise(db: Database, gateway: ModelGateway, proposal_id: str, change: str, n
     return _out(_replace(db, doc, fields, now))
 
 
+def _transport(doc: Json) -> str:
+    """The way of travel the traveller asked for when the plan was read (older plans have none)."""
+    return (doc.get("intent") or {}).get("transport", "")
+
+
 def restay(db: Database, proposal_id: str, now: datetime) -> Json:
     """Pick the stays again for the same places and dates; the written text stays as it was."""
     doc = _live(db, proposal_id, now)
     request = PlanRequest.model_validate(doc["request"])
-    assembly = assemble(db, Catalog.load(db), request, doc["place_ids"], doc["nights_hint"])
-    if "unresolved_place" in doc["warnings"]:
-        assembly.warnings.insert(0, "unresolved_place")
+    assembly = assemble(db, Catalog.load(db), request, doc["place_ids"], doc["nights_hint"], _transport(doc))
+    for kept in ("unresolved_place", "event_off_dates"):
+        if kept in doc["warnings"]:
+            assembly.warnings.insert(0, kept)
     notes = [d["note"] for d in doc["days"]]
     assembly.days = [d.model_copy(update={"note": n}) for d, n in zip(assembly.days, notes, strict=True)]
     return _out(_replace(db, doc, _assembly(assembly, doc["summary"]), now))
@@ -287,7 +304,7 @@ def adjust_nights(db: Database, proposal_id: str, place_id: str, delta: int, now
     request = PlanRequest.model_validate(doc["request"])
     catalog = Catalog.load(db)
     prefer = {d.to_place_id: d.stay.stay_id for d in days if d.stay}
-    assembly = assemble_blocks(db, catalog, request, moved, prefer)
+    assembly = assemble_blocks(db, catalog, request, moved, prefer, _transport(doc))
     _keep_notes(assembly.days, days, catalog, request.lang)
     fields = _assembly(assembly, doc["summary"])
     fields["nights_hint"] = dict(moved)
@@ -380,7 +397,7 @@ def swap_stay(db: Database, proposal_id: str, place_id: str, stay_id: str, now: 
         day.stay_id = match.stay_id
     totals = dict(doc["totals"])
     totals["stays_mnt"] = totals["stays_mnt"] - old + match.total_mnt
-    totals["total_mnt"] = totals["stays_mnt"] + totals["events_mnt"]
+    totals["total_mnt"] = totals["stays_mnt"] + totals["events_mnt"] + totals.get("transport_mnt", 0)
     totals["within_budget"] = totals["budget_mnt"] is None or totals["total_mnt"] <= totals["budget_mnt"]
     warnings = [w for w in doc["warnings"] if w != "over_budget"]
     if not totals["within_budget"]:

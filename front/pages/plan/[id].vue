@@ -202,9 +202,13 @@ const dayDrives = computed(() =>
 // Stops added on the map: the route goes through them at once, and the agent is asked to replan around them
 const extraStops = ref<ExtraStop[]>([])
 async function addStop(stop: ExtraStop) {
-  if (extraStops.value.some((extra) => extra.id === stop.id)) return
+  if (busy.value !== null || extraStops.value.some((extra) => extra.id === stop.id)) return
   extraStops.value.push(stop)
-  await ask(locale.value === 'mn' ? `${stop.name}-г маршрутад нэмээрэй` : `Add ${stop.name} to the route`)
+  const revised = await ask(
+    locale.value === 'mn' ? `${stop.name}-г маршрутад нэмээрэй` : `Add ${stop.name} to the route`
+  )
+  // The plan did not change, so the map should not keep a stop the plan does not have
+  if (!revised) extraStops.value = extraStops.value.filter((extra) => extra.id !== stop.id)
 }
 
 // The chat under the plan: every message revises this plan in place, so the page never changes
@@ -219,10 +223,10 @@ function routeLine() {
     .join(' → ')
 }
 
-async function ask(text: string) {
-  if (busy.value !== null) return
+/** One chat message: revise the plan with it and answer in the chat. ``typed`` when it came from the chat bar. */
+async function ask(text: string, typed = false): Promise<boolean> {
+  if (busy.value !== null) return false
   chatLog.value.push({ id: nextEntryId++, role: 'user', text })
-  const typed = text === change.value.trim()
   if (typed) change.value = ''
   const revised = await revise(text)
   const plan = proposal.value
@@ -237,6 +241,7 @@ async function ask(text: string) {
   )
   // Nothing was lost: what the traveller typed comes back so they can send it again
   if (!revised && typed && !change.value) change.value = text
+  return revised
 }
 
 /** A failed revision already says so in the chat; the bar under it is for booking errors */
@@ -346,6 +351,7 @@ useHead(() => ({ title: messages.value.title, htmlAttrs: { lang: locale.value } 
               :catalog="proposal.catalog"
               :locale="locale"
               :messages="messages"
+              :busy="busy === 'edit'"
               :has-night="index < proposal.days.length - 1"
               :night-bounds="day.stay ? nightBounds(day.to_place_id) : null"
               :choices-open="openDay === day.day"
@@ -368,8 +374,9 @@ useHead(() => ({ title: messages.value.title, htmlAttrs: { lang: locale.value } 
             :locale="locale"
             :entries="chatLog"
             :working="busy === 'revise'"
+            :locked="busy !== null"
             :earlier-changes="proposal.changes"
-            @send="ask"
+            @send="ask($event, true)"
           />
           <p v-if="barError" class="mt-2 text-center text-sm text-danger" role="alert">{{ barError }}</p>
           <button

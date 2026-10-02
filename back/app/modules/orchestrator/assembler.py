@@ -17,7 +17,17 @@ from pymongo.database import Database
 
 from app.modules.orchestrator.catalog import HUB, Catalog, Json, km_between
 from app.modules.orchestrator.filters import events_on_date, open_unit_nights, stays_within
-from app.modules.orchestrator.types import Assembly, PlanDay, PlanRequest, PlanWarning, StayPick, Totals, TripFit
+from app.modules.orchestrator.transport import choose_transport
+from app.modules.orchestrator.types import (
+    Assembly,
+    PlanDay,
+    PlanRequest,
+    PlanWarning,
+    StayPick,
+    Totals,
+    TransportPlan,
+    TripFit,
+)
 from app.schemas.travel import EventDoc
 
 STAY_RADIUS_KM = 60
@@ -230,7 +240,12 @@ def trip_fit(catalog: Catalog, stops: Sequence[str], nights: int) -> TripFit:
 
 
 def assemble(
-    db: Database, catalog: Catalog, request: PlanRequest, place_ids: Sequence[str], nights_hint: Mapping[str, int]
+    db: Database,
+    catalog: Catalog,
+    request: PlanRequest,
+    place_ids: Sequence[str],
+    nights_hint: Mapping[str, int],
+    transport: str = "",
 ) -> Assembly:
     stops = _order(
         catalog, [p for p in dict.fromkeys(place_ids) if p != HUB] or _default_places(catalog, request.nights)
@@ -278,16 +293,10 @@ def assemble(
             d.stay_id = pick.stay_id
         stays_mnt += pick.total_mnt
 
-    events = {e["_id"]: e for e in catalog.events}
-    events_mnt = sum(events[eid]["ticket_price_mnt"] * request.guests for eid in {e for d in days for e in d.event_ids})
-    total = stays_mnt + events_mnt
-    within = request.budget_mnt is None or total <= request.budget_mnt
-    if not within:
-        warnings.append("over_budget")
-    totals = Totals(
-        stays_mnt=stays_mnt, events_mnt=events_mnt, total_mnt=total, budget_mnt=request.budget_mnt, within_budget=within
+    totals, travel = _totals(db, catalog, request, days, stays_mnt, warnings, transport)
+    return Assembly(
+        days=days, totals=totals, warnings=warnings, fit=trip_fit(catalog, stops, request.nights), transport=travel
     )
-    return Assembly(days=days, totals=totals, warnings=warnings, fit=trip_fit(catalog, stops, request.nights))
 
 
 def assemble_blocks(
@@ -296,6 +305,7 @@ def assemble_blocks(
     request: PlanRequest,
     blocks: Sequence[tuple[str, int]],
     prefer: Mapping[str, str] | None = None,
+    transport: str = "",
 ) -> Assembly:
     """Rebuild days from overnight stops in the order given, without asking a model or reordering the route."""
     prefer = prefer or {}
@@ -344,17 +354,40 @@ def assemble_blocks(
             d.stay_id = pick.stay_id
         stays_mnt += pick.total_mnt
 
+    totals, travel = _totals(db, catalog, request, days, stays_mnt, warnings, transport)
+    stops = list(dict.fromkeys(pid for pid, n in plan))
+    return Assembly(
+        days=days, totals=totals, warnings=warnings, fit=trip_fit(catalog, stops, request.nights), transport=travel
+    )
+
+
+def _totals(
+    db: Database,
+    catalog: Catalog,
+    request: PlanRequest,
+    days: list[PlanDay],
+    stays_mnt: int,
+    warnings: list[PlanWarning],
+    transport: str,
+) -> tuple[Totals, TransportPlan | None]:
+    """Event tickets, the way of travel picked for the trip, and whether it all fits the budget."""
     events = {e["_id"]: e for e in catalog.events}
     events_mnt = sum(events[eid]["ticket_price_mnt"] * request.guests for eid in {e for d in days for e in d.event_ids})
-    total = stays_mnt + events_mnt
+    travel = choose_transport(db, request, days, stays_mnt + events_mnt, transport)
+    transport_mnt = travel.chosen.total_mnt if travel else 0
+    total = stays_mnt + events_mnt + transport_mnt
     within = request.budget_mnt is None or total <= request.budget_mnt
     if not within:
         warnings.append("over_budget")
     totals = Totals(
-        stays_mnt=stays_mnt, events_mnt=events_mnt, total_mnt=total, budget_mnt=request.budget_mnt, within_budget=within
+        stays_mnt=stays_mnt,
+        events_mnt=events_mnt,
+        transport_mnt=transport_mnt,
+        total_mnt=total,
+        budget_mnt=request.budget_mnt,
+        within_budget=within,
     )
-    stops = list(dict.fromkeys(pid for pid, n in plan))
-    return Assembly(days=days, totals=totals, warnings=warnings, fit=trip_fit(catalog, stops, request.nights))
+    return totals, travel
 
 
 def trade_nights(blocks: Sequence[tuple[str, int]], place_id: str, delta: int) -> list[tuple[str, int]] | None:

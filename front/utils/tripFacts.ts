@@ -233,9 +233,13 @@ function clamp(value: number, min: number, max: number): number {
 function upcomingDate(month: number, day: number): string | null {
   if (month < 1 || month > 12 || day < 1 || day > 31) return null
   const today = localIsoDate()
-  const year = Number(today.slice(0, 4))
-  const candidate = `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`
-  return candidate >= today ? candidate : `${year + 1}${candidate.slice(4)}`
+  const currentYear = Number(today.slice(0, 4))
+  // Validate calendar dates and allow Feb 29 to advance to the next leap year.
+  for (let year = currentYear; year <= currentYear + 4; year++) {
+    const candidate = isoDate(year, month, day)
+    if (candidate && candidate >= today) return candidate
+  }
+  return null
 }
 
 function isoDate(year: number, month: number, day: number): string | null {
@@ -252,6 +256,13 @@ function span(
   endMonth: number,
   endDay: number
 ): { start: string; end: string } | null {
+  // A range that is already under way ("Oct 1–4" on Oct 2) starts today, not a year later
+  const today = localIsoDate()
+  const thisYear = Number(today.slice(0, 4))
+  const startedOn = isoDate(thisYear, startMonth, startDay)
+  const endsOn = isoDate(thisYear, endMonth, endDay)
+  if (startedOn && endsOn && startedOn < today && endsOn >= today) return { start: today, end: endsOn }
+
   const start = upcomingDate(startMonth, startDay)
   if (!start) return null
   const year = Number(start.slice(0, 4))

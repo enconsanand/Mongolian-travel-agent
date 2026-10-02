@@ -6,6 +6,14 @@ import type { PlanDay, Proposal, StayChoice, ImageCredit } from '~/types/trip-pl
 import type { AppLocale } from '~/types/trip-planner'
 import { formatDayDate, formatDriveTime, formatMnt } from '~/utils/tripPlan'
 
+const TRANSPORT_ICONS = {
+  car: 'pi pi-car',
+  bus: 'pi pi-truck',
+  train: 'pi pi-arrow-right-arrow-left',
+  flight: 'pi pi-send',
+  shared_van: 'pi pi-users',
+} as const
+
 const {
   day,
   catalog,
@@ -15,6 +23,7 @@ const {
   stayChoices = null,
   choicesOpen = false,
   drive = null,
+  busy = false,
 } = defineProps<{
   day: PlanDay
   catalog: Proposal['catalog']
@@ -28,6 +37,7 @@ const {
   choicesOpen?: boolean
   /** Google's driving distance and time for the day, when the map has the real route */
   drive?: { km: number; min: number } | null
+  busy?: boolean
 }>()
 
 const emit = defineEmits<{
@@ -75,7 +85,7 @@ onUnmounted(() => window.removeEventListener('keydown', onKey))
 <template>
   <li class="panel relative p-4 sm:p-5">
     <span
-      class="absolute top-6 -left-[1.7rem] h-3 w-3 rounded-full border-2 border-brand bg-surface"
+      class="absolute top-6 -left-[1.95rem] h-3 w-3 rounded-full border-2 border-brand bg-surface"
       aria-hidden="true"
     />
     <div class="flex items-baseline justify-between gap-3">
@@ -93,6 +103,14 @@ onUnmounted(() => window.removeEventListener('keydown', onKey))
       <template v-if="isFreeDay">{{ messages.freeDay }} · {{ placeName(day.to_place_id) }}</template>
       <template v-else>{{ placeName(day.from_place_id) }} → {{ placeName(day.to_place_id) }}</template>
     </h3>
+    <p v-if="day.transport" class="mt-1 flex flex-wrap items-center gap-x-1.5 text-xs text-ink-muted">
+      <i :class="TRANSPORT_ICONS[day.transport.mode]" class="text-brand" aria-hidden="true" />
+      <span class="font-medium text-ink">{{ messages.transportModes[day.transport.mode] }}</span>
+      <span v-if="day.transport.operator">· {{ day.transport.operator }}</span>
+      <span v-if="day.transport.departure_time">· {{ day.transport.departure_time }}</span>
+      <span>· {{ formatDriveTime(day.transport.duration_min, locale) }} ·</span>
+      <span class="font-medium text-ink">{{ formatMnt(day.transport.total_mnt, locale) }}</span>
+    </p>
     <p v-if="day.via_place_ids.length" class="mt-1 text-sm text-ink-muted">
       <i class="pi pi-map-marker mr-1" aria-hidden="true" />
       {{ messages.via }}:
@@ -165,8 +183,8 @@ onUnmounted(() => window.removeEventListener('keydown', onKey))
       <div v-if="nightBounds" class="mt-3 flex flex-wrap items-center gap-2">
         <button
           type="button"
-          class="flex h-8 w-8 items-center justify-center rounded-full border border-line disabled:opacity-30"
-          :disabled="!nightBounds.down"
+          class="flex h-8 w-8 items-center justify-center rounded-full border border-line text-brand transition-colors hover:bg-brand-soft disabled:cursor-not-allowed disabled:opacity-30"
+          :disabled="busy || !nightBounds.down"
           :aria-label="`${placeName(day.to_place_id)} −`"
           @click="emit('adjust', -1)"
         >
@@ -175,8 +193,8 @@ onUnmounted(() => window.removeEventListener('keydown', onKey))
         <span class="text-xs text-ink-muted">{{ day.stay?.nights }} {{ messages.nights }}</span>
         <button
           type="button"
-          class="flex h-8 w-8 items-center justify-center rounded-full border border-line disabled:opacity-30"
-          :disabled="!nightBounds.up"
+          class="flex h-8 w-8 items-center justify-center rounded-full border border-line text-brand transition-colors hover:bg-brand-soft disabled:cursor-not-allowed disabled:opacity-30"
+          :disabled="busy || !nightBounds.up"
           :aria-label="`${placeName(day.to_place_id)} +`"
           @click="emit('adjust', 1)"
         >
@@ -190,6 +208,9 @@ onUnmounted(() => window.removeEventListener('keydown', onKey))
           {{ choicesOpen ? messages.hideStays : messages.changeStay }}
         </button>
       </div>
+      <p v-if="nightBounds && !nightBounds.down && !nightBounds.up" class="mt-2 basis-full text-xs text-ink-subtle">
+        {{ messages.nightsCannotMove }}
+      </p>
       <p v-if="(day.stay?.nights ?? 0) > 1" class="mt-2 text-xs leading-relaxed text-ink-muted">
         {{
           messages.onePlaceOneStay

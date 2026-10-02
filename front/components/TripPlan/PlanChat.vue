@@ -18,11 +18,19 @@ export interface PlanChatEntry {
  */
 const draft = defineModel<string>({ required: true })
 
-const { locale, entries, working, earlierChanges } = defineProps<{
+const {
+  locale,
+  entries,
+  working,
+  locked = false,
+  earlierChanges,
+} = defineProps<{
   locale: AppLocale
   entries: PlanChatEntry[]
   /** The planner is answering the last message */
   working: boolean
+  /** Another change to the plan (nights, a stay) is being saved: sending waits for it */
+  locked?: boolean
   /** Changes asked before this visit, from the plan itself */
   earlierChanges: string[]
 }>()
@@ -48,7 +56,7 @@ const voiceError = computed(() => (voice.error.value ? voiceMessages.value.voice
 
 function send() {
   const text = draft.value.trim()
-  if (!text || working) return
+  if (!text || working || locked) return
   emit('send', text)
 }
 
@@ -119,7 +127,7 @@ const hasLog = computed(() => entries.length > 0 || working || earlierChanges.le
       v-model:trip-request="draft"
       field-id="plan-chat"
       compact
-      :disabled="working"
+      :disabled="working || locked"
       :is-listening="isListening"
       :is-transcribing="isTranscribing"
       :voice-status-label="voiceStatusLabel"

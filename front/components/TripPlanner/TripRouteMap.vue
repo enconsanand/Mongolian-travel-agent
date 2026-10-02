@@ -492,6 +492,7 @@ function draw() {
     )
   })
 
+  const pinnedEvents = new Set<string>()
   proposal.days.forEach((day) => {
     const stay = day.stay ? catalog.stays[day.stay.stay_id] : undefined
     const stayAt = latLng(stay?.location)
@@ -511,6 +512,9 @@ function draw() {
       )
     }
     day.event_ids.forEach((eventId) => {
+      // An event that runs several days is listed on each of them: one pin is enough
+      if (pinnedEvents.has(eventId)) return
+      pinnedEvents.add(eventId)
       const event = catalog.events[eventId]
       const eventAt = latLng(event?.location)
       if (!event || !eventAt) return
@@ -567,7 +571,11 @@ watch(theme, () => {
   if (map) createMap()
 })
 
-onUnmounted(clear)
+onUnmounted(() => {
+  // A route or event lookup still in flight must not draw on a map that is gone
+  drawSeq++
+  clear()
+})
 </script>
 
 <template>

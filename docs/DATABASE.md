@@ -51,8 +51,8 @@ MN: Бүх өгөгдөл хуурамч боловч бодитой төстэ�
 | `stays`                  | 40   | 16 ger camps, 13 hotels, 3 guesthouses, 8 houses / herder families; 35,000–450,000₮                                          | 16 бааз, 13 зочид буудал, 3 гэр буудал, 8 байшин/малчин айл; 35,000–450,000₮                                            |
 | `cancellation_policies`  | 4    | flexible, moderate, strict, deposit only                                                                                     | уян хатан, дунд, хатуу, зөвхөн урьдчилгаа                                                                               |
 | `stay_availability`      | 742  | free units per stay/unit/night, Oct 1–14 2026 (some camps closed for season)                                                 | 2026.10.1–14 шөнө бүрийн сул өрөө (зарим бааз хаалттай)                                                                 |
-| `transport_schedules`    | 20   | 11 bus, 3 train, 5 flight, 1 shared van                                                                                      | 11 автобус, 3 галт тэрэг, 5 онгоц, 1 хамтын фургон                                                                      |
-| `transport_availability` | 530  | seats left per departure and seat class                                                                                      | хөдөлгөөн, суудлын ангилал бүрийн үлдэгдэл                                                                              |
+| `transport_schedules`    | 55   | 32 bus, 3 train, 12 flight, 8 shared van, with return trips and town-to-town links                                           | 32 автобус, 3 галт тэрэг, 12 онгоц, 8 хамтын фургон, буцах болон хот хоорондын чиглэлтэй                                |
+| `transport_availability` | 1142 | seats left per departure and seat class                                                                                      | хөдөлгөөн, суудлын ангилал бүрийн үлдэгдэл                                                                              |
 | `shared_rides`           | 12   | 8 driver offers, 4 traveller posts                                                                                           | 8 жолоочийн санал, 4 аялагчийн зар                                                                                      |
 | `vehicles`               | 29   | 6 buses, 16 with driver, 7 self-drive rentals; fuel use                                                                      | 6 автобус, 16 жолоочтой, 7 өөрөө жолоодох; шатахууны зарцуулалт                                                         |
 | `vehicle_availability`   | 322  | free / booked / maintenance per rentable vehicle and day                                                                     | түрээсийн машин өдөр бүр сул/захиалгатай/засвартай                                                                      |
@@ -425,7 +425,7 @@ Indexes: `vehicle_id, date unique`
 | `booking_id` | str?                                            |     |
 | `region`     | `north` \| `west` \| `east` \| `south` \| `hub` | ✓   |
 
-#### `transport_schedules` — 20 docs
+#### `transport_schedules` — 55 docs
 
 Bus, train, flight and shared-van timetables; trains list their stops and seat classes.  
 Автобус, галт тэрэг, онгоц, хамтын фургоны хуваарь; галт тэрэг зогсоол, суудлын ангилалтай.  
@@ -454,7 +454,7 @@ Indexes: `region`
 | `stops`           | list[TrainStop]?                                                  |     |
 | `seat_classes`    | list[SeatClassCapacity]?                                          |     |
 
-#### `transport_availability` — 530 docs
+#### `transport_availability` — 1142 docs
 
 Seats left per departure, date and seat class.  
 Хөдлөх цаг, өдөр, суудлын ангилал бүрээр үлдсэн суудал.  
