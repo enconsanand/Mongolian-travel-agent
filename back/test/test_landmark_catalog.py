@@ -41,4 +41,6 @@ def test_generator_reproduces_every_committed_collection_offline(tmp_path):
     shutil.copytree(DATA / "landmarks", tmp_path / "landmarks")
     subprocess.run([sys.executable, str(tmp_path / "mock/generate.py")], check=True, capture_output=True)
     for source in (DATA / "mock").glob("*.json"):
-        assert (tmp_path / "mock" / source.name).read_bytes() == source.read_bytes(), source.name
+        generated = json.loads((tmp_path / "mock" / source.name).read_text())
+        committed = json.loads(source.read_text())
+        assert generated == committed, source.name

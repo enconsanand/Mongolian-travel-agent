@@ -23,6 +23,7 @@ export const PLAN_MESSAGES = {
     eventPhone: 'Утас',
     eventSite: 'Холбоос',
     sameStay: 'Энэ шөнө өмнөх буудалдаа',
+    nightsCannotMove: 'Шөнийг өөр газар шилжүүлэхийн тулд дор хаяж хоёр хонох газар хэрэгтэй.',
     onePlaceOneStay:
       '{place} дээрх {nights} шөнө нэг буудал. Өөр газарт шөнө шилжүүлээгүй бол хоёр буудал сонгогдохгүй.',
     oneStayForNights: 'Энэ {nights} шөнийг нэг буудалд өнгөрүүлнэ. Нэгийг нь сонгоно.',
@@ -34,6 +35,30 @@ export const PLAN_MESSAGES = {
     totals: 'Нийт үнэ (ойролцоо)',
     staysTotal: 'Буудал',
     eventsTotal: 'Эвент (захиалга тусдаа)',
+    transportTotal: 'Тээвэр',
+    transportApart: 'Тээврийн зардлыг нийт дүнд тооцсон. Автобус, онгоцны тасалбарыг тусад нь авна.',
+    transportPicked: 'AI-ийн сонгосон тээвэр',
+    transportOthers: 'Бусад сонголт',
+    transportKinds: {
+      public: 'Нийтийн тээвэр',
+      with_driver: 'Жолоочтой машин',
+      self_drive: 'Түрээсийн машин (өөрөө жолоодно)',
+      own_car: 'Өөрийн машин',
+    },
+    transportParts: { rent: 'түрээс', fuel: 'шатахуун', tickets: 'тасалбар', days: 'өдөр' },
+    transportReasons: {
+      asked: 'Таны хүссэнээр сонгосон.',
+      style: '{guests} хүн, {days} өдөр, таны аяллын хэв маягт тохируулж сонгосон.',
+      budget: 'Төсөвтөө багтахын тулд илүү хямд сонголтыг авсан.',
+      over_budget: 'Төсөвт багтах сонголт алга тул хамгийн хямдыг авсан.',
+    },
+    transportModes: {
+      car: 'Машин (шатахуун)',
+      bus: 'Автобус',
+      train: 'Галт тэрэг',
+      flight: 'Онгоц',
+      shared_van: 'Хамтын микро',
+    },
     total: 'Нийт',
     budget: 'Төсөв',
     noLimit: 'Хязгааргүй',
@@ -55,7 +80,8 @@ export const PLAN_MESSAGES = {
     booking: 'Буудлуудыг түр барьж байна...',
     bookHint: 'Буудлууд 15 минут таны нэр дээр баригдана. Дараагийн алхамд төлбөрөө баталгаажуулна.',
     signInToBook: 'Захиалахын тулд нэвтэрнэ үү',
-    nothingToBook: 'Энэ хөтөлбөрт захиалах буудал алга.',
+    nothingToBook:
+      'Эдгээр огноонд сул буудал олдсонгүй (буудлын мэдээлэл 2026 оны 7/1–10/31 хооронд байгаа), тиймээс захиалах зүйл алга.',
     tooShortToBook: 'Энэ хугацаанд очиж ирэх боломжгүй тул захиалахгүй.',
     notEnoughTime:
       '{place} хүртэл нэг талдаа ойролцоогоор {hours} цаг явна. {nights} хоногт очиж, хоноод, буцаж ирэх боломжгүй — замд өнгөрнө. Хамгийн багадаа {minNights} хоног хэрэгтэй.',
@@ -72,7 +98,9 @@ export const PLAN_MESSAGES = {
     translationFailed: 'Орчуулж чадсангүй; эх хэлээр нь харуулж байна.',
     warnings: {
       unresolved_place: 'Зарим газрыг танисангүй. Өөр нэрээр эсвэл ойролцоох газраар нь бичээд үзээрэй.',
-      no_availability: 'Зарим шөнө сул буудал олдсонгүй (буудлын мэдээлэл 10/01–10/31 хооронд байгаа).',
+      event_off_dates:
+        'Таны дурдсан эвент эдгээр огноонд болохгүй тул хөтөлбөрт ороогүй. Эвентийн огноотой таарсан өдрүүд сонгоно уу.',
+      no_availability: 'Зарим шөнө сул буудал олдсонгүй (буудлын мэдээлэл 2026 оны 7/1–10/31 хооронд байгаа).',
       over_budget: 'Нийт үнэ таны төсвөөс давж байна.',
       too_many_places: 'Хугацаанд бүх газарт хонох боломжгүй тул заримд нь замдаа саатна.',
     } satisfies Record<PlanWarning, string>,
@@ -98,6 +126,7 @@ export const PLAN_MESSAGES = {
     eventPhone: 'Phone',
     eventSite: 'Link',
     sameStay: 'Same stay as the night before',
+    nightsCannotMove: 'Nights can move only when the itinerary has at least two overnight stops.',
     onePlaceOneStay:
       'All {nights} nights at {place} use one stay. A second stay is chosen only when a night moves to another place.',
     oneStayForNights: 'These {nights} nights are one stay. Choose one.',
@@ -109,6 +138,30 @@ export const PLAN_MESSAGES = {
     totals: 'Estimated total',
     staysTotal: 'Stays',
     eventsTotal: 'Events (booked separately)',
+    transportTotal: 'Transport',
+    transportApart: 'Transport is in the total. Bus and flight tickets are bought separately.',
+    transportPicked: 'Transport picked by the AI',
+    transportOthers: 'Other options',
+    transportKinds: {
+      public: 'Public transport',
+      with_driver: 'Car with driver',
+      self_drive: 'Rental car (self-drive)',
+      own_car: 'Own car',
+    },
+    transportParts: { rent: 'rental', fuel: 'fuel', tickets: 'tickets', days: 'days' },
+    transportReasons: {
+      asked: 'Picked as you asked.',
+      style: 'Picked for {guests} people, {days} days and your travel style.',
+      budget: 'A cheaper option was taken to stay within your budget.',
+      over_budget: 'Nothing fits the budget, so the cheapest was taken.',
+    },
+    transportModes: {
+      car: 'Car (fuel)',
+      bus: 'Bus',
+      train: 'Train',
+      flight: 'Flight',
+      shared_van: 'Shared van',
+    },
     total: 'Total',
     budget: 'Budget',
     noLimit: 'No limit',
@@ -130,7 +183,7 @@ export const PLAN_MESSAGES = {
     booking: 'Holding your stays...',
     bookHint: 'Your stays are held for 15 minutes; you approve the payment on the next step.',
     signInToBook: 'Sign in to book',
-    nothingToBook: 'This itinerary has no stays to book.',
+    nothingToBook: 'No free stays on these dates (stay data covers Jul 1 – Oct 31, 2026), so there is nothing to book.',
     tooShortToBook: 'This trip does not fit the dates, so it cannot be booked.',
     notEnoughTime:
       "{place} is about {hours} hours' drive one way. {nights} nights is not enough to get there, stay, and come back — the days would be spent driving. At least {minNights} nights are needed.",
@@ -147,7 +200,9 @@ export const PLAN_MESSAGES = {
     translationFailed: 'Could not translate; showing the original.',
     warnings: {
       unresolved_place: 'Some places were not recognised. Try another name or a place nearby.',
-      no_availability: 'Some nights have no free stay (stay data covers Oct 1–31).',
+      event_off_dates:
+        'The event you named does not take place on these dates, so it is not in the plan. Pick dates that match the event.',
+      no_availability: 'Some nights have no free stay (stay data covers Jul 1 – Oct 31, 2026).',
       over_budget: 'The total is over your budget.',
       too_many_places: 'Not every place gets a night in this time; some are visited on the way.',
     } satisfies Record<PlanWarning, string>,

@@ -9,20 +9,21 @@
 | Файл | Тоо | Юу байгаа |
 |---|---|---|
 | regions.json | 4 | Хойд, баруун, зүүн, өмнөд бүс: аймгийн жагсаалт, ойролцоо GeoJSON polygon, `min_days`, `best_months`, онцлох газрууд |
-| places.json | 155 | Хот, сум, үзвэр; нэрийн хувилбарууд (`aliases`), шинэ газрын координатын эх сурвалж (`coordinate_source`). Улаанбаатар = `region: "hub"` (эхлэх цэг) |
+| places.json | 268 | Хот, сум, үзвэр; нэрийн хувилбарууд (`aliases`), шинэ газрын координатын эх сурвалж (`coordinate_source`). Улаанбаатар = `region: "hub"` (эхлэх цэг) |
 | routes.json | 25 | Замын хэсгүүд: км, жолоодох минут, хучилт (paved/mixed/dirt), аюул, LineString. `area` = хуучин дэд бүс (khuvsgul, gobi...) |
-| events.json | 27 | Аймгийн наадам, Бүргэдийн баяр, Мөсний баяр, Мянган тэмээний баяр, 10/3-11 хооронд жижиг арга хэмжээ |
-| stays.json | 40 | Гэр кемп, зочид буудал, гэр буудал, байшин, малчин айл. `images` (3 зураг), `cover_image_url` |
+| events.json | 36 | Аймгийн наадам, Бүргэдийн баяр, Мөсний баяр, Мянган тэмээний баяр, жижиг арга хэмжээ |
+| stays.json | 105 | Гэр кемп, зочид буудал, гэр буудал, байшин, малчин айл. `images` (3 зураг), `cover_image_url` |
 | translations.mn.json | 242 | Өгөгдлийн англи текстийн монгол орчуулга (collection биш) |
 | images.json | 58 | Газар, буудал, арга хэмжээ тус бүрийн бодит зураг (Wikimedia Commons). `fetch_images.py` үүсгэнэ (collection биш) |
 | image_pool.json | 37 | Буудлын төрөл бүрийн ерөнхий зураг; ойролцоо зураг олдоогүй буудлыг дүүргэнэ (collection биш) |
 | cancellation_policies.json | 4 | flexible / moderate / strict / deposit_only |
-| stay_availability.json | 742 | Буудал, өрөөний төрөл, өдөр бүрээр (2026-10-01 → 10-14). Зарим кемп `closed_for_season` |
+| stay_availability.json | 3774 | Буудал, өрөөний төрөл, өдөр бүрээр (2026-07-01 → 2026-10-31). Зарим кемп `closed_for_season` |
+| supplemental_catalog.data | — | Нэмэлт газар, эвент, буудал болон сул орны өгөгдөл; `generate.py` үндсэн каталогоос тусад нь нэгтгэнэ (collection биш) |
 | drivers.json | 16 | Жолооч, хэл, `regions_served` |
 | vehicles.json | 29 | Автобус, UAZ фургон, Land Cruiser, Prius. `rental.mode`: `with_driver` эсвэл `self_drive` (барьцаа, даатгал, км лимит) |
 | vehicle_availability.json | 322 | Түрээсийн машин өдөр бүр сул/захиалгатай/засвартай |
-| transport_schedules.json | 20 | Автобус, галт тэрэг (УБ→Дархан→Сүхбаатар, УБ→Эрдэнэт, УБ→Чойр→Сайншанд→Замын-Үүд), онгоц, хамтын фургон |
-| transport_availability.json | 530 | Хөдлөх өдөр, цаг, суудлын ангилал бүрээр үлдсэн суудал |
+| transport_schedules.json | 55 | Автобус, галт тэрэг (УБ→Дархан→Сүхбаатар, УБ→Эрдэнэт, УБ→Чойр→Сайншанд→Замын-Үүд), онгоц, хамтын фургон; буцах болон хот хоорондын чиглэлтэй |
+| transport_availability.json | 1142 | Хөдлөх өдөр, цаг, суудлын ангилал бүрээр үлдсэн суудал |
 | shared_rides.json | 12 | Хамтын унаа: жолооч суудал зардаг (`driver_offer`) эсвэл хувь хүн машинаа хуваалцдаг (`traveler_post`) |
 | users.json | 3 | Anand, Tsendayush, Jambaa. Хадгалсан карт (зөвхөн token + сүүлийн 4 орон) + QPay |
 | app_config.json | 1 | Шатахууны үнэ (AI-92, AI-95, дизель). Машин бүр `fuel_type`, `fuel_l_per_100km`-тэй |
@@ -84,7 +85,7 @@ MONGO_URI="mongodb+srv://..." ./import.sh
 
 Бүх collection-ийг устгаад дахин ачаалж, 2dsphere болон хайлтын индексүүдийг үүсгэнэ.
 
-Өөрчлөх бол `generate.py`-г засаад `python3 generate.py` ажиллуулна. Анхны хойд/өмнөд өгөгдөл тусдаа RNG-тэй тул яг хэвээрээ үлдэнэ. Зай, цагийг геометрээс тооцдог.
+Үндсэн өгөгдлийг өөрчлөх бол `generate.py`-г, нэмэлт каталогио өөрчлөх бол `supplemental_catalog.data`-г засаад `python3 generate.py` ажиллуулна. Анхны хойд/өмнөд өгөгдөл тусдаа RNG-тэй тул яг хэвээрээ үлдэнэ. Зай, цагийг геометрээс тооцдог.
 
 ## Жишээ query
 

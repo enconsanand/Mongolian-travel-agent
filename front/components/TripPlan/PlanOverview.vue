@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import TransportChoice from '~/components/TripPlan/TransportChoice.vue'
 import type { PlanMessages } from '~/constants/tripPlan'
 import type { Proposal } from '~/types/trip-plan'
 import type { AppLocale } from '~/types/trip-planner'
@@ -54,9 +55,13 @@ const separateEventsMnt = computed(() => {
   return sum
 })
 
-const staysWithinBudget = computed(
-  () => proposal.totals.budget_mnt === null || proposal.totals.stays_mnt <= proposal.totals.budget_mnt
+const transportMnt = computed(() => proposal.totals.transport_mnt ?? 0)
+/** What the traveller pays for this plan: stays and transport (event tickets are bought apart) */
+const planTotal = computed(() => proposal.totals.stays_mnt + transportMnt.value)
+const withinBudget = computed(
+  () => proposal.totals.budget_mnt === null || planTotal.value <= proposal.totals.budget_mnt
 )
+const ticketsApart = computed(() => proposal.days.some((day) => day.transport && day.transport.mode !== 'car'))
 
 const routeStops = computed(() => {
   const stops: { id: string; name: string; nights: number }[] = []
@@ -138,14 +143,26 @@ const unfitText = computed(() => {
         <dt class="text-ink-muted">{{ messages.eventsTotal }}</dt>
         <dd class="text-right">{{ formatMnt(separateEventsMnt, locale) }}</dd>
       </template>
+      <template v-if="transportMnt">
+        <dt class="text-ink-muted">{{ messages.transportTotal }}</dt>
+        <dd class="text-right">{{ formatMnt(transportMnt, locale) }}</dd>
+      </template>
       <dt class="font-semibold">{{ messages.total }}</dt>
       <dd class="text-right text-lg font-semibold text-brand">
-        {{ formatMnt(proposal.totals.stays_mnt, locale) }}
+        {{ formatMnt(planTotal, locale) }}
       </dd>
       <dt class="text-ink-muted">{{ messages.budget }}</dt>
-      <dd class="text-right" :class="staysWithinBudget ? 'text-ink-muted' : 'text-danger'">
+      <dd class="text-right" :class="withinBudget ? 'text-ink-muted' : 'text-danger'">
         {{ proposal.totals.budget_mnt === null ? messages.noLimit : formatMnt(proposal.totals.budget_mnt, locale) }}
       </dd>
     </dl>
+    <p v-if="ticketsApart" class="mt-2 text-xs text-ink-muted">{{ messages.transportApart }}</p>
+    <TransportChoice
+      v-if="proposal.transport"
+      :plan="proposal.transport"
+      :guests="proposal.request.guests"
+      :locale="locale"
+      :messages="messages"
+    />
   </section>
 </template>

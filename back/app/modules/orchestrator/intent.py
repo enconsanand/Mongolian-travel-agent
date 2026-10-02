@@ -25,6 +25,9 @@ The trip runs {start} to {end} ({nights} nights) for {guests} people; the style 
 - landscape: empty when they named a place. Otherwise water (lake, river, a place with water),
   mountain (mountain, rock), or desert (sand, dunes, gobi). Empty if they said none of these.
 - nights: only where they asked for a number of nights at a place: the place as written and the nights.
+- transport: only if they said how to travel: own_car (their own car), rental (rent a car and drive
+  themselves), driver (a car with a driver), bus, train, flight, or cheapest ("as cheap as possible",
+  "хамгийн хямд"). Empty otherwise.
 Later changes override the request: a change can add or remove places or change nights."""
 
 _CHOOSE_SYSTEM = """The traveller wrote "{query}" in a request for a trip in Mongolia. Pick the one place from the

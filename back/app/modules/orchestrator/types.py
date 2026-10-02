@@ -8,7 +8,9 @@ from pydantic import BaseModel, ConfigDict, Field, model_validator
 from app.utils.i18n import Lang
 
 Style = Literal["value", "comfort", "culture"]
-PlanWarning = Literal["unresolved_place", "no_availability", "over_budget", "too_many_places"]
+TransportMode = Literal["car", "bus", "train", "flight", "shared_van"]
+TransportKind = Literal["public", "with_driver", "self_drive", "own_car"]
+PlanWarning = Literal["unresolved_place", "event_off_dates", "no_availability", "over_budget", "too_many_places"]
 
 MAX_TRIP_DAYS = 30
 
@@ -63,6 +65,13 @@ class TripIntent(BaseModel):
     nights: list[PlaceNights] = Field(
         default=[], max_length=12, description="Only where the traveller asked for a number of nights"
     )
+    transport: Literal["", "cheapest", "own_car", "rental", "driver", "bus", "train", "flight"] = Field(
+        default="",
+        description=(
+            "Only if they said how to travel: cheapest, own_car (their own car), rental (rent a car and drive),"
+            " driver (a car with a driver), bus, train, flight"
+        ),
+    )
 
     @property
     def nights_hint(self) -> dict[str, int]:
@@ -83,6 +92,17 @@ class StayPick(BaseModel):
     total_mnt: int = Field(ge=0)
 
 
+class DayTransport(BaseModel):
+    """How the group gets from one place to the next on a travel day, and what it costs all of them."""
+
+    mode: TransportMode
+    schedule_id: str | None = None  # the timetable for bus, train, flight or shared van; None for the car
+    operator: str | None = None
+    departure_time: str | None = None
+    duration_min: int = Field(ge=0)
+    total_mnt: int = Field(ge=0)
+
+
 class PlanDay(BaseModel):
     """One day; field-for-field an ``ItineraryDay`` plus distance, drive time and the stay pick."""
 
@@ -97,12 +117,32 @@ class PlanDay(BaseModel):
     stay: StayPick | None = None  # set on the first night of each stay block
     stay_id: str | None = None  # the stay slept in that night (every night of a block)
     event_ids: list[str] = []
+    transport: DayTransport | None = None
     note: str | None = None
+
+
+class TransportOption(BaseModel):
+    kind: TransportKind
+    vehicle: str | None = None  # the car or van model
+    operator: str | None = None
+    vehicles: int = Field(default=0, ge=0)
+    days: int = Field(ge=0)
+    rent_mnt: int = Field(default=0, ge=0)  # day rate, insurance and extra km, for the whole trip
+    fuel_mnt: int = Field(default=0, ge=0)
+    tickets_mnt: int = Field(default=0, ge=0)
+    total_mnt: int = Field(ge=0)
+
+
+class TransportPlan(BaseModel):
+    chosen: TransportOption
+    reason: Literal["asked", "style", "budget", "over_budget"]
+    alternatives: list[TransportOption] = []
 
 
 class Totals(BaseModel):
     stays_mnt: int = 0
     events_mnt: int = 0
+    transport_mnt: int = 0
     total_mnt: int = 0
     budget_mnt: int | None = None
     within_budget: bool = True
@@ -122,3 +162,4 @@ class Assembly(BaseModel):
     totals: Totals
     warnings: list[PlanWarning]
     fit: TripFit = Field(default_factory=TripFit)
+    transport: TransportPlan | None = None

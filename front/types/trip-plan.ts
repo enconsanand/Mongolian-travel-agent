@@ -2,7 +2,7 @@ import type { AppLocale } from '~/types/trip-planner'
 
 export type TravelStyle = 'value' | 'comfort' | 'culture'
 
-export type PlanWarning = 'unresolved_place' | 'no_availability' | 'over_budget' | 'too_many_places'
+export type PlanWarning = 'unresolved_place' | 'event_off_dates' | 'no_availability' | 'over_budget' | 'too_many_places'
 
 /** Body of POST /planner/proposals (the language comes from Accept-Language) */
 export interface PlanRequestBody {
@@ -28,6 +28,39 @@ export interface StayPick {
   total_mnt: number
 }
 
+/** How the group travels on a travel day, picked by the planner: the car (fuel) or a timetabled service */
+export interface DayTransport {
+  mode: 'car' | 'bus' | 'train' | 'flight' | 'shared_van'
+  schedule_id: string | null
+  operator: string | null
+  departure_time: string | null
+  duration_min: number
+  /** For the whole group */
+  total_mnt: number
+}
+
+export type TransportKind = 'public' | 'with_driver' | 'self_drive' | 'own_car'
+
+/** One way to travel the whole trip, priced for the group */
+export interface TransportOption {
+  kind: TransportKind
+  vehicle: string | null
+  operator: string | null
+  vehicles: number
+  days: number
+  rent_mnt: number
+  fuel_mnt: number
+  tickets_mnt: number
+  total_mnt: number
+}
+
+/** The way of travel the planner picked, why, and the ones it priced but did not pick */
+export interface TransportPlan {
+  chosen: TransportOption
+  reason: 'asked' | 'style' | 'budget' | 'over_budget'
+  alternatives: TransportOption[]
+}
+
 export interface PlanDay {
   day: number
   date: string
@@ -42,6 +75,7 @@ export interface PlanDay {
   /** The stay slept in that night */
   stay_id: string | null
   event_ids: string[]
+  transport?: DayTransport | null
   note: string | null
 }
 
@@ -55,6 +89,7 @@ export interface TripFit {
 export interface PlanTotals {
   stays_mnt: number
   events_mnt: number
+  transport_mnt?: number
   total_mnt: number
   budget_mnt: number | null
   within_budget: boolean
@@ -144,6 +179,8 @@ export interface Proposal {
   warnings: PlanWarning[]
   /** Missing on plans saved before the drive-time check */
   fit?: TripFit
+  /** Missing on plans made before transport was priced */
+  transport?: TransportPlan | null
   summary: string
   accepted: boolean
   expires_at: string

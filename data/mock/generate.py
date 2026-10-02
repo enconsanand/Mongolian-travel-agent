@@ -775,6 +775,67 @@ for doc in places + stays + events:
 for r in routes:
     r["area"] = r["region"]  # old sub-area label (north / khuvsgul / gobi / west / east)
     r["region"] = trip_region(r["from_place_id"], r["to_place_id"])
+# Return trips and town-to-town links, so the planner can price public transport both ways. Their seats come
+# from a separate generator: drawing from ``rnd`` here would shift every random value generated after it.
+trnd = random.Random(20261002)
+BOOKING_CHANNEL = {"bus": "ticket office or eticket app", "shared_van": "pay the driver, leaves when full",
+                   "flight": "airline website"}
+STATION = {"bus": ("bus station", "автобусны буудал"), "shared_van": ("market square", "захын талбай"),
+           "flight": ("airport", "нисэх онгоцны буудал")}
+
+
+def station(pid, mode):
+    place, (en, mn) = PLACE[pid], STATION[mode]
+    return {"mn": f"{place.get('name_mn') or place['name']} {mn}", "en": f"{place['name']} {en}"}
+
+
+links = []
+for s in [s for s in schedules if s["mode"] != "train"]:
+    links.append({
+        **s, "_id": f"{s['_id']}_return", "from_place_id": s["to_place_id"], "to_place_id": s["from_place_id"],
+        "departure_point": station(s["to_place_id"], s["mode"]), "vehicle_id": None,
+    })
+for sid, mode, operator, frm, to, days, times, minutes, price, seats in [
+    ("sched_bus_bulgan_murun", "bus", "Khövsgöl Tour Bus (mock)", "place_bulgan", "place_murun", DAILY, ["09:00"], 420, 35000, 45),
+    ("sched_bus_murun_bulgan", "bus", "Khövsgöl Tour Bus (mock)", "place_murun", "place_bulgan", DAILY, ["09:00"], 420, 35000, 45),
+    ("sched_van_bulgan_uran_togoo", "shared_van", "Bulgan Local (mock)", "place_bulgan", "place_uran_togoo", ["tue", "thu", "sat", "sun"], ["10:00"], 120, 20000, 9),
+    ("sched_van_uran_togoo_bulgan", "shared_van", "Bulgan Local (mock)", "place_uran_togoo", "place_bulgan", ["tue", "thu", "sat", "sun"], ["16:00"], 120, 20000, 9),
+    ("sched_bus_erdenet_bulgan", "bus", "Orkhon Line (mock)", "place_erdenet", "place_bulgan", DAILY, ["11:00"], 120, 12000, 45),
+    ("sched_bus_bulgan_erdenet", "bus", "Orkhon Line (mock)", "place_bulgan", "place_erdenet", DAILY, ["08:00"], 120, 12000, 45),
+    ("sched_bus_kharkhorin_tsetserleg", "bus", "Khangai Line (mock)", "place_kharkhorin", "place_tsetserleg", DAILY, ["10:00"], 150, 15000, 45),
+    ("sched_bus_tsetserleg_kharkhorin", "bus", "Khangai Line (mock)", "place_tsetserleg", "place_kharkhorin", DAILY, ["14:00"], 150, 15000, 45),
+    ("sched_van_tsetserleg_terkhiin_tsagaan", "shared_van", "Khangai Line (mock)", "place_tsetserleg", "place_terkhiin_tsagaan", DAILY, ["09:00"], 240, 30000, 11),
+    ("sched_van_terkhiin_tsagaan_tsetserleg", "shared_van", "Khangai Line (mock)", "place_terkhiin_tsagaan", "place_tsetserleg", DAILY, ["15:00"], 240, 30000, 11),
+    ("sched_bus_mandalgovi_dalanzadgad", "bus", "Govi Express (mock)", "place_mandalgovi", "place_dalanzadgad", DAILY, ["12:00"], 300, 25000, 45),
+    ("sched_bus_dalanzadgad_mandalgovi", "bus", "Govi Express (mock)", "place_dalanzadgad", "place_mandalgovi", DAILY, ["08:00"], 300, 25000, 45),
+    ("sched_van_dalanzadgad_khongoryn_els", "shared_van", "Gobi Dunes Shuttle (mock)", "place_dalanzadgad", "place_khongoryn_els", ["mon", "wed", "fri", "sat"], ["09:00"], 240, 45000, 11),
+    ("sched_van_khongoryn_els_dalanzadgad", "shared_van", "Gobi Dunes Shuttle (mock)", "place_khongoryn_els", "place_dalanzadgad", ["tue", "thu", "sat", "sun"], ["09:00"], 240, 45000, 11),
+    ("sched_bus_khovd_olgii", "bus", "Altai Line (mock)", "place_khovd", "place_olgii", DAILY, ["09:00"], 300, 30000, 45),
+    ("sched_bus_olgii_khovd", "bus", "Altai Line (mock)", "place_olgii", "place_khovd", DAILY, ["09:00"], 300, 30000, 45),
+    ("sched_flight_ub_ulaangom", "flight", "Aero Mongolia (mock)", "place_ub", "place_ulaangom", ["tue", "sat"], ["09:00"], 180, 450000, 70),
+    ("sched_flight_ulaangom_ub", "flight", "Aero Mongolia (mock)", "place_ulaangom", "place_ub", ["tue", "sat"], ["13:00"], 180, 450000, 70),
+]:
+    links.append({
+        "_id": sid, "mode": mode, "operator": operator, "route_id": None, "from_place_id": frm, "to_place_id": to,
+        "departure_point": station(frm, mode), "days_of_week": days, "departure_times": times,
+        "duration_min": minutes, "price_mnt": price, "seats": seats, "vehicle_id": None,
+        "booking_channel": BOOKING_CHANNEL[mode], "is_mock": True,
+    })
+for s in links:
+    for k in range(DEMO_DAYS):
+        d = DEMO_START + timedelta(days=k)
+        if DOW[d.weekday()] not in s["days_of_week"]:
+            continue
+        for t in s["departure_times"]:
+            c = {"flight": "economy"}.get(s["mode"], "standard")
+            left = trnd.randint(0, s["seats"] // 2) if d.weekday() >= 4 else trnd.randint(s["seats"] // 3, s["seats"])
+            transport_availability.append({
+                "_id": f"tavail_{s['_id'][6:]}_{d.isoformat()}_{t.replace(':', '')}_{c}", "schedule_id": s["_id"],
+                "mode": s["mode"], "date": d.isoformat(), "departure_time": t, "seat_class": c,
+                "seats_total": s["seats"], "seats_left": left, "status": "open" if left else "sold_out",
+            })
+schedules.extend(links)
+
 for s in schedules:
     s["region"] = trip_region(s["from_place_id"], s["to_place_id"])
 SCHED_REGION = {s["_id"]: s["region"] for s in schedules}
@@ -1198,6 +1259,26 @@ for r in refunds:
 for u in users:
     u["display_name"] = loc(u["first_name"], u.pop("first_name_mn"))
 assert not _missing, f"Add Mongolian for these to translations.mn.json: {sorted(_missing)}"
+
+# These hand-authored additions are maintained separately so generated output stays reproducible.
+with open(os.path.join(OUT, "supplemental_catalog.data"), encoding="utf-8") as f:
+    supplemental = json.load(f)
+for name, docs in {
+    "places": places,
+    "events": events,
+    "stays": stays,
+    "stay_availability": availability,
+}.items():
+    additions = supplemental.get(name, [])
+    addition_ids = [doc["_id"] for doc in additions]
+    assert len(addition_ids) == len(set(addition_ids)), f"Duplicate ids in supplemental {name}"
+    positions = {doc["_id"]: index for index, doc in enumerate(docs)}
+    for addition in additions:
+        if addition["_id"] in positions:
+            docs[positions[addition["_id"]]] = addition
+        else:
+            positions[addition["_id"]] = len(docs)
+            docs.append(addition)
 
 # ---------------------------------------------------------------- write
 COLLECTIONS = {
