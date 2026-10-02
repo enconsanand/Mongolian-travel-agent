@@ -4,6 +4,7 @@ import type { Proposal } from '~/types/trip-plan'
 import type { AppLocale, TripPlannerMessages } from '~/types/trip-planner'
 import { isUnrelatedQuestion, readTripFacts, toPlanRequestBody, type TripFacts } from '~/utils/tripFacts'
 import { requestProposal, requestRevision, type PlanErrorCode } from './useTripPlan'
+import { voiceStatusText } from './useVoiceInput'
 
 /** What the agent must ask before it may offer to plan, in this order */
 const SLOTS = ['place', 'guests', 'dates', 'budget'] as const
@@ -62,7 +63,11 @@ export function useTripPlanner() {
   const messages = computed<TripPlannerMessages>(() => TRIP_PLANNER_MESSAGES[locale.value])
 
   const draft = ref('')
-  const isListening = ref(false)
+  // The microphone: Anir's transcript is added to whatever is already typed
+  const voice = useVoiceInput((text) => {
+    draft.value = draft.value.trim() ? `${draft.value.trim()} ${text}` : text
+  })
+  const isListening = computed(() => voice.state.value === 'recording')
   const chat = ref<ChatMessage[]>([])
   const busy = ref(false)
   const proposalId = ref<string | null>(null)
@@ -86,8 +91,13 @@ export function useTripPlanner() {
   // Bumped on reset, so an answer to a conversation that was cleared is dropped
   let conversation = 0
 
-  const voiceStatusLabel = computed(() => (isListening.value ? messages.value.listening : messages.value.tapToSpeak))
+  const voiceStatusLabel = computed(() => voiceStatusText(voice.state.value, messages.value, messages.value.tapToSpeak))
   const hasStarted = computed(() => chat.value.length > 0)
+  /** The newest version of the plan in the conversation, for the map */
+  const currentPlan = computed(() => {
+    const last = chat.value.findLast((item) => item.role === 'agent' && item.kind === 'plan')
+    return last?.role === 'agent' && last.kind === 'plan' ? last.proposal : null
+  })
 
   function push(message: NewChatMessage): number {
     const id = nextId++
@@ -204,7 +214,6 @@ export function useTripPlanner() {
 
   function submit(text: string) {
     if (!text || busy.value) return
-    isListening.value = false
     push({ role: 'user', text })
 
     if (proposalId.value) {
@@ -316,7 +325,7 @@ export function useTripPlanner() {
   }
 
   function toggleVoiceInput() {
-    isListening.value = !isListening.value
+    voice.toggle()
   }
 
   onScopeDispose(clearTimers)
@@ -328,6 +337,7 @@ export function useTripPlanner() {
     chat,
     busy,
     hasStarted,
+    currentPlan,
     isListening,
     voiceStatusLabel,
     setLocale,

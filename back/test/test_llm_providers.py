@@ -5,7 +5,7 @@ import json
 import httpx
 import pytest
 
-from app.llm import LLMError, Message, ToolCall, ToolSpec, workers_ai_provider
+from app.llm import LLMError, Message, ToolCall, ToolSpec, oyu_provider, workers_ai_provider
 from app.llm.providers import OpenAICompatProvider, parse_completion
 from app.llm.providers.openai_compat import message_to_wire
 
@@ -213,3 +213,17 @@ def test_generic_provider_keeps_its_name_and_extra_headers():
     assert str(rec.requests[0].url) == "https://llm.example/v1/chat/completions"
     assert rec.requests[0].headers["x-org"] == "mta"
     assert result.provider == "other"
+
+
+def test_oyu_goes_to_its_openai_compatible_endpoint_and_asks_for_json_in_the_prompt():
+    rec = Recorder(openai_reply("сайн байна уу"))
+    oyu = oyu_provider(api_key="oyu-key", transport=httpx.MockTransport(rec))
+    result = oyu.complete(model="oyuLLM", messages=[Message.user("u")], tools=[TOOL], json_schema={"type": "object"})
+
+    req = rec.requests[0]
+    assert str(req.url) == "https://api.oyu.so/v1/chat/completions"
+    assert req.headers["authorization"] == "Bearer oyu-key"
+    assert rec.body["model"] == "oyuLLM"
+    assert rec.body["tools"][0]["function"]["name"] == "find_stays_near"
+    assert "response_format" not in rec.body
+    assert (result.provider, result.model, result.text) == ("oyu", "oyuLLM", "сайн байна уу")

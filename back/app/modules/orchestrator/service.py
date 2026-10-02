@@ -8,7 +8,7 @@
 A proposal lives 24 hours (TTL index on ``expires_at``). Once accepted it belongs to that user.
 """
 
-from collections.abc import Sequence
+from collections.abc import Callable, Sequence
 from datetime import datetime, timedelta
 from typing import Any
 from uuid import uuid4
@@ -25,6 +25,7 @@ from app.modules.orchestrator.resolver import candidates, resolve
 from app.modules.orchestrator.scenic import choose_itinerary, is_specific, mentioned, named_words, theme_of, wants_far
 from app.modules.orchestrator.types import Assembly, PlanDay, PlanRequest, ResolvedPlace, TripFit, TripIntent
 from app.modules.orchestrator.writer import write
+from app.modules.oyu import OyuError, configured_client
 from app.schemas.travel import ItineraryVersionDoc, TripDoc
 from app.utils.i18n import Lang, localize
 
@@ -85,14 +86,47 @@ def _resolve_stops(
     return [ResolvedPlace(query=catalog.places[pid]["name"]["mn"], place_id=pid, status="included") for pid in stops]
 
 
+Translate = Callable[[str, str, str], str]
+
+
+def _english_bridge(request: PlanRequest) -> Translate | None:
+    """Orchu between an English traveller and the Mongolian oyu models.
+
+    When the writer runs on oyu (a Mongolian model) and the request is in English, the request and changes are
+    read in Mongolian and the text the traveller reads is written in Mongolian, then translated back. A failed
+    translation keeps the original text, so the plan still comes out.
+    """
+    from app.core.config import settings
+
+    if request.lang != "en" or not settings.LLM_WRITER.strip().startswith("oyu"):
+        return None
+    try:
+        client = configured_client()
+    except OyuError:
+        return None
+
+    def translate(text: str, source: str, target: str) -> str:
+        try:
+            return client.translate(text, source=source, target=target)
+        except OyuError:
+            return text
+
+    return translate
+
+
 def _build(db: Database, gateway: ModelGateway, request: PlanRequest, changes: Sequence[str], now: datetime) -> Json:
     catalog = Catalog.load(db)
+    bridge = _english_bridge(request)
+    reading = request
+    if bridge:
+        reading = request.model_copy(update={"text": bridge(request.text, "en", "mn"), "lang": "mn"})
+        changes = [bridge(change, "en", "mn") for change in changes]
     try:
-        intent = extract_intent(gateway, request, changes, now.date())
+        intent = extract_intent(gateway, reading, changes, now.date())
     except LLMError as exc:
         raise PlannerUnavailable(f"{exc.code}: {exc}") from exc
 
-    places = _resolve_stops(catalog, gateway, request, changes, intent)
+    places = _resolve_stops(catalog, gateway, reading, changes, intent)
     by_query = {p.query: p.place_id for p in places if p.place_id}
     hints = {by_query[name]: n for name, n in intent.nights_hint.items() if name in by_query and n > 0}
     place_ids = [p.place_id for p in places if p.place_id]
@@ -101,7 +135,7 @@ def _build(db: Database, gateway: ModelGateway, request: PlanRequest, changes: S
     if any(p.status == "unresolved" for p in places):
         assembly.warnings.insert(0, "unresolved_place")
     missing = [p.query for p in places if p.status == "unresolved"]
-    summary = _write(gateway, request, assembly, catalog, missing)
+    summary = _write(gateway, request, assembly, catalog, missing, bridge)
     if not assembly.fit.feasible:
         summary = _unfit_summary(request, assembly.fit, catalog)
     return {
@@ -133,17 +167,27 @@ def _unfit_summary(request: PlanRequest, fit: TripFit, catalog: Catalog) -> str:
 
 
 def _write(
-    gateway: ModelGateway, request: PlanRequest, assembly: Assembly, catalog: Catalog, missing: Sequence[str]
+    gateway: ModelGateway,
+    request: PlanRequest,
+    assembly: Assembly,
+    catalog: Catalog,
+    missing: Sequence[str],
+    bridge: Translate | None = None,
 ) -> str:
-    """Put the writer's note on each day; return its summary."""
-    lang = request.lang
+    """Put the writer's note on each day; return its summary (written in Mongolian and translated when bridged)."""
+    writing_request = request.model_copy(update={"lang": "mn"}) if bridge else request
+    lang = writing_request.lang
     stays = {s["_id"]: _name(s, lang) for s in catalog.stays}
     events = {e["_id"]: _name(e, lang) for e in catalog.events}
     places = {pid: _name(p, lang) for pid, p in catalog.places.items()}
-    unfit = "" if assembly.fit.feasible else _unfit_summary(request, assembly.fit, catalog)
-    writing = write(gateway, request, assembly.days, places, stays, events, missing, unfit)
-    assembly.days = [d.model_copy(update={"note": note}) for d, note in zip(assembly.days, writing.notes, strict=True)]
-    return writing.summary
+    unfit = "" if assembly.fit.feasible else _unfit_summary(writing_request, assembly.fit, catalog)
+    writing = write(gateway, writing_request, assembly.days, places, stays, events, missing, unfit)
+    notes, summary = list(writing.notes), writing.summary
+    if bridge:
+        notes = [bridge(note, "mn", "en") if note else note for note in notes]
+        summary = bridge(summary, "mn", "en")
+    assembly.days = [d.model_copy(update={"note": note}) for d, note in zip(assembly.days, notes, strict=True)]
+    return summary
 
 
 def _assembly(assembly: Assembly, summary: str) -> Json:

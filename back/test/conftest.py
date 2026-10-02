@@ -10,6 +10,9 @@ import os
 # Tests use mongomock; don't try to reach a real MongoDB when the app starts
 os.environ.setdefault("MONGO_INIT_ON_STARTUP", "false")
 os.environ.setdefault("BACKGROUND_WORKERS", "false")
+# Tests never reach a real model, oyu or Redis, even when the developer's env file sets them
+for _name in ("LLM_PLANNER", "LLM_WRITER", "OYU_API_KEY", "REDIS_URL"):
+    os.environ.pop(_name, None)
 
 import mongomock  # noqa: E402
 import pytest  # noqa: E402

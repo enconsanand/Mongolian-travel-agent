@@ -9,6 +9,10 @@ export interface TripPlannerMessages {
   requestPlaceholder: string
   tapToSpeak: string
   listening: string
+  transcribing: string
+  voiceFailed: string
+  voiceDenied: string
+  voiceUnavailable: string
   voiceButtonLabel: string
   generate: string
   retry: string

@@ -239,7 +239,9 @@ class RateLimitMiddleware(BaseHTTPMiddleware):
         if self._is_auth_endpoint(request.url.path):
             limit = self.auth_limit
             limit_type = "auth"
-        elif request.method == "POST" and "/planner/proposals" in request.url.path:
+        elif request.method == "POST" and any(
+            part in request.url.path for part in ("/planner/proposals", "/speech/", "/translations")
+        ):
             limit = self.planner_limit
             limit_type = "planner"
         else:

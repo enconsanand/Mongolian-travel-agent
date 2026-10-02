@@ -1,10 +1,13 @@
 <script setup lang="ts">
+import PlanChat, { type PlanChatEntry } from '~/components/TripPlan/PlanChat.vue'
 import PlanDayCard from '~/components/TripPlan/PlanDayCard.vue'
 import PlanOverview from '~/components/TripPlan/PlanOverview.vue'
 import PlanProgram from '~/components/TripPlan/PlanProgram.vue'
 import PlannerHeader from '~/components/TripPlanner/PlannerHeader.vue'
+import TripRouteMap from '~/components/TripPlanner/TripRouteMap.vue'
 import { PLAN_MESSAGES } from '~/constants/tripPlan'
-import type { StayChoice } from '~/types/trip-plan'
+import type { ExtraStop, StayChoice } from '~/types/trip-plan'
+import type { StopLegs } from '~/utils/drivingRoute'
 
 definePageMeta({ layout: 'planner', auth: false })
 
@@ -170,9 +173,62 @@ const errorMessage = computed(() => {
   return messages.value.genericError
 })
 
-async function submitChange() {
-  if (await revise(change.value)) change.value = ''
+// Google's driving time and distance per day, once the map has the real route; until then the planner's estimate
+const legs = ref<StopLegs>({})
+const dayDrives = computed(() =>
+  (proposal.value?.days ?? []).map((day) => {
+    const path = [day.from_place_id, ...day.via_place_ids, day.to_place_id].filter((id, i, all) => all[i - 1] !== id)
+    const parts = path.slice(1).map((to, i) => legs.value[`${path[i]}>${to}`])
+    if (path.length < 2 || parts.some((leg) => !leg)) return null
+    return {
+      km: Math.round(parts.reduce((sum, leg) => sum + leg!.distanceM, 0) / 1000),
+      min: Math.round(parts.reduce((sum, leg) => sum + leg!.durationSec, 0) / 60),
+    }
+  })
+)
+
+// Stops added on the map: the route goes through them at once, and the agent is asked to replan around them
+const extraStops = ref<ExtraStop[]>([])
+async function addStop(stop: ExtraStop) {
+  if (extraStops.value.some((extra) => extra.id === stop.id)) return
+  extraStops.value.push(stop)
+  await ask(locale.value === 'mn' ? `${stop.name}-г маршрутад нэмээрэй` : `Add ${stop.name} to the route`)
 }
+
+// The chat under the plan: every message revises this plan in place, so the page never changes
+const chatLog = ref<PlanChatEntry[]>([])
+let nextEntryId = 0
+
+/** The new route in one line, e.g. "Уран Тогоо 1 → Хөвсгөл нуур 3", so the reply says what actually changed */
+function routeLine() {
+  const places = proposal.value?.catalog.places ?? {}
+  return nightBlocks.value
+    .map((block) => `${places[block.placeId]?.name ?? block.placeId} ${block.nights} ${messages.value.nights}`)
+    .join(' → ')
+}
+
+async function ask(text: string) {
+  if (busy.value !== null) return
+  chatLog.value.push({ id: nextEntryId++, role: 'user', text })
+  const typed = text === change.value.trim()
+  if (typed) change.value = ''
+  const revised = await revise(text)
+  const plan = proposal.value
+  chatLog.value.push(
+    revised && plan
+      ? {
+          id: nextEntryId++,
+          role: 'agent',
+          text: `${messages.value.chatRevised} (${messages.value.version} ${plan.version}): ${routeLine()}`,
+        }
+      : { id: nextEntryId++, role: 'agent', text: errorMessage.value ?? messages.value.genericError, failed: true }
+  )
+  // Nothing was lost: what the traveller typed comes back so they can send it again
+  if (!revised && typed && !change.value) change.value = text
+}
+
+/** A failed revision already says so in the chat; the bar under it is for booking errors */
+const barError = computed(() => (chatLog.value.at(-1)?.failed && busy.value === null ? null : errorMessage.value))
 
 onMounted(load)
 useHead(() => ({ title: messages.value.title, htmlAttrs: { lang: locale.value } }))
@@ -186,42 +242,55 @@ useHead(() => ({ title: messages.value.title, htmlAttrs: { lang: locale.value } 
       @set-locale="locale = $event"
     />
 
-    <main class="mx-auto min-h-screen w-full max-w-6xl px-4 pt-8 pb-40 sm:px-8">
-      <p v-if="loading && !proposal" class="text-ink-muted">{{ messages.loading }}</p>
+    <p v-if="loading && !proposal" class="mx-auto max-w-3xl px-4 pt-8 text-ink-muted">{{ messages.loading }}</p>
 
-      <section v-else-if="!proposal" class="panel p-6 text-center">
-        <p class="text-ink-muted">{{ messages.notFound }}</p>
-        <NuxtLink to="/" class="btn-primary mt-4 px-5 py-2.5">
-          {{ messages.backToPlanner }}
-        </NuxtLink>
-      </section>
+    <section v-else-if="!proposal" class="panel mx-auto mt-8 max-w-3xl p-6 text-center">
+      <p class="text-ink-muted">{{ messages.notFound }}</p>
+      <NuxtLink to="/" class="btn-primary mt-4 px-5 py-2.5">
+        {{ messages.backToPlanner }}
+      </NuxtLink>
+    </section>
 
-      <template v-else>
-        <div class="flex items-baseline justify-between gap-3">
-          <h1 class="text-2xl font-semibold sm:text-3xl">{{ messages.title }}</h1>
-          <span class="shrink-0 text-xs text-ink-subtle">{{ messages.version }} {{ proposal.version }}</span>
-        </div>
+    <!-- The map fills the screen on the left and stays put; the itinerary scrolls on the right -->
+    <div v-else class="lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,36rem)]">
+      <div class="h-[45vh] lg:sticky lg:top-16 lg:h-[calc(100vh-4rem)]">
+        <TripRouteMap
+          class="h-full rounded-none! border-0! shadow-none!"
+          :proposal="proposal"
+          :locale="locale"
+          :extra-stops="extraStops"
+          @legs="legs = $event"
+          @add-stop="addStop"
+        />
+      </div>
 
-        <p class="mt-3 text-sm leading-relaxed text-slate-400">{{ messages.draft }}</p>
+      <div class="flex min-w-0 flex-col lg:min-h-[calc(100vh-4rem)] lg:border-l lg:border-line">
+        <main class="flex-1 px-4 pt-6 pb-8 sm:px-6">
+          <div class="flex items-baseline justify-between gap-3">
+            <h1 class="text-2xl font-semibold sm:text-3xl">{{ messages.title }}</h1>
+            <span class="shrink-0 text-xs text-ink-subtle">{{ messages.version }} {{ proposal.version }}</span>
+          </div>
 
-        <div class="mt-5">
-          <PlanOverview :proposal="proposal" :locale="locale" :messages="messages" />
-        </div>
+          <p class="mt-3 text-sm leading-relaxed text-ink-muted">{{ messages.draft }}</p>
 
-        <p
-          v-if="staysChanged"
-          class="mt-4 rounded-control border border-accent/50 bg-warning-soft p-3 text-sm text-warning"
-          role="alert"
-        >
-          {{ messages.staysChanged }}
-        </p>
+          <div class="mt-5">
+            <PlanOverview :proposal="proposal" :locale="locale" :messages="messages" />
+          </div>
 
-        <div class="mt-6 lg:grid lg:grid-cols-[minmax(0,1fr)_20rem] lg:items-start lg:gap-6">
-          <ol class="relative ml-3 space-y-4 border-l border-emerald-400/40 pl-6 lg:col-start-1">
+          <p
+            v-if="staysChanged"
+            class="mt-4 rounded-control border border-accent/50 bg-warning-soft p-3 text-sm text-warning"
+            role="alert"
+          >
+            {{ messages.staysChanged }}
+          </p>
+
+          <ol class="relative mt-6 ml-3 space-y-4 border-l border-emerald-400/40 pl-6">
             <PlanDayCard
               v-for="(day, index) in proposal.days"
               :key="day.day"
               :day="day"
+              :drive="dayDrives[index]"
               :catalog="proposal.catalog"
               :locale="locale"
               :messages="messages"
@@ -235,66 +304,46 @@ useHead(() => ({ title: messages.value.title, htmlAttrs: { lang: locale.value } 
             />
           </ol>
 
-          <aside
-            v-if="program.length"
-            class="mt-6 lg:sticky lg:top-24 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:mt-0"
-          >
+          <aside v-if="program.length" class="mt-6">
             <PlanProgram :events="program" :locale="locale" :messages="messages" />
           </aside>
+        </main>
 
-          <form class="panel mt-6 p-5 lg:col-start-1" @submit.prevent="submitChange">
-            <label for="plan-change" class="text-sm font-semibold">{{ messages.reviseLabel }}</label>
-            <p class="mt-1 text-xs leading-relaxed text-ink-muted">{{ messages.reviseHint }}</p>
-            <p v-if="proposal.changes.length" class="mt-1 text-xs text-ink-muted">
-              {{ messages.changesSoFar }}: {{ proposal.changes.join(' · ') }}
-            </p>
-            <textarea
-              id="plan-change"
-              v-model="change"
-              rows="2"
-              maxlength="500"
-              class="planner-field mt-3 text-sm"
-              :placeholder="messages.revisePlaceholder"
-            />
-            <button
-              type="submit"
-              class="btn-secondary mt-3 w-full py-2.5 text-sm disabled:opacity-50"
-              :disabled="!change.trim() || busy !== null"
-            >
-              <i :class="busy === 'revise' ? 'pi pi-spinner pi-spin' : 'pi pi-refresh'" aria-hidden="true" />
-              {{ busy === 'revise' ? messages.revising : messages.revise }}
-            </button>
-          </form>
+        <!-- Chat and booking stay at the bottom of the itinerary; the plan above updates as the agent answers -->
+        <div class="sticky bottom-0 z-30 border-t border-line bg-surface px-4 py-3 sm:px-6">
+          <PlanChat
+            v-model="change"
+            :locale="locale"
+            :entries="chatLog"
+            :working="busy === 'revise'"
+            :earlier-changes="proposal.changes"
+            @send="ask"
+          />
+          <p v-if="barError" class="mt-2 text-center text-sm text-danger" role="alert">{{ barError }}</p>
+          <button
+            type="button"
+            class="btn-primary mt-3 w-full py-3 text-sm disabled:opacity-50 sm:text-base"
+            :disabled="!canBook || busy !== null"
+            @click="accept"
+          >
+            <i :class="busy === 'accept' ? 'pi pi-spinner pi-spin' : 'pi pi-check'" aria-hidden="true" />
+            {{ busy === 'accept' ? messages.booking : messages.book }}
+          </button>
+          <p v-if="proposal.days.some((day) => day.event_ids.length)" class="mt-1.5 text-center text-xs text-ink-muted">
+            {{ messages.eventsBookApart }}
+          </p>
+          <p class="mt-1.5 text-center text-xs text-ink-muted">
+            {{
+              !tripFits
+                ? messages.tooShortToBook
+                : !canBook
+                  ? messages.nothingToBook
+                  : auth.isAuthenticated.value
+                    ? messages.bookHint
+                    : messages.signInToBook
+            }}
+          </p>
         </div>
-      </template>
-    </main>
-
-    <div v-if="proposal" class="sticky bottom-0 z-30 border-t border-line bg-surface">
-      <div class="mx-auto max-w-6xl px-4 py-3 sm:px-8">
-        <p v-if="errorMessage" class="mb-2 text-center text-sm text-danger" role="alert">{{ errorMessage }}</p>
-        <button
-          type="button"
-          class="btn-primary w-full py-3.5 text-sm disabled:opacity-50 sm:text-base"
-          :disabled="!canBook || busy !== null"
-          @click="accept"
-        >
-          <i :class="busy === 'accept' ? 'pi pi-spinner pi-spin' : 'pi pi-check'" aria-hidden="true" />
-          {{ busy === 'accept' ? messages.booking : messages.book }}
-        </button>
-        <p v-if="proposal.days.some((day) => day.event_ids.length)" class="mb-1.5 text-center text-xs text-ink-muted">
-          {{ messages.eventsBookApart }}
-        </p>
-        <p class="mt-1.5 text-center text-xs text-ink-muted">
-          {{
-            !tripFits
-              ? messages.tooShortToBook
-              : !canBook
-                ? messages.nothingToBook
-                : auth.isAuthenticated.value
-                  ? messages.bookHint
-                  : messages.signInToBook
-          }}
-        </p>
       </div>
     </div>
   </div>

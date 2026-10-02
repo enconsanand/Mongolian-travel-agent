@@ -11,7 +11,7 @@ from typing import TYPE_CHECKING
 from app.llm.errors import LLMError, LLMErrorCode
 from app.llm.gateway import ROLES, ModelGateway, RoleName, RolePolicy, Route, parse_routes
 from app.llm.meter import UsageMeter
-from app.llm.providers import FakeProvider, ModelProvider, OpenAICompatProvider, workers_ai_provider
+from app.llm.providers import FakeProvider, ModelProvider, OpenAICompatProvider, oyu_provider, workers_ai_provider
 from app.llm.types import Completion, Message, ToolCall, ToolSpec, Usage
 
 if TYPE_CHECKING:
@@ -36,6 +36,7 @@ __all__ = [
     "UsageMeter",
     "build_gateway",
     "configured_gateway",
+    "oyu_provider",
     "parse_routes",
     "workers_ai_provider",
 ]
@@ -53,6 +54,14 @@ def build_gateway(settings: "Settings") -> ModelGateway:
             api_token=settings.CLOUDFLARE_API_TOKEN,
             gateway_id=settings.CLOUDFLARE_AI_GATEWAY,
             json_mode=settings.LLM_JSON_MODE,
+            timeout=settings.LLM_TIMEOUT_SECONDS,
+        )
+    if "oyu" in used:
+        if not settings.OYU_API_KEY:
+            raise LLMError("not_configured", "oyu needs OYU_API_KEY")
+        providers["oyu"] = oyu_provider(
+            api_key=settings.OYU_API_KEY,
+            json_mode=settings.OYU_JSON_MODE,
             timeout=settings.LLM_TIMEOUT_SECONDS,
         )
     if "fake" in used:

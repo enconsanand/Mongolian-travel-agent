@@ -157,6 +157,12 @@ def mentioned(query: str, text: str) -> bool:
     return any(starts_word(w, said) for w in distinctive)
 
 
+def _named_first(word: str, name: dict[str, str]) -> bool:
+    """The word starts the place's own name in some language ("Хөвсгөл нуур", not "Цагааннуур, Хөвсгөл")."""
+    needle = norm(word)
+    return any(norm(latin_to_cyrillic(value)).startswith(needle) for value in name.values() if value)
+
+
 def named_words(text: str, catalog: Catalog) -> list[str]:
     """Place names written in the request that match exactly one catalog place."""
     found: list[str] = []
@@ -165,10 +171,17 @@ def named_words(text: str, catalog: Catalog) -> list[str]:
         if not is_specific(word):
             continue
         options = [pid for pid in candidates(word, catalog) if pid != HUB]
+        query = word
+        if len(options) > 1:
+            # "Хөвсгөл" also appears in "Tsagaannuur, Khövsgöl": keep the place whose own name begins with it, and
+            # ask for it by its full name so resolving it again lands on the same place
+            options = [pid for pid in options if _named_first(word, catalog.places[pid]["name"])]
+            if len(options) == 1:
+                query = catalog.places[options[0]]["name"]["mn"]
         if len(options) != 1 or options[0] in seen:
             continue
         seen.add(options[0])
-        found.append(word)
+        found.append(query)
     return found
 
 

@@ -4,13 +4,28 @@ import { VOICE_METER_DELAYS_MS } from '~/constants/tripPlanner'
 /** One long chat-style bar: type or speak the trip, Enter (or the arrow) sends it to the planner */
 const tripRequest = defineModel<string>('tripRequest', { required: true })
 
-const { isListening, voiceStatusLabel, requestLabel, requestPlaceholder, voiceButtonLabel, sendLabel } = defineProps<{
+const {
+  isListening,
+  voiceStatusLabel,
+  requestLabel,
+  requestPlaceholder,
+  voiceButtonLabel,
+  sendLabel,
+  fieldId = 'trip-request',
+  compact = false,
+  disabled = false,
+} = defineProps<{
   isListening: boolean
   voiceStatusLabel: string
   requestLabel: string
   requestPlaceholder: string
   voiceButtonLabel: string
   sendLabel: string
+  fieldId?: string
+  /** A smaller bar, for the chat under a plan */
+  compact?: boolean
+  /** The agent is still answering: typing stays open, sending waits */
+  disabled?: boolean
 }>()
 
 const emit = defineEmits<{
@@ -32,7 +47,7 @@ function fitHeight() {
 function onKeydown(event: KeyboardEvent) {
   if (event.key === 'Enter' && !event.shiftKey && !event.isComposing) {
     event.preventDefault()
-    emit('submit')
+    if (!disabled) emit('submit')
   }
 }
 
@@ -42,21 +57,25 @@ onMounted(fitHeight)
 
 <template>
   <div
-    class="chat-bar flex min-h-16 items-end gap-1 rounded-[32px] border border-line bg-surface py-2 pr-2 pl-7 shadow-card transition-shadow focus-within:border-brand"
-    :class="{ 'is-listening': isListening }"
+    class="chat-bar flex items-end gap-1 border border-line bg-surface shadow-card transition-shadow focus-within:border-brand"
+    :class="[
+      { 'is-listening': isListening },
+      compact ? 'min-h-12 rounded-[26px] py-1.5 pr-1.5 pl-5' : 'min-h-16 rounded-[32px] py-2 pr-2 pl-7',
+    ]"
   >
-    <label for="trip-request" class="sr-only">{{ requestLabel }}</label>
+    <label :for="fieldId" class="sr-only">{{ requestLabel }}</label>
     <textarea
-      id="trip-request"
+      :id="fieldId"
       ref="field"
       v-model="tripRequest"
       rows="1"
-      class="min-h-12 flex-1 resize-none self-center border-0! bg-transparent! py-3 text-base leading-6 text-ink sm:text-lg shadow-none! outline-none! placeholder:text-ink-subtle"
+      class="flex-1 resize-none self-center border-0! bg-transparent! leading-6 text-ink shadow-none! outline-none! placeholder:text-ink-subtle"
+      :class="compact ? 'min-h-9 py-1.5 text-[0.95rem]' : 'min-h-12 py-3 text-base sm:text-lg'"
       :placeholder="isListening ? voiceStatusLabel : requestPlaceholder"
       @keydown="onKeydown"
     />
 
-    <div v-if="isListening" class="flex h-12 items-center gap-1 px-1" aria-hidden="true">
+    <div v-if="isListening" class="flex items-center gap-1 px-1" :class="compact ? 'h-9' : 'h-12'" aria-hidden="true">
       <span
         v-for="(delayMs, index) in VOICE_METER_DELAYS_MS"
         :key="index"
@@ -69,7 +88,8 @@ onMounted(fitHeight)
       <span class="mic-ring absolute inset-0 rounded-full bg-danger/25 opacity-0" />
       <button
         type="button"
-        class="relative grid h-12 w-12 place-items-center rounded-full text-ink-muted transition-colors hover:bg-surface-muted hover:text-ink aria-pressed:bg-danger aria-pressed:text-white"
+        class="relative grid place-items-center rounded-full text-ink-muted transition-colors hover:bg-surface-muted hover:text-ink aria-pressed:bg-danger aria-pressed:text-white"
+        :class="compact ? 'h-9 w-9' : 'h-12 w-12'"
         :aria-pressed="isListening"
         :aria-label="voiceButtonLabel"
         :title="voiceButtonLabel"
@@ -83,7 +103,9 @@ onMounted(fitHeight)
     <button
       v-if="tripRequest.trim()"
       type="button"
-      class="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-brand text-brand-contrast transition-[background-color,transform] hover:bg-brand-hover active:scale-95"
+      class="grid shrink-0 place-items-center rounded-full bg-brand text-brand-contrast transition-[background-color,transform] hover:bg-brand-hover active:scale-95 disabled:opacity-50"
+      :class="compact ? 'h-9 w-9' : 'h-12 w-12'"
+      :disabled="disabled"
       :aria-label="sendLabel"
       :title="sendLabel"
       @click="emit('submit')"
